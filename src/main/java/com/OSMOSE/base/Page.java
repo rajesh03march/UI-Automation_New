@@ -187,23 +187,6 @@ public class Page {
 		test.log(LogStatus.INFO, "Clicking on : " + locator);
 	}
 
-	public static void clickEnter(String locator){
-
-		if (locator.endsWith("_CSS")) {
-			driver.findElement(By.cssSelector(OR.getProperty(locator))).sendKeys(Keys.ENTER);
-		} else if (locator.endsWith("_XPATH")) {
-			driver.findElement(By.xpath(OR.getProperty(locator))).sendKeys(Keys.ENTER);
-		} else if (locator.endsWith("_ID")) {
-			driver.findElement(By.id(OR.getProperty(locator))).sendKeys(Keys.ENTER);
-		}
-
-		log.debug("Typing in an Element : "+locator);
-
-		test.log(LogStatus.INFO, "Typing in : " + locator );
-
-
-	}
-
 	public static void type(String locator, String value) {
 
 		if (locator.endsWith("_CSS")) {
@@ -234,9 +217,25 @@ public class Page {
 		
 		Select select = new Select(dropdown);
 		select.selectByVisibleText(value);
-
 		log.debug("Selecting from an element : "+locator+" value as : "+value);
 		test.log(LogStatus.INFO, "Selecting from dropdown : " + locator + " value as " + value);
+
+	}
+	
+	public static void selectbyindex(String locator, int index) {
+
+		if (locator.endsWith("_CSS")) {
+			dropdown = driver.findElement(By.cssSelector(OR.getProperty(locator)));
+		} else if (locator.endsWith("_XPATH")) {
+			dropdown = driver.findElement(By.xpath(OR.getProperty(locator)));
+		} else if (locator.endsWith("_ID")) {
+			dropdown = driver.findElement(By.id(OR.getProperty(locator)));
+		}
+		
+		Select select = new Select(dropdown);
+		select.selectByIndex(index);
+		log.debug("Selecting from an element : "+locator+" value as : "+index);
+		test.log(LogStatus.INFO, "Selecting from dropdown : " + locator + " value as " + index);
 
 	}
 
@@ -378,6 +377,13 @@ public class Page {
 		}
 	}
 
+	public void switchToparentWindow() {
+		ArrayList<String> windows = new ArrayList<String>(driver.getWindowHandles());//returns all the windows
+
+        driver.switchTo().window(windows.get(0));//Switch to parent window
+        System.out.println("The window displaying is : " + driver.switchTo().window(windows.get(0)).getCurrentUrl());//Getting the URL of the current window
+        //driver.close();
+	}
 
 
 //			public static void isVisiable(String locator){

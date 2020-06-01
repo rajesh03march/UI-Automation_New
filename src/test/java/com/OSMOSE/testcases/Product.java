@@ -5,6 +5,7 @@ import com.OSMOSE.pages.OU.HomeOU;
 import com.OSMOSE.pages.OU.ProductPage;
 import com.OSMOSE.utilities.Utilities;
 import org.openqa.selenium.By;
+import org.openqa.selenium.remote.DriverCommand;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -22,7 +23,7 @@ public class Product extends BaseTest{
         Thread.sleep(12000);
         Assert.assertEquals(Page.getText("POrdering_XPATH"),"Pole and Line Products");
     }
-    @Test(description = "Verify that User clicks on the Product Cart", priority = 1, enabled = false)
+    @Test(description = "Verify that User clicks on the Product Cart", priority = 1)
     public void verifyTheProductCart() throws InterruptedException {
         HomeOU ou= new HomeOU();
         ProductPage pp = ou.goProduct();
@@ -71,14 +72,14 @@ public class Product extends BaseTest{
     public void allSixProductPresent() throws InterruptedException {
         HomeOU ou= new HomeOU();
         ProductPage pp= ou.goProduct();
-        Assert.assertEquals(Page.getText("MITCFUME_XPATH"),"MITC-FUMEÂ®");
+        Assert.assertEquals(Page.getText("MITCFUME_XPATH"),"MITC-FUME®");
     }
     @Test(priority = 9,dependsOnMethods = "verifyTheProductLink")
     public void sliderItemPresent() throws InterruptedException {
         HomeOU ou= new HomeOU();
         ProductPage pp= ou.goProduct();
         Page.click("ProductSlider_XPATH");
-        Assert.assertEquals(Page.getText("PoleTopperÂ®_XPATH"),"MITC-FUMEÂ®");
+        Assert.assertEquals(Page.getText("PoleTopper®_XPATH"),"MITC-FUME®");
     }
     @Test(priority = 10,dependsOnMethods = "verifyTheProductLink")
     public void verifyCategoryFilter(){
@@ -98,28 +99,76 @@ public class Product extends BaseTest{
     public void verifyViewDetail() throws InterruptedException {
         HomeOU ou = new HomeOU();
         ProductPage pp = ou.goProduct();
-        pp.clickOnViewDetails();
+        pp.clickOnViewDetails("Productsimageclick_XPATH");
         Assert.assertEquals(Page.getText("ProductDetail_XPATH"),"Product Details:");
         Page.click("CloseButton_CSS");
     }
 
-
-
-
-
     @Test(dataProviderClass = Utilities.class,dataProvider ="dp",description = "Verify that User clicks on the Slider icon")
-    public void verifyTheSearchWithCategoryName(Hashtable<String,String> data) throws InterruptedException {
+    public void verifyTheSearch(Hashtable<String,String> data) throws InterruptedException {
         HomeOU ou= new HomeOU();
         ProductPage pp = ou.goProduct();
         pp.clickSearch();
-        Page.driver.findElement(By.xpath("")).clear();
-        Page.type("Barrier Protection",data.get("SearchItem"));
-        Page.clickEnter("Barrier Protection");
-        Assert.assertEquals(Page.getText("//*[@id=\"productSlider\"]/div[1]/div[1]/div/h3"),"Fire Protection");
-        Assert.assertEquals(Page.getText("//*[@id=\"productSlider\"]/div[2]/div[1]/div/h3"),"Pole Top Protection");
+        Page.type("PSearch_ID",data.get("SearchItem"));
+        Page.click("PSearchIcon_ID");
+        Assert.assertEquals("","");
     }
 
-
-
-
+    @Test(priority = 13)
+    public void VerifyProductclick() throws InterruptedException {
+        HomeOU ou= new HomeOU();
+        ProductPage pp = ou.goProduct();
+        pp.clickOnProductFeatureImage();
+        Assert.assertEquals(Page.getText("FeaturedProducts_XPATH"),"Featured Products");
+        Page.driver.navigate().back();
+        Page.click("Productsimageclick2_XPATH");
+        Assert.assertEquals(Page.getText("FeaturedProducts_XPATH"),"Featured Products");
+        Page.driver.navigate().back();
+        Page.click("Productsimageclick3_XPATH");
+        Assert.assertEquals(Page.getText("FeaturedProducts_XPATH"),"Featured Products");
+        Page.driver.navigate().back();
+        Page.click("Productsimageclick4_XPATH");
+        Assert.assertEquals(Page.getText("FeaturedProducts_XPATH"),"Featured Products");
+}
+    
+    @Test(priority = 14,enabled=false)
+    public void AddQuantityandverifyCellNumber() throws InterruptedException {
+        HomeOU ou= new HomeOU();
+        ProductPage pp = ou.goProduct();
+        pp.clickOnProductImage();
+        pp.AddQuantityInCart_AssertCellNumber();
+        Assert.assertEquals(Page.getAttributeValue("SelectDropDownToolTip_XPATH","title"),"72-020-009-100 PR - C2-3611");
+        Assert.assertEquals(Page.getText("FeaturedProductsCellNumber_XPATH"),"(770) 632-6700 Option 3");
+        pp.switchToNewWindow(0);
+        
+    }
+    
+    
+    
+    @Test(priority = 16)
+    public void FeaturedProductPoleRestoration() throws InterruptedException {
+        HomeOU ou= new HomeOU();
+        ProductPage pp = ou.goProduct();
+        pp.ProductPoleRestoration();
+        Assert.assertEquals(Page.getText("FeaturedProductsCellNumber_XPATH"),"(770) 632-6700 Option 3");
+        Thread.sleep(100);
+        pp.switchToparentWindow();
+        Page.driver.navigate().back();
+  
+        pp.clickOnProductImage();
+        System.out.println("second is clicked");
+        pp.ProductPoleRestoration_1();
+        Assert.assertEquals(Page.getText("FeaturedProductsCellNumber_XPATH"),"(770) 632-6700 Option 3");
+        Thread.sleep(10);
+        pp.switchToparentWindow();
+        Page.driver.navigate().back();
+        pp.clickOnProductImage();
+        System.out.println("third is clicked");
+        pp.ProductPoleRestoration_2();
+        Assert.assertEquals(Page.getText("FeaturedProductsCellNumber_XPATH"),"(770) 632-6700 Option 3");
+        Thread.sleep(10);
+        pp.ProductPoleRestoration_3();
+         Assert.assertEquals(Page.getText("FeaturedProductsCellNumber_XPATH"),"(770) 632-6700 Option 3");
+    }
+    
 }
