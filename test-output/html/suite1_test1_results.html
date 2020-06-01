@@ -1,0 +1,521 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="" lang="">
+<head>
+  <title>Test Results Report - OULogin</title>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+  <meta name="description" content="TestNG unit test results." />
+  <link href="reportng.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="reportng.js"></script>
+</head>
+<body>
+<h1>OULogin</h1>
+<p>
+  Test duration: 209.240s
+</p>
+
+
+
+  <table class="resultsTable">
+    <tr><th colspan="3" class="header failed">Failed Tests</th></tr>
+          <tr>
+        <td colspan="3" class="group">com.OSMOSE.testcases.OULogin</td>
+      </tr>
+            
+<tr>
+  <td class="method">
+                  verifySteelStructuresProtected
+      </td>
+  <td class="duration">
+    62.033s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        Click to see Screenshot
+                                <a target="_blank" href=Thu_May_21_17_15_06_IST_2020.jpg>Screenshot</a>
+                                <br>
+                                <br>
+                                <a target="_blank" href=Thu_May_21_17_15_06_IST_2020.jpg><img src=Thu_May_21_17_15_06_IST_2020.jpg height=200 width=200></img></a>
+                  </div>
+    
+
+        <a href="javascript:toggleElement('exception-0', 'block')" title="Click to expand/collapse"><b>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;/html/body/section/div/div/div/div[4]/h3/strong&quot;}<br/>
+&nbsp; (Session info: chrome=81.0.4044.129)<br/>
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html<br/>
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;<br/>
+System info: host: &apos;IND-5CG6191XZM&apos;, ip: &apos;192.168.1.2&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_161&apos;<br/>
+Driver info: org.openqa.selenium.chrome.ChromeDriver<br/>
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 81.0.4044.129, chrome: {chromedriverVersion: 81.0.4044.69 (6813546031a4b..., userDataDir: C:\Windows\Temp\scoped_dir1...}, goog:chromeOptions: {debuggerAddress: localhost:49230}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: none, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}<br/>
+Session ID: a89b58d77de666f9b22b5333442a06f1<br/>
+*** Element info: {Using=xpath, value=/html/body/section/div/div/div/div[4]/h3/strong}</b></a><br />
+    <div class="stackTrace" id="exception-0">
+              sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)<br />
+              sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)<br />
+              sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)<br />
+              java.lang.reflect.Constructor.newInstance(Constructor.java:423)<br />
+              org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)<br />
+              org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)<br />
+              org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)<br />
+              org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)<br />
+              org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:424)<br />
+              org.openqa.selenium.By$ByXPath.findElement(By.java:353)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)<br />
+              com.OSMOSE.base.Page.getText(Page.java:287)<br />
+              com.OSMOSE.testcases.OULogin.verifySteelStructuresProtected(OULogin.java:133)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br />
+              sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
+              java.lang.reflect.Method.invoke(Method.java:498)<br />
+              org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)<br />
+              org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)<br />
+              org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)<br />
+              org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)<br />
+              org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)<br />
+              org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)<br />
+              org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)<br />
+              org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)<br />
+              java.util.ArrayList.forEach(ArrayList.java:1257)<br />
+              org.testng.TestRunner.privateRun(TestRunner.java:766)<br />
+              org.testng.TestRunner.run(TestRunner.java:587)<br />
+              org.testng.SuiteRunner.runTest(SuiteRunner.java:384)<br />
+              org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)<br />
+              org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)<br />
+              org.testng.SuiteRunner.run(SuiteRunner.java:286)<br />
+              org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)<br />
+              org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)<br />
+              org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)<br />
+              org.testng.TestNG.runSuitesLocally(TestNG.java:1109)<br />
+              org.testng.TestNG.runSuites(TestNG.java:1039)<br />
+              org.testng.TestNG.run(TestNG.java:1007)<br />
+              com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)<br />
+              com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:110)<br />
+                </div>
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  verifyVideoLinks
+      </td>
+  <td class="duration">
+    0.062s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        Click to see Screenshot
+                                <a target="_blank" href=Thu_May_21_17_12_05_IST_2020.jpg>Screenshot</a>
+                                <br>
+                                <br>
+                                <a target="_blank" href=Thu_May_21_17_12_05_IST_2020.jpg><img src=Thu_May_21_17_12_05_IST_2020.jpg height=200 width=200></img></a>
+                  </div>
+    
+
+        <a href="javascript:toggleElement('exception-1', 'block')" title="Click to expand/collapse"><b>java.lang.AssertionError: expected [Wood Technical Seminar] but found []</b></a><br />
+    <div class="stackTrace" id="exception-1">
+              org.testng.Assert.fail(Assert.java:97)<br />
+              org.testng.Assert.assertEqualsImpl(Assert.java:136)<br />
+              org.testng.Assert.assertEquals(Assert.java:118)<br />
+              org.testng.Assert.assertEquals(Assert.java:575)<br />
+              org.testng.Assert.assertEquals(Assert.java:585)<br />
+              com.OSMOSE.testcases.OULogin.verifyVideoLinks(OULogin.java:46)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br />
+              sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
+              java.lang.reflect.Method.invoke(Method.java:498)<br />
+              org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)<br />
+              org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)<br />
+              org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)<br />
+              org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)<br />
+              org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)<br />
+              org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)<br />
+              org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)<br />
+              org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)<br />
+              java.util.ArrayList.forEach(ArrayList.java:1257)<br />
+              org.testng.TestRunner.privateRun(TestRunner.java:766)<br />
+              org.testng.TestRunner.run(TestRunner.java:587)<br />
+              org.testng.SuiteRunner.runTest(SuiteRunner.java:384)<br />
+              org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)<br />
+              org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)<br />
+              org.testng.SuiteRunner.run(SuiteRunner.java:286)<br />
+              org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)<br />
+              org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)<br />
+              org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)<br />
+              org.testng.TestNG.runSuitesLocally(TestNG.java:1109)<br />
+              org.testng.TestNG.runSuites(TestNG.java:1039)<br />
+              org.testng.TestNG.run(TestNG.java:1007)<br />
+              com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)<br />
+              com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:110)<br />
+                </div>
+      </td>
+</tr>
+      </table>
+
+  <table class="resultsTable" width="100%">
+    <tr><th colspan="3" class="header skipped">Skipped Tests</th></tr>
+          <tr>
+        <td colspan="3" class="group">com.OSMOSE.testcases.OULogin</td>
+      </tr>
+            
+<tr>
+  <td class="method">
+                  ContactAndStrayMOREINFOREGISTRATION
+      </td>
+  <td class="duration">
+    0.000s
+  </td>
+  <td class="result">
+                             <i>Depends on method(s): </i>
+        <span class="dependency">com.OSMOSE.testcases.OULogin.steelStructuresProtectedMOREINFOREGISTRATION</span>
+                
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  steelStructuresProtectedMOREINFOREGISTRATION
+      </td>
+  <td class="duration">
+    0.000s
+  </td>
+  <td class="result">
+                             <i>Depends on method(s): </i>
+        <span class="dependency">com.OSMOSE.testcases.OULogin.verifyContactAndStray</span>
+                
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  verifyContactAndStray
+      </td>
+  <td class="duration">
+    0.000s
+  </td>
+  <td class="result">
+                             <i>Depends on method(s): </i>
+        <span class="dependency">com.OSMOSE.testcases.OULogin.verifySteelStructuresProtected</span>
+                
+    
+        
+
+      </td>
+</tr>
+      </table>
+
+  <table class="resultsTable">
+    <tr><th colspan="3" class="header passed">Passed Tests</th></tr>
+          <tr>
+        <td colspan="3" class="group">com.OSMOSE.testcases.OULogin</td>
+      </tr>
+            
+<tr>
+  <td class="method">
+                  clickOnOuLink
+      </td>
+  <td class="duration">
+    12.198s
+  </td>
+  <td class="result">
+        
+          <i>Method arguments: </i><span class="arguments">{password=Hyde@2317, runmode=Y, username=rajesh.yadav@centurylink.com}</span><br />
+    
+            <div class="testOutput">
+                        Click to see Screenshot
+                                <a target="_blank" href=Thu_May_21_17_12_57_IST_2020.jpg>Screenshot</a>
+                                <br>
+                                <br>
+                                <a target="_blank" href=Thu_May_21_17_12_57_IST_2020.jpg><img src=Thu_May_21_17_12_57_IST_2020.jpg height=200 width=200></img></a>
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  loginTest
+      </td>
+  <td class="duration">
+    16.981s
+  </td>
+  <td class="result">
+        
+          <i>Method arguments: </i><span class="arguments">{password=Hyde@2317, runmode=Y, username=rajesh.yadav@centurylink.com}</span><br />
+    
+            <div class="testOutput">
+                        Click to see Screenshot
+                                <a target="_blank" href=Thu_May_21_17_11_58_IST_2020.jpg>Screenshot</a>
+                                <br>
+                                <br>
+                                <a target="_blank" href=Thu_May_21_17_11_58_IST_2020.jpg><img src=Thu_May_21_17_11_58_IST_2020.jpg height=200 width=200></img></a>
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  verifyClickingTheWebinars
+      </td>
+  <td class="duration">
+    12.097s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        Click to see Screenshot
+                                <a target="_blank" href=Thu_May_21_17_14_04_IST_2020.jpg>Screenshot</a>
+                                <br>
+                                <br>
+                                <a target="_blank" href=Thu_May_21_17_14_04_IST_2020.jpg><img src=Thu_May_21_17_14_04_IST_2020.jpg height=200 width=200></img></a>
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  verifyDETAILSANDREGISTRATION
+      </td>
+  <td class="duration">
+    13.473s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        Click to see Screenshot
+                                <a target="_blank" href=Thu_May_21_17_13_51_IST_2020.jpg>Screenshot</a>
+                                <br>
+                                <br>
+                                <a target="_blank" href=Thu_May_21_17_13_51_IST_2020.jpg><img src=Thu_May_21_17_13_51_IST_2020.jpg height=200 width=200></img></a>
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  verifyHyperlinks
+      </td>
+  <td class="duration">
+    0.105s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        Click to see Screenshot
+                                <a target="_blank" href=Thu_May_21_17_12_04_IST_2020.jpg>Screenshot</a>
+                                <br>
+                                <br>
+                                <a target="_blank" href=Thu_May_21_17_12_04_IST_2020.jpg><img src=Thu_May_21_17_12_04_IST_2020.jpg height=200 width=200></img></a>
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  verifyLiveEventCLick
+      </td>
+  <td class="duration">
+    12.337s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        Click to see Screenshot
+                                <a target="_blank" href=Thu_May_21_17_12_18_IST_2020.jpg>Screenshot</a>
+                                <br>
+                                <br>
+                                <a target="_blank" href=Thu_May_21_17_12_18_IST_2020.jpg><img src=Thu_May_21_17_12_18_IST_2020.jpg height=200 width=200></img></a>
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  verifyLiveEventsJUS
+      </td>
+  <td class="duration">
+    13.508s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        Click to see Screenshot
+                                <a target="_blank" href=Thu_May_21_17_13_24_IST_2020.jpg>Screenshot</a>
+                                <br>
+                                <br>
+                                <a target="_blank" href=Thu_May_21_17_13_24_IST_2020.jpg><img src=Thu_May_21_17_13_24_IST_2020.jpg height=200 width=200></img></a>
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  verifyLiveEventsSTS
+      </td>
+  <td class="duration">
+    13.087s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        Click to see Screenshot
+                                <a target="_blank" href=Thu_May_21_17_13_10_IST_2020.jpg>Screenshot</a>
+                                <br>
+                                <br>
+                                <a target="_blank" href=Thu_May_21_17_13_10_IST_2020.jpg><img src=Thu_May_21_17_13_10_IST_2020.jpg height=200 width=200></img></a>
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  verifyLiveEventsWPTS
+      </td>
+  <td class="duration">
+    12.936s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        Click to see Screenshot
+                                <a target="_blank" href=Thu_May_21_17_13_37_IST_2020.jpg>Screenshot</a>
+                                <br>
+                                <br>
+                                <a target="_blank" href=Thu_May_21_17_13_37_IST_2020.jpg><img src=Thu_May_21_17_13_37_IST_2020.jpg height=200 width=200></img></a>
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  verifyOCalcClick
+      </td>
+  <td class="duration">
+    12.268s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        Click to see Screenshot
+                                <a target="_blank" href=Thu_May_21_17_12_44_IST_2020.jpg>Screenshot</a>
+                                <br>
+                                <br>
+                                <a target="_blank" href=Thu_May_21_17_12_44_IST_2020.jpg><img src=Thu_May_21_17_12_44_IST_2020.jpg height=200 width=200></img></a>
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  verifyOClacTrainingButton
+      </td>
+  <td class="duration">
+    12.135s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        Click to see Screenshot
+                                <a target="_blank" href=Thu_May_21_17_15_19_IST_2020.jpg>Screenshot</a>
+                                <br>
+                                <br>
+                                <a target="_blank" href=Thu_May_21_17_15_19_IST_2020.jpg><img src=Thu_May_21_17_15_19_IST_2020.jpg height=200 width=200></img></a>
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  verifyOUCard
+      </td>
+  <td class="duration">
+    3.738s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        Click to see Screenshot
+                                <a target="_blank" href=Thu_May_21_17_12_03_IST_2020.jpg>Screenshot</a>
+                                <br>
+                                <br>
+                                <a target="_blank" href=Thu_May_21_17_12_03_IST_2020.jpg><img src=Thu_May_21_17_12_03_IST_2020.jpg height=200 width=200></img></a>
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  verifyProductCard
+      </td>
+  <td class="duration">
+    0.033s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        Click to see Screenshot
+                                <a target="_blank" href=Thu_May_21_17_12_04_IST_2020.jpg>Screenshot</a>
+                                <br>
+                                <br>
+                                <a target="_blank" href=Thu_May_21_17_12_04_IST_2020.jpg><img src=Thu_May_21_17_12_04_IST_2020.jpg height=200 width=200></img></a>
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  verifyWebinarsClick
+      </td>
+  <td class="duration">
+    12.249s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        Click to see Screenshot
+                                <a target="_blank" href=Thu_May_21_17_12_31_IST_2020.jpg>Screenshot</a>
+                                <br>
+                                <br>
+                                <a target="_blank" href=Thu_May_21_17_12_31_IST_2020.jpg><img src=Thu_May_21_17_12_31_IST_2020.jpg height=200 width=200></img></a>
+                  </div>
+    
+
+      </td>
+</tr>
+      </table>
+  
+</body>
+</html>

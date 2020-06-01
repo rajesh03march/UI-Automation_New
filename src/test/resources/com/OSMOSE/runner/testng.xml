@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="OSMOSE Test">
+    
+    <listeners>
+      <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+      <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+       <listener class-name="com.OSMOSE.listeners.CustomListeners"/>
+  </listeners>
+    
+    
+	<test name="OULogin">
+		<classes>
+			<class name="com.OSMOSE.testcases.OULogin" />
+		</classes>
+	</test> <!-- Test -->
+    <test name="Product">
+        <classes>
+            <class name="com.OSMOSE.testcases.Product" />
+        </classes>
+    </test> <!-- Test -->
+	
+	
+	
+</suite> <!-- Suite -->
