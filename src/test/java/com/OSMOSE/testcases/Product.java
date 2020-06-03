@@ -5,6 +5,7 @@ import com.OSMOSE.pages.OU.HomeOU;
 import com.OSMOSE.pages.OU.ProductPage;
 import com.OSMOSE.utilities.Utilities;
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.remote.DriverCommand;
 import org.testng.Assert;
 import org.testng.annotations.Test;
@@ -113,7 +114,60 @@ public class Product extends BaseTest{
         Page.click("PSearchIcon_ID");
         Assert.assertEquals("","");
     }
-
+    
+    @Test(dataProviderClass = Utilities.class,dataProvider ="dp",description = "Verify that User clicks on the Slider icon and search for firstname Pole")
+    public void verifyTheSearchfirstname(Hashtable<String,String> data) throws InterruptedException {
+        HomeOU ou= new HomeOU();
+        ProductPage pp = ou.goProduct();
+        pp.clickSearch();
+        Page.driver.findElement(By.id("searchInput")).clear();
+        Page.type("PSearch_ID",data.get("SearchItem"));
+        Page.driver.findElement(By.id("searchInput")).sendKeys(Keys.ENTER);
+        Assert.assertEquals(Page.getText("PoleTopperProductSearch_LINKTEXT"),"Pole Topper®");
+        Assert.assertEquals(Page.getText("SearcchResultPoleproductone_LINKTEXT"),"C-Truss");
+        Assert.assertEquals(Page.getText("SearcchResultPoleproductTwo_LINKTEXT"),"Osmo-C2-Truss®");
+        Assert.assertEquals(Page.getText("SearcchResultPoleproductThree_LINKTEXT"),"Dummy3 - C-Truss");
+        Assert.assertEquals(Page.getText("SearcchResultPoleproductFour_LINKTEXT"),"Dummy4 - Osmo-C2-Truss®");       
+        pp.ProductSearchFirstname();
+    }
+    
+    @Test(dataProviderClass = Utilities.class,dataProvider ="dp",description = "Verify that User clicks on the Slider icon and search for full name Pole Restoration")
+    public void verifyTheSearchFullname(Hashtable<String,String> data) throws InterruptedException {
+        HomeOU ou= new HomeOU();
+        ProductPage pp = ou.goProduct();
+        pp.clickSearch();
+        Page.driver.findElement(By.id("searchInput")).clear();
+        Page.type("PSearch_ID",data.get("SearchItem"));
+        Page.driver.findElement(By.id("searchInput")).sendKeys(Keys.ENTER);
+        Assert.assertEquals(Page.getText("PoleTopperProductSearch_LINKTEXT"),"Pole Topper®");
+        Assert.assertEquals(Page.getText("SearcchResultPoleproductone_LINKTEXT"),"C-Truss");
+        Assert.assertEquals(Page.getText("SearcchResultPoleproductTwo_LINKTEXT"),"Osmo-C2-Truss®");
+        Assert.assertEquals(Page.getText("SearcchResultPoleproductThree_LINKTEXT"),"Dummy3 - C-Truss");
+        Assert.assertEquals(Page.getText("SearcchResultPoleproductFour_LINKTEXT"),"Dummy4 - Osmo-C2-Truss®");
+        }
+    
+    @Test(dataProviderClass = Utilities.class,dataProvider ="dp",description = "Verify that User clicks on the Slider icon and search for One Alphabeted like H")
+    public void verifyTheSearchOneAlphabet(Hashtable<String,String> data) throws InterruptedException {
+        HomeOU ou= new HomeOU();
+        ProductPage pp = ou.goProduct();
+        pp.clickSearch();
+        Page.driver.findElement(By.id("searchInput")).clear();
+        Page.type("PSearch_ID",data.get("SearchItem"));
+        Page.driver.findElement(By.xpath("")).sendKeys(Keys.ENTER);
+        Assert.assertEquals(Page.getText("SearcchResultSingleAlphabet_LINKTEXT"),"MITC-FUME®");
+        Assert.assertEquals(Page.getText("SearcchResultSingleAlphabet_LINKTEXT1"),"Dummy2 - MITC-FUME®");
+        }
+    
+	/*
+	 * @Test(dataProviderClass = Utilities.class,dataProvider ="dp",description =
+	 * "Verify that User clicks on the Slider icon and Click on Crosss icon") public
+	 * void verifyTheSearchCrossButton(Hashtable<String,String> data) throws
+	 * InterruptedException { HomeOU ou= new HomeOU(); ProductPage pp =
+	 * ou.goProduct(); pp.clickSearch();
+	 * Page.driver.findElement(By.id("searchInput")).clear();
+	 * Page.type("PSearch_ID",data.get("SearchItem")); Page.click(""); }
+	 */
+     
     @Test(priority = 13)
     public void VerifyProductclick() throws InterruptedException {
         HomeOU ou= new HomeOU();

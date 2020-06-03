@@ -70,6 +70,15 @@ public class ProductPage extends Page {
        click("ProductAddButton_XPATH");
        click("LinkProductDetail_LINKTEXT");
    }
+   
+      
+   public void ProductSearchFirstname() throws InterruptedException {
+	   click("PoleTopperProductSearch_LINKTEXT");
+	   selectbyindex("ProductSizeDropdown_XPATH",1);
+       type("ProductSizeEnterQuantity_XPATH", "8");
+       click("ProductAddButton_XPATH");
+       click("LinkProductDetail_LINKTEXT");
+   }
    public void ProductPoleRestoration_1() throws InterruptedException {
        click("ProductPoleRestoration_XPATH");
 	   click("Productsimageclick3_XPATH");
