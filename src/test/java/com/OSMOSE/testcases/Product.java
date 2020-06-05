@@ -158,15 +158,26 @@ public class Product extends BaseTest{
         Assert.assertEquals(Page.getText("SearcchResultSingleAlphabet_LINKTEXT1"),"Dummy2 - MITC-FUME®");
         }
     
-	/*
-	 * @Test(dataProviderClass = Utilities.class,dataProvider ="dp",description =
-	 * "Verify that User clicks on the Slider icon and Click on Crosss icon") public
-	 * void verifyTheSearchCrossButton(Hashtable<String,String> data) throws
-	 * InterruptedException { HomeOU ou= new HomeOU(); ProductPage pp =
-	 * ou.goProduct(); pp.clickSearch();
-	 * Page.driver.findElement(By.id("searchInput")).clear();
-	 * Page.type("PSearch_ID",data.get("SearchItem")); Page.click(""); }
-	 */
+	
+	 @Test(dataProviderClass = Utilities.class,dataProvider ="dp",description =	  "Verify that User clicks on the Slider icon and Click on Crosss icon")
+	 public void verifyTheSearchCrossButton(Hashtable<String,String> data) throws InterruptedException { 
+		 HomeOU ou= new HomeOU(); 
+		 ProductPage pp =  ou.goProduct(); 
+		 pp.clickSearch();
+		 Page.driver.findElement(By.id("searchInput")).clear();
+	     Page.type("PSearch_ID",data.get("SearchItem")); 
+	     Page.click("SearchCrossIcon_CSS"); 
+	     }
+	 
+	 @Test(dataProviderClass = Utilities.class,dataProvider ="dp",description =	  "Verify that User clicks on the Slider icon and validate the validation message is shown wrong input")
+	 public void verifyTheValidationmessage(Hashtable<String,String> data) throws InterruptedException { 
+		 HomeOU ou= new HomeOU(); 
+		 ProductPage pp =  ou.goProduct(); 
+		 pp.clickSearch();
+	  Page.driver.findElement(By.id("searchInput")).clear();
+	  Page.type("PSearch_ID",data.get("SearchItem")); 
+	  Assert.assertEquals(Page.getText("Validationmessage_XPATH"),"No products match your search.");
+	  }
      
     @Test(priority = 13)
     public void VerifyProductclick() throws InterruptedException {
