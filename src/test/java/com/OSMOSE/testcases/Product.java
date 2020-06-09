@@ -116,7 +116,7 @@ public class Product extends BaseTest{
     }
     
     @Test(dataProviderClass = Utilities.class,dataProvider ="dp",description = "Verify that User clicks on the Slider icon and search for firstname Pole")
-    public void verifyTheSearchfirstname(Hashtable<String,String> data) throws InterruptedException {
+    public void verifyTheSearchFirstName(Hashtable<String,String> data) throws InterruptedException {
         HomeOU ou= new HomeOU();
         ProductPage pp = ou.goProduct();
         pp.clickSearch();
@@ -132,7 +132,7 @@ public class Product extends BaseTest{
     }
     
     @Test(dataProviderClass = Utilities.class,dataProvider ="dp",description = "Verify that User clicks on the Slider icon and search for full name Pole Restoration")
-    public void verifyTheSearchFullname(Hashtable<String,String> data) throws InterruptedException {
+    public void verifyTheSearchFullName(Hashtable<String,String> data) throws InterruptedException {
         HomeOU ou= new HomeOU();
         ProductPage pp = ou.goProduct();
         pp.clickSearch();
@@ -169,7 +169,7 @@ public class Product extends BaseTest{
 	 */
      
     @Test(priority = 13)
-    public void VerifyProductclick() throws InterruptedException {
+    public void VerifyProductClick() throws InterruptedException {
         HomeOU ou= new HomeOU();
         ProductPage pp = ou.goProduct();
         pp.clickOnProductFeatureImage();
@@ -186,7 +186,7 @@ public class Product extends BaseTest{
 }
     
     @Test(priority = 14,enabled=false)
-    public void AddQuantityandverifyCellNumber() throws InterruptedException {
+    public void AddQuantityAndVerifyCellNumber() throws InterruptedException {
         HomeOU ou= new HomeOU();
         ProductPage pp = ou.goProduct();
         pp.clickOnProductImage();
@@ -208,7 +208,6 @@ public class Product extends BaseTest{
         Thread.sleep(100);
         pp.switchToparentWindow();
         Page.driver.navigate().back();
-  
         pp.clickOnProductImage();
         System.out.println("second is clicked");
         pp.ProductPoleRestoration_1();
@@ -222,7 +221,7 @@ public class Product extends BaseTest{
         Assert.assertEquals(Page.getText("FeaturedProductsCellNumber_XPATH"),"(770) 632-6700 Option 3");
         Thread.sleep(10);
         pp.ProductPoleRestoration_3();
-         Assert.assertEquals(Page.getText("FeaturedProductsCellNumber_XPATH"),"(770) 632-6700 Option 3");
+        Assert.assertEquals(Page.getText("FeaturedProductsCellNumber_XPATH"),"(770) 632-6700 Option 3");
     }
     
 }
