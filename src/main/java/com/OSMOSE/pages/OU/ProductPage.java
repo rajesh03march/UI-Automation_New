@@ -108,6 +108,12 @@ public class ProductPage extends Page {
        click("ProductAddButton_XPATH");
        click("ProductPoleRestorationDummy4Link_XPATH");
    }
+
+
+
+
+
+
    }
    
    
