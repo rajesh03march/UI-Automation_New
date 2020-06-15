@@ -4,9 +4,9 @@
            failures="5"
            errors="0"
            skipped="4"
-           time="408.122">
+           time="404.624">
   <properties />
-            <testcase name="verifyLiveEventsSTS" time="62.256" classname="com.OSMOSE.testcases.OULogin">
+            <testcase name="verifyLiveEventsSTS" time="62.229" classname="com.OSMOSE.testcases.OULogin">
                 <failure type="org.openqa.selenium.NoSuchElementException"
                   message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;/html/body/section/div/div/div/h3[2]/strong&quot;}
   (Session info: chrome=83.0.4103.97)
@@ -14,8 +14,8 @@ For documentation on this error, please visit: http://seleniumhq.org/exceptions/
 Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
 System info: host: &apos;IND-5CG6191Y3W&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_161&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.97, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Windows\Temp\scoped_dir7...}, goog:chromeOptions: {debuggerAddress: localhost:54256}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: none, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: b52f30f236db88f814d42cf56b401ad0
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.97, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Windows\Temp\scoped_dir7...}, goog:chromeOptions: {debuggerAddress: localhost:50045}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: none, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: a92cf53330373706b29fbb6d3535007e
 *** Element info: {Using=xpath, value=/html/body/section/div/div/div/h3[2]/strong}"
               >
 <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/section/div/div/div/h3[2]/strong"}
@@ -24,8 +24,8 @@ For documentation on this error, please visit: http://seleniumhq.org/exceptions/
 Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
 System info: host: 'IND-5CG6191Y3W', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_161'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.97, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Windows\Temp\scoped_dir7...}, goog:chromeOptions: {debuggerAddress: localhost:54256}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: none, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: b52f30f236db88f814d42cf56b401ad0
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.97, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Windows\Temp\scoped_dir7...}, goog:chromeOptions: {debuggerAddress: localhost:50045}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: none, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: a92cf53330373706b29fbb6d3535007e
 *** Element info: {Using=xpath, value=/html/body/section/div/div/div/h3[2]/strong}
   sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
   sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
@@ -75,7 +75,7 @@ Session ID: b52f30f236db88f814d42cf56b401ad0
       </failure>
 
           </testcase>
-            <testcase name="verifySteelStructuresProtected" time="62.048" classname="com.OSMOSE.testcases.OULogin">
+            <testcase name="verifySteelStructuresProtected" time="62.060" classname="com.OSMOSE.testcases.OULogin">
                 <failure type="org.openqa.selenium.NoSuchElementException"
                   message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;/html/body/section/div/div/div/div[4]/h3/strong&quot;}
   (Session info: chrome=83.0.4103.97)
@@ -83,8 +83,8 @@ For documentation on this error, please visit: http://seleniumhq.org/exceptions/
 Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
 System info: host: &apos;IND-5CG6191Y3W&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_161&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.97, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Windows\Temp\scoped_dir7...}, goog:chromeOptions: {debuggerAddress: localhost:54256}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: none, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: b52f30f236db88f814d42cf56b401ad0
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.97, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Windows\Temp\scoped_dir7...}, goog:chromeOptions: {debuggerAddress: localhost:50045}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: none, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: a92cf53330373706b29fbb6d3535007e
 *** Element info: {Using=xpath, value=/html/body/section/div/div/div/div[4]/h3/strong}"
               >
 <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/section/div/div/div/div[4]/h3/strong"}
@@ -93,8 +93,8 @@ For documentation on this error, please visit: http://seleniumhq.org/exceptions/
 Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
 System info: host: 'IND-5CG6191Y3W', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_161'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.97, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Windows\Temp\scoped_dir7...}, goog:chromeOptions: {debuggerAddress: localhost:54256}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: none, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: b52f30f236db88f814d42cf56b401ad0
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.97, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Windows\Temp\scoped_dir7...}, goog:chromeOptions: {debuggerAddress: localhost:50045}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: none, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: a92cf53330373706b29fbb6d3535007e
 *** Element info: {Using=xpath, value=/html/body/section/div/div/div/div[4]/h3/strong}
   sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
   sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
@@ -144,7 +144,7 @@ Session ID: b52f30f236db88f814d42cf56b401ad0
       </failure>
 
           </testcase>
-            <testcase name="verifyLiveEventsWPTS" time="62.110" classname="com.OSMOSE.testcases.OULogin">
+            <testcase name="verifyLiveEventsWPTS" time="62.130" classname="com.OSMOSE.testcases.OULogin">
                 <failure type="org.openqa.selenium.NoSuchElementException"
                   message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;/html/body/section/div/div/div/h3[3]/strong&quot;}
   (Session info: chrome=83.0.4103.97)
@@ -152,8 +152,8 @@ For documentation on this error, please visit: http://seleniumhq.org/exceptions/
 Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
 System info: host: &apos;IND-5CG6191Y3W&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_161&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.97, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Windows\Temp\scoped_dir7...}, goog:chromeOptions: {debuggerAddress: localhost:54256}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: none, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: b52f30f236db88f814d42cf56b401ad0
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.97, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Windows\Temp\scoped_dir7...}, goog:chromeOptions: {debuggerAddress: localhost:50045}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: none, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: a92cf53330373706b29fbb6d3535007e
 *** Element info: {Using=xpath, value=/html/body/section/div/div/div/h3[3]/strong}"
               >
 <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/section/div/div/div/h3[3]/strong"}
@@ -162,8 +162,8 @@ For documentation on this error, please visit: http://seleniumhq.org/exceptions/
 Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
 System info: host: 'IND-5CG6191Y3W', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_161'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.97, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Windows\Temp\scoped_dir7...}, goog:chromeOptions: {debuggerAddress: localhost:54256}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: none, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: b52f30f236db88f814d42cf56b401ad0
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.97, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Windows\Temp\scoped_dir7...}, goog:chromeOptions: {debuggerAddress: localhost:50045}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: none, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: a92cf53330373706b29fbb6d3535007e
 *** Element info: {Using=xpath, value=/html/body/section/div/div/div/h3[3]/strong}
   sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
   sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
@@ -213,7 +213,7 @@ Session ID: b52f30f236db88f814d42cf56b401ad0
       </failure>
 
           </testcase>
-            <testcase name="verifyLiveEventsJUS" time="62.145" classname="com.OSMOSE.testcases.OULogin">
+            <testcase name="verifyLiveEventsJUS" time="62.099" classname="com.OSMOSE.testcases.OULogin">
                 <failure type="org.openqa.selenium.NoSuchElementException"
                   message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;/html/body/section/div/div/div/h3[1]/strong&quot;}
   (Session info: chrome=83.0.4103.97)
@@ -221,8 +221,8 @@ For documentation on this error, please visit: http://seleniumhq.org/exceptions/
 Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
 System info: host: &apos;IND-5CG6191Y3W&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_161&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.97, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Windows\Temp\scoped_dir7...}, goog:chromeOptions: {debuggerAddress: localhost:54256}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: none, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: b52f30f236db88f814d42cf56b401ad0
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.97, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Windows\Temp\scoped_dir7...}, goog:chromeOptions: {debuggerAddress: localhost:50045}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: none, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: a92cf53330373706b29fbb6d3535007e
 *** Element info: {Using=xpath, value=/html/body/section/div/div/div/h3[1]/strong}"
               >
 <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/section/div/div/div/h3[1]/strong"}
@@ -231,8 +231,8 @@ For documentation on this error, please visit: http://seleniumhq.org/exceptions/
 Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
 System info: host: 'IND-5CG6191Y3W', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_161'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.97, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Windows\Temp\scoped_dir7...}, goog:chromeOptions: {debuggerAddress: localhost:54256}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: none, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: b52f30f236db88f814d42cf56b401ad0
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.97, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Windows\Temp\scoped_dir7...}, goog:chromeOptions: {debuggerAddress: localhost:50045}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: none, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: a92cf53330373706b29fbb6d3535007e
 *** Element info: {Using=xpath, value=/html/body/section/div/div/div/h3[1]/strong}
   sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
   sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
@@ -290,8 +290,8 @@ For documentation on this error, please visit: http://seleniumhq.org/exceptions/
 Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
 System info: host: &apos;IND-5CG6191Y3W&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_161&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.97, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Windows\Temp\scoped_dir7...}, goog:chromeOptions: {debuggerAddress: localhost:54256}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: none, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: b52f30f236db88f814d42cf56b401ad0
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.97, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Windows\Temp\scoped_dir7...}, goog:chromeOptions: {debuggerAddress: localhost:50045}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: none, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: a92cf53330373706b29fbb6d3535007e
 *** Element info: {Using=xpath, value=//*[@id=&quot;ddlUpcoming&quot;]}"
               >
 <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="ddlUpcoming"]"}
@@ -300,8 +300,8 @@ For documentation on this error, please visit: http://seleniumhq.org/exceptions/
 Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
 System info: host: 'IND-5CG6191Y3W', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_161'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.97, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Windows\Temp\scoped_dir7...}, goog:chromeOptions: {debuggerAddress: localhost:54256}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: none, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: b52f30f236db88f814d42cf56b401ad0
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.97, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Windows\Temp\scoped_dir7...}, goog:chromeOptions: {debuggerAddress: localhost:50045}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: none, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: a92cf53330373706b29fbb6d3535007e
 *** Element info: {Using=xpath, value=//*[@id="ddlUpcoming"]}
   sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
   sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
@@ -366,16 +366,16 @@ Session ID: b52f30f236db88f814d42cf56b401ad0
           <skipped />
     </testcase>
   
-            <testcase name="verifyWebinarsClick" time="12.255" classname="com.OSMOSE.testcases.OULogin" />
-                <testcase name="verifyOUCard" time="2.361" classname="com.OSMOSE.testcases.OULogin" />
-                <testcase name="verifyHyperlinks" time="0.156" classname="com.OSMOSE.testcases.OULogin" />
-                <testcase name="verifyProductCard" time="0.050" classname="com.OSMOSE.testcases.OULogin" />
-                <testcase name="verifyLiveEventCLick" time="12.427" classname="com.OSMOSE.testcases.OULogin" />
-                <testcase name="verifyOCalcClick" time="12.267" classname="com.OSMOSE.testcases.OULogin" />
-                <testcase name="loginTest" time="19.989" classname="com.OSMOSE.testcases.OULogin" />
-                <testcase name="verifyClickingTheWebinars" time="12.128" classname="com.OSMOSE.testcases.OULogin" />
-                <testcase name="verifyOClacTrainingButton" time="13.412" classname="com.OSMOSE.testcases.OULogin" />
-                <testcase name="verifyVideoLinks" time="0.096" classname="com.OSMOSE.testcases.OULogin" />
-                <testcase name="clickOnOuLink" time="12.367" classname="com.OSMOSE.testcases.OULogin" />
+            <testcase name="verifyWebinarsClick" time="12.237" classname="com.OSMOSE.testcases.OULogin" />
+                <testcase name="verifyOUCard" time="2.524" classname="com.OSMOSE.testcases.OULogin" />
+                <testcase name="verifyHyperlinks" time="0.129" classname="com.OSMOSE.testcases.OULogin" />
+                <testcase name="verifyProductCard" time="0.044" classname="com.OSMOSE.testcases.OULogin" />
+                <testcase name="verifyLiveEventCLick" time="12.390" classname="com.OSMOSE.testcases.OULogin" />
+                <testcase name="verifyOCalcClick" time="12.229" classname="com.OSMOSE.testcases.OULogin" />
+                <testcase name="loginTest" time="16.600" classname="com.OSMOSE.testcases.OULogin" />
+                <testcase name="verifyClickingTheWebinars" time="12.112" classname="com.OSMOSE.testcases.OULogin" />
+                <testcase name="verifyOClacTrainingButton" time="13.377" classname="com.OSMOSE.testcases.OULogin" />
+                <testcase name="verifyVideoLinks" time="0.120" classname="com.OSMOSE.testcases.OULogin" />
+                <testcase name="clickOnOuLink" time="12.289" classname="com.OSMOSE.testcases.OULogin" />
       
 </testsuite>
