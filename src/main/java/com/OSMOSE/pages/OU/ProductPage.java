@@ -1,5 +1,6 @@
 package com.OSMOSE.pages.OU;
 
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
@@ -27,7 +28,9 @@ public class ProductPage extends Page {
     }
     public void clickSearch() throws InterruptedException {
         Thread.sleep(12000);
-       click("PSearch_ID");
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+        js.executeScript("window.scrollBy(683,0)");
+       click("PSearch_XPATH");
     }
     public void clickCatalogItem() throws InterruptedException {
         Thread.sleep(12000);
@@ -70,7 +73,25 @@ public class ProductPage extends Page {
        click("ProductAddButton_XPATH");
        click("LinkProductDetail_LINKTEXT");
    }
+   public void ProductReturnPolicy() throws InterruptedException {
+	   click("ProductPoleRestoration_XPATH");
+	   click("ProductPoleRestorationCTruss_XPATH");
+	   selectbyindex("ProductSizeDropdown_XPATH",1);
+       type("ProductSizeEnterQuantity_XPATH", "8");
+       click("ProductAddButton_XPATH");
+       click("ProductViewCartButton_XPATH");
+       
+   }
    
+   public void AddToCartProductPoleRestoration() throws InterruptedException {
+	   click("ProductPoleRestoration_XPATH");
+	   click("ProductPoleRestorationCTruss_XPATH");
+	   selectbyindex("ProductSizeDropdown_XPATH",1);
+       type("ProductSizeEnterQuantity_XPATH", "8");
+       click("ProductAddButton_XPATH");
+       click("");
+   }
+
       
    public void ProductSearchFirstname() throws InterruptedException {
 	   click("PoleTopperProductSearch_LINKTEXT");
@@ -108,6 +129,8 @@ public class ProductPage extends Page {
        click("ProductAddButton_XPATH");
        click("ProductPoleRestorationDummy4Link_XPATH");
    }
+
+
    }
    
    
