@@ -245,7 +245,7 @@ public class Product extends BaseTest{
 	        Assert.assertEquals(Page.getText("ReturnProceduretext_XPATH"), "Return Procedure");
 	        
 	    }
-	 @Test(priority = 22)
+	 @Test(priority = 23)
 	    public void AddShoppingCart() throws InterruptedException {
 	        HomeOU ou= new HomeOU();
 	        ProductPage pp = ou.goProduct();
