@@ -250,8 +250,18 @@ public class Product extends BaseTest{
 	        HomeOU ou= new HomeOU();
 	        ProductPage pp = ou.goProduct();
 	        pp.AddToCartProductPoleRestoration();
-	        
-	        
+            Assert.assertEquals(Page.getText("ProductsQuoterequest_XPATH"), "Quote Request");
+	    }
+	 
+	 @Test(priority = 23)
+	    public void verifyAddShoppingCarttext() throws InterruptedException {
+	        HomeOU ou= new HomeOU();
+	        ProductPage pp = ou.goProduct();
+	        pp.AddToCartProductPoleRestoration();
+         Assert.assertEquals(Page.getText("ProductsQuoterequest_XPATH"), " Quote requests are processed within ");
+         Assert.assertEquals(Page.getText("ForInfoQuoteRequest_XPATH"), " For information or to place an order ");
+         Assert.assertEquals(Page.getText("ForCallRequest_XPATH"), " CALL: (770) 632-6700 Option 3 ");
+         Assert.assertEquals(Page.getText("ForEmailQuoteRequest_XPATH"),"EMAIL: products@osmose.com"); 
 	    }
     
 }
