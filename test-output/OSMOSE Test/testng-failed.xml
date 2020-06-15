@@ -34,6 +34,7 @@
           <include name="tearDown"/>
           <include name="VerifyFPImageClick"/>
           <include name="AddQuantityandverifyCellNumber"/>
+          <include name="AddShoppingCart"/>
           <include name="adminElementPresent"/>
           <include name="shoppingCartElementPresent"/>
           <include name="verifyTheSearchCrossButton"/>
