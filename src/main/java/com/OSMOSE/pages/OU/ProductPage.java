@@ -37,7 +37,7 @@ public class ProductPage extends Page {
         click("CatalogItem_XPATH");
     }
     public void clickOnProductImage() throws InterruptedException {
-        Thread.sleep(12000);
+        Thread.sleep(15000);
         click("HeadingProducts_LINKTEXT");
     }
     public void clickOnViewDetails(String locator) throws InterruptedException {
@@ -51,18 +51,19 @@ public class ProductPage extends Page {
     }
 
     public void clickOnProductFeatureImage() throws InterruptedException {
-        Thread.sleep(12000);
+        Thread.sleep(1000);
         driver.navigate().back();
         click("Productsimageclick_XPATH");
            
     }
     
     public void AddQuantityInCart_AssertCellNumber() throws InterruptedException {
-        Thread.sleep(12000);
-        select("ProductSizeDropdown_XPATH","72-020-009-100 PR - C2-3611");
+        Thread.sleep(1000);
+        selectbyindex("ProductSizeDropdown_XPATH",1);
         type("ProductSizeEnterQuantity_XPATH", "8");
         click("ProductAddButton_XPATH");
-        click("LinkProductDetail_LINKTEXT");
+        Thread.sleep(500);
+        //click("LinkProductDetail_LINKTEXT");
     }
     
    public void ProductPoleRestoration() throws InterruptedException {
@@ -71,34 +72,71 @@ public class ProductPage extends Page {
 	   selectbyindex("ProductSizeDropdown_XPATH",1);
        type("ProductSizeEnterQuantity_XPATH", "8");
        click("ProductAddButton_XPATH");
-       click("LinkProductDetail_LINKTEXT");
+       Thread.sleep(500);
+       //click("LinkProductDetail_LINKTEXT");
    }
    public void ProductReturnPolicy() throws InterruptedException {
+	   Thread.sleep(1000);
 	   click("ProductPoleRestoration_XPATH");
+	   Thread.sleep(1000);
 	   click("ProductPoleRestorationCTruss_XPATH");
 	   selectbyindex("ProductSizeDropdown_XPATH",1);
        type("ProductSizeEnterQuantity_XPATH", "8");
+       click("ProductAddButton_XPATH");
+	   click("ProductViewCartButton_XPATH");
+	   click("SubmitQuoteRequest_XPATH");
+       click("ReturnPolicy_XPATH");
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+		 js.executeScript("window.scrollBy(-268,487)");
+		 //Page.scrollbyjavaexecutor(-268, 487);
+       click("CrossicononReturnPolicy_XPATH");
+       click("ReturnPolicy_XPATH");
+       click("CrossicononReturnPolicy_XPATH");
+       
+       
+   }
+   
+   public static void clickRequestCrossicon() {
+   click("QuoteRequestCrossicon_XPATH");
+   }
+   
+   public void AddToCartProductPoleRestoration() throws InterruptedException {
+	   clickRequestCrossicon();
+	   click("ProductPoleRestoration_XPATH");
+	   Thread.sleep(1000);
+	   click("ProductPoleRestoration_XPATH");
+	   click("ProductPoleRestorationCTruss_XPATH");
+	   selectbyindex("ProductSizeDropdown_XPATH",2);
+       type("ProductSizeEnterQuantity_XPATH", "8");
+       click("ProductAddButton_XPATH");
+	   click("ProductViewCartButton_XPATH");
+       click("ContiuneSHoppingButton_XPATH");
+       Thread.sleep(1000);
+       click("ProductPoleRestorationDummy3_XPATH");
+	   selectbyindex("ProductSizeDropdown_XPATH",1);
+       type("ProductSizeEnterQuantity_XPATH", "28");
        click("ProductAddButton_XPATH");
        click("ProductViewCartButton_XPATH");
        
    }
-   
-   public void AddToCartProductPoleRestoration() throws InterruptedException {
+
+   public void AddToCartShoppingCart() throws InterruptedException {
+	   click("ProductPoleRestoration_XPATH");
+	   Thread.sleep(1000);
 	   click("ProductPoleRestoration_XPATH");
 	   click("ProductPoleRestorationCTruss_XPATH");
-	   selectbyindex("ProductSizeDropdown_XPATH",1);
+	   selectbyindex("ProductSizeDropdown_XPATH",2);
        type("ProductSizeEnterQuantity_XPATH", "8");
        click("ProductAddButton_XPATH");
-       click("");
+	   click("ProductViewCartButton_XPATH");
    }
-
-      
+   
    public void ProductSearchFirstname() throws InterruptedException {
-	   click("PoleTopperProductSearch_LINKTEXT");
+	   click("PoleTopperProductSearch_XPATH");
 	   selectbyindex("ProductSizeDropdown_XPATH",1);
        type("ProductSizeEnterQuantity_XPATH", "8");
        click("ProductAddButton_XPATH");
-       click("LinkProductDetail_LINKTEXT");
+       click("PoleTopperCancelicon_XPATH");
    }
    public void ProductPoleRestoration_1() throws InterruptedException {
        click("ProductPoleRestoration_XPATH");
@@ -107,7 +145,7 @@ public class ProductPage extends Page {
 	   selectbyindex("ProductSizeDropdown_XPATH",1);
        type("ProductSizeEnterQuantity_XPATH", "8");
        click("ProductAddButton_XPATH");
-       //click("LinkOsmoProductDetail_LINKTEXT");
+       click("LinkOsmoProductDetail_LINKTEXT");
    }
    
    public void ProductPoleRestoration_2() throws InterruptedException {
@@ -131,6 +169,19 @@ public class ProductPage extends Page {
    }
 
 
+   public void AddToShoppingCart() throws InterruptedException {
+	   JavascriptExecutor js = (JavascriptExecutor) driver;
+		 js.executeScript("window.scrollBy(-925,114)");
+	   click("ProductPoleRestoration_XPATH");
+	   Thread.sleep(1000);
+	   click("ProductPoleRestoration_XPATH");
+	   click("ProductPoleRestorationCTruss_XPATH");
+	   selectbyindex("ProductSizeDropdown_XPATH",2);
+       type("ProductSizeEnterQuantity_XPATH", "8");
+       click("ProductAddButton_XPATH");
+	   click("ProductViewCartButton_XPATH");
+      
+   }
    }
    
    
