@@ -13,6 +13,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -56,7 +57,7 @@ public class Page {
 	 * 
 	 * 
 	 */
-
+	
 	public Page()  {
 
 		if (driver == null) {
@@ -172,6 +173,9 @@ public class Page {
 
 	}
 	
+	
+	
+	
 	public static void scrollbyjavaexecutor(int X, int Y) {
 		JavascriptExecutor js = (JavascriptExecutor) driver;
 	       js.executeScript("window.scrollBy(X,Y)");
@@ -192,6 +196,22 @@ public class Page {
 		test.log(LogStatus.INFO, "Clicking on : " + locator);
 	}
 
+	public static void clear(String locator) {
+
+		if (locator.endsWith("_CSS")) {
+			driver.findElement(By.cssSelector(OR.getProperty(locator))).clear();
+		} else if (locator.endsWith("_XPATH")) {
+			driver.findElement(By.xpath(OR.getProperty(locator))).clear();
+		} else if (locator.endsWith("_ID")) {
+			driver.findElement(By.id(OR.getProperty(locator))).clear();
+		}else if (locator.endsWith("_LINKTEXT")) {
+			driver.findElement(By.linkText(OR.getProperty(locator))).clear();
+		}
+		log.debug("clearing on an Element : "+locator);
+		test.log(LogStatus.INFO, "clearing on : " + locator);
+	}
+	
+	
 	public static void type(String locator, String value) {
 
 		if (locator.endsWith("_CSS")) {
@@ -434,6 +454,28 @@ public class Page {
 		driver.navigate().back();
 
 	}
+	
+	static WebElement act;
+	
+	public static void ClickActions(String locator) {
+
+		
+		if (locator.endsWith("_CSS")) {
+			act = driver.findElement(By.cssSelector(OR.getProperty(locator)));
+		} else if (locator.endsWith("_XPATH")) {
+			act = driver.findElement(By.xpath(OR.getProperty(locator)));
+		} else if (locator.endsWith("_ID")) {
+			act = driver.findElement(By.id(OR.getProperty(locator)));
+		}
+		
+		Actions action = new Actions(driver);
+		action.moveToElement(act).click().build().perform();
+		log.debug("Selecting from an element : "+locator);
+		test.log(LogStatus.INFO, "Selecting from dropdown : " + locator );
+
+	}
+ 		
+
 
 
 

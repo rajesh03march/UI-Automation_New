@@ -1,5 +1,6 @@
 package com.OSMOSE.pages.OU;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
@@ -30,7 +31,8 @@ public class ProductPage extends Page {
         Thread.sleep(12000);
         JavascriptExecutor js = (JavascriptExecutor) driver;
         js.executeScript("window.scrollBy(683,0)");
-       click("PSearch_XPATH");
+       //click("PSearch_XPATH");
+      ClickActions("PSearch_XPATH");
     }
     public void clickCatalogItem() throws InterruptedException {
         Thread.sleep(12000);
@@ -60,6 +62,8 @@ public class ProductPage extends Page {
     public void AddQuantityInCart_AssertCellNumber() throws InterruptedException {
         Thread.sleep(1000);
         selectbyindex("ProductSizeDropdown_XPATH",1);
+        click("ProductSizeEnterQuantity_XPATH");
+        clear("ProductSizeEnterQuantity_XPATH");
         type("ProductSizeEnterQuantity_XPATH", "8");
         click("ProductAddButton_XPATH");
         Thread.sleep(500);
@@ -70,6 +74,8 @@ public class ProductPage extends Page {
 	   click("ProductPoleRestoration_XPATH");
 	   click("ProductPoleRestorationCTruss_XPATH");
 	   selectbyindex("ProductSizeDropdown_XPATH",1);
+	   click("ProductSizeEnterQuantity_XPATH");
+	   clear("ProductSizeEnterQuantity_XPATH");
        type("ProductSizeEnterQuantity_XPATH", "8");
        click("ProductAddButton_XPATH");
        Thread.sleep(500);
@@ -81,16 +87,21 @@ public class ProductPage extends Page {
 	   Thread.sleep(1000);
 	   click("ProductPoleRestorationCTruss_XPATH");
 	   selectbyindex("ProductSizeDropdown_XPATH",1);
+	   click("ProductSizeEnterQuantity_XPATH");
+	   clear("ProductSizeEnterQuantity_XPATH");
        type("ProductSizeEnterQuantity_XPATH", "8");
        click("ProductAddButton_XPATH");
 	   click("ProductViewCartButton_XPATH");
 	   click("SubmitQuoteRequest_XPATH");
        click("ReturnPolicy_XPATH");
-		JavascriptExecutor js = (JavascriptExecutor) driver;
-		 js.executeScript("window.scrollBy(-268,487)");
+       Thread.sleep(1000);
+       scrollDownBYWebelemnt(Page.driver.findElement(By.xpath("//*[@id=\"returnPolicy___BV_modal_body_\"]/div/div/button")));
 		 //Page.scrollbyjavaexecutor(-268, 487);
+       Thread.sleep(1000);
        click("CrossicononReturnPolicy_XPATH");
+       Thread.sleep(1000);
        click("ReturnPolicy_XPATH");
+       Thread.sleep(1000);
        click("CrossicononReturnPolicy_XPATH");
        
        
@@ -102,21 +113,30 @@ public class ProductPage extends Page {
    
    public void AddToCartProductPoleRestoration() throws InterruptedException {
 	   clickRequestCrossicon();
-	   click("ProductPoleRestoration_XPATH");
 	   Thread.sleep(1000);
 	   click("ProductPoleRestoration_XPATH");
-	   click("ProductPoleRestorationCTruss_XPATH");
-	   selectbyindex("ProductSizeDropdown_XPATH",2);
+	   Thread.sleep(1000);
+	   //click("ProductPoleRestoration_XPATH");
+	   
+	   click("ProductPoleRestorationDummy3_XPATH");
+	   selectbyindex("ProductSizeDropdown_XPATH",1);
+	   click("ProductSizeEnterQuantity_XPATH");
+	   clear("ProductSizeEnterQuantity_XPATH");
        type("ProductSizeEnterQuantity_XPATH", "8");
        click("ProductAddButton_XPATH");
 	   click("ProductViewCartButton_XPATH");
        click("ContiuneSHoppingButton_XPATH");
        Thread.sleep(1000);
-       click("ProductPoleRestorationDummy3_XPATH");
+	   click("ProductPoleRestoration1Dummy3_XPATH");
 	   selectbyindex("ProductSizeDropdown_XPATH",1);
-       type("ProductSizeEnterQuantity_XPATH", "28");
+	   click("ProductSizeEnterQuantity_XPATH");
+	   clear("ProductSizeEnterQuantity_XPATH");
+       type("ProductSizeEnterQuantity_XPATH", "8");
        click("ProductAddButton_XPATH");
-       click("ProductViewCartButton_XPATH");
+	   click("ProductViewCartButton_XPATH");
+       click("ContiuneSHoppingButton_XPATH");
+		
+
        
    }
 
@@ -126,6 +146,8 @@ public class ProductPage extends Page {
 	   click("ProductPoleRestoration_XPATH");
 	   click("ProductPoleRestorationCTruss_XPATH");
 	   selectbyindex("ProductSizeDropdown_XPATH",2);
+	   click("ProductSizeEnterQuantity_XPATH");
+	   clear("ProductSizeEnterQuantity_XPATH");
        type("ProductSizeEnterQuantity_XPATH", "8");
        click("ProductAddButton_XPATH");
 	   click("ProductViewCartButton_XPATH");
@@ -134,6 +156,8 @@ public class ProductPage extends Page {
    public void ProductSearchFirstname() throws InterruptedException {
 	   click("PoleTopperProductSearch_XPATH");
 	   selectbyindex("ProductSizeDropdown_XPATH",1);
+	   click("ProductSizeEnterQuantity_XPATH");
+	   clear("ProductSizeEnterQuantity_XPATH");
        type("ProductSizeEnterQuantity_XPATH", "8");
        click("ProductAddButton_XPATH");
        click("PoleTopperCancelicon_XPATH");
@@ -143,6 +167,8 @@ public class ProductPage extends Page {
 	   click("Productsimageclick3_XPATH");
 	   Thread.sleep(30);
 	   selectbyindex("ProductSizeDropdown_XPATH",1);
+	   click("ProductSizeEnterQuantity_XPATH");
+	   clear("ProductSizeEnterQuantity_XPATH");
        type("ProductSizeEnterQuantity_XPATH", "8");
        click("ProductAddButton_XPATH");
        click("LinkOsmoProductDetail_LINKTEXT");
@@ -153,6 +179,8 @@ public class ProductPage extends Page {
 	   click("ProductPoleRestorationDummy3_XPATH");
 	   Thread.sleep(30);
 	   selectbyindex("ProductSizeDropdown_XPATH",1);
+	   click("ProductSizeEnterQuantity_XPATH");
+	   clear("ProductSizeEnterQuantity_XPATH");
        type("ProductSizeEnterQuantity_XPATH", "8");
        click("ProductAddButton_XPATH");
        click("ProductPoleRestorationDummy3Link_XPATH");
@@ -163,6 +191,8 @@ public class ProductPage extends Page {
 	   click("ProductPoleRestorationDummy4_XPATH");
 	   Thread.sleep(50);
 	   selectbyindex("ProductSizeDropdown_XPATH",1);
+	   click("ProductSizeEnterQuantity_XPATH");
+	   clear("ProductSizeEnterQuantity_XPATH");
        type("ProductSizeEnterQuantity_XPATH", "8");
        click("ProductAddButton_XPATH");
        click("ProductPoleRestorationDummy4Link_XPATH");
@@ -170,17 +200,63 @@ public class ProductPage extends Page {
 
 
    public void AddToShoppingCart() throws InterruptedException {
-	   JavascriptExecutor js = (JavascriptExecutor) driver;
-		 js.executeScript("window.scrollBy(-925,114)");
+//	   JavascriptExecutor js = (JavascriptExecutor) driver;
+//		 js.executeScript("window.scrollBy(-925,114)");
+	   //scrollbyjavaexecutor(-925,114);
 	   click("ProductPoleRestoration_XPATH");
 	   Thread.sleep(1000);
 	   click("ProductPoleRestoration_XPATH");
 	   click("ProductPoleRestorationCTruss_XPATH");
 	   selectbyindex("ProductSizeDropdown_XPATH",2);
+	   click("ProductSizeEnterQuantity_XPATH");
+	   clear("ProductSizeEnterQuantity_XPATH");
        type("ProductSizeEnterQuantity_XPATH", "8");
        click("ProductAddButton_XPATH");
 	   click("ProductViewCartButton_XPATH");
       
+   }
+   
+   public void DeleteQuanityinShoppingCart() throws InterruptedException {
+	   click("ProductPoleRestoration_XPATH");
+	   Thread.sleep(1000);
+	   click("ProductPoleRestorationCTruss_XPATH");
+	   selectbyindex("ProductSizeDropdown_XPATH",1);
+	   click("ProductSizeEnterQuantity_XPATH");
+	   clear("ProductSizeEnterQuantity_XPATH");
+       type("ProductSizeEnterQuantity_XPATH", "8");
+       click("ProductAddButton_XPATH");
+	   click("ProductViewCartButton_XPATH");
+	   Thread.sleep(1000);
+	   click("DeleteShoppingCart_XPATH");
+   }
+   public void UpdateIncreaseQuanityinShoppingCart() throws InterruptedException {
+	   click("ContiuneSHoppingButton_XPATH");
+	   click("ProductPoleRestoration_XPATH");
+	   Thread.sleep(1000);
+	   click("ProductPoleRestorationCTruss_XPATH");
+	   selectbyindex("ProductSizeDropdown_XPATH",1);
+	   click("ProductSizeEnterQuantity_XPATH");
+	   clear("ProductSizeEnterQuantity_XPATH");
+       type("ProductSizeEnterQuantity_XPATH", "8");
+       click("ProductAddButton_XPATH");
+	   click("ProductViewCartButton_XPATH");
+	   Thread.sleep(1000);
+	  click("PlusicononShoppingCart_XPATH");
+   }
+   
+   public void UpdateDecreaseQuanityinShoppingCart() throws InterruptedException {
+	   click("ContiuneSHoppingButton_XPATH");
+	   click("ProductPoleRestoration_XPATH");
+	   Thread.sleep(1000);
+	   click("ProductPoleRestorationDummy3_XPATH");
+	   selectbyindex("ProductSizeDropdown_XPATH",1);
+	   click("ProductSizeEnterQuantity_XPATH");
+	   clear("ProductSizeEnterQuantity_XPATH");
+       type("ProductSizeEnterQuantity_XPATH", "8");
+       click("ProductAddButton_XPATH");
+	   click("ProductViewCartButton_XPATH");
+	   Thread.sleep(2000);
+	  click("MinusicononShoppingCart_XPATH");
    }
    }
    

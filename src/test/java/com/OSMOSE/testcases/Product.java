@@ -99,7 +99,7 @@ public class Product extends BaseTest{
        Assert.assertEquals(Page.getText("ProductAddButton_XPATH"),"ADD");
         Page.click("CloseButton_CSS");
     }
-    @Test(priority = 12,dependsOnMethods = "verifyTheProductLink",enabled = true)
+    @Test(priority = 12,dependsOnMethods = "verifyTheProductLink",enabled = false)
     public void verifyViewDetail() throws InterruptedException {
         HomeOU ou = new HomeOU();
         ProductPage pp = ou.goProduct();
@@ -181,15 +181,13 @@ public class Product extends BaseTest{
     	 HomeOU ou= new HomeOU();
          ProductPage pp = ou.goProduct();
          pp.clickSearch();
-         Actions act = new Actions(pp.driver);
- 		act.moveToElement(Page.driver.findElement(By.id("searchInput"))).click().build().perform();
          Page.type("PSearch_XPATH",data.get("SearchItem"));
-         Page.driver.findElement(By.id("searchInput")).sendKeys(Keys.ENTER);
-       Assert.assertEquals(Page.getText("PoleTopperProductSearch_LINKTEXT").contains("Pole"),"Pole Topper®");
-        Assert.assertEquals(Page.getText("SearcchResultPoleproductone_LINKTEXT").contains("Truss"),"C-Truss");
-      Assert.assertEquals(Page.getText("SearcchResultPoleproductTwo_LINKTEXT").contains("Truss"),"Osmo-C2-Truss®");
-      Assert.assertEquals(Page.getText("SearcchResultPoleproductThree_LINKTEXT").contains("Truss"),"Dummy3 - C-Truss");
-       Assert.assertEquals(Page.getText("SearcchResultPoleproductFour_LINKTEXT").contains("Truss"),"Dummy4 - Osmo-C2-Truss®");
+         Page.driver.findElement(By.id("searchInput")).sendKeys(Keys.ENTER);  
+       Assert.assertEquals(Page.getText("PoleTopperProductSearch_XPATH"),"Pole Topper®");
+       Assert.assertEquals(Page.getText("SearcchResultPoleproductone_XPATH"),"C-Truss");
+      Assert.assertEquals(Page.getText("SearcchResultPoleproductTwo_XPATH"),"Osmo-C2-Truss®");
+      Assert.assertEquals(Page.getText("SearcchResultPoleproductThree_XPATH"),"Dummy3 - C-Truss");
+      Assert.assertEquals(Page.getText("SearcchResultPoleproductFour_XPATH"),"Dummy4 - Osmo-C2-Truss®");
 
         pp.ProductSearchFirstname();
     }
@@ -199,16 +197,14 @@ public class Product extends BaseTest{
         HomeOU ou= new HomeOU();
         ProductPage pp = ou.goProduct();
         pp.clickSearch();
-        Actions act = new Actions(pp.driver);
-		act.moveToElement(Page.driver.findElement(By.id("searchInput"))).click().build().perform();
 		Page.driver.findElement(By.id("searchInput")).clear();
 		Page.type("PSearch_XPATH",data.get("SearchItem"));
         Page.driver.findElement(By.id("searchInput")).sendKeys(Keys.ENTER);
-        Assert.assertEquals(Page.getText("PoleTopperProductSearch_LINKTEXT").contains("Pole Topper"),"Pole Topper®");
-       Assert.assertEquals(Page.getText("SearcchResultPoleproductone_LINKTEXT").contains("C-Truss"),"C-Truss");
-       Assert.assertEquals(Page.getText("SearcchResultPoleproductTwo_LINKTEXT").contains("Osmo"),"Osmo-C2-Truss®");
-        Assert.assertEquals(Page.getText("SearcchResultPoleproductThree_LINKTEXT").contains("Dummy3"),"Dummy3 - C-Truss");
-        Assert.assertEquals(Page.getText("SearcchResultPoleproductFour_LINKTEXT").contains("Dummy4"),"Dummy4 - Osmo-C2-Truss®");
+        Assert.assertEquals(Page.getText("SearcchResultPoleproductone_XPATH"),"C-Truss");
+       Assert.assertEquals(Page.getText("SearcchResultPoleproductTwo_XPATH"),"Osmo-C2-Truss®");
+       Assert.assertEquals(Page.getText("SearcchResultPoleproductThree_XPATH"),"Dummy3 - C-Truss");
+       Assert.assertEquals(Page.getText("SearcchResultPoleproductFour_XPATH"),"Dummy4 - Osmo-C2-Truss®");
+
         
     
     }
@@ -218,13 +214,11 @@ public class Product extends BaseTest{
         HomeOU ou= new HomeOU();
         ProductPage pp = ou.goProduct();
         pp.clickSearch();
-        Actions act = new Actions(pp.driver);
-   		act.moveToElement(Page.driver.findElement(By.id("searchInput"))).click().build().perform();
         Page.driver.findElement(By.id("searchInput")).clear();
         Page.type("PSearch_XPATH",data.get("SearchItem"));
         Page.driver.findElement(By.id("searchInput")).sendKeys(Keys.ENTER);
-       Assert.assertEquals(Page.getText("SearcchResultSingleAlphabet_LINKTEXT").contains("MITC"),"MITC-FUME®");
-       Assert.assertEquals(Page.getText("SearcchResultSingleAlphabet_LINKTEXT1").contains("Dummy2"),"Dummy2 - MITC-FUME®");
+       Assert.assertEquals(Page.getText("SearcchResultSingleMITCAlphabet_XPATH"),"MITC-FUME®");
+       Assert.assertEquals(Page.getText("SearcchResultSingleAlphabet_XPATH"),"Dummy2 - MITC-FUME®");
         
     }
     
@@ -233,9 +227,8 @@ public class Product extends BaseTest{
 	 public void verifyTheSearchCrossButton(Hashtable<String,String> data) throws InterruptedException { 
 		 HomeOU ou= new HomeOU();
 	        ProductPage pp = ou.goProduct();
+	        Thread.sleep(2000);
 	        pp.clickSearch();
-	        Actions act = new Actions(pp.driver);
-	   		act.moveToElement(Page.driver.findElement(By.id("searchInput"))).click().build().perform();
 	        Page.driver.findElement(By.id("searchInput")).clear();
 	        Page.type("PSearch_XPATH",data.get("SearchItem"));
 	        Page.driver.findElement(By.id("searchInput")).sendKeys(Keys.ENTER); 
@@ -247,8 +240,6 @@ public class Product extends BaseTest{
 		 HomeOU ou= new HomeOU();
 	        ProductPage pp = ou.goProduct();
 	        pp.clickSearch();
-	        Actions act = new Actions(pp.driver);
-	   		act.moveToElement(Page.driver.findElement(By.id("searchInput"))).click().build().perform();
 	        Page.driver.findElement(By.id("searchInput")).clear();
 	        Page.type("PSearch_XPATH",data.get("SearchItem"));
 	        Page.driver.findElement(By.id("searchInput")).sendKeys(Keys.ENTER); 
@@ -268,7 +259,7 @@ public class Product extends BaseTest{
 	        //Assert.assertEquals(Page.getText("ReturnProceduretext_XPATH"), "Return Procedure");
 	        pp.clickRequestCrossicon();
 	    }
-	 @Test(priority = 24)
+	 @Test(priority = 24,enabled =false)
 	    public void AddShoppingCart() throws InterruptedException {
 	        HomeOU ou= new HomeOU();
 	        ProductPage pp = ou.goProduct();
@@ -288,21 +279,46 @@ public class Product extends BaseTest{
 	    }
     
 	 //Shopping Cart
-	 @Test(priority = 25)
+	 @Test(priority = 25,enabled =false)
 	    public void VerifyCrossicononhoppingCart() throws InterruptedException {
 	        HomeOU ou= new HomeOU();
 	        ProductPage pp = ou.goProduct();
 	        Thread.sleep(1000);
-         Assert.assertFalse((Page.isElementPresent(By.xpath("//*[@id=\"openMyCart___BV_modal_body_\"]/div/div[1]/div/div[1]/div/div/div/div/div[2]/div/div[3]/a/span/img"))));
+	        Assert.assertTrue((Page.isElementPresent(By.xpath("//*[@id=\"qty_5_906\"]"))));
 	    }
 	 
 	//Shopping Cart
-		 @Test(priority = 26)
+		 @Test(priority = 26,enabled = false)
 		    public void VerifyCrossicononhoppingCart_Sameitem_multipletime() throws InterruptedException {
 		        HomeOU ou= new HomeOU();
 		        ProductPage pp = ou.goProduct();
 		        pp.AddToCartProductPoleRestoration();
 		        Thread.sleep(1000);
-	         Assert.assertTrue((Page.isElementPresent(By.xpath("//*[@id=\"openMyCart___BV_modal_body_\"]/div/div[1]/div/div[1]/div/div/div/div/div[2]/div/div[3]/a/span/img"))));
+	        // Assert.assertTrue((Page.isElementPresent(By.xpath("//*[@id=\"qty_5_906\"]"))));
+	        //Assert.assertEquals(Page.getText("QuantityfieldonShoppingCart_XPATH"), "16");
 		    }
+		 
+		 @Test(priority = 27)
+		    public void DeleteQuanityinShoppingCart() throws InterruptedException {
+		        HomeOU ou= new HomeOU();
+		        ProductPage pp = ou.goProduct();
+		        Thread.sleep(1000);
+                pp.DeleteQuanityinShoppingCart();
+		    } 
+		 
+		 @Test(priority = 28)
+		    public void UpdateIncreaseQuanityinShoppingCart() throws InterruptedException {
+		        HomeOU ou= new HomeOU();
+		        ProductPage pp = ou.goProduct();
+		        Thread.sleep(1000);
+             pp.UpdateIncreaseQuanityinShoppingCart();
+		    } 
+		 
+		 @Test(priority = 29)
+		    public void UpdateDecreaseQuanityinShoppingCart() throws InterruptedException {
+		        HomeOU ou= new HomeOU();
+		        ProductPage pp = ou.goProduct();
+		        Thread.sleep(1000);
+          pp.UpdateDecreaseQuanityinShoppingCart();
+		    } 
 }
