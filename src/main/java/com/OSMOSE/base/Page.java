@@ -171,6 +171,11 @@ public class Page {
 		js.executeScript("arguments[0].scrollIntoView();", element);
 
 	}
+	
+	public static void scrollbyjavaexecutor(int X, int Y) {
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+	       js.executeScript("window.scrollBy(X,Y)");
+	}
 	//Common Keywords
 	public static void click(String locator) {
 
