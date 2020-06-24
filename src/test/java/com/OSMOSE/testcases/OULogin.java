@@ -99,7 +99,7 @@ public class OULogin extends BaseTest {
         String element = Page.getText("WoodPoleTechnicalSeminar_XPATH");
         Assert.assertEquals(element,"Wood Pole Technical Seminar");
     }
-    @Test( priority = 12, dependsOnMethods ="verifyLiveEventsWPTS" ,enabled = true)
+    @Test( priority = 12, dependsOnMethods ="verifyLiveEventsWPTS" )
     public void verifyDETAILSANDREGISTRATION() throws InterruptedException {
         HomeOU ou = new HomeOU();
         ou.clickOnSTSDetailsAndRegistration();
@@ -119,7 +119,7 @@ public class OULogin extends BaseTest {
         //Assert.assertEquals(Page.getText("UPCOMING_XPATH"),"UPCOMING");
         //Assert.assertEquals(Page.select("",""),"HISTORICAL");
     }
-    @Test(priority = 14, enabled = false)
+    @Test(priority = 14)
     public void verifyUpcomingWebinarsPage() throws InterruptedException {
         HomeOU ou = new HomeOU();
         ou.selectUpcoming();
@@ -156,7 +156,7 @@ public class OULogin extends BaseTest {
     public void verifyOClacTrainingButton() throws InterruptedException {
         HomeOU ou = new HomeOU();
         ou.OCALCTRAINING();
-        Assert.assertEquals(Page.getText("O-CALCTRAININGText_XPATH"),"O-Calc® Pro Training");
+        Assert.assertEquals(Page.getText("PrivateTraining_XPATH"),"Private Training Seminars");
         Page.driver.switchTo().defaultContent();
 
     }

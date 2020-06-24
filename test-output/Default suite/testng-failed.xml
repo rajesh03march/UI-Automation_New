@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test thread-count="5" name="Default test(failed)">
+    <classes>
+      <class name="com.OSMOSE.testcases.Product">
+        <methods>
+          <include name="sliderItemPresent"/>
+          <include name="VerifyFPImageClick"/>
+          <include name="AddQuantityandverifyCellNumber"/>
+          <include name="VerifyProductclick"/>
+          <include name="openMyQuotesElementPresent"/>
+          <include name="adminElementPresent"/>
+          <include name="catalogElementPresent"/>
+          <include name="shoppingCartElementPresent"/>
+          <include name="verifyTheProductCart"/>
+          <include name="verifyTheProductLink" invocation-numbers="0"/>
+          <include name="viewDetailsElementPresent"/>
+          <include name="verifyTheSearch" invocation-numbers="0 1 2"/>
+          <include name="searchElementPresent"/>
+          <include name="tearDown"/>
+          <include name="allSixProductPresent"/>
+          <include name="verifyTheSearchCrossButton"/>
+          <include name="verifyViewDetail"/>
+          <include name="verifyCategoryFilter"/>
+          <include name="FeaturedProductPoleRestoration"/>
+        </methods>
+      </class> <!-- com.OSMOSE.testcases.Product -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
