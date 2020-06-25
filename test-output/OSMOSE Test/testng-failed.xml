@@ -6,41 +6,12 @@
     <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
     <listener class-name="com.OSMOSE.listeners.CustomListeners"/>
   </listeners>
-  <test thread-count="5" name="OULogin(failed)">
-    <classes>
-      <class name="com.OSMOSE.testcases.OULogin">
-        <methods>
-          <include name="verifyContactAndStray"/>
-          <include name="verifyLiveEventsJUS"/>
-          <include name="verifyDETAILSANDREGISTRATION"/>
-          <include name="verifySteelStructuresProtected"/>
-          <include name="steelStructuresProtectedMOREINFOREGISTRATION"/>
-          <include name="verifyLiveEventsSTS"/>
-          <include name="tearDown"/>
-          <include name="verifyUpcomingWebinarsPage"/>
-          <include name="verifyLiveEventsWPTS"/>
-          <include name="verifyClickingTheWebinars"/>
-          <include name="ContactAndStrayMOREINFOREGISTRATION"/>
-        </methods>
-      </class> <!-- com.OSMOSE.testcases.OULogin -->
-    </classes>
-  </test> <!-- OULogin(failed) -->
   <test thread-count="5" name="Product(failed)">
     <classes>
       <class name="com.OSMOSE.testcases.Product">
         <methods>
-          <include name="ReturnPolicy"/>
-          <include name="verifyTheSearch" invocation-numbers="0 1 2"/>
           <include name="tearDown"/>
-          <include name="VerifyFPImageClick"/>
-          <include name="AddQuantityandverifyCellNumber"/>
-          <include name="AddShoppingCart"/>
-          <include name="adminElementPresent"/>
-          <include name="shoppingCartElementPresent"/>
-          <include name="verifyTheSearchCrossButton"/>
-          <include name="verifyViewDetail"/>
-          <include name="FeaturedProductPoleRestoration"/>
-          <include name="verifyTheProductLink"/>
+          <include name="UpdateDecreaseQuanityinShoppingCart"/>
         </methods>
       </class> <!-- com.OSMOSE.testcases.Product -->
     </classes>
