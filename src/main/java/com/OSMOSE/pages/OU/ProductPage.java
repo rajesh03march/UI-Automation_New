@@ -102,7 +102,8 @@ public class ProductPage extends Page {
 	   click("SubmitQuoteRequest_XPATH");
        click("ReturnPolicy_XPATH");
        Thread.sleep(1000);
-       scrollDownBYWebelemnt(Page.driver.findElement(By.xpath("//*[@id=\"returnPolicy___BV_modal_body_\"]/div/div/button")));
+       WebElement Returnpolicybtn = Page.driver.findElement(By.xpath("//*[@id=\"returnPolicy___BV_modal_body_\"]/div/div/button"));
+       scrollDownBYWebelemnt(Returnpolicybtn);
 		 //Page.scrollbyjavaexecutor(-268, 487);
        Thread.sleep(1000);
        click("CrossicononReturnPolicy_XPATH");
@@ -268,7 +269,8 @@ public class ProductPage extends Page {
    public void clickAdmin_ManageQuotes() throws InterruptedException {
 	   click("ClickAdminDropDown_XPATH");
 	   click("ClickManageQuotes_XPATH");
-	   Thread.sleep(1000);
+	   Thread.sleep(2000);
+	   click("Q00001QUOTEID_XPATH");
    }
    
    public void CreateQuoteByAddToShoppingCart() throws InterruptedException {

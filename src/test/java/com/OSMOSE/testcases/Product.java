@@ -334,17 +334,35 @@ public class Product extends BaseTest{
           pp.UpdateDecreaseQuanityinShoppingCart();
 		    } 
 		 
-		 @Test(priority = 35)
+		 @Test(priority = 35,enabled=false)
 		 public void ClickManageQuotesLink() throws InterruptedException {
 		        HomeOU ou= new HomeOU();
 		        ProductPage pp = ou.goProduct();
 		        //pp.clickProductLink();
 		        pp.clickAdmin_ManageQuotes();
 		        Assert.assertEquals(Page.getText("QuotesPagetitle_XPATH"),"Sort & Filter Customer Product Quotes");
+		        Assert.assertEquals(Page.getText("QuoteIDHeader_XPATH"),"Quote ID");
+		        Assert.assertEquals(Page.getText("CompanyHeader_XPATH"),"Company");
+			        
 		    }
 		 
+		 @Test(priority = 35)
+		 public void VerifyUIonClickQuoteID() throws InterruptedException {
+		        HomeOU ou= new HomeOU();
+		        ProductPage pp = ou.goProduct();
+		        //pp.clickProductLink();
+		        pp.clickAdmin_ManageQuotes();
+		        Thread.sleep(2000);
+		       // Assert.assertTrue((Page.isElementPresent(By.xpath("SubmitbtnQuotesubmission_XPATH"))));
+		        Assert.assertEquals(Page.getText("HeadingQuoteIDSubmitQuotePopup_XPATH"),"Q000001");
+		        //Assert.assertTrue((Page.isElementPresent(By.xpath("UploadbtnSubmitQuote_XPATH"))));
+		        //Assert.assertTrue((Page.isElementPresent(By.xpath("commentstextareaSubmitQuote_XPATH"))));
+		    }
+		
 		 
-		 @Test(priority = 31)
+		 
+		 
+		 @Test(priority = 31,enabled = false)
 		 public void CreateQuote() throws InterruptedException {
 			 HomeOU ou= new HomeOU();
 		        ProductPage pp = ou.goProduct();
@@ -352,14 +370,14 @@ public class Product extends BaseTest{
 		        Thread.sleep(1000); 
 		 }
 		 
-		 @Test(priority = 32,enabled=true)
+		 @Test(priority = 32,enabled=false)
 		 public void CreateQuote_Comments() throws InterruptedException {
 			 HomeOU ou= new HomeOU();
 		        ProductPage pp = ou.goProduct();
 		        pp.CreateQuoteByCommentsAddToShoppingCart();
 		        Thread.sleep(1000); 
 		 }
-		 @Test(priority = 33,enabled=true)
+		 @Test(priority = 33,enabled=false)
 		 public void CreateQuote_ZipCode() throws InterruptedException {
 			 HomeOU ou= new HomeOU();
 		        ProductPage pp = ou.goProduct();
@@ -367,7 +385,7 @@ public class Product extends BaseTest{
 		        Thread.sleep(1000); 
 		 }
 		 
-		 @Test(priority = 34,enabled=true)
+		 @Test(priority = 34,enabled=false)
 		 public void CreateQuote_Attachment() throws InterruptedException {
 			 HomeOU ou= new HomeOU();
 		        ProductPage pp = ou.goProduct();
