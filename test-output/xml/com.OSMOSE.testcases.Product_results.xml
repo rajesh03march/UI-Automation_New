@@ -1,17 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuite name="Product"
-           tests="5"
+           tests="6"
            failures="0"
            errors="0"
            skipped="0"
-           time="136.979">
+           time="37.430">
   <properties />
   
   
-            <testcase name="searchElementPresent" time="50.095" classname="com.OSMOSE.testcases.Product" />
-                <testcase name="DeleteQuanityinShoppingCart" time="5.866" classname="com.OSMOSE.testcases.Product" />
-                <testcase name="UpdateIncreaseQuanityinShoppingCart" time="5.472" classname="com.OSMOSE.testcases.Product" />
-                <testcase name="verifyTheProductLink" time="14.522" classname="com.OSMOSE.testcases.Product" />
-                <testcase name="UpdateDecreaseQuanityinShoppingCart" time="61.024" classname="com.OSMOSE.testcases.Product" />
+            <testcase name="verifyTheProductLink" time="14.315" classname="com.OSMOSE.testcases.Product" />
+                <testcase name="CreateQuote_Attachment" time="7.572" classname="com.OSMOSE.testcases.Product" />
+                <testcase name="CreateQuote_Comments" time="4.950" classname="com.OSMOSE.testcases.Product" />
+                <testcase name="ClickManageQuotesLink" time="1.194" classname="com.OSMOSE.testcases.Product" />
+                <testcase name="CreateQuote" time="4.946" classname="com.OSMOSE.testcases.Product" />
+                <testcase name="CreateQuote_ZipCode" time="4.453" classname="com.OSMOSE.testcases.Product" />
       
 </testsuite>
