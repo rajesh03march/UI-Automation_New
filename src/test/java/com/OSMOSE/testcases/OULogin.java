@@ -35,18 +35,18 @@ public class OULogin extends BaseTest {
         Assert.assertEquals(Page.getText("ProCard_XPATH"),"Products");
 
     }
-    @Test(dependsOnMethods = "loginTest",priority = 3)
+    @Test(dependsOnMethods = "loginTest",priority = 3,enabled=false)
     public void verifyHyperlinks() throws InterruptedException {
         Assert.assertEquals(Page.getText("OUCartliveeventlink_XPATH"),"LIVE EVENTS");
         Assert.assertEquals(Page.getText("OUCartWebinarLink_XPATH"),"WEBINARS");
         Assert.assertEquals(Page.getText("OUCartOcalcLink_XPATH"),"O-CALC TRAINING");
     }
-    @Test(dependsOnMethods = "loginTest",priority = 4)
+    @Test(dependsOnMethods = "loginTest",priority = 4,enabled=false)
     public void verifyVideoLinks(){
         Assert.assertEquals(Page.getAttributeValue("OUCartVideo1_CSS","alt"),"Wood Technical Seminar");
         Assert.assertEquals(Page.getAttributeValue("OUCarrVideo2_CSS","alt"),"Steel Technical Seminar");
     }
-    @Test(dependsOnMethods = "loginTest",priority = 5)
+    @Test(dependsOnMethods = "loginTest",priority = 5,enabled=false)
     public void verifyLiveEventCLick() throws InterruptedException {
         HomeOU ou = new HomeOU();
         ou.clickLiveEventLink();
@@ -54,14 +54,14 @@ public class OULogin extends BaseTest {
         Page.driver.navigate().back();
 
     }
-    @Test(dependsOnMethods = "loginTest",priority = 6)
+    @Test(dependsOnMethods = "loginTest",priority = 6,enabled=false)
     public void verifyWebinarsClick() throws InterruptedException {
         HomeOU ou = new HomeOU();
         ou.clickWebinarLink();
         Assert.assertEquals(Page.getText("WEBINAR_XPATH"),"WEBINARS");
         Page.driver.navigate().back();
     }
-    @Test(dependsOnMethods = "loginTest",priority = 7)
+    @Test(dependsOnMethods = "loginTest",priority = 7,enabled=false)
     public void verifyOCalcClick() throws InterruptedException {
         HomeOU ou = new HomeOU();
         ou.clickOCalcLInk();
@@ -69,7 +69,7 @@ public class OULogin extends BaseTest {
         Page.driver.navigate().back();
     }
 
-    @Test(dataProviderClass = Utilities.class, dataProvider = "dp", priority = 8)
+    @Test(dataProviderClass = Utilities.class, dataProvider = "dp", priority = 8,enabled=false)
     public void clickOnOuLink(Hashtable<String,String> data) throws InterruptedException {
         HomeOU ou = new HomeOU();
         ou.clickOULink();
@@ -77,14 +77,14 @@ public class OULogin extends BaseTest {
         System.out.println(element);
         Assert.assertEquals(element, "LIVE EVENTS");
     }
-    @Test( priority = 9)
+    @Test( priority = 9,enabled=false)
     public void verifyLiveEventsSTS() throws InterruptedException {
         HomeOU ou = new HomeOU();
         ou.clickOnLiveEventsSTS();
         String element = Page.getText("SteelTechnicalSeminar_XPATH");
         Assert.assertEquals(element,"Steel Technical Seminar");
     }
-    @Test( priority = 10)
+    @Test( priority = 10,enabled=false)
     public void verifyLiveEventsJUS() throws InterruptedException {
         HomeOU ou = new HomeOU();
         ou.clickOnLiveEventsJUS();
@@ -92,14 +92,14 @@ public class OULogin extends BaseTest {
         Assert.assertEquals(element,"Joint Use Seminar");
 
     }
-    @Test( priority = 11)
+    @Test( priority = 11,enabled=false)
     public void verifyLiveEventsWPTS() throws InterruptedException {
         HomeOU ou = new HomeOU();
         ou.clickOnLiveEventsWPTS();
         String element = Page.getText("WoodPoleTechnicalSeminar_XPATH");
         Assert.assertEquals(element,"Wood Pole Technical Seminar");
     }
-    @Test( priority = 12, dependsOnMethods ="verifyLiveEventsWPTS" )
+    @Test( priority = 12, dependsOnMethods ="verifyLiveEventsWPTS" ,enabled=false)
     public void verifyDETAILSANDREGISTRATION() throws InterruptedException {
         HomeOU ou = new HomeOU();
         ou.clickOnSTSDetailsAndRegistration();
@@ -111,7 +111,7 @@ public class OULogin extends BaseTest {
         Assert.assertEquals(Page.getAttributeValue("EMAIL_XPATH","value"),"rajesh.yadav@centurylink.com");
         Assert.assertEquals(Page.getAttributeValue("PHONE_XPATH","value"),"9971236668");
     }
-    @Test(priority = 13)
+    @Test(priority = 13,enabled=false)
     public void verifyClickingTheWebinars() throws InterruptedException {
         HomeOU ou= new HomeOU();
         ou.clickWebinars();
@@ -119,40 +119,40 @@ public class OULogin extends BaseTest {
         //Assert.assertEquals(Page.getText("UPCOMING_XPATH"),"UPCOMING");
         //Assert.assertEquals(Page.select("",""),"HISTORICAL");
     }
-    @Test(priority = 14)
+    @Test(priority = 14,enabled=false)
     public void verifyUpcomingWebinarsPage() throws InterruptedException {
         HomeOU ou = new HomeOU();
         ou.selectUpcoming();
         String value = Page.getText("OUW_XPATH");
         Assert.assertEquals(value,"Osmose University Webinars");
     }
-    @Test(priority = 15, dependsOnMethods = "verifyClickingTheWebinars")
+    @Test(priority = 15, dependsOnMethods = "verifyClickingTheWebinars",enabled=false)
     public void verifySteelStructuresProtected() throws InterruptedException {
         HomeOU ou = new HomeOU();
         ou.steelStructuresProtected();
         String value = Page.getText("SSP_XPATH");
         Assert.assertEquals(value,"Are Your Steel Structures Protected? Are You Sure?");
     }
-    @Test(priority = 16, dependsOnMethods = "verifySteelStructuresProtected")
+    @Test(priority = 16, dependsOnMethods = "verifySteelStructuresProtected",enabled=false)
     public void verifyContactAndStray() throws InterruptedException {
         HomeOU ou = new HomeOU();
         ou.ContactAndStray();
         String value = Page.getText("ContactAndStray_XPATH");
         Assert.assertEquals(value,"Contact and Stray Voltage Mitigation in Underground Distribution Systems");
     }
-    @Test(priority = 17, dependsOnMethods = "verifyContactAndStray")
+    @Test(priority = 17, dependsOnMethods = "verifyContactAndStray",enabled=false)
     public void steelStructuresProtectedMOREINFOREGISTRATION() throws InterruptedException {
         HomeOU ou = new HomeOU();
         ou.steelStructuresProtectedMOREINFOREGISTRATION();
         Assert.assertEquals(Page.getAttributeValue("REGISTER_XPATH","value"),"Register");
     }
-    @Test(priority = 18, dependsOnMethods = "steelStructuresProtectedMOREINFOREGISTRATION")
+    @Test(priority = 18, dependsOnMethods = "steelStructuresProtectedMOREINFOREGISTRATION",enabled=false)
     public void ContactAndStrayMOREINFOREGISTRATION() throws InterruptedException {
         HomeOU ou = new HomeOU();
         ou.ContactAndStrayMOREINFOREGISTRATION();
         Assert.assertEquals(Page.getAttributeValue("FirstName_XPATH","value"),"Rajesh");
     }
-    @Test(priority = 19)
+    @Test(priority = 19,enabled=false)
     public void verifyOClacTrainingButton() throws InterruptedException {
         HomeOU ou = new HomeOU();
         ou.OCALCTRAINING();
