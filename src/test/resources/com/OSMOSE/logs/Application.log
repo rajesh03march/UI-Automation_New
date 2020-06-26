@@ -1,40 +1,14 @@
-24/06/2020 20:07:54 devpinoyLogger Config file loaded !!!
-24/06/2020 20:07:54 devpinoyLogger OR file loaded !!!
-24/06/2020 20:07:58 devpinoyLogger Navigated to : https://osmose360cl.azurewebsites.net/
-24/06/2020 20:08:12 devpinoyLogger Typing in an Element : email_XPATH entered value as : rajesh.yadav@centurylink.com
-24/06/2020 20:08:12 devpinoyLogger Typing in an Element : password_XPATH entered value as : Hyde@2317
-24/06/2020 20:08:12 devpinoyLogger Clicking on an Element : submit_XPATH
-24/06/2020 20:08:16 devpinoyLogger Text of the locator: verify_ID value as :Rajesh Yadav
-24/06/2020 20:08:20 devpinoyLogger Text of the locator: OUCard_XPATH value as :Osmose University
-24/06/2020 20:08:21 devpinoyLogger Text of the locator: ProCard_XPATH value as :Products
-24/06/2020 20:08:35 devpinoyLogger Clicking on an Element : ProCard_XPATH
-24/06/2020 20:08:36 devpinoyLogger Text of the locator: POrdering_XPATH value as :Pole and Line Products
-24/06/2020 20:09:28 devpinoyLogger Clicking on an Element : ProductPoleRestoration_XPATH
-24/06/2020 20:09:29 devpinoyLogger Clicking on an Element : ProductPoleRestorationCTruss_XPATH
-24/06/2020 20:09:30 devpinoyLogger Selecting from an element : ProductSizeDropdown_XPATH value as : 1
-24/06/2020 20:09:30 devpinoyLogger Clicking on an Element : ProductSizeEnterQuantity_XPATH
-24/06/2020 20:09:31 devpinoyLogger clearing on an Element : ProductSizeEnterQuantity_XPATH
-24/06/2020 20:09:31 devpinoyLogger Typing in an Element : ProductSizeEnterQuantity_XPATH entered value as : 8
-24/06/2020 20:09:31 devpinoyLogger Clicking on an Element : ProductAddButton_XPATH
-24/06/2020 20:09:31 devpinoyLogger Clicking on an Element : ProductViewCartButton_XPATH
-24/06/2020 20:09:32 devpinoyLogger Clicking on an Element : DeleteShoppingCart_XPATH
-24/06/2020 20:09:34 devpinoyLogger Clicking on an Element : ContiuneSHoppingButton_XPATH
-24/06/2020 20:09:34 devpinoyLogger Clicking on an Element : ProductPoleRestoration_XPATH
-24/06/2020 20:09:35 devpinoyLogger Clicking on an Element : ProductPoleRestorationCTruss_XPATH
-24/06/2020 20:09:36 devpinoyLogger Selecting from an element : ProductSizeDropdown_XPATH value as : 1
-24/06/2020 20:09:36 devpinoyLogger Clicking on an Element : ProductSizeEnterQuantity_XPATH
-24/06/2020 20:09:36 devpinoyLogger clearing on an Element : ProductSizeEnterQuantity_XPATH
-24/06/2020 20:09:36 devpinoyLogger Typing in an Element : ProductSizeEnterQuantity_XPATH entered value as : 8
-24/06/2020 20:09:37 devpinoyLogger Clicking on an Element : ProductAddButton_XPATH
-24/06/2020 20:09:37 devpinoyLogger Clicking on an Element : ProductViewCartButton_XPATH
-24/06/2020 20:09:38 devpinoyLogger Clicking on an Element : PlusicononShoppingCart_XPATH
-24/06/2020 20:09:45 devpinoyLogger Clicking on an Element : ContiuneSHoppingButton_XPATH
-24/06/2020 20:09:50 devpinoyLogger Clicking on an Element : ProductPoleRestoration_XPATH
-24/06/2020 20:09:56 devpinoyLogger Clicking on an Element : ProductPoleRestorationDummy3_XPATH
-24/06/2020 20:09:59 devpinoyLogger Selecting from an element : ProductSizeDropdown_XPATH value as : 1
-24/06/2020 20:09:59 devpinoyLogger Clicking on an Element : ProductSizeEnterQuantity_XPATH
-24/06/2020 20:10:04 devpinoyLogger clearing on an Element : ProductSizeEnterQuantity_XPATH
-24/06/2020 20:10:04 devpinoyLogger Typing in an Element : ProductSizeEnterQuantity_XPATH entered value as : 8
-24/06/2020 20:10:12 devpinoyLogger Clicking on an Element : ProductAddButton_XPATH
-24/06/2020 20:10:14 devpinoyLogger Clicking on an Element : ProductViewCartButton_XPATH
-24/06/2020 20:10:25 devpinoyLogger Clicking on an Element : MinusicononShoppingCart_XPATH
+26/06/2020 16:53:23 devpinoyLogger Config file loaded !!!
+26/06/2020 16:53:23 devpinoyLogger OR file loaded !!!
+26/06/2020 16:53:25 devpinoyLogger Navigated to : https://osmose360cl.azurewebsites.net/
+26/06/2020 16:53:38 devpinoyLogger Typing in an Element : email_XPATH entered value as : rajesh.yadav@centurylink.com
+26/06/2020 16:53:38 devpinoyLogger Typing in an Element : password_XPATH entered value as : Hyde@2317
+26/06/2020 16:53:38 devpinoyLogger Clicking on an Element : submit_XPATH
+26/06/2020 16:53:42 devpinoyLogger Text of the locator: verify_ID value as :Rajesh Yadav
+26/06/2020 16:53:46 devpinoyLogger Text of the locator: OUCard_XPATH value as :Osmose University
+26/06/2020 16:53:46 devpinoyLogger Text of the locator: ProCard_XPATH value as :Products
+26/06/2020 16:54:00 devpinoyLogger Clicking on an Element : ProCard_XPATH
+26/06/2020 16:54:01 devpinoyLogger Text of the locator: POrdering_XPATH value as :Pole and Line Products
+26/06/2020 16:54:02 devpinoyLogger Clicking on an Element : ProductPoleRestoration_XPATH
+26/06/2020 16:54:03 devpinoyLogger Clicking on an Element : ProductPoleRestoration_XPATH
+26/06/2020 16:54:03 devpinoyLogger Clicking on an Element : ProductPoleRestorationCTruss_XPATH

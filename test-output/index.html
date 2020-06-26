@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-OSMOSE_Test">
-              <span class="suite-name border-passed">OSMOSE Test</span>
+              <span class="suite-name border-failed">OSMOSE Test</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -91,7 +91,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">8 methods,   8 passed</span>
+                    <span class="method-stats">5 methods, 1 failed,   4 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-OSMOSE_Test" class="hide-methods failed suite-OSMOSE_Test"> (hide)</a> <!-- hide-methods failed suite-OSMOSE_Test -->
+                      <a href="#" panel-name="suite-OSMOSE_Test" class="show-methods failed suite-OSMOSE_Test"> (show)</a> <!-- show-methods failed suite-OSMOSE_Test -->
+                    </span>
+                    <div class="method-list-content failed suite-OSMOSE_Test">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-OSMOSE_Test" title="com.OSMOSE.testcases.Product" hash-for-method="verifyAddShoppingCarttext">verifyAddShoppingCarttext</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-OSMOSE_Test -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -102,27 +116,7 @@
                     <div class="method-list-content passed suite-OSMOSE_Test">
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-OSMOSE_Test" title="com.OSMOSE.testcases.Product" hash-for-method="DeleteQuanityinShoppingCart">DeleteQuanityinShoppingCart</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-OSMOSE_Test" title="com.OSMOSE.testcases.Product" hash-for-method="UpdateDecreaseQuanityinShoppingCart">UpdateDecreaseQuanityinShoppingCart</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-OSMOSE_Test" title="com.OSMOSE.testcases.Product" hash-for-method="UpdateIncreaseQuanityinShoppingCart">UpdateIncreaseQuanityinShoppingCart</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-OSMOSE_Test" title="com.OSMOSE.testcases.OULogin" hash-for-method="loginTest({password=Hyde@2317, runmode=Y, username=rajesh.yadav@centurylink.com})">loginTest({password=Hyde@2317, runmode=Y, username=rajesh.yadav@centurylink.com})</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-OSMOSE_Test" title="com.OSMOSE.testcases.Product" hash-for-method="searchElementPresent">searchElementPresent</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -152,40 +146,52 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-OSMOSE_Test" class="panel OSMOSE_Test">
+          <div class="suite-OSMOSE_Test-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.OSMOSE.testcases.Product</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyAddShoppingCarttext">
+                  </a> <!-- verifyAddShoppingCarttext -->
+                  <span class="method-name">verifyAddShoppingCarttext</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&quot;selectSize&quot;]&quot;}
+  (Session info: chrome=83.0.4103.106)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
+System info: host: &apos;5CG6323N27&apos;, ip: &apos;192.168.0.7&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_191&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.106, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Windows\Temp\scoped_dir6...}, goog:chromeOptions: {debuggerAddress: localhost:50838}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: none, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 290ad0992ff5593bcd6018542113fcf4
+*** Element info: {Using=xpath, value=//*[@id=&quot;selectSize&quot;]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:424)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
+	at com.OSMOSE.base.Page.selectbyindex(Page.java:255)
+	at com.OSMOSE.pages.OU.ProductPage.AddToCartShoppingCart(ProductPage.java:156)
+	at com.OSMOSE.testcases.Product.verifyAddShoppingCarttext(Product.java:297)
+	at java.util.ArrayList.forEach(Unknown Source)
+... Removed 31 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-OSMOSE_Test-class-failed -->
           <div class="suite-OSMOSE_Test-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
               <span class="class-name">com.OSMOSE.testcases.Product</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="DeleteQuanityinShoppingCart">
-                  </a> <!-- DeleteQuanityinShoppingCart -->
-                  <span class="method-name">DeleteQuanityinShoppingCart</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="UpdateDecreaseQuanityinShoppingCart">
-                  </a> <!-- UpdateDecreaseQuanityinShoppingCart -->
-                  <span class="method-name">UpdateDecreaseQuanityinShoppingCart</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="UpdateIncreaseQuanityinShoppingCart">
-                  </a> <!-- UpdateIncreaseQuanityinShoppingCart -->
-                  <span class="method-name">UpdateIncreaseQuanityinShoppingCart</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="searchElementPresent">
-                  </a> <!-- searchElementPresent -->
-                  <span class="method-name">searchElementPresent</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
                   <a name="verifyTheProductLink({password=Hyde@2317, runmode=Y, username=rajesh.yadav@centurylink.com})">
@@ -291,44 +297,32 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(8);
+data.addRows(5);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'searchElementPresent')
+data.setCell(0, 1, 'verifyAddShoppingCarttext')
 data.setCell(0, 2, 'com.OSMOSE.testcases.Product')
-data.setCell(0, 3, 50077);
+data.setCell(0, 3, 51409);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'UpdateDecreaseQuanityinShoppingCart')
-data.setCell(1, 2, 'com.OSMOSE.testcases.Product')
-data.setCell(1, 3, 46127);
+data.setCell(1, 1, 'loginTest')
+data.setCell(1, 2, 'com.OSMOSE.testcases.OULogin')
+data.setCell(1, 3, 16432);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'loginTest')
-data.setCell(2, 2, 'com.OSMOSE.testcases.OULogin')
-data.setCell(2, 3, 17827);
+data.setCell(2, 1, 'verifyTheProductLink')
+data.setCell(2, 2, 'com.OSMOSE.testcases.Product')
+data.setCell(2, 3, 14300);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'verifyTheProductLink')
-data.setCell(3, 2, 'com.OSMOSE.testcases.Product')
-data.setCell(3, 3, 14668);
+data.setCell(3, 1, 'verifyOUCard')
+data.setCell(3, 2, 'com.OSMOSE.testcases.OULogin')
+data.setCell(3, 3, 2591);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'UpdateIncreaseQuanityinShoppingCart')
-data.setCell(4, 2, 'com.OSMOSE.testcases.Product')
-data.setCell(4, 3, 5250);
-data.setCell(5, 0, 5)
-data.setCell(5, 1, 'DeleteQuanityinShoppingCart')
-data.setCell(5, 2, 'com.OSMOSE.testcases.Product')
-data.setCell(5, 3, 5109);
-data.setCell(6, 0, 6)
-data.setCell(6, 1, 'verifyOUCard')
-data.setCell(6, 2, 'com.OSMOSE.testcases.OULogin')
-data.setCell(6, 3, 2695);
-data.setCell(7, 0, 7)
-data.setCell(7, 1, 'verifyProductCard')
-data.setCell(7, 2, 'com.OSMOSE.testcases.OULogin')
-data.setCell(7, 3, 51);
+data.setCell(4, 1, 'verifyProductCard')
+data.setCell(4, 2, 'com.OSMOSE.testcases.OULogin')
+data.setCell(4, 3, 90);
 window.suiteTableData['OSMOSE_Test']= { tableData: data, tableDiv: 'times-div-OSMOSE_Test'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 2 minutes</span>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
               <div id="times-div-OSMOSE_Test">
               </div> <!-- times-div-OSMOSE_Test -->
             </div> <!-- times-div -->
@@ -340,100 +334,74 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="reporter-method-div">
-              <span class="reporter-method-name">verifyProductCard</span>
+              <span class="reporter-method-name">loginTest({password=Hyde@2317, runmode=Y, username=rajesh.yadav@centurylink.com})</span>
               <div class="reporter-method-output-div">
                 <span class="reporter-method-output">Click to see Screenshot</span>
-                <span class="reporter-method-output"><a target="_blank" href=Wed_Jun_24_20_08_21_IST_2020.jpg>Screenshot</a></span>
+                <span class="reporter-method-output"><a target="_blank" href=Fri_Jun_26_16_53_43_IST_2020.jpg>Screenshot</a></span>
                 <span class="reporter-method-output"><br></span>
                 <span class="reporter-method-output"><br></span>
-                <span class="reporter-method-output"><a target="_blank" href=Wed_Jun_24_20_08_21_IST_2020.jpg><img src=Wed_Jun_24_20_08_21_IST_2020.jpg height=200 width=200></img></a></span>
+                <span class="reporter-method-output"><a target="_blank" href=Fri_Jun_26_16_53_43_IST_2020.jpg><img src=Fri_Jun_26_16_53_43_IST_2020.jpg height=200 width=200></img></a></span>
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
             <div class="reporter-method-div">
               <span class="reporter-method-name">verifyOUCard</span>
               <div class="reporter-method-output-div">
                 <span class="reporter-method-output">Click to see Screenshot</span>
-                <span class="reporter-method-output"><a target="_blank" href=Wed_Jun_24_20_08_20_IST_2020.jpg>Screenshot</a></span>
+                <span class="reporter-method-output"><a target="_blank" href=Fri_Jun_26_16_53_46_IST_2020.jpg>Screenshot</a></span>
                 <span class="reporter-method-output"><br></span>
                 <span class="reporter-method-output"><br></span>
-                <span class="reporter-method-output"><a target="_blank" href=Wed_Jun_24_20_08_20_IST_2020.jpg><img src=Wed_Jun_24_20_08_20_IST_2020.jpg height=200 width=200></img></a></span>
+                <span class="reporter-method-output"><a target="_blank" href=Fri_Jun_26_16_53_46_IST_2020.jpg><img src=Fri_Jun_26_16_53_46_IST_2020.jpg height=200 width=200></img></a></span>
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
             <div class="reporter-method-div">
-              <span class="reporter-method-name">loginTest({password=Hyde@2317, runmode=Y, username=rajesh.yadav@centurylink.com})</span>
+              <span class="reporter-method-name">verifyProductCard</span>
               <div class="reporter-method-output-div">
                 <span class="reporter-method-output">Click to see Screenshot</span>
-                <span class="reporter-method-output"><a target="_blank" href=Wed_Jun_24_20_08_17_IST_2020.jpg>Screenshot</a></span>
+                <span class="reporter-method-output"><a target="_blank" href=Fri_Jun_26_16_53_47_IST_2020.jpg>Screenshot</a></span>
                 <span class="reporter-method-output"><br></span>
                 <span class="reporter-method-output"><br></span>
-                <span class="reporter-method-output"><a target="_blank" href=Wed_Jun_24_20_08_17_IST_2020.jpg><img src=Wed_Jun_24_20_08_17_IST_2020.jpg height=200 width=200></img></a></span>
-              </div> <!-- reporter-method-output-div -->
-            </div> <!-- reporter-method-div -->
-            <div class="reporter-method-div">
-              <span class="reporter-method-name">DeleteQuanityinShoppingCart</span>
-              <div class="reporter-method-output-div">
-                <span class="reporter-method-output">Click to see Screenshot</span>
-                <span class="reporter-method-output"><a target="_blank" href=Wed_Jun_24_20_09_33_IST_2020.jpg>Screenshot</a></span>
-                <span class="reporter-method-output"><br></span>
-                <span class="reporter-method-output"><br></span>
-                <span class="reporter-method-output"><a target="_blank" href=Wed_Jun_24_20_09_33_IST_2020.jpg><img src=Wed_Jun_24_20_09_33_IST_2020.jpg height=200 width=200></img></a></span>
-              </div> <!-- reporter-method-output-div -->
-            </div> <!-- reporter-method-div -->
-            <div class="reporter-method-div">
-              <span class="reporter-method-name">searchElementPresent</span>
-              <div class="reporter-method-output-div">
-                <span class="reporter-method-output">Click to see Screenshot</span>
-                <span class="reporter-method-output"><a target="_blank" href=Wed_Jun_24_20_09_27_IST_2020.jpg>Screenshot</a></span>
-                <span class="reporter-method-output"><br></span>
-                <span class="reporter-method-output"><br></span>
-                <span class="reporter-method-output"><a target="_blank" href=Wed_Jun_24_20_09_27_IST_2020.jpg><img src=Wed_Jun_24_20_09_27_IST_2020.jpg height=200 width=200></img></a></span>
-              </div> <!-- reporter-method-output-div -->
-            </div> <!-- reporter-method-div -->
-            <div class="reporter-method-div">
-              <span class="reporter-method-name">UpdateIncreaseQuanityinShoppingCart</span>
-              <div class="reporter-method-output-div">
-                <span class="reporter-method-output">Click to see Screenshot</span>
-                <span class="reporter-method-output"><a target="_blank" href=Wed_Jun_24_20_09_38_IST_2020.jpg>Screenshot</a></span>
-                <span class="reporter-method-output"><br></span>
-                <span class="reporter-method-output"><br></span>
-                <span class="reporter-method-output"><a target="_blank" href=Wed_Jun_24_20_09_38_IST_2020.jpg><img src=Wed_Jun_24_20_09_38_IST_2020.jpg height=200 width=200></img></a></span>
+                <span class="reporter-method-output"><a target="_blank" href=Fri_Jun_26_16_53_47_IST_2020.jpg><img src=Fri_Jun_26_16_53_47_IST_2020.jpg height=200 width=200></img></a></span>
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
             <div class="reporter-method-div">
               <span class="reporter-method-name">verifyTheProductLink({password=Hyde@2317, runmode=Y, username=rajesh.yadav@centurylink.com})</span>
               <div class="reporter-method-output-div">
                 <span class="reporter-method-output">Click to see Screenshot</span>
-                <span class="reporter-method-output"><a target="_blank" href=Wed_Jun_24_20_08_36_IST_2020.jpg>Screenshot</a></span>
+                <span class="reporter-method-output"><a target="_blank" href=Fri_Jun_26_16_54_02_IST_2020.jpg>Screenshot</a></span>
                 <span class="reporter-method-output"><br></span>
                 <span class="reporter-method-output"><br></span>
-                <span class="reporter-method-output"><a target="_blank" href=Wed_Jun_24_20_08_36_IST_2020.jpg><img src=Wed_Jun_24_20_08_36_IST_2020.jpg height=200 width=200></img></a></span>
+                <span class="reporter-method-output"><a target="_blank" href=Fri_Jun_26_16_54_02_IST_2020.jpg><img src=Fri_Jun_26_16_54_02_IST_2020.jpg height=200 width=200></img></a></span>
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
             <div class="reporter-method-div">
-              <span class="reporter-method-name">UpdateDecreaseQuanityinShoppingCart</span>
+              <span class="reporter-method-name">verifyAddShoppingCarttext</span>
               <div class="reporter-method-output-div">
                 <span class="reporter-method-output">Click to see Screenshot</span>
-                <span class="reporter-method-output"><a target="_blank" href=Wed_Jun_24_20_10_25_IST_2020.jpg>Screenshot</a></span>
+                <span class="reporter-method-output"><a target="_blank" href=Fri_Jun_26_16_54_53_IST_2020.jpg>Screenshot</a></span>
                 <span class="reporter-method-output"><br></span>
                 <span class="reporter-method-output"><br></span>
-                <span class="reporter-method-output"><a target="_blank" href=Wed_Jun_24_20_10_25_IST_2020.jpg><img src=Wed_Jun_24_20_10_25_IST_2020.jpg height=200 width=200></img></a></span>
+                <span class="reporter-method-output"><a target="_blank" href=Fri_Jun_26_16_54_53_IST_2020.jpg><img src=Fri_Jun_26_16_54_53_IST_2020.jpg height=200 width=200></img></a></span>
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="ignored-methods-OSMOSE_Test" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">42 ignored methods</span>
+            <span class="header-content">51 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="ignored-class-div">
               <span class="ignored-class-name">com.OSMOSE.testcases.Product</span>
               <div class="ignored-methods-div">
+                <span class="ignored-method-name">VerifyUIonClickQuoteID</span>
+                <br/>
                 <span class="ignored-method-name">verifyTheValidationmessage</span>
                 <br/>
                 <span class="ignored-method-name">VerifyProductclick</span>
                 <br/>
                 <span class="ignored-method-name">AddShoppingCart</span>
+                <br/>
+                <span class="ignored-method-name">DeleteQuanityinShoppingCart</span>
                 <br/>
                 <span class="ignored-method-name">verifyTheSearchFullname</span>
                 <br/>
@@ -453,17 +421,27 @@ return data;
                 <br/>
                 <span class="ignored-method-name">verifyTheSearch</span>
                 <br/>
+                <span class="ignored-method-name">UpdateIncreaseQuanityinShoppingCart</span>
+                <br/>
                 <span class="ignored-method-name">verifyTheSearchCrossButton</span>
+                <br/>
+                <span class="ignored-method-name">ClickManageQuotesLink</span>
+                <br/>
+                <span class="ignored-method-name">UpdateDecreaseQuanityinShoppingCart</span>
                 <br/>
                 <span class="ignored-method-name">verifyCategoryFilter</span>
                 <br/>
                 <span class="ignored-method-name">FeaturedProductPoleRestoration</span>
+                <br/>
+                <span class="ignored-method-name">CreateQuote_ZipCode</span>
                 <br/>
                 <span class="ignored-method-name">VerifyCrossicononhoppingCart</span>
                 <br/>
                 <span class="ignored-method-name">sliderItemPresent</span>
                 <br/>
                 <span class="ignored-method-name">VerifyCrossicononhoppingCart_Sameitem_multipletime</span>
+                <br/>
+                <span class="ignored-method-name">CreateQuote_Comments</span>
                 <br/>
                 <span class="ignored-method-name">VerifyFPImageClick</span>
                 <br/>
@@ -473,11 +451,15 @@ return data;
                 <br/>
                 <span class="ignored-method-name">shoppingCartElementPresent</span>
                 <br/>
-                <span class="ignored-method-name">verifyAddShoppingCarttext</span>
+                <span class="ignored-method-name">searchElementPresent</span>
+                <br/>
+                <span class="ignored-method-name">CreateQuote</span>
                 <br/>
                 <span class="ignored-method-name">allSixProductPresent</span>
                 <br/>
                 <span class="ignored-method-name">verifyViewDetail</span>
+                <br/>
+                <span class="ignored-method-name">CreateQuote_Attachment</span>
                 <br/>
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
@@ -504,9 +486,9 @@ return data;
                 <br/>
                 <span class="ignored-method-name">verifyUpcomingWebinarsPage</span>
                 <br/>
-                <span class="ignored-method-name">verifyLiveEventsWPTS</span>
-                <br/>
                 <span class="ignored-method-name">verifyHyperlinks</span>
+                <br/>
+                <span class="ignored-method-name">verifyLiveEventsWPTS</span>
                 <br/>
                 <span class="ignored-method-name">verifyOCalcClick</span>
                 <br/>
@@ -535,38 +517,28 @@ return data;
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">verifyOUCard</span>
-                <span class="method-start">18797 ms</span>
+                <span class="method-start">17187 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">verifyProductCard</span>
-                <span class="method-start">22003 ms</span>
+                <span class="method-start">20233 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.OSMOSE.testcases.Product</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">verifyTheProductLink({password=Hyde@2317, runmode=Y, username=rajesh.yadav@centurylink.com})</span>
-                <span class="method-start">22539 ms</span>
+                <span class="method-start">20766 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">searchElementPresent</span>
-                <span class="method-start">37789 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">DeleteQuanityinShoppingCart</span>
-                <span class="method-start">88393 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">UpdateIncreaseQuanityinShoppingCart</span>
-                <span class="method-start">94023 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">UpdateDecreaseQuanityinShoppingCart</span>
-                <span class="method-start">99759 ms</span>
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifyAddShoppingCarttext</span>
+                <span class="method-start">35576 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-suite after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">146411 ms</span>
+                <span class="method-start">87497 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

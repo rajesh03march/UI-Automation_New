@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="42" total="50" passed="8">
+<testng-results skipped="0" failed="1" ignored="51" total="56" passed="4">
   <reporter-output>
     <line>
       <![CDATA[Click to see Screenshot]]>
     </line>
     <line>
-      <![CDATA[<a target="_blank" href=Wed_Jun_24_20_08_17_IST_2020.jpg>Screenshot</a>]]>
+      <![CDATA[<a target="_blank" href=Fri_Jun_26_16_53_43_IST_2020.jpg>Screenshot</a>]]>
     </line>
     <line>
       <![CDATA[<br>]]>
@@ -14,13 +14,13 @@
       <![CDATA[<br>]]>
     </line>
     <line>
-      <![CDATA[<a target="_blank" href=Wed_Jun_24_20_08_17_IST_2020.jpg><img src=Wed_Jun_24_20_08_17_IST_2020.jpg height=200 width=200></img></a>]]>
+      <![CDATA[<a target="_blank" href=Fri_Jun_26_16_53_43_IST_2020.jpg><img src=Fri_Jun_26_16_53_43_IST_2020.jpg height=200 width=200></img></a>]]>
     </line>
     <line>
       <![CDATA[Click to see Screenshot]]>
     </line>
     <line>
-      <![CDATA[<a target="_blank" href=Wed_Jun_24_20_08_20_IST_2020.jpg>Screenshot</a>]]>
+      <![CDATA[<a target="_blank" href=Fri_Jun_26_16_53_46_IST_2020.jpg>Screenshot</a>]]>
     </line>
     <line>
       <![CDATA[<br>]]>
@@ -29,13 +29,13 @@
       <![CDATA[<br>]]>
     </line>
     <line>
-      <![CDATA[<a target="_blank" href=Wed_Jun_24_20_08_20_IST_2020.jpg><img src=Wed_Jun_24_20_08_20_IST_2020.jpg height=200 width=200></img></a>]]>
+      <![CDATA[<a target="_blank" href=Fri_Jun_26_16_53_46_IST_2020.jpg><img src=Fri_Jun_26_16_53_46_IST_2020.jpg height=200 width=200></img></a>]]>
     </line>
     <line>
       <![CDATA[Click to see Screenshot]]>
     </line>
     <line>
-      <![CDATA[<a target="_blank" href=Wed_Jun_24_20_08_21_IST_2020.jpg>Screenshot</a>]]>
+      <![CDATA[<a target="_blank" href=Fri_Jun_26_16_53_47_IST_2020.jpg>Screenshot</a>]]>
     </line>
     <line>
       <![CDATA[<br>]]>
@@ -44,13 +44,13 @@
       <![CDATA[<br>]]>
     </line>
     <line>
-      <![CDATA[<a target="_blank" href=Wed_Jun_24_20_08_21_IST_2020.jpg><img src=Wed_Jun_24_20_08_21_IST_2020.jpg height=200 width=200></img></a>]]>
+      <![CDATA[<a target="_blank" href=Fri_Jun_26_16_53_47_IST_2020.jpg><img src=Fri_Jun_26_16_53_47_IST_2020.jpg height=200 width=200></img></a>]]>
     </line>
     <line>
       <![CDATA[Click to see Screenshot]]>
     </line>
     <line>
-      <![CDATA[<a target="_blank" href=Wed_Jun_24_20_08_36_IST_2020.jpg>Screenshot</a>]]>
+      <![CDATA[<a target="_blank" href=Fri_Jun_26_16_54_02_IST_2020.jpg>Screenshot</a>]]>
     </line>
     <line>
       <![CDATA[<br>]]>
@@ -59,13 +59,13 @@
       <![CDATA[<br>]]>
     </line>
     <line>
-      <![CDATA[<a target="_blank" href=Wed_Jun_24_20_08_36_IST_2020.jpg><img src=Wed_Jun_24_20_08_36_IST_2020.jpg height=200 width=200></img></a>]]>
+      <![CDATA[<a target="_blank" href=Fri_Jun_26_16_54_02_IST_2020.jpg><img src=Fri_Jun_26_16_54_02_IST_2020.jpg height=200 width=200></img></a>]]>
     </line>
     <line>
       <![CDATA[Click to see Screenshot]]>
     </line>
     <line>
-      <![CDATA[<a target="_blank" href=Wed_Jun_24_20_09_27_IST_2020.jpg>Screenshot</a>]]>
+      <![CDATA[<a target="_blank" href=Fri_Jun_26_16_54_53_IST_2020.jpg>Screenshot</a>]]>
     </line>
     <line>
       <![CDATA[<br>]]>
@@ -74,60 +74,15 @@
       <![CDATA[<br>]]>
     </line>
     <line>
-      <![CDATA[<a target="_blank" href=Wed_Jun_24_20_09_27_IST_2020.jpg><img src=Wed_Jun_24_20_09_27_IST_2020.jpg height=200 width=200></img></a>]]>
-    </line>
-    <line>
-      <![CDATA[Click to see Screenshot]]>
-    </line>
-    <line>
-      <![CDATA[<a target="_blank" href=Wed_Jun_24_20_09_33_IST_2020.jpg>Screenshot</a>]]>
-    </line>
-    <line>
-      <![CDATA[<br>]]>
-    </line>
-    <line>
-      <![CDATA[<br>]]>
-    </line>
-    <line>
-      <![CDATA[<a target="_blank" href=Wed_Jun_24_20_09_33_IST_2020.jpg><img src=Wed_Jun_24_20_09_33_IST_2020.jpg height=200 width=200></img></a>]]>
-    </line>
-    <line>
-      <![CDATA[Click to see Screenshot]]>
-    </line>
-    <line>
-      <![CDATA[<a target="_blank" href=Wed_Jun_24_20_09_38_IST_2020.jpg>Screenshot</a>]]>
-    </line>
-    <line>
-      <![CDATA[<br>]]>
-    </line>
-    <line>
-      <![CDATA[<br>]]>
-    </line>
-    <line>
-      <![CDATA[<a target="_blank" href=Wed_Jun_24_20_09_38_IST_2020.jpg><img src=Wed_Jun_24_20_09_38_IST_2020.jpg height=200 width=200></img></a>]]>
-    </line>
-    <line>
-      <![CDATA[Click to see Screenshot]]>
-    </line>
-    <line>
-      <![CDATA[<a target="_blank" href=Wed_Jun_24_20_10_25_IST_2020.jpg>Screenshot</a>]]>
-    </line>
-    <line>
-      <![CDATA[<br>]]>
-    </line>
-    <line>
-      <![CDATA[<br>]]>
-    </line>
-    <line>
-      <![CDATA[<a target="_blank" href=Wed_Jun_24_20_10_25_IST_2020.jpg><img src=Wed_Jun_24_20_10_25_IST_2020.jpg height=200 width=200></img></a>]]>
+      <![CDATA[<a target="_blank" href=Fri_Jun_26_16_54_53_IST_2020.jpg><img src=Fri_Jun_26_16_54_53_IST_2020.jpg height=200 width=200></img></a>]]>
     </line>
   </reporter-output>
-  <suite name="OSMOSE Test" duration-ms="146502" started-at="2020-06-24T20:07:59 IST" finished-at="2020-06-24T20:10:25 IST">
+  <suite name="OSMOSE Test" duration-ms="87578" started-at="2020-06-26T16:53:26 IST" finished-at="2020-06-26T16:54:53 IST">
     <groups>
     </groups>
-    <test name="OULogin" duration-ms="22592" started-at="2020-06-24T20:07:59 IST" finished-at="2020-06-24T20:08:21 IST">
+    <test name="OULogin" duration-ms="20821" started-at="2020-06-26T16:53:26 IST" finished-at="2020-06-26T16:53:47 IST">
       <class name="com.OSMOSE.testcases.OULogin">
-        <test-method status="PASS" signature="loginTest(java.util.Hashtable)[pri:0, instance:com.OSMOSE.testcases.OULogin@7e2f86e6]" name="loginTest" duration-ms="17827" started-at="2020-06-24T20:07:59 IST" data-provider="dp" finished-at="2020-06-24T20:08:16 IST">
+        <test-method status="PASS" signature="loginTest(java.util.Hashtable)[pri:0, instance:com.OSMOSE.testcases.OULogin@765f05af]" name="loginTest" duration-ms="16432" started-at="2020-06-26T16:53:26 IST" data-provider="dp" finished-at="2020-06-26T16:53:42 IST">
           <params>
             <param index="0">
               <value>
@@ -140,7 +95,7 @@
               <![CDATA[Click to see Screenshot]]>
             </line>
             <line>
-              <![CDATA[<a target="_blank" href=Wed_Jun_24_20_08_17_IST_2020.jpg>Screenshot</a>]]>
+              <![CDATA[<a target="_blank" href=Fri_Jun_26_16_53_43_IST_2020.jpg>Screenshot</a>]]>
             </line>
             <line>
               <![CDATA[<br>]]>
@@ -149,17 +104,17 @@
               <![CDATA[<br>]]>
             </line>
             <line>
-              <![CDATA[<a target="_blank" href=Wed_Jun_24_20_08_17_IST_2020.jpg><img src=Wed_Jun_24_20_08_17_IST_2020.jpg height=200 width=200></img></a>]]>
+              <![CDATA[<a target="_blank" href=Fri_Jun_26_16_53_43_IST_2020.jpg><img src=Fri_Jun_26_16_53_43_IST_2020.jpg height=200 width=200></img></a>]]>
             </line>
           </reporter-output>
         </test-method> <!-- loginTest -->
-        <test-method status="PASS" signature="verifyOUCard()[pri:1, instance:com.OSMOSE.testcases.OULogin@7e2f86e6]" name="verifyOUCard" duration-ms="2695" started-at="2020-06-24T20:08:17 IST" depends-on-methods="com.OSMOSE.testcases.OULogin.loginTest" finished-at="2020-06-24T20:08:20 IST">
+        <test-method status="PASS" signature="verifyOUCard()[pri:1, instance:com.OSMOSE.testcases.OULogin@765f05af]" name="verifyOUCard" duration-ms="2591" started-at="2020-06-26T16:53:43 IST" depends-on-methods="com.OSMOSE.testcases.OULogin.loginTest" finished-at="2020-06-26T16:53:46 IST">
           <reporter-output>
             <line>
               <![CDATA[Click to see Screenshot]]>
             </line>
             <line>
-              <![CDATA[<a target="_blank" href=Wed_Jun_24_20_08_20_IST_2020.jpg>Screenshot</a>]]>
+              <![CDATA[<a target="_blank" href=Fri_Jun_26_16_53_46_IST_2020.jpg>Screenshot</a>]]>
             </line>
             <line>
               <![CDATA[<br>]]>
@@ -168,17 +123,17 @@
               <![CDATA[<br>]]>
             </line>
             <line>
-              <![CDATA[<a target="_blank" href=Wed_Jun_24_20_08_20_IST_2020.jpg><img src=Wed_Jun_24_20_08_20_IST_2020.jpg height=200 width=200></img></a>]]>
+              <![CDATA[<a target="_blank" href=Fri_Jun_26_16_53_46_IST_2020.jpg><img src=Fri_Jun_26_16_53_46_IST_2020.jpg height=200 width=200></img></a>]]>
             </line>
           </reporter-output>
         </test-method> <!-- verifyOUCard -->
-        <test-method status="PASS" signature="verifyProductCard()[pri:2, instance:com.OSMOSE.testcases.OULogin@7e2f86e6]" name="verifyProductCard" duration-ms="51" started-at="2020-06-24T20:08:21 IST" depends-on-methods="com.OSMOSE.testcases.OULogin.loginTest" finished-at="2020-06-24T20:08:21 IST">
+        <test-method status="PASS" signature="verifyProductCard()[pri:2, instance:com.OSMOSE.testcases.OULogin@765f05af]" name="verifyProductCard" duration-ms="90" started-at="2020-06-26T16:53:46 IST" depends-on-methods="com.OSMOSE.testcases.OULogin.loginTest" finished-at="2020-06-26T16:53:46 IST">
           <reporter-output>
             <line>
               <![CDATA[Click to see Screenshot]]>
             </line>
             <line>
-              <![CDATA[<a target="_blank" href=Wed_Jun_24_20_08_21_IST_2020.jpg>Screenshot</a>]]>
+              <![CDATA[<a target="_blank" href=Fri_Jun_26_16_53_47_IST_2020.jpg>Screenshot</a>]]>
             </line>
             <line>
               <![CDATA[<br>]]>
@@ -187,15 +142,15 @@
               <![CDATA[<br>]]>
             </line>
             <line>
-              <![CDATA[<a target="_blank" href=Wed_Jun_24_20_08_21_IST_2020.jpg><img src=Wed_Jun_24_20_08_21_IST_2020.jpg height=200 width=200></img></a>]]>
+              <![CDATA[<a target="_blank" href=Fri_Jun_26_16_53_47_IST_2020.jpg><img src=Fri_Jun_26_16_53_47_IST_2020.jpg height=200 width=200></img></a>]]>
             </line>
           </reporter-output>
         </test-method> <!-- verifyProductCard -->
       </class> <!-- com.OSMOSE.testcases.OULogin -->
     </test> <!-- OULogin -->
-    <test name="Product" duration-ms="123842" started-at="2020-06-24T20:08:21 IST" finished-at="2020-06-24T20:10:25 IST">
+    <test name="Product" duration-ms="66687" started-at="2020-06-26T16:53:47 IST" finished-at="2020-06-26T16:54:53 IST">
       <class name="com.OSMOSE.testcases.Product">
-        <test-method status="PASS" signature="verifyTheProductLink(java.util.Hashtable)[pri:0, instance:com.OSMOSE.testcases.Product@57a48985]" name="verifyTheProductLink" duration-ms="14668" started-at="2020-06-24T20:08:21 IST" data-provider="dp" finished-at="2020-06-24T20:08:36 IST">
+        <test-method status="PASS" signature="verifyTheProductLink(java.util.Hashtable)[pri:0, instance:com.OSMOSE.testcases.Product@476b0ae6]" name="verifyTheProductLink" duration-ms="14300" started-at="2020-06-26T16:53:47 IST" data-provider="dp" finished-at="2020-06-26T16:54:01 IST">
           <params>
             <param index="0">
               <value>
@@ -208,7 +163,7 @@
               <![CDATA[Click to see Screenshot]]>
             </line>
             <line>
-              <![CDATA[<a target="_blank" href=Wed_Jun_24_20_08_36_IST_2020.jpg>Screenshot</a>]]>
+              <![CDATA[<a target="_blank" href=Fri_Jun_26_16_54_02_IST_2020.jpg>Screenshot</a>]]>
             </line>
             <line>
               <![CDATA[<br>]]>
@@ -217,17 +172,87 @@
               <![CDATA[<br>]]>
             </line>
             <line>
-              <![CDATA[<a target="_blank" href=Wed_Jun_24_20_08_36_IST_2020.jpg><img src=Wed_Jun_24_20_08_36_IST_2020.jpg height=200 width=200></img></a>]]>
+              <![CDATA[<a target="_blank" href=Fri_Jun_26_16_54_02_IST_2020.jpg><img src=Fri_Jun_26_16_54_02_IST_2020.jpg height=200 width=200></img></a>]]>
             </line>
           </reporter-output>
         </test-method> <!-- verifyTheProductLink -->
-        <test-method status="PASS" signature="searchElementPresent()[pri:2, instance:com.OSMOSE.testcases.Product@57a48985]" name="searchElementPresent" duration-ms="50077" started-at="2020-06-24T20:08:36 IST" depends-on-methods="com.OSMOSE.testcases.Product.verifyTheProductLink" finished-at="2020-06-24T20:09:27 IST">
+        <test-method status="FAIL" signature="verifyAddShoppingCarttext()[pri:23, instance:com.OSMOSE.testcases.Product@476b0ae6]" name="verifyAddShoppingCarttext" duration-ms="51409" started-at="2020-06-26T16:54:02 IST" finished-at="2020-06-26T16:54:53 IST">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="selectSize"]"}
+  (Session info: chrome=83.0.4103.106)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: '5CG6323N27', ip: '192.168.0.7', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.106, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Windows\Temp\scoped_dir6...}, goog:chromeOptions: {debuggerAddress: localhost:50838}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: none, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 290ad0992ff5593bcd6018542113fcf4
+*** Element info: {Using=xpath, value=//*[@id="selectSize"]}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="selectSize"]"}
+  (Session info: chrome=83.0.4103.106)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: '5CG6323N27', ip: '192.168.0.7', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.106, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Windows\Temp\scoped_dir6...}, goog:chromeOptions: {debuggerAddress: localhost:50838}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: none, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 290ad0992ff5593bcd6018542113fcf4
+*** Element info: {Using=xpath, value=//*[@id="selectSize"]}
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+at java.lang.reflect.Constructor.newInstance(Unknown Source)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:424)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
+at com.OSMOSE.base.Page.selectbyindex(Page.java:255)
+at com.OSMOSE.pages.OU.ProductPage.AddToCartShoppingCart(ProductPage.java:156)
+at com.OSMOSE.testcases.Product.verifyAddShoppingCarttext(Product.java:297)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(Unknown Source)
+at org.testng.TestRunner.privateRun(TestRunner.java:766)
+at org.testng.TestRunner.run(TestRunner.java:587)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+at org.testng.TestNG.runSuites(TestNG.java:1039)
+at org.testng.TestNG.run(TestNG.java:1007)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
             <line>
               <![CDATA[Click to see Screenshot]]>
             </line>
             <line>
-              <![CDATA[<a target="_blank" href=Wed_Jun_24_20_09_27_IST_2020.jpg>Screenshot</a>]]>
+              <![CDATA[<a target="_blank" href=Fri_Jun_26_16_54_53_IST_2020.jpg>Screenshot</a>]]>
             </line>
             <line>
               <![CDATA[<br>]]>
@@ -236,68 +261,11 @@
               <![CDATA[<br>]]>
             </line>
             <line>
-              <![CDATA[<a target="_blank" href=Wed_Jun_24_20_09_27_IST_2020.jpg><img src=Wed_Jun_24_20_09_27_IST_2020.jpg height=200 width=200></img></a>]]>
+              <![CDATA[<a target="_blank" href=Fri_Jun_26_16_54_53_IST_2020.jpg><img src=Fri_Jun_26_16_54_53_IST_2020.jpg height=200 width=200></img></a>]]>
             </line>
           </reporter-output>
-        </test-method> <!-- searchElementPresent -->
-        <test-method status="PASS" signature="DeleteQuanityinShoppingCart()[pri:27, instance:com.OSMOSE.testcases.Product@57a48985]" name="DeleteQuanityinShoppingCart" duration-ms="5109" started-at="2020-06-24T20:09:27 IST" finished-at="2020-06-24T20:09:32 IST">
-          <reporter-output>
-            <line>
-              <![CDATA[Click to see Screenshot]]>
-            </line>
-            <line>
-              <![CDATA[<a target="_blank" href=Wed_Jun_24_20_09_33_IST_2020.jpg>Screenshot</a>]]>
-            </line>
-            <line>
-              <![CDATA[<br>]]>
-            </line>
-            <line>
-              <![CDATA[<br>]]>
-            </line>
-            <line>
-              <![CDATA[<a target="_blank" href=Wed_Jun_24_20_09_33_IST_2020.jpg><img src=Wed_Jun_24_20_09_33_IST_2020.jpg height=200 width=200></img></a>]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- DeleteQuanityinShoppingCart -->
-        <test-method status="PASS" signature="UpdateIncreaseQuanityinShoppingCart()[pri:28, instance:com.OSMOSE.testcases.Product@57a48985]" name="UpdateIncreaseQuanityinShoppingCart" duration-ms="5250" started-at="2020-06-24T20:09:33 IST" finished-at="2020-06-24T20:09:38 IST">
-          <reporter-output>
-            <line>
-              <![CDATA[Click to see Screenshot]]>
-            </line>
-            <line>
-              <![CDATA[<a target="_blank" href=Wed_Jun_24_20_09_38_IST_2020.jpg>Screenshot</a>]]>
-            </line>
-            <line>
-              <![CDATA[<br>]]>
-            </line>
-            <line>
-              <![CDATA[<br>]]>
-            </line>
-            <line>
-              <![CDATA[<a target="_blank" href=Wed_Jun_24_20_09_38_IST_2020.jpg><img src=Wed_Jun_24_20_09_38_IST_2020.jpg height=200 width=200></img></a>]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- UpdateIncreaseQuanityinShoppingCart -->
-        <test-method status="PASS" signature="UpdateDecreaseQuanityinShoppingCart()[pri:29, instance:com.OSMOSE.testcases.Product@57a48985]" name="UpdateDecreaseQuanityinShoppingCart" duration-ms="46127" started-at="2020-06-24T20:09:38 IST" finished-at="2020-06-24T20:10:25 IST">
-          <reporter-output>
-            <line>
-              <![CDATA[Click to see Screenshot]]>
-            </line>
-            <line>
-              <![CDATA[<a target="_blank" href=Wed_Jun_24_20_10_25_IST_2020.jpg>Screenshot</a>]]>
-            </line>
-            <line>
-              <![CDATA[<br>]]>
-            </line>
-            <line>
-              <![CDATA[<br>]]>
-            </line>
-            <line>
-              <![CDATA[<a target="_blank" href=Wed_Jun_24_20_10_25_IST_2020.jpg><img src=Wed_Jun_24_20_10_25_IST_2020.jpg height=200 width=200></img></a>]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- UpdateDecreaseQuanityinShoppingCart -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.OSMOSE.testcases.Product@57a48985]" name="tearDown" is-config="true" duration-ms="1024" started-at="2020-06-24T20:10:25 IST" finished-at="2020-06-24T20:10:26 IST">
+        </test-method> <!-- verifyAddShoppingCarttext -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.OSMOSE.testcases.Product@476b0ae6]" name="tearDown" is-config="true" duration-ms="1123" started-at="2020-06-26T16:54:54 IST" finished-at="2020-06-26T16:54:55 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
