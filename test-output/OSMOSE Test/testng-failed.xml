@@ -11,8 +11,7 @@
       <class name="com.OSMOSE.testcases.Product">
         <methods>
           <include name="tearDown"/>
-          <include name="ClickManageQuotesLink"/>
-          <include name="CreateQuote_Attachment"/>
+          <include name="VerifyCrossicononhoppingCart"/>
         </methods>
       </class> <!-- com.OSMOSE.testcases.Product -->
     </classes>

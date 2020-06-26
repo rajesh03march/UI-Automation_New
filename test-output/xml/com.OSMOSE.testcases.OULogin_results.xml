@@ -4,14 +4,14 @@
            failures="0"
            errors="0"
            skipped="0"
-           time="20.071">
+           time="24.355">
   <properties />
   
   
-            <testcase name="verifyVideoLinks" time="0.066" classname="com.OSMOSE.testcases.OULogin" />
-                <testcase name="loginTest" time="16.567" classname="com.OSMOSE.testcases.OULogin" />
-                <testcase name="verifyOUCard" time="3.284" classname="com.OSMOSE.testcases.OULogin" />
-                <testcase name="verifyProductCard" time="0.037" classname="com.OSMOSE.testcases.OULogin" />
-                <testcase name="verifyHyperlinks" time="0.117" classname="com.OSMOSE.testcases.OULogin" />
+            <testcase name="verifyVideoLinks" time="0.074" classname="com.OSMOSE.testcases.OULogin" />
+                <testcase name="loginTest" time="20.622" classname="com.OSMOSE.testcases.OULogin" />
+                <testcase name="verifyOUCard" time="3.487" classname="com.OSMOSE.testcases.OULogin" />
+                <testcase name="verifyProductCard" time="0.039" classname="com.OSMOSE.testcases.OULogin" />
+                <testcase name="verifyHyperlinks" time="0.133" classname="com.OSMOSE.testcases.OULogin" />
       
 </testsuite>

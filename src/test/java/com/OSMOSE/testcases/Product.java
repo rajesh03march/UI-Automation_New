@@ -268,16 +268,16 @@ public class Product extends BaseTest{
 	        HomeOU ou= new HomeOU();
 	        ProductPage pp = ou.goProduct();
 	        pp.ProductReturnPolicy();
-	        //Assert.assertEquals(Page.getText("ReturnProceduretext_XPATH"), "Return Procedure");
+	        Assert.assertEquals(Page.getText("ReturnProceduretext_XPATH"), "Return Procedure");
 	        pp.clickRequestCrossicon();
 	    }
-	 @Test(priority = 24,enabled =false)
+	 @Test(priority = 24,enabled =true)
 	    public void AddShoppingCart() throws InterruptedException {
 	        HomeOU ou= new HomeOU();
 	        ProductPage pp = ou.goProduct();
 	        pp.AddToShoppingCart();
 	        Thread.sleep(2000);
-            //Assert.assertEquals(Page.getText("ProductsQuoterequest_XPATH"), "Quote Request");
+           Assert.assertEquals(Page.getText("ProductsQuoterequest_XPATH"), "Quote Request");
 	    }
 	 
 	 @Test(priority = 23,enabled = false)
@@ -285,18 +285,18 @@ public class Product extends BaseTest{
 	        HomeOU ou= new HomeOU();
 	        ProductPage pp = ou.goProduct();
 	       pp.AddToCartShoppingCart();
-         Assert.assertEquals(Page.getText("ForInfoQuoteRequest_XPATH"), "For information or to place an order");
-         Assert.assertEquals(Page.getText("ForCallRequest_XPATH"), "(770) 632-6700 Option 3");
-        Assert.assertEquals(Page.getText("ForEmailQuoteRequest_XPATH"),"products@osmose.com"); 
+	       Assert.assertEquals(Page.driver.findElement(By.xpath("//div[@class='addCartStepOne']/div/div[2]/div[2]")).getText(), "For information or to place an order");
+	        Assert.assertEquals(Page.driver.findElement(By.xpath("//div[@class='addCartStepOne']/div/div[2]/div[3]/strong")).getText(), "(770) 632-6700 Option 3");
+	        Assert.assertEquals(Page.driver.findElement(By.xpath("//div[@class='addCartStepOne']/div/div[2]/div[4]/strong/a")).getText(),  "products@osmose.com");
 	    }
     
 	 //Shopping Cart
-	 @Test(priority = 25,enabled =false)
+	 @Test(priority = 25,enabled =true)
 	    public void VerifyCrossicononhoppingCart() throws InterruptedException {
 	        HomeOU ou= new HomeOU();
 	        ProductPage pp = ou.goProduct();
 	        Thread.sleep(1000);
-	        Assert.assertTrue((Page.isElementPresent(By.xpath("//*[@id=\"qty_5_906\"]"))));
+	        Assert.assertTrue(Page.driver.findElement(By.xpath("//*[@id='openMyCart___BV_modal_body_']/div/div[1]/div/div[1]/div/div/div/div/div[2]/div/div[3]/a/span/img")).isDisplayed());
 	    }
 	 
 	//Shopping Cart
@@ -306,8 +306,7 @@ public class Product extends BaseTest{
 		        ProductPage pp = ou.goProduct();
 		        pp.AddToCartProductPoleRestoration();
 		        Thread.sleep(1000);
-	        // Assert.assertTrue((Page.isElementPresent(By.xpath("//*[@id=\"qty_5_906\"]"))));
-	        //Assert.assertEquals(Page.getText("QuantityfieldonShoppingCart_XPATH"), "16");
+		        Assert.assertTrue(Page.driver.findElement(By.xpath("//*[@id='openMyCart___BV_modal_body_']/div/div[1]/div/div[1]/div/div/div/div/div[2]/div/div[3]/a/span/img")).isDisplayed());
 		    }
 		 
 		 @Test(priority = 27,enabled = false)
@@ -346,22 +345,58 @@ public class Product extends BaseTest{
 			        
 		    }
 		 
-		 @Test(priority = 35)
+		 @Test(priority = 35,enabled =false)
 		 public void VerifyUIonClickQuoteID() throws InterruptedException {
 		        HomeOU ou= new HomeOU();
 		        ProductPage pp = ou.goProduct();
 		        //pp.clickProductLink();
 		        pp.clickAdmin_ManageQuotes();
 		        Thread.sleep(2000);
-		       // Assert.assertTrue((Page.isElementPresent(By.xpath("SubmitbtnQuotesubmission_XPATH"))));
+		        Assert.assertTrue(Page.driver.findElement(By.xpath("//*[@class =\"btnsAdminHeader\"]/a[2]")).isDisplayed());
 		        Assert.assertEquals(Page.getText("HeadingQuoteIDSubmitQuotePopup_XPATH"),"Q000001");
-		        //Assert.assertTrue((Page.isElementPresent(By.xpath("UploadbtnSubmitQuote_XPATH"))));
-		        //Assert.assertTrue((Page.isElementPresent(By.xpath("commentstextareaSubmitQuote_XPATH"))));
+		        Assert.assertTrue(Page.driver.findElement(By.xpath("//div[@class=\"col-12 text-center\"]/button")).isDisplayed());
+		        Assert.assertTrue(Page.driver.findElement(By.xpath("//textarea[@class=\"form-control mt-2 mb-2\"]")).isDisplayed());
+
 		    }
 		
 		 
+		 @Test(priority = 36,enabled = false)
+		 public void SubmitQuotewithOrderedstatus() throws InterruptedException {
+		        HomeOU ou= new HomeOU();
+		        ProductPage pp = ou.goProduct();
+		        Thread.sleep(2000);
+		        pp.ClickSubmitQuotewithOrderedstatus();
+		        
+
+		    }
 		 
+		 @Test(priority = 37,enabled = false)
+		 public void SubmitQuotewithQuotePendingstatus() throws InterruptedException {
+		        HomeOU ou= new HomeOU();
+		        ProductPage pp = ou.goProduct();
+		        Thread.sleep(2000);
+		        pp.ClickSubmitQuotewithQuotedPendingstatus();
+		       
+		    }
 		 
+		 @Test(priority = 39,enabled = false)
+		 public void SubmitQuotewithQuotedstatus() throws InterruptedException {
+		        HomeOU ou= new HomeOU();
+		        ProductPage pp = ou.goProduct();
+		        Thread.sleep(2000);
+		        pp.ClickSubmitQuotewithQUOTEDstatus();
+		       
+		    }
+		 
+		 @Test(priority = 38,enabled = false)
+		 public void SubmitQuotewithQuoteCancelledstatus() throws InterruptedException {
+		        HomeOU ou= new HomeOU();
+		        ProductPage pp = ou.goProduct();
+		        Thread.sleep(2000);
+		        pp.ClickSubmitQuotewithCancelledstatus();
+		        Thread.sleep(3000);
+
+		    }
 		 @Test(priority = 31,enabled = false)
 		 public void CreateQuote() throws InterruptedException {
 			 HomeOU ou= new HomeOU();
