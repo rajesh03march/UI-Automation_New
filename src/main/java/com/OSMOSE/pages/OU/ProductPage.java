@@ -225,7 +225,8 @@ public class ProductPage extends Page {
    public void DeleteQuanityinShoppingCart() throws InterruptedException {
 	   click("ProductPoleRestoration_XPATH");
 	   Thread.sleep(1000);
-	   click("ProductPoleRestorationCTruss_XPATH");
+	  // click("ProductPoleRestorationCTruss_XPATH");
+	   click("ProductPoleRestorationOsmo_XPATH");
 	   selectbyindex("ProductSizeDropdown_XPATH",1);
 	   click("ProductSizeEnterQuantity_XPATH");
 	   clear("ProductSizeEnterQuantity_XPATH");
@@ -397,7 +398,25 @@ public class ProductPage extends Page {
 	  click("FileAttachmentSubmitbtn_XPATH");
       click("QuoteRequestsubmittedpopupClosebtn_XPATH");
    }
+   
+   
+   public void MyQuotes() throws InterruptedException {
+	   click("MyQuotesMenu_XPATH");
    }
+   
+   public void VerifyHomepageCartIcon() {
+	   click("ProductPoleRestoration_XPATH");
+	   click("ProductPoleRestorationCTruss_XPATH");
+	   selectbyindex("ProductSizeDropdown_XPATH",2);
+	   click("ProductSizeEnterQuantity_XPATH");
+	   clear("ProductSizeEnterQuantity_XPATH");
+       type("ProductSizeEnterQuantity_XPATH", "8");
+       click("ProductAddButton_XPATH");
+       click("ProductViewCartButton_XPATH");
+       click("QuoteRequestCrossicon_XPATH");
+       Page.driver.navigate().back();
+   }
+}
    
    
 

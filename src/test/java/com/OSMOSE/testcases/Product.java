@@ -114,6 +114,7 @@ public class Product extends BaseTest{
     public void VerifyProductclick() throws InterruptedException {
         HomeOU ou= new HomeOU();
         ProductPage pp = ou.goProduct();
+        pp.clickProductLink();
         pp.clickOnProductFeatureImage();
         Assert.assertEquals(Page.getText("FeaturedProducts_XPATH"),"Featured Products");
         Page.driver.navigate().back();
@@ -134,8 +135,8 @@ public class Product extends BaseTest{
         ProductPage pp = ou.goProduct();
         pp.clickOnProductImage();
         pp.AddQuantityInCart_AssertCellNumber();
-       Assert.assertEquals(Page.getAttributeValue("SelectDropDownToolTip_XPATH","title"),"72-020-009-100 PR - C2-3611");
-      Assert.assertEquals(Page.getText("FeaturedProductsCellNumber_XPATH"),"(770) 632-6700 Option 3");
+       //Assert.assertEquals(Page.getAttributeValue("SelectDropDownToolTip_XPATH","title"),"72-020-009-100 PR - C2-3611");
+       Assert.assertEquals(Page.getText("FeaturedProductsCellNumber_XPATH"),"(770) 632-6700 Option 3");
         pp.switchToNewWindow(0);
         
     }
@@ -271,14 +272,7 @@ public class Product extends BaseTest{
 	        Assert.assertEquals(Page.getText("ReturnProceduretext_XPATH"), "Return Procedure");
 	        pp.clickRequestCrossicon();
 	    }
-	 @Test(priority = 24,enabled =true)
-	    public void AddShoppingCart() throws InterruptedException {
-	        HomeOU ou= new HomeOU();
-	        ProductPage pp = ou.goProduct();
-	        pp.AddToShoppingCart();
-	        Thread.sleep(2000);
-           Assert.assertEquals(Page.getText("ProductsQuoterequest_XPATH"), "Quote Request");
-	    }
+	 
 	 
 	 @Test(priority = 23,enabled = false)
 	    public void verifyAddShoppingCarttext() throws InterruptedException {
@@ -289,9 +283,19 @@ public class Product extends BaseTest{
 	        Assert.assertEquals(Page.driver.findElement(By.xpath("//div[@class='addCartStepOne']/div/div[2]/div[3]/strong")).getText(), "(770) 632-6700 Option 3");
 	        Assert.assertEquals(Page.driver.findElement(By.xpath("//div[@class='addCartStepOne']/div/div[2]/div[4]/strong/a")).getText(),  "products@osmose.com");
 	    }
+	 @Test(priority = 24,enabled =false)
+	    public void AddShoppingCart() throws InterruptedException {
+	        HomeOU ou= new HomeOU();
+	        ProductPage pp = ou.goProduct();
+	        pp.AddToShoppingCart();
+	        Thread.sleep(2000);
+           Assert.assertEquals(Page.getText("ProductsQuoterequest_XPATH"), "Quote Request");
+	    }
+	 
+	 
     
 	 //Shopping Cart
-	 @Test(priority = 25,enabled =true)
+	 @Test(priority = 25,enabled =false)
 	    public void VerifyCrossicononhoppingCart() throws InterruptedException {
 	        HomeOU ou= new HomeOU();
 	        ProductPage pp = ou.goProduct();
@@ -323,6 +327,7 @@ public class Product extends BaseTest{
 		        ProductPage pp = ou.goProduct();
 		        Thread.sleep(1000);
              pp.UpdateIncreaseQuanityinShoppingCart();
+             Assert.assertEquals(Page.driver.findElement(By.xpath("//input[@name='quantities']")).getAttribute("value"), "9");
 		    } 
 		 
 		 @Test(priority = 29,enabled = false)
@@ -331,9 +336,64 @@ public class Product extends BaseTest{
 		        ProductPage pp = ou.goProduct();
 		        Thread.sleep(1000);
           pp.UpdateDecreaseQuanityinShoppingCart();
+          Assert.assertEquals(Page.driver.findElement(By.xpath("//input[@name='quantities']")).getAttribute("value"), "7");
 		    } 
 		 
+		 @Test(priority = 30,enabled = false)
+		 public void CreateQuote() throws InterruptedException {
+			 HomeOU ou= new HomeOU();
+		        ProductPage pp = ou.goProduct();
+		        pp.CreateQuoteByAddToShoppingCart();
+		        Thread.sleep(1000); 
+		 }
+		 
+		 @Test(priority = 31,enabled=false)
+		 public void CreateQuote_Comments() throws InterruptedException {
+			 HomeOU ou= new HomeOU();
+		        ProductPage pp = ou.goProduct();
+		        pp.CreateQuoteByCommentsAddToShoppingCart();
+		        Thread.sleep(1000); 
+		 }
+		 @Test(priority = 32,enabled=false)
+		 public void CreateQuote_ZipCode() throws InterruptedException {
+			 HomeOU ou= new HomeOU();
+		        ProductPage pp = ou.goProduct();
+		        pp.CreateQuoteByZipCodeAddToShoppingCart();
+		        Thread.sleep(1000); 
+		 }
+		 
+		 @Test(priority = 33,enabled=false)
+		 public void CreateQuote_Attachment() throws InterruptedException {
+			 HomeOU ou= new HomeOU();
+		        ProductPage pp = ou.goProduct();
+		        pp.CreateQuoteByFileAddToShoppingCart();
+		        Thread.sleep(1000); 
+		 }
+		 
+		 @Test(priority = 34,enabled=false)
+		 public void MyQuotes_96421() throws InterruptedException {
+			 HomeOU ou= new HomeOU();
+		        ProductPage pp = ou.goProduct();
+		        pp.MyQuotes();
+		        Thread.sleep(1000); 
+		        Assert.assertEquals(Page.getText("MyQuotesheadertxt_XPATH"),"My Quotes");
+		        Assert.assertEquals(Page.getText("Statustxt_XPATH"),"Status:");
+		        Assert.assertTrue(Page.driver.findElement(By.xpath("//div[@class='popupQuotes']/div[1]/div[1]/div[1]/div/div[1]")).isDisplayed());
+		        Assert.assertTrue(Page.driver.findElement(By.xpath("//header[@id=\"openMyquotes___BV_modal_header_\"]/button")).isDisplayed());
+		        Assert.assertTrue(Page.driver.findElement(By.xpath("//header[@id=\"openMyquotes___BV_modal_header_\"]/h5/select")).isDisplayed());
+		 }
+		 
 		 @Test(priority = 35,enabled=false)
+		 public void HomepageCarticon() throws InterruptedException {
+			 HomeOU ou= new HomeOU();
+		        ProductPage pp = ou.goProduct();
+		        pp.VerifyHomepageCartIcon();
+		        Thread.sleep(6000);
+		        
+		        Assert.assertTrue(Page.driver.findElement(By.xpath("//nav[@id='topHeader']/div/ul/li[4]/a/div/div[1]/span/span")).isDisplayed());
+		 }
+		 
+		 @Test(priority = 36,enabled=false)
 		 public void ClickManageQuotesLink() throws InterruptedException {
 		        HomeOU ou= new HomeOU();
 		        ProductPage pp = ou.goProduct();
@@ -345,7 +405,7 @@ public class Product extends BaseTest{
 			        
 		    }
 		 
-		 @Test(priority = 35,enabled =false)
+		 @Test(priority = 37,enabled =true)
 		 public void VerifyUIonClickQuoteID() throws InterruptedException {
 		        HomeOU ou= new HomeOU();
 		        ProductPage pp = ou.goProduct();
@@ -360,7 +420,7 @@ public class Product extends BaseTest{
 		    }
 		
 		 
-		 @Test(priority = 36,enabled = false)
+		 @Test(priority = 38,enabled = false)
 		 public void SubmitQuotewithOrderedstatus() throws InterruptedException {
 		        HomeOU ou= new HomeOU();
 		        ProductPage pp = ou.goProduct();
@@ -370,7 +430,7 @@ public class Product extends BaseTest{
 
 		    }
 		 
-		 @Test(priority = 37,enabled = false)
+		 @Test(priority = 39,enabled = false)
 		 public void SubmitQuotewithQuotePendingstatus() throws InterruptedException {
 		        HomeOU ou= new HomeOU();
 		        ProductPage pp = ou.goProduct();
@@ -379,16 +439,7 @@ public class Product extends BaseTest{
 		       
 		    }
 		 
-		 @Test(priority = 39,enabled = false)
-		 public void SubmitQuotewithQuotedstatus() throws InterruptedException {
-		        HomeOU ou= new HomeOU();
-		        ProductPage pp = ou.goProduct();
-		        Thread.sleep(2000);
-		        pp.ClickSubmitQuotewithQUOTEDstatus();
-		       
-		    }
-		 
-		 @Test(priority = 38,enabled = false)
+		 @Test(priority = 40,enabled = true)
 		 public void SubmitQuotewithQuoteCancelledstatus() throws InterruptedException {
 		        HomeOU ou= new HomeOU();
 		        ProductPage pp = ou.goProduct();
@@ -397,34 +448,16 @@ public class Product extends BaseTest{
 		        Thread.sleep(3000);
 
 		    }
-		 @Test(priority = 31,enabled = false)
-		 public void CreateQuote() throws InterruptedException {
-			 HomeOU ou= new HomeOU();
-		        ProductPage pp = ou.goProduct();
-		        pp.CreateQuoteByAddToShoppingCart();
-		        Thread.sleep(1000); 
-		 }
 		 
-		 @Test(priority = 32,enabled=false)
-		 public void CreateQuote_Comments() throws InterruptedException {
-			 HomeOU ou= new HomeOU();
+		 @Test(priority = 41,enabled = true)
+		 public void SubmitQuotewithQuotedstatus() throws InterruptedException {
+		        HomeOU ou= new HomeOU();
 		        ProductPage pp = ou.goProduct();
-		        pp.CreateQuoteByCommentsAddToShoppingCart();
-		        Thread.sleep(1000); 
-		 }
-		 @Test(priority = 33,enabled=false)
-		 public void CreateQuote_ZipCode() throws InterruptedException {
-			 HomeOU ou= new HomeOU();
-		        ProductPage pp = ou.goProduct();
-		        pp.CreateQuoteByZipCodeAddToShoppingCart();
-		        Thread.sleep(1000); 
-		 }
+		        Thread.sleep(2000);
+		        pp.ClickSubmitQuotewithQUOTEDstatus();
+		       
+		    }
 		 
-		 @Test(priority = 34,enabled=false)
-		 public void CreateQuote_Attachment() throws InterruptedException {
-			 HomeOU ou= new HomeOU();
-		        ProductPage pp = ou.goProduct();
-		        pp.CreateQuoteByFileAddToShoppingCart();
-		        Thread.sleep(1000); 
-		 }
+		 
+		 
 }
