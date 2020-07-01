@@ -1,14 +1,15 @@
-26/06/2020 16:53:23 devpinoyLogger Config file loaded !!!
-26/06/2020 16:53:23 devpinoyLogger OR file loaded !!!
-26/06/2020 16:53:25 devpinoyLogger Navigated to : https://osmose360cl.azurewebsites.net/
-26/06/2020 16:53:38 devpinoyLogger Typing in an Element : email_XPATH entered value as : rajesh.yadav@centurylink.com
-26/06/2020 16:53:38 devpinoyLogger Typing in an Element : password_XPATH entered value as : Hyde@2317
-26/06/2020 16:53:38 devpinoyLogger Clicking on an Element : submit_XPATH
-26/06/2020 16:53:42 devpinoyLogger Text of the locator: verify_ID value as :Rajesh Yadav
-26/06/2020 16:53:46 devpinoyLogger Text of the locator: OUCard_XPATH value as :Osmose University
-26/06/2020 16:53:46 devpinoyLogger Text of the locator: ProCard_XPATH value as :Products
-26/06/2020 16:54:00 devpinoyLogger Clicking on an Element : ProCard_XPATH
-26/06/2020 16:54:01 devpinoyLogger Text of the locator: POrdering_XPATH value as :Pole and Line Products
-26/06/2020 16:54:02 devpinoyLogger Clicking on an Element : ProductPoleRestoration_XPATH
-26/06/2020 16:54:03 devpinoyLogger Clicking on an Element : ProductPoleRestoration_XPATH
-26/06/2020 16:54:03 devpinoyLogger Clicking on an Element : ProductPoleRestorationCTruss_XPATH
+01/07/2020 18:06:34 devpinoyLogger Config file loaded !!!
+01/07/2020 18:06:34 devpinoyLogger OR file loaded !!!
+01/07/2020 18:06:37 devpinoyLogger Navigated to : https://osmose360cl.azurewebsites.net/
+01/07/2020 18:06:50 devpinoyLogger Typing in an Element : email_XPATH entered value as : rajesh.yadav@centurylink.com
+01/07/2020 18:06:50 devpinoyLogger Typing in an Element : password_XPATH entered value as : Hyde@2317
+01/07/2020 18:06:51 devpinoyLogger Clicking on an Element : submit_XPATH
+01/07/2020 18:06:54 devpinoyLogger Text of the locator: verify_ID value as :Rajesh Yadav
+01/07/2020 18:06:59 devpinoyLogger Text of the locator: OUCard_XPATH value as :Osmose University
+01/07/2020 18:07:00 devpinoyLogger Text of the locator: ProCard_XPATH value as :Products
+01/07/2020 18:07:14 devpinoyLogger Clicking on an Element : ProCard_XPATH
+01/07/2020 18:07:15 devpinoyLogger Text of the locator: POrdering_XPATH value as :Pole and Line Products
+01/07/2020 18:07:17 devpinoyLogger Clicking on an Element : ClickAdminDropDown_XPATH
+01/07/2020 18:07:17 devpinoyLogger Clicking on an Element : ManageProductsdrp_XPATH
+01/07/2020 18:07:17 devpinoyLogger Clicking on an Element : ManageProductDownloadspreadsheet_XPATH
+01/07/2020 18:07:18 devpinoyLogger Selecting from an element : ManageProductDownloadspreadsheetbtn_XPATH

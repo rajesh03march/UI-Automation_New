@@ -10,7 +10,7 @@
     <classes>
       <class name="com.OSMOSE.testcases.Product">
         <methods>
-          <include name="verifyAddShoppingCarttext"/>
+          <include name="SubmitQuotewithQuoteCancelledstatus"/>
           <include name="tearDown"/>
         </methods>
       </class> <!-- com.OSMOSE.testcases.Product -->
