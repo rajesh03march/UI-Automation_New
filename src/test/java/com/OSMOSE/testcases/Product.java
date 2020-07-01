@@ -381,6 +381,8 @@ public class Product extends BaseTest{
 		        Assert.assertTrue(Page.driver.findElement(By.xpath("//div[@class='popupQuotes']/div[1]/div[1]/div[1]/div/div[1]")).isDisplayed());
 		        Assert.assertTrue(Page.driver.findElement(By.xpath("//header[@id=\"openMyquotes___BV_modal_header_\"]/button")).isDisplayed());
 		        Assert.assertTrue(Page.driver.findElement(By.xpath("//header[@id=\"openMyquotes___BV_modal_header_\"]/h5/select")).isDisplayed());
+		        Assert.assertTrue(Page.driver.findElement(By.xpath("//div[@class='popupQuotes']/div[2]/div[1]/div[2]/div[1]/div[1]/div[2]/button[1]")).isDisplayed());
+		        Assert.assertTrue(Page.driver.findElement(By.xpath("//div[@class='popupQuotes']/div[2]/div[1]/div[2]/div[1]/div[1]/div[2]/a")).isDisplayed());
 		 }
 		 
 		 @Test(priority = 35,enabled=false)
@@ -405,7 +407,7 @@ public class Product extends BaseTest{
 			        
 		    }
 		 
-		 @Test(priority = 37,enabled =true)
+		 @Test(priority = 37,enabled =false)
 		 public void VerifyUIonClickQuoteID() throws InterruptedException {
 		        HomeOU ou= new HomeOU();
 		        ProductPage pp = ou.goProduct();
@@ -416,7 +418,8 @@ public class Product extends BaseTest{
 		        Assert.assertEquals(Page.getText("HeadingQuoteIDSubmitQuotePopup_XPATH"),"Q000001");
 		        Assert.assertTrue(Page.driver.findElement(By.xpath("//div[@class=\"col-12 text-center\"]/button")).isDisplayed());
 		        Assert.assertTrue(Page.driver.findElement(By.xpath("//textarea[@class=\"form-control mt-2 mb-2\"]")).isDisplayed());
-
+		        
+		        
 		    }
 		
 		 
@@ -439,7 +442,7 @@ public class Product extends BaseTest{
 		       
 		    }
 		 
-		 @Test(priority = 40,enabled = true)
+		 @Test(priority = 40,enabled = false)
 		 public void SubmitQuotewithQuoteCancelledstatus() throws InterruptedException {
 		        HomeOU ou= new HomeOU();
 		        ProductPage pp = ou.goProduct();
@@ -450,7 +453,7 @@ public class Product extends BaseTest{
 		    }
 		 
 		 @Test(priority = 41,enabled = true)
-		 public void SubmitQuotewithQuotedstatus() throws InterruptedException {
+		 public void SubmitQuotewithQuotedstatus() throws Exception {
 		        HomeOU ou= new HomeOU();
 		        ProductPage pp = ou.goProduct();
 		        Thread.sleep(2000);
@@ -458,6 +461,51 @@ public class Product extends BaseTest{
 		       
 		    }
 		 
+		 @Test(priority = 42,enabled = false)
+		 public void SubmitQuotewithOrderRequestedstatus() throws InterruptedException {
+		        HomeOU ou= new HomeOU();
+		        ProductPage pp = ou.goProduct();
+		        Thread.sleep(2000);
+		        pp.ClickSubmitQuotewithOrderRequestedstatus();
+		        
+
+		    }
 		 
+		 @Test(priority = 43,enabled =false)
+		 public void ClickManageProducts() throws InterruptedException {
+		        HomeOU ou= new HomeOU();
+		        ProductPage pp = ou.goProduct();
+		        //pp.clickProductLink();
+		        pp.clickAdmin_ManageProducts();
+		        Thread.sleep(2000);
+		        Assert.assertEquals(Page.getText("ManageProductsheading_XPATH"),"Manage Products");
+		   }
+		
+		 @Test(priority = 44,enabled =false,description = "Clicking Download Spreadsheet drop down and download")
+		 public void ClickDownloadProducts() throws InterruptedException {
+		        HomeOU ou= new HomeOU();
+		        ProductPage pp = ou.goProduct();
+		        //pp.clickProductLink();
+		        Thread.sleep(2000);
+		        pp.ClickDownloadProducts();
+		   }
+		 @Test(priority = 45,enabled =false,description = "Clicking ProductsInreview button and going back to Manage Products pop up")
+		 public void ClickProductsinReview() throws InterruptedException {
+		        HomeOU ou= new HomeOU();
+		        ProductPage pp = ou.goProduct();
+		        //pp.clickProductLink();
+		        Thread.sleep(2000);
+		        pp.ClickProductsInReview();
+		        Assert.assertEquals(Page.getText("ProductReviewHeading_XPATH"),"Product Review");
+		        pp.ClickProductsInReviewbackLink();
+		   }
 		 
+		 @Test(priority = 46,enabled =false,description = "upload Spreadsheet")
+		 public void ClickUploadProducts() throws InterruptedException {
+		        HomeOU ou= new HomeOU();
+		        ProductPage pp = ou.goProduct();
+		        //pp.clickProductLink();
+		        Thread.sleep(2000);
+		        pp.ClickUploadProducts();
+		   }
 }

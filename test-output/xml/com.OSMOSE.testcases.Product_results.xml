@@ -1,15 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuite name="Product"
-           tests="3"
+           tests="2"
            failures="0"
            errors="0"
            skipped="0"
-           time="20.454">
+           time="58.232">
   <properties />
   
   
-            <testcase name="verifyTheProductLink" time="14.317" classname="com.OSMOSE.testcases.Product" />
-                <testcase name="VerifyCrossicononhoppingCart" time="1.055" classname="com.OSMOSE.testcases.Product" />
-                <testcase name="AddShoppingCart" time="5.082" classname="com.OSMOSE.testcases.Product" />
+            <testcase name="verifyTheProductLink" time="14.315" classname="com.OSMOSE.testcases.Product" />
+                <testcase name="SubmitQuotewithQuotedstatus" time="43.917" classname="com.OSMOSE.testcases.Product" />
       
 </testsuite>

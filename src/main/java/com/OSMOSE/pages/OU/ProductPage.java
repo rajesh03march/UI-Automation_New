@@ -1,5 +1,7 @@
 package com.OSMOSE.pages.OU;
 
+import java.io.IOException;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
@@ -272,6 +274,52 @@ public class ProductPage extends Page {
 	   click("Q00001QUOTEID_XPATH");
    }
    
+   public void clickAdmin_ManageProducts() throws InterruptedException {
+	   click("ClickAdminDropDown_XPATH");
+	   click("ManageProductsdrp_XPATH");
+	   click("ManageProductCrossbutn_XPATH");
+   }
+   
+   public void ClickDownloadProducts() throws InterruptedException {
+	 
+	   click("ClickAdminDropDown_XPATH");
+	   click("ManageProductsdrp_XPATH");
+	   click("ManageProductDownloadspreadsheet_XPATH");
+	   ClickActions("ManageProductDownloadspreadsheetbtn_XPATH");
+	   Thread.sleep(2000);
+	   
+	   WebElement all = Page.driver.findElement(By.xpath("//input[@id='__BVID__120']"));
+	      
+       JavascriptExecutor js = (JavascriptExecutor) driver;
+       js.executeScript("arguments[0].click();", all);
+       Thread.sleep(3000);
+       click("ManageProductDownloadspreadsheetbtn_XPATH");
+	   
+   }
+   
+  
+   
+   public void ClickUploadProducts() throws InterruptedException {
+		 
+	   click("ClickAdminDropDown_XPATH");
+	   click("ManageProductsdrp_XPATH");
+	   type("ManageProductUploadpreadsheet_XPATH","C:\\Users\\AB73631\\Desktop\\desktop\\Exported Data.xlsx");
+	   
+   }
+   
+   public void ClickProductsInReview() throws InterruptedException {
+		 
+	   click("ClickAdminDropDown_XPATH");
+	   click("ManageProductsdrp_XPATH");
+	   click("ManageProductsinReviewbutton_XPATH");
+	   click("ProductReviewBackLink_XPATh");
+   }
+   
+   public void ClickProductsInReviewbackLink() throws InterruptedException {
+	   click("ProductReviewBackLink_XPATh");
+   }
+   
+   
    public void ClickSubmitQuotewithOrderedstatus() throws InterruptedException {
 	   
 	     click("ClickAdminDropDown_XPATH");
@@ -286,6 +334,20 @@ public class ProductPage extends Page {
 	     
    }
    
+   public void ClickSubmitQuotewithOrderRequestedstatus() throws InterruptedException {
+	   
+	     click("ClickAdminDropDown_XPATH");
+	     click("ClickManageQuotes_XPATH");
+	     Thread.sleep(3000);
+       click("Q00010QUOTEID_XPATH");
+       click("StatusdropdownQuotesubmit_XPATH");
+       ClickActions("StatusdropdownQuotesubmit_XPATH");
+	     selectbyindex("StatusdropdownQuotesubmit_XPATH", 5);
+	     click("SubmitbtnQuotesubmission_XPATH");
+	     Thread.sleep(3000);
+	     
+ }
+   
    public void ClickSubmitQuotewithQuotedPendingstatus() throws InterruptedException {
        click("Q00010OrderedQUOTEID_XPATH");
        click("StatusdropdownQuotesubmit_XPATH");
@@ -295,19 +357,31 @@ public class ProductPage extends Page {
 	     Thread.sleep(3000);
 	     
  }
-   public void ClickSubmitQuotewithQUOTEDstatus() throws InterruptedException {
+   public void ClickSubmitQuotewithQUOTEDstatus() throws InterruptedException, Exception {
+	 //Below 2 lines are added by Varun 1july2020
+       click("ClickAdminDropDown_XPATH");
+       click("ClickManageQuotes_XPATH");
+       Thread.sleep(3000);
        click("Q00010OrderedQUOTEID_XPATH");
        click("StatusdropdownQuotesubmit_XPATH");
-       ClickActions("StatusdropdownQuotesubmit_XPATH");
-	     selectbyindex("StatusdropdownQuotesubmit_XPATH", 2);
-	     //type("BrowseFileSubmitQuote_XPATH","C:\\Users\\AB73631\\Desktop\\desktop\\New folder\\file-example_PDF_1MB - Copy - Copy.pdf");
-	     Page.driver.findElement(By.xpath("//*[@id=\"multiFileUpload__BV_file_outer_\"]/label")).sendKeys("C:\\Users\\AB73631\\Desktop\\desktop\\New folder\\file-example_PDF_1MB - Copy - Copy.pdf");
-	     click("SubmitbtnQuotesubmission_XPATH");
-	     Thread.sleep(3000);
+       //ClickActions("StatusdropdownQuotesubmit_XPATH");
+       selectbyindex("StatusdropdownQuotesubmit_XPATH", 2);
+       click("BrowseFileSubmitQuote_XPATH");
+       Thread.sleep(5000);
+       //Below line is added by Varun 1july2020
+       //AutoIT function to upload file
+       Runtime.getRuntime().exec("C:\\Users\\AB73631\\Desktop\\Uploadfile.exe");
+       Thread.sleep(3000);
+       click("UploadbtnSubmitQuote_XPATH");
+       //click("SubmitbtnQuotesubmission_XPATH");
+       Thread.sleep(3000);
 	     
  }
    
    public void ClickSubmitQuotewithCancelledstatus() throws InterruptedException {
+	   click("ClickAdminDropDown_XPATH");
+	     click("ClickManageQuotes_XPATH");
+	     Thread.sleep(3000);
        click("Q00010OrderedQUOTEID_XPATH");
        click("StatusdropdownQuotesubmit_XPATH");
        ClickActions("StatusdropdownQuotesubmit_XPATH");
