@@ -1,40 +1,44 @@
-18:06:34,351 DEBUG devpinoyLogger:74 - Config file loaded !!!
-18:06:34,358 DEBUG devpinoyLogger:89 - OR file loaded !!!
-18:06:37,913 DEBUG devpinoyLogger:151 - Navigated to : https://osmose360cl.azurewebsites.net/
-18:06:50,842 DEBUG devpinoyLogger:225 - Typing in an Element : email_XPATH entered value as : rajesh.yadav@centurylink.com
-18:06:50,958 DEBUG devpinoyLogger:225 - Typing in an Element : password_XPATH entered value as : Hyde@2317
-18:06:51,047 DEBUG devpinoyLogger:195 - Clicking on an Element : submit_XPATH
-18:06:54,156 DEBUG devpinoyLogger:328 - Text of the locator: verify_ID value as :Rajesh Yadav
-18:06:54,575 DEBUG cache:44 - Couldn't find template in cache for "Extent.ftl"("en_US", UTF-8, parsed); will try to load it.
-18:06:54,576 DEBUG cache:44 - TemplateLoader.findTemplateSource("Extent_en_US.ftl"): Not found
-18:06:54,577 DEBUG cache:44 - TemplateLoader.findTemplateSource("Extent_en.ftl"): Not found
-18:06:54,578 DEBUG cache:44 - TemplateLoader.findTemplateSource("Extent.ftl"): Found
-18:06:54,578 DEBUG cache:44 - Loading template for "Extent.ftl"("en_US", UTF-8, parsed) from "jar:file:/C:/Users/AC38373/.m2/repository/com/relevantcodes/extentreports/2.41.2/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/view/Extent.ftl"
-18:06:59,203 DEBUG devpinoyLogger:328 - Text of the locator: OUCard_XPATH value as :Osmose University
-18:06:59,805 DEBUG cache:44 - Couldn't find template in cache for "Extent.ftl"("en_US", UTF-8, parsed); will try to load it.
-18:06:59,806 DEBUG cache:44 - TemplateLoader.findTemplateSource("Extent_en_US.ftl"): Not found
-18:06:59,807 DEBUG cache:44 - TemplateLoader.findTemplateSource("Extent_en.ftl"): Not found
-18:06:59,819 DEBUG cache:44 - TemplateLoader.findTemplateSource("Extent.ftl"): Found
-18:06:59,819 DEBUG cache:44 - Loading template for "Extent.ftl"("en_US", UTF-8, parsed) from "jar:file:/C:/Users/AC38373/.m2/repository/com/relevantcodes/extentreports/2.41.2/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/view/Extent.ftl"
-18:07:00,091 DEBUG devpinoyLogger:328 - Text of the locator: ProCard_XPATH value as :Products
-18:07:00,677 DEBUG cache:44 - Couldn't find template in cache for "Extent.ftl"("en_US", UTF-8, parsed); will try to load it.
-18:07:00,677 DEBUG cache:44 - TemplateLoader.findTemplateSource("Extent_en_US.ftl"): Not found
-18:07:00,678 DEBUG cache:44 - TemplateLoader.findTemplateSource("Extent_en.ftl"): Not found
-18:07:00,678 DEBUG cache:44 - TemplateLoader.findTemplateSource("Extent.ftl"): Found
-18:07:00,678 DEBUG cache:44 - Loading template for "Extent.ftl"("en_US", UTF-8, parsed) from "jar:file:/C:/Users/AC38373/.m2/repository/com/relevantcodes/extentreports/2.41.2/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/view/Extent.ftl"
-18:07:14,137 DEBUG devpinoyLogger:195 - Clicking on an Element : ProCard_XPATH
-18:07:15,188 DEBUG devpinoyLogger:328 - Text of the locator: POrdering_XPATH value as :Pole and Line Products
-18:07:15,575 DEBUG cache:44 - Couldn't find template in cache for "Extent.ftl"("en_US", UTF-8, parsed); will try to load it.
-18:07:15,576 DEBUG cache:44 - TemplateLoader.findTemplateSource("Extent_en_US.ftl"): Not found
-18:07:15,576 DEBUG cache:44 - TemplateLoader.findTemplateSource("Extent_en.ftl"): Not found
-18:07:15,576 DEBUG cache:44 - TemplateLoader.findTemplateSource("Extent.ftl"): Found
-18:07:15,577 DEBUG cache:44 - Loading template for "Extent.ftl"("en_US", UTF-8, parsed) from "jar:file:/C:/Users/AC38373/.m2/repository/com/relevantcodes/extentreports/2.41.2/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/view/Extent.ftl"
-18:07:17,675 DEBUG devpinoyLogger:195 - Clicking on an Element : ClickAdminDropDown_XPATH
-18:07:17,813 DEBUG devpinoyLogger:195 - Clicking on an Element : ManageProductsdrp_XPATH
-18:07:17,971 DEBUG devpinoyLogger:195 - Clicking on an Element : ManageProductDownloadspreadsheet_XPATH
-18:07:18,293 DEBUG devpinoyLogger:473 - Selecting from an element : ManageProductDownloadspreadsheetbtn_XPATH
-18:07:21,907 DEBUG cache:44 - Couldn't find template in cache for "Extent.ftl"("en_US", UTF-8, parsed); will try to load it.
-18:07:21,909 DEBUG cache:44 - TemplateLoader.findTemplateSource("Extent_en_US.ftl"): Not found
-18:07:21,910 DEBUG cache:44 - TemplateLoader.findTemplateSource("Extent_en.ftl"): Not found
-18:07:21,911 DEBUG cache:44 - TemplateLoader.findTemplateSource("Extent.ftl"): Found
-18:07:21,911 DEBUG cache:44 - Loading template for "Extent.ftl"("en_US", UTF-8, parsed) from "jar:file:/C:/Users/AC38373/.m2/repository/com/relevantcodes/extentreports/2.41.2/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/view/Extent.ftl"
+20:39:32,208 DEBUG devpinoyLogger:69 - Config file loaded !!!
+20:39:32,212 DEBUG devpinoyLogger:84 - OR file loaded !!!
+20:39:35,090 DEBUG devpinoyLogger:143 - Navigated to : https://osmose360cl.azurewebsites.net/
+20:39:49,870 DEBUG devpinoyLogger:215 - Typing in an Element : email_XPATH entered value as : rajesh.yadav@centurylink.com
+20:39:49,987 DEBUG devpinoyLogger:215 - Typing in an Element : password_XPATH entered value as : Hyde@2317
+20:39:50,044 DEBUG devpinoyLogger:186 - Clicking on an Element : submit_XPATH
+20:39:53,972 DEBUG devpinoyLogger:319 - Text of the locator: verify_ID value as :Rajesh Yadav
+20:39:54,363 DEBUG cache:44 - Couldn't find template in cache for "Extent.ftl"("en_US", UTF-8, parsed); will try to load it.
+20:39:54,365 DEBUG cache:44 - TemplateLoader.findTemplateSource("Extent_en_US.ftl"): Not found
+20:39:54,367 DEBUG cache:44 - TemplateLoader.findTemplateSource("Extent_en.ftl"): Not found
+20:39:54,369 DEBUG cache:44 - TemplateLoader.findTemplateSource("Extent.ftl"): Found
+20:39:54,369 DEBUG cache:44 - Loading template for "Extent.ftl"("en_US", UTF-8, parsed) from "jar:file:/C:/Users/AC38373/.m2/repository/com/relevantcodes/extentreports/2.41.2/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/view/Extent.ftl"
+20:39:57,502 DEBUG devpinoyLogger:319 - Text of the locator: OUCard_XPATH value as :Osmose University
+20:39:57,815 DEBUG cache:44 - Couldn't find template in cache for "Extent.ftl"("en_US", UTF-8, parsed); will try to load it.
+20:39:57,816 DEBUG cache:44 - TemplateLoader.findTemplateSource("Extent_en_US.ftl"): Not found
+20:39:57,816 DEBUG cache:44 - TemplateLoader.findTemplateSource("Extent_en.ftl"): Not found
+20:39:57,819 DEBUG cache:44 - TemplateLoader.findTemplateSource("Extent.ftl"): Found
+20:39:57,819 DEBUG cache:44 - Loading template for "Extent.ftl"("en_US", UTF-8, parsed) from "jar:file:/C:/Users/AC38373/.m2/repository/com/relevantcodes/extentreports/2.41.2/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/view/Extent.ftl"
+20:39:57,928 DEBUG devpinoyLogger:319 - Text of the locator: ProCard_XPATH value as :Products
+20:39:58,231 DEBUG cache:44 - Couldn't find template in cache for "Extent.ftl"("en_US", UTF-8, parsed); will try to load it.
+20:39:58,231 DEBUG cache:44 - TemplateLoader.findTemplateSource("Extent_en_US.ftl"): Not found
+20:39:58,232 DEBUG cache:44 - TemplateLoader.findTemplateSource("Extent_en.ftl"): Not found
+20:39:58,233 DEBUG cache:44 - TemplateLoader.findTemplateSource("Extent.ftl"): Found
+20:39:58,233 DEBUG cache:44 - Loading template for "Extent.ftl"("en_US", UTF-8, parsed) from "jar:file:/C:/Users/AC38373/.m2/repository/com/relevantcodes/extentreports/2.41.2/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/view/Extent.ftl"
+20:40:11,659 DEBUG devpinoyLogger:186 - Clicking on an Element : ProCard_XPATH
+20:40:12,703 DEBUG devpinoyLogger:319 - Text of the locator: POrdering_XPATH value as :Pole and Line Products
+20:40:13,092 DEBUG cache:44 - Couldn't find template in cache for "Extent.ftl"("en_US", UTF-8, parsed); will try to load it.
+20:40:13,092 DEBUG cache:44 - TemplateLoader.findTemplateSource("Extent_en_US.ftl"): Not found
+20:40:13,093 DEBUG cache:44 - TemplateLoader.findTemplateSource("Extent_en.ftl"): Not found
+20:40:13,093 DEBUG cache:44 - TemplateLoader.findTemplateSource("Extent.ftl"): Found
+20:40:13,093 DEBUG cache:44 - Loading template for "Extent.ftl"("en_US", UTF-8, parsed) from "jar:file:/C:/Users/AC38373/.m2/repository/com/relevantcodes/extentreports/2.41.2/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/view/Extent.ftl"
+20:40:18,365 DEBUG devpinoyLogger:186 - Clicking on an Element : MyQuotesMenu_XPATH
+20:40:18,546 DEBUG devpinoyLogger:186 - Clicking on an Element : Requotebutton_XPATH
+20:40:19,311 DEBUG devpinoyLogger:186 - Clicking on an Element : SubmitbuttonRequote_XPATH
+20:40:19,662 DEBUG devpinoyLogger:215 - Typing in an Element : ShippingZipCode_XPATH entered value as : 12345
+20:40:19,733 DEBUG devpinoyLogger:215 - Typing in an Element : ShippingAttachment_XPATH entered value as : C:\Users\AC38373\Desktop\File_123.pdf
+20:40:20,190 DEBUG devpinoyLogger:215 - Typing in an Element : ShippingComments_XPATH entered value as : AutomationTesting
+20:40:20,282 DEBUG devpinoyLogger:186 - Clicking on an Element : Submitbtn_XPATH
+20:40:23,341 DEBUG devpinoyLogger:186 - Clicking on an Element : QuoteRequestsubmittedpopupClosebtn_XPATH
+20:40:23,813 DEBUG cache:44 - Couldn't find template in cache for "Extent.ftl"("en_US", UTF-8, parsed); will try to load it.
+20:40:23,814 DEBUG cache:44 - TemplateLoader.findTemplateSource("Extent_en_US.ftl"): Not found
+20:40:23,814 DEBUG cache:44 - TemplateLoader.findTemplateSource("Extent_en.ftl"): Not found
+20:40:23,815 DEBUG cache:44 - TemplateLoader.findTemplateSource("Extent.ftl"): Found
+20:40:23,815 DEBUG cache:44 - Loading template for "Extent.ftl"("en_US", UTF-8, parsed) from "jar:file:/C:/Users/AC38373/.m2/repository/com/relevantcodes/extentreports/2.41.2/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/view/Extent.ftl"

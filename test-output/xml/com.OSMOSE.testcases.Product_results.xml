@@ -4,11 +4,11 @@
            failures="0"
            errors="0"
            skipped="0"
-           time="20.222">
+           time="24.656">
   <properties />
   
   
-            <testcase name="verifyTheProductLink" time="14.333" classname="com.OSMOSE.testcases.Product" />
-                <testcase name="ClickDownloadProducts" time="5.889" classname="com.OSMOSE.testcases.Product" />
+            <testcase name="verifySubmitwhileREQuoting" time="10.286" classname="com.OSMOSE.testcases.Product" />
+                <testcase name="verifyTheProductLink" time="14.370" classname="com.OSMOSE.testcases.Product" />
       
 </testsuite>

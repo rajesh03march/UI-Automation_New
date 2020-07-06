@@ -603,7 +603,7 @@ public class Product extends BaseTest {
 	}
 
 	// Below method added by Varun 6july2020
-	@Test(priority = 52, enabled = true, description = "Verification of contents on Approve<<QuoteId>> screen")
+	@Test(priority = 52, enabled = false, description = "Verification of contents on Approve<<QuoteId>> screen")
 	public void VerifyUIonApprove() throws Exception {
 		HomeOU ou = new HomeOU();
 		ProductPage pp = ou.goProduct();
@@ -613,11 +613,10 @@ public class Product extends BaseTest {
 		Thread.sleep(3000);
 		pp.ClickSubmitQuotewithQUOTEDstatus();
 		pp.ClickApprovebtnManageQuote();
-		Assert.assertEquals(Page.driver.findElement(By.xpath("//div[@id='popupApprove']/h6")).getText(), "Thank you! To approve your quote you will need to:");
-		Assert.assertTrue(
-				Page.driver.findElement(By.xpath("//input[@id = 'purchaseOrder']")).isDisplayed());
-		Assert.assertTrue(
-				Page.driver.findElement(By.xpath("//input[@id = 'buyerName']")).isDisplayed());
+		Assert.assertEquals(Page.driver.findElement(By.xpath("//div[@id='popupApprove']/h6")).getText(),
+				"Thank you! To approve your quote you will need to:");
+		Assert.assertTrue(Page.driver.findElement(By.xpath("//input[@id = 'purchaseOrder']")).isDisplayed());
+		Assert.assertTrue(Page.driver.findElement(By.xpath("//input[@id = 'buyerName']")).isDisplayed());
 	}
 
 	// Below method added by Varun 6july2020
@@ -632,9 +631,40 @@ public class Product extends BaseTest {
 		pp.ClickSubmitQuotewithQUOTEDstatus();
 		pp.ClickApprovebtnManageQuote();
 		pp.ClickApprovebtnApprove();
-		Assert.assertEquals(Page.driver.findElement(By.xpath("//div[@class='popupApproved text-center']/h6")).getText(), "Thank you for submitting your request. We will contact you with an order confirmation shortly.");
-		Assert.assertEquals(Page.driver.findElement(By.xpath("//h5[@id='openMyquotes___BV_modal_title_']/span[3]")).getText(), "Approved!");
-		Assert.assertTrue(
-				Page.driver.findElement(By.xpath("//button[@id='closeQuoteDetails']")).isDisplayed());
+		Assert.assertEquals(Page.driver.findElement(By.xpath("//div[@class='popupApproved text-center']/h6")).getText(),
+				"Thank you for submitting your request. We will contact you with an order confirmation shortly.");
+		Assert.assertEquals(
+				Page.driver.findElement(By.xpath("//h5[@id='openMyquotes___BV_modal_title_']/span[3]")).getText(),
+				"Approved!");
+		Assert.assertTrue(Page.driver.findElement(By.xpath("//button[@id='closeQuoteDetails']")).isDisplayed());
 	}
+
+	@Test(priority = 54, enabled = false, description = "Verification of Cancel action on the quote screen")
+	public void verifyCancelwhileREQuoting() throws Exception {
+		HomeOU ou = new HomeOU();
+		ProductPage pp = ou.goProduct();
+		pp.MyQuotes();
+		pp.ClickCancelREQuotes();
+		Assert.assertTrue(Page.driver.findElement(By.xpath("//header[@id='openMyquotes___BV_modal_header_']/h5/select"))
+				.isDisplayed());
+	}
+
+	@Test(priority = 55, enabled = true, description = "Verification of submission action on the quote screen")
+	public void verifySubmitwhileREQuoting() throws Exception {
+		HomeOU ou = new HomeOU();
+		ProductPage pp = ou.goProduct();
+		pp.MyQuotes();
+		pp.ClickSubmitREQuotes();
+		Assert.assertTrue(Page.driver
+				.findElement(By.xpath("//div[@id='openMyCart___BV_modal_body_']/div/div[2]/div/div[3]/div/a[2]"))
+				.isDisplayed());
+		pp.CreateREQuoteAllFields();
+		// Below method added by Varun 6july2020
+		Assert.assertEquals(
+				Page.driver.findElement(By.xpath("//h5[@id='quoteSubmitted___BV_modal_title_']")).getText(),
+				"Quote Request Submitted");
+		Assert.assertTrue(Page.driver.findElement(By.xpath("//*[@id='quoteSubmitted___BV_modal_body_']/div/div/div[2]/button"))
+				.isDisplayed());
+	}
+
 }

@@ -4,12 +4,12 @@
            failures="0"
            errors="0"
            skipped="0"
-           time="19.598">
+           time="21.200">
   <properties />
   
   
-            <testcase name="loginTest" time="15.536" classname="com.OSMOSE.testcases.OULogin" />
-                <testcase name="verifyOUCard" time="3.943" classname="com.OSMOSE.testcases.OULogin" />
-                <testcase name="verifyProductCard" time="0.119" classname="com.OSMOSE.testcases.OULogin" />
+            <testcase name="loginTest" time="18.301" classname="com.OSMOSE.testcases.OULogin" />
+                <testcase name="verifyOUCard" time="2.846" classname="com.OSMOSE.testcases.OULogin" />
+                <testcase name="verifyProductCard" time="0.053" classname="com.OSMOSE.testcases.OULogin" />
       
 </testsuite>

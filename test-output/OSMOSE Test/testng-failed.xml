@@ -10,8 +10,8 @@
     <classes>
       <class name="com.OSMOSE.testcases.Product">
         <methods>
-          <include name="SubmitQuotewithQuoteCancelledstatus"/>
           <include name="tearDown"/>
+          <include name="verifySubmitwhileREQuoting"/>
         </methods>
       </class> <!-- com.OSMOSE.testcases.Product -->
     </classes>

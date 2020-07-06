@@ -415,13 +415,13 @@ public class ProductPage extends Page {
 
 	// Below method added by Varun 6july2020
 	public void ClickApprovebtnApprove() throws InterruptedException, Exception {
-		type("ApproveAttachPurchaseOrder_XPATH","C:\\Users\\AC38373\\Desktop\\File_123.pdf");
-		type("ApproveOrtxtbox_XPATH","123");
-		type("ApproveAndtxtbox_XPATH","123");
-		type("ApproveCommentstxtarea_XPATH","123");
+		type("ApproveAttachPurchaseOrder_XPATH", "C:\\Users\\AC38373\\Desktop\\File_123.pdf");
+		type("ApproveOrtxtbox_XPATH", "123");
+		type("ApproveAndtxtbox_XPATH", "123");
+		type("ApproveCommentstxtarea_XPATH", "123");
 		click("ApproveApproveBtn_XPATH");
 		Thread.sleep(3000);
-		//click("ApprovedClosebtn_XPATH");
+		// click("ApprovedClosebtn_XPATH");
 
 	}
 
@@ -530,6 +530,15 @@ public class ProductPage extends Page {
 		click("QuoteRequestsubmittedpopupClosebtn_XPATH");
 	}
 
+	public void CreateREQuoteAllFields() throws InterruptedException {
+		type("ShippingZipCode_XPATH", "12345");
+		type("ShippingAttachment_XPATH","C:\\Users\\AC38373\\Desktop\\File_123.pdf");
+		type("ShippingComments_XPATH", "AutomationTesting");
+		click("Submitbtn_XPATH");
+		Thread.sleep(3000);
+		click("QuoteRequestsubmittedpopupClosebtn_XPATH");
+	}
+
 	public void ClickShoppingCartIcon() throws InterruptedException {
 		click("ProductPoleRestoration_XPATH");
 		Thread.sleep(1000);
@@ -600,6 +609,16 @@ public class ProductPage extends Page {
 
 	public void MyQuotes() throws InterruptedException {
 		click("MyQuotesMenu_XPATH");
+	}
+
+	public void ClickCancelREQuotes() throws InterruptedException {
+		click("Requotebutton_XPATH");
+		click("CancelbuttonRequote_XPATH");
+	}
+
+	public void ClickSubmitREQuotes() throws InterruptedException {
+		click("Requotebutton_XPATH");
+		click("SubmitbuttonRequote_XPATH");
 	}
 
 	public void VerifyHomepageCartIcon() {

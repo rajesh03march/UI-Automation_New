@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="61" total="66" passed="5">
+<testng-results skipped="0" failed="0" ignored="71" total="76" passed="5">
   <reporter-output>
     <line>
       <![CDATA[Click to see Screenshot]]>
     </line>
     <line>
-      <![CDATA[<a target="_blank" href=Wed_Jul_01_18_06_54_IST_2020.jpg>Screenshot</a>]]>
+      <![CDATA[<a target="_blank" href=Mon_Jul_06_20_39_54_IST_2020.jpg>Screenshot</a>]]>
     </line>
     <line>
       <![CDATA[<br>]]>
@@ -14,13 +14,13 @@
       <![CDATA[<br>]]>
     </line>
     <line>
-      <![CDATA[<a target="_blank" href=Wed_Jul_01_18_06_54_IST_2020.jpg><img src=Wed_Jul_01_18_06_54_IST_2020.jpg height=200 width=200></img></a>]]>
+      <![CDATA[<a target="_blank" href=Mon_Jul_06_20_39_54_IST_2020.jpg><img src=Mon_Jul_06_20_39_54_IST_2020.jpg height=200 width=200></img></a>]]>
     </line>
     <line>
       <![CDATA[Click to see Screenshot]]>
     </line>
     <line>
-      <![CDATA[<a target="_blank" href=Wed_Jul_01_18_06_59_IST_2020.jpg>Screenshot</a>]]>
+      <![CDATA[<a target="_blank" href=Mon_Jul_06_20_39_57_IST_2020.jpg>Screenshot</a>]]>
     </line>
     <line>
       <![CDATA[<br>]]>
@@ -29,13 +29,13 @@
       <![CDATA[<br>]]>
     </line>
     <line>
-      <![CDATA[<a target="_blank" href=Wed_Jul_01_18_06_59_IST_2020.jpg><img src=Wed_Jul_01_18_06_59_IST_2020.jpg height=200 width=200></img></a>]]>
+      <![CDATA[<a target="_blank" href=Mon_Jul_06_20_39_57_IST_2020.jpg><img src=Mon_Jul_06_20_39_57_IST_2020.jpg height=200 width=200></img></a>]]>
     </line>
     <line>
       <![CDATA[Click to see Screenshot]]>
     </line>
     <line>
-      <![CDATA[<a target="_blank" href=Wed_Jul_01_18_07_00_IST_2020.jpg>Screenshot</a>]]>
+      <![CDATA[<a target="_blank" href=Mon_Jul_06_20_39_58_IST_2020.jpg>Screenshot</a>]]>
     </line>
     <line>
       <![CDATA[<br>]]>
@@ -44,13 +44,13 @@
       <![CDATA[<br>]]>
     </line>
     <line>
-      <![CDATA[<a target="_blank" href=Wed_Jul_01_18_07_00_IST_2020.jpg><img src=Wed_Jul_01_18_07_00_IST_2020.jpg height=200 width=200></img></a>]]>
+      <![CDATA[<a target="_blank" href=Mon_Jul_06_20_39_58_IST_2020.jpg><img src=Mon_Jul_06_20_39_58_IST_2020.jpg height=200 width=200></img></a>]]>
     </line>
     <line>
       <![CDATA[Click to see Screenshot]]>
     </line>
     <line>
-      <![CDATA[<a target="_blank" href=Wed_Jul_01_18_07_15_IST_2020.jpg>Screenshot</a>]]>
+      <![CDATA[<a target="_blank" href=Mon_Jul_06_20_40_13_IST_2020.jpg>Screenshot</a>]]>
     </line>
     <line>
       <![CDATA[<br>]]>
@@ -59,13 +59,13 @@
       <![CDATA[<br>]]>
     </line>
     <line>
-      <![CDATA[<a target="_blank" href=Wed_Jul_01_18_07_15_IST_2020.jpg><img src=Wed_Jul_01_18_07_15_IST_2020.jpg height=200 width=200></img></a>]]>
+      <![CDATA[<a target="_blank" href=Mon_Jul_06_20_40_13_IST_2020.jpg><img src=Mon_Jul_06_20_40_13_IST_2020.jpg height=200 width=200></img></a>]]>
     </line>
     <line>
       <![CDATA[Click to see Screenshot]]>
     </line>
     <line>
-      <![CDATA[<a target="_blank" href=Wed_Jul_01_18_07_21_IST_2020.jpg>Screenshot</a>]]>
+      <![CDATA[<a target="_blank" href=Mon_Jul_06_20_40_23_IST_2020.jpg>Screenshot</a>]]>
     </line>
     <line>
       <![CDATA[<br>]]>
@@ -74,15 +74,15 @@
       <![CDATA[<br>]]>
     </line>
     <line>
-      <![CDATA[<a target="_blank" href=Wed_Jul_01_18_07_21_IST_2020.jpg><img src=Wed_Jul_01_18_07_21_IST_2020.jpg height=200 width=200></img></a>]]>
+      <![CDATA[<a target="_blank" href=Mon_Jul_06_20_40_23_IST_2020.jpg><img src=Mon_Jul_06_20_40_23_IST_2020.jpg height=200 width=200></img></a>]]>
     </line>
   </reporter-output>
-  <suite name="OSMOSE Test" duration-ms="43584" started-at="2020-07-01T18:06:38 IST" finished-at="2020-07-01T18:07:22 IST">
+  <suite name="OSMOSE Test" duration-ms="48279" started-at="2020-07-06T20:39:35 IST" finished-at="2020-07-06T20:40:23 IST">
     <groups>
     </groups>
-    <test name="OULogin" duration-ms="22263" started-at="2020-07-01T18:06:38 IST" finished-at="2020-07-01T18:07:00 IST">
+    <test name="OULogin" duration-ms="22697" started-at="2020-07-06T20:39:35 IST" finished-at="2020-07-06T20:39:58 IST">
       <class name="com.OSMOSE.testcases.OULogin">
-        <test-method status="PASS" signature="loginTest(java.util.Hashtable)[pri:0, instance:com.OSMOSE.testcases.OULogin@765f05af]" name="loginTest" duration-ms="15536" started-at="2020-07-01T18:06:38 IST" data-provider="dp" finished-at="2020-07-01T18:06:54 IST">
+        <test-method status="PASS" signature="loginTest(java.util.Hashtable)[pri:0, instance:com.OSMOSE.testcases.OULogin@765f05af]" name="loginTest" duration-ms="18301" started-at="2020-07-06T20:39:35 IST" data-provider="dp" finished-at="2020-07-06T20:39:53 IST">
           <params>
             <param index="0">
               <value>
@@ -95,7 +95,7 @@
               <![CDATA[Click to see Screenshot]]>
             </line>
             <line>
-              <![CDATA[<a target="_blank" href=Wed_Jul_01_18_06_54_IST_2020.jpg>Screenshot</a>]]>
+              <![CDATA[<a target="_blank" href=Mon_Jul_06_20_39_54_IST_2020.jpg>Screenshot</a>]]>
             </line>
             <line>
               <![CDATA[<br>]]>
@@ -104,17 +104,17 @@
               <![CDATA[<br>]]>
             </line>
             <line>
-              <![CDATA[<a target="_blank" href=Wed_Jul_01_18_06_54_IST_2020.jpg><img src=Wed_Jul_01_18_06_54_IST_2020.jpg height=200 width=200></img></a>]]>
+              <![CDATA[<a target="_blank" href=Mon_Jul_06_20_39_54_IST_2020.jpg><img src=Mon_Jul_06_20_39_54_IST_2020.jpg height=200 width=200></img></a>]]>
             </line>
           </reporter-output>
         </test-method> <!-- loginTest -->
-        <test-method status="PASS" signature="verifyOUCard()[pri:1, instance:com.OSMOSE.testcases.OULogin@765f05af]" name="verifyOUCard" duration-ms="3943" started-at="2020-07-01T18:06:55 IST" depends-on-methods="com.OSMOSE.testcases.OULogin.loginTest" finished-at="2020-07-01T18:06:59 IST">
+        <test-method status="PASS" signature="verifyOUCard()[pri:1, instance:com.OSMOSE.testcases.OULogin@765f05af]" name="verifyOUCard" duration-ms="2846" started-at="2020-07-06T20:39:54 IST" depends-on-methods="com.OSMOSE.testcases.OULogin.loginTest" finished-at="2020-07-06T20:39:57 IST">
           <reporter-output>
             <line>
               <![CDATA[Click to see Screenshot]]>
             </line>
             <line>
-              <![CDATA[<a target="_blank" href=Wed_Jul_01_18_06_59_IST_2020.jpg>Screenshot</a>]]>
+              <![CDATA[<a target="_blank" href=Mon_Jul_06_20_39_57_IST_2020.jpg>Screenshot</a>]]>
             </line>
             <line>
               <![CDATA[<br>]]>
@@ -123,17 +123,17 @@
               <![CDATA[<br>]]>
             </line>
             <line>
-              <![CDATA[<a target="_blank" href=Wed_Jul_01_18_06_59_IST_2020.jpg><img src=Wed_Jul_01_18_06_59_IST_2020.jpg height=200 width=200></img></a>]]>
+              <![CDATA[<a target="_blank" href=Mon_Jul_06_20_39_57_IST_2020.jpg><img src=Mon_Jul_06_20_39_57_IST_2020.jpg height=200 width=200></img></a>]]>
             </line>
           </reporter-output>
         </test-method> <!-- verifyOUCard -->
-        <test-method status="PASS" signature="verifyProductCard()[pri:2, instance:com.OSMOSE.testcases.OULogin@765f05af]" name="verifyProductCard" duration-ms="119" started-at="2020-07-01T18:06:59 IST" depends-on-methods="com.OSMOSE.testcases.OULogin.loginTest" finished-at="2020-07-01T18:07:00 IST">
+        <test-method status="PASS" signature="verifyProductCard()[pri:2, instance:com.OSMOSE.testcases.OULogin@765f05af]" name="verifyProductCard" duration-ms="53" started-at="2020-07-06T20:39:57 IST" depends-on-methods="com.OSMOSE.testcases.OULogin.loginTest" finished-at="2020-07-06T20:39:57 IST">
           <reporter-output>
             <line>
               <![CDATA[Click to see Screenshot]]>
             </line>
             <line>
-              <![CDATA[<a target="_blank" href=Wed_Jul_01_18_07_00_IST_2020.jpg>Screenshot</a>]]>
+              <![CDATA[<a target="_blank" href=Mon_Jul_06_20_39_58_IST_2020.jpg>Screenshot</a>]]>
             </line>
             <line>
               <![CDATA[<br>]]>
@@ -142,15 +142,15 @@
               <![CDATA[<br>]]>
             </line>
             <line>
-              <![CDATA[<a target="_blank" href=Wed_Jul_01_18_07_00_IST_2020.jpg><img src=Wed_Jul_01_18_07_00_IST_2020.jpg height=200 width=200></img></a>]]>
+              <![CDATA[<a target="_blank" href=Mon_Jul_06_20_39_58_IST_2020.jpg><img src=Mon_Jul_06_20_39_58_IST_2020.jpg height=200 width=200></img></a>]]>
             </line>
           </reporter-output>
         </test-method> <!-- verifyProductCard -->
       </class> <!-- com.OSMOSE.testcases.OULogin -->
     </test> <!-- OULogin -->
-    <test name="Product" duration-ms="21250" started-at="2020-07-01T18:07:00 IST" finished-at="2020-07-01T18:07:22 IST">
+    <test name="Product" duration-ms="25524" started-at="2020-07-06T20:39:58 IST" finished-at="2020-07-06T20:40:23 IST">
       <class name="com.OSMOSE.testcases.Product">
-        <test-method status="PASS" signature="verifyTheProductLink(java.util.Hashtable)[pri:0, instance:com.OSMOSE.testcases.Product@476b0ae6]" name="verifyTheProductLink" duration-ms="14333" started-at="2020-07-01T18:07:00 IST" data-provider="dp" finished-at="2020-07-01T18:07:15 IST">
+        <test-method status="PASS" signature="verifyTheProductLink(java.util.Hashtable)[pri:0, instance:com.OSMOSE.testcases.Product@476b0ae6]" name="verifyTheProductLink" duration-ms="14370" started-at="2020-07-06T20:39:58 IST" description="Verification of the Products Link on the Home Page" data-provider="dp" finished-at="2020-07-06T20:40:12 IST">
           <params>
             <param index="0">
               <value>
@@ -163,7 +163,7 @@
               <![CDATA[Click to see Screenshot]]>
             </line>
             <line>
-              <![CDATA[<a target="_blank" href=Wed_Jul_01_18_07_15_IST_2020.jpg>Screenshot</a>]]>
+              <![CDATA[<a target="_blank" href=Mon_Jul_06_20_40_13_IST_2020.jpg>Screenshot</a>]]>
             </line>
             <line>
               <![CDATA[<br>]]>
@@ -172,17 +172,17 @@
               <![CDATA[<br>]]>
             </line>
             <line>
-              <![CDATA[<a target="_blank" href=Wed_Jul_01_18_07_15_IST_2020.jpg><img src=Wed_Jul_01_18_07_15_IST_2020.jpg height=200 width=200></img></a>]]>
+              <![CDATA[<a target="_blank" href=Mon_Jul_06_20_40_13_IST_2020.jpg><img src=Mon_Jul_06_20_40_13_IST_2020.jpg height=200 width=200></img></a>]]>
             </line>
           </reporter-output>
         </test-method> <!-- verifyTheProductLink -->
-        <test-method status="PASS" signature="ClickDownloadProducts()[pri:43, instance:com.OSMOSE.testcases.Product@476b0ae6]" name="ClickDownloadProducts" duration-ms="5889" started-at="2020-07-01T18:07:15 IST" description="Clicking Download Spreadsheet drop down and download" finished-at="2020-07-01T18:07:21 IST">
+        <test-method status="PASS" signature="verifySubmitwhileREQuoting()[pri:55, instance:com.OSMOSE.testcases.Product@476b0ae6]" name="verifySubmitwhileREQuoting" duration-ms="10286" started-at="2020-07-06T20:40:13 IST" description="Verification of submission action on the quote screen" finished-at="2020-07-06T20:40:23 IST">
           <reporter-output>
             <line>
               <![CDATA[Click to see Screenshot]]>
             </line>
             <line>
-              <![CDATA[<a target="_blank" href=Wed_Jul_01_18_07_21_IST_2020.jpg>Screenshot</a>]]>
+              <![CDATA[<a target="_blank" href=Mon_Jul_06_20_40_23_IST_2020.jpg>Screenshot</a>]]>
             </line>
             <line>
               <![CDATA[<br>]]>
@@ -191,11 +191,11 @@
               <![CDATA[<br>]]>
             </line>
             <line>
-              <![CDATA[<a target="_blank" href=Wed_Jul_01_18_07_21_IST_2020.jpg><img src=Wed_Jul_01_18_07_21_IST_2020.jpg height=200 width=200></img></a>]]>
+              <![CDATA[<a target="_blank" href=Mon_Jul_06_20_40_23_IST_2020.jpg><img src=Mon_Jul_06_20_40_23_IST_2020.jpg height=200 width=200></img></a>]]>
             </line>
           </reporter-output>
-        </test-method> <!-- ClickDownloadProducts -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.OSMOSE.testcases.Product@476b0ae6]" name="tearDown" is-config="true" duration-ms="1434" started-at="2020-07-01T18:07:22 IST" finished-at="2020-07-01T18:07:23 IST">
+        </test-method> <!-- verifySubmitwhileREQuoting -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.OSMOSE.testcases.Product@476b0ae6]" name="tearDown" is-config="true" duration-ms="938" started-at="2020-07-06T20:40:23 IST" finished-at="2020-07-06T20:40:24 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
