@@ -10,8 +10,10 @@
     <classes>
       <class name="com.OSMOSE.testcases.Product">
         <methods>
+          <include name="verifyTheSearchfirstname" invocation-numbers="0"/>
+          <include name="ReturnPolicy"/>
           <include name="tearDown"/>
-          <include name="ClickDownloadProducts"/>
+          <include name="FeaturedProductPoleRestoration"/>
         </methods>
       </class> <!-- com.OSMOSE.testcases.Product -->
     </classes>
