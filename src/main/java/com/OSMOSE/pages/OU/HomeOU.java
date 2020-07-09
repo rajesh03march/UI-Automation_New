@@ -47,7 +47,7 @@ public class HomeOU extends Page {
     public void clickWebinars() throws InterruptedException {
         Thread.sleep(12000);
         Page.driver.switchTo().defaultContent();
-        click("WEBINAR_XPATH");
+        ClickActions("WEBINAR_XPATH");
     }
     public void selectUpcoming() throws InterruptedException {
         Thread.sleep(12000);

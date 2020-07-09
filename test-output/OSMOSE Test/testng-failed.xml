@@ -11,7 +11,7 @@
       <class name="com.OSMOSE.testcases.Product">
         <methods>
           <include name="tearDown"/>
-          <include name="verifySubmitwhileREQuoting"/>
+          <include name="UpdateDecreaseQuanityinShoppingCart"/>
         </methods>
       </class> <!-- com.OSMOSE.testcases.Product -->
     </classes>

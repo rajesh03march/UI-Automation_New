@@ -1,14 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuite name="Product"
-           tests="2"
+           tests="29"
            failures="0"
            errors="0"
            skipped="0"
-           time="24.656">
+           time="374.693">
   <properties />
   
   
-            <testcase name="verifySubmitwhileREQuoting" time="10.286" classname="com.OSMOSE.testcases.Product" />
-                <testcase name="verifyTheProductLink" time="14.370" classname="com.OSMOSE.testcases.Product" />
+            <testcase name="VerifyCrossicononhoppingCart" time="1.049" classname="com.OSMOSE.testcases.Product" />
+                <testcase name="AddShoppingCart" time="5.442" classname="com.OSMOSE.testcases.Product" />
+                <testcase name="VerifyAddShopping_Sameitem" time="10.068" classname="com.OSMOSE.testcases.Product" />
+                <testcase name="adminElementPresent" time="0.072" classname="com.OSMOSE.testcases.Product" />
+                <testcase name="verifyTheSearchOneAlphabet" time="22.450" classname="com.OSMOSE.testcases.Product" />
+                <testcase name="verifyViewDetail" time="4.360" classname="com.OSMOSE.testcases.Product" />
+                <testcase name="VerifyProductclick" time="15.466" classname="com.OSMOSE.testcases.Product" />
+                <testcase name="shoppingCartElementPresent" time="0.057" classname="com.OSMOSE.testcases.Product" />
+                <testcase name="viewDetailsElementPresent" time="0.071" classname="com.OSMOSE.testcases.Product" />
+                <testcase name="verifyCategoryFilter" time="50.018" classname="com.OSMOSE.testcases.Product" />
+                <testcase name="verifyTheSearchfirstname" time="15.780" classname="com.OSMOSE.testcases.Product" />
+                <testcase name="verifyAddShoppingCarttext" time="19.738" classname="com.OSMOSE.testcases.Product" />
+                <testcase name="verifyTheSearchCrossButton" time="14.441" classname="com.OSMOSE.testcases.Product" />
+                <testcase name="VerifyFPImageClick" time="52.019" classname="com.OSMOSE.testcases.Product" />
+                <testcase name="DeleteQuanityinShoppingCart" time="5.756" classname="com.OSMOSE.testcases.Product" />
+                <testcase name="UpdateIncreaseQuanityinShoppingCart" time="5.925" classname="com.OSMOSE.testcases.Product" />
+                <testcase name="FeaturedProductPoleRestoration" time="15.398" classname="com.OSMOSE.testcases.Product" />
+                <testcase name="UpdateDecreaseQuanityinShoppingCart" time="21.096" classname="com.OSMOSE.testcases.Product" />
+                <testcase name="openMyQuotesElementPresent" time="0.030" classname="com.OSMOSE.testcases.Product" />
+                <testcase name="ReturnPolicy" time="9.294" classname="com.OSMOSE.testcases.Product" />
+                <testcase name="verifyTheSearchFullname" time="12.580" classname="com.OSMOSE.testcases.Product" />
+                <testcase name="allSixProductPresent" time="0.030" classname="com.OSMOSE.testcases.Product" />
+                <testcase name="AddQuantityandverifyCellNumber" time="15.292" classname="com.OSMOSE.testcases.Product" />
+                <testcase name="catalogElementPresent" time="0.030" classname="com.OSMOSE.testcases.Product" />
+                <testcase name="sliderItemPresent" time="0.094" classname="com.OSMOSE.testcases.Product" />
+                <testcase name="verifyTheProductLink" time="3.725" classname="com.OSMOSE.testcases.Product" />
+                <testcase name="verifyTheValidationmessage" time="13.707" classname="com.OSMOSE.testcases.Product" />
+                <testcase name="searchElementPresent" time="50.155" classname="com.OSMOSE.testcases.Product" />
+                <testcase name="VerifyCrossicononhoppingCart_Differentitem" time="10.550" classname="com.OSMOSE.testcases.Product" />
       
 </testsuite>
