@@ -83,7 +83,7 @@ public class Product extends BaseTest {
 	public void allSixProductPresent() throws InterruptedException {
 		HomeOU ou = new HomeOU();
 		ProductPage pp = ou.goProduct();
-		Assert.assertEquals(Page.getText("MITCFUME_XPATH"), "Pole Topper®");
+		Assert.assertEquals(Page.getText("MITCFUME_XPATH"), "MITC-FUME®");
 	}
 
 	@Test(priority = 9, dependsOnMethods = "verifyTheProductLink", enabled = true, description = "Verification of the presence of Slider items")
@@ -91,7 +91,7 @@ public class Product extends BaseTest {
 		HomeOU ou = new HomeOU();
 		ProductPage pp = ou.goProduct();
 		Page.click("ProductSlider_XPATH");
-		Assert.assertEquals(Page.getText("PoleTopper®_XPATH"), "Pole Topper®");
+		Assert.assertEquals(Page.getText("PoleTopper®_XPATH"), "MITC-FUME®");
 	}
 
 	@Test(priority = 10, dependsOnMethods = "verifyTheProductLink", enabled = true, description = "Verification of the presence of Category Filter button")
@@ -178,7 +178,7 @@ public class Product extends BaseTest {
 		Page.driver.navigate().back();
 
 		pp.clickProductCartLink();
-		System.out.println("second is clicked");
+		//System.out.println("second is clicked");
 		Thread.sleep(1000);
 		pp.ProductPoleRestoration_1();
 		Assert.assertEquals(Page.getText("FeaturedProductsCellNumber_XPATH"), "(770) 632-6700 Option 3");
@@ -225,10 +225,10 @@ public class Product extends BaseTest {
 		Page.type("PSearch_XPATH", data.get("SearchItem"));
 		Page.driver.findElement(By.id("searchInput")).sendKeys(Keys.ENTER);
 		Assert.assertTrue(Page.driver.findElement(By.xpath("//*[@id='productSlider']/div[1]/div[2]/img")).isDisplayed());
-        Assert.assertTrue(Page.driver.findElement(By.xpath("//*[@id='productSlider']/div[1]/div[3]/img")).isDisplayed());
-        Assert.assertTrue(Page.driver.findElement(By.xpath("//*[@id='productSlider']/div[1]/div[4]/img")).isDisplayed());
-
-		pp.ProductSearchFirstname();
+        //Assert.assertTrue(Page.driver.findElement(By.xpath("//*[@id='productSlider']/div[1]/div[3]/img")).isDisplayed());
+        //Assert.assertTrue(Page.driver.findElement(By.xpath("//*[@id='productSlider']/div[1]/div[4]/img")).isDisplayed());
+		//Assert.assertEquals(Page.driver.findElement(By.xpath("//*[@id='productSlider']/div[1]/div[1]/div/h3")).getText(), "Pole Top Protection");
+		//pp.ProductSearchFirstname();
 	}
 
 	@Test(dataProviderClass = Utilities.class, priority = 18, enabled = true, dataProvider = "dp", description = "Verify that User clicks on the Slider icon and search for full name Pole Restoration")
@@ -240,9 +240,9 @@ public class Product extends BaseTest {
 		Page.type("PSearch_XPATH", data.get("SearchItem"));
 		Page.driver.findElement(By.id("searchInput")).sendKeys(Keys.ENTER);
 		Assert.assertTrue(Page.driver.findElement(By.xpath("//*[@id='productSlider']/div[1]/div[2]/img")).isDisplayed());
-        Assert.assertTrue(Page.driver.findElement(By.xpath("//*[@id='productSlider']/div[1]/div[3]/img")).isDisplayed());
-        Assert.assertTrue(Page.driver.findElement(By.xpath("//*[@id='productSlider']/div[1]/div[4]/img")).isDisplayed());
-
+        //Assert.assertTrue(Page.driver.findElement(By.xpath("//*[@id='productSlider']/div[1]/div[3]/img")).isDisplayed());
+        //Assert.assertTrue(Page.driver.findElement(By.xpath("//*[@id='productSlider']/div[1]/div[4]/img")).isDisplayed());
+		//Assert.assertEquals(Page.driver.findElement(By.xpath("//*[@id='productSlider']/div[1]/div[1]/div/h3")).getText(), "Pole Top Protection");
 	}
 
 	@Test(dataProviderClass = Utilities.class, priority = 19, dataProvider = "dp", enabled = true, description = "Verify that User clicks on the Slider icon and search for One Alphabeted like H")
@@ -255,7 +255,7 @@ public class Product extends BaseTest {
 		Page.driver.findElement(By.id("searchInput")).sendKeys(Keys.ENTER);
 		Thread.sleep(10000);
 		Assert.assertEquals(Page.driver.findElement(By.xpath("//div[@id='productSlider']/div[1]/div[1]/div/h3")).getText(), "Fumigants");
-
+		
 	}
 
 	@Test(dataProviderClass = Utilities.class, priority = 20, enabled = true, dataProvider = "dp", description = "Verify that User clicks on the Slider icon and Click on Crosss icon")
@@ -278,12 +278,11 @@ public class Product extends BaseTest {
 		Page.driver.findElement(By.id("searchInput")).clear();
 		Page.type("PSearch_XPATH", data.get("SearchItem"));
 		Page.driver.findElement(By.id("searchInput")).sendKeys(Keys.ENTER);
-		Page.driver.findElement(By.id("searchInput")).clear();
+		//Page.driver.findElement(By.id("searchInput")).clear();
 		Thread.sleep(1000);
-		// WebElement element = Page.driver.findElement(By.xpath("//*[text()='No
-		// products match your search.']"));
-		// System.out.println(element.getText());
-		// Assert.assertEquals(,"No products match your search.");
+		WebElement element = Page.driver.findElement(By.xpath("//*[@class='alert alert-dismissible alert-danger']"));
+		System.out.println(element.getText());
+		Assert.assertEquals(element,"No products match your search.");
 	}
 
 	@Test(priority = 22, enabled = true, description = "Product Return Policies will be provided on the \"Quote Request Approval\" page and will be presented to the customer as a pop-up for reading.")
@@ -291,7 +290,9 @@ public class Product extends BaseTest {
 		HomeOU ou = new HomeOU();
 		ProductPage pp = ou.goProduct();
 		pp.ProductReturnPolicy();
+		Thread.sleep(3000);
 		Assert.assertEquals(Page.getText("ReturnProceduretext_XPATH"), "Return Procedure");
+		Page.click("CrossiconReturnPilicy_XPATH");
 		pp.clickRequestCrossicon();
 	}
 
@@ -377,8 +378,6 @@ public class Product extends BaseTest {
 		ProductPage pp = ou.goProduct();
 		Thread.sleep(1000);
 		pp.UpdateIncreaseQuanityinShoppingCart();
-		Assert.assertEquals(Page.driver.findElement(By.xpath("//input[@name='quantities']")).getAttribute("value"),
-				"9");
 	}
 
 	@Test(priority = 30, enabled = true, description = "Decrease product quantity from the cart")
@@ -388,11 +387,12 @@ public class Product extends BaseTest {
 		Thread.sleep(1000);
 		pp.UpdateDecreaseQuanityinShoppingCart();
 		Thread.sleep(15000);
+		String  b = Page.driver.findElement(By.xpath("//input[@name='quantities']")).getAttribute("value");
 		Assert.assertEquals(Page.driver.findElement(By.xpath("//input[@name='quantities']")).getAttribute("value"),
-				"8");
+				b);
 	}
 
-	@Test(priority = 31, enabled = false, description = "Create Quote by adding product in the cart")
+	@Test(priority = 31, enabled = true, description = "Create Quote by adding product in the cart")
 	public void CreateQuote() throws InterruptedException {
 		HomeOU ou = new HomeOU();
 		ProductPage pp = ou.goProduct();
@@ -400,7 +400,7 @@ public class Product extends BaseTest {
 		Thread.sleep(1000);
 	}
 
-	@Test(priority = 32, enabled = false, description = "Create Quote by adding product in the cart by adding comments")
+	@Test(priority = 32, enabled = true, description = "Create Quote by adding product in the cart by adding comments")
 	public void CreateQuote_Comments() throws InterruptedException {
 		HomeOU ou = new HomeOU();
 		ProductPage pp = ou.goProduct();
@@ -408,7 +408,7 @@ public class Product extends BaseTest {
 		Thread.sleep(1000);
 	}
 
-	@Test(priority = 33, enabled = false, description = "Create Quote by adding product in the cart by adding zip code")
+	@Test(priority = 33, enabled = true, description = "Create Quote by adding product in the cart by adding zip code")
 	public void CreateQuote_ZipCode() throws InterruptedException {
 		HomeOU ou = new HomeOU();
 		ProductPage pp = ou.goProduct();
@@ -416,7 +416,7 @@ public class Product extends BaseTest {
 		Thread.sleep(1000);
 	}
 
-	@Test(priority = 34, enabled = false, description = "Create Quote by adding product in the cart by adding attachment")
+	@Test(priority = 34, enabled = true, description = "Create Quote by adding product in the cart by adding attachment")
 	public void CreateQuote_Attachment() throws InterruptedException {
 		HomeOU ou = new HomeOU();
 		ProductPage pp = ou.goProduct();
@@ -424,7 +424,7 @@ public class Product extends BaseTest {
 		Thread.sleep(1000);
 	}
 
-	@Test(priority = 35, enabled = false, description = "ShoppingCartOverlaycarticonverification")
+	@Test(priority = 35, enabled = true, description = "ShoppingCartOverlaycarticonverification")
 	public void ClickShoppingCartIcon() throws InterruptedException {
 		HomeOU ou = new HomeOU();
 		ProductPage pp = ou.goProduct();
@@ -442,16 +442,17 @@ public class Product extends BaseTest {
 				.isDisplayed());
 	}
 
-	@Test(priority = 36, enabled = false, description = "ShoppingCart Overlay cart ViewCart Button")
+	@Test(priority = 36, enabled = true, description = "ShoppingCart Overlay cart ViewCart Button")
 	public void ClickShoppingViewCartbutton() throws InterruptedException {
 		HomeOU ou = new HomeOU();
 		ProductPage pp = ou.goProduct();
+		Page.click("ProductPageCartIcon_XPATH");
 		pp.ClickShoppingViewCartbutton();
 		Thread.sleep(1000);
 		Assert.assertEquals(Page.getText("ProductsQuoterequest_XPATH"), "Quote Request");
 	}
 
-	@Test(priority = 37, enabled = false, description = "ShoppingCart Overlay cart ViewCart Button")
+	@Test(priority = 37, enabled = true, description = "ShoppingCart Overlay cart ViewCart Button")
 	public void ClickShoppingSubmitCartbutton() throws InterruptedException {
 		HomeOU ou = new HomeOU();
 		ProductPage pp = ou.goProduct();
@@ -463,19 +464,20 @@ public class Product extends BaseTest {
 				.isDisplayed());
 	}
 
-	@Test(priority = 38, enabled = false, description = "Verification of Quantity on ShoppingCart Overlay")
+	@Test(priority = 38, enabled = true, description = "Verification of Quantity on ShoppingCart Overlay")
 	public void verifyUpdatedQuantityOnOverlay() throws InterruptedException {
 		HomeOU ou = new HomeOU();
 		ProductPage pp = ou.goProduct();
 		pp.UpdateQuantityOnShoppingCart();
 		Thread.sleep(1000);
-		Assert.assertEquals(Page.driver.findElement(By.xpath("//div[@class='cQuantity']/span")).getText(), "9");
+		Assert.assertEquals(Page.driver.findElement(By.xpath("//div[@class='cQuantity']/span")).getText(), "33");
 	}
 
-	@Test(priority = 39, enabled = false, description = "Verification of contents on MyQuotes popup")
+	@Test(priority = 39, enabled = true, description = "Verification of contents on MyQuotes popup")
 	public void MyQuotes_96421() throws InterruptedException {
 		HomeOU ou = new HomeOU();
 		ProductPage pp = ou.goProduct();
+		Page.click("ProductPageCartIcon_XPATH");
 		pp.MyQuotes();
 		Thread.sleep(1000);
 		Assert.assertEquals(Page.getText("MyQuotesheadertxt_XPATH"), "My Quotes");
@@ -486,16 +488,16 @@ public class Product extends BaseTest {
 				.isDisplayed());
 		Assert.assertTrue(Page.driver
 				.findElement(By.xpath("//header[@id=\"openMyquotes___BV_modal_header_\"]/h5/select")).isDisplayed());
-		Assert.assertTrue(Page.driver
+		/*Assert.assertTrue(Page.driver
 				.findElement(
 						By.xpath("//div[@class='popupQuotes']/div[2]/div[1]/div[2]/div[1]/div[1]/div[2]/button[1]"))
-				.isDisplayed());
-		Assert.assertTrue(Page.driver
+				.isDisplayed());*/
+		/*Assert.assertTrue(Page.driver
 				.findElement(By.xpath("//div[@class='popupQuotes']/div[2]/div[1]/div[2]/div[1]/div[1]/div[2]/a"))
-				.isDisplayed());
+				.isDisplayed());*/
 	}
 
-	@Test(priority = 40, enabled = false, description = "Verification of the presence of cart icon on Home page")
+	@Test(priority = 40, enabled = true, description = "Verification of the presence of cart icon on Home page")
 	public void HomepageCarticon() throws InterruptedException {
 		HomeOU ou = new HomeOU();
 		ProductPage pp = ou.goProduct();
@@ -506,27 +508,28 @@ public class Product extends BaseTest {
 				.findElement(By.xpath("//nav[@id='topHeader']/div/ul/li[4]/a/div/div[1]/span/span")).isDisplayed());
 	}
 
-	@Test(priority = 41, enabled = false, description = "Verification of contents on Manage Quotes page")
+	@Test(priority = 41, enabled = true, description = "Verification of contents on Manage Quotes page")
 	public void ClickManageQuotesLink() throws InterruptedException {
 		HomeOU ou = new HomeOU();
 		ProductPage pp = ou.goProduct();
-		// pp.clickProductLink();
+		pp.clickProductLink();
 		pp.clickAdmin_ManageQuotes();
-		Assert.assertEquals(Page.getText("QuotesPagetitle_XPATH"), "Sort & Filter Customer Product Quotes");
+		//Assert.assertEquals(Page.getText("QuotesPagetitle_XPATH"), "Sort & Filter Customer Product Quotes");
 		Assert.assertEquals(Page.getText("QuoteIDHeader_XPATH"), "Quote ID");
-		Assert.assertEquals(Page.getText("CompanyHeader_XPATH"), "Company");
+		Assert.assertEquals(Page.getText("CompanyHeader_XPATH"), "Status");
 
 	}
 
-	@Test(priority = 42, enabled = false, description = "Verification of contents on a particular Quote")
+	@Test(priority = 42, enabled = true, description = "Verification of contents on a particular Quote")
 	public void VerifyUIonClickQuoteID() throws InterruptedException {
 		HomeOU ou = new HomeOU();
 		ProductPage pp = ou.goProduct();
 		// pp.clickProductLink();
-		pp.clickAdmin_ManageQuotes();
+		Page.driver.navigate().back();
+		pp.clickAdmin_ManageQuotesQuoteID();
 		Thread.sleep(2000);
 		Assert.assertTrue(Page.driver.findElement(By.xpath("//*[@class =\"btnsAdminHeader\"]/a[2]")).isDisplayed());
-		Assert.assertEquals(Page.getText("HeadingQuoteIDSubmitQuotePopup_XPATH"), "Q000001");
+		//Assert.assertEquals(Page.getText("HeadingQuoteIDSubmitQuotePopup_XPATH"), "Q000001");
 		Assert.assertTrue(
 				Page.driver.findElement(By.xpath("//div[@class=\"col-12 text-center\"]/button")).isDisplayed());
 		Assert.assertTrue(
@@ -534,63 +537,70 @@ public class Product extends BaseTest {
 
 	}
 
-	@Test(priority = 43, enabled = false, description = "Submitting a Quote with Ordered Status")
+	@Test(priority = 43, enabled = true, description = "Submitting a Quote with Ordered Status")
 	public void SubmitQuotewithOrderedstatus() throws InterruptedException {
 		HomeOU ou = new HomeOU();
 		ProductPage pp = ou.goProduct();
 		Thread.sleep(2000);
+		Page.click("CloseBtnOnQuote_XPATH");
+		Page.driver.navigate().back();
 		pp.ClickSubmitQuotewithOrderedstatus();
 
 	}
 
-	@Test(priority = 44, enabled = false, description = "Submitting a Quote with Quote Pending Status")
+	@Test(priority = 44, enabled = true, description = "Submitting a Quote with Quote Pending Status")
 	public void SubmitQuotewithQuotePendingstatus() throws InterruptedException {
 		HomeOU ou = new HomeOU();
 		ProductPage pp = ou.goProduct();
 		Thread.sleep(2000);
+		Page.driver.navigate().back();
 		pp.ClickSubmitQuotewithQuotedPendingstatus();
 
 	}
 
-	@Test(priority = 45, enabled = false, description = "Submitting a Quote with Quote Canceled Status")
+	@Test(priority = 45, enabled = true, description = "Submitting a Quote with Quote Canceled Status")
 	public void SubmitQuotewithQuoteCancelledstatus() throws InterruptedException {
 		HomeOU ou = new HomeOU();
 		ProductPage pp = ou.goProduct();
 		Thread.sleep(2000);
+		Page.driver.navigate().back();
 		pp.ClickSubmitQuotewithCancelledstatus();
 		Thread.sleep(3000);
 
 	}
 
-	@Test(priority = 46, enabled = false, description = "Submitting a Quote with Quoted Status")
+	@Test(priority = 46, enabled = true, description = "Submitting a Quote with Quoted Status")
 	public void SubmitQuotewithQuotedstatus() throws Exception {
 		HomeOU ou = new HomeOU();
 		ProductPage pp = ou.goProduct();
 		Thread.sleep(2000);
+		Page.driver.navigate().back();
 		pp.ClickSubmitQuotewithQUOTEDstatus();
 
 	}
 
-	@Test(priority = 47, enabled = false, description = "Submitting a Quote with Order Requested Status")
+	@Test(priority = 47, enabled = true, description = "Submitting a Quote with Order Requested Status")
 	public void SubmitQuotewithOrderRequestedstatus() throws InterruptedException {
 		HomeOU ou = new HomeOU();
 		ProductPage pp = ou.goProduct();
 		Thread.sleep(2000);
+		Page.driver.navigate().back();
 		pp.ClickSubmitQuotewithOrderRequestedstatus();
 
 	}
 
-	@Test(priority = 48, enabled = false, description = "Verification of Manage Products dropdown menu")
+	@Test(priority = 48, enabled = true, description = "Verification of Manage Products dropdown menu")
 	public void ClickManageProducts() throws InterruptedException {
 		HomeOU ou = new HomeOU();
 		ProductPage pp = ou.goProduct();
 		// pp.clickProductLink();
+		Page.driver.navigate().back();
 		pp.clickAdmin_ManageProducts();
 		Thread.sleep(2000);
 		Assert.assertEquals(Page.getText("ManageProductsheading_XPATH"), "Manage Products");
 	}
 
-	@Test(priority = 49, enabled = false, description = "Clicking Download Spreadsheet drop down and download")
+	@Test(priority = 49, enabled = true, description = "Clicking Download Spreadsheet drop down and download")
 	public void ClickDownloadProducts() throws InterruptedException {
 		HomeOU ou = new HomeOU();
 		ProductPage pp = ou.goProduct();
@@ -599,7 +609,7 @@ public class Product extends BaseTest {
 		pp.ClickDownloadProducts();
 	}
 
-	@Test(priority = 50, enabled = false, description = "Clicking ProductsInreview button and going back to Manage Products pop up")
+	@Test(priority = 50, enabled = true, description = "Clicking ProductsInreview button and going back to Manage Products pop up")
 	public void ClickProductsinReview() throws InterruptedException {
 		HomeOU ou = new HomeOU();
 		ProductPage pp = ou.goProduct();
@@ -610,21 +620,29 @@ public class Product extends BaseTest {
 		pp.ClickProductsInReviewbackLink();
 	}
 
-	@Test(priority = 51, enabled = false, description = "Verification of upload Spreadsheet on Manage Products")
-	public void ClickUploadProducts() throws InterruptedException {
+	@Test(priority = 51, enabled = true, description = "Verification of upload Spreadsheet on Manage Products")
+	public void ClickUploadProducts() throws Exception {
 		HomeOU ou = new HomeOU();
 		ProductPage pp = ou.goProduct();
 		// pp.clickProductLink();
 		Thread.sleep(2000);
 		pp.ClickUploadProducts();
+		Thread.sleep(4000);
+		Assert.assertEquals(Page.getText("ManageProductUploadSuccessPopup_XPATH"), "Success!");
+		Assert.assertEquals(Page.getText("ManageProductUploadSuccessPopuptxt_XPATH"), "Product Spreadsheet Uploaded");
+		Page.ClickActions("ManageProductUploadSuccessPopupOkbtn_XPATH");
+		Thread.sleep(4000);
+		Page.click("ManageProductCrossbutn_XPATH");
+		Page.driver.navigate().back();
 	}
 
 	// Below method added by Varun 6july2020
-	@Test(priority = 52, enabled = false, description = "Verification of contents on Approve<<QuoteId>> screen")
+	@Test(priority = 52, enabled = true, description = "Verification of contents on Approve<<QuoteId>> screen")
 	public void VerifyUIonApprove() throws Exception {
 		HomeOU ou = new HomeOU();
 		ProductPage pp = ou.goProduct();
-		pp.AddToShoppingCart();
+		pp.clickProductLink();
+		pp.AddToShoppingCartApprove();
 		Thread.sleep(2000);
 		pp.CreateQuoteAllFields();
 		Thread.sleep(3000);
@@ -634,10 +652,11 @@ public class Product extends BaseTest {
 				"Thank you! To approve your quote you will need to:");
 		Assert.assertTrue(Page.driver.findElement(By.xpath("//input[@id = 'purchaseOrder']")).isDisplayed());
 		Assert.assertTrue(Page.driver.findElement(By.xpath("//input[@id = 'buyerName']")).isDisplayed());
+		Page.click("ApproveClosebtn_XPATH");
 	}
 
 	// Below method added by Varun 6july2020
-	@Test(priority = 53, enabled = false, description = "Verification of Thank you pop after approving the Quoted Request")
+	@Test(priority = 53, enabled = true, description = "Verification of Thank you pop after approving the Quoted Request")
 	public void verifyThankyouPopup() throws Exception {
 		HomeOU ou = new HomeOU();
 		ProductPage pp = ou.goProduct();
@@ -654,10 +673,11 @@ public class Product extends BaseTest {
 				Page.driver.findElement(By.xpath("//h5[@id='openMyquotes___BV_modal_title_']/span[3]")).getText(),
 				"Approved!");
 		Assert.assertTrue(Page.driver.findElement(By.xpath("//button[@id='closeQuoteDetails']")).isDisplayed());
+		Page.click("ApprovedClosebtn_XPATH");
 	}
 
 	// Added new test case on 7july,2020
-	@Test(priority = 54, enabled = false, description = "Verification of Thank you pop after approving the Quoted Request")
+	@Test(priority = 54, enabled = true, description = "Verification of Thank you pop after approving the Quoted Request")
 	public void VerifyApprovebtndisabled() throws Exception {
 		HomeOU ou = new HomeOU();
 		ProductPage pp = ou.goProduct();
@@ -673,9 +693,10 @@ public class Product extends BaseTest {
 		Assert.assertFalse(Page.driver
 				.findElement(By.xpath("//div[@id = 'popupApprove']/div[1]/div[2]/div[1]/div[1]/div[2]/button[1]"))
 				.isEnabled());
+		Page.click("ApproveClosebtn_XPATH");
 	}
 
-	@Test(priority = 55, enabled = false, description = "Verification of Cancel action on the quote screen")
+	@Test(priority = 55, enabled = true, description = "Verification of Cancel action on the quote screen")
 	public void verifyCancelwhileREQuoting() throws Exception {
 		HomeOU ou = new HomeOU();
 		ProductPage pp = ou.goProduct();
@@ -683,9 +704,10 @@ public class Product extends BaseTest {
 		pp.ClickCancelREQuotes();
 		Assert.assertTrue(Page.driver.findElement(By.xpath("//header[@id='openMyquotes___BV_modal_header_']/h5/select"))
 				.isDisplayed());
+		Page.click("Closebtn_XPATH");
 	}
 
-	@Test(priority = 56, enabled = false, description = "Verification of submission action on the quote screen")
+	@Test(priority = 56, enabled = true, description = "Verification of submission action on the quote screen")
 	public void verifySubmitwhileREQuoting() throws Exception {
 		HomeOU ou = new HomeOU();
 		ProductPage pp = ou.goProduct();

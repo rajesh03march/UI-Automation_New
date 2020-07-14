@@ -98,6 +98,10 @@ public class HomeOU extends Page {
     public ProductPage goProduct(){
         return new ProductPage();
     }
+    
+    public ContactPage goContact(){
+        return new ContactPage();
+    }
 
 
 }
