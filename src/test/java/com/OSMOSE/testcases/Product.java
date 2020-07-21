@@ -157,11 +157,8 @@ public class Product extends BaseTest {
 		pp.AddQuantityInCart_AssertCellNumber();
 		Page.click("CloseButton_XPATH");
 		Page.driver.navigate().back();
-		// Assert.assertEquals(Page.getAttributeValue("SelectDropDownToolTip_XPATH","title"),"72-020-009-100
-		// PR - C2-3611");
-		// Assert.assertEquals(Page.getText("FeaturedProductsCellNumber_XPATH"), "(770)
-		// 632-6700 Option 3");
-		// pp.switchToNewWindow(0);
+		Assert.assertEquals(Page.getText("FeaturedProductsCellNumber_XPATH"), "(770) 632-6700 Option 3");
+
 
 	}
 
@@ -178,7 +175,6 @@ public class Product extends BaseTest {
 		Page.driver.navigate().back();
 
 		pp.clickProductCartLink();
-		//System.out.println("second is clicked");
 		Thread.sleep(1000);
 		pp.ProductPoleRestoration_1();
 		Assert.assertEquals(Page.getText("FeaturedProductsCellNumber_XPATH"), "(770) 632-6700 Option 3");
@@ -225,10 +221,7 @@ public class Product extends BaseTest {
 		Page.type("PSearch_XPATH", data.get("SearchItem"));
 		Page.driver.findElement(By.id("searchInput")).sendKeys(Keys.ENTER);
 		Assert.assertTrue(Page.driver.findElement(By.xpath("//*[@id='productSlider']/div[1]/div[2]/img")).isDisplayed());
-        //Assert.assertTrue(Page.driver.findElement(By.xpath("//*[@id='productSlider']/div[1]/div[3]/img")).isDisplayed());
-        //Assert.assertTrue(Page.driver.findElement(By.xpath("//*[@id='productSlider']/div[1]/div[4]/img")).isDisplayed());
-		//Assert.assertEquals(Page.driver.findElement(By.xpath("//*[@id='productSlider']/div[1]/div[1]/div/h3")).getText(), "Pole Top Protection");
-		//pp.ProductSearchFirstname();
+        pp.ProductSearchFirstname();
 	}
 
 	@Test(dataProviderClass = Utilities.class, priority = 18, enabled = true, dataProvider = "dp", description = "Verify that User clicks on the Slider icon and search for full name Pole Restoration")
@@ -240,9 +233,6 @@ public class Product extends BaseTest {
 		Page.type("PSearch_XPATH", data.get("SearchItem"));
 		Page.driver.findElement(By.id("searchInput")).sendKeys(Keys.ENTER);
 		Assert.assertTrue(Page.driver.findElement(By.xpath("//*[@id='productSlider']/div[1]/div[2]/img")).isDisplayed());
-        //Assert.assertTrue(Page.driver.findElement(By.xpath("//*[@id='productSlider']/div[1]/div[3]/img")).isDisplayed());
-        //Assert.assertTrue(Page.driver.findElement(By.xpath("//*[@id='productSlider']/div[1]/div[4]/img")).isDisplayed());
-		//Assert.assertEquals(Page.driver.findElement(By.xpath("//*[@id='productSlider']/div[1]/div[1]/div/h3")).getText(), "Pole Top Protection");
 	}
 
 	@Test(dataProviderClass = Utilities.class, priority = 19, dataProvider = "dp", enabled = true, description = "Verify that User clicks on the Slider icon and search for One Alphabeted like H")
@@ -254,7 +244,7 @@ public class Product extends BaseTest {
 		Page.type("PSearch_XPATH", data.get("SearchItem"));
 		Page.driver.findElement(By.id("searchInput")).sendKeys(Keys.ENTER);
 		Thread.sleep(10000);
-		Assert.assertEquals(Page.driver.findElement(By.xpath("//div[@id='productSlider']/div[1]/div[1]/div/h3")).getText(), "Fumigants");
+		Assert.assertTrue(Page.driver.findElement(By.xpath("//div[@id='productSlider']/div[1]/div[2]/a")).isDisplayed());
 		
 	}
 
@@ -280,12 +270,12 @@ public class Product extends BaseTest {
 		Page.driver.findElement(By.id("searchInput")).sendKeys(Keys.ENTER);
 		//Page.driver.findElement(By.id("searchInput")).clear();
 		Thread.sleep(1000);
-		WebElement element = Page.driver.findElement(By.xpath("//*[@class='alert alert-dismissible alert-danger']"));
+		WebElement element = Page.driver.findElement(By.xpath("//div[@class='p-0 p15 col']/div[1]"));
 		System.out.println(element.getText());
 		Assert.assertEquals(element,"No products match your search.");
 	}
 
-	@Test(priority = 22, enabled = true, description = "Product Return Policies will be provided on the \"Quote Request Approval\" page and will be presented to the customer as a pop-up for reading.")
+	@Test(priority = 22, enabled = true, description = "Product Return Policies will be provided on the 'Quote Request Approval' page and will be presented to the customer as a pop-up for reading.")
 	public void ReturnPolicy() throws InterruptedException {
 		HomeOU ou = new HomeOU();
 		ProductPage pp = ou.goProduct();
@@ -484,14 +474,18 @@ public class Product extends BaseTest {
 		Assert.assertEquals(Page.getText("Statustxt_XPATH"), "Status:");
 		Assert.assertTrue(Page.driver
 				.findElement(By.xpath("//div[@class='popupQuotes']/div[1]/div[1]/div[1]/div/div[1]")).isDisplayed());
-		Assert.assertTrue(Page.driver.findElement(By.xpath("//header[@id=\"openMyquotes___BV_modal_header_\"]/button"))
+		Assert.assertTrue(Page.driver.findElement(By.xpath("//header[@id='openMyquotes___BV_modal_header_']/button"))
 				.isDisplayed());
 		Assert.assertTrue(Page.driver
-				.findElement(By.xpath("//header[@id=\"openMyquotes___BV_modal_header_\"]/h5/select")).isDisplayed());
-		/*Assert.assertTrue(Page.driver
+				.findElement(By.xpath("//header[@id='openMyquotes___BV_modal_header_']/h5/select")).isDisplayed());
+		//Verifying comment section: It should be visible to user without user clicking on it
+		Assert.assertTrue(Page.driver
 				.findElement(
-						By.xpath("//div[@class='popupQuotes']/div[2]/div[1]/div[2]/div[1]/div[1]/div[2]/button[1]"))
-				.isDisplayed());*/
+						By.xpath("//div[@id='openMyquotes___BV_modal_body_']/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/textarea"))
+				.isDisplayed());
+		//Verifying the format of Date and time of the comments
+		String DateTime = Page.driver.findElement(By.xpath("//div[@id='openMyquotes___BV_modal_body_']/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[4]/div[1]/div[1]/div[1]/div[1]")).getText();
+		System.out.println("Date and Time format on comments of My Quotes: "+ DateTime);
 		/*Assert.assertTrue(Page.driver
 				.findElement(By.xpath("//div[@class='popupQuotes']/div[2]/div[1]/div[2]/div[1]/div[1]/div[2]/a"))
 				.isDisplayed());*/
@@ -528,12 +522,11 @@ public class Product extends BaseTest {
 		Page.driver.navigate().back();
 		pp.clickAdmin_ManageQuotesQuoteID();
 		Thread.sleep(2000);
-		Assert.assertTrue(Page.driver.findElement(By.xpath("//*[@class =\"btnsAdminHeader\"]/a[2]")).isDisplayed());
-		//Assert.assertEquals(Page.getText("HeadingQuoteIDSubmitQuotePopup_XPATH"), "Q000001");
+		Assert.assertTrue(Page.driver.findElement(By.xpath("//*[@class ='btnsAdminHeader']/a[2]")).isDisplayed());
 		Assert.assertTrue(
-				Page.driver.findElement(By.xpath("//div[@class=\"col-12 text-center\"]/button")).isDisplayed());
+				Page.driver.findElement(By.xpath("//div[@class='col-12 text-center']/button")).isDisplayed());
 		Assert.assertTrue(
-				Page.driver.findElement(By.xpath("//textarea[@class=\"form-control mt-2 mb-2\"]")).isDisplayed());
+				Page.driver.findElement(By.xpath("//textarea[@class='form-control mt-2 mb-2']")).isDisplayed());
 
 	}
 

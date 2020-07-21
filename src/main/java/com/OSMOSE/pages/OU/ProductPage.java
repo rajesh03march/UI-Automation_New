@@ -79,7 +79,7 @@ public class ProductPage extends Page {
 	public void clickOnProductFeatureImage() throws InterruptedException {
 		Thread.sleep(1000);
 		// driver.navigate().back();
-		click("Productsimageclick2_XPATH");
+		click("Productsimageclick_XPATH");
 		Thread.sleep(3000);
 		Page.click("CloseButton_XPATH");
 
