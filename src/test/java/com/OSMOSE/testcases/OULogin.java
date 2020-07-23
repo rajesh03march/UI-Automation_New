@@ -133,6 +133,7 @@ public class OULogin extends BaseTest {
 		// Assert.assertEquals(Page.select("",""),"HISTORICAL");
 	}
 
+	// Keep this false always
 	@Test(priority = 15, enabled = false)
 	public void verifyUpcomingWebinarsPage() throws InterruptedException {
 		HomeOU ou = new HomeOU();
@@ -141,6 +142,7 @@ public class OULogin extends BaseTest {
 		Assert.assertEquals(value, "Osmose University Webinars");
 	}
 
+	// Keep this false always
 	@Test(priority = 16, dependsOnMethods = "verifyClickingTheWebinars", enabled = false)
 	public void verifySteelStructuresProtected() throws InterruptedException {
 		HomeOU ou = new HomeOU();
@@ -149,6 +151,7 @@ public class OULogin extends BaseTest {
 		Assert.assertEquals(value, "Are Your Steel Structures Protected? Are You Sure?");
 	}
 
+	// Keep this false always
 	@Test(priority = 17, dependsOnMethods = "verifySteelStructuresProtected", enabled = false)
 	public void verifyContactAndStray() throws InterruptedException {
 		HomeOU ou = new HomeOU();
@@ -157,6 +160,7 @@ public class OULogin extends BaseTest {
 		Assert.assertEquals(value, "Contact and Stray Voltage Mitigation in Underground Distribution Systems");
 	}
 
+	// Keep this false always
 	@Test(priority = 18, dependsOnMethods = "verifyContactAndStray", enabled = false)
 	public void steelStructuresProtectedMOREINFOREGISTRATION() throws InterruptedException {
 		HomeOU ou = new HomeOU();
@@ -164,6 +168,7 @@ public class OULogin extends BaseTest {
 		Assert.assertEquals(Page.getAttributeValue("REGISTER_XPATH", "value"), "Register");
 	}
 
+	// Keep this false always
 	@Test(priority = 19, dependsOnMethods = "steelStructuresProtectedMOREINFOREGISTRATION", enabled = false)
 	public void ContactAndStrayMOREINFOREGISTRATION() throws InterruptedException {
 		HomeOU ou = new HomeOU();

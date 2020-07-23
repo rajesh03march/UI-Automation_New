@@ -4,7 +4,8 @@
 
 	<listeners>
 		<listener class-name="org.uncommons.reportng.HTMLReporter" />
-		<listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
+		<listener
+			class-name="org.uncommons.reportng.JUnitXMLReporter" />
 		<listener class-name="com.OSMOSE.listeners.CustomListeners" />
 	</listeners>
 
@@ -17,6 +18,11 @@
 	<test name="Product">
 		<classes>
 			<class name="com.OSMOSE.testcases.Product" />
+		</classes>
+	</test> <!-- Test -->
+	<test name="Contact">
+		<classes>
+			<class name="com.OSMOSE.testcases.Contact" />
 		</classes>
 	</test> <!-- Test -->
 

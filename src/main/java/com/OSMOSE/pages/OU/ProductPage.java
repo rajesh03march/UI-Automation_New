@@ -31,8 +31,10 @@ public class ProductPage extends Page {
 
 	public void clickSearch() throws InterruptedException {
 		Thread.sleep(12000);
-		JavascriptExecutor js = (JavascriptExecutor) driver;
-		js.executeScript("window.scrollBy(683,0)");
+		/*
+		 * JavascriptExecutor js = (JavascriptExecutor) driver;
+		 * js.executeScript("window.scrollBy(683,0)");
+		 */
 		// click("PSearch_XPATH");
 		ClickActions("PSearch_XPATH");
 	}
@@ -89,21 +91,14 @@ public class ProductPage extends Page {
 		Thread.sleep(4000);
 		ClickActions("ProductPoleRestoration_XPATH");
 		Thread.sleep(4000);
-		// click("ProductPoleRestorationCTruss_XPATH");
-		click("ViewDetails_XPATH");
+		click("1stViewDetails_XPATH");
 		Thread.sleep(4000);
 		selectbyindex("ProductSizeDropdown_XPATH", 1);
 		click("ProductSizeEnterQuantity_XPATH");
 		clear("ProductSizeEnterQuantity_XPATH");
 		type("ProductSizeEnterQuantity_XPATH", "8");
 		click("ProductAddButton_XPATH");
-//        selectbyindex("ProductSizeDropdown_XPATH",1);
-//        click("ProductSizeEnterQuantity_XPATH");
-//        clear("ProductSizeEnterQuantity_XPATH");
-//        type("ProductSizeEnterQuantity_XPATH", "8");
-//        click("ProductAddButton_XPATH");
-		Thread.sleep(500);
-		// click("LinkProductDetail_LINKTEXT");
+
 	}
 
 	public void ProductPoleRestoration() throws InterruptedException {
@@ -115,7 +110,7 @@ public class ProductPage extends Page {
 		type("ProductSizeEnterQuantity_XPATH", "8");
 		click("ProductAddButton_XPATH");
 		Thread.sleep(500);
-		//click("LinkProductDetail_LINKTEXT");
+		click("LinkProductDetail_XPATH");
 	}
 
 	public void ProductReturnPolicy() throws InterruptedException {
@@ -133,16 +128,10 @@ public class ProductPage extends Page {
 		click("SubmitQuoteRequest_XPATH");
 		click("ReturnPolicy_XPATH");
 		Thread.sleep(1000);
-		/*WebElement Returnpolicybtn = Page.driver
-				.findElement(By.xpath("//*[@id='returnPolicy___BV_modal_body_']/div/div/button"));
-		scrollDownBYWebelemnt(Returnpolicybtn);*/
-		// Page.scrollbyjavaexecutor(-268, 487);
-		Thread.sleep(1000);
 		click("CloseicononReturnPolicy_XPATH");
 		Thread.sleep(1000);
 		click("ReturnPolicy_XPATH");
 		Thread.sleep(1000);
-		
 
 	}
 
@@ -181,7 +170,7 @@ public class ProductPage extends Page {
 	public void AddToCart_singleproductmultipletimes() throws InterruptedException {
 		clickRequestCrossicon();
 		Thread.sleep(1000);
-		//click("ProductPoleRestoration_XPATH");
+		// click("ProductPoleRestoration_XPATH");
 		Thread.sleep(1000);
 		// click("ProductPoleRestoration_XPATH");
 
@@ -237,7 +226,7 @@ public class ProductPage extends Page {
 		clear("ProductSizeEnterQuantity_XPATH");
 		type("ProductSizeEnterQuantity_XPATH", "8");
 		click("ProductAddButton_XPATH");
-		//click("LinkOsmoProductDetail_LINKTEXT");
+		click("LinkProductDetail_XPATH");
 	}
 
 	public void ProductPoleRestoration_2() throws InterruptedException {
@@ -250,7 +239,7 @@ public class ProductPage extends Page {
 		type("ProductSizeEnterQuantity_XPATH", "8");
 		click("ProductAddButton_XPATH");
 		Page.click("CloseButton_XPATH");
-		//click("ProductPoleRestorationDummy3Link_XPATH");
+		click("LinkProductDetail_XPATH");
 	}
 
 	public void ProductPoleRestoration_3() throws InterruptedException {
@@ -263,7 +252,7 @@ public class ProductPage extends Page {
 		type("ProductSizeEnterQuantity_XPATH", "8");
 		click("ProductAddButton_XPATH");
 		Page.click("CloseButton_XPATH");
-		//click("ProductPoleRestorationDummy4Link_XPATH");
+		// click("ProductPoleRestorationDummy4Link_XPATH");
 	}
 
 	public void AddToShoppingCart() throws InterruptedException {
@@ -279,20 +268,20 @@ public class ProductPage extends Page {
 		click("ProductViewCartButton_XPATH");
 
 	}
-	
-	public void AddToShoppingCartApprove() throws InterruptedException {
-			//click("ProductPoleRestoration_XPATH");
-			Thread.sleep(1000);
-			click("ProductPoleRestoration_XPATH");
-			click("ProductPoleRestorationCTruss_XPATH");
-			selectbyindex("ProductSizeDropdown_XPATH", 2);
-			click("ProductSizeEnterQuantity_XPATH");
-			clear("ProductSizeEnterQuantity_XPATH");
-			type("ProductSizeEnterQuantity_XPATH", "8");
-			click("ProductAddButton_XPATH");
-			click("ProductViewCartButton_XPATH");
 
-		}
+	public void AddToShoppingCartApprove() throws InterruptedException {
+		// click("ProductPoleRestoration_XPATH");
+		Thread.sleep(1000);
+		click("ProductPoleRestoration_XPATH");
+		click("ProductPoleRestorationCTruss_XPATH");
+		selectbyindex("ProductSizeDropdown_XPATH", 2);
+		click("ProductSizeEnterQuantity_XPATH");
+		clear("ProductSizeEnterQuantity_XPATH");
+		type("ProductSizeEnterQuantity_XPATH", "8");
+		click("ProductAddButton_XPATH");
+		click("ProductViewCartButton_XPATH");
+
+	}
 
 	public void DeleteQuanityinShoppingCart() throws InterruptedException {
 		clickRequestCrossicon();
@@ -312,7 +301,7 @@ public class ProductPage extends Page {
 
 	public void UpdateIncreaseQuanityinShoppingCart() throws InterruptedException {
 		click("ContiuneSHoppingButton_XPATH");
-		//click("ProductPoleRestoration_XPATH");
+		// click("ProductPoleRestoration_XPATH");
 		Thread.sleep(1000);
 		click("ProductPoleRestorationCTruss_XPATH");
 		selectbyindex("ProductSizeDropdown_XPATH", 1);
@@ -322,17 +311,19 @@ public class ProductPage extends Page {
 		click("ProductAddButton_XPATH");
 		click("ProductViewCartButton_XPATH");
 		Thread.sleep(1000);
-		String  a = Page.driver.findElement(By.xpath("//input[@name='quantities']")).getAttribute("value");
+		System.out.println("-------UpdateIncreaseQuanityinShoppingCart-------");
+		String a = Page.driver.findElement(By.xpath("//input[@name='quantities']")).getAttribute("value");
 		System.out.println("Quantity before Increasing: " + a);
 		Thread.sleep(4000);
 		click("PlusicononShoppingCart_XPATH");
 		Thread.sleep(4000);
-		System.out.println("Quantity after Increasing: " + a);
+		String b = Page.driver.findElement(By.xpath("//input[@name='quantities']")).getAttribute("value");
+		System.out.println("Quantity after Increasing: " + b);
 	}
 
 	public void UpdateDecreaseQuanityinShoppingCart() throws InterruptedException {
 		click("ContiuneSHoppingButton_XPATH");
-		//click("ProductPoleRestoration_XPATH");
+		// click("ProductPoleRestoration_XPATH");
 		Thread.sleep(1000);
 		click("ProductPoleRestorationCTruss_XPATH");
 		selectbyindex("ProductSizeDropdown_XPATH", 1);
@@ -342,12 +333,14 @@ public class ProductPage extends Page {
 		click("ProductAddButton_XPATH");
 		click("ProductViewCartButton_XPATH");
 		Thread.sleep(2000);
-		String  b = Page.driver.findElement(By.xpath("//input[@name='quantities']")).getAttribute("value");
-		System.out.println("Quantity before decreasing: " + b);
+		System.out.println("-------UpdateDecreaseQuanityinShoppingCart-------");
+		String c = Page.driver.findElement(By.xpath("//input[@name='quantities']")).getAttribute("value");
+		System.out.println("Quantity before decreasing: " + c);
 		Thread.sleep(4000);
 		click("MinusicononShoppingCart_XPATH");
 		Thread.sleep(4000);
-		System.out.println("Quantity after decreasing: " + b);
+		String d = Page.driver.findElement(By.xpath("//input[@name='quantities']")).getAttribute("value");
+		System.out.println("Quantity after decreasing: " + d);
 	}
 
 	public void clickAdmin_ManageQuotes() throws InterruptedException {
@@ -355,7 +348,7 @@ public class ProductPage extends Page {
 		click("ClickManageQuotes_XPATH");
 		Thread.sleep(2000);
 	}
-	
+
 	public void clickAdmin_ManageQuotesQuoteID() throws InterruptedException {
 		click("ClickAdminDropDown_XPATH");
 		click("ClickManageQuotes_XPATH");
@@ -366,17 +359,17 @@ public class ProductPage extends Page {
 	public void clickAdmin_ManageProducts() throws InterruptedException {
 		click("ClickAdminDropDown_XPATH");
 		click("ManageProductsdrp_XPATH");
-		//click("ManageProductCrossbutn_XPATH");
+		// click("ManageProductCrossbutn_XPATH");
 	}
 
 	public void ClickDownloadProducts() throws InterruptedException {
 
-		//click("ClickAdminDropDown_XPATH");
-		//click("ManageProductsdrp_XPATH");
+		// click("ClickAdminDropDown_XPATH");
+		// click("ManageProductsdrp_XPATH");
 		click("ManageProductDownloadspreadsheet_XPATH");
 		Thread.sleep(2000);
 		WebElement all = Page.driver.findElement(By.xpath("//ul[@class='dropdown-menu show']/div[1]/div[1]/input"));
-		
+
 		JavascriptExecutor js = (JavascriptExecutor) driver;
 		js.executeScript("arguments[0].click();", all);
 		Thread.sleep(3000);
@@ -386,18 +379,18 @@ public class ProductPage extends Page {
 
 	public void ClickUploadProducts() throws InterruptedException, Exception {
 
-		//click("ClickAdminDropDown_XPATH");
-		//click("ManageProductsdrp_XPATH");
+		// click("ClickAdminDropDown_XPATH");
+		// click("ManageProductsdrp_XPATH");
 		type("ManageProductUploadpreadsheet_XPATH", "C:\\Users\\AC38373\\Desktop\\File_123.xlsx");
 
 	}
 
 	public void ClickProductsInReview() throws InterruptedException {
 
-		//click("ClickAdminDropDown_XPATH");
-		//click("ManageProductsdrp_XPATH");
+		// click("ClickAdminDropDown_XPATH");
+		// click("ManageProductsdrp_XPATH");
 		click("ManageProductsinReviewbutton_XPATH");
-		//click("ProductReviewBackLink_XPATH");
+		// click("ProductReviewBackLink_XPATH");
 	}
 
 	public void ClickProductsInReviewbackLink() throws InterruptedException {
@@ -473,7 +466,6 @@ public class ProductPage extends Page {
 		Thread.sleep(3000);
 		click("MyQuotesApprovebtn_XPATH");
 		Thread.sleep(3000);
-		click("ApprovedClosebtn_XPATH");
 	}
 
 	// Below method added by Varun 6july2020
@@ -484,7 +476,6 @@ public class ProductPage extends Page {
 		type("ApproveCommentstxtarea_XPATH", "123");
 		click("ApproveApproveBtn_XPATH");
 		Thread.sleep(3000);
-		// click("ApprovedClosebtn_XPATH");
 
 	}
 
@@ -594,8 +585,7 @@ public class ProductPage extends Page {
 	public void CreateQuoteAllFields() throws InterruptedException {
 		click("SubmitQuoteRequestbtn_XPATH");
 		type("ShippingZipCode_XPATH", "12345");
-		type("ShippingAttachment_XPATH",
-				"C:\\Users\\AC38373\\Desktop\\File_123.pdf");
+		type("ShippingAttachment_XPATH", "C:\\Users\\AC38373\\Desktop\\File_123.pdf");
 		type("ShippingComments_XPATH", "AutomationTesting");
 		click("Submitbtn_XPATH");
 		Thread.sleep(3000);
@@ -605,12 +595,11 @@ public class ProductPage extends Page {
 	// Created on 6july aman
 	public void CreateREQuoteAllFields() throws InterruptedException {
 		type("ShippingZipCode_XPATH", "12345");
-		type("ShippingAttachment_XPATH",
-				"C:\\Users\\AC38373\\Desktop\\File_123.pdf");
+		type("ShippingAttachment_XPATH", "C:\\Users\\AC38373\\Desktop\\File_123.pdf");
 		type("ShippingComments_XPATH", "AutomationTesting");
 		click("Submitbtn_XPATH");
 		Thread.sleep(3000);
-		click("QuoteRequestsubmittedpopupClosebtn_XPATH");
+		// click("QuoteRequestsubmittedpopupClosebtn_XPATH");
 	}
 
 	public void ClickShoppingCartIcon() throws InterruptedException {
@@ -690,7 +679,7 @@ public class ProductPage extends Page {
 	public void MyQuotes() throws InterruptedException {
 		click("MyQuotesMenu_XPATH");
 	}
-	
+
 	public void clickMyQuotesCrossicon() {
 		click("Closebtn_XPATH");
 	}
@@ -698,13 +687,34 @@ public class ProductPage extends Page {
 	// Created on 6july aman
 	public void ClickCancelREQuotes() throws InterruptedException {
 		click("Requotebutton_XPATH");
-		click("CancelbuttonRequote_XPATH");
+		Thread.sleep(4000);
+		ClickActions("CancelbuttonRequote_XPATH");
 	}
 
 	// Created on 6july aman
 	public void ClickSubmitREQuotes() throws InterruptedException {
 		click("Requotebutton_XPATH");
-		click("SubmitbuttonRequote_XPATH");
+		Thread.sleep(4000);
+		ClickActions("SubmitbuttonRequote_XPATH");
+	}
+
+	public void ClickAddToCartReQuotes() throws InterruptedException {
+		click("Requotebutton_XPATH");
+		Thread.sleep(4000);
+		ClickActions("AddToCartRequote_XPATH");
+	}
+
+	public void AddtoShoppingCartRequote() {
+		click("ContiuneSHoppingButton_XPATH");
+		click("ProductPoleRestoration_XPATH");
+		click("ProductPoleRestorationCTruss_XPATH");
+		selectbyindex("ProductSizeDropdown_XPATH", 2);
+		click("ProductSizeEnterQuantity_XPATH");
+		clear("ProductSizeEnterQuantity_XPATH");
+		type("ProductSizeEnterQuantity_XPATH", "8");
+		click("ProductAddButton_XPATH");
+		click("ProductViewCartButton_XPATH");
+		ClickActions("SubmitbuttonRequote_XPATH");
 	}
 
 	public void VerifyHomepageCartIcon() throws InterruptedException {
@@ -722,5 +732,66 @@ public class ProductPage extends Page {
 		Thread.sleep(3000);
 		click("QuoteRequestCrossicon_XPATH");
 		Page.driver.navigate().back();
+	}
+
+	public void MyQuotesStatusFilterAll() throws InterruptedException {
+		ClickActions("StatusFilterdd_XPATH");
+		Thread.sleep(5000);
+		ClickActions("StatusFilterddAll_XPATH");
+		Thread.sleep(5000);
+		ClickActions("StatusFilterdd_XPATH");
+	}
+
+	public void MyQuotesStatusFilterExpired() throws InterruptedException {
+		ClickActions("StatusFilterdd_XPATH");
+		Thread.sleep(5000);
+		ClickActions("StatusFilterddExpired_XPATH");
+		Thread.sleep(5000);
+		ClickActions("StatusFilterdd_XPATH");
+	}
+
+	public void MyQuotesStatusFilterOrdered() throws InterruptedException {
+		Thread.sleep(5000);
+		ClickActions("StatusFilterdd_XPATH");
+		Thread.sleep(5000);
+		ClickActions("StatusFilterddOrdered_XPATH");
+		Thread.sleep(5000);
+		ClickActions("StatusFilterdd_XPATH");
+	}
+
+	public void MyQuotesStatusFilterQuoted() throws InterruptedException {
+		Thread.sleep(5000);
+		ClickActions("StatusFilterdd_XPATH");
+		Thread.sleep(5000);
+		ClickActions("StatusFilterddQuoted_XPATH");
+		Thread.sleep(5000);
+		ClickActions("StatusFilterdd_XPATH");
+	}
+
+	public void MyQuotesStatusFilterQuotePending() throws InterruptedException {
+		Thread.sleep(5000);
+		ClickActions("StatusFilterdd_XPATH");
+		Thread.sleep(5000);
+		ClickActions("StatusFilterddQuotePending_XPATH");
+		Thread.sleep(5000);
+		ClickActions("StatusFilterdd_XPATH");
+	}
+
+	public void MyQuotesStatusFilterCancelled() throws InterruptedException {
+		Thread.sleep(5000);
+		ClickActions("StatusFilterdd_XPATH");
+		Thread.sleep(5000);
+		ClickActions("StatusFilterddCancelled_XPATH");
+		Thread.sleep(5000);
+		ClickActions("StatusFilterdd_XPATH");
+	}
+
+	public void MyQuotesStatusFilterOrderRequested() throws InterruptedException {
+		Thread.sleep(5000);
+		ClickActions("StatusFilterdd_XPATH");
+		Thread.sleep(5000);
+		ClickActions("StatusFilterddOrderRequested_XPATH");
+		Thread.sleep(5000);
+		ClickActions("StatusFilterdd_XPATH");
 	}
 }
