@@ -637,10 +637,12 @@ public class Product extends BaseTest {
 		Thread.sleep(10000);
 		// verifying the first record
 		Assert.assertEquals(Page.driver
-				.findElement(By.xpath("//div[@id='popupQuotes']/div[1]/div/div[1]/ul[1]/li[3]/span[2]")).getText(), "Order Requested");
+				.findElement(By.xpath("//div[@id='popupQuotes']/div[1]/div/div[1]/ul[1]/li[3]/span[2]")).getText(),
+				"Order Requested");
 		// verifying the second record
 		Assert.assertEquals(Page.driver
-				.findElement(By.xpath("//div[@id='popupQuotes']/div[2]/div/div[1]/ul[1]/li[3]/span[2]")).getText(), "Order Requested");
+				.findElement(By.xpath("//div[@id='popupQuotes']/div[2]/div/div[1]/ul[1]/li[3]/span[2]")).getText(),
+				"Order Requested");
 
 	}
 
@@ -805,8 +807,33 @@ public class Product extends BaseTest {
 		Page.click("ApproveClosebtn_XPATH");
 	}
 
+	// Added new test case on 7july,2020
+	@Test(priority = 60, enabled = true, description = "Verification of disabled Approve button")
+	public void VerifyApprovebtndisabled() throws Exception {
+		HomeOU ou = new HomeOU();
+		ProductPage pp = ou.goProduct();
+		Thread.sleep(2000);
+		pp.AddToShoppingCartApprove();
+		Thread.sleep(2000);
+		pp.CreateQuoteAllFields();
+		Thread.sleep(3000);
+		pp.ClickSubmitQuotewithQUOTEDstatus();
+		Thread.sleep(2000);
+		pp.ClickApprovebtnManageQuote();
+		Thread.sleep(2000);
+		pp.VerifyApprovebtndisabled();
+		Thread.sleep(2000);
+		// Assert.assertFalse(Page.driver.findElement(By.xpath("//div[@id =
+		// 'popupApprove']/div[1]/div[2]/div[1]/div[1]/div[2]/button[1]")).isDisplayed());
+		Assert.assertFalse(Page.driver
+				.findElement(By.xpath("//div[@id = 'popupApprove']/div[1]/div[2]/div[1]/div[1]/div[2]/button[1]"))
+				.isEnabled());
+		Thread.sleep(2000);
+		Page.click("ApproveClosebtn_XPATH");
+	}
+
 	// Below method added by Varun 6july2020
-	@Test(priority = 60, enabled = true, description = "Verification of Thank you pop after approving the Quoted Request")
+	@Test(priority = 61, enabled = true, description = "Verification of Thank you pop after approving the Quoted Request")
 	public void verifyThankyouPopup() throws Exception {
 		HomeOU ou = new HomeOU();
 		ProductPage pp = ou.goProduct();
@@ -829,31 +856,6 @@ public class Product extends BaseTest {
 		Assert.assertTrue(Page.driver.findElement(By.xpath("//button[@id='closeQuoteDetails']")).isDisplayed());
 		Thread.sleep(2000);
 		Page.click("ApprovedClosebtn_XPATH");
-	}
-
-	// Added new test case on 7july,2020
-	@Test(priority = 61, enabled = true, description = "Verification of disabled Approve button")
-	public void VerifyApprovebtndisabled() throws Exception {
-		HomeOU ou = new HomeOU();
-		ProductPage pp = ou.goProduct();
-		Thread.sleep(2000);
-		pp.AddToShoppingCartApprove();
-		Thread.sleep(2000);
-		pp.CreateQuoteAllFields();
-		Thread.sleep(3000);
-		pp.ClickSubmitQuotewithQUOTEDstatus();
-		Thread.sleep(2000);
-		pp.ClickApprovebtnManageQuote();
-		Thread.sleep(2000);
-		pp.VerifyApprovebtndisabled();
-		Thread.sleep(2000);
-		// Assert.assertFalse(Page.driver.findElement(By.xpath("//div[@id =
-		// 'popupApprove']/div[1]/div[2]/div[1]/div[1]/div[2]/button[1]")).isDisplayed());
-		Assert.assertFalse(Page.driver
-				.findElement(By.xpath("//div[@id = 'popupApprove']/div[1]/div[2]/div[1]/div[1]/div[2]/button[1]"))
-				.isEnabled());
-		Thread.sleep(2000);
-		Page.click("ApproveClosebtn_XPATH");
 	}
 
 	@Test(priority = 62, enabled = true, description = "Verification of Cancel action on the quote screen")
@@ -902,7 +904,7 @@ public class Product extends BaseTest {
 		Thread.sleep(10000);
 		Page.click("QuoteRequestsubmittedpopupClosebtn_XPATH");
 	}
-	
+
 	@Test(priority = 64, enabled = true, description = "Verification of Add to Cart on the quote screen")
 	public void verifyAddToCartWhileReQuoting() throws Exception {
 		HomeOU ou = new HomeOU();
@@ -914,7 +916,7 @@ public class Product extends BaseTest {
 		Thread.sleep(2000);
 		pp.MyQuotes();
 		Thread.sleep(2000);
-		pp.ClickAddToCartReQuotes();	
+		pp.ClickAddToCartReQuotes();
 		Thread.sleep(2000);
 		pp.AddtoShoppingCartRequote();
 		Thread.sleep(2000);
