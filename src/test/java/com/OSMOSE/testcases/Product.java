@@ -932,7 +932,7 @@ public class Product extends BaseTest {
 		Page.click("QuoteRequestsubmittedpopupClosebtn_XPATH");
 	}
 	
-	//Added on 23rd July
+	//Added on 23rd July 20
 	@Test(priority = 65, enabled = true, description = "Verification of Exclamation Mark on My Quotes for Quote Request")
 	public void verifyExclamationOnMyQuotes() throws Exception {
 		HomeOU ou = new HomeOU();
