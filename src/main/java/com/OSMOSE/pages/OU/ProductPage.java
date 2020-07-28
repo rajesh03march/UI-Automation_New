@@ -794,4 +794,20 @@ public class ProductPage extends Page {
 		Thread.sleep(5000);
 		ClickActions("StatusFilterdd_XPATH");
 	}
+
+	public void CreateQuoteExclamation() throws InterruptedException {
+		click("ProductPoleRestoration_XPATH");
+		Thread.sleep(1000);
+		click("ProductPoleRestoration_XPATH");
+		click("ProductPoleRestorationDummy3_XPATH");
+		selectbyindex("ProductSizeDropdown_XPATH", 1);
+		click("ProductSizeEnterQuantity_XPATH");
+		clear("ProductSizeEnterQuantity_XPATH");
+		type("ProductSizeEnterQuantity_XPATH", "8");
+		click("ProductAddButton_XPATH");
+		click("ProductViewCartButton_XPATH");
+		click("SubmitQuoteRequestbtn_XPATH");
+		click("Submitbtn_XPATH");
+		click("QuoteRequestsubmittedpopupClosebtn_XPATH");
+	}
 }

@@ -24,7 +24,7 @@ public class Contact extends BaseTest {
 		ContactPage cp = ou.goContact();
 		cp.ClickViewContactsMenu();
 		Assert.assertEquals(Page.getText("ProductsContactstxt_XPATH"), "Products Contacts");
-		Assert.assertEquals(Page.getText("ManageAllContacts_XPATH"), "Manage all your contacts in one place");
+		//Assert.assertEquals(Page.getText("ManageAllContacts_XPATH"), "Manage all your contacts in one place");
 	}
 
 	@Test(priority = 2, enabled = true, description = "Verification of the content on a contact card")

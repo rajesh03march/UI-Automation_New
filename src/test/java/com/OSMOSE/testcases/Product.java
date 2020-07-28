@@ -84,7 +84,7 @@ public class Product extends BaseTest {
 	public void allSixProductPresent() throws InterruptedException {
 		HomeOU ou = new HomeOU();
 		ProductPage pp = ou.goProduct();
-		Assert.assertEquals(Page.getText("MITCFUME_XPATH"), "MITC-FUME®");
+		Assert.assertEquals(Page.getText("MITCFUME_XPATH"), "Meth Truss Guard");
 	}
 
 	@Test(priority = 9, dependsOnMethods = "verifyTheProductLink", enabled = true, description = "Verification of the presence of Slider items")
@@ -92,7 +92,7 @@ public class Product extends BaseTest {
 		HomeOU ou = new HomeOU();
 		ProductPage pp = ou.goProduct();
 		Page.click("ProductSlider_XPATH");
-		Assert.assertEquals(Page.getText("PoleTopper®_XPATH"), "MITC-FUME®");
+		Assert.assertEquals(Page.getText("PoleTopper®_XPATH"), "Meth Truss Guard");
 	}
 
 	@Test(priority = 10, dependsOnMethods = "verifyTheProductLink", enabled = true, description = "Verification of the presence of Category Filter button")
@@ -199,7 +199,7 @@ public class Product extends BaseTest {
 	}
 
 	// Keep this false always
-	@Test(dataProviderClass = Utilities.class, priority = 16, dataProvider = "dp", description = "Verify the presence of Search Box", enabled = false)
+	@Test(dataProviderClass = Utilities.class, priority = 16, enabled = false, dataProvider = "dp", description = "Verify the presence of Search Box")
 	public void verifyTheSearch(Hashtable<String, String> data) throws InterruptedException {
 		HomeOU ou = new HomeOU();
 		ProductPage pp = ou.goProduct();
@@ -209,7 +209,7 @@ public class Product extends BaseTest {
 		Assert.assertEquals("", "");
 	}
 
-	@Test(dataProviderClass = Utilities.class, priority = 17, dataProvider = "dp", description = "Verify that User clicks on the Slider icon and search for firstname Pole", enabled = true)
+	@Test(dataProviderClass = Utilities.class, priority = 17, enabled = true, dataProvider = "dp", description = "Verify that User clicks on the Slider icon and search for firstname Pole")
 	public void verifyTheSearchfirstname(Hashtable<String, String> data) throws InterruptedException {
 		HomeOU ou = new HomeOU();
 		ProductPage pp = ou.goProduct();
@@ -233,7 +233,7 @@ public class Product extends BaseTest {
 				Page.driver.findElement(By.xpath("//*[@id='productSlider']/div[1]/div[2]/img")).isDisplayed());
 	}
 
-	@Test(dataProviderClass = Utilities.class, priority = 19, dataProvider = "dp", enabled = true, description = "Verify that User clicks on the Slider icon and search for One Alphabeted like H")
+	@Test(dataProviderClass = Utilities.class, priority = 19, enabled = true, dataProvider = "dp", description = "Verify that User clicks on the Slider icon and search for One Alphabeted like H")
 	public void verifyTheSearchOneAlphabet(Hashtable<String, String> data) throws InterruptedException {
 		HomeOU ou = new HomeOU();
 		ProductPage pp = ou.goProduct();
@@ -259,7 +259,7 @@ public class Product extends BaseTest {
 		Page.click("SearchCrossIcon_XPATH");
 	}
 
-	@Test(dataProviderClass = Utilities.class, priority = 21, dataProvider = "dp", enabled = true, description = "Verify that User clicks on the Slider icon and validate the validation message is shown wrong input")
+	@Test(dataProviderClass = Utilities.class, priority = 21, enabled = true, dataProvider = "dp", description = "Verify that User clicks on the Slider icon and validate the validation message is shown wrong input")
 	public void verifyTheValidationmessage(Hashtable<String, String> data) throws InterruptedException {
 		HomeOU ou = new HomeOU();
 		ProductPage pp = ou.goProduct();
@@ -269,11 +269,11 @@ public class Product extends BaseTest {
 		Page.driver.findElement(By.id("searchInput")).sendKeys(Keys.ENTER);
 		// Page.driver.findElement(By.id("searchInput")).clear();
 		Thread.sleep(1000);
-		/*
-		 * WebElement element =
-		 * Page.driver.findElement(By.xpath("//div[@class='p-0 p15 col']/div[1]/div[1]")
-		 * ); System.out.println(element.getText());
-		 */
+
+		WebElement element = Page.driver.findElement(By.xpath("//div[@class='p-0 p15 col']/div[1]/div[1]"));
+		System.out.println(element.getText());
+		// Assert.assertEquals("element","No products match your search.");
+
 		Assert.assertEquals("", "");
 	}
 
@@ -930,6 +930,16 @@ public class Product extends BaseTest {
 						.isDisplayed());
 		Thread.sleep(10000);
 		Page.click("QuoteRequestsubmittedpopupClosebtn_XPATH");
+	}
+
+	@Test(priority = 65, enabled = true, description = "Verification of Exclamation Mark on My Quotes for Quote Request")
+	public void verifyExclamationOnMyQuotes() throws Exception {
+		HomeOU ou = new HomeOU();
+		ProductPage pp = ou.goProduct();
+		Thread.sleep(2000);
+		pp.CreateQuoteExclamation();
+		Thread.sleep(10000);
+		Assert.assertTrue(Page.driver.findElement(By.xpath("//a[@id='openMyquotes']/span")).isDisplayed());
 	}
 
 }
