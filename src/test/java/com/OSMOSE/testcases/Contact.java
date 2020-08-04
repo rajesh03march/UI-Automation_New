@@ -8,7 +8,7 @@ import com.OSMOSE.pages.OU.ContactPage;
 import com.OSMOSE.pages.OU.HomeOU;
 
 public class Contact extends BaseTest {
-	@Test(priority = 0, description = "Verification of the presence of Contact Us Menu items")
+	@Test(priority = 0, description = "Verification of the presence of Contact Us Menu items.")
 	public void verifyContactUsMenuContents() {
 		HomeOU ou = new HomeOU();
 		ContactPage cp = ou.goContact();
