@@ -10,7 +10,7 @@ import com.OSMOSE.base.Page;
 
 public class ProductPage extends Page {
 	public void clickOnOU360() {
-		click("HomePage_XPATH");
+		ClickActions("HomePage_XPATH");
 	}
 
 	public void clickProductLink() throws InterruptedException {
@@ -46,7 +46,7 @@ public class ProductPage extends Page {
 
 	public void clickOnProductImage() throws InterruptedException {
 		Thread.sleep(1000);
-		click("Osmoselogo_XPATH");
+		click("HomePage_XPATH");
 		click("HeadingProducts_XPATH");
 	}
 
@@ -395,6 +395,10 @@ public class ProductPage extends Page {
 
 	public void ClickProductsInReviewbackLink() throws InterruptedException {
 		click("ProductReviewBackLink_XPATH");
+	}
+	
+	public void ClickDictionary() throws InterruptedException {
+		click("DictionaryLink_XPATH");
 	}
 
 	public void ClickSubmitQuotewithOrderedstatus() throws InterruptedException {

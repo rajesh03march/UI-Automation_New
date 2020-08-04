@@ -84,7 +84,7 @@ public class Product extends BaseTest {
 	public void allSixProductPresent() throws InterruptedException {
 		HomeOU ou = new HomeOU();
 		ProductPage pp = ou.goProduct();
-		Assert.assertEquals(Page.getText("MITCFUME_XPATH"), "Meth Truss Guard");
+		Assert.assertEquals(Page.getText("MITCFUME_XPATH"), "MITC-FUME®");
 	}
 
 	@Test(priority = 9, dependsOnMethods = "verifyTheProductLink", enabled = true, description = "Verification of the presence of Slider items")
@@ -92,7 +92,7 @@ public class Product extends BaseTest {
 		HomeOU ou = new HomeOU();
 		ProductPage pp = ou.goProduct();
 		Page.click("ProductSlider_XPATH");
-		Assert.assertEquals(Page.getText("PoleTopper®_XPATH"), "Meth Truss Guard");
+		Assert.assertEquals(Page.getText("PoleTopper®_XPATH"), "MITC-FUME®");
 	}
 
 	@Test(priority = 10, dependsOnMethods = "verifyTheProductLink", enabled = true, description = "Verification of the presence of Category Filter button")
@@ -352,8 +352,12 @@ public class Product extends BaseTest {
 		ProductPage pp = ou.goProduct();
 		pp.AddToCart_singleproductmultipletimes();
 		Thread.sleep(1000);
-		Assert.assertEquals(Page.driver.findElement(By.xpath("//input[@name='quantities']")).getAttribute("value"),
-				"56");
+		Assert.assertTrue(Page.driver.findElement(By.xpath(
+				"//*[@id='openMyCart___BV_modal_body_']/div/div[1]/div/div[1]/div/div/div/div/div[2]/div/div[3]/a/span/img"))
+				.isDisplayed());
+		Assert.assertTrue(Page.driver.findElement(By.xpath(
+				"//*[@id='openMyCart___BV_modal_body_']/div/div[1]/div/div[1]/div[2]/div/div/div/div[2]/div/div[3]/a/span/img"))
+				.isDisplayed());
 	}
 
 	@Test(priority = 28, enabled = true, description = "Delete product from the cart")
@@ -783,9 +787,33 @@ public class Product extends BaseTest {
 		Page.click("ManageProductCrossbutn_XPATH");
 		Page.driver.navigate().back();
 	}
+	
+	// Below method added by Varun 8August2020
+	@Test(priority = 59, enabled = true, description = "Verification of upload Spreadsheet on Manage Products")
+	public void ClickDictionaryLink() throws Exception {
+		HomeOU ou = new HomeOU();
+		ProductPage pp = ou.goProduct();
+		pp.clickProductLink();
+		Thread.sleep(2000);
+		pp.clickAdmin_ManageProducts();
+		pp.ClickDictionary();
+		Assert.assertEquals(Page.getText("DictionaryHeaderTxt_XPATH"), "Dictionary");
+		Assert.assertEquals(Page.getText("LevelTxt_XPATH"), "Level");
+		Assert.assertEquals(Page.getText("ProductGroupTxt_XPATH"), "Product Group");
+		Page.click("DictionaryCloseBtn_XPATH");
+		pp.ClickProductsInReview();
+		pp.ClickDictionary();
+		Assert.assertEquals(Page.getText("DictionaryHeaderTxt_XPATH"), "Dictionary");
+		Assert.assertEquals(Page.getText("LevelTxt_XPATH"), "Level");
+		Assert.assertEquals(Page.getText("ProductGroupTxt_XPATH"), "Product Group");
+		Page.click("DictionaryCloseBtn_XPATH");
+		pp.ClickProductsInReviewbackLink();
+		Page.click("ManageProductCrossbutn_XPATH");
+		Page.driver.navigate().back();
+	}
 
 	// Below method added by Varun 6july2020
-	@Test(priority = 59, enabled = true, description = "Verification of contents on Approve<<QuoteId>> screen")
+	@Test(priority = 60, enabled = true, description = "Verification of contents on Approve<<QuoteId>> screen")
 	public void VerifyUIonApprove() throws Exception {
 		HomeOU ou = new HomeOU();
 		ProductPage pp = ou.goProduct();
@@ -808,7 +836,7 @@ public class Product extends BaseTest {
 	}
 
 	// Added new test case on 7july,2020
-	@Test(priority = 60, enabled = true, description = "Verification of disabled Approve button")
+	@Test(priority = 61, enabled = true, description = "Verification of disabled Approve button")
 	public void VerifyApprovebtndisabled() throws Exception {
 		HomeOU ou = new HomeOU();
 		ProductPage pp = ou.goProduct();
@@ -833,7 +861,7 @@ public class Product extends BaseTest {
 	}
 
 	// Below method added by Varun 6july2020
-	@Test(priority = 61, enabled = true, description = "Verification of Thank you pop after approving the Quoted Request")
+	@Test(priority = 62, enabled = true, description = "Verification of Thank you pop after approving the Quoted Request")
 	public void verifyThankyouPopup() throws Exception {
 		HomeOU ou = new HomeOU();
 		ProductPage pp = ou.goProduct();
@@ -858,7 +886,7 @@ public class Product extends BaseTest {
 		Page.click("ApprovedClosebtn_XPATH");
 	}
 
-	@Test(priority = 62, enabled = true, description = "Verification of Cancel action on the quote screen")
+	@Test(priority = 63, enabled = true, description = "Verification of Cancel action on the quote screen")
 	public void verifyCancelwhileREQuoting() throws Exception {
 		HomeOU ou = new HomeOU();
 		ProductPage pp = ou.goProduct();
@@ -877,7 +905,7 @@ public class Product extends BaseTest {
 		Page.click("Closebtn_XPATH");
 	}
 
-	@Test(priority = 63, enabled = true, description = "Verification of submission action on the quote screen")
+	@Test(priority = 64, enabled = true, description = "Verification of submission action on the quote screen")
 	public void verifySubmitwhileREQuoting() throws Exception {
 		HomeOU ou = new HomeOU();
 		ProductPage pp = ou.goProduct();
@@ -905,7 +933,7 @@ public class Product extends BaseTest {
 		Page.click("QuoteRequestsubmittedpopupClosebtn_XPATH");
 	}
 
-	@Test(priority = 64, enabled = true, description = "Verification of Add to Cart on the quote screen")
+	@Test(priority = 65, enabled = true, description = "Verification of Add to Cart on the quote screen")
 	public void verifyAddToCartWhileReQuoting() throws Exception {
 		HomeOU ou = new HomeOU();
 		ProductPage pp = ou.goProduct();
@@ -933,7 +961,7 @@ public class Product extends BaseTest {
 	}
 	
 	//Added on 23rd July 20
-	@Test(priority = 65, enabled = true, description = "Verification of Exclamation Mark on My Quotes for Quote Request")
+	@Test(priority = 66, enabled = true, description = "Verification of Exclamation Mark on My Quotes for Quote Request")
 	public void verifyExclamationOnMyQuotes() throws Exception {
 		HomeOU ou = new HomeOU();
 		ProductPage pp = ou.goProduct();
