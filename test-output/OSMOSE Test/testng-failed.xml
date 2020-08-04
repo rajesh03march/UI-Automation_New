@@ -10,8 +10,29 @@
     <classes>
       <class name="com.OSMOSE.testcases.Product">
         <methods>
+          <include name="sliderItemPresent"/>
+          <include name="SubmitQuotewithQuotePendingstatus"/>
+          <include name="verifyAddToCartWhileReQuoting"/>
+          <include name="verifyStatusFilterExpired"/>
+          <include name="VerifyApprovebtndisabled"/>
+          <include name="verifySubmitwhileREQuoting"/>
+          <include name="SubmitQuotewithOrderRequestedstatus"/>
+          <include name="verifyTheProductLink"/>
+          <include name="verifyExclamationOnMyQuotes"/>
+          <include name="verifyStatusFilterQuotePending"/>
+          <include name="SubmitQuotewithQuoteCancelledstatus"/>
+          <include name="VerifyUIonApprove"/>
           <include name="tearDown"/>
-          <include name="verifyNoExclamationOnMyQuotes"/>
+          <include name="verifyStatusFilterQuoted"/>
+          <include name="SubmitQuotewithOrderedstatus"/>
+          <include name="verifyStatusFilterOrdered"/>
+          <include name="SubmitQuotewithQuotedstatus"/>
+          <include name="verifyThankyouPopup"/>
+          <include name="VerifyAddShopping_Sameitem"/>
+          <include name="verifyCancelwhileREQuoting"/>
+          <include name="verifyStatusFilterCancelled"/>
+          <include name="ClickDictionaryLink"/>
+          <include name="VerifyCrossicononhoppingCart_Differentitem"/>
         </methods>
       </class> <!-- com.OSMOSE.testcases.Product -->
     </classes>

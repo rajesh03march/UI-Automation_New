@@ -788,7 +788,7 @@ public class Product extends BaseTest {
 		Page.driver.navigate().back();
 	}
 	
-	// Below method added by Varun 8August2020
+	// Below method added by Varun 4August2020
 	@Test(priority = 59, enabled = true, description = "Verification of upload Spreadsheet on Manage Products")
 	public void ClickDictionaryLink() throws Exception {
 		HomeOU ou = new HomeOU();

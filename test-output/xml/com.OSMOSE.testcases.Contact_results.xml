@@ -4,25 +4,25 @@
            failures="0"
            errors="0"
            skipped="0"
-           time="54.303">
+           time="55.352">
   <properties />
   
   
-            <testcase name="verifyContactUsSalesServicesContents" time="0.084" classname="com.OSMOSE.testcases.Contact" />
-                <testcase name="verifyFormSubmissionWith_ProjectSupport" time="1.640" classname="com.OSMOSE.testcases.Contact" />
-                <testcase name="verifyContactUsHeaderContents" time="0.326" classname="com.OSMOSE.testcases.Contact" />
-                <testcase name="verifyFormSubmissionWith_TechnicalSupport" time="2.653" classname="com.OSMOSE.testcases.Contact" />
-                <testcase name="verifyFormSubmissionWith_Other" time="2.002" classname="com.OSMOSE.testcases.Contact" />
-                <testcase name="verifyContactUsSalesProductsContents" time="0.072" classname="com.OSMOSE.testcases.Contact" />
-                <testcase name="verifyFormSubmissionThankYouPopUp" time="12.011" classname="com.OSMOSE.testcases.Contact" />
-                <testcase name="verifyContactUsGeneralInquiriesContents" time="0.049" classname="com.OSMOSE.testcases.Contact" />
+            <testcase name="verifyFormSubmissionWith_RequestForInformation" time="5.482" classname="com.OSMOSE.testcases.Contact" />
+                <testcase name="verifyContactUsMenuContents" time="0.291" classname="com.OSMOSE.testcases.Contact" />
+                <testcase name="verifyContactUsHeaderContents" time="0.437" classname="com.OSMOSE.testcases.Contact" />
+                <testcase name="verifyContactUsSalesServicesContents" time="0.084" classname="com.OSMOSE.testcases.Contact" />
+                <testcase name="verifyViewContactsHeaderContents" time="1.140" classname="com.OSMOSE.testcases.Contact" />
                 <testcase name="verifyContactUsOCalcProContents" time="0.075" classname="com.OSMOSE.testcases.Contact" />
-                <testcase name="verifyFormSubmissionWith_RequestForInformation" time="3.158" classname="com.OSMOSE.testcases.Contact" />
-                <testcase name="verifyClickOnBackButton" time="0.202" classname="com.OSMOSE.testcases.Contact" />
-                <testcase name="verifyContactUsQueryFormContents" time="0.107" classname="com.OSMOSE.testcases.Contact" />
-                <testcase name="verifyContactUsMenuContents" time="0.300" classname="com.OSMOSE.testcases.Contact" />
-                <testcase name="verifyContactUsClickOnGoogleMap" time="31.289" classname="com.OSMOSE.testcases.Contact" />
-                <testcase name="verifyViewContactsContactCardContents" time="0.160" classname="com.OSMOSE.testcases.Contact" />
-                <testcase name="verifyViewContactsHeaderContents" time="0.175" classname="com.OSMOSE.testcases.Contact" />
+                <testcase name="verifyContactUsQueryFormContents" time="0.127" classname="com.OSMOSE.testcases.Contact" />
+                <testcase name="verifyClickOnBackButton" time="0.088" classname="com.OSMOSE.testcases.Contact" />
+                <testcase name="verifyContactUsClickOnGoogleMap" time="30.933" classname="com.OSMOSE.testcases.Contact" />
+                <testcase name="verifyContactUsSalesProductsContents" time="0.087" classname="com.OSMOSE.testcases.Contact" />
+                <testcase name="verifyViewContactsContactCardContents" time="0.146" classname="com.OSMOSE.testcases.Contact" />
+                <testcase name="verifyFormSubmissionWith_ProjectSupport" time="1.477" classname="com.OSMOSE.testcases.Contact" />
+                <testcase name="verifyFormSubmissionWith_TechnicalSupport" time="1.668" classname="com.OSMOSE.testcases.Contact" />
+                <testcase name="verifyContactUsGeneralInquiriesContents" time="0.043" classname="com.OSMOSE.testcases.Contact" />
+                <testcase name="verifyFormSubmissionThankYouPopUp" time="11.811" classname="com.OSMOSE.testcases.Contact" />
+                <testcase name="verifyFormSubmissionWith_Other" time="1.463" classname="com.OSMOSE.testcases.Contact" />
       
 </testsuite>
