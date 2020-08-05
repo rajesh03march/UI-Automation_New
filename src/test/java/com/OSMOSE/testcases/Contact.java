@@ -6,12 +6,13 @@ import org.testng.annotations.Test;
 import com.OSMOSE.base.Page;
 import com.OSMOSE.pages.OU.ContactPage;
 import com.OSMOSE.pages.OU.HomeOU;
+import com.OSMOSE.pages.OU.ProductPage;
 
 public class Contact extends BaseTest {
 	@Test(priority = 0, description = "Verification of the presence of Contact Us Menu items.")
 	public void verifyContactUsMenuContents() {
-		HomeOU ou = new HomeOU();
-		ContactPage cp = ou.goContact();
+		ProductPage pp = new ProductPage();
+		ContactPage cp = pp.goContact();
 		cp.clickOnOU360();
 		cp.clickContactUsMainMenudd();
 		Assert.assertEquals(Page.getText("ContactUsMenu_XPATH"), "Contact Us");
@@ -20,8 +21,8 @@ public class Contact extends BaseTest {
 
 	@Test(priority = 1, enabled = true, description = "Verification of the Header content on View Contacts Menu item")
 	public void verifyViewContactsHeaderContents() {
-		HomeOU ou = new HomeOU();
-		ContactPage cp = ou.goContact();
+		ProductPage pp = new ProductPage();
+		ContactPage cp = pp.goContact();
 		cp.ClickViewContactsMenu();
 		Assert.assertEquals(Page.getText("ProductsContactstxt_XPATH"), "Products Contacts");
 		//Assert.assertEquals(Page.getText("ManageAllContacts_XPATH"), "Manage all your contacts in one place");
@@ -29,8 +30,8 @@ public class Contact extends BaseTest {
 
 	@Test(priority = 2, enabled = true, description = "Verification of the content on a contact card")
 	public void verifyViewContactsContactCardContents() {
-		HomeOU ou = new HomeOU();
-		ContactPage cp = ou.goContact();
+		ProductPage pp = new ProductPage();
+		ContactPage cp = pp.goContact();
 		Assert.assertEquals(Page.getText("ContactCardName_XPATH"), "Simth, John (Simth)");
 		Assert.assertEquals(Page.getText("ContactCardDesignation_XPATH"), "Project Manager");
 		Assert.assertEquals(Page.getText("ContactCardDivision_XPATH"), "Sales");
@@ -41,8 +42,8 @@ public class Contact extends BaseTest {
 
 	@Test(priority = 3, enabled = true, description = "Verification of the Header content on Contact Us Menu item")
 	public void verifyContactUsHeaderContents() {
-		HomeOU ou = new HomeOU();
-		ContactPage cp = ou.goContact();
+		ProductPage pp = new ProductPage();
+		ContactPage cp = pp.goContact();
 		cp.clickContactUsMainMenudd();
 		cp.ClickContactUsMenu();
 		// Verifying the presence of Back Button
@@ -54,15 +55,15 @@ public class Contact extends BaseTest {
 
 	@Test(priority = 4, enabled = true, description = "Verification of the click on Back button")
 	public void verifyClickOnBackButton() {
-		HomeOU ou = new HomeOU();
-		ContactPage cp = ou.goContact();
+		ProductPage pp = new ProductPage();
+		ContactPage cp = pp.goContact();
 		cp.ClickOnBackButton();
 	}
 
 	@Test(priority = 5, enabled = true, description = "Verify that user is able to click on View On Google Map")
 	public void verifyContactUsClickOnGoogleMap() throws InterruptedException {
-		HomeOU ou = new HomeOU();
-		ContactPage cp = ou.goContact();
+		ProductPage pp = new ProductPage();
+		ContactPage cp = pp.goContact();
 		cp.clickContactUsMainMenudd();
 		cp.ClickContactUsMenu();
 		cp.clickOnAtlantaMap();
@@ -84,16 +85,16 @@ public class Contact extends BaseTest {
 
 	@Test(priority = 6, enabled = true, description = "Verification of the contents under General Inquiries section")
 	public void verifyContactUsGeneralInquiriesContents() {
-		HomeOU ou = new HomeOU();
-		ContactPage cp = ou.goContact();
+		ProductPage pp = new ProductPage();
+		ContactPage cp = pp.goContact();
 		Assert.assertEquals(Page.getText("ContactUsGeneralInquiriesTxt_XPATH"), "General Inquiries");
 		Assert.assertEquals(Page.getText("ContactUsGeneralInquiriesPhone_XPATH"), "770.632.6700");
 	}
 
 	@Test(priority = 7, enabled = true, description = "Verification of the contents under Sales-Products section")
 	public void verifyContactUsSalesProductsContents() {
-		HomeOU ou = new HomeOU();
-		ContactPage cp = ou.goContact();
+		ProductPage pp = new ProductPage();
+		ContactPage cp = pp.goContact();
 		Assert.assertEquals(Page.getText("ContactUsSalesProductsTxt_XPATH"), "Sales - Products");
 		Assert.assertEquals(Page.getText("ContactUsSalesProductsPhone_XPATH"), "770.632.6700 Option 3");
 		Assert.assertEquals(Page.getText("ContactUsSalesProductsEmail_XPATH"), "products@osmose.com");
@@ -101,8 +102,8 @@ public class Contact extends BaseTest {
 
 	@Test(priority = 8, enabled = true, description = "Verification of the contents under Sales-Services section")
 	public void verifyContactUsSalesServicesContents() {
-		HomeOU ou = new HomeOU();
-		ContactPage cp = ou.goContact();
+		ProductPage pp = new ProductPage();
+		ContactPage cp = pp.goContact();
 		Assert.assertEquals(Page.getText("ContactUsSalesServicesTxt_XPATH"), "Sales - Services");
 		Assert.assertEquals(Page.getText("ContactUsSalesServicesPhone_XPATH"), "770.632.6700");
 		Assert.assertEquals(Page.getText("ContactUsSalesServicesToTxt_XPATH"),
@@ -111,8 +112,8 @@ public class Contact extends BaseTest {
 
 	@Test(priority = 9, enabled = true, description = "Verification of the contents under O-Calc Pro section")
 	public void verifyContactUsOCalcProContents() {
-		HomeOU ou = new HomeOU();
-		ContactPage cp = ou.goContact();
+		ProductPage pp = new ProductPage();
+		ContactPage cp = pp.goContact();
 		Assert.assertEquals(Page.getText("ContactUsOcalcProTxt_XPATH"), "O-Calc Pro");
 		Assert.assertEquals(Page.getText("ContactUsOcalcProPhone_XPATH"), "770.632.6700");
 		Assert.assertEquals(Page.getText("ContactUsOcalcProEmail_XPATH"), "technicalsupport@osmose.com");
@@ -120,8 +121,8 @@ public class Contact extends BaseTest {
 
 	@Test(priority = 10, enabled = true, description = "Verification of the contents inside Queries form")
 	public void verifyContactUsQueryFormContents() {
-		HomeOU ou = new HomeOU();
-		ContactPage cp = ou.goContact();
+		ProductPage pp = new ProductPage();
+		ContactPage cp = pp.goContact();
 		Assert.assertEquals(Page.getText("ContactUsFormTxt_XPATH"),
 				"For more queries, please complete the form below and someone will be in touch with you as quickly as possible.");
 		// Verifying the presence of Email Textbox
@@ -149,16 +150,16 @@ public class Contact extends BaseTest {
 
 	@Test(priority = 11, enabled = true, description = "Verification of Form submission with 'Request for Information' subject")
 	public void verifyFormSubmissionWith_RequestForInformation() {
-		HomeOU ou = new HomeOU();
-		ContactPage cp = ou.goContact();
+		ProductPage pp = new ProductPage();
+		ContactPage cp = pp.goContact();
 		cp.submitWithRequestForInformation();
 		cp.clickCloseOnThankYouFormSubmission();
 	}
 
 	@Test(priority = 12, enabled = true, description = "Verification of Pop up that is displayed after Form submission")
 	public void verifyFormSubmissionThankYouPopUp() throws InterruptedException {
-		HomeOU ou = new HomeOU();
-		ContactPage cp = ou.goContact();
+		ProductPage pp = new ProductPage();
+		ContactPage cp = pp.goContact();
 		cp.submitWithRequestForInformation();
 		Thread.sleep(4000);
 		Assert.assertEquals(Page.getText("FormSubmissionThankYouPopUptxt_XPATH"), "Thank You");
@@ -174,24 +175,24 @@ public class Contact extends BaseTest {
 
 	@Test(priority = 13, enabled = true, description = "Verification of Form submission with 'Project Support' subject")
 	public void verifyFormSubmissionWith_ProjectSupport() {
-		HomeOU ou = new HomeOU();
-		ContactPage cp = ou.goContact();
+		ProductPage pp = new ProductPage();
+		ContactPage cp = pp.goContact();
 		cp.submitWithProjectSupport();
 		cp.clickCloseOnThankYouFormSubmission();
 	}
 
 	@Test(priority = 14, enabled = true, description = "Verification of Form submission with 'Technical Support' subject")
 	public void verifyFormSubmissionWith_TechnicalSupport() {
-		HomeOU ou = new HomeOU();
-		ContactPage cp = ou.goContact();
+		ProductPage pp = new ProductPage();
+		ContactPage cp = pp.goContact();
 		cp.submitWithTechnicalSupport();
 		cp.clickCloseOnThankYouFormSubmission();
 	}
 
 	@Test(priority = 15, enabled = true, description = "Verification of Form submission with 'Other' subject")
 	public void verifyFormSubmissionWith_Other() {
-		HomeOU ou = new HomeOU();
-		ContactPage cp = ou.goContact();
+		ProductPage pp = new ProductPage();
+		ContactPage cp = pp.goContact();
 		cp.submitWithTechnicalSupport();
 		cp.clickCloseOnThankYouFormSubmission();
 	}

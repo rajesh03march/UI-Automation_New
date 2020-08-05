@@ -793,22 +793,33 @@ public class Product extends BaseTest {
 	public void ClickDictionaryLink() throws Exception {
 		HomeOU ou = new HomeOU();
 		ProductPage pp = ou.goProduct();
+		Thread.sleep(4000);
 		pp.clickProductLink();
-		Thread.sleep(2000);
+		Thread.sleep(4000);
 		pp.clickAdmin_ManageProducts();
+		Thread.sleep(1000);
 		pp.ClickDictionary();
+		Thread.sleep(4000);
 		Assert.assertEquals(Page.getText("DictionaryHeaderTxt_XPATH"), "Dictionary");
 		Assert.assertEquals(Page.getText("LevelTxt_XPATH"), "Level");
 		Assert.assertEquals(Page.getText("ProductGroupTxt_XPATH"), "Product Group");
+		Thread.sleep(3000);
 		Page.click("DictionaryCloseBtn_XPATH");
+		Thread.sleep(4000);
 		pp.ClickProductsInReview();
+		Thread.sleep(3000);
 		pp.ClickDictionary();
+		Thread.sleep(3000);
 		Assert.assertEquals(Page.getText("DictionaryHeaderTxt_XPATH"), "Dictionary");
 		Assert.assertEquals(Page.getText("LevelTxt_XPATH"), "Level");
 		Assert.assertEquals(Page.getText("ProductGroupTxt_XPATH"), "Product Group");
+		Thread.sleep(3000);
 		Page.click("DictionaryCloseBtn_XPATH");
+		Thread.sleep(3000);
 		pp.ClickProductsInReviewbackLink();
+		Thread.sleep(3000);
 		Page.click("ManageProductCrossbutn_XPATH");
+		Thread.sleep(3000);
 		Page.driver.navigate().back();
 	}
 

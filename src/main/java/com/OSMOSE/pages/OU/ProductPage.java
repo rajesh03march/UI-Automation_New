@@ -398,7 +398,7 @@ public class ProductPage extends Page {
 	}
 	
 	public void ClickDictionary() throws InterruptedException {
-		click("DictionaryLink_XPATH");
+		ClickActions("DictionaryLink_XPATH");
 	}
 
 	public void ClickSubmitQuotewithOrderedstatus() throws InterruptedException {
@@ -814,4 +814,8 @@ public class ProductPage extends Page {
 		click("Submitbtn_XPATH");
 		click("QuoteRequestsubmittedpopupClosebtn_XPATH");
 	}
+	
+    public ContactPage goContact(){
+        return new ContactPage();
+    }
 }

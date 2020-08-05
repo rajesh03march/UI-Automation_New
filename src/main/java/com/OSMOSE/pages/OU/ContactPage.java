@@ -66,5 +66,9 @@ public class ContactPage extends Page {
 	public void clickCloseOnThankYouFormSubmission( ) {
 		click("FormSubmissionThankYouPopUpCloseBtn_XPATH");
 	}
+	
+    public KnowledgeBasePage goKnowledgeBase(){
+        return new KnowledgeBasePage();
+    }
 
 }
