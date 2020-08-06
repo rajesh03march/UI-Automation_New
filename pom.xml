@@ -1,22 +1,24 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-  <modelVersion>4.0.0</modelVersion>
-  <groupId>com.OSMOSE</groupId>
-  <artifactId>UI-Automation</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.OSMOSE</groupId>
+	<artifactId>UI-Automation</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
 
-    <properties>
-        <maven.compiler.source>1.8</maven.compiler.source>
-        <maven.compiler.target>1.8</maven.compiler.target>
-    </properties>
-  
-  <dependencies>
-  
-    	<!-- https://mvnrepository.com/artifact/org.testng/testng -->
-    <dependency>
-    <groupId>org.testng</groupId>
-    <artifactId>testng</artifactId>
-    <version>7.1.0</version>
-    </dependency>
+	<properties>
+		<maven.compiler.source>1.8</maven.compiler.source>
+		<maven.compiler.target>1.8</maven.compiler.target>
+	</properties>
+
+	<dependencies>
+
+		<!-- https://mvnrepository.com/artifact/org.testng/testng -->
+		<dependency>
+			<groupId>org.testng</groupId>
+			<artifactId>testng</artifactId>
+			<version>7.1.0</version>
+		</dependency>
 
 
 
@@ -42,11 +44,11 @@
 			<artifactId>reportng</artifactId>
 			<version>1.1.4</version>
 		</dependency>
-	  <dependency>
-		  <groupId>commons-io</groupId>
-		  <artifactId>commons-io</artifactId>
-		  <version>2.6</version>
-	  </dependency>
+		<dependency>
+			<groupId>commons-io</groupId>
+			<artifactId>commons-io</artifactId>
+			<version>2.6</version>
+		</dependency>
 
 		<!-- https://mvnrepository.com/artifact/com.google.inject/guice -->
 		<dependency>
@@ -114,12 +116,18 @@
 			<version>3.6</version>
 		</dependency>
 
-<!--	  <dependency>-->
-<!--		  <groupId>ru.yandex.qatools.ashot</groupId>-->
-<!--		  <artifactId>ashot</artifactId>-->
-<!--		  <version>1.5.4</version>-->
-<!--	  </dependency>-->
+		<!-- <dependency> -->
+		<!-- <groupId>ru.yandex.qatools.ashot</groupId> -->
+		<!-- <artifactId>ashot</artifactId> -->
+		<!-- <version>1.5.4</version> -->
+		<!-- </dependency> -->
 
+		<!-- https://mvnrepository.com/artifact/org.freemarker/freemarker -->
+		<dependency>
+			<groupId>org.freemarker</groupId>
+			<artifactId>freemarker</artifactId>
+			<version>2.3.28</version>
+		</dependency>
 
 
 
@@ -145,20 +153,20 @@
 			</plugin>
 		</plugins>
 		<testResources>
-      <testResource>
-        <directory>src/test/resources/com/OSMOSE/properties</directory>
-        <includes>
-          <include>log4j.properties</include>
-        </includes>
-      </testResource>
-    </testResources>
-		
-		
+			<testResource>
+				<directory>src/test/resources/com/OSMOSE/properties</directory>
+				<includes>
+					<include>log4j.properties</include>
+				</includes>
+			</testResource>
+		</testResources>
+
+
 	</build>
 
 
 
-  
-  
-  
+
+
+
 </project>
