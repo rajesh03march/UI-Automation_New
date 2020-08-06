@@ -26,34 +26,47 @@ public class OULogin extends BaseTest {
 
 	@Test(dependsOnMethods = "loginTest", priority = 1, enabled = true, description = "Verify the Osmose University card on home page")
 	public void verifyOUCard() {
-
 		Assert.assertEquals(Page.getText("OUCard_XPATH"), "Osmose University");
 	}
+	
+	@Test(dependsOnMethods = "loginTest", priority = 2, enabled = true, description = "Verify the Knowledge Base card on home page")
+	public void verifyKnowledgeBaseCard() {
+		Assert.assertEquals(Page.getText("KBCard_XPATH"), "Knowledge Base");
+	}
 
-	@Test(dependsOnMethods = "loginTest", priority = 2, enabled = true, description = "Verify the Products card on home page")
+	@Test(dependsOnMethods = "loginTest", priority = 3, enabled = true, description = "Verify the Products card on home page")
 	public void verifyProductCard() {
 		Assert.assertEquals(Page.getText("ProCard_XPATH"), "Products");
 	}
 	
-	@Test(dependsOnMethods = "loginTest", priority = 3, enabled = true, description = "Verify the Contact Us Main menu on home page")
+	@Test(dependsOnMethods = "loginTest", priority = 4, enabled = true, description = "Verify the Contact Us Main menu on home page")
 	public void verifyContactUs() {
 		Assert.assertEquals(Page.getText("ContactUsMainMenudd_XPATH"), "CONTACT US");
 	}
 
-	@Test(dependsOnMethods = "loginTest", priority = 4, enabled = true, description = "Verify the hyperlinks on Osmose University Card")
+	@Test(dependsOnMethods = "loginTest", priority = 5, enabled = true, description = "Verify the hyperlinks on Osmose University Card")
 	public void verifyHyperlinks() throws InterruptedException {
 		Assert.assertEquals(Page.getText("OUCartliveeventlink_XPATH"), "LIVE EVENTS");
 		Assert.assertEquals(Page.getText("OUCartWebinarLink_XPATH"), "WEBINARS");
 		Assert.assertEquals(Page.getText("OUCartOcalcLink_XPATH"), "O-CALC TRAINING");
 	}
 
-	@Test(dependsOnMethods = "loginTest", priority = 5, enabled = true, description = "Verify the Video links on Osmose University Card")
+	@Test(dependsOnMethods = "loginTest", priority = 6, enabled = true, description = "Verify the Video links on Osmose University Card")
 	public void verifyVideoLinks() {
 		Assert.assertEquals(Page.getAttributeValue("OUCartVideo1_CSS", "alt"), "Wood Technical Seminar");
 		Assert.assertEquals(Page.getAttributeValue("OUCarrVideo2_CSS", "alt"), "Steel Technical Seminar");
 	}
+	
+	@Test(dependsOnMethods = "loginTest", priority = 7, enabled = true, description = "Verify the click on Osmose University Navigation")
+	public void verifyOsmoseUniversityNavigationClick() throws InterruptedException {
+		HomeOU ou = new HomeOU();
+		ou.clickOsmoseUniversityNavigation();
+		Assert.assertEquals(Page.getText("OsmoseUniversityTxt_XPATH"), "Osmose University");
+		Page.click("HomePage_XPATH");
+		
+	}
 
-	@Test(dependsOnMethods = "loginTest", priority = 6, enabled = true, description = "Verify that Live Events link is clickable")
+	@Test(dependsOnMethods = "loginTest", priority = 8, enabled = true, description = "Verify that Live Events link is clickable")
 	public void verifyLiveEventCLick() throws InterruptedException {
 		HomeOU ou = new HomeOU();
 		ou.clickLiveEventLink();
@@ -62,7 +75,7 @@ public class OULogin extends BaseTest {
 
 	}
 
-	@Test(dependsOnMethods = "loginTest", priority = 7, enabled = true, description = "Verify that Webinars link is clickable")
+	@Test(dependsOnMethods = "loginTest", priority = 9, enabled = true, description = "Verify that Webinars link is clickable")
 	public void verifyWebinarsClick() throws InterruptedException {
 		HomeOU ou = new HomeOU();
 		ou.clickWebinarLink();
@@ -70,7 +83,7 @@ public class OULogin extends BaseTest {
 		Page.driver.navigate().back();
 	}
 
-	@Test(dependsOnMethods = "loginTest", priority = 8, enabled = true, description = "Verify that O-CALC TRAINING link is clickable")
+	@Test(dependsOnMethods = "loginTest", priority = 10, enabled = true, description = "Verify that O-CALC TRAINING link is clickable")
 	public void verifyOCalcClick() throws InterruptedException {
 		HomeOU ou = new HomeOU();
 		ou.clickOCalcLInk();
@@ -78,7 +91,7 @@ public class OULogin extends BaseTest {
 		Page.driver.navigate().back();
 	}
 
-	@Test(dataProviderClass = Utilities.class, dataProvider = "dp", priority = 9, enabled = true, description = "Verify that Live Events button is displayed")
+	@Test(dataProviderClass = Utilities.class, dataProvider = "dp", priority = 11, enabled = true, description = "Verify that Live Events button is displayed")
 	public void clickOnOuLink(Hashtable<String, String> data) throws InterruptedException {
 		HomeOU ou = new HomeOU();
 		ou.clickOULink();
@@ -86,7 +99,7 @@ public class OULogin extends BaseTest {
 		Assert.assertEquals(element, "LIVE EVENTS");
 	}
 
-	@Test(priority = 10, enabled = true, description = "Verify the text 'Steel Technical Seminar' OsmoseUniversity page")
+	@Test(priority = 12, enabled = true, description = "Verify the text 'Steel Technical Seminar' OsmoseUniversity page")
 	public void verifyLiveEventsSTS() throws InterruptedException {
 		HomeOU ou = new HomeOU();
 		ou.clickOnLiveEventsSTS();
@@ -94,7 +107,7 @@ public class OULogin extends BaseTest {
 		Assert.assertEquals(element, "Steel Technical Seminar");
 	}
 
-	@Test(priority = 11, enabled = true, description = "Verify the text 'Joint Use Seminar' on OsmoseUniversity page")
+	@Test(priority = 13, enabled = true, description = "Verify the text 'Joint Use Seminar' on OsmoseUniversity page")
 	public void verifyLiveEventsJUS() throws InterruptedException {
 		HomeOU ou = new HomeOU();
 		ou.clickOnLiveEventsJUS();
@@ -103,7 +116,7 @@ public class OULogin extends BaseTest {
 
 	}
 
-	@Test(priority = 12, enabled = true, description = "Verify the text 'Wood Pole Technical Seminar' on OsmoseUniversity page")
+	@Test(priority = 14, enabled = true, description = "Verify the text 'Wood Pole Technical Seminar' on OsmoseUniversity page")
 	public void verifyLiveEventsWPTS() throws InterruptedException {
 		HomeOU ou = new HomeOU();
 		ou.clickOnLiveEventsWPTS();
@@ -111,7 +124,7 @@ public class OULogin extends BaseTest {
 		Assert.assertEquals(element, "Wood Pole Technical Seminar");
 	}
 
-	@Test(priority = 13, dependsOnMethods = "verifyLiveEventsWPTS", enabled = true, description = "Verify that user is able to click on 'Details and Registration' and enter details")
+	@Test(priority = 15, dependsOnMethods = "verifyLiveEventsWPTS", enabled = true, description = "Verify that user is able to click on 'Details and Registration' and enter details")
 	public void verifyDETAILSANDREGISTRATION() throws InterruptedException {
 		HomeOU ou = new HomeOU();
 		ou.clickOnSTSDetailsAndRegistration();
@@ -124,7 +137,7 @@ public class OULogin extends BaseTest {
 		Assert.assertEquals(Page.getAttributeValue("PHONE_XPATH", "value"), "9971236668");
 	}
 
-	@Test(priority = 14, enabled = true, description = "Verify that Webinars button is displayed")
+	@Test(priority = 16, enabled = true, description = "Verify that Webinars button is displayed")
 	public void verifyClickingTheWebinars() throws InterruptedException {
 		HomeOU ou = new HomeOU();
 		ou.clickWebinars();
@@ -134,7 +147,7 @@ public class OULogin extends BaseTest {
 	}
 
 	// Keep this false always
-	@Test(priority = 15, enabled = false)
+	@Test(priority = 17, enabled = false)
 	public void verifyUpcomingWebinarsPage() throws InterruptedException {
 		HomeOU ou = new HomeOU();
 		ou.selectUpcoming();
@@ -143,7 +156,7 @@ public class OULogin extends BaseTest {
 	}
 
 	// Keep this false always
-	@Test(priority = 16, dependsOnMethods = "verifyClickingTheWebinars", enabled = false)
+	@Test(priority = 18, dependsOnMethods = "verifyClickingTheWebinars", enabled = false)
 	public void verifySteelStructuresProtected() throws InterruptedException {
 		HomeOU ou = new HomeOU();
 		ou.steelStructuresProtected();
@@ -152,7 +165,7 @@ public class OULogin extends BaseTest {
 	}
 
 	// Keep this false always
-	@Test(priority = 17, dependsOnMethods = "verifySteelStructuresProtected", enabled = false)
+	@Test(priority = 19, dependsOnMethods = "verifySteelStructuresProtected", enabled = false)
 	public void verifyContactAndStray() throws InterruptedException {
 		HomeOU ou = new HomeOU();
 		ou.ContactAndStray();
@@ -161,7 +174,7 @@ public class OULogin extends BaseTest {
 	}
 
 	// Keep this false always
-	@Test(priority = 18, dependsOnMethods = "verifyContactAndStray", enabled = false)
+	@Test(priority = 20, dependsOnMethods = "verifyContactAndStray", enabled = false)
 	public void steelStructuresProtectedMOREINFOREGISTRATION() throws InterruptedException {
 		HomeOU ou = new HomeOU();
 		ou.steelStructuresProtectedMOREINFOREGISTRATION();
@@ -169,14 +182,14 @@ public class OULogin extends BaseTest {
 	}
 
 	// Keep this false always
-	@Test(priority = 19, dependsOnMethods = "steelStructuresProtectedMOREINFOREGISTRATION", enabled = false)
+	@Test(priority = 21, dependsOnMethods = "steelStructuresProtectedMOREINFOREGISTRATION", enabled = false)
 	public void ContactAndStrayMOREINFOREGISTRATION() throws InterruptedException {
 		HomeOU ou = new HomeOU();
 		ou.ContactAndStrayMOREINFOREGISTRATION();
 		Assert.assertEquals(Page.getAttributeValue("FirstName_XPATH", "value"), "Rajesh");
 	}
 
-	@Test(priority = 20, enabled = true, description = "Verify that O-CALC Training button is displayed")
+	@Test(priority = 22, enabled = true, description = "Verify that O-CALC Training button is displayed")
 	public void verifyOClacTrainingButton() throws InterruptedException {
 		HomeOU ou = new HomeOU();
 		ou.OCALCTRAINING();

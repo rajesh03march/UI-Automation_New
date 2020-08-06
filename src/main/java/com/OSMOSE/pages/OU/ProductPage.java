@@ -400,6 +400,18 @@ public class ProductPage extends Page {
 	public void ClickDictionary() throws InterruptedException {
 		ClickActions("DictionaryLink_XPATH");
 	}
+	
+	public void ClickReview() throws InterruptedException {
+		click("ManageProductsReviewBtn_XPATH");
+	}
+	
+	public void ClickApprove() throws InterruptedException {
+		click("ManageProductsApproveBtn_XPATH");
+	}
+	
+	public void ClickReject() {
+		click("ManageProductsRejectBtn_XPATH");
+	}
 
 	public void ClickSubmitQuotewithOrderedstatus() throws InterruptedException {
 

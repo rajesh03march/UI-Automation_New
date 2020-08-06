@@ -14,6 +14,11 @@ public class HomeOU extends Page {
 		click("submit_XPATH");
 		return new DoLogin();
 	}
+	
+	public void clickOsmoseUniversityNavigation() throws InterruptedException {
+		Thread.sleep(12000);
+		click("OsmoseUniverityNav_XPATH");
+	}
 
 	public void clickOULink() throws InterruptedException {
 		Thread.sleep(12000);

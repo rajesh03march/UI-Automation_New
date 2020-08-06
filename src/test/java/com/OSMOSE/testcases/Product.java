@@ -772,7 +772,52 @@ public class Product extends BaseTest {
 		pp.ClickProductsInReviewbackLink();
 	}
 
-	@Test(priority = 58, enabled = true, description = "Verification of upload Spreadsheet on Manage Products")
+	@Test(priority = 58, enabled = true, description = "Verification of click on Review button on Manage Products")
+	public void ClickReview() throws Exception {
+		HomeOU ou = new HomeOU();
+		ProductPage pp = ou.goProduct();
+		// pp.clickProductLink();
+		Thread.sleep(2000);
+		pp.ClickProductsInReview();
+		pp.ClickReview();
+		Assert.assertTrue(Page.isElementPresent(By.xpath("//*[@id='selectSize']")));
+		Thread.sleep(5000);
+		Page.ClickActions("CloseButton_XPATH");
+	}
+
+	@Test(priority = 59, enabled = true, description = "Verification of click on Approve button on Manage Products")
+	public void ClickApprove() throws Exception {
+		HomeOU ou = new HomeOU();
+		ProductPage pp = ou.goProduct();
+		// pp.clickProductLink();
+		Thread.sleep(2000);
+		pp.ClickApprove();
+		Thread.sleep(3000);
+		Assert.assertEquals(Page.getText("ManageProductsApprovePopUpTxt_XPATH"), "Are you sure you want to do this?");
+		Thread.sleep(2000);
+		Page.click("ManageProductsApprovePopUpYesBtn_XPATH");
+		Thread.sleep(2000);
+		Page.click("ManageProductApproveSuccessPopupOkbtn_XPATH");
+
+	}
+
+	@Test(priority = 60, enabled = true, description = "Verification of click on Reject button on Manage Products")
+	public void ClickReject() throws Exception {
+		HomeOU ou = new HomeOU();
+		ProductPage pp = ou.goProduct();
+		// pp.clickProductLink();
+		Thread.sleep(2000);
+		pp.ClickReject();
+		Thread.sleep(3000);
+		Assert.assertEquals(Page.getText("ManageProductsRejectPopUpTxt_XPATH"), "Are you sure you want to do this?");
+		Thread.sleep(2000);
+		Page.click("ManageProductsRejectPopUpYesBtn_XPATH");
+		Thread.sleep(2000);
+		Page.click("ManageProductRejectSuccessPopupOkbtn_XPATH");
+		pp.ClickProductsInReviewbackLink();
+	}
+
+	@Test(priority = 61, enabled = true, description = "Verification of upload Spreadsheet on Manage Products")
 	public void ClickUploadProducts() throws Exception {
 		HomeOU ou = new HomeOU();
 		ProductPage pp = ou.goProduct();
@@ -787,9 +832,9 @@ public class Product extends BaseTest {
 		Page.click("ManageProductCrossbutn_XPATH");
 		Page.driver.navigate().back();
 	}
-	
+
 	// Below method added by Varun 4August2020
-	@Test(priority = 59, enabled = true, description = "Verification of upload Spreadsheet on Manage Products")
+	@Test(priority = 62, enabled = true, description = "Verification of upload Spreadsheet on Manage Products")
 	public void ClickDictionaryLink() throws Exception {
 		HomeOU ou = new HomeOU();
 		ProductPage pp = ou.goProduct();
@@ -824,7 +869,7 @@ public class Product extends BaseTest {
 	}
 
 	// Below method added by Varun 6july2020
-	@Test(priority = 60, enabled = true, description = "Verification of contents on Approve<<QuoteId>> screen")
+	@Test(priority = 63, enabled = true, description = "Verification of contents on Approve<<QuoteId>> screen")
 	public void VerifyUIonApprove() throws Exception {
 		HomeOU ou = new HomeOU();
 		ProductPage pp = ou.goProduct();
@@ -847,7 +892,7 @@ public class Product extends BaseTest {
 	}
 
 	// Added new test case on 7july,2020
-	@Test(priority = 61, enabled = true, description = "Verification of disabled Approve button")
+	@Test(priority = 64, enabled = true, description = "Verification of disabled Approve button")
 	public void VerifyApprovebtndisabled() throws Exception {
 		HomeOU ou = new HomeOU();
 		ProductPage pp = ou.goProduct();
@@ -872,7 +917,7 @@ public class Product extends BaseTest {
 	}
 
 	// Below method added by Varun 6july2020
-	@Test(priority = 62, enabled = true, description = "Verification of Thank you pop after approving the Quoted Request")
+	@Test(priority = 65, enabled = true, description = "Verification of Thank you pop after approving the Quoted Request")
 	public void verifyThankyouPopup() throws Exception {
 		HomeOU ou = new HomeOU();
 		ProductPage pp = ou.goProduct();
@@ -897,7 +942,7 @@ public class Product extends BaseTest {
 		Page.click("ApprovedClosebtn_XPATH");
 	}
 
-	@Test(priority = 63, enabled = true, description = "Verification of Cancel action on the quote screen")
+	@Test(priority = 66, enabled = true, description = "Verification of Cancel action on the quote screen")
 	public void verifyCancelwhileREQuoting() throws Exception {
 		HomeOU ou = new HomeOU();
 		ProductPage pp = ou.goProduct();
@@ -916,7 +961,7 @@ public class Product extends BaseTest {
 		Page.click("Closebtn_XPATH");
 	}
 
-	@Test(priority = 64, enabled = true, description = "Verification of submission action on the quote screen")
+	@Test(priority = 67, enabled = true, description = "Verification of submission action on the quote screen")
 	public void verifySubmitwhileREQuoting() throws Exception {
 		HomeOU ou = new HomeOU();
 		ProductPage pp = ou.goProduct();
@@ -944,7 +989,7 @@ public class Product extends BaseTest {
 		Page.click("QuoteRequestsubmittedpopupClosebtn_XPATH");
 	}
 
-	@Test(priority = 65, enabled = true, description = "Verification of Add to Cart on the quote screen")
+	@Test(priority = 68, enabled = true, description = "Verification of Add to Cart on the quote screen")
 	public void verifyAddToCartWhileReQuoting() throws Exception {
 		HomeOU ou = new HomeOU();
 		ProductPage pp = ou.goProduct();
@@ -970,9 +1015,9 @@ public class Product extends BaseTest {
 		Thread.sleep(10000);
 		Page.click("QuoteRequestsubmittedpopupClosebtn_XPATH");
 	}
-	
-	//Added on 23rd July 20
-	@Test(priority = 66, enabled = true, description = "Verification of Exclamation Mark on My Quotes for Quote Request")
+
+	// Added on 23rd July 20
+	@Test(priority = 69, enabled = true, description = "Verification of Exclamation Mark on My Quotes for Quote Request")
 	public void verifyExclamationOnMyQuotes() throws Exception {
 		HomeOU ou = new HomeOU();
 		ProductPage pp = ou.goProduct();
