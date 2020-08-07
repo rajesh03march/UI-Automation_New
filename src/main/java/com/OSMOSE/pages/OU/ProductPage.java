@@ -396,19 +396,19 @@ public class ProductPage extends Page {
 	public void ClickProductsInReviewbackLink() throws InterruptedException {
 		click("ProductReviewBackLink_XPATH");
 	}
-	
+
 	public void ClickDictionary() throws InterruptedException {
 		ClickActions("DictionaryLink_XPATH");
 	}
-	
+
 	public void ClickReview() throws InterruptedException {
 		click("ManageProductsReviewBtn_XPATH");
 	}
-	
+
 	public void ClickApprove() throws InterruptedException {
 		click("ManageProductsApproveBtn_XPATH");
 	}
-	
+
 	public void ClickReject() {
 		click("ManageProductsRejectBtn_XPATH");
 	}
@@ -441,6 +441,20 @@ public class ProductPage extends Page {
 
 	}
 
+	public void ClickSubmitExpiredstatus() throws InterruptedException {
+
+		click("ClickAdminDropDown_XPATH");
+		click("ClickManageQuotes_XPATH");
+		Thread.sleep(3000);
+		click("Q00010QUOTEID_XPATH");
+		click("StatusdropdownQuotesubmit_XPATH");
+		ClickActions("StatusdropdownQuotesubmit_XPATH");
+		selectbyindex("StatusdropdownQuotesubmit_XPATH", 0);
+		click("SubmitbtnQuotesubmission_XPATH");
+		Thread.sleep(3000);
+
+	}
+
 	public void ClickSubmitQuotewithQuotedPendingstatus() throws InterruptedException {
 		click("ClickAdminDropDown_XPATH");
 		click("ClickManageQuotes_XPATH");
@@ -451,6 +465,25 @@ public class ProductPage extends Page {
 		selectbyindex("StatusdropdownQuotesubmit_XPATH", 3);
 		click("SubmitbtnQuotesubmission_XPATH");
 		Thread.sleep(3000);
+
+	}
+
+	public void ClickSubmitQuotewithQuotedPendingstatusmorethan20mb() throws InterruptedException, Exception {
+		click("ClickAdminDropDown_XPATH");
+		click("ClickManageQuotes_XPATH");
+		Thread.sleep(3000);
+		click("Q00010QUOTEID_XPATH");
+		click("StatusdropdownQuotesubmit_XPATH");
+		ClickActions("StatusdropdownQuotesubmit_XPATH");
+		selectbyindex("StatusdropdownQuotesubmit_XPATH", 3);
+		click("BrowseFileSubmitQuote_XPATH");
+		Thread.sleep(5000);
+		Runtime.getRuntime().exec("C:\\Users\\AC38373\\Downloads\\AutoITScripts\\ManageQuoteMoreThan20mb.exe");
+		Thread.sleep(5000);
+		click("UploadbtnSubmitQuote_XPATH");
+		/*
+		 * click("SubmitbtnQuotesubmission_XPATH"); Thread.sleep(3000);
+		 */
 
 	}
 
@@ -474,6 +507,41 @@ public class ProductPage extends Page {
 
 	}
 
+	public void ClickSubmitQuotewithNegativeExpireDays() throws InterruptedException, Exception {
+		click("ClickAdminDropDown_XPATH");
+		click("ClickManageQuotes_XPATH");
+		Thread.sleep(3000);
+		click("Q00010QUOTEID_XPATH");
+		click("StatusdropdownQuotesubmit_XPATH");
+		selectbyindex("StatusdropdownQuotesubmit_XPATH", 2);
+		click("BrowseFileSubmitQuote_XPATH");
+		Thread.sleep(5000);
+		Runtime.getRuntime().exec("C:\\Users\\AC38373\\Downloads\\AutoITScripts\\ManageQuoteUpload.exe");
+		Thread.sleep(3000);
+		click("UploadbtnSubmitQuote_XPATH");
+		/*click("SubmitbtnQuotesubmission_XPATH");
+		Thread.sleep(3000);*/
+		type("ExpireInTxtBox_XPATH","-12");
+
+	}
+	
+	public void ClickSubmitQuotewithInvalidFileFormat() throws InterruptedException, Exception {
+		click("ClickAdminDropDown_XPATH");
+		click("ClickManageQuotes_XPATH");
+		Thread.sleep(3000);
+		click("Q00010QUOTEID_XPATH");
+		click("StatusdropdownQuotesubmit_XPATH");
+		selectbyindex("StatusdropdownQuotesubmit_XPATH", 2);
+		click("BrowseFileSubmitQuote_XPATH");
+		Thread.sleep(5000);
+		Runtime.getRuntime().exec("C:\\Users\\AC38373\\Downloads\\AutoITScripts\\ManageQuoteInvalidFileUpload.exe");
+		Thread.sleep(3000);
+		click("UploadbtnSubmitQuote_XPATH");
+		/*click("SubmitbtnQuotesubmission_XPATH");
+		Thread.sleep(3000);*/
+
+	}
+	
 	// Below method added by Varun 6july2020
 	public void ClickApprovebtnManageQuote() throws InterruptedException, Exception {
 		Page.driver.navigate().back();
@@ -826,8 +894,8 @@ public class ProductPage extends Page {
 		click("Submitbtn_XPATH");
 		click("QuoteRequestsubmittedpopupClosebtn_XPATH");
 	}
-	
-    public ContactPage goContact(){
-        return new ContactPage();
-    }
+
+	public ContactPage goContact() {
+		return new ContactPage();
+	}
 }

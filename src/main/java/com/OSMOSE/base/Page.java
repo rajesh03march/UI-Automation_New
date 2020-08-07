@@ -168,7 +168,7 @@ public class Page {
 
 	public static void scrollbyjavaexecutor(int X, int Y) {
 		JavascriptExecutor js = (JavascriptExecutor) driver;
-		js.executeScript("window.scrollBy(X,Y)","");
+		js.executeScript("window.scrollBy(X,Y)", "");
 	}
 
 	// Common Keywords

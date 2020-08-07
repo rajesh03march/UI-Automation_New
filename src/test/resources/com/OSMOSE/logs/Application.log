@@ -1,661 +1,461 @@
-04/08/2020 19:39:48 devpinoyLogger Config file loaded !!!
-04/08/2020 19:39:48 devpinoyLogger OR file loaded !!!
-04/08/2020 19:39:51 devpinoyLogger Navigated to : https://osmose360cl.azurewebsites.net/
-04/08/2020 19:40:16 devpinoyLogger Typing in an Element : email_XPATH entered value as : rajesh.yadav@centurylink.com
-04/08/2020 19:40:16 devpinoyLogger Typing in an Element : password_XPATH entered value as : Hyde@2317
-04/08/2020 19:40:16 devpinoyLogger Clicking on an Element : submit_XPATH
-04/08/2020 19:40:20 devpinoyLogger Text of the locator: verify_ID value as :Rajesh Yadav
-04/08/2020 19:40:23 devpinoyLogger Text of the locator: OUCard_XPATH value as :Osmose University
-04/08/2020 19:40:23 devpinoyLogger Text of the locator: ProCard_XPATH value as :Products
-04/08/2020 19:40:24 devpinoyLogger Text of the locator: ContactUsMainMenudd_XPATH value as :CONTACT US
-04/08/2020 19:40:24 devpinoyLogger Text of the locator: OUCartliveeventlink_XPATH value as :LIVE EVENTS
-04/08/2020 19:40:24 devpinoyLogger Text of the locator: OUCartWebinarLink_XPATH value as :WEBINARS
-04/08/2020 19:40:24 devpinoyLogger Text of the locator: OUCartOcalcLink_XPATH value as :O-CALC TRAINING
-04/08/2020 19:40:25 devpinoyLogger Text of the locator: OUCartVideo1_CSS value as :Wood Technical Seminar
-04/08/2020 19:40:25 devpinoyLogger Text of the locator: OUCarrVideo2_CSS value as :Steel Technical Seminar
-04/08/2020 19:40:38 devpinoyLogger Clicking on an Element : OUCartliveeventlink_XPATH
-04/08/2020 19:40:38 devpinoyLogger Text of the locator: LiveEvent_XPATH value as :LIVE EVENTS
-04/08/2020 19:40:51 devpinoyLogger Clicking on an Element : OUCartWebinarLink_XPATH
-04/08/2020 19:40:51 devpinoyLogger Text of the locator: WEBINAR_XPATH value as :WEBINARS
-04/08/2020 19:41:04 devpinoyLogger Clicking on an Element : OUCartOcalcLink_XPATH
-04/08/2020 19:41:04 devpinoyLogger Text of the locator: O-CALCTRAINING_XPATH value as :O-CALC TRAINING
-04/08/2020 19:41:16 devpinoyLogger Clicking on an Element : OUCard_XPATH
-04/08/2020 19:41:16 devpinoyLogger Text of the locator: LiveEvent_XPATH value as :LIVE EVENTS
-04/08/2020 19:41:29 devpinoyLogger Clicking on an Element : LiveEvent_XPATH
-04/08/2020 19:41:30 devpinoyLogger Text of the locator: SteelTechnicalSeminar_XPATH value as :Steel Technical Seminar
-04/08/2020 19:41:43 devpinoyLogger Clicking on an Element : LiveEvent_XPATH
-04/08/2020 19:41:44 devpinoyLogger Text of the locator: JointUseSeminar_XPATH value as :Joint Use Seminar
-04/08/2020 19:41:56 devpinoyLogger Clicking on an Element : LiveEvent_XPATH
-04/08/2020 19:41:57 devpinoyLogger Text of the locator: WoodPoleTechnicalSeminar_XPATH value as :Wood Pole Technical Seminar
-04/08/2020 19:42:10 devpinoyLogger Clicking on an Element : DETAILSANDREGISTRATION_XPATH
-04/08/2020 19:42:11 devpinoyLogger Text of the locator: FIRSTNAME_XPATH value as :Rajesh
-04/08/2020 19:42:11 devpinoyLogger Text of the locator: LASTNAME_XPATH value as :Yadav
-04/08/2020 19:42:11 devpinoyLogger Text of the locator: COMPANY_XPATH value as :Centurylink
-04/08/2020 19:42:11 devpinoyLogger Text of the locator: STATE_XPATH value as :Nevada
-04/08/2020 19:42:11 devpinoyLogger Text of the locator: TITLE_XPATH value as :Technical Lead
-04/08/2020 19:42:11 devpinoyLogger Text of the locator: EMAIL_XPATH value as :rajesh.yadav@centurylink.com
-04/08/2020 19:42:11 devpinoyLogger Text of the locator: PHONE_XPATH value as :9971236668
-04/08/2020 19:42:23 devpinoyLogger Selecting from an element : WEBINAR_XPATH
-04/08/2020 19:42:23 devpinoyLogger Text of the locator: WEBINAR_XPATH value as :WEBINARS
-04/08/2020 19:42:36 devpinoyLogger Clicking on an Element : O-CALCTRAINING_XPATH
-04/08/2020 19:42:37 devpinoyLogger Text of the locator: PrivateTraining_XPATH value as :Private Training Seminars
-04/08/2020 19:42:38 devpinoyLogger Selecting from an element : HomePage_XPATH
-04/08/2020 19:42:40 devpinoyLogger Clicking on an Element : ProCard_XPATH
-04/08/2020 19:42:41 devpinoyLogger Text of the locator: POrdering_XPATH value as :Pole and Line Products
-04/08/2020 19:43:32 devpinoyLogger Text of the locator: CatalogItem_XPATH value as :Category Filter
-04/08/2020 19:43:32 devpinoyLogger Text of the locator: OpenMyQuotes_XPATH value as :MY QUOTES
-04/08/2020 19:43:33 devpinoyLogger Text of the locator: ViewDetail_XPATH value as :VIEW DETAILS
-04/08/2020 19:43:34 devpinoyLogger Text of the locator: MITCFUME_XPATH value as :MITC-FUME®
-04/08/2020 19:43:34 devpinoyLogger Clicking on an Element : ProductSlider_XPATH
-04/08/2020 19:43:34 devpinoyLogger Text of the locator: PoleTopper®_XPATH value as :MITC-FUME®
-04/08/2020 19:44:26 devpinoyLogger Clicking on an Element : HomePage_XPATH
-04/08/2020 19:44:27 devpinoyLogger Clicking on an Element : HeadingProducts_XPATH
-04/08/2020 19:45:17 devpinoyLogger Clicking on an Element : CloseButton_XPATH
-04/08/2020 19:45:20 devpinoyLogger Clicking on an Element : ViewDetail_LINKTEXT
-04/08/2020 19:45:26 devpinoyLogger Clicking on an Element : CloseButton_XPATH
-04/08/2020 19:45:27 devpinoyLogger Clicking on an Element : Productsimageclick_XPATH
-04/08/2020 19:45:30 devpinoyLogger Clicking on an Element : CloseButton_XPATH
-04/08/2020 19:45:30 devpinoyLogger Text of the locator: FeaturedProducts_XPATH value as :Featured Products
-04/08/2020 19:45:31 devpinoyLogger Clicking on an Element : Productsimageclick2_XPATH
-04/08/2020 19:45:34 devpinoyLogger Clicking on an Element : CloseButton_XPATH
-04/08/2020 19:45:34 devpinoyLogger Text of the locator: FeaturedProducts_XPATH value as :Featured Products
-04/08/2020 19:45:34 devpinoyLogger Clicking on an Element : Productsimageclick3_XPATH
-04/08/2020 19:45:37 devpinoyLogger Clicking on an Element : CloseButton_XPATH
-04/08/2020 19:45:37 devpinoyLogger Text of the locator: FeaturedProducts_XPATH value as :Featured Products
-04/08/2020 19:45:37 devpinoyLogger Clicking on an Element : Productsimageclick4_XPATH
-04/08/2020 19:45:40 devpinoyLogger Clicking on an Element : CloseButton_XPATH
-04/08/2020 19:45:41 devpinoyLogger Text of the locator: FeaturedProducts_XPATH value as :Featured Products
-04/08/2020 19:45:42 devpinoyLogger Clicking on an Element : ProCard_XPATH
-04/08/2020 19:45:47 devpinoyLogger Selecting from an element : ProductPoleRestoration_XPATH
-04/08/2020 19:45:51 devpinoyLogger Clicking on an Element : 1stViewDetails_XPATH
-04/08/2020 19:45:55 devpinoyLogger Selecting from an element : ProductSizeDropdown_XPATH value as : 1
-04/08/2020 19:45:55 devpinoyLogger Clicking on an Element : ProductSizeEnterQuantity_XPATH
-04/08/2020 19:45:55 devpinoyLogger clearing on an Element : ProductSizeEnterQuantity_XPATH
-04/08/2020 19:45:55 devpinoyLogger Typing in an Element : ProductSizeEnterQuantity_XPATH entered value as : 8
-04/08/2020 19:45:55 devpinoyLogger Clicking on an Element : ProductAddButton_XPATH
-04/08/2020 19:45:59 devpinoyLogger Text of the locator: FeaturedProductsCellNumber_XPATH value as :(770) 632-6700 Option 3
-04/08/2020 19:45:59 devpinoyLogger Clicking on an Element : CloseButton_XPATH
-04/08/2020 19:46:01 devpinoyLogger Clicking on an Element : ProCard_XPATH
-04/08/2020 19:46:01 devpinoyLogger Clicking on an Element : ProductPoleRestoration_XPATH
-04/08/2020 19:46:02 devpinoyLogger Clicking on an Element : ProductPoleRestorationCTruss_XPATH
-04/08/2020 19:46:03 devpinoyLogger Selecting from an element : ProductSizeDropdown_XPATH value as : 1
-04/08/2020 19:46:03 devpinoyLogger Clicking on an Element : ProductSizeEnterQuantity_XPATH
-04/08/2020 19:46:03 devpinoyLogger clearing on an Element : ProductSizeEnterQuantity_XPATH
-04/08/2020 19:46:03 devpinoyLogger Typing in an Element : ProductSizeEnterQuantity_XPATH entered value as : 8
-04/08/2020 19:46:03 devpinoyLogger Clicking on an Element : ProductAddButton_XPATH
-04/08/2020 19:46:04 devpinoyLogger Clicking on an Element : LinkProductDetail_XPATH
-04/08/2020 19:46:04 devpinoyLogger Text of the locator: FeaturedProductsCellNumber_XPATH value as :(770) 632-6700 Option 3
-04/08/2020 19:46:05 devpinoyLogger Clicking on an Element : CloseButton_XPATH
-04/08/2020 19:46:06 devpinoyLogger Clicking on an Element : ProCard_XPATH
-04/08/2020 19:46:07 devpinoyLogger Clicking on an Element : ProductPoleRestoration_XPATH
-04/08/2020 19:46:09 devpinoyLogger Clicking on an Element : ProductPoleRestorationDummy3_XPATH
-04/08/2020 19:46:12 devpinoyLogger Selecting from an element : ProductSizeDropdown_XPATH value as : 1
-04/08/2020 19:46:12 devpinoyLogger Clicking on an Element : ProductSizeEnterQuantity_XPATH
-04/08/2020 19:46:12 devpinoyLogger clearing on an Element : ProductSizeEnterQuantity_XPATH
-04/08/2020 19:46:12 devpinoyLogger Typing in an Element : ProductSizeEnterQuantity_XPATH entered value as : 8
-04/08/2020 19:46:12 devpinoyLogger Clicking on an Element : ProductAddButton_XPATH
-04/08/2020 19:46:12 devpinoyLogger Clicking on an Element : LinkProductDetail_XPATH
-04/08/2020 19:46:12 devpinoyLogger Text of the locator: FeaturedProductsCellNumber1_XPATH value as :(770) 632-6700 Option 3
-04/08/2020 19:46:12 devpinoyLogger Clicking on an Element : CloseButton_XPATH
-04/08/2020 19:46:26 devpinoyLogger Selecting from an element : PSearch_XPATH
-04/08/2020 19:46:26 devpinoyLogger Typing in an Element : PSearch_XPATH entered value as : Pole
-04/08/2020 19:46:26 devpinoyLogger Clicking on an Element : ProductPoleRestorationCTruss_XPATH
-04/08/2020 19:46:27 devpinoyLogger Selecting from an element : ProductSizeDropdown_XPATH value as : 1
-04/08/2020 19:46:27 devpinoyLogger Clicking on an Element : ProductSizeEnterQuantity_XPATH
-04/08/2020 19:46:27 devpinoyLogger clearing on an Element : ProductSizeEnterQuantity_XPATH
-04/08/2020 19:46:27 devpinoyLogger Typing in an Element : ProductSizeEnterQuantity_XPATH entered value as : 8
-04/08/2020 19:46:27 devpinoyLogger Clicking on an Element : ProductAddButton_XPATH
-04/08/2020 19:46:27 devpinoyLogger Clicking on an Element : CloseButton_XPATH
-04/08/2020 19:46:40 devpinoyLogger Selecting from an element : PSearch_XPATH
-04/08/2020 19:46:40 devpinoyLogger Typing in an Element : PSearch_XPATH entered value as : Pole Restoration
-04/08/2020 19:46:53 devpinoyLogger Selecting from an element : PSearch_XPATH
-04/08/2020 19:46:53 devpinoyLogger Typing in an Element : PSearch_XPATH entered value as : H
-04/08/2020 19:47:17 devpinoyLogger Selecting from an element : PSearch_XPATH
-04/08/2020 19:47:17 devpinoyLogger Typing in an Element : PSearch_XPATH entered value as : Pole
-04/08/2020 19:47:18 devpinoyLogger Clicking on an Element : SearchCrossIcon_XPATH
-04/08/2020 19:47:30 devpinoyLogger Selecting from an element : PSearch_XPATH
-04/08/2020 19:47:30 devpinoyLogger Typing in an Element : PSearch_XPATH entered value as :                
-04/08/2020 19:47:33 devpinoyLogger Selecting from an element : CategoryFilter_ID
-04/08/2020 19:47:33 devpinoyLogger Clicking on an Element : ProductPoleRestoration_XPATH
-04/08/2020 19:47:34 devpinoyLogger Clicking on an Element : ProductPoleRestorationCTruss_XPATH
-04/08/2020 19:47:35 devpinoyLogger Selecting from an element : ProductSizeDropdown_XPATH value as : 1
-04/08/2020 19:47:36 devpinoyLogger Clicking on an Element : ProductSizeEnterQuantity_XPATH
-04/08/2020 19:47:36 devpinoyLogger clearing on an Element : ProductSizeEnterQuantity_XPATH
-04/08/2020 19:47:36 devpinoyLogger Typing in an Element : ProductSizeEnterQuantity_XPATH entered value as : 8
-04/08/2020 19:47:36 devpinoyLogger Clicking on an Element : ProductAddButton_XPATH
-04/08/2020 19:47:36 devpinoyLogger Clicking on an Element : ProductViewCartButton_XPATH
-04/08/2020 19:47:36 devpinoyLogger Clicking on an Element : SubmitQuoteRequest_XPATH
-04/08/2020 19:47:36 devpinoyLogger Clicking on an Element : ReturnPolicy_XPATH
-04/08/2020 19:47:37 devpinoyLogger Clicking on an Element : CloseicononReturnPolicy_XPATH
-04/08/2020 19:47:38 devpinoyLogger Clicking on an Element : ReturnPolicy_XPATH
-04/08/2020 19:47:42 devpinoyLogger Text of the locator: ReturnProceduretext_XPATH value as :Return Procedure
-04/08/2020 19:47:43 devpinoyLogger Clicking on an Element : CrossiconReturnPilicy_XPATH
-04/08/2020 19:47:43 devpinoyLogger Clicking on an Element : QuoteRequestCrossicon_XPATH
-04/08/2020 19:47:43 devpinoyLogger Clicking on an Element : ProductPoleRestoration_XPATH
-04/08/2020 19:47:44 devpinoyLogger Clicking on an Element : ProductPoleRestoration_XPATH
-04/08/2020 19:47:45 devpinoyLogger Clicking on an Element : ProductPoleRestorationCTruss_XPATH
-04/08/2020 19:47:46 devpinoyLogger Selecting from an element : ProductSizeDropdown_XPATH value as : 2
-04/08/2020 19:47:46 devpinoyLogger Clicking on an Element : ProductSizeEnterQuantity_XPATH
-04/08/2020 19:47:46 devpinoyLogger clearing on an Element : ProductSizeEnterQuantity_XPATH
-04/08/2020 19:47:46 devpinoyLogger Typing in an Element : ProductSizeEnterQuantity_XPATH entered value as : 8
-04/08/2020 19:47:46 devpinoyLogger Clicking on an Element : ProductAddButton_XPATH
-04/08/2020 19:47:46 devpinoyLogger Clicking on an Element : ProductViewCartButton_XPATH
-04/08/2020 19:48:01 devpinoyLogger Clicking on an Element : QuoteRequestCrossicon_XPATH
-04/08/2020 19:48:02 devpinoyLogger Clicking on an Element : ProductPoleRestoration_XPATH
-04/08/2020 19:48:03 devpinoyLogger Clicking on an Element : ProductPoleRestoration_XPATH
-04/08/2020 19:48:03 devpinoyLogger Clicking on an Element : ProductPoleRestorationCTruss_XPATH
-04/08/2020 19:48:04 devpinoyLogger Selecting from an element : ProductSizeDropdown_XPATH value as : 2
-04/08/2020 19:48:04 devpinoyLogger Clicking on an Element : ProductSizeEnterQuantity_XPATH
-04/08/2020 19:48:05 devpinoyLogger clearing on an Element : ProductSizeEnterQuantity_XPATH
-04/08/2020 19:48:05 devpinoyLogger Typing in an Element : ProductSizeEnterQuantity_XPATH entered value as : 8
-04/08/2020 19:48:05 devpinoyLogger Clicking on an Element : ProductAddButton_XPATH
-04/08/2020 19:48:05 devpinoyLogger Clicking on an Element : ProductViewCartButton_XPATH
-04/08/2020 19:48:07 devpinoyLogger Text of the locator: ProductsQuoterequest_XPATH value as :Quote Request
-04/08/2020 19:48:09 devpinoyLogger Clicking on an Element : QuoteRequestCrossicon_XPATH
-04/08/2020 19:48:10 devpinoyLogger Clicking on an Element : ProductPoleRestoration_XPATH
-04/08/2020 19:48:11 devpinoyLogger Clicking on an Element : ProductPoleRestoration_XPATH
-04/08/2020 19:48:11 devpinoyLogger Clicking on an Element : ProductPoleRestorationCTruss_XPATH
-04/08/2020 19:48:12 devpinoyLogger Selecting from an element : ProductSizeDropdown_XPATH value as : 1
-04/08/2020 19:48:12 devpinoyLogger Clicking on an Element : ProductSizeEnterQuantity_XPATH
-04/08/2020 19:48:12 devpinoyLogger clearing on an Element : ProductSizeEnterQuantity_XPATH
-04/08/2020 19:48:12 devpinoyLogger Typing in an Element : ProductSizeEnterQuantity_XPATH entered value as : 8
-04/08/2020 19:48:12 devpinoyLogger Clicking on an Element : ProductAddButton_XPATH
-04/08/2020 19:48:12 devpinoyLogger Clicking on an Element : ProductViewCartButton_XPATH
-04/08/2020 19:48:13 devpinoyLogger Clicking on an Element : ContiuneSHoppingButton_XPATH
-04/08/2020 19:48:14 devpinoyLogger Clicking on an Element : ProductPoleRestoration1Dummy3_XPATH
-04/08/2020 19:48:15 devpinoyLogger Selecting from an element : ProductSizeDropdown_XPATH value as : 1
-04/08/2020 19:48:15 devpinoyLogger Clicking on an Element : ProductSizeEnterQuantity_XPATH
-04/08/2020 19:48:15 devpinoyLogger clearing on an Element : ProductSizeEnterQuantity_XPATH
-04/08/2020 19:48:15 devpinoyLogger Typing in an Element : ProductSizeEnterQuantity_XPATH entered value as : 8
-04/08/2020 19:48:15 devpinoyLogger Clicking on an Element : ProductAddButton_XPATH
-04/08/2020 19:48:15 devpinoyLogger Clicking on an Element : ProductViewCartButton_XPATH
-04/08/2020 19:48:19 devpinoyLogger Clicking on an Element : QuoteRequestCrossicon_XPATH
-04/08/2020 19:48:21 devpinoyLogger Clicking on an Element : ProductPoleRestorationDummy3_XPATH
-04/08/2020 19:48:21 devpinoyLogger Selecting from an element : ProductSizeDropdown_XPATH value as : 1
-04/08/2020 19:48:22 devpinoyLogger Clicking on an Element : ProductSizeEnterQuantity_XPATH
-04/08/2020 19:48:22 devpinoyLogger clearing on an Element : ProductSizeEnterQuantity_XPATH
-04/08/2020 19:48:22 devpinoyLogger Typing in an Element : ProductSizeEnterQuantity_XPATH entered value as : 8
-04/08/2020 19:48:22 devpinoyLogger Clicking on an Element : ProductAddButton_XPATH
-04/08/2020 19:48:22 devpinoyLogger Clicking on an Element : ProductViewCartButton_XPATH
-04/08/2020 19:48:22 devpinoyLogger Clicking on an Element : ContiuneSHoppingButton_XPATH
-04/08/2020 19:48:23 devpinoyLogger Clicking on an Element : ProductPoleRestorationDummy3_XPATH
-04/08/2020 19:48:24 devpinoyLogger Selecting from an element : ProductSizeDropdown_XPATH value as : 1
-04/08/2020 19:48:24 devpinoyLogger Clicking on an Element : ProductSizeEnterQuantity_XPATH
-04/08/2020 19:48:24 devpinoyLogger clearing on an Element : ProductSizeEnterQuantity_XPATH
-04/08/2020 19:48:24 devpinoyLogger Typing in an Element : ProductSizeEnterQuantity_XPATH entered value as : 8
-04/08/2020 19:48:24 devpinoyLogger Clicking on an Element : ProductAddButton_XPATH
-04/08/2020 19:48:24 devpinoyLogger Clicking on an Element : ProductViewCartButton_XPATH
-04/08/2020 19:48:29 devpinoyLogger Clicking on an Element : QuoteRequestCrossicon_XPATH
-04/08/2020 19:48:29 devpinoyLogger Clicking on an Element : ProductPoleRestoration_XPATH
-04/08/2020 19:48:30 devpinoyLogger Clicking on an Element : ProductPoleRestoration_XPATH
-04/08/2020 19:48:30 devpinoyLogger Clicking on an Element : ProductPoleRestorationCTruss_XPATH
-04/08/2020 19:48:31 devpinoyLogger Selecting from an element : ProductSizeDropdown_XPATH value as : 1
-04/08/2020 19:48:31 devpinoyLogger Clicking on an Element : ProductSizeEnterQuantity_XPATH
-04/08/2020 19:48:31 devpinoyLogger clearing on an Element : ProductSizeEnterQuantity_XPATH
-04/08/2020 19:48:31 devpinoyLogger Typing in an Element : ProductSizeEnterQuantity_XPATH entered value as : 8
-04/08/2020 19:48:32 devpinoyLogger Clicking on an Element : ProductAddButton_XPATH
-04/08/2020 19:48:32 devpinoyLogger Clicking on an Element : ProductViewCartButton_XPATH
-04/08/2020 19:48:33 devpinoyLogger Clicking on an Element : DeleteShoppingCart_XPATH
-04/08/2020 19:48:34 devpinoyLogger Clicking on an Element : ContiuneSHoppingButton_XPATH
-04/08/2020 19:48:35 devpinoyLogger Clicking on an Element : ProductPoleRestorationCTruss_XPATH
-04/08/2020 19:48:36 devpinoyLogger Selecting from an element : ProductSizeDropdown_XPATH value as : 1
-04/08/2020 19:48:36 devpinoyLogger Clicking on an Element : ProductSizeEnterQuantity_XPATH
-04/08/2020 19:48:36 devpinoyLogger clearing on an Element : ProductSizeEnterQuantity_XPATH
-04/08/2020 19:48:36 devpinoyLogger Typing in an Element : ProductSizeEnterQuantity_XPATH entered value as : 8
-04/08/2020 19:48:36 devpinoyLogger Clicking on an Element : ProductAddButton_XPATH
-04/08/2020 19:48:36 devpinoyLogger Clicking on an Element : ProductViewCartButton_XPATH
-04/08/2020 19:48:41 devpinoyLogger Clicking on an Element : PlusicononShoppingCart_XPATH
-04/08/2020 19:48:47 devpinoyLogger Clicking on an Element : ContiuneSHoppingButton_XPATH
-04/08/2020 19:48:48 devpinoyLogger Clicking on an Element : ProductPoleRestorationCTruss_XPATH
-04/08/2020 19:48:49 devpinoyLogger Selecting from an element : ProductSizeDropdown_XPATH value as : 1
-04/08/2020 19:48:49 devpinoyLogger Clicking on an Element : ProductSizeEnterQuantity_XPATH
-04/08/2020 19:48:49 devpinoyLogger clearing on an Element : ProductSizeEnterQuantity_XPATH
-04/08/2020 19:48:49 devpinoyLogger Typing in an Element : ProductSizeEnterQuantity_XPATH entered value as : 8
-04/08/2020 19:48:49 devpinoyLogger Clicking on an Element : ProductAddButton_XPATH
-04/08/2020 19:48:49 devpinoyLogger Clicking on an Element : ProductViewCartButton_XPATH
-04/08/2020 19:48:55 devpinoyLogger Clicking on an Element : MinusicononShoppingCart_XPATH
-04/08/2020 19:49:15 devpinoyLogger Clicking on an Element : QuoteRequestCrossicon_XPATH
-04/08/2020 19:49:15 devpinoyLogger Clicking on an Element : ProductPoleRestoration_XPATH
-04/08/2020 19:49:16 devpinoyLogger Clicking on an Element : ProductPoleRestoration_XPATH
-04/08/2020 19:49:16 devpinoyLogger Clicking on an Element : ProductPoleRestorationDummy3_XPATH
-04/08/2020 19:49:17 devpinoyLogger Selecting from an element : ProductSizeDropdown_XPATH value as : 1
-04/08/2020 19:49:17 devpinoyLogger Clicking on an Element : ProductSizeEnterQuantity_XPATH
-04/08/2020 19:49:18 devpinoyLogger clearing on an Element : ProductSizeEnterQuantity_XPATH
-04/08/2020 19:49:18 devpinoyLogger Typing in an Element : ProductSizeEnterQuantity_XPATH entered value as : 8
-04/08/2020 19:49:18 devpinoyLogger Clicking on an Element : ProductAddButton_XPATH
-04/08/2020 19:49:18 devpinoyLogger Clicking on an Element : ProductViewCartButton_XPATH
-04/08/2020 19:49:18 devpinoyLogger Clicking on an Element : SubmitQuoteRequestbtn_XPATH
-04/08/2020 19:49:18 devpinoyLogger Clicking on an Element : Submitbtn_XPATH
-04/08/2020 19:49:20 devpinoyLogger Clicking on an Element : QuoteRequestsubmittedpopupClosebtn_XPATH
-04/08/2020 19:49:21 devpinoyLogger Clicking on an Element : ProductPoleRestoration_XPATH
-04/08/2020 19:49:22 devpinoyLogger Clicking on an Element : ProductPoleRestoration_XPATH
-04/08/2020 19:49:23 devpinoyLogger Clicking on an Element : ProductPoleRestorationDummy3_XPATH
-04/08/2020 19:49:23 devpinoyLogger Selecting from an element : ProductSizeDropdown_XPATH value as : 1
-04/08/2020 19:49:23 devpinoyLogger Clicking on an Element : ProductSizeEnterQuantity_XPATH
-04/08/2020 19:49:24 devpinoyLogger clearing on an Element : ProductSizeEnterQuantity_XPATH
-04/08/2020 19:49:24 devpinoyLogger Typing in an Element : ProductSizeEnterQuantity_XPATH entered value as : 8
-04/08/2020 19:49:24 devpinoyLogger Clicking on an Element : ProductAddButton_XPATH
-04/08/2020 19:49:24 devpinoyLogger Clicking on an Element : ProductViewCartButton_XPATH
-04/08/2020 19:49:24 devpinoyLogger Clicking on an Element : SubmitQuoteRequestbtn_XPATH
-04/08/2020 19:49:24 devpinoyLogger Typing in an Element : ShippingComments_XPATH entered value as : AutomationTesting
-04/08/2020 19:49:24 devpinoyLogger Clicking on an Element : Submitbtn_XPATH
-04/08/2020 19:49:26 devpinoyLogger Clicking on an Element : QuoteRequestsubmittedpopupClosebtn_XPATH
-04/08/2020 19:49:27 devpinoyLogger Clicking on an Element : ProductPoleRestoration_XPATH
-04/08/2020 19:49:28 devpinoyLogger Clicking on an Element : ProductPoleRestoration_XPATH
-04/08/2020 19:49:29 devpinoyLogger Clicking on an Element : ProductPoleRestorationDummy3_XPATH
-04/08/2020 19:49:29 devpinoyLogger Selecting from an element : ProductSizeDropdown_XPATH value as : 1
-04/08/2020 19:49:30 devpinoyLogger Clicking on an Element : ProductSizeEnterQuantity_XPATH
-04/08/2020 19:49:30 devpinoyLogger clearing on an Element : ProductSizeEnterQuantity_XPATH
-04/08/2020 19:49:30 devpinoyLogger Typing in an Element : ProductSizeEnterQuantity_XPATH entered value as : 8
-04/08/2020 19:49:30 devpinoyLogger Clicking on an Element : ProductAddButton_XPATH
-04/08/2020 19:49:30 devpinoyLogger Clicking on an Element : ProductViewCartButton_XPATH
-04/08/2020 19:49:30 devpinoyLogger Clicking on an Element : SubmitQuoteRequestbtn_XPATH
-04/08/2020 19:49:30 devpinoyLogger Typing in an Element : ShippingZipCode_XPATH entered value as : 12345
-04/08/2020 19:49:30 devpinoyLogger Clicking on an Element : Submitbtn_XPATH
-04/08/2020 19:49:31 devpinoyLogger Clicking on an Element : QuoteRequestsubmittedpopupClosebtn_XPATH
-04/08/2020 19:49:33 devpinoyLogger Clicking on an Element : ProductPoleRestoration_XPATH
-04/08/2020 19:49:34 devpinoyLogger Clicking on an Element : ProductPoleRestoration_XPATH
-04/08/2020 19:49:34 devpinoyLogger Clicking on an Element : ProductPoleRestorationCTruss_XPATH
-04/08/2020 19:49:36 devpinoyLogger Selecting from an element : ProductSizeDropdown_XPATH value as : 1
-04/08/2020 19:49:36 devpinoyLogger Clicking on an Element : ProductSizeEnterQuantity_XPATH
-04/08/2020 19:49:36 devpinoyLogger clearing on an Element : ProductSizeEnterQuantity_XPATH
-04/08/2020 19:49:36 devpinoyLogger Typing in an Element : ProductSizeEnterQuantity_XPATH entered value as : 8
-04/08/2020 19:49:36 devpinoyLogger Clicking on an Element : ProductAddButton_XPATH
-04/08/2020 19:49:36 devpinoyLogger Clicking on an Element : ProductViewCartButton_XPATH
-04/08/2020 19:49:36 devpinoyLogger Clicking on an Element : SubmitQuoteRequestbtn_XPATH
-04/08/2020 19:49:36 devpinoyLogger Typing in an Element : ShippingAttachment_XPATH entered value as : C:\Users\AC38373\Desktop\File_123.pdf
-04/08/2020 19:49:37 devpinoyLogger Clicking on an Element : FileAttachmentSubmitbtn_XPATH
-04/08/2020 19:49:39 devpinoyLogger Clicking on an Element : QuoteRequestsubmittedpopupClosebtn_XPATH
-04/08/2020 19:49:41 devpinoyLogger Clicking on an Element : ProductPoleRestoration_XPATH
-04/08/2020 19:49:42 devpinoyLogger Clicking on an Element : ProductPoleRestoration_XPATH
-04/08/2020 19:49:42 devpinoyLogger Clicking on an Element : ProductPoleRestorationCTruss_XPATH
-04/08/2020 19:49:43 devpinoyLogger Selecting from an element : ProductSizeDropdown_XPATH value as : 1
-04/08/2020 19:49:43 devpinoyLogger Clicking on an Element : ProductSizeEnterQuantity_XPATH
-04/08/2020 19:49:43 devpinoyLogger clearing on an Element : ProductSizeEnterQuantity_XPATH
-04/08/2020 19:49:43 devpinoyLogger Typing in an Element : ProductSizeEnterQuantity_XPATH entered value as : 8
-04/08/2020 19:49:43 devpinoyLogger Clicking on an Element : ProductAddButton_XPATH
-04/08/2020 19:49:44 devpinoyLogger Clicking on an Element : ProductViewCartButton_XPATH
-04/08/2020 19:49:45 devpinoyLogger Clicking on an Element : QuoteRequestCrossicon_XPATH
-04/08/2020 19:49:45 devpinoyLogger Clicking on an Element : ProductPageCartIcon_XPATH
-04/08/2020 19:49:46 devpinoyLogger Clicking on an Element : ProductPageCartIcon_XPATH
-04/08/2020 19:49:46 devpinoyLogger Clicking on an Element : ProductPoleRestoration_XPATH
-04/08/2020 19:49:47 devpinoyLogger Clicking on an Element : ProductPoleRestoration_XPATH
-04/08/2020 19:49:48 devpinoyLogger Clicking on an Element : ProductPoleRestorationCTruss_XPATH
-04/08/2020 19:49:49 devpinoyLogger Selecting from an element : ProductSizeDropdown_XPATH value as : 1
-04/08/2020 19:49:49 devpinoyLogger Clicking on an Element : ProductSizeEnterQuantity_XPATH
-04/08/2020 19:49:49 devpinoyLogger clearing on an Element : ProductSizeEnterQuantity_XPATH
-04/08/2020 19:49:49 devpinoyLogger Typing in an Element : ProductSizeEnterQuantity_XPATH entered value as : 8
-04/08/2020 19:49:49 devpinoyLogger Clicking on an Element : ProductAddButton_XPATH
-04/08/2020 19:49:49 devpinoyLogger Clicking on an Element : ProductViewCartButton_XPATH
-04/08/2020 19:49:50 devpinoyLogger Clicking on an Element : QuoteRequestCrossicon_XPATH
-04/08/2020 19:49:50 devpinoyLogger Clicking on an Element : ProductPageCartIcon_XPATH
-04/08/2020 19:49:50 devpinoyLogger Clicking on an Element : productPageCartViewCartbtn_XPATH
-04/08/2020 19:49:51 devpinoyLogger Text of the locator: ProductsQuoterequest_XPATH value as :Quote Request
-04/08/2020 19:49:52 devpinoyLogger Clicking on an Element : QuoteRequestCrossicon_XPATH
-04/08/2020 19:49:52 devpinoyLogger Clicking on an Element : ProductPoleRestoration_XPATH
-04/08/2020 19:49:53 devpinoyLogger Clicking on an Element : ProductPoleRestoration_XPATH
-04/08/2020 19:49:54 devpinoyLogger Clicking on an Element : ProductPoleRestorationCTruss_XPATH
-04/08/2020 19:49:54 devpinoyLogger Selecting from an element : ProductSizeDropdown_XPATH value as : 1
-04/08/2020 19:49:54 devpinoyLogger Clicking on an Element : ProductSizeEnterQuantity_XPATH
-04/08/2020 19:49:55 devpinoyLogger clearing on an Element : ProductSizeEnterQuantity_XPATH
-04/08/2020 19:49:55 devpinoyLogger Typing in an Element : ProductSizeEnterQuantity_XPATH entered value as : 8
-04/08/2020 19:49:55 devpinoyLogger Clicking on an Element : ProductAddButton_XPATH
-04/08/2020 19:49:55 devpinoyLogger Clicking on an Element : ProductViewCartButton_XPATH
-04/08/2020 19:49:56 devpinoyLogger Clicking on an Element : QuoteRequestCrossicon_XPATH
-04/08/2020 19:49:56 devpinoyLogger Clicking on an Element : ProductPageCartIcon_XPATH
-04/08/2020 19:49:56 devpinoyLogger Clicking on an Element : productPageCartSubmitCartbtn_XPATH
-04/08/2020 19:49:57 devpinoyLogger Text of the locator: ProductsQuoterequest_XPATH value as :Quote Request
-04/08/2020 19:49:58 devpinoyLogger Clicking on an Element : QuoteRequestCrossicon_XPATH
-04/08/2020 19:49:58 devpinoyLogger Clicking on an Element : ProductPoleRestoration_XPATH
-04/08/2020 19:49:59 devpinoyLogger Clicking on an Element : ProductPoleRestoration_XPATH
-04/08/2020 19:49:59 devpinoyLogger Clicking on an Element : ProductPoleRestorationCTruss_XPATH
-04/08/2020 19:50:00 devpinoyLogger Selecting from an element : ProductSizeDropdown_XPATH value as : 1
-04/08/2020 19:50:00 devpinoyLogger Clicking on an Element : ProductSizeEnterQuantity_XPATH
-04/08/2020 19:50:00 devpinoyLogger clearing on an Element : ProductSizeEnterQuantity_XPATH
-04/08/2020 19:50:00 devpinoyLogger Typing in an Element : ProductSizeEnterQuantity_XPATH entered value as : 8
-04/08/2020 19:50:00 devpinoyLogger Clicking on an Element : ProductAddButton_XPATH
-04/08/2020 19:50:01 devpinoyLogger Clicking on an Element : ProductViewCartButton_XPATH
-04/08/2020 19:50:02 devpinoyLogger Clicking on an Element : QuoteRequestCrossicon_XPATH
-04/08/2020 19:50:02 devpinoyLogger Clicking on an Element : ProductPageCartIcon_XPATH
-04/08/2020 19:50:02 devpinoyLogger Clicking on an Element : productPageCartViewCartbtn_XPATH
-04/08/2020 19:50:03 devpinoyLogger Clicking on an Element : PlusicononShoppingCart_XPATH
-04/08/2020 19:50:04 devpinoyLogger Clicking on an Element : QuoteRequestCrossicon_XPATH
-04/08/2020 19:50:04 devpinoyLogger Clicking on an Element : ProductPageCartIcon_XPATH
-04/08/2020 19:50:06 devpinoyLogger Clicking on an Element : ProductPageCartIcon_XPATH
-04/08/2020 19:50:06 devpinoyLogger Clicking on an Element : MyQuotesMenu_XPATH
-04/08/2020 19:50:07 devpinoyLogger Text of the locator: MyQuotesheadertxt_XPATH value as :My Quotes
-04/08/2020 19:50:07 devpinoyLogger Text of the locator: Statustxt_XPATH value as :Status:
-04/08/2020 19:50:12 devpinoyLogger Clicking on an Element : Closebtn_XPATH
-04/08/2020 19:50:18 devpinoyLogger Clicking on an Element : MyQuotesMenu_XPATH
-04/08/2020 19:50:23 devpinoyLogger Selecting from an element : StatusFilterdd_XPATH
-04/08/2020 19:50:28 devpinoyLogger Selecting from an element : StatusFilterddAll_XPATH
-04/08/2020 19:50:33 devpinoyLogger Selecting from an element : StatusFilterdd_XPATH
-04/08/2020 19:50:38 devpinoyLogger Clicking on an Element : Closebtn_XPATH
-04/08/2020 19:50:44 devpinoyLogger Clicking on an Element : MyQuotesMenu_XPATH
-04/08/2020 19:50:49 devpinoyLogger Selecting from an element : StatusFilterdd_XPATH
-04/08/2020 19:50:54 devpinoyLogger Selecting from an element : StatusFilterddExpired_XPATH
-04/08/2020 19:50:59 devpinoyLogger Selecting from an element : StatusFilterdd_XPATH
-04/08/2020 19:51:14 devpinoyLogger Clicking on an Element : Closebtn_XPATH
-04/08/2020 19:51:20 devpinoyLogger Clicking on an Element : MyQuotesMenu_XPATH
-04/08/2020 19:51:30 devpinoyLogger Selecting from an element : StatusFilterdd_XPATH
-04/08/2020 19:51:35 devpinoyLogger Selecting from an element : StatusFilterddOrdered_XPATH
-04/08/2020 19:51:41 devpinoyLogger Selecting from an element : StatusFilterdd_XPATH
-04/08/2020 19:51:56 devpinoyLogger Clicking on an Element : Closebtn_XPATH
-04/08/2020 19:52:01 devpinoyLogger Clicking on an Element : MyQuotesMenu_XPATH
-04/08/2020 19:52:11 devpinoyLogger Selecting from an element : StatusFilterdd_XPATH
-04/08/2020 19:52:17 devpinoyLogger Selecting from an element : StatusFilterddQuoted_XPATH
-04/08/2020 19:52:22 devpinoyLogger Selecting from an element : StatusFilterdd_XPATH
-04/08/2020 19:52:37 devpinoyLogger Clicking on an Element : Closebtn_XPATH
-04/08/2020 19:52:42 devpinoyLogger Clicking on an Element : MyQuotesMenu_XPATH
-04/08/2020 19:52:52 devpinoyLogger Selecting from an element : StatusFilterdd_XPATH
-04/08/2020 19:52:58 devpinoyLogger Selecting from an element : StatusFilterddQuotePending_XPATH
-04/08/2020 19:53:03 devpinoyLogger Selecting from an element : StatusFilterdd_XPATH
-04/08/2020 19:53:18 devpinoyLogger Clicking on an Element : Closebtn_XPATH
-04/08/2020 19:53:24 devpinoyLogger Clicking on an Element : MyQuotesMenu_XPATH
-04/08/2020 19:53:34 devpinoyLogger Selecting from an element : StatusFilterdd_XPATH
-04/08/2020 19:53:39 devpinoyLogger Selecting from an element : StatusFilterddCancelled_XPATH
-04/08/2020 19:53:44 devpinoyLogger Selecting from an element : StatusFilterdd_XPATH
-04/08/2020 19:53:59 devpinoyLogger Clicking on an Element : Closebtn_XPATH
-04/08/2020 19:54:05 devpinoyLogger Clicking on an Element : MyQuotesMenu_XPATH
-04/08/2020 19:54:15 devpinoyLogger Selecting from an element : StatusFilterdd_XPATH
-04/08/2020 19:54:20 devpinoyLogger Selecting from an element : StatusFilterddOrderRequested_XPATH
-04/08/2020 19:54:25 devpinoyLogger Selecting from an element : StatusFilterdd_XPATH
-04/08/2020 19:54:36 devpinoyLogger Clicking on an Element : Closebtn_XPATH
-04/08/2020 19:54:36 devpinoyLogger Clicking on an Element : ProductPoleRestoration_XPATH
-04/08/2020 19:54:39 devpinoyLogger Clicking on an Element : ProductPoleRestoration_XPATH
-04/08/2020 19:54:39 devpinoyLogger Clicking on an Element : ProductPoleRestorationCTruss_XPATH
-04/08/2020 19:54:40 devpinoyLogger Selecting from an element : ProductSizeDropdown_XPATH value as : 2
-04/08/2020 19:54:40 devpinoyLogger Clicking on an Element : ProductSizeEnterQuantity_XPATH
-04/08/2020 19:54:41 devpinoyLogger clearing on an Element : ProductSizeEnterQuantity_XPATH
-04/08/2020 19:54:41 devpinoyLogger Typing in an Element : ProductSizeEnterQuantity_XPATH entered value as : 8
-04/08/2020 19:54:41 devpinoyLogger Clicking on an Element : ProductAddButton_XPATH
-04/08/2020 19:54:41 devpinoyLogger Clicking on an Element : ProductViewCartButton_XPATH
-04/08/2020 19:54:44 devpinoyLogger Clicking on an Element : QuoteRequestCrossicon_XPATH
-04/08/2020 19:54:52 devpinoyLogger Clicking on an Element : ProCard_XPATH
-04/08/2020 19:54:52 devpinoyLogger Clicking on an Element : ClickAdminDropDown_XPATH
-04/08/2020 19:54:52 devpinoyLogger Clicking on an Element : ClickManageQuotes_XPATH
-04/08/2020 19:54:54 devpinoyLogger Text of the locator: QuoteIDHeader_XPATH value as :Quote ID
-04/08/2020 19:54:54 devpinoyLogger Text of the locator: CompanyHeader_XPATH value as :Status
-04/08/2020 19:54:55 devpinoyLogger Clicking on an Element : ClickAdminDropDown_XPATH
-04/08/2020 19:54:55 devpinoyLogger Clicking on an Element : ClickManageQuotes_XPATH
-04/08/2020 19:54:57 devpinoyLogger Clicking on an Element : Q00001QUOTEID_XPATH
-04/08/2020 19:55:01 devpinoyLogger Clicking on an Element : CloseBtnOnQuote_XPATH
-04/08/2020 19:55:01 devpinoyLogger Clicking on an Element : ClickAdminDropDown_XPATH
-04/08/2020 19:55:02 devpinoyLogger Clicking on an Element : ClickManageQuotes_XPATH
-04/08/2020 19:55:05 devpinoyLogger Clicking on an Element : Q00010QUOTEID_XPATH
-04/08/2020 19:55:05 devpinoyLogger Clicking on an Element : StatusdropdownQuotesubmit_XPATH
-04/08/2020 19:55:05 devpinoyLogger Selecting from an element : StatusdropdownQuotesubmit_XPATH
-04/08/2020 19:55:05 devpinoyLogger Selecting from an element : StatusdropdownQuotesubmit_XPATH value as : 1
-04/08/2020 19:55:06 devpinoyLogger Clicking on an Element : SubmitbtnQuotesubmission_XPATH
-04/08/2020 19:55:11 devpinoyLogger Clicking on an Element : ClickAdminDropDown_XPATH
-04/08/2020 19:55:11 devpinoyLogger Clicking on an Element : ClickManageQuotes_XPATH
-04/08/2020 19:55:15 devpinoyLogger Clicking on an Element : Q00010QUOTEID_XPATH
-04/08/2020 19:55:15 devpinoyLogger Clicking on an Element : StatusdropdownQuotesubmit_XPATH
-04/08/2020 19:55:15 devpinoyLogger Selecting from an element : StatusdropdownQuotesubmit_XPATH
-04/08/2020 19:55:15 devpinoyLogger Selecting from an element : StatusdropdownQuotesubmit_XPATH value as : 3
-04/08/2020 19:55:15 devpinoyLogger Clicking on an Element : SubmitbtnQuotesubmission_XPATH
-04/08/2020 19:55:21 devpinoyLogger Clicking on an Element : ClickAdminDropDown_XPATH
-04/08/2020 19:55:21 devpinoyLogger Clicking on an Element : ClickManageQuotes_XPATH
-04/08/2020 19:55:24 devpinoyLogger Clicking on an Element : Q00010QUOTEID_XPATH
-04/08/2020 19:55:25 devpinoyLogger Clicking on an Element : StatusdropdownQuotesubmit_XPATH
-04/08/2020 19:55:25 devpinoyLogger Selecting from an element : StatusdropdownQuotesubmit_XPATH
-04/08/2020 19:55:25 devpinoyLogger Selecting from an element : StatusdropdownQuotesubmit_XPATH value as : 4
-04/08/2020 19:55:25 devpinoyLogger Typing in an Element : commentstextareaSubmitQuote_XPATH entered value as : Automationtestingcancelling
-04/08/2020 19:55:25 devpinoyLogger Clicking on an Element : SubmitbtnQuotesubmission_XPATH
-04/08/2020 19:55:34 devpinoyLogger Clicking on an Element : ClickAdminDropDown_XPATH
-04/08/2020 19:55:34 devpinoyLogger Clicking on an Element : ClickManageQuotes_XPATH
-04/08/2020 19:55:37 devpinoyLogger Clicking on an Element : Q00010QUOTEID_XPATH
-04/08/2020 19:55:38 devpinoyLogger Clicking on an Element : StatusdropdownQuotesubmit_XPATH
-04/08/2020 19:55:38 devpinoyLogger Selecting from an element : StatusdropdownQuotesubmit_XPATH value as : 2
-04/08/2020 19:55:38 devpinoyLogger Clicking on an Element : BrowseFileSubmitQuote_XPATH
-04/08/2020 19:55:46 devpinoyLogger Clicking on an Element : UploadbtnSubmitQuote_XPATH
-04/08/2020 19:55:46 devpinoyLogger Clicking on an Element : SubmitbtnQuotesubmission_XPATH
-04/08/2020 19:55:52 devpinoyLogger Clicking on an Element : ClickAdminDropDown_XPATH
-04/08/2020 19:55:52 devpinoyLogger Clicking on an Element : ClickManageQuotes_XPATH
-04/08/2020 19:55:55 devpinoyLogger Clicking on an Element : Q00010QUOTEID_XPATH
-04/08/2020 19:55:56 devpinoyLogger Clicking on an Element : StatusdropdownQuotesubmit_XPATH
-04/08/2020 19:55:56 devpinoyLogger Selecting from an element : StatusdropdownQuotesubmit_XPATH
-04/08/2020 19:55:56 devpinoyLogger Selecting from an element : StatusdropdownQuotesubmit_XPATH value as : 5
-04/08/2020 19:55:56 devpinoyLogger Clicking on an Element : SubmitbtnQuotesubmission_XPATH
-04/08/2020 19:56:00 devpinoyLogger Clicking on an Element : ClickAdminDropDown_XPATH
-04/08/2020 19:56:00 devpinoyLogger Clicking on an Element : ManageProductsdrp_XPATH
-04/08/2020 19:56:02 devpinoyLogger Text of the locator: ManageProductsheading_XPATH value as :Manage Products
-04/08/2020 19:56:04 devpinoyLogger Clicking on an Element : ManageProductDownloadspreadsheet_XPATH
-04/08/2020 19:56:09 devpinoyLogger Clicking on an Element : ManageProductDownloadspreadsheetbtn_XPATH
-04/08/2020 19:56:12 devpinoyLogger Clicking on an Element : ManageProductsinReviewbutton_XPATH
-04/08/2020 19:56:12 devpinoyLogger Text of the locator: ProductReviewHeading_XPATH value as :Product Review
-04/08/2020 19:56:12 devpinoyLogger Clicking on an Element : ProductReviewBackLink_XPATH
-04/08/2020 19:56:15 devpinoyLogger Typing in an Element : ManageProductUploadpreadsheet_XPATH entered value as : C:\Users\AC38373\Desktop\File_123.xlsx
-04/08/2020 19:56:19 devpinoyLogger Text of the locator: ManageProductUploadSuccessPopup_XPATH value as :Success!
-04/08/2020 19:56:19 devpinoyLogger Text of the locator: ManageProductUploadSuccessPopuptxt_XPATH value as :Product Spreadsheet Uploaded
-04/08/2020 19:56:19 devpinoyLogger Selecting from an element : ManageProductUploadSuccessPopupOkbtn_XPATH
-04/08/2020 19:56:23 devpinoyLogger Clicking on an Element : ManageProductCrossbutn_XPATH
-04/08/2020 19:56:25 devpinoyLogger Clicking on an Element : ProCard_XPATH
-04/08/2020 19:56:27 devpinoyLogger Clicking on an Element : ClickAdminDropDown_XPATH
-04/08/2020 19:56:27 devpinoyLogger Clicking on an Element : ManageProductsdrp_XPATH
-04/08/2020 19:56:40 devpinoyLogger Clicking on an Element : DictionaryLink_XPATH
-04/08/2020 19:56:43 devpinoyLogger Text of the locator: DictionaryHeaderTxt_XPATH value as :Dictionary
-04/08/2020 19:56:46 devpinoyLogger Text of the locator: LevelTxt_XPATH value as :Level
-04/08/2020 19:56:49 devpinoyLogger Text of the locator: ProductGroupTxt_XPATH value as :Product Group
-04/08/2020 19:56:53 devpinoyLogger Clicking on an Element : DictionaryCloseBtn_XPATH
-04/08/2020 19:56:54 devpinoyLogger Clicking on an Element : ManageProductsinReviewbutton_XPATH
-04/08/2020 19:56:59 devpinoyLogger Clicking on an Element : DictionaryLink_XPATH
-04/08/2020 19:57:01 devpinoyLogger Text of the locator: DictionaryHeaderTxt_XPATH value as :Dictionary
-04/08/2020 19:57:05 devpinoyLogger Text of the locator: LevelTxt_XPATH value as :Level
-04/08/2020 19:57:08 devpinoyLogger Text of the locator: ProductGroupTxt_XPATH value as :Product Group
-04/08/2020 19:57:11 devpinoyLogger Clicking on an Element : DictionaryCloseBtn_XPATH
-04/08/2020 19:57:11 devpinoyLogger Clicking on an Element : ProductReviewBackLink_XPATH
-04/08/2020 19:57:19 devpinoyLogger Clicking on an Element : ManageProductCrossbutn_XPATH
-04/08/2020 19:57:25 devpinoyLogger Clicking on an Element : ProCard_XPATH
-04/08/2020 19:57:29 devpinoyLogger Clicking on an Element : ProductPoleRestoration_XPATH
-04/08/2020 19:57:29 devpinoyLogger Clicking on an Element : ProductPoleRestorationCTruss_XPATH
-04/08/2020 19:57:30 devpinoyLogger Selecting from an element : ProductSizeDropdown_XPATH value as : 2
-04/08/2020 19:57:30 devpinoyLogger Clicking on an Element : ProductSizeEnterQuantity_XPATH
-04/08/2020 19:57:30 devpinoyLogger clearing on an Element : ProductSizeEnterQuantity_XPATH
-04/08/2020 19:57:30 devpinoyLogger Typing in an Element : ProductSizeEnterQuantity_XPATH entered value as : 8
-04/08/2020 19:57:31 devpinoyLogger Clicking on an Element : ProductAddButton_XPATH
-04/08/2020 19:57:31 devpinoyLogger Clicking on an Element : ProductViewCartButton_XPATH
-04/08/2020 19:57:33 devpinoyLogger Clicking on an Element : SubmitQuoteRequestbtn_XPATH
-04/08/2020 19:57:33 devpinoyLogger Typing in an Element : ShippingZipCode_XPATH entered value as : 12345
-04/08/2020 19:57:33 devpinoyLogger Typing in an Element : ShippingAttachment_XPATH entered value as : C:\Users\AC38373\Desktop\File_123.pdf
-04/08/2020 19:57:33 devpinoyLogger Typing in an Element : ShippingComments_XPATH entered value as : AutomationTesting
-04/08/2020 19:57:33 devpinoyLogger Clicking on an Element : Submitbtn_XPATH
-04/08/2020 19:57:37 devpinoyLogger Clicking on an Element : QuoteRequestsubmittedpopupClosebtn_XPATH
-04/08/2020 19:57:40 devpinoyLogger Clicking on an Element : ClickAdminDropDown_XPATH
-04/08/2020 19:57:40 devpinoyLogger Clicking on an Element : ClickManageQuotes_XPATH
-04/08/2020 19:57:43 devpinoyLogger Clicking on an Element : Q00010QUOTEID_XPATH
-04/08/2020 19:57:43 devpinoyLogger Clicking on an Element : StatusdropdownQuotesubmit_XPATH
-04/08/2020 19:57:43 devpinoyLogger Selecting from an element : StatusdropdownQuotesubmit_XPATH value as : 2
-04/08/2020 19:57:44 devpinoyLogger Clicking on an Element : BrowseFileSubmitQuote_XPATH
-04/08/2020 19:57:52 devpinoyLogger Clicking on an Element : UploadbtnSubmitQuote_XPATH
-04/08/2020 19:57:52 devpinoyLogger Clicking on an Element : SubmitbtnQuotesubmission_XPATH
-04/08/2020 19:58:03 devpinoyLogger Clicking on an Element : MyQuotesMenu_XPATH
-04/08/2020 19:58:06 devpinoyLogger Clicking on an Element : MyQuotesApprovebtn_XPATH
-04/08/2020 19:58:11 devpinoyLogger Clicking on an Element : ApproveClosebtn_XPATH
-04/08/2020 19:58:15 devpinoyLogger Clicking on an Element : ProductPoleRestoration_XPATH
-04/08/2020 19:58:15 devpinoyLogger Clicking on an Element : ProductPoleRestorationCTruss_XPATH
-04/08/2020 19:58:16 devpinoyLogger Selecting from an element : ProductSizeDropdown_XPATH value as : 2
-04/08/2020 19:58:16 devpinoyLogger Clicking on an Element : ProductSizeEnterQuantity_XPATH
-04/08/2020 19:58:16 devpinoyLogger clearing on an Element : ProductSizeEnterQuantity_XPATH
-04/08/2020 19:58:16 devpinoyLogger Typing in an Element : ProductSizeEnterQuantity_XPATH entered value as : 8
-04/08/2020 19:58:16 devpinoyLogger Clicking on an Element : ProductAddButton_XPATH
-04/08/2020 19:58:17 devpinoyLogger Clicking on an Element : ProductViewCartButton_XPATH
-04/08/2020 19:58:19 devpinoyLogger Clicking on an Element : SubmitQuoteRequestbtn_XPATH
-04/08/2020 19:58:19 devpinoyLogger Typing in an Element : ShippingZipCode_XPATH entered value as : 12345
-04/08/2020 19:58:19 devpinoyLogger Typing in an Element : ShippingAttachment_XPATH entered value as : C:\Users\AC38373\Desktop\File_123.pdf
-04/08/2020 19:58:19 devpinoyLogger Typing in an Element : ShippingComments_XPATH entered value as : AutomationTesting
-04/08/2020 19:58:20 devpinoyLogger Clicking on an Element : Submitbtn_XPATH
-04/08/2020 19:58:23 devpinoyLogger Clicking on an Element : QuoteRequestsubmittedpopupClosebtn_XPATH
-04/08/2020 19:58:26 devpinoyLogger Clicking on an Element : ClickAdminDropDown_XPATH
-04/08/2020 19:58:26 devpinoyLogger Clicking on an Element : ClickManageQuotes_XPATH
-04/08/2020 19:58:29 devpinoyLogger Clicking on an Element : Q00010QUOTEID_XPATH
-04/08/2020 19:58:29 devpinoyLogger Clicking on an Element : StatusdropdownQuotesubmit_XPATH
-04/08/2020 19:58:29 devpinoyLogger Selecting from an element : StatusdropdownQuotesubmit_XPATH value as : 2
-04/08/2020 19:58:30 devpinoyLogger Clicking on an Element : BrowseFileSubmitQuote_XPATH
-04/08/2020 19:58:38 devpinoyLogger Clicking on an Element : UploadbtnSubmitQuote_XPATH
-04/08/2020 19:58:38 devpinoyLogger Clicking on an Element : SubmitbtnQuotesubmission_XPATH
-04/08/2020 19:58:49 devpinoyLogger Clicking on an Element : MyQuotesMenu_XPATH
-04/08/2020 19:58:52 devpinoyLogger Clicking on an Element : MyQuotesApprovebtn_XPATH
-04/08/2020 19:58:57 devpinoyLogger Typing in an Element : ApproveOrtxtbox_XPATH entered value as : 123
-04/08/2020 19:59:04 devpinoyLogger Clicking on an Element : ApproveClosebtn_XPATH
-04/08/2020 19:59:08 devpinoyLogger Clicking on an Element : ProductPoleRestoration_XPATH
-04/08/2020 19:59:08 devpinoyLogger Clicking on an Element : ProductPoleRestorationCTruss_XPATH
-04/08/2020 19:59:09 devpinoyLogger Selecting from an element : ProductSizeDropdown_XPATH value as : 2
-04/08/2020 19:59:09 devpinoyLogger Clicking on an Element : ProductSizeEnterQuantity_XPATH
-04/08/2020 19:59:09 devpinoyLogger clearing on an Element : ProductSizeEnterQuantity_XPATH
-04/08/2020 19:59:09 devpinoyLogger Typing in an Element : ProductSizeEnterQuantity_XPATH entered value as : 8
-04/08/2020 19:59:10 devpinoyLogger Clicking on an Element : ProductAddButton_XPATH
-04/08/2020 19:59:10 devpinoyLogger Clicking on an Element : ProductViewCartButton_XPATH
-04/08/2020 19:59:12 devpinoyLogger Clicking on an Element : SubmitQuoteRequestbtn_XPATH
-04/08/2020 19:59:12 devpinoyLogger Typing in an Element : ShippingZipCode_XPATH entered value as : 12345
-04/08/2020 19:59:12 devpinoyLogger Typing in an Element : ShippingAttachment_XPATH entered value as : C:\Users\AC38373\Desktop\File_123.pdf
-04/08/2020 19:59:12 devpinoyLogger Typing in an Element : ShippingComments_XPATH entered value as : AutomationTesting
-04/08/2020 19:59:12 devpinoyLogger Clicking on an Element : Submitbtn_XPATH
-04/08/2020 19:59:15 devpinoyLogger Clicking on an Element : QuoteRequestsubmittedpopupClosebtn_XPATH
-04/08/2020 19:59:18 devpinoyLogger Clicking on an Element : ClickAdminDropDown_XPATH
-04/08/2020 19:59:19 devpinoyLogger Clicking on an Element : ClickManageQuotes_XPATH
-04/08/2020 19:59:22 devpinoyLogger Clicking on an Element : Q00010QUOTEID_XPATH
-04/08/2020 19:59:22 devpinoyLogger Clicking on an Element : StatusdropdownQuotesubmit_XPATH
-04/08/2020 19:59:22 devpinoyLogger Selecting from an element : StatusdropdownQuotesubmit_XPATH value as : 2
-04/08/2020 19:59:22 devpinoyLogger Clicking on an Element : BrowseFileSubmitQuote_XPATH
-04/08/2020 19:59:30 devpinoyLogger Clicking on an Element : UploadbtnSubmitQuote_XPATH
-04/08/2020 19:59:31 devpinoyLogger Clicking on an Element : SubmitbtnQuotesubmission_XPATH
-04/08/2020 19:59:42 devpinoyLogger Clicking on an Element : MyQuotesMenu_XPATH
-04/08/2020 19:59:45 devpinoyLogger Clicking on an Element : MyQuotesApprovebtn_XPATH
-04/08/2020 19:59:50 devpinoyLogger Typing in an Element : ApproveAttachPurchaseOrder_XPATH entered value as : C:\Users\AC38373\Desktop\File_123.pdf
-04/08/2020 19:59:50 devpinoyLogger Typing in an Element : ApproveOrtxtbox_XPATH entered value as : 123
-04/08/2020 19:59:51 devpinoyLogger Typing in an Element : ApproveAndtxtbox_XPATH entered value as : 123
-04/08/2020 19:59:51 devpinoyLogger Typing in an Element : ApproveCommentstxtarea_XPATH entered value as : 123
-04/08/2020 19:59:51 devpinoyLogger Clicking on an Element : ApproveApproveBtn_XPATH
-04/08/2020 19:59:58 devpinoyLogger Clicking on an Element : ApprovedClosebtn_XPATH
-04/08/2020 20:00:00 devpinoyLogger Clicking on an Element : ClickAdminDropDown_XPATH
-04/08/2020 20:00:01 devpinoyLogger Clicking on an Element : ClickManageQuotes_XPATH
-04/08/2020 20:00:04 devpinoyLogger Clicking on an Element : Q00010QUOTEID_XPATH
-04/08/2020 20:00:04 devpinoyLogger Clicking on an Element : StatusdropdownQuotesubmit_XPATH
-04/08/2020 20:00:04 devpinoyLogger Selecting from an element : StatusdropdownQuotesubmit_XPATH
-04/08/2020 20:00:05 devpinoyLogger Selecting from an element : StatusdropdownQuotesubmit_XPATH value as : 3
-04/08/2020 20:00:05 devpinoyLogger Clicking on an Element : SubmitbtnQuotesubmission_XPATH
-04/08/2020 20:00:12 devpinoyLogger Clicking on an Element : MyQuotesMenu_XPATH
-04/08/2020 20:00:14 devpinoyLogger Clicking on an Element : Requotebutton_XPATH
-04/08/2020 20:00:18 devpinoyLogger Selecting from an element : CancelbuttonRequote_XPATH
-04/08/2020 20:00:38 devpinoyLogger Clicking on an Element : Closebtn_XPATH
-04/08/2020 20:00:41 devpinoyLogger Clicking on an Element : ClickAdminDropDown_XPATH
-04/08/2020 20:00:41 devpinoyLogger Clicking on an Element : ClickManageQuotes_XPATH
-04/08/2020 20:00:44 devpinoyLogger Clicking on an Element : Q00010QUOTEID_XPATH
-04/08/2020 20:00:45 devpinoyLogger Clicking on an Element : StatusdropdownQuotesubmit_XPATH
-04/08/2020 20:00:45 devpinoyLogger Selecting from an element : StatusdropdownQuotesubmit_XPATH
-04/08/2020 20:00:45 devpinoyLogger Selecting from an element : StatusdropdownQuotesubmit_XPATH value as : 3
-04/08/2020 20:00:45 devpinoyLogger Clicking on an Element : SubmitbtnQuotesubmission_XPATH
-04/08/2020 20:00:52 devpinoyLogger Clicking on an Element : MyQuotesMenu_XPATH
-04/08/2020 20:00:54 devpinoyLogger Clicking on an Element : Requotebutton_XPATH
-04/08/2020 20:00:58 devpinoyLogger Selecting from an element : SubmitbuttonRequote_XPATH
-04/08/2020 20:01:11 devpinoyLogger Typing in an Element : ShippingZipCode_XPATH entered value as : 12345
-04/08/2020 20:01:11 devpinoyLogger Typing in an Element : ShippingAttachment_XPATH entered value as : C:\Users\AC38373\Desktop\File_123.pdf
-04/08/2020 20:01:11 devpinoyLogger Typing in an Element : ShippingComments_XPATH entered value as : AutomationTesting
-04/08/2020 20:01:11 devpinoyLogger Clicking on an Element : Submitbtn_XPATH
-04/08/2020 20:01:34 devpinoyLogger Clicking on an Element : QuoteRequestsubmittedpopupClosebtn_XPATH
-04/08/2020 20:01:37 devpinoyLogger Clicking on an Element : ClickAdminDropDown_XPATH
-04/08/2020 20:01:37 devpinoyLogger Clicking on an Element : ClickManageQuotes_XPATH
-04/08/2020 20:01:40 devpinoyLogger Clicking on an Element : Q00010QUOTEID_XPATH
-04/08/2020 20:01:41 devpinoyLogger Clicking on an Element : StatusdropdownQuotesubmit_XPATH
-04/08/2020 20:01:41 devpinoyLogger Selecting from an element : StatusdropdownQuotesubmit_XPATH
-04/08/2020 20:01:41 devpinoyLogger Selecting from an element : StatusdropdownQuotesubmit_XPATH value as : 3
-04/08/2020 20:01:41 devpinoyLogger Clicking on an Element : SubmitbtnQuotesubmission_XPATH
-04/08/2020 20:01:48 devpinoyLogger Clicking on an Element : MyQuotesMenu_XPATH
-04/08/2020 20:01:50 devpinoyLogger Clicking on an Element : Requotebutton_XPATH
-04/08/2020 20:01:54 devpinoyLogger Selecting from an element : AddToCartRequote_XPATH
-04/08/2020 20:01:56 devpinoyLogger Clicking on an Element : ContiuneSHoppingButton_XPATH
-04/08/2020 20:01:57 devpinoyLogger Clicking on an Element : ProductPoleRestoration_XPATH
-04/08/2020 20:01:57 devpinoyLogger Clicking on an Element : ProductPoleRestorationCTruss_XPATH
-04/08/2020 20:01:58 devpinoyLogger Selecting from an element : ProductSizeDropdown_XPATH value as : 2
-04/08/2020 20:01:58 devpinoyLogger Clicking on an Element : ProductSizeEnterQuantity_XPATH
-04/08/2020 20:01:58 devpinoyLogger clearing on an Element : ProductSizeEnterQuantity_XPATH
-04/08/2020 20:01:58 devpinoyLogger Typing in an Element : ProductSizeEnterQuantity_XPATH entered value as : 8
-04/08/2020 20:01:58 devpinoyLogger Clicking on an Element : ProductAddButton_XPATH
-04/08/2020 20:01:58 devpinoyLogger Clicking on an Element : ProductViewCartButton_XPATH
-04/08/2020 20:01:59 devpinoyLogger Selecting from an element : SubmitbuttonRequote_XPATH
-04/08/2020 20:02:01 devpinoyLogger Clicking on an Element : SubmitQuoteRequestbtn_XPATH
-04/08/2020 20:02:01 devpinoyLogger Typing in an Element : ShippingZipCode_XPATH entered value as : 12345
-04/08/2020 20:02:01 devpinoyLogger Typing in an Element : ShippingAttachment_XPATH entered value as : C:\Users\AC38373\Desktop\File_123.pdf
-04/08/2020 20:02:01 devpinoyLogger Typing in an Element : ShippingComments_XPATH entered value as : AutomationTesting
-04/08/2020 20:02:01 devpinoyLogger Clicking on an Element : Submitbtn_XPATH
-04/08/2020 20:02:24 devpinoyLogger Clicking on an Element : QuoteRequestsubmittedpopupClosebtn_XPATH
-04/08/2020 20:02:27 devpinoyLogger Clicking on an Element : ProductPoleRestoration_XPATH
-04/08/2020 20:02:28 devpinoyLogger Clicking on an Element : ProductPoleRestoration_XPATH
-04/08/2020 20:02:28 devpinoyLogger Clicking on an Element : ProductPoleRestorationDummy3_XPATH
-04/08/2020 20:02:29 devpinoyLogger Selecting from an element : ProductSizeDropdown_XPATH value as : 1
-04/08/2020 20:02:29 devpinoyLogger Clicking on an Element : ProductSizeEnterQuantity_XPATH
-04/08/2020 20:02:29 devpinoyLogger clearing on an Element : ProductSizeEnterQuantity_XPATH
-04/08/2020 20:02:29 devpinoyLogger Typing in an Element : ProductSizeEnterQuantity_XPATH entered value as : 8
-04/08/2020 20:02:29 devpinoyLogger Clicking on an Element : ProductAddButton_XPATH
-04/08/2020 20:02:30 devpinoyLogger Clicking on an Element : ProductViewCartButton_XPATH
-04/08/2020 20:02:30 devpinoyLogger Clicking on an Element : SubmitQuoteRequestbtn_XPATH
-04/08/2020 20:02:30 devpinoyLogger Clicking on an Element : Submitbtn_XPATH
-04/08/2020 20:02:31 devpinoyLogger Clicking on an Element : QuoteRequestsubmittedpopupClosebtn_XPATH
-04/08/2020 20:02:41 devpinoyLogger Clicking on an Element : HomePage_XPATH
-04/08/2020 20:02:41 devpinoyLogger Clicking on an Element : ContactUsMainMenudd_XPATH
-04/08/2020 20:02:41 devpinoyLogger Text of the locator: ContactUsMenu_XPATH value as :Contact Us
-04/08/2020 20:02:41 devpinoyLogger Text of the locator: ViewContactsMenu_XPATH value as :View Contacts
-04/08/2020 20:02:42 devpinoyLogger Clicking on an Element : ViewContactsMenu_XPATH
-04/08/2020 20:02:43 devpinoyLogger Text of the locator: ProductsContactstxt_XPATH value as :Products Contacts
-04/08/2020 20:02:43 devpinoyLogger Text of the locator: ContactCardName_XPATH value as :Simth, John (Simth)
-04/08/2020 20:02:43 devpinoyLogger Text of the locator: ContactCardDesignation_XPATH value as :Project Manager
-04/08/2020 20:02:43 devpinoyLogger Text of the locator: ContactCardDivision_XPATH value as :Sales
-04/08/2020 20:02:43 devpinoyLogger Text of the locator: ContactCardEmail_XPATH value as :john.simth@osmose.com
-04/08/2020 20:02:44 devpinoyLogger Text of the locator: ContactCardMobile_XPATH value as :1 (555) 444-3321
-04/08/2020 20:02:44 devpinoyLogger Text of the locator: ContactCardFax_XPATH value as :1 (555) 444-3321
-04/08/2020 20:02:44 devpinoyLogger Clicking on an Element : ContactUsMainMenudd_XPATH
-04/08/2020 20:02:44 devpinoyLogger Clicking on an Element : ContactUsMenu_XPATH
-04/08/2020 20:02:44 devpinoyLogger Text of the locator: ContactUsHeaderTxt_XPATH value as :Contact Us
-04/08/2020 20:02:44 devpinoyLogger Text of the locator: ContactUsOsmoseUtilitiesTxt_XPATH value as :Osmose Utilities Services, Inc.
-04/08/2020 20:02:45 devpinoyLogger Clicking on an Element : ContactUsBackBtn_XPATH
-04/08/2020 20:02:45 devpinoyLogger Clicking on an Element : ContactUsMainMenudd_XPATH
-04/08/2020 20:02:46 devpinoyLogger Clicking on an Element : ContactUsMenu_XPATH
-04/08/2020 20:02:46 devpinoyLogger Clicking on an Element : ContactUsOurLocationsAtlanta_XPATH
-04/08/2020 20:02:51 devpinoyLogger Text of the locator: ViewOnGoogleMapTxt_XPATH value as :View on Google Map
-04/08/2020 20:02:56 devpinoyLogger Clicking on an Element : ViewOnGoogleMapCloseBtn_XPATH
-04/08/2020 20:02:56 devpinoyLogger Clicking on an Element : ContactUsOurLocationsBuffalo_XPATH
-04/08/2020 20:03:01 devpinoyLogger Text of the locator: ViewOnGoogleMapTxt_XPATH value as :View on Google Map
-04/08/2020 20:03:06 devpinoyLogger Clicking on an Element : ViewOnGoogleMapCloseBtn_XPATH
-04/08/2020 20:03:06 devpinoyLogger Clicking on an Element : ContactUsOurLocationsSyracuse_XPATH
-04/08/2020 20:03:11 devpinoyLogger Text of the locator: ViewOnGoogleMapTxt_XPATH value as :View on Google Map
-04/08/2020 20:03:16 devpinoyLogger Clicking on an Element : ViewOnGoogleMapCloseBtn_XPATH
-04/08/2020 20:03:17 devpinoyLogger Text of the locator: ContactUsGeneralInquiriesTxt_XPATH value as :General Inquiries
-04/08/2020 20:03:17 devpinoyLogger Text of the locator: ContactUsGeneralInquiriesPhone_XPATH value as :770.632.6700
-04/08/2020 20:03:17 devpinoyLogger Text of the locator: ContactUsSalesProductsTxt_XPATH value as :Sales - Products
-04/08/2020 20:03:17 devpinoyLogger Text of the locator: ContactUsSalesProductsPhone_XPATH value as :770.632.6700 Option 3
-04/08/2020 20:03:17 devpinoyLogger Text of the locator: ContactUsSalesProductsEmail_XPATH value as :products@osmose.com
-04/08/2020 20:03:18 devpinoyLogger Text of the locator: ContactUsSalesServicesTxt_XPATH value as :Sales - Services
-04/08/2020 20:03:18 devpinoyLogger Text of the locator: ContactUsSalesServicesPhone_XPATH value as :770.632.6700
-04/08/2020 20:03:18 devpinoyLogger Text of the locator: ContactUsSalesServicesToTxt_XPATH value as :to find an Osmose representative in your area
-04/08/2020 20:03:18 devpinoyLogger Text of the locator: ContactUsOcalcProTxt_XPATH value as :O-Calc Pro
-04/08/2020 20:03:18 devpinoyLogger Text of the locator: ContactUsOcalcProPhone_XPATH value as :770.632.6700
-04/08/2020 20:03:18 devpinoyLogger Text of the locator: ContactUsOcalcProEmail_XPATH value as :technicalsupport@osmose.com
-04/08/2020 20:03:19 devpinoyLogger Text of the locator: ContactUsFormTxt_XPATH value as :For more queries, please complete the form below and someone will be in touch with you as quickly as possible.
-04/08/2020 20:03:19 devpinoyLogger Selecting from an element : ContactUsFormEmailRadio_XPATH
-04/08/2020 20:03:19 devpinoyLogger Selecting from an element : ContactUsFormSubjectdd_XPATH value as : 1
-04/08/2020 20:03:20 devpinoyLogger Typing in an Element : ContactUsFormMessageTxtarea_XPATH entered value as : Submitting the form with Subject 'Request For Information'
-04/08/2020 20:03:20 devpinoyLogger Clicking on an Element : ContactUsFormSubmitBtn_XPATH
-04/08/2020 20:03:25 devpinoyLogger Clicking on an Element : FormSubmissionThankYouPopUpCloseBtn_XPATH
-04/08/2020 20:03:25 devpinoyLogger Selecting from an element : ContactUsFormEmailRadio_XPATH
-04/08/2020 20:03:25 devpinoyLogger Selecting from an element : ContactUsFormSubjectdd_XPATH value as : 1
-04/08/2020 20:03:26 devpinoyLogger Typing in an Element : ContactUsFormMessageTxtarea_XPATH entered value as : Submitting the form with Subject 'Request For Information'
-04/08/2020 20:03:26 devpinoyLogger Clicking on an Element : ContactUsFormSubmitBtn_XPATH
-04/08/2020 20:03:30 devpinoyLogger Text of the locator: FormSubmissionThankYouPopUptxt_XPATH value as :Thank You
-04/08/2020 20:03:34 devpinoyLogger Text of the locator: FormSubmissionThankYouPopUpInfotxt_XPATH value as :Your contact request was sent successfully
-04/08/2020 20:03:37 devpinoyLogger Clicking on an Element : FormSubmissionThankYouPopUpCloseBtn_XPATH
-04/08/2020 20:03:37 devpinoyLogger Selecting from an element : ContactUsFormEmailRadio_XPATH
-04/08/2020 20:03:38 devpinoyLogger Selecting from an element : ContactUsFormSubjectdd_XPATH value as : 2
-04/08/2020 20:03:38 devpinoyLogger Typing in an Element : ContactUsFormMessageTxtarea_XPATH entered value as : Submitting the form with Subject 'Project Support'
-04/08/2020 20:03:38 devpinoyLogger Clicking on an Element : ContactUsFormSubmitBtn_XPATH
-04/08/2020 20:03:39 devpinoyLogger Clicking on an Element : FormSubmissionThankYouPopUpCloseBtn_XPATH
-04/08/2020 20:03:39 devpinoyLogger Selecting from an element : ContactUsFormPhoneRadio_XPATH
-04/08/2020 20:03:39 devpinoyLogger Selecting from an element : ContactUsFormSubjectdd_XPATH value as : 3
-04/08/2020 20:03:40 devpinoyLogger Typing in an Element : ContactUsFormMessageTxtarea_XPATH entered value as : Submitting the form with Subject 'Technical Support'
-04/08/2020 20:03:40 devpinoyLogger Clicking on an Element : ContactUsFormSubmitBtn_XPATH
-04/08/2020 20:03:41 devpinoyLogger Clicking on an Element : FormSubmissionThankYouPopUpCloseBtn_XPATH
-04/08/2020 20:03:41 devpinoyLogger Selecting from an element : ContactUsFormPhoneRadio_XPATH
-04/08/2020 20:03:41 devpinoyLogger Selecting from an element : ContactUsFormSubjectdd_XPATH value as : 3
-04/08/2020 20:03:42 devpinoyLogger Typing in an Element : ContactUsFormMessageTxtarea_XPATH entered value as : Submitting the form with Subject 'Technical Support'
-04/08/2020 20:03:42 devpinoyLogger Clicking on an Element : ContactUsFormSubmitBtn_XPATH
-04/08/2020 20:03:43 devpinoyLogger Clicking on an Element : FormSubmissionThankYouPopUpCloseBtn_XPATH
+07/08/2020 12:24:36 devpinoyLogger Config file loaded !!!
+07/08/2020 12:24:36 devpinoyLogger OR file loaded !!!
+07/08/2020 12:24:40 devpinoyLogger Navigated to : https://osmose360cl.azurewebsites.net/
+07/08/2020 12:24:55 devpinoyLogger Typing in an Element : email_XPATH entered value as : rajesh.yadav@centurylink.com
+07/08/2020 12:24:55 devpinoyLogger Typing in an Element : password_XPATH entered value as : Hyde@2317
+07/08/2020 12:24:55 devpinoyLogger Clicking on an Element : submit_XPATH
+07/08/2020 12:25:03 devpinoyLogger Text of the locator: verify_ID value as :Rajesh Yadav
+07/08/2020 12:25:08 devpinoyLogger Text of the locator: OUCard_XPATH value as :Osmose University
+07/08/2020 12:25:08 devpinoyLogger Text of the locator: KBCard_XPATH value as :Knowledge Base
+07/08/2020 12:25:09 devpinoyLogger Text of the locator: ProCard_XPATH value as :Products
+07/08/2020 12:25:10 devpinoyLogger Text of the locator: ContactUsMainMenudd_XPATH value as :CONTACT US
+07/08/2020 12:25:11 devpinoyLogger Text of the locator: OUCartliveeventlink_XPATH value as :LIVE EVENTS
+07/08/2020 12:25:11 devpinoyLogger Text of the locator: OUCartWebinarLink_XPATH value as :WEBINARS
+07/08/2020 12:25:11 devpinoyLogger Text of the locator: OUCartOcalcLink_XPATH value as :O-CALC TRAINING
+07/08/2020 12:25:12 devpinoyLogger Text of the locator: OUCartVideo1_CSS value as :Wood Technical Seminar
+07/08/2020 12:25:12 devpinoyLogger Text of the locator: OUCarrVideo2_CSS value as :Steel Technical Seminar
+07/08/2020 12:25:25 devpinoyLogger Clicking on an Element : OsmoseUniverityNav_XPATH
+07/08/2020 12:25:25 devpinoyLogger Text of the locator: OsmoseUniversityTxt_XPATH value as :Osmose University
+07/08/2020 12:25:25 devpinoyLogger Clicking on an Element : HomePage_XPATH
+07/08/2020 12:25:39 devpinoyLogger Clicking on an Element : OUCartliveeventlink_XPATH
+07/08/2020 12:25:39 devpinoyLogger Text of the locator: LiveEvent_XPATH value as :LIVE EVENTS
+07/08/2020 12:25:52 devpinoyLogger Clicking on an Element : OUCartWebinarLink_XPATH
+07/08/2020 12:25:52 devpinoyLogger Text of the locator: WEBINAR_XPATH value as :WEBINARS
+07/08/2020 12:26:05 devpinoyLogger Clicking on an Element : OUCartOcalcLink_XPATH
+07/08/2020 12:26:05 devpinoyLogger Text of the locator: O-CALCTRAINING_XPATH value as :O-CALC TRAINING
+07/08/2020 12:26:18 devpinoyLogger Clicking on an Element : OUCard_XPATH
+07/08/2020 12:26:18 devpinoyLogger Text of the locator: LiveEvent_XPATH value as :LIVE EVENTS
+07/08/2020 12:26:32 devpinoyLogger Clicking on an Element : LiveEvent_XPATH
+07/08/2020 12:26:33 devpinoyLogger Text of the locator: SteelTechnicalSeminar_XPATH value as :Steel Technical Seminar
+07/08/2020 12:26:46 devpinoyLogger Clicking on an Element : LiveEvent_XPATH
+07/08/2020 12:26:47 devpinoyLogger Text of the locator: JointUseSeminar_XPATH value as :Joint Use Seminar
+07/08/2020 12:27:00 devpinoyLogger Clicking on an Element : LiveEvent_XPATH
+07/08/2020 12:27:01 devpinoyLogger Text of the locator: WoodPoleTechnicalSeminar_XPATH value as :Wood Pole Technical Seminar
+07/08/2020 12:27:14 devpinoyLogger Clicking on an Element : DETAILSANDREGISTRATION_XPATH
+07/08/2020 12:27:15 devpinoyLogger Text of the locator: FIRSTNAME_XPATH value as :Rajesh
+07/08/2020 12:27:15 devpinoyLogger Text of the locator: LASTNAME_XPATH value as :Yadav
+07/08/2020 12:27:15 devpinoyLogger Text of the locator: COMPANY_XPATH value as :Centurylink
+07/08/2020 12:27:15 devpinoyLogger Text of the locator: STATE_XPATH value as :Nevada
+07/08/2020 12:27:15 devpinoyLogger Text of the locator: TITLE_XPATH value as :Technical Lead
+07/08/2020 12:27:15 devpinoyLogger Text of the locator: EMAIL_XPATH value as :rajesh.yadav@centurylink.com
+07/08/2020 12:27:16 devpinoyLogger Text of the locator: PHONE_XPATH value as :9971236668
+07/08/2020 12:27:28 devpinoyLogger Selecting from an element : WEBINAR_XPATH
+07/08/2020 12:27:29 devpinoyLogger Text of the locator: WEBINAR_XPATH value as :WEBINARS
+07/08/2020 12:27:41 devpinoyLogger Clicking on an Element : O-CALCTRAINING_XPATH
+07/08/2020 12:27:43 devpinoyLogger Text of the locator: PrivateTraining_XPATH value as :Private Training Seminars
+07/08/2020 12:27:44 devpinoyLogger Selecting from an element : HomePage_XPATH
+07/08/2020 12:27:46 devpinoyLogger Clicking on an Element : ProCard_XPATH
+07/08/2020 12:27:48 devpinoyLogger Text of the locator: POrdering_XPATH value as :Pole and Line Products
+07/08/2020 12:28:40 devpinoyLogger Text of the locator: CatalogItem_XPATH value as :Category Filter
+07/08/2020 12:28:40 devpinoyLogger Text of the locator: OpenMyQuotes_XPATH value as :MY QUOTES
+07/08/2020 12:28:42 devpinoyLogger Text of the locator: ViewDetail_XPATH value as :VIEW DETAILS
+07/08/2020 12:28:43 devpinoyLogger Text of the locator: MITCFUME_XPATH value as :MITC-FUME®
+07/08/2020 12:28:44 devpinoyLogger Clicking on an Element : ProductSlider_XPATH
+07/08/2020 12:28:44 devpinoyLogger Text of the locator: PoleTopper®_XPATH value as :MITC-FUME®
+07/08/2020 12:29:36 devpinoyLogger Clicking on an Element : HomePage_XPATH
+07/08/2020 12:29:37 devpinoyLogger Clicking on an Element : HeadingProducts_XPATH
+07/08/2020 12:30:27 devpinoyLogger Clicking on an Element : CloseButton_XPATH
+07/08/2020 12:30:30 devpinoyLogger Clicking on an Element : ViewDetail_LINKTEXT
+07/08/2020 12:30:36 devpinoyLogger Clicking on an Element : CloseButton_XPATH
+07/08/2020 12:30:37 devpinoyLogger Clicking on an Element : Productsimageclick_XPATH
+07/08/2020 12:30:40 devpinoyLogger Clicking on an Element : CloseButton_XPATH
+07/08/2020 12:30:40 devpinoyLogger Text of the locator: FeaturedProducts_XPATH value as :Featured Products
+07/08/2020 12:30:41 devpinoyLogger Clicking on an Element : Productsimageclick2_XPATH
+07/08/2020 12:30:44 devpinoyLogger Clicking on an Element : CloseButton_XPATH
+07/08/2020 12:30:44 devpinoyLogger Text of the locator: FeaturedProducts_XPATH value as :Featured Products
+07/08/2020 12:30:44 devpinoyLogger Clicking on an Element : Productsimageclick3_XPATH
+07/08/2020 12:30:47 devpinoyLogger Clicking on an Element : CloseButton_XPATH
+07/08/2020 12:30:47 devpinoyLogger Text of the locator: FeaturedProducts_XPATH value as :Featured Products
+07/08/2020 12:30:48 devpinoyLogger Clicking on an Element : Productsimageclick4_XPATH
+07/08/2020 12:30:51 devpinoyLogger Clicking on an Element : CloseButton_XPATH
+07/08/2020 12:30:51 devpinoyLogger Text of the locator: FeaturedProducts_XPATH value as :Featured Products
+07/08/2020 12:30:53 devpinoyLogger Clicking on an Element : ProCard_XPATH
+07/08/2020 12:30:57 devpinoyLogger Selecting from an element : ProductPoleRestoration_XPATH
+07/08/2020 12:31:01 devpinoyLogger Clicking on an Element : 1stViewDetails_XPATH
+07/08/2020 12:31:05 devpinoyLogger Selecting from an element : ProductSizeDropdown_XPATH value as : 1
+07/08/2020 12:31:05 devpinoyLogger Clicking on an Element : ProductSizeEnterQuantity_XPATH
+07/08/2020 12:31:06 devpinoyLogger clearing on an Element : ProductSizeEnterQuantity_XPATH
+07/08/2020 12:31:06 devpinoyLogger Typing in an Element : ProductSizeEnterQuantity_XPATH entered value as : 8
+07/08/2020 12:31:06 devpinoyLogger Clicking on an Element : ProductAddButton_XPATH
+07/08/2020 12:31:10 devpinoyLogger Text of the locator: FeaturedProductsCellNumber_XPATH value as :(770) 632-6700 Option 3
+07/08/2020 12:31:10 devpinoyLogger Clicking on an Element : CloseButton_XPATH
+07/08/2020 12:31:12 devpinoyLogger Clicking on an Element : ProCard_XPATH
+07/08/2020 12:31:12 devpinoyLogger Clicking on an Element : ProductPoleRestoration_XPATH
+07/08/2020 12:31:13 devpinoyLogger Clicking on an Element : ProductPoleRestorationCTruss_XPATH
+07/08/2020 12:31:14 devpinoyLogger Selecting from an element : ProductSizeDropdown_XPATH value as : 1
+07/08/2020 12:31:14 devpinoyLogger Clicking on an Element : ProductSizeEnterQuantity_XPATH
+07/08/2020 12:31:14 devpinoyLogger clearing on an Element : ProductSizeEnterQuantity_XPATH
+07/08/2020 12:31:15 devpinoyLogger Typing in an Element : ProductSizeEnterQuantity_XPATH entered value as : 8
+07/08/2020 12:31:15 devpinoyLogger Clicking on an Element : ProductAddButton_XPATH
+07/08/2020 12:31:16 devpinoyLogger Clicking on an Element : LinkProductDetail_XPATH
+07/08/2020 12:31:16 devpinoyLogger Text of the locator: FeaturedProductsCellNumber_XPATH value as :(770) 632-6700 Option 3
+07/08/2020 12:31:17 devpinoyLogger Clicking on an Element : CloseButton_XPATH
+07/08/2020 12:31:18 devpinoyLogger Clicking on an Element : ProCard_XPATH
+07/08/2020 12:31:19 devpinoyLogger Clicking on an Element : ProductPoleRestoration_XPATH
+07/08/2020 12:31:20 devpinoyLogger Clicking on an Element : ProductPoleRestorationDummy3_XPATH
+07/08/2020 12:31:23 devpinoyLogger Selecting from an element : ProductSizeDropdown_XPATH value as : 1
+07/08/2020 12:31:23 devpinoyLogger Clicking on an Element : ProductSizeEnterQuantity_XPATH
+07/08/2020 12:31:23 devpinoyLogger clearing on an Element : ProductSizeEnterQuantity_XPATH
+07/08/2020 12:31:24 devpinoyLogger Typing in an Element : ProductSizeEnterQuantity_XPATH entered value as : 8
+07/08/2020 12:31:24 devpinoyLogger Clicking on an Element : ProductAddButton_XPATH
+07/08/2020 12:31:24 devpinoyLogger Clicking on an Element : LinkProductDetail_XPATH
+07/08/2020 12:31:24 devpinoyLogger Text of the locator: FeaturedProductsCellNumber1_XPATH value as :(770) 632-6700 Option 3
+07/08/2020 12:31:24 devpinoyLogger Clicking on an Element : CloseButton_XPATH
+07/08/2020 12:31:38 devpinoyLogger Selecting from an element : PSearch_XPATH
+07/08/2020 12:31:38 devpinoyLogger Typing in an Element : PSearch_XPATH entered value as : Pole
+07/08/2020 12:31:38 devpinoyLogger Clicking on an Element : ProductPoleRestorationCTruss_XPATH
+07/08/2020 12:31:39 devpinoyLogger Selecting from an element : ProductSizeDropdown_XPATH value as : 1
+07/08/2020 12:31:40 devpinoyLogger Clicking on an Element : ProductSizeEnterQuantity_XPATH
+07/08/2020 12:31:40 devpinoyLogger clearing on an Element : ProductSizeEnterQuantity_XPATH
+07/08/2020 12:31:40 devpinoyLogger Typing in an Element : ProductSizeEnterQuantity_XPATH entered value as : 8
+07/08/2020 12:31:40 devpinoyLogger Clicking on an Element : ProductAddButton_XPATH
+07/08/2020 12:31:40 devpinoyLogger Clicking on an Element : CloseButton_XPATH
+07/08/2020 12:31:53 devpinoyLogger Selecting from an element : PSearch_XPATH
+07/08/2020 12:31:53 devpinoyLogger Typing in an Element : PSearch_XPATH entered value as : Pole Restoration
+07/08/2020 12:32:06 devpinoyLogger Selecting from an element : PSearch_XPATH
+07/08/2020 12:32:06 devpinoyLogger Typing in an Element : PSearch_XPATH entered value as : H
+07/08/2020 12:32:30 devpinoyLogger Selecting from an element : PSearch_XPATH
+07/08/2020 12:32:31 devpinoyLogger Typing in an Element : PSearch_XPATH entered value as : Pole
+07/08/2020 12:32:31 devpinoyLogger Clicking on an Element : SearchCrossIcon_XPATH
+07/08/2020 12:32:43 devpinoyLogger Selecting from an element : PSearch_XPATH
+07/08/2020 12:32:43 devpinoyLogger Typing in an Element : PSearch_XPATH entered value as :                
+07/08/2020 12:32:46 devpinoyLogger Selecting from an element : CategoryFilter_ID
+07/08/2020 12:32:46 devpinoyLogger Clicking on an Element : ProductPoleRestoration_XPATH
+07/08/2020 12:32:47 devpinoyLogger Clicking on an Element : ProductPoleRestorationCTruss_XPATH
+07/08/2020 12:32:48 devpinoyLogger Selecting from an element : ProductSizeDropdown_XPATH value as : 1
+07/08/2020 12:32:48 devpinoyLogger Clicking on an Element : ProductSizeEnterQuantity_XPATH
+07/08/2020 12:32:48 devpinoyLogger clearing on an Element : ProductSizeEnterQuantity_XPATH
+07/08/2020 12:32:49 devpinoyLogger Typing in an Element : ProductSizeEnterQuantity_XPATH entered value as : 8
+07/08/2020 12:32:49 devpinoyLogger Clicking on an Element : ProductAddButton_XPATH
+07/08/2020 12:32:49 devpinoyLogger Clicking on an Element : ProductViewCartButton_XPATH
+07/08/2020 12:32:49 devpinoyLogger Clicking on an Element : SubmitQuoteRequest_XPATH
+07/08/2020 12:32:49 devpinoyLogger Clicking on an Element : ReturnPolicy_XPATH
+07/08/2020 12:32:50 devpinoyLogger Clicking on an Element : CloseicononReturnPolicy_XPATH
+07/08/2020 12:32:51 devpinoyLogger Clicking on an Element : ReturnPolicy_XPATH
+07/08/2020 12:32:55 devpinoyLogger Text of the locator: ReturnProceduretext_XPATH value as :Return Procedure
+07/08/2020 12:32:55 devpinoyLogger Clicking on an Element : CrossiconReturnPilicy_XPATH
+07/08/2020 12:32:56 devpinoyLogger Clicking on an Element : QuoteRequestCrossicon_XPATH
+07/08/2020 12:32:56 devpinoyLogger Clicking on an Element : ProductPoleRestoration_XPATH
+07/08/2020 12:32:57 devpinoyLogger Clicking on an Element : ProductPoleRestoration_XPATH
+07/08/2020 12:32:58 devpinoyLogger Clicking on an Element : ProductPoleRestorationCTruss_XPATH
+07/08/2020 12:32:59 devpinoyLogger Selecting from an element : ProductSizeDropdown_XPATH value as : 2
+07/08/2020 12:32:59 devpinoyLogger Clicking on an Element : ProductSizeEnterQuantity_XPATH
+07/08/2020 12:32:59 devpinoyLogger clearing on an Element : ProductSizeEnterQuantity_XPATH
+07/08/2020 12:32:59 devpinoyLogger Typing in an Element : ProductSizeEnterQuantity_XPATH entered value as : 8
+07/08/2020 12:32:59 devpinoyLogger Clicking on an Element : ProductAddButton_XPATH
+07/08/2020 12:32:59 devpinoyLogger Clicking on an Element : ProductViewCartButton_XPATH
+07/08/2020 12:33:14 devpinoyLogger Clicking on an Element : QuoteRequestCrossicon_XPATH
+07/08/2020 12:33:15 devpinoyLogger Clicking on an Element : ProductPoleRestoration_XPATH
+07/08/2020 12:33:16 devpinoyLogger Clicking on an Element : ProductPoleRestoration_XPATH
+07/08/2020 12:33:16 devpinoyLogger Clicking on an Element : ProductPoleRestorationCTruss_XPATH
+07/08/2020 12:33:17 devpinoyLogger Selecting from an element : ProductSizeDropdown_XPATH value as : 2
+07/08/2020 12:33:17 devpinoyLogger Clicking on an Element : ProductSizeEnterQuantity_XPATH
+07/08/2020 12:33:17 devpinoyLogger clearing on an Element : ProductSizeEnterQuantity_XPATH
+07/08/2020 12:33:17 devpinoyLogger Typing in an Element : ProductSizeEnterQuantity_XPATH entered value as : 8
+07/08/2020 12:33:18 devpinoyLogger Clicking on an Element : ProductAddButton_XPATH
+07/08/2020 12:33:18 devpinoyLogger Clicking on an Element : ProductViewCartButton_XPATH
+07/08/2020 12:33:20 devpinoyLogger Text of the locator: ProductsQuoterequest_XPATH value as :Quote Request
+07/08/2020 12:33:22 devpinoyLogger Clicking on an Element : QuoteRequestCrossicon_XPATH
+07/08/2020 12:33:23 devpinoyLogger Clicking on an Element : ProductPoleRestoration_XPATH
+07/08/2020 12:33:24 devpinoyLogger Clicking on an Element : ProductPoleRestoration_XPATH
+07/08/2020 12:33:24 devpinoyLogger Clicking on an Element : ProductPoleRestorationCTruss_XPATH
+07/08/2020 12:33:25 devpinoyLogger Selecting from an element : ProductSizeDropdown_XPATH value as : 1
+07/08/2020 12:33:25 devpinoyLogger Clicking on an Element : ProductSizeEnterQuantity_XPATH
+07/08/2020 12:33:25 devpinoyLogger clearing on an Element : ProductSizeEnterQuantity_XPATH
+07/08/2020 12:33:25 devpinoyLogger Typing in an Element : ProductSizeEnterQuantity_XPATH entered value as : 8
+07/08/2020 12:33:25 devpinoyLogger Clicking on an Element : ProductAddButton_XPATH
+07/08/2020 12:33:25 devpinoyLogger Clicking on an Element : ProductViewCartButton_XPATH
+07/08/2020 12:33:26 devpinoyLogger Clicking on an Element : ContiuneSHoppingButton_XPATH
+07/08/2020 12:33:27 devpinoyLogger Clicking on an Element : ProductPoleRestoration1Dummy3_XPATH
+07/08/2020 12:33:27 devpinoyLogger Selecting from an element : ProductSizeDropdown_XPATH value as : 1
+07/08/2020 12:33:28 devpinoyLogger Clicking on an Element : ProductSizeEnterQuantity_XPATH
+07/08/2020 12:33:28 devpinoyLogger clearing on an Element : ProductSizeEnterQuantity_XPATH
+07/08/2020 12:33:28 devpinoyLogger Typing in an Element : ProductSizeEnterQuantity_XPATH entered value as : 8
+07/08/2020 12:33:28 devpinoyLogger Clicking on an Element : ProductAddButton_XPATH
+07/08/2020 12:33:28 devpinoyLogger Clicking on an Element : ProductViewCartButton_XPATH
+07/08/2020 12:33:31 devpinoyLogger Clicking on an Element : QuoteRequestCrossicon_XPATH
+07/08/2020 12:33:34 devpinoyLogger Clicking on an Element : ProductPoleRestorationDummy3_XPATH
+07/08/2020 12:33:34 devpinoyLogger Selecting from an element : ProductSizeDropdown_XPATH value as : 1
+07/08/2020 12:33:34 devpinoyLogger Clicking on an Element : ProductSizeEnterQuantity_XPATH
+07/08/2020 12:33:35 devpinoyLogger clearing on an Element : ProductSizeEnterQuantity_XPATH
+07/08/2020 12:33:35 devpinoyLogger Typing in an Element : ProductSizeEnterQuantity_XPATH entered value as : 8
+07/08/2020 12:33:35 devpinoyLogger Clicking on an Element : ProductAddButton_XPATH
+07/08/2020 12:33:35 devpinoyLogger Clicking on an Element : ProductViewCartButton_XPATH
+07/08/2020 12:33:35 devpinoyLogger Clicking on an Element : ContiuneSHoppingButton_XPATH
+07/08/2020 12:33:36 devpinoyLogger Clicking on an Element : ProductPoleRestorationDummy3_XPATH
+07/08/2020 12:33:37 devpinoyLogger Selecting from an element : ProductSizeDropdown_XPATH value as : 1
+07/08/2020 12:33:37 devpinoyLogger Clicking on an Element : ProductSizeEnterQuantity_XPATH
+07/08/2020 12:33:37 devpinoyLogger clearing on an Element : ProductSizeEnterQuantity_XPATH
+07/08/2020 12:33:37 devpinoyLogger Typing in an Element : ProductSizeEnterQuantity_XPATH entered value as : 8
+07/08/2020 12:33:37 devpinoyLogger Clicking on an Element : ProductAddButton_XPATH
+07/08/2020 12:33:37 devpinoyLogger Clicking on an Element : ProductViewCartButton_XPATH
+07/08/2020 12:33:42 devpinoyLogger Clicking on an Element : QuoteRequestCrossicon_XPATH
+07/08/2020 12:33:42 devpinoyLogger Clicking on an Element : ProductPoleRestoration_XPATH
+07/08/2020 12:33:43 devpinoyLogger Clicking on an Element : ProductPoleRestoration_XPATH
+07/08/2020 12:33:44 devpinoyLogger Clicking on an Element : ProductPoleRestorationCTruss_XPATH
+07/08/2020 12:33:44 devpinoyLogger Selecting from an element : ProductSizeDropdown_XPATH value as : 1
+07/08/2020 12:33:44 devpinoyLogger Clicking on an Element : ProductSizeEnterQuantity_XPATH
+07/08/2020 12:33:44 devpinoyLogger clearing on an Element : ProductSizeEnterQuantity_XPATH
+07/08/2020 12:33:45 devpinoyLogger Typing in an Element : ProductSizeEnterQuantity_XPATH entered value as : 8
+07/08/2020 12:33:45 devpinoyLogger Clicking on an Element : ProductAddButton_XPATH
+07/08/2020 12:33:45 devpinoyLogger Clicking on an Element : ProductViewCartButton_XPATH
+07/08/2020 12:33:46 devpinoyLogger Clicking on an Element : DeleteShoppingCart_XPATH
+07/08/2020 12:33:47 devpinoyLogger Clicking on an Element : ContiuneSHoppingButton_XPATH
+07/08/2020 12:33:48 devpinoyLogger Clicking on an Element : ProductPoleRestorationCTruss_XPATH
+07/08/2020 12:33:49 devpinoyLogger Selecting from an element : ProductSizeDropdown_XPATH value as : 1
+07/08/2020 12:33:49 devpinoyLogger Clicking on an Element : ProductSizeEnterQuantity_XPATH
+07/08/2020 12:33:49 devpinoyLogger clearing on an Element : ProductSizeEnterQuantity_XPATH
+07/08/2020 12:33:49 devpinoyLogger Typing in an Element : ProductSizeEnterQuantity_XPATH entered value as : 8
+07/08/2020 12:33:49 devpinoyLogger Clicking on an Element : ProductAddButton_XPATH
+07/08/2020 12:33:49 devpinoyLogger Clicking on an Element : ProductViewCartButton_XPATH
+07/08/2020 12:33:55 devpinoyLogger Clicking on an Element : PlusicononShoppingCart_XPATH
+07/08/2020 12:34:00 devpinoyLogger Clicking on an Element : ContiuneSHoppingButton_XPATH
+07/08/2020 12:34:01 devpinoyLogger Clicking on an Element : ProductPoleRestorationCTruss_XPATH
+07/08/2020 12:34:02 devpinoyLogger Selecting from an element : ProductSizeDropdown_XPATH value as : 1
+07/08/2020 12:34:02 devpinoyLogger Clicking on an Element : ProductSizeEnterQuantity_XPATH
+07/08/2020 12:34:02 devpinoyLogger clearing on an Element : ProductSizeEnterQuantity_XPATH
+07/08/2020 12:34:02 devpinoyLogger Typing in an Element : ProductSizeEnterQuantity_XPATH entered value as : 8
+07/08/2020 12:34:02 devpinoyLogger Clicking on an Element : ProductAddButton_XPATH
+07/08/2020 12:34:02 devpinoyLogger Clicking on an Element : ProductViewCartButton_XPATH
+07/08/2020 12:34:09 devpinoyLogger Clicking on an Element : MinusicononShoppingCart_XPATH
+07/08/2020 12:34:28 devpinoyLogger Clicking on an Element : QuoteRequestCrossicon_XPATH
+07/08/2020 12:34:28 devpinoyLogger Clicking on an Element : ProductPoleRestoration_XPATH
+07/08/2020 12:34:29 devpinoyLogger Clicking on an Element : ProductPoleRestoration_XPATH
+07/08/2020 12:34:30 devpinoyLogger Clicking on an Element : ProductPoleRestorationDummy3_XPATH
+07/08/2020 12:34:32 devpinoyLogger Selecting from an element : ProductSizeDropdown_XPATH value as : 1
+07/08/2020 12:34:32 devpinoyLogger Clicking on an Element : ProductSizeEnterQuantity_XPATH
+07/08/2020 12:34:32 devpinoyLogger clearing on an Element : ProductSizeEnterQuantity_XPATH
+07/08/2020 12:34:32 devpinoyLogger Typing in an Element : ProductSizeEnterQuantity_XPATH entered value as : 8
+07/08/2020 12:34:32 devpinoyLogger Clicking on an Element : ProductAddButton_XPATH
+07/08/2020 12:34:32 devpinoyLogger Clicking on an Element : ProductViewCartButton_XPATH
+07/08/2020 12:34:32 devpinoyLogger Clicking on an Element : SubmitQuoteRequestbtn_XPATH
+07/08/2020 12:34:32 devpinoyLogger Clicking on an Element : Submitbtn_XPATH
+07/08/2020 12:34:34 devpinoyLogger Clicking on an Element : QuoteRequestsubmittedpopupClosebtn_XPATH
+07/08/2020 12:34:35 devpinoyLogger Clicking on an Element : ProductPoleRestoration_XPATH
+07/08/2020 12:34:37 devpinoyLogger Clicking on an Element : ProductPoleRestoration_XPATH
+07/08/2020 12:34:37 devpinoyLogger Clicking on an Element : ProductPoleRestorationDummy3_XPATH
+07/08/2020 12:34:38 devpinoyLogger Selecting from an element : ProductSizeDropdown_XPATH value as : 1
+07/08/2020 12:34:38 devpinoyLogger Clicking on an Element : ProductSizeEnterQuantity_XPATH
+07/08/2020 12:34:38 devpinoyLogger clearing on an Element : ProductSizeEnterQuantity_XPATH
+07/08/2020 12:34:38 devpinoyLogger Typing in an Element : ProductSizeEnterQuantity_XPATH entered value as : 8
+07/08/2020 12:34:38 devpinoyLogger Clicking on an Element : ProductAddButton_XPATH
+07/08/2020 12:34:39 devpinoyLogger Clicking on an Element : ProductViewCartButton_XPATH
+07/08/2020 12:34:39 devpinoyLogger Clicking on an Element : SubmitQuoteRequestbtn_XPATH
+07/08/2020 12:34:39 devpinoyLogger Typing in an Element : ShippingComments_XPATH entered value as : AutomationTesting
+07/08/2020 12:34:39 devpinoyLogger Clicking on an Element : Submitbtn_XPATH
+07/08/2020 12:34:40 devpinoyLogger Clicking on an Element : QuoteRequestsubmittedpopupClosebtn_XPATH
+07/08/2020 12:34:41 devpinoyLogger Clicking on an Element : ProductPoleRestoration_XPATH
+07/08/2020 12:34:42 devpinoyLogger Clicking on an Element : ProductPoleRestoration_XPATH
+07/08/2020 12:34:43 devpinoyLogger Clicking on an Element : ProductPoleRestorationDummy3_XPATH
+07/08/2020 12:34:44 devpinoyLogger Selecting from an element : ProductSizeDropdown_XPATH value as : 1
+07/08/2020 12:34:44 devpinoyLogger Clicking on an Element : ProductSizeEnterQuantity_XPATH
+07/08/2020 12:34:44 devpinoyLogger clearing on an Element : ProductSizeEnterQuantity_XPATH
+07/08/2020 12:34:44 devpinoyLogger Typing in an Element : ProductSizeEnterQuantity_XPATH entered value as : 8
+07/08/2020 12:34:44 devpinoyLogger Clicking on an Element : ProductAddButton_XPATH
+07/08/2020 12:34:44 devpinoyLogger Clicking on an Element : ProductViewCartButton_XPATH
+07/08/2020 12:34:44 devpinoyLogger Clicking on an Element : SubmitQuoteRequestbtn_XPATH
+07/08/2020 12:34:44 devpinoyLogger Typing in an Element : ShippingZipCode_XPATH entered value as : 12345
+07/08/2020 12:34:45 devpinoyLogger Clicking on an Element : Submitbtn_XPATH
+07/08/2020 12:34:46 devpinoyLogger Clicking on an Element : QuoteRequestsubmittedpopupClosebtn_XPATH
+07/08/2020 12:34:47 devpinoyLogger Clicking on an Element : ProductPoleRestoration_XPATH
+07/08/2020 12:34:48 devpinoyLogger Clicking on an Element : ProductPoleRestoration_XPATH
+07/08/2020 12:34:49 devpinoyLogger Clicking on an Element : ProductPoleRestorationCTruss_XPATH
+07/08/2020 12:34:50 devpinoyLogger Selecting from an element : ProductSizeDropdown_XPATH value as : 1
+07/08/2020 12:34:50 devpinoyLogger Clicking on an Element : ProductSizeEnterQuantity_XPATH
+07/08/2020 12:34:50 devpinoyLogger clearing on an Element : ProductSizeEnterQuantity_XPATH
+07/08/2020 12:34:50 devpinoyLogger Typing in an Element : ProductSizeEnterQuantity_XPATH entered value as : 8
+07/08/2020 12:34:50 devpinoyLogger Clicking on an Element : ProductAddButton_XPATH
+07/08/2020 12:34:50 devpinoyLogger Clicking on an Element : ProductViewCartButton_XPATH
+07/08/2020 12:34:50 devpinoyLogger Clicking on an Element : SubmitQuoteRequestbtn_XPATH
+07/08/2020 12:34:50 devpinoyLogger Typing in an Element : ShippingAttachment_XPATH entered value as : C:\Users\AC38373\Desktop\File_123.pdf
+07/08/2020 12:34:52 devpinoyLogger Clicking on an Element : FileAttachmentSubmitbtn_XPATH
+07/08/2020 12:34:54 devpinoyLogger Clicking on an Element : QuoteRequestsubmittedpopupClosebtn_XPATH
+07/08/2020 12:34:55 devpinoyLogger Clicking on an Element : ProductPoleRestoration_XPATH
+07/08/2020 12:34:56 devpinoyLogger Clicking on an Element : ProductPoleRestoration_XPATH
+07/08/2020 12:34:57 devpinoyLogger Clicking on an Element : ProductPoleRestorationCTruss_XPATH
+07/08/2020 12:34:58 devpinoyLogger Selecting from an element : ProductSizeDropdown_XPATH value as : 1
+07/08/2020 12:34:58 devpinoyLogger Clicking on an Element : ProductSizeEnterQuantity_XPATH
+07/08/2020 12:34:58 devpinoyLogger clearing on an Element : ProductSizeEnterQuantity_XPATH
+07/08/2020 12:34:58 devpinoyLogger Typing in an Element : ProductSizeEnterQuantity_XPATH entered value as : 8
+07/08/2020 12:34:58 devpinoyLogger Clicking on an Element : ProductAddButton_XPATH
+07/08/2020 12:34:58 devpinoyLogger Clicking on an Element : ProductViewCartButton_XPATH
+07/08/2020 12:34:59 devpinoyLogger Clicking on an Element : QuoteRequestCrossicon_XPATH
+07/08/2020 12:34:59 devpinoyLogger Clicking on an Element : ProductPageCartIcon_XPATH
+07/08/2020 12:35:01 devpinoyLogger Clicking on an Element : ProductPageCartIcon_XPATH
+07/08/2020 12:35:01 devpinoyLogger Clicking on an Element : ProductPoleRestoration_XPATH
+07/08/2020 12:35:02 devpinoyLogger Clicking on an Element : ProductPoleRestoration_XPATH
+07/08/2020 12:35:03 devpinoyLogger Clicking on an Element : ProductPoleRestorationCTruss_XPATH
+07/08/2020 12:35:04 devpinoyLogger Selecting from an element : ProductSizeDropdown_XPATH value as : 1
+07/08/2020 12:35:04 devpinoyLogger Clicking on an Element : ProductSizeEnterQuantity_XPATH
+07/08/2020 12:35:04 devpinoyLogger clearing on an Element : ProductSizeEnterQuantity_XPATH
+07/08/2020 12:35:04 devpinoyLogger Typing in an Element : ProductSizeEnterQuantity_XPATH entered value as : 8
+07/08/2020 12:35:04 devpinoyLogger Clicking on an Element : ProductAddButton_XPATH
+07/08/2020 12:35:04 devpinoyLogger Clicking on an Element : ProductViewCartButton_XPATH
+07/08/2020 12:35:05 devpinoyLogger Clicking on an Element : QuoteRequestCrossicon_XPATH
+07/08/2020 12:35:06 devpinoyLogger Clicking on an Element : ProductPageCartIcon_XPATH
+07/08/2020 12:35:06 devpinoyLogger Clicking on an Element : productPageCartViewCartbtn_XPATH
+07/08/2020 12:35:07 devpinoyLogger Text of the locator: ProductsQuoterequest_XPATH value as :Quote Request
+07/08/2020 12:35:07 devpinoyLogger Clicking on an Element : QuoteRequestCrossicon_XPATH
+07/08/2020 12:35:07 devpinoyLogger Clicking on an Element : ProductPoleRestoration_XPATH
+07/08/2020 12:35:08 devpinoyLogger Clicking on an Element : ProductPoleRestoration_XPATH
+07/08/2020 12:35:10 devpinoyLogger Clicking on an Element : ProductPoleRestorationCTruss_XPATH
+07/08/2020 12:35:11 devpinoyLogger Selecting from an element : ProductSizeDropdown_XPATH value as : 1
+07/08/2020 12:35:11 devpinoyLogger Clicking on an Element : ProductSizeEnterQuantity_XPATH
+07/08/2020 12:35:11 devpinoyLogger clearing on an Element : ProductSizeEnterQuantity_XPATH
+07/08/2020 12:35:11 devpinoyLogger Typing in an Element : ProductSizeEnterQuantity_XPATH entered value as : 8
+07/08/2020 12:35:11 devpinoyLogger Clicking on an Element : ProductAddButton_XPATH
+07/08/2020 12:35:11 devpinoyLogger Clicking on an Element : ProductViewCartButton_XPATH
+07/08/2020 12:35:12 devpinoyLogger Clicking on an Element : QuoteRequestCrossicon_XPATH
+07/08/2020 12:35:12 devpinoyLogger Clicking on an Element : ProductPageCartIcon_XPATH
+07/08/2020 12:35:12 devpinoyLogger Clicking on an Element : productPageCartSubmitCartbtn_XPATH
+07/08/2020 12:35:13 devpinoyLogger Text of the locator: ProductsQuoterequest_XPATH value as :Quote Request
+07/08/2020 12:35:14 devpinoyLogger Clicking on an Element : QuoteRequestCrossicon_XPATH
+07/08/2020 12:35:14 devpinoyLogger Clicking on an Element : ProductPoleRestoration_XPATH
+07/08/2020 12:35:15 devpinoyLogger Clicking on an Element : ProductPoleRestoration_XPATH
+07/08/2020 12:35:16 devpinoyLogger Clicking on an Element : ProductPoleRestorationCTruss_XPATH
+07/08/2020 12:35:17 devpinoyLogger Selecting from an element : ProductSizeDropdown_XPATH value as : 1
+07/08/2020 12:35:17 devpinoyLogger Clicking on an Element : ProductSizeEnterQuantity_XPATH
+07/08/2020 12:35:17 devpinoyLogger clearing on an Element : ProductSizeEnterQuantity_XPATH
+07/08/2020 12:35:17 devpinoyLogger Typing in an Element : ProductSizeEnterQuantity_XPATH entered value as : 8
+07/08/2020 12:35:17 devpinoyLogger Clicking on an Element : ProductAddButton_XPATH
+07/08/2020 12:35:17 devpinoyLogger Clicking on an Element : ProductViewCartButton_XPATH
+07/08/2020 12:35:18 devpinoyLogger Clicking on an Element : QuoteRequestCrossicon_XPATH
+07/08/2020 12:35:18 devpinoyLogger Clicking on an Element : ProductPageCartIcon_XPATH
+07/08/2020 12:35:19 devpinoyLogger Clicking on an Element : productPageCartViewCartbtn_XPATH
+07/08/2020 12:35:20 devpinoyLogger Clicking on an Element : PlusicononShoppingCart_XPATH
+07/08/2020 12:35:21 devpinoyLogger Clicking on an Element : QuoteRequestCrossicon_XPATH
+07/08/2020 12:35:21 devpinoyLogger Clicking on an Element : ProductPageCartIcon_XPATH
+07/08/2020 12:35:23 devpinoyLogger Clicking on an Element : ProductPageCartIcon_XPATH
+07/08/2020 12:35:23 devpinoyLogger Clicking on an Element : MyQuotesMenu_XPATH
+07/08/2020 12:35:24 devpinoyLogger Text of the locator: MyQuotesheadertxt_XPATH value as :My Quotes
+07/08/2020 12:35:24 devpinoyLogger Text of the locator: Statustxt_XPATH value as :Status:
+07/08/2020 12:35:30 devpinoyLogger Clicking on an Element : Closebtn_XPATH
+07/08/2020 12:35:36 devpinoyLogger Clicking on an Element : MyQuotesMenu_XPATH
+07/08/2020 12:35:41 devpinoyLogger Selecting from an element : StatusFilterdd_XPATH
+07/08/2020 12:35:46 devpinoyLogger Selecting from an element : StatusFilterddAll_XPATH
+07/08/2020 12:35:51 devpinoyLogger Selecting from an element : StatusFilterdd_XPATH
+07/08/2020 12:35:57 devpinoyLogger Clicking on an Element : Closebtn_XPATH
+07/08/2020 12:36:02 devpinoyLogger Clicking on an Element : MyQuotesMenu_XPATH
+07/08/2020 12:36:08 devpinoyLogger Selecting from an element : StatusFilterdd_XPATH
+07/08/2020 12:36:13 devpinoyLogger Selecting from an element : StatusFilterddExpired_XPATH
+07/08/2020 12:36:18 devpinoyLogger Selecting from an element : StatusFilterdd_XPATH
+07/08/2020 12:36:33 devpinoyLogger Clicking on an Element : Closebtn_XPATH
+07/08/2020 12:36:39 devpinoyLogger Clicking on an Element : MyQuotesMenu_XPATH
+07/08/2020 12:36:50 devpinoyLogger Selecting from an element : StatusFilterdd_XPATH
+07/08/2020 12:36:55 devpinoyLogger Selecting from an element : StatusFilterddOrdered_XPATH
+07/08/2020 12:37:00 devpinoyLogger Selecting from an element : StatusFilterdd_XPATH
+07/08/2020 12:37:15 devpinoyLogger Clicking on an Element : Closebtn_XPATH
+07/08/2020 12:37:21 devpinoyLogger Clicking on an Element : MyQuotesMenu_XPATH
+07/08/2020 12:37:31 devpinoyLogger Selecting from an element : StatusFilterdd_XPATH
+07/08/2020 12:37:37 devpinoyLogger Selecting from an element : StatusFilterddQuoted_XPATH
+07/08/2020 12:37:42 devpinoyLogger Selecting from an element : StatusFilterdd_XPATH
+07/08/2020 12:37:57 devpinoyLogger Clicking on an Element : Closebtn_XPATH
+07/08/2020 12:38:03 devpinoyLogger Clicking on an Element : MyQuotesMenu_XPATH
+07/08/2020 12:38:13 devpinoyLogger Selecting from an element : StatusFilterdd_XPATH
+07/08/2020 12:38:19 devpinoyLogger Selecting from an element : StatusFilterddQuotePending_XPATH
+07/08/2020 12:38:24 devpinoyLogger Selecting from an element : StatusFilterdd_XPATH
+07/08/2020 12:38:39 devpinoyLogger Clicking on an Element : Closebtn_XPATH
+07/08/2020 12:38:45 devpinoyLogger Clicking on an Element : MyQuotesMenu_XPATH
+07/08/2020 12:38:55 devpinoyLogger Selecting from an element : StatusFilterdd_XPATH
+07/08/2020 12:39:01 devpinoyLogger Selecting from an element : StatusFilterddCancelled_XPATH
+07/08/2020 12:39:06 devpinoyLogger Selecting from an element : StatusFilterdd_XPATH
+07/08/2020 12:39:21 devpinoyLogger Clicking on an Element : Closebtn_XPATH
+07/08/2020 12:39:27 devpinoyLogger Clicking on an Element : MyQuotesMenu_XPATH
+07/08/2020 12:39:37 devpinoyLogger Selecting from an element : StatusFilterdd_XPATH
+07/08/2020 12:39:43 devpinoyLogger Selecting from an element : StatusFilterddOrderRequested_XPATH
+07/08/2020 12:39:48 devpinoyLogger Selecting from an element : StatusFilterdd_XPATH
+07/08/2020 12:39:58 devpinoyLogger Clicking on an Element : Closebtn_XPATH
+07/08/2020 12:39:59 devpinoyLogger Clicking on an Element : MyQuotesMenu_XPATH
+07/08/2020 12:40:02 devpinoyLogger Clicking on an Element : Sortdd_Xpath
+07/08/2020 12:40:08 devpinoyLogger Text of the locator: SortddFirstOption_XPATH value as :Quote Id
+07/08/2020 12:40:08 devpinoyLogger Text of the locator: SortddSecondOption_XPATH value as :Status
+07/08/2020 12:40:08 devpinoyLogger Text of the locator: SortddThirdOption_XPATH value as :Date
+07/08/2020 12:40:09 devpinoyLogger Clicking on an Element : Closebtn_XPATH
+07/08/2020 12:40:09 devpinoyLogger Clicking on an Element : ProductPoleRestoration_XPATH
+07/08/2020 12:40:12 devpinoyLogger Clicking on an Element : ProductPoleRestoration_XPATH
+07/08/2020 12:40:13 devpinoyLogger Clicking on an Element : ProductPoleRestorationCTruss_XPATH
+07/08/2020 12:40:14 devpinoyLogger Selecting from an element : ProductSizeDropdown_XPATH value as : 2
+07/08/2020 12:40:14 devpinoyLogger Clicking on an Element : ProductSizeEnterQuantity_XPATH
+07/08/2020 12:40:14 devpinoyLogger clearing on an Element : ProductSizeEnterQuantity_XPATH
+07/08/2020 12:40:14 devpinoyLogger Typing in an Element : ProductSizeEnterQuantity_XPATH entered value as : 8
+07/08/2020 12:40:14 devpinoyLogger Clicking on an Element : ProductAddButton_XPATH
+07/08/2020 12:40:14 devpinoyLogger Clicking on an Element : ProductViewCartButton_XPATH
+07/08/2020 12:40:17 devpinoyLogger Clicking on an Element : QuoteRequestCrossicon_XPATH
+07/08/2020 12:40:25 devpinoyLogger Clicking on an Element : ProCard_XPATH
+07/08/2020 12:40:25 devpinoyLogger Clicking on an Element : ClickAdminDropDown_XPATH
+07/08/2020 12:40:26 devpinoyLogger Clicking on an Element : ClickManageQuotes_XPATH
+07/08/2020 12:40:28 devpinoyLogger Text of the locator: QuoteIDHeader_XPATH value as :Quote ID
+07/08/2020 12:40:28 devpinoyLogger Text of the locator: CompanyHeader_XPATH value as :Status
+07/08/2020 12:40:28 devpinoyLogger Clicking on an Element : ClickAdminDropDown_XPATH
+07/08/2020 12:40:28 devpinoyLogger Clicking on an Element : ClickManageQuotes_XPATH
+07/08/2020 12:40:31 devpinoyLogger Clicking on an Element : Q00001QUOTEID_XPATH
+07/08/2020 12:40:35 devpinoyLogger Clicking on an Element : CloseBtnOnQuote_XPATH
+07/08/2020 12:40:35 devpinoyLogger Clicking on an Element : ClickAdminDropDown_XPATH
+07/08/2020 12:40:35 devpinoyLogger Clicking on an Element : ClickManageQuotes_XPATH
+07/08/2020 12:40:38 devpinoyLogger Clicking on an Element : Q00010QUOTEID_XPATH
+07/08/2020 12:40:39 devpinoyLogger Clicking on an Element : StatusdropdownQuotesubmit_XPATH
+07/08/2020 12:40:39 devpinoyLogger Selecting from an element : StatusdropdownQuotesubmit_XPATH
+07/08/2020 12:40:39 devpinoyLogger Selecting from an element : StatusdropdownQuotesubmit_XPATH value as : 1
+07/08/2020 12:40:39 devpinoyLogger Clicking on an Element : SubmitbtnQuotesubmission_XPATH
+07/08/2020 12:40:45 devpinoyLogger Clicking on an Element : ClickAdminDropDown_XPATH
+07/08/2020 12:40:45 devpinoyLogger Clicking on an Element : ClickManageQuotes_XPATH
+07/08/2020 12:40:48 devpinoyLogger Clicking on an Element : Q00010QUOTEID_XPATH
+07/08/2020 12:40:49 devpinoyLogger Clicking on an Element : StatusdropdownQuotesubmit_XPATH
+07/08/2020 12:40:49 devpinoyLogger Selecting from an element : StatusdropdownQuotesubmit_XPATH
+07/08/2020 12:40:49 devpinoyLogger Selecting from an element : StatusdropdownQuotesubmit_XPATH value as : 3
+07/08/2020 12:40:49 devpinoyLogger Clicking on an Element : SubmitbtnQuotesubmission_XPATH
+07/08/2020 12:40:55 devpinoyLogger Clicking on an Element : ClickAdminDropDown_XPATH
+07/08/2020 12:40:55 devpinoyLogger Clicking on an Element : ClickManageQuotes_XPATH
+07/08/2020 12:40:58 devpinoyLogger Clicking on an Element : Q00010QUOTEID_XPATH
+07/08/2020 12:40:59 devpinoyLogger Clicking on an Element : StatusdropdownQuotesubmit_XPATH
+07/08/2020 12:40:59 devpinoyLogger Selecting from an element : StatusdropdownQuotesubmit_XPATH
+07/08/2020 12:40:59 devpinoyLogger Selecting from an element : StatusdropdownQuotesubmit_XPATH value as : 3
+07/08/2020 12:40:59 devpinoyLogger Clicking on an Element : BrowseFileSubmitQuote_XPATH
+07/08/2020 12:41:10 devpinoyLogger Clicking on an Element : UploadbtnSubmitQuote_XPATH
+07/08/2020 12:41:18 devpinoyLogger Clicking on an Element : ManageQuotesQuoteIDCloseBtn_XPATH
+07/08/2020 12:41:24 devpinoyLogger Clicking on an Element : ClickAdminDropDown_XPATH
+07/08/2020 12:41:24 devpinoyLogger Clicking on an Element : ClickManageQuotes_XPATH
+07/08/2020 12:41:27 devpinoyLogger Clicking on an Element : Q00010QUOTEID_XPATH
+07/08/2020 12:41:28 devpinoyLogger Clicking on an Element : StatusdropdownQuotesubmit_XPATH
+07/08/2020 12:41:28 devpinoyLogger Selecting from an element : StatusdropdownQuotesubmit_XPATH value as : 2
+07/08/2020 12:41:28 devpinoyLogger Clicking on an Element : BrowseFileSubmitQuote_XPATH
+07/08/2020 12:41:36 devpinoyLogger Clicking on an Element : UploadbtnSubmitQuote_XPATH
+07/08/2020 12:41:36 devpinoyLogger Typing in an Element : ExpireInTxtBox_XPATH entered value as : -12
+07/08/2020 12:42:00 devpinoyLogger Clicking on an Element : ClickAdminDropDown_XPATH
+07/08/2020 12:42:03 devpinoyLogger Clicking on an Element : ClickManageQuotes_XPATH
+07/08/2020 12:42:10 devpinoyLogger Clicking on an Element : Q00010QUOTEID_XPATH
+07/08/2020 12:42:12 devpinoyLogger Clicking on an Element : StatusdropdownQuotesubmit_XPATH
+07/08/2020 12:42:14 devpinoyLogger Selecting from an element : StatusdropdownQuotesubmit_XPATH value as : 2
+07/08/2020 12:42:18 devpinoyLogger Clicking on an Element : BrowseFileSubmitQuote_XPATH
+07/08/2020 12:42:42 devpinoyLogger Clicking on an Element : UploadbtnSubmitQuote_XPATH
+07/08/2020 12:43:09 devpinoyLogger Clicking on an Element : ManageQuotesQuoteIDCloseBtn_XPATH
+07/08/2020 12:43:18 devpinoyLogger Clicking on an Element : ClickAdminDropDown_XPATH
+07/08/2020 12:43:18 devpinoyLogger Clicking on an Element : ClickManageQuotes_XPATH
+07/08/2020 12:43:21 devpinoyLogger Clicking on an Element : Q00010QUOTEID_XPATH
+07/08/2020 12:43:22 devpinoyLogger Clicking on an Element : StatusdropdownQuotesubmit_XPATH
+07/08/2020 12:43:22 devpinoyLogger Selecting from an element : StatusdropdownQuotesubmit_XPATH
+07/08/2020 12:43:23 devpinoyLogger Selecting from an element : StatusdropdownQuotesubmit_XPATH value as : 4
+07/08/2020 12:43:23 devpinoyLogger Typing in an Element : commentstextareaSubmitQuote_XPATH entered value as : Automationtestingcancelling
+07/08/2020 12:43:23 devpinoyLogger Clicking on an Element : SubmitbtnQuotesubmission_XPATH
+07/08/2020 12:43:32 devpinoyLogger Clicking on an Element : ClickAdminDropDown_XPATH
+07/08/2020 12:43:32 devpinoyLogger Clicking on an Element : ClickManageQuotes_XPATH
+07/08/2020 12:43:35 devpinoyLogger Clicking on an Element : Q00010QUOTEID_XPATH
+07/08/2020 12:43:36 devpinoyLogger Clicking on an Element : StatusdropdownQuotesubmit_XPATH
+07/08/2020 12:43:36 devpinoyLogger Selecting from an element : StatusdropdownQuotesubmit_XPATH value as : 2
+07/08/2020 12:43:36 devpinoyLogger Clicking on an Element : BrowseFileSubmitQuote_XPATH
+07/08/2020 12:43:44 devpinoyLogger Clicking on an Element : UploadbtnSubmitQuote_XPATH
+07/08/2020 12:43:44 devpinoyLogger Clicking on an Element : SubmitbtnQuotesubmission_XPATH
+07/08/2020 12:43:50 devpinoyLogger Clicking on an Element : ClickAdminDropDown_XPATH
+07/08/2020 12:43:50 devpinoyLogger Clicking on an Element : ClickManageQuotes_XPATH
+07/08/2020 12:43:53 devpinoyLogger Clicking on an Element : Q00010QUOTEID_XPATH
+07/08/2020 12:43:54 devpinoyLogger Clicking on an Element : StatusdropdownQuotesubmit_XPATH
+07/08/2020 12:43:54 devpinoyLogger Selecting from an element : StatusdropdownQuotesubmit_XPATH
+07/08/2020 12:43:54 devpinoyLogger Selecting from an element : StatusdropdownQuotesubmit_XPATH value as : 5
+07/08/2020 12:43:55 devpinoyLogger Clicking on an Element : SubmitbtnQuotesubmission_XPATH
+07/08/2020 12:44:00 devpinoyLogger Clicking on an Element : ClickAdminDropDown_XPATH
+07/08/2020 12:44:00 devpinoyLogger Clicking on an Element : ClickManageQuotes_XPATH
+07/08/2020 12:44:03 devpinoyLogger Clicking on an Element : Q00010QUOTEID_XPATH
+07/08/2020 12:44:04 devpinoyLogger Clicking on an Element : StatusdropdownQuotesubmit_XPATH
+07/08/2020 12:44:04 devpinoyLogger Selecting from an element : StatusdropdownQuotesubmit_XPATH
+07/08/2020 12:44:04 devpinoyLogger Selecting from an element : StatusdropdownQuotesubmit_XPATH value as : 0
+07/08/2020 12:44:04 devpinoyLogger Clicking on an Element : SubmitbtnQuotesubmission_XPATH
