@@ -1,6 +1,6 @@
 <html>
 <head>
-<title>TestNG:  Product</title>
+<title>TestNG:  Contact</title>
 <link href="../testng.css" rel="stylesheet" type="text/css" />
 <link href="../my-testng.css" rel="stylesheet" type="text/css" />
 
@@ -53,25 +53,13 @@ function toggleAllBoxes() {
 
 </head>
 <body>
-<h2 align='center'>Product</h2><table border='1' align="center">
+<h2 align='center'>Contact</h2><table border='1' align="center">
 <tr>
-<<<<<<< HEAD
-<td>Tests passed/Failed/Skipped:</td><td>16/3/0</td>
-=======
-<td>Tests passed/Failed/Skipped:</td><td>65/0/0</td>
->>>>>>> refs/remotes/origin/master
+<td>Tests passed/Failed/Skipped:</td><td>16/0/0</td>
 </tr><tr>
-<<<<<<< HEAD
-<td>Started on:</td><td>Wed Jul 08 18:39:03 IST 2020</td>
-=======
-<td>Started on:</td><td>Tue Aug 04 19:42:37 IST 2020</td>
->>>>>>> refs/remotes/origin/master
+<td>Started on:</td><td>Tue Aug 04 20:02:41 IST 2020</td>
 </tr>
-<<<<<<< HEAD
-<tr><td>Total time:</td><td>365 seconds (365638 ms)</td>
-=======
-<tr><td>Total time:</td><td>1203 seconds (1203621 ms)</td>
->>>>>>> refs/remotes/origin/master
+<tr><td>Total time:</td><td>62 seconds (62139 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -79,375 +67,6 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<<<<<<< HEAD
-<table width='100%' border='1' class='invocation-failed'>
-<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
-<tr><td><b>Test method</b></td>
-<td width="30%"><b>Exception</b></td>
-<td width="10%"><b>Time (seconds)</b></td>
-<td><b>Instance</b></td>
-</tr>
-<tr>
-<td title='com.OSMOSE.testcases.Product.AddQuantityandverifyCellNumber()'><b>AddQuantityandverifyCellNumber</b><br>Test class: com.OSMOSE.testcases.Product<br>Test method: Verifying the quantity entered in the Quantity field<br/>
-<a href="#Output-1160546880" onClick='toggleBox("Output-1160546880", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-1160546880" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1160546880">
-Click to see Screenshot<br/>
-<a target="_blank" href=Wed_Jul_08_18_42_41_IST_2020.jpg>Screenshot</a><br/>
-<br><br/>
-<br><br/>
-<a target="_blank" href=Wed_Jul_08_18_42_41_IST_2020.jpg><img src=Wed_Jul_08_18_42_41_IST_2020.jpg height=200 width=200></img></a><br/>
-</div>
-</td>
-<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&quot;card-productO&quot;]/div[2]/ul/li[1]/a/img&quot;}
-  (Session info: chrome=83.0.4103.116)
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
-System info: host: &apos;IND-5CG6191Y3W&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_161&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.116, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Windows\Temp\scoped_dir6...}, goog:chromeOptions: {debuggerAddress: localhost:64201}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: none, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: db9e1d25753289a6c4626b2147d0f9e8
-*** Element info: {Using=xpath, value=//*[@id=&quot;card-productO&quot;]/div[2]/ul/li[1]/a/img}
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:424)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
-	at com.OSMOSE.base.Page.click(Page.java:180)
-	at com.OSMOSE.pages.OU.ProductPage.AddQuantityInCart_AssertCellNumber(ProductPage.java:89)
-	at com.OSMOSE.testcases.Product.AddQuantityandverifyCellNumber(Product.java:151)
-	at java.util.ArrayList.forEach(Unknown Source)
-... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1160546880", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1160546880'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&quot;card-productO&quot;]/div[2]/ul/li[1]/a/img&quot;}
-  (Session info: chrome=83.0.4103.116)
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
-System info: host: &apos;IND-5CG6191Y3W&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_161&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.116, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Windows\Temp\scoped_dir6...}, goog:chromeOptions: {debuggerAddress: localhost:64201}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: none, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: db9e1d25753289a6c4626b2147d0f9e8
-*** Element info: {Using=xpath, value=//*[@id=&quot;card-productO&quot;]/div[2]/ul/li[1]/a/img}
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:424)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
-	at com.OSMOSE.base.Page.click(Page.java:180)
-	at com.OSMOSE.pages.OU.ProductPage.AddQuantityInCart_AssertCellNumber(ProductPage.java:89)
-	at com.OSMOSE.testcases.Product.AddQuantityandverifyCellNumber(Product.java:151)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.util.ArrayList.forEach(Unknown Source)
-	at org.testng.TestRunner.privateRun(TestRunner.java:766)
-	at org.testng.TestRunner.run(TestRunner.java:587)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
-	at org.testng.TestNG.runSuites(TestNG.java:1039)
-	at org.testng.TestNG.run(TestNG.java:1007)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>52</td>
-<td>com.OSMOSE.testcases.Product@549949be</td></tr>
-<tr>
-<td title='com.OSMOSE.testcases.Product.FeaturedProductPoleRestoration()'><b>FeaturedProductPoleRestoration</b><br>Test class: com.OSMOSE.testcases.Product<br>Test method: Verify the tel number text on Add to Shopping cart pop-up<br/>
-<a href="#Output-1602785474" onClick='toggleBox("Output-1602785474", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-1602785474" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1602785474">
-Click to see Screenshot<br/>
-<a target="_blank" href=Wed_Jul_08_18_43_32_IST_2020.jpg>Screenshot</a><br/>
-<br><br/>
-<br><br/>
-<a target="_blank" href=Wed_Jul_08_18_43_32_IST_2020.jpg><img src=Wed_Jul_08_18_43_32_IST_2020.jpg height=200 width=200></img></a><br/>
-</div>
-</td>
-<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&quot;card-productO&quot;]/div[1]/a/p&quot;}
-  (Session info: chrome=83.0.4103.116)
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
-System info: host: &apos;IND-5CG6191Y3W&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_161&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.116, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Windows\Temp\scoped_dir6...}, goog:chromeOptions: {debuggerAddress: localhost:64201}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: none, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: db9e1d25753289a6c4626b2147d0f9e8
-*** Element info: {Using=xpath, value=//*[@id=&quot;card-productO&quot;]/div[1]/a/p}
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:424)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
-	at com.OSMOSE.base.Page.click(Page.java:180)
-	at com.OSMOSE.pages.OU.ProductPage.clickProductLinktonavigateback(ProductPage.java:52)
-	at com.OSMOSE.testcases.Product.FeaturedProductPoleRestoration(Product.java:163)
-	at java.util.ArrayList.forEach(Unknown Source)
-... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1602785474", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1602785474'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&quot;card-productO&quot;]/div[1]/a/p&quot;}
-  (Session info: chrome=83.0.4103.116)
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
-System info: host: &apos;IND-5CG6191Y3W&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_161&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.116, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Windows\Temp\scoped_dir6...}, goog:chromeOptions: {debuggerAddress: localhost:64201}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: none, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: db9e1d25753289a6c4626b2147d0f9e8
-*** Element info: {Using=xpath, value=//*[@id=&quot;card-productO&quot;]/div[1]/a/p}
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:424)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
-	at com.OSMOSE.base.Page.click(Page.java:180)
-	at com.OSMOSE.pages.OU.ProductPage.clickProductLinktonavigateback(ProductPage.java:52)
-	at com.OSMOSE.testcases.Product.FeaturedProductPoleRestoration(Product.java:163)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.util.ArrayList.forEach(Unknown Source)
-	at org.testng.TestRunner.privateRun(TestRunner.java:766)
-	at org.testng.TestRunner.run(TestRunner.java:587)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
-	at org.testng.TestNG.runSuites(TestNG.java:1039)
-	at org.testng.TestNG.run(TestNG.java:1007)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>51</td>
-<td>com.OSMOSE.testcases.Product@549949be</td></tr>
-<tr>
-<td title='com.OSMOSE.testcases.Product.ReturnPolicy()'><b>ReturnPolicy</b><br>Test class: com.OSMOSE.testcases.Product<br>Test method: Product Return Policies will be provided on the "Quote Request Approval" page and will be presented to the customer as a pop-up for reading.</td>
-<td><div><pre>java.lang.NullPointerException
-	at com.OSMOSE.base.Page.click(Page.java:180)
-	at com.OSMOSE.pages.OU.ProductPage.ProductReturnPolicy(ProductPage.java:120)
-	at com.OSMOSE.testcases.Product.ReturnPolicy(Product.java:282)
-	at java.util.ArrayList.forEach(Unknown Source)
-... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace65982709", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace65982709'><pre>java.lang.NullPointerException
-	at com.OSMOSE.base.Page.click(Page.java:180)
-	at com.OSMOSE.pages.OU.ProductPage.ProductReturnPolicy(ProductPage.java:120)
-	at com.OSMOSE.testcases.Product.ReturnPolicy(Product.java:282)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.util.ArrayList.forEach(Unknown Source)
-	at org.testng.TestRunner.privateRun(TestRunner.java:766)
-	at org.testng.TestRunner.run(TestRunner.java:587)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
-	at org.testng.TestNG.runSuites(TestNG.java:1039)
-	at org.testng.TestNG.run(TestNG.java:1007)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>29</td>
-<td>com.OSMOSE.testcases.Product@549949be</td></tr>
-<tr>
-<td title='com.OSMOSE.testcases.Product.ReturnPolicy()'><b>ReturnPolicy</b><br>Test class: com.OSMOSE.testcases.Product<br>Test method: Product Return Policies will be provided on the "Quote Request Approval" page and will be presented to the customer as a pop-up for reading.</td>
-<td><div><pre>org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=83.0.4103.116)
-Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
-System info: host: &apos;IND-5CG6191Y3W&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_161&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.116, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Windows\Temp\scoped_dir6...}, goog:chromeOptions: {debuggerAddress: localhost:64201}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: none, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: db9e1d25753289a6c4626b2147d0f9e8
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:605)
-	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:294)
-	at com.OSMOSE.utilities.Utilities.captureScreenshot(Utilities.java:22)
-	at com.OSMOSE.listeners.CustomListeners.onTestFailure(CustomListeners.java:45)
-	at java.util.ArrayList.forEach(Unknown Source)
-... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1677921169", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1677921169'><pre>org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=83.0.4103.116)
-Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
-System info: host: &apos;IND-5CG6191Y3W&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_161&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.116, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Windows\Temp\scoped_dir6...}, goog:chromeOptions: {debuggerAddress: localhost:64201}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: none, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: db9e1d25753289a6c4626b2147d0f9e8
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:605)
-	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:294)
-	at com.OSMOSE.utilities.Utilities.captureScreenshot(Utilities.java:22)
-	at com.OSMOSE.listeners.CustomListeners.onTestFailure(CustomListeners.java:45)
-	at org.testng.internal.TestListenerHelper.runTestListeners(TestListenerHelper.java:66)
-	at org.testng.internal.TestInvoker.runTestResultListener(TestInvoker.java:219)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:651)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.util.ArrayList.forEach(Unknown Source)
-	at org.testng.TestRunner.privateRun(TestRunner.java:766)
-	at org.testng.TestRunner.run(TestRunner.java:587)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
-	at org.testng.TestNG.runSuites(TestNG.java:1039)
-	at org.testng.TestNG.run(TestNG.java:1007)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>29</td>
-<td>com.OSMOSE.testcases.Product@549949be</td></tr>
-<tr>
-<td title='com.OSMOSE.testcases.Product.verifyTheSearchfirstname()'><b>verifyTheSearchfirstname</b><br>Test class: com.OSMOSE.testcases.Product<br>Test method: Verify that User clicks on the Slider icon and search for firstname Pole<br>Parameters: {SearchItem=Pole}<br/>
-<a href="#Output-1904273153" onClick='toggleBox("Output-1904273153", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-1904273153" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1904273153">
-Click to see Screenshot<br/>
-<a target="_blank" href=Wed_Jul_08_18_43_45_IST_2020.jpg>Screenshot</a><br/>
-<br><br/>
-<br><br/>
-<a target="_blank" href=Wed_Jul_08_18_43_45_IST_2020.jpg><img src=Wed_Jul_08_18_43_45_IST_2020.jpg height=200 width=200></img></a><br/>
-</div>
-</td>
-<td><div><pre>java.lang.AssertionError: expected [C-Truss] but found []
-	at com.OSMOSE.testcases.Product.verifyTheSearchfirstname(Product.java:209)
-	at java.util.ArrayList.forEach(Unknown Source)
-... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1904273153", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1904273153'><pre>java.lang.AssertionError: expected [C-Truss] but found []
-	at org.testng.Assert.fail(Assert.java:97)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:136)
-	at org.testng.Assert.assertEquals(Assert.java:118)
-	at org.testng.Assert.assertEquals(Assert.java:575)
-	at org.testng.Assert.assertEquals(Assert.java:585)
-	at com.OSMOSE.testcases.Product.verifyTheSearchfirstname(Product.java:209)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.util.ArrayList.forEach(Unknown Source)
-	at org.testng.TestRunner.privateRun(TestRunner.java:766)
-	at org.testng.TestRunner.run(TestRunner.java:587)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
-	at org.testng.TestNG.runSuites(TestNG.java:1039)
-	at org.testng.TestNG.run(TestNG.java:1007)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>12</td>
-<td>com.OSMOSE.testcases.Product@549949be</td></tr>
-</table><p>
-=======
->>>>>>> refs/remotes/origin/master
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -456,394 +75,111 @@ Click to see Screenshot<br/>
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<<<<<<< HEAD
-<td title='com.OSMOSE.testcases.Product.VerifyFPImageClick()'><b>VerifyFPImageClick</b><br>Test class: com.OSMOSE.testcases.Product<br>Test method: Verify that a Featured product can be clicked<br/>
-<a href="#Output-2011342562" onClick='toggleBox("Output-2011342562", this, "Show output", "Hide output");'>Show output</a>
-=======
 <td title='com.OSMOSE.testcases.Product.AddQuantityandverifyCellNumber()'><b>AddQuantityandverifyCellNumber</b><br>Test class: com.OSMOSE.testcases.Product<br>Test method: Verifying the quantity entered in the Quantity field<br/>
 <a href="#Output-1121370413" onClick='toggleBox("Output-1121370413", this, "Show output", "Hide output");'>Show output</a>
->>>>>>> refs/remotes/origin/master
 
-<<<<<<< HEAD
-<a href="#Output-2011342562" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-2011342562">
-=======
 <a href="#Output-1121370413" onClick="toggleAllBoxes();">Show all outputs</a>
 <div class='log' id="Output-1121370413">
->>>>>>> refs/remotes/origin/master
 Click to see Screenshot<br/>
-<<<<<<< HEAD
-<a target="_blank" href=Wed_Jul_08_18_41_42_IST_2020.jpg>Screenshot</a><br/>
-=======
 <a target="_blank" href=Tue_Aug_04_19_46_00_IST_2020.jpg>Screenshot</a><br/>
->>>>>>> refs/remotes/origin/master
 <br><br/>
 <br><br/>
-<<<<<<< HEAD
-<a target="_blank" href=Wed_Jul_08_18_41_42_IST_2020.jpg><img src=Wed_Jul_08_18_41_42_IST_2020.jpg height=200 width=200></img></a><br/>
-=======
 <a target="_blank" href=Tue_Aug_04_19_46_00_IST_2020.jpg><img src=Tue_Aug_04_19_46_00_IST_2020.jpg height=200 width=200></img></a><br/>
->>>>>>> refs/remotes/origin/master
 </div>
 </td>
 <td></td>
-<<<<<<< HEAD
-<td>51</td>
-<td>com.OSMOSE.testcases.Product@549949be</td></tr>
-=======
 <td>17</td>
 <td>com.OSMOSE.testcases.Product@1ab6718</td></tr>
->>>>>>> refs/remotes/origin/master
 <tr>
-<<<<<<< HEAD
-<td title='com.OSMOSE.testcases.Product.VerifyProductclick()'><b>VerifyProductclick</b><br>Test class: com.OSMOSE.testcases.Product<br>Test method: Verification of the contents on Products Page<br/>
-<a href="#Output-444127949" onClick='toggleBox("Output-444127949", this, "Show output", "Hide output");'>Show output</a>
-=======
 <td title='com.OSMOSE.testcases.Product.AddShoppingCart()'><b>AddShoppingCart</b><br>Test class: com.OSMOSE.testcases.Product<br>Test method: On the Product Group Details Page, the user will be provided with the “ADD”  button  with a quantity selector.<br/>
 <a href="#Output-509000859" onClick='toggleBox("Output-509000859", this, "Show output", "Hide output");'>Show output</a>
->>>>>>> refs/remotes/origin/master
 
-<<<<<<< HEAD
-<a href="#Output-444127949" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-444127949">
-=======
 <a href="#Output-509000859" onClick="toggleAllBoxes();">Show all outputs</a>
 <div class='log' id="Output-509000859">
->>>>>>> refs/remotes/origin/master
 Click to see Screenshot<br/>
-<<<<<<< HEAD
-<a target="_blank" href=Wed_Jul_08_18_41_48_IST_2020.jpg>Screenshot</a><br/>
-=======
 <a target="_blank" href=Tue_Aug_04_19_48_07_IST_2020.jpg>Screenshot</a><br/>
->>>>>>> refs/remotes/origin/master
 <br><br/>
 <br><br/>
-<<<<<<< HEAD
-<a target="_blank" href=Wed_Jul_08_18_41_48_IST_2020.jpg><img src=Wed_Jul_08_18_41_48_IST_2020.jpg height=200 width=200></img></a><br/>
-</div>
-</td>
-<td></td>
-<td>1</td>
-<td>com.OSMOSE.testcases.Product@549949be</td></tr>
-<tr>
-<td title='com.OSMOSE.testcases.Product.adminElementPresent()'><b>adminElementPresent</b><br>Test class: com.OSMOSE.testcases.Product<br>Test method: Verification of the presence of Admin button<br/>
-<a href="#Output-428245792" onClick='toggleBox("Output-428245792", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-428245792" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-428245792">
-Click to see Screenshot<br/>
-<a target="_blank" href=Wed_Jul_08_18_39_59_IST_2020.jpg>Screenshot</a><br/>
-<br><br/>
-<br><br/>
-<a target="_blank" href=Wed_Jul_08_18_39_59_IST_2020.jpg><img src=Wed_Jul_08_18_39_59_IST_2020.jpg height=200 width=200></img></a><br/>
-=======
 <a target="_blank" href=Tue_Aug_04_19_48_07_IST_2020.jpg><img src=Tue_Aug_04_19_48_07_IST_2020.jpg height=200 width=200></img></a><br/>
->>>>>>> refs/remotes/origin/master
 </div>
 </td>
 <td></td>
-<<<<<<< HEAD
-<td>0</td>
-<td>com.OSMOSE.testcases.Product@549949be</td></tr>
-=======
 <td>5</td>
 <td>com.OSMOSE.testcases.Product@1ab6718</td></tr>
->>>>>>> refs/remotes/origin/master
 <tr>
-<<<<<<< HEAD
-<td title='com.OSMOSE.testcases.Product.allSixProductPresent()'><b>allSixProductPresent</b><br>Test class: com.OSMOSE.testcases.Product<br>Test method: Verification of the presence of all six products<br/>
-<a href="#Output-779018428" onClick='toggleBox("Output-779018428", this, "Show output", "Hide output");'>Show output</a>
-=======
 <td title='com.OSMOSE.testcases.Product.ClickDictionaryLink()'><b>ClickDictionaryLink</b><br>Test class: com.OSMOSE.testcases.Product<br>Test method: Verification of upload Spreadsheet on Manage Products<br/>
 <a href="#Output-475172655" onClick='toggleBox("Output-475172655", this, "Show output", "Hide output");'>Show output</a>
->>>>>>> refs/remotes/origin/master
 
-<<<<<<< HEAD
-<a href="#Output-779018428" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-779018428">
-=======
 <a href="#Output-475172655" onClick="toggleAllBoxes();">Show all outputs</a>
 <div class='log' id="Output-475172655">
->>>>>>> refs/remotes/origin/master
 Click to see Screenshot<br/>
-<<<<<<< HEAD
-<a target="_blank" href=Wed_Jul_08_18_40_00_IST_2020.jpg>Screenshot</a><br/>
-=======
 <a target="_blank" href=Tue_Aug_04_19_57_22_IST_2020.jpg>Screenshot</a><br/>
->>>>>>> refs/remotes/origin/master
 <br><br/>
 <br><br/>
-<<<<<<< HEAD
-<a target="_blank" href=Wed_Jul_08_18_40_00_IST_2020.jpg><img src=Wed_Jul_08_18_40_00_IST_2020.jpg height=200 width=200></img></a><br/>
-=======
 <a target="_blank" href=Tue_Aug_04_19_57_22_IST_2020.jpg><img src=Tue_Aug_04_19_57_22_IST_2020.jpg height=200 width=200></img></a><br/>
->>>>>>> refs/remotes/origin/master
 </div>
 </td>
 <td></td>
-<<<<<<< HEAD
-<td>0</td>
-<td>com.OSMOSE.testcases.Product@549949be</td></tr>
-=======
 <td>58</td>
 <td>com.OSMOSE.testcases.Product@1ab6718</td></tr>
->>>>>>> refs/remotes/origin/master
 <tr>
-<<<<<<< HEAD
-<td title='com.OSMOSE.testcases.Product.catalogElementPresent()'><b>catalogElementPresent</b><br>Test class: com.OSMOSE.testcases.Product<br>Test method: Verification of the presence of Catalog Element<br/>
-<a href="#Output-405488475" onClick='toggleBox("Output-405488475", this, "Show output", "Hide output");'>Show output</a>
-=======
 <td title='com.OSMOSE.testcases.Product.ClickDownloadProducts()'><b>ClickDownloadProducts</b><br>Test class: com.OSMOSE.testcases.Product<br>Test method: Clicking Download Spreadsheet drop down and download<br/>
 <a href="#Output-1264775610" onClick='toggleBox("Output-1264775610", this, "Show output", "Hide output");'>Show output</a>
->>>>>>> refs/remotes/origin/master
 
-<<<<<<< HEAD
-<a href="#Output-405488475" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-405488475">
-=======
 <a href="#Output-1264775610" onClick="toggleAllBoxes();">Show all outputs</a>
 <div class='log' id="Output-1264775610">
->>>>>>> refs/remotes/origin/master
 Click to see Screenshot<br/>
-<<<<<<< HEAD
-<a target="_blank" href=Wed_Jul_08_18_39_58_IST_2020.jpg>Screenshot</a><br/>
-=======
 <a target="_blank" href=Tue_Aug_04_19_56_10_IST_2020.jpg>Screenshot</a><br/>
->>>>>>> refs/remotes/origin/master
 <br><br/>
 <br><br/>
-<<<<<<< HEAD
-<a target="_blank" href=Wed_Jul_08_18_39_58_IST_2020.jpg><img src=Wed_Jul_08_18_39_58_IST_2020.jpg height=200 width=200></img></a><br/>
-=======
 <a target="_blank" href=Tue_Aug_04_19_56_10_IST_2020.jpg><img src=Tue_Aug_04_19_56_10_IST_2020.jpg height=200 width=200></img></a><br/>
->>>>>>> refs/remotes/origin/master
 </div>
 </td>
 <td></td>
-<<<<<<< HEAD
-<td>0</td>
-<td>com.OSMOSE.testcases.Product@549949be</td></tr>
-=======
 <td>7</td>
 <td>com.OSMOSE.testcases.Product@1ab6718</td></tr>
->>>>>>> refs/remotes/origin/master
 <tr>
-<<<<<<< HEAD
-<td title='com.OSMOSE.testcases.OULogin.loginTest()'><b>loginTest</b><br>Test class: com.OSMOSE.testcases.OULogin<br>Parameters: {password=Hyde@2317, runmode=Y, username=rajesh.yadav@centurylink.com}<br/>
-<a href="#Output-890160158" onClick='toggleBox("Output-890160158", this, "Show output", "Hide output");'>Show output</a>
-=======
 <td title='com.OSMOSE.testcases.Product.ClickManageProducts()'><b>ClickManageProducts</b><br>Test class: com.OSMOSE.testcases.Product<br>Test method: Verification of Manage Products dropdown menu<br/>
 <a href="#Output-1230977381" onClick='toggleBox("Output-1230977381", this, "Show output", "Hide output");'>Show output</a>
->>>>>>> refs/remotes/origin/master
 
-<<<<<<< HEAD
-<a href="#Output-890160158" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-890160158">
-=======
 <a href="#Output-1230977381" onClick="toggleAllBoxes();">Show all outputs</a>
 <div class='log' id="Output-1230977381">
->>>>>>> refs/remotes/origin/master
 Click to see Screenshot<br/>
-<<<<<<< HEAD
-<a target="_blank" href=Wed_Jul_08_18_38_57_IST_2020.jpg>Screenshot</a><br/>
-=======
 <a target="_blank" href=Tue_Aug_04_19_56_02_IST_2020.jpg>Screenshot</a><br/>
->>>>>>> refs/remotes/origin/master
 <br><br/>
 <br><br/>
-<<<<<<< HEAD
-<a target="_blank" href=Wed_Jul_08_18_38_57_IST_2020.jpg><img src=Wed_Jul_08_18_38_57_IST_2020.jpg height=200 width=200></img></a><br/>
-</div>
-</td>
-<td></td>
-<td>17</td>
-<td>com.OSMOSE.testcases.OULogin@13f17eb4</td></tr>
-<tr>
-<td title='com.OSMOSE.testcases.Product.openMyQuotesElementPresent()'><b>openMyQuotesElementPresent</b><br>Test class: com.OSMOSE.testcases.Product<br>Test method: Verification of the presence of My Quotes button<br/>
-<a href="#Output-1628289406" onClick='toggleBox("Output-1628289406", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-1628289406" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1628289406">
-Click to see Screenshot<br/>
-<a target="_blank" href=Wed_Jul_08_18_39_58_IST_2020.jpg>Screenshot</a><br/>
-<br><br/>
-<br><br/>
-<a target="_blank" href=Wed_Jul_08_18_39_58_IST_2020.jpg><img src=Wed_Jul_08_18_39_58_IST_2020.jpg height=200 width=200></img></a><br/>
-</div>
-</td>
-<td></td>
-<td>0</td>
-<td>com.OSMOSE.testcases.Product@549949be</td></tr>
-<tr>
-<td title='com.OSMOSE.testcases.Product.searchElementPresent()'><b>searchElementPresent</b><br>Test class: com.OSMOSE.testcases.Product<br>Test method: Verification of the presence of Search field<br/>
-<a href="#Output-841537936" onClick='toggleBox("Output-841537936", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-841537936" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-841537936">
-Click to see Screenshot<br/>
-<a target="_blank" href=Wed_Jul_08_18_39_57_IST_2020.jpg>Screenshot</a><br/>
-<br><br/>
-<br><br/>
-<a target="_blank" href=Wed_Jul_08_18_39_57_IST_2020.jpg><img src=Wed_Jul_08_18_39_57_IST_2020.jpg height=200 width=200></img></a><br/>
-</div>
-</td>
-<td></td>
-<td>50</td>
-<td>com.OSMOSE.testcases.Product@549949be</td></tr>
-<tr>
-<td title='com.OSMOSE.testcases.Product.shoppingCartElementPresent()'><b>shoppingCartElementPresent</b><br>Test class: com.OSMOSE.testcases.Product<br>Test method: Verification of the presence of Shopping Cart Icon<br/>
-<a href="#Output-842957574" onClick='toggleBox("Output-842957574", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-842957574" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-842957574">
-Click to see Screenshot<br/>
-<a target="_blank" href=Wed_Jul_08_18_39_58_IST_2020.jpg>Screenshot</a><br/>
-<br><br/>
-<br><br/>
-<a target="_blank" href=Wed_Jul_08_18_39_58_IST_2020.jpg><img src=Wed_Jul_08_18_39_58_IST_2020.jpg height=200 width=200></img></a><br/>
-</div>
-</td>
-<td></td>
-<td>0</td>
-<td>com.OSMOSE.testcases.Product@549949be</td></tr>
-<tr>
-<td title='com.OSMOSE.testcases.Product.verifyCategoryFilter()'><b>verifyCategoryFilter</b><br>Test class: com.OSMOSE.testcases.Product<br>Test method: Verification of the presence of Category Filter button<br/>
-<a href="#Output-238431319" onClick='toggleBox("Output-238431319", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-238431319" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-238431319">
-Click to see Screenshot<br/>
-<a target="_blank" href=Wed_Jul_08_18_40_50_IST_2020.jpg>Screenshot</a><br/>
-<br><br/>
-<br><br/>
-<a target="_blank" href=Wed_Jul_08_18_40_50_IST_2020.jpg><img src=Wed_Jul_08_18_40_50_IST_2020.jpg height=200 width=200></img></a><br/>
-</div>
-</td>
-<td></td>
-<td>50</td>
-<td>com.OSMOSE.testcases.Product@549949be</td></tr>
-<tr>
-<td title='com.OSMOSE.testcases.OULogin.verifyHyperlinks()'><b>verifyHyperlinks</b><br>Test class: com.OSMOSE.testcases.OULogin<br/>
-<a href="#Output-679449777" onClick='toggleBox("Output-679449777", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-679449777" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-679449777">
-Click to see Screenshot<br/>
-<a target="_blank" href=Wed_Jul_08_18_39_03_IST_2020.jpg>Screenshot</a><br/>
-<br><br/>
-<br><br/>
-<a target="_blank" href=Wed_Jul_08_18_39_03_IST_2020.jpg><img src=Wed_Jul_08_18_39_03_IST_2020.jpg height=200 width=200></img></a><br/>
-</div>
-</td>
-<td></td>
-<td>0</td>
-<td>com.OSMOSE.testcases.OULogin@13f17eb4</td></tr>
-<tr>
-<td title='com.OSMOSE.testcases.OULogin.verifyOUCard()'><b>verifyOUCard</b><br>Test class: com.OSMOSE.testcases.OULogin<br/>
-<a href="#Output-458998685" onClick='toggleBox("Output-458998685", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-458998685" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-458998685">
-Click to see Screenshot<br/>
-<a target="_blank" href=Wed_Jul_08_18_39_01_IST_2020.jpg>Screenshot</a><br/>
-<br><br/>
-<br><br/>
-<a target="_blank" href=Wed_Jul_08_18_39_01_IST_2020.jpg><img src=Wed_Jul_08_18_39_01_IST_2020.jpg height=200 width=200></img></a><br/>
-=======
 <a target="_blank" href=Tue_Aug_04_19_56_02_IST_2020.jpg><img src=Tue_Aug_04_19_56_02_IST_2020.jpg height=200 width=200></img></a><br/>
->>>>>>> refs/remotes/origin/master
 </div>
 </td>
 <td></td>
-<<<<<<< HEAD
-<td>3</td>
-<td>com.OSMOSE.testcases.OULogin@13f17eb4</td></tr>
-=======
 <td>2</td>
 <td>com.OSMOSE.testcases.Product@1ab6718</td></tr>
->>>>>>> refs/remotes/origin/master
 <tr>
-<<<<<<< HEAD
-<td title='com.OSMOSE.testcases.OULogin.verifyProductCard()'><b>verifyProductCard</b><br>Test class: com.OSMOSE.testcases.OULogin<br/>
-<a href="#Output-1091781053" onClick='toggleBox("Output-1091781053", this, "Show output", "Hide output");'>Show output</a>
-=======
 <td title='com.OSMOSE.testcases.Product.ClickManageQuotesLink()'><b>ClickManageQuotesLink</b><br>Test class: com.OSMOSE.testcases.Product<br>Test method: Verification of contents on Manage Quotes page<br/>
 <a href="#Output-1738750284" onClick='toggleBox("Output-1738750284", this, "Show output", "Hide output");'>Show output</a>
->>>>>>> refs/remotes/origin/master
 
-<<<<<<< HEAD
-<a href="#Output-1091781053" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1091781053">
-=======
 <a href="#Output-1738750284" onClick="toggleAllBoxes();">Show all outputs</a>
 <div class='log' id="Output-1738750284">
->>>>>>> refs/remotes/origin/master
 Click to see Screenshot<br/>
-<<<<<<< HEAD
-<a target="_blank" href=Wed_Jul_08_18_39_02_IST_2020.jpg>Screenshot</a><br/>
-=======
 <a target="_blank" href=Tue_Aug_04_19_54_54_IST_2020.jpg>Screenshot</a><br/>
->>>>>>> refs/remotes/origin/master
 <br><br/>
 <br><br/>
-<<<<<<< HEAD
-<a target="_blank" href=Wed_Jul_08_18_39_02_IST_2020.jpg><img src=Wed_Jul_08_18_39_02_IST_2020.jpg height=200 width=200></img></a><br/>
-=======
 <a target="_blank" href=Tue_Aug_04_19_54_54_IST_2020.jpg><img src=Tue_Aug_04_19_54_54_IST_2020.jpg height=200 width=200></img></a><br/>
->>>>>>> refs/remotes/origin/master
 </div>
 </td>
 <td></td>
-<<<<<<< HEAD
-<td>0</td>
-<td>com.OSMOSE.testcases.OULogin@13f17eb4</td></tr>
-=======
 <td>3</td>
 <td>com.OSMOSE.testcases.Product@1ab6718</td></tr>
->>>>>>> refs/remotes/origin/master
 <tr>
-<<<<<<< HEAD
-<td title='com.OSMOSE.testcases.Product.verifyTheProductLink()'><b>verifyTheProductLink</b><br>Test class: com.OSMOSE.testcases.Product<br>Test method: Verification of the Products Link on the Home Page<br>Parameters: {password=Hyde@2317, runmode=Y, username=rajesh.yadav@centurylink.com}<br/>
-<a href="#Output-876962272" onClick='toggleBox("Output-876962272", this, "Show output", "Hide output");'>Show output</a>
-=======
 <td title='com.OSMOSE.testcases.Product.ClickProductsinReview()'><b>ClickProductsinReview</b><br>Test class: com.OSMOSE.testcases.Product<br>Test method: Clicking ProductsInreview button and going back to Manage Products pop up<br/>
 <a href="#Output-1869197498" onClick='toggleBox("Output-1869197498", this, "Show output", "Hide output");'>Show output</a>
->>>>>>> refs/remotes/origin/master
 
-<<<<<<< HEAD
-<a href="#Output-876962272" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-876962272">
-=======
 <a href="#Output-1869197498" onClick="toggleAllBoxes();">Show all outputs</a>
 <div class='log' id="Output-1869197498">
->>>>>>> refs/remotes/origin/master
 Click to see Screenshot<br/>
-<<<<<<< HEAD
-<a target="_blank" href=Wed_Jul_08_18_39_07_IST_2020.jpg>Screenshot</a><br/>
-=======
 <a target="_blank" href=Tue_Aug_04_19_56_12_IST_2020.jpg>Screenshot</a><br/>
->>>>>>> refs/remotes/origin/master
 <br><br/>
 <br><br/>
-<<<<<<< HEAD
-<a target="_blank" href=Wed_Jul_08_18_39_07_IST_2020.jpg><img src=Wed_Jul_08_18_39_07_IST_2020.jpg height=200 width=200></img></a><br/>
-</div>
-</td>
-<td></td>
-<td>3</td>
-<td>com.OSMOSE.testcases.Product@549949be</td></tr>
-<tr>
-<td title='com.OSMOSE.testcases.Product.verifyTheSearchCrossButton()'><b>verifyTheSearchCrossButton</b><br>Test class: com.OSMOSE.testcases.Product<br>Test method: Verify that User clicks on the Slider icon and Click on Crosss icon<br>Parameters: {SearchItem=Pole}<br/>
-<a href="#Output-1573125303" onClick='toggleBox("Output-1573125303", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-1573125303" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1573125303">
-Click to see Screenshot<br/>
-<a target="_blank" href=Wed_Jul_08_18_44_26_IST_2020.jpg>Screenshot</a><br/>
-<br><br/>
-<br><br/>
-<a target="_blank" href=Wed_Jul_08_18_44_26_IST_2020.jpg><img src=Wed_Jul_08_18_44_26_IST_2020.jpg height=200 width=200></img></a><br/>
-=======
 <a target="_blank" href=Tue_Aug_04_19_56_12_IST_2020.jpg><img src=Tue_Aug_04_19_56_12_IST_2020.jpg height=200 width=200></img></a><br/>
 </div>
 </td>
@@ -1021,43 +357,21 @@ Click to see Screenshot<br/>
 <br><br/>
 <br><br/>
 <a target="_blank" href=Tue_Aug_04_19_54_50_IST_2020.jpg><img src=Tue_Aug_04_19_54_50_IST_2020.jpg height=200 width=200></img></a><br/>
->>>>>>> refs/remotes/origin/master
 </div>
 </td>
 <td></td>
 <td>14</td>
-<<<<<<< HEAD
-<td>com.OSMOSE.testcases.Product@549949be</td></tr>
-=======
 <td>com.OSMOSE.testcases.Product@1ab6718</td></tr>
->>>>>>> refs/remotes/origin/master
 <tr>
-<<<<<<< HEAD
-<td title='com.OSMOSE.testcases.Product.verifyTheSearchFullname()'><b>verifyTheSearchFullname</b><br>Test class: com.OSMOSE.testcases.Product<br>Test method: Verify that User clicks on the Slider icon and search for full name Pole Restoration<br>Parameters: {SearchItem=Pole Restoration}<br/>
-<a href="#Output-1664165134" onClick='toggleBox("Output-1664165134", this, "Show output", "Hide output");'>Show output</a>
-=======
 <td title='com.OSMOSE.testcases.Product.MyQuotes_96421()'><b>MyQuotes_96421</b><br>Test class: com.OSMOSE.testcases.Product<br>Test method: Verification of contents on MyQuotes popup<br/>
 <a href="#Output-62759408" onClick='toggleBox("Output-62759408", this, "Show output", "Hide output");'>Show output</a>
->>>>>>> refs/remotes/origin/master
 
-<<<<<<< HEAD
-<a href="#Output-1664165134" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1664165134">
-=======
 <a href="#Output-62759408" onClick="toggleAllBoxes();">Show all outputs</a>
 <div class='log' id="Output-62759408">
->>>>>>> refs/remotes/origin/master
 Click to see Screenshot<br/>
-<<<<<<< HEAD
-<a target="_blank" href=Wed_Jul_08_18_43_58_IST_2020.jpg>Screenshot</a><br/>
-=======
 <a target="_blank" href=Tue_Aug_04_19_50_12_IST_2020.jpg>Screenshot</a><br/>
->>>>>>> refs/remotes/origin/master
 <br><br/>
 <br><br/>
-<<<<<<< HEAD
-<a target="_blank" href=Wed_Jul_08_18_43_58_IST_2020.jpg><img src=Wed_Jul_08_18_43_58_IST_2020.jpg height=200 width=200></img></a><br/>
-=======
 <a target="_blank" href=Tue_Aug_04_19_50_12_IST_2020.jpg><img src=Tue_Aug_04_19_50_12_IST_2020.jpg height=200 width=200></img></a><br/>
 </div>
 </td>
@@ -1123,75 +437,21 @@ Click to see Screenshot<br/>
 <br><br/>
 <br><br/>
 <a target="_blank" href=Tue_Aug_04_19_55_32_IST_2020.jpg><img src=Tue_Aug_04_19_55_32_IST_2020.jpg height=200 width=200></img></a><br/>
->>>>>>> refs/remotes/origin/master
 </div>
 </td>
 <td></td>
 <td>12</td>
-<<<<<<< HEAD
-<td>com.OSMOSE.testcases.Product@549949be</td></tr>
-=======
 <td>com.OSMOSE.testcases.Product@1ab6718</td></tr>
->>>>>>> refs/remotes/origin/master
 <tr>
-<<<<<<< HEAD
-<td title='com.OSMOSE.testcases.Product.verifyTheSearchOneAlphabet()'><b>verifyTheSearchOneAlphabet</b><br>Test class: com.OSMOSE.testcases.Product<br>Test method: Verify that User clicks on the Slider icon and search for One Alphabeted like H<br>Parameters: {SearchItem=H}<br/>
-<a href="#Output-858727880" onClick='toggleBox("Output-858727880", this, "Show output", "Hide output");'>Show output</a>
-=======
 <td title='com.OSMOSE.testcases.Product.SubmitQuotewithQuotePendingstatus()'><b>SubmitQuotewithQuotePendingstatus</b><br>Test class: com.OSMOSE.testcases.Product<br>Test method: Submitting a Quote with Quote Pending Status<br/>
 <a href="#Output-472015917" onClick='toggleBox("Output-472015917", this, "Show output", "Hide output");'>Show output</a>
->>>>>>> refs/remotes/origin/master
 
-<<<<<<< HEAD
-<a href="#Output-858727880" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-858727880">
-=======
 <a href="#Output-472015917" onClick="toggleAllBoxes();">Show all outputs</a>
 <div class='log' id="Output-472015917">
->>>>>>> refs/remotes/origin/master
 Click to see Screenshot<br/>
-<<<<<<< HEAD
-<a target="_blank" href=Wed_Jul_08_18_44_11_IST_2020.jpg>Screenshot</a><br/>
-=======
 <a target="_blank" href=Tue_Aug_04_19_55_19_IST_2020.jpg>Screenshot</a><br/>
->>>>>>> refs/remotes/origin/master
 <br><br/>
 <br><br/>
-<<<<<<< HEAD
-<a target="_blank" href=Wed_Jul_08_18_44_11_IST_2020.jpg><img src=Wed_Jul_08_18_44_11_IST_2020.jpg height=200 width=200></img></a><br/>
-</div>
-</td>
-<td></td>
-<td>12</td>
-<td>com.OSMOSE.testcases.Product@549949be</td></tr>
-<tr>
-<td title='com.OSMOSE.testcases.Product.verifyTheValidationmessage()'><b>verifyTheValidationmessage</b><br>Test class: com.OSMOSE.testcases.Product<br>Test method: Verify that User clicks on the Slider icon and validate the validation message is shown wrong input<br>Parameters: {SearchItem=               }<br/>
-<a href="#Output-808653065" onClick='toggleBox("Output-808653065", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-808653065" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-808653065">
-Click to see Screenshot<br/>
-<a target="_blank" href=Wed_Jul_08_18_44_39_IST_2020.jpg>Screenshot</a><br/>
-<br><br/>
-<br><br/>
-<a target="_blank" href=Wed_Jul_08_18_44_39_IST_2020.jpg><img src=Wed_Jul_08_18_44_39_IST_2020.jpg height=200 width=200></img></a><br/>
-</div>
-</td>
-<td></td>
-<td>13</td>
-<td>com.OSMOSE.testcases.Product@549949be</td></tr>
-<tr>
-<td title='com.OSMOSE.testcases.OULogin.verifyVideoLinks()'><b>verifyVideoLinks</b><br>Test class: com.OSMOSE.testcases.OULogin<br/>
-<a href="#Output-537265886" onClick='toggleBox("Output-537265886", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-537265886" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-537265886">
-Click to see Screenshot<br/>
-<a target="_blank" href=Wed_Jul_08_18_39_03_IST_2020.jpg>Screenshot</a><br/>
-<br><br/>
-<br><br/>
-<a target="_blank" href=Wed_Jul_08_18_39_03_IST_2020.jpg><img src=Wed_Jul_08_18_39_03_IST_2020.jpg height=200 width=200></img></a><br/>
-=======
 <a target="_blank" href=Tue_Aug_04_19_55_19_IST_2020.jpg><img src=Tue_Aug_04_19_55_19_IST_2020.jpg height=200 width=200></img></a><br/>
 </div>
 </td>
@@ -1385,34 +645,12 @@ Click to see Screenshot<br/>
 <br><br/>
 <br><br/>
 <a target="_blank" href=Tue_Aug_04_19_43_33_IST_2020.jpg><img src=Tue_Aug_04_19_43_33_IST_2020.jpg height=200 width=200></img></a><br/>
->>>>>>> refs/remotes/origin/master
 </div>
 </td>
 <td></td>
 <td>0</td>
-<<<<<<< HEAD
-<td>com.OSMOSE.testcases.OULogin@13f17eb4</td></tr>
-=======
 <td>com.OSMOSE.testcases.Product@1ab6718</td></tr>
->>>>>>> refs/remotes/origin/master
 <tr>
-<<<<<<< HEAD
-<td title='com.OSMOSE.testcases.Product.verifyViewDetail()'><b>verifyViewDetail</b><br>Test class: com.OSMOSE.testcases.Product<br>Test method: Verification of the presence of View Details button<br/>
-<a href="#Output-1522119751" onClick='toggleBox("Output-1522119751", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-1522119751" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1522119751">
-Click to see Screenshot<br/>
-<a target="_blank" href=Wed_Jul_08_18_41_46_IST_2020.jpg>Screenshot</a><br/>
-<br><br/>
-<br><br/>
-<a target="_blank" href=Wed_Jul_08_18_41_46_IST_2020.jpg><img src=Wed_Jul_08_18_41_46_IST_2020.jpg height=200 width=200></img></a><br/>
-</div>
-</td>
-<td></td>
-<td>3</td>
-<td>com.OSMOSE.testcases.Product@549949be</td></tr>
-=======
 <td title='com.OSMOSE.testcases.Product.allSixProductPresent()'><b>allSixProductPresent</b><br>Test class: com.OSMOSE.testcases.Product<br>Test method: Verification of the presence of all six products<br/>
 <a href="#Output-1211363315" onClick='toggleBox("Output-1211363315", this, "Show output", "Hide output");'>Show output</a>
 
@@ -1428,20 +666,7 @@ Click to see Screenshot<br/>
 <td></td>
 <td>0</td>
 <td>com.OSMOSE.testcases.Product@1ab6718</td></tr>
->>>>>>> refs/remotes/origin/master
 <tr>
-<<<<<<< HEAD
-<td title='com.OSMOSE.testcases.Product.viewDetailsElementPresent()'><b>viewDetailsElementPresent</b><br>Test class: com.OSMOSE.testcases.Product<br>Test method: Verification of the presence of View Details button<br/>
-<a href="#Output-1533672820" onClick='toggleBox("Output-1533672820", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-1533672820" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1533672820">
-Click to see Screenshot<br/>
-<a target="_blank" href=Wed_Jul_08_18_39_59_IST_2020.jpg>Screenshot</a><br/>
-<br><br/>
-<br><br/>
-<a target="_blank" href=Wed_Jul_08_18_39_59_IST_2020.jpg><img src=Wed_Jul_08_18_39_59_IST_2020.jpg height=200 width=200></img></a><br/>
-=======
 <td title='com.OSMOSE.testcases.Product.catalogElementPresent()'><b>catalogElementPresent</b><br>Test class: com.OSMOSE.testcases.Product<br>Test method: Verification of the presence of Catalog Element<br/>
 <a href="#Output-196954001" onClick='toggleBox("Output-196954001", this, "Show output", "Hide output");'>Show output</a>
 
@@ -1452,14 +677,10 @@ Click to see Screenshot<br/>
 <br><br/>
 <br><br/>
 <a target="_blank" href=Tue_Aug_04_19_43_32_IST_2020.jpg><img src=Tue_Aug_04_19_43_32_IST_2020.jpg height=200 width=200></img></a><br/>
->>>>>>> refs/remotes/origin/master
 </div>
 </td>
 <td></td>
 <td>0</td>
-<<<<<<< HEAD
-<td>com.OSMOSE.testcases.Product@549949be</td></tr>
-=======
 <td>com.OSMOSE.testcases.Product@1ab6718</td></tr>
 <tr>
 <td title='com.OSMOSE.testcases.OULogin.clickOnOuLink()'><b>clickOnOuLink</b><br>Test class: com.OSMOSE.testcases.OULogin<br>Test method: Verify that Live Events button is displayed<br>Parameters: {password=Hyde@2317, runmode=Y, username=rajesh.yadav@centurylink.com}<br/>
@@ -1622,6 +843,22 @@ Click to see Screenshot<br/>
 <td>50</td>
 <td>com.OSMOSE.testcases.Product@1ab6718</td></tr>
 <tr>
+<td title='com.OSMOSE.testcases.Contact.verifyClickOnBackButton()'><b>verifyClickOnBackButton</b><br>Test class: com.OSMOSE.testcases.Contact<br>Test method: Verification of the click on Back button<br/>
+<a href="#Output-1832539882" onClick='toggleBox("Output-1832539882", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1832539882" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1832539882">
+Click to see Screenshot<br/>
+<a target="_blank" href=Tue_Aug_04_20_02_45_IST_2020.jpg>Screenshot</a><br/>
+<br><br/>
+<br><br/>
+<a target="_blank" href=Tue_Aug_04_20_02_45_IST_2020.jpg><img src=Tue_Aug_04_20_02_45_IST_2020.jpg height=200 width=200></img></a><br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.OSMOSE.testcases.Contact@2c2db130</td></tr>
+<tr>
 <td title='com.OSMOSE.testcases.OULogin.verifyClickingTheWebinars()'><b>verifyClickingTheWebinars</b><br>Test class: com.OSMOSE.testcases.OULogin<br>Test method: Verify that Webinars button is displayed<br/>
 <a href="#Output-1298707825" onClick='toggleBox("Output-1298707825", this, "Show output", "Hide output");'>Show output</a>
 
@@ -1654,6 +891,134 @@ Click to see Screenshot<br/>
 <td>0</td>
 <td>com.OSMOSE.testcases.OULogin@4d774249</td></tr>
 <tr>
+<td title='com.OSMOSE.testcases.Contact.verifyContactUsClickOnGoogleMap()'><b>verifyContactUsClickOnGoogleMap</b><br>Test class: com.OSMOSE.testcases.Contact<br>Test method: Verify that user is able to click on View On Google Map<br/>
+<a href="#Output-747909318" onClick='toggleBox("Output-747909318", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-747909318" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-747909318">
+Click to see Screenshot<br/>
+<a target="_blank" href=Tue_Aug_04_20_03_17_IST_2020.jpg>Screenshot</a><br/>
+<br><br/>
+<br><br/>
+<a target="_blank" href=Tue_Aug_04_20_03_17_IST_2020.jpg><img src=Tue_Aug_04_20_03_17_IST_2020.jpg height=200 width=200></img></a><br/>
+</div>
+</td>
+<td></td>
+<td>30</td>
+<td>com.OSMOSE.testcases.Contact@2c2db130</td></tr>
+<tr>
+<td title='com.OSMOSE.testcases.Contact.verifyContactUsGeneralInquiriesContents()'><b>verifyContactUsGeneralInquiriesContents</b><br>Test class: com.OSMOSE.testcases.Contact<br>Test method: Verification of the contents under General Inquiries section<br/>
+<a href="#Output-1453763291" onClick='toggleBox("Output-1453763291", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1453763291" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1453763291">
+Click to see Screenshot<br/>
+<a target="_blank" href=Tue_Aug_04_20_03_17_IST_2020.jpg>Screenshot</a><br/>
+<br><br/>
+<br><br/>
+<a target="_blank" href=Tue_Aug_04_20_03_17_IST_2020.jpg><img src=Tue_Aug_04_20_03_17_IST_2020.jpg height=200 width=200></img></a><br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.OSMOSE.testcases.Contact@2c2db130</td></tr>
+<tr>
+<td title='com.OSMOSE.testcases.Contact.verifyContactUsHeaderContents()'><b>verifyContactUsHeaderContents</b><br>Test class: com.OSMOSE.testcases.Contact<br>Test method: Verification of the Header content on Contact Us Menu item<br/>
+<a href="#Output-396308663" onClick='toggleBox("Output-396308663", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-396308663" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-396308663">
+Click to see Screenshot<br/>
+<a target="_blank" href=Tue_Aug_04_20_02_45_IST_2020.jpg>Screenshot</a><br/>
+<br><br/>
+<br><br/>
+<a target="_blank" href=Tue_Aug_04_20_02_45_IST_2020.jpg><img src=Tue_Aug_04_20_02_45_IST_2020.jpg height=200 width=200></img></a><br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.OSMOSE.testcases.Contact@2c2db130</td></tr>
+<tr>
+<td title='com.OSMOSE.testcases.Contact.verifyContactUsMenuContents()'><b>verifyContactUsMenuContents</b><br>Test class: com.OSMOSE.testcases.Contact<br>Test method: Verification of the presence of Contact Us Menu items.<br/>
+<a href="#Output-1262973217" onClick='toggleBox("Output-1262973217", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1262973217" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1262973217">
+Click to see Screenshot<br/>
+<a target="_blank" href=Tue_Aug_04_20_02_42_IST_2020.jpg>Screenshot</a><br/>
+<br><br/>
+<br><br/>
+<a target="_blank" href=Tue_Aug_04_20_02_42_IST_2020.jpg><img src=Tue_Aug_04_20_02_42_IST_2020.jpg height=200 width=200></img></a><br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.OSMOSE.testcases.Contact@2c2db130</td></tr>
+<tr>
+<td title='com.OSMOSE.testcases.Contact.verifyContactUsOCalcProContents()'><b>verifyContactUsOCalcProContents</b><br>Test class: com.OSMOSE.testcases.Contact<br>Test method: Verification of the contents under O-Calc Pro section<br/>
+<a href="#Output-1419194266" onClick='toggleBox("Output-1419194266", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1419194266" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1419194266">
+Click to see Screenshot<br/>
+<a target="_blank" href=Tue_Aug_04_20_03_19_IST_2020.jpg>Screenshot</a><br/>
+<br><br/>
+<br><br/>
+<a target="_blank" href=Tue_Aug_04_20_03_19_IST_2020.jpg><img src=Tue_Aug_04_20_03_19_IST_2020.jpg height=200 width=200></img></a><br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.OSMOSE.testcases.Contact@2c2db130</td></tr>
+<tr>
+<td title='com.OSMOSE.testcases.Contact.verifyContactUsQueryFormContents()'><b>verifyContactUsQueryFormContents</b><br>Test class: com.OSMOSE.testcases.Contact<br>Test method: Verification of the contents inside Queries form<br/>
+<a href="#Output-1052245880" onClick='toggleBox("Output-1052245880", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1052245880" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1052245880">
+Click to see Screenshot<br/>
+<a target="_blank" href=Tue_Aug_04_20_03_19_IST_2020.jpg>Screenshot</a><br/>
+<br><br/>
+<br><br/>
+<a target="_blank" href=Tue_Aug_04_20_03_19_IST_2020.jpg><img src=Tue_Aug_04_20_03_19_IST_2020.jpg height=200 width=200></img></a><br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.OSMOSE.testcases.Contact@2c2db130</td></tr>
+<tr>
+<td title='com.OSMOSE.testcases.Contact.verifyContactUsSalesProductsContents()'><b>verifyContactUsSalesProductsContents</b><br>Test class: com.OSMOSE.testcases.Contact<br>Test method: Verification of the contents under Sales-Products section<br/>
+<a href="#Output-2140404961" onClick='toggleBox("Output-2140404961", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2140404961" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2140404961">
+Click to see Screenshot<br/>
+<a target="_blank" href=Tue_Aug_04_20_03_18_IST_2020.jpg>Screenshot</a><br/>
+<br><br/>
+<br><br/>
+<a target="_blank" href=Tue_Aug_04_20_03_18_IST_2020.jpg><img src=Tue_Aug_04_20_03_18_IST_2020.jpg height=200 width=200></img></a><br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.OSMOSE.testcases.Contact@2c2db130</td></tr>
+<tr>
+<td title='com.OSMOSE.testcases.Contact.verifyContactUsSalesServicesContents()'><b>verifyContactUsSalesServicesContents</b><br>Test class: com.OSMOSE.testcases.Contact<br>Test method: Verification of the contents under Sales-Services section<br/>
+<a href="#Output-1072487680" onClick='toggleBox("Output-1072487680", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1072487680" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1072487680">
+Click to see Screenshot<br/>
+<a target="_blank" href=Tue_Aug_04_20_03_18_IST_2020.jpg>Screenshot</a><br/>
+<br><br/>
+<br><br/>
+<a target="_blank" href=Tue_Aug_04_20_03_18_IST_2020.jpg><img src=Tue_Aug_04_20_03_18_IST_2020.jpg height=200 width=200></img></a><br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.OSMOSE.testcases.Contact@2c2db130</td></tr>
+<tr>
 <td title='com.OSMOSE.testcases.OULogin.verifyDETAILSANDREGISTRATION()'><b>verifyDETAILSANDREGISTRATION</b><br>Test class: com.OSMOSE.testcases.OULogin<br>Test method: Verify that user is able to click on 'Details and Registration' and enter details<br/>
 <a href="#Output-1225554563" onClick='toggleBox("Output-1225554563", this, "Show output", "Hide output");'>Show output</a>
 
@@ -1685,6 +1050,86 @@ Click to see Screenshot<br/>
 <td></td>
 <td>15</td>
 <td>com.OSMOSE.testcases.Product@1ab6718</td></tr>
+<tr>
+<td title='com.OSMOSE.testcases.Contact.verifyFormSubmissionThankYouPopUp()'><b>verifyFormSubmissionThankYouPopUp</b><br>Test class: com.OSMOSE.testcases.Contact<br>Test method: Verification of Pop up that is displayed after Form submission<br/>
+<a href="#Output-228732988" onClick='toggleBox("Output-228732988", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-228732988" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-228732988">
+Click to see Screenshot<br/>
+<a target="_blank" href=Tue_Aug_04_20_03_37_IST_2020.jpg>Screenshot</a><br/>
+<br><br/>
+<br><br/>
+<a target="_blank" href=Tue_Aug_04_20_03_37_IST_2020.jpg><img src=Tue_Aug_04_20_03_37_IST_2020.jpg height=200 width=200></img></a><br/>
+</div>
+</td>
+<td></td>
+<td>11</td>
+<td>com.OSMOSE.testcases.Contact@2c2db130</td></tr>
+<tr>
+<td title='com.OSMOSE.testcases.Contact.verifyFormSubmissionWith_Other()'><b>verifyFormSubmissionWith_Other</b><br>Test class: com.OSMOSE.testcases.Contact<br>Test method: Verification of Form submission with 'Other' subject<br/>
+<a href="#Output-276852158" onClick='toggleBox("Output-276852158", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-276852158" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-276852158">
+Click to see Screenshot<br/>
+<a target="_blank" href=Tue_Aug_04_20_03_43_IST_2020.jpg>Screenshot</a><br/>
+<br><br/>
+<br><br/>
+<a target="_blank" href=Tue_Aug_04_20_03_43_IST_2020.jpg><img src=Tue_Aug_04_20_03_43_IST_2020.jpg height=200 width=200></img></a><br/>
+</div>
+</td>
+<td></td>
+<td>1</td>
+<td>com.OSMOSE.testcases.Contact@2c2db130</td></tr>
+<tr>
+<td title='com.OSMOSE.testcases.Contact.verifyFormSubmissionWith_ProjectSupport()'><b>verifyFormSubmissionWith_ProjectSupport</b><br>Test class: com.OSMOSE.testcases.Contact<br>Test method: Verification of Form submission with 'Project Support' subject<br/>
+<a href="#Output-894151346" onClick='toggleBox("Output-894151346", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-894151346" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-894151346">
+Click to see Screenshot<br/>
+<a target="_blank" href=Tue_Aug_04_20_03_39_IST_2020.jpg>Screenshot</a><br/>
+<br><br/>
+<br><br/>
+<a target="_blank" href=Tue_Aug_04_20_03_39_IST_2020.jpg><img src=Tue_Aug_04_20_03_39_IST_2020.jpg height=200 width=200></img></a><br/>
+</div>
+</td>
+<td></td>
+<td>1</td>
+<td>com.OSMOSE.testcases.Contact@2c2db130</td></tr>
+<tr>
+<td title='com.OSMOSE.testcases.Contact.verifyFormSubmissionWith_RequestForInformation()'><b>verifyFormSubmissionWith_RequestForInformation</b><br>Test class: com.OSMOSE.testcases.Contact<br>Test method: Verification of Form submission with 'Request for Information' subject<br/>
+<a href="#Output-861715645" onClick='toggleBox("Output-861715645", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-861715645" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-861715645">
+Click to see Screenshot<br/>
+<a target="_blank" href=Tue_Aug_04_20_03_25_IST_2020.jpg>Screenshot</a><br/>
+<br><br/>
+<br><br/>
+<a target="_blank" href=Tue_Aug_04_20_03_25_IST_2020.jpg><img src=Tue_Aug_04_20_03_25_IST_2020.jpg height=200 width=200></img></a><br/>
+</div>
+</td>
+<td></td>
+<td>5</td>
+<td>com.OSMOSE.testcases.Contact@2c2db130</td></tr>
+<tr>
+<td title='com.OSMOSE.testcases.Contact.verifyFormSubmissionWith_TechnicalSupport()'><b>verifyFormSubmissionWith_TechnicalSupport</b><br>Test class: com.OSMOSE.testcases.Contact<br>Test method: Verification of Form submission with 'Technical Support' subject<br/>
+<a href="#Output-235908822" onClick='toggleBox("Output-235908822", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-235908822" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-235908822">
+Click to see Screenshot<br/>
+<a target="_blank" href=Tue_Aug_04_20_03_41_IST_2020.jpg>Screenshot</a><br/>
+<br><br/>
+<br><br/>
+<a target="_blank" href=Tue_Aug_04_20_03_41_IST_2020.jpg><img src=Tue_Aug_04_20_03_41_IST_2020.jpg height=200 width=200></img></a><br/>
+</div>
+</td>
+<td></td>
+<td>1</td>
+<td>com.OSMOSE.testcases.Contact@2c2db130</td></tr>
 <tr>
 <td title='com.OSMOSE.testcases.OULogin.verifyHyperlinks()'><b>verifyHyperlinks</b><br>Test class: com.OSMOSE.testcases.OULogin<br>Test method: Verify the hyperlinks on Osmose University Card<br/>
 <a href="#Output-1955406455" onClick='toggleBox("Output-1955406455", this, "Show output", "Hide output");'>Show output</a>
@@ -2102,6 +1547,38 @@ Click to see Screenshot<br/>
 <td>0</td>
 <td>com.OSMOSE.testcases.OULogin@4d774249</td></tr>
 <tr>
+<td title='com.OSMOSE.testcases.Contact.verifyViewContactsContactCardContents()'><b>verifyViewContactsContactCardContents</b><br>Test class: com.OSMOSE.testcases.Contact<br>Test method: Verification of the content on a contact card<br/>
+<a href="#Output-860144087" onClick='toggleBox("Output-860144087", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-860144087" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-860144087">
+Click to see Screenshot<br/>
+<a target="_blank" href=Tue_Aug_04_20_02_44_IST_2020.jpg>Screenshot</a><br/>
+<br><br/>
+<br><br/>
+<a target="_blank" href=Tue_Aug_04_20_02_44_IST_2020.jpg><img src=Tue_Aug_04_20_02_44_IST_2020.jpg height=200 width=200></img></a><br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.OSMOSE.testcases.Contact@2c2db130</td></tr>
+<tr>
+<td title='com.OSMOSE.testcases.Contact.verifyViewContactsHeaderContents()'><b>verifyViewContactsHeaderContents</b><br>Test class: com.OSMOSE.testcases.Contact<br>Test method: Verification of the Header content on View Contacts Menu item<br/>
+<a href="#Output-1181479782" onClick='toggleBox("Output-1181479782", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1181479782" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1181479782">
+Click to see Screenshot<br/>
+<a target="_blank" href=Tue_Aug_04_20_02_43_IST_2020.jpg>Screenshot</a><br/>
+<br><br/>
+<br><br/>
+<a target="_blank" href=Tue_Aug_04_20_02_43_IST_2020.jpg><img src=Tue_Aug_04_20_02_43_IST_2020.jpg height=200 width=200></img></a><br/>
+</div>
+</td>
+<td></td>
+<td>1</td>
+<td>com.OSMOSE.testcases.Contact@2c2db130</td></tr>
+<tr>
 <td title='com.OSMOSE.testcases.Product.verifyViewDetail()'><b>verifyViewDetail</b><br>Test class: com.OSMOSE.testcases.Product<br>Test method: Verification of the presence of View Details button<br/>
 <a href="#Output-1024240671" onClick='toggleBox("Output-1024240671", this, "Show output", "Hide output");'>Show output</a>
 
@@ -2149,7 +1626,6 @@ Click to see Screenshot<br/>
 <td></td>
 <td>0</td>
 <td>com.OSMOSE.testcases.Product@1ab6718</td></tr>
->>>>>>> refs/remotes/origin/master
 </table><p>
 </body>
 </html>
