@@ -197,7 +197,7 @@ public class Contact extends BaseTest {
 		cp.clickCloseOnThankYouFormSubmission();
 	}
 	
-	@Test(priority = 15, enabled = true, description = "Verification of Form submission with 'Other' subject")
+	@Test(priority = 16, enabled = true, description = "Verification of Form submission with 'Other' subject")
 	public void verifyFormSubmissionErrorMessage() {
 		ProductPage pp = new ProductPage();
 		ContactPage cp = pp.goContact();

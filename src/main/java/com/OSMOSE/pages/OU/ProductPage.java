@@ -492,7 +492,7 @@ public class ProductPage extends Page {
 		click("ClickAdminDropDown_XPATH");
 		click("ClickManageQuotes_XPATH");
 		Thread.sleep(3000);
-		click("Q00010QUOTEID_XPATH");
+		click("Q00010OrderedQUOTEID_XPATH");
 		click("StatusdropdownQuotesubmit_XPATH");
 		selectbyindex("StatusdropdownQuotesubmit_XPATH", 2);
 		click("BrowseFileSubmitQuote_XPATH");
@@ -519,12 +519,13 @@ public class ProductPage extends Page {
 		Runtime.getRuntime().exec("C:\\Users\\AC38373\\Downloads\\AutoITScripts\\ManageQuoteUpload.exe");
 		Thread.sleep(3000);
 		click("UploadbtnSubmitQuote_XPATH");
-		/*click("SubmitbtnQuotesubmission_XPATH");
-		Thread.sleep(3000);*/
-		type("ExpireInTxtBox_XPATH","-12");
+		/*
+		 * click("SubmitbtnQuotesubmission_XPATH"); Thread.sleep(3000);
+		 */
+		type("ExpireInTxtBox_XPATH", "-12");
 
 	}
-	
+
 	public void ClickSubmitQuotewithInvalidFileFormat() throws InterruptedException, Exception {
 		click("ClickAdminDropDown_XPATH");
 		click("ClickManageQuotes_XPATH");
@@ -537,11 +538,12 @@ public class ProductPage extends Page {
 		Runtime.getRuntime().exec("C:\\Users\\AC38373\\Downloads\\AutoITScripts\\ManageQuoteInvalidFileUpload.exe");
 		Thread.sleep(3000);
 		click("UploadbtnSubmitQuote_XPATH");
-		/*click("SubmitbtnQuotesubmission_XPATH");
-		Thread.sleep(3000);*/
+		/*
+		 * click("SubmitbtnQuotesubmission_XPATH"); Thread.sleep(3000);
+		 */
 
 	}
-	
+
 	// Below method added by Varun 6july2020
 	public void ClickApprovebtnManageQuote() throws InterruptedException, Exception {
 		Page.driver.navigate().back();
@@ -890,9 +892,192 @@ public class ProductPage extends Page {
 		type("ProductSizeEnterQuantity_XPATH", "8");
 		click("ProductAddButton_XPATH");
 		click("ProductViewCartButton_XPATH");
+		Thread.sleep(3000);
 		click("SubmitQuoteRequestbtn_XPATH");
 		click("Submitbtn_XPATH");
 		click("QuoteRequestsubmittedpopupClosebtn_XPATH");
+	}
+
+	public void ProductGoBack() throws InterruptedException {
+		Thread.sleep(1000);
+		click("ProductPoleRestoration_XPATH");
+		click("ProductPoleRestoration_XPATH");
+		Thread.sleep(1000);
+		click("ProductPoleRestorationCTruss_XPATH");
+		selectbyindex("ProductSizeDropdown_XPATH", 1);
+		click("ProductSizeEnterQuantity_XPATH");
+		clear("ProductSizeEnterQuantity_XPATH");
+		type("ProductSizeEnterQuantity_XPATH", "1");
+		click("ProductAddButton_XPATH");
+		click("ProductViewCartButton_XPATH");
+		Thread.sleep(1000);
+		click("SubmitQuoteRequestbtn_XPATH");
+		Thread.sleep(3000);
+		click("GoBackLink_XPATH");
+
+	}
+
+	public void CreateQuoteByMultipleFileAddToShoppingCart() throws InterruptedException, Exception {
+		click("ProductPoleRestoration_XPATH");
+		Thread.sleep(1000);
+		click("ProductPoleRestoration_XPATH");
+		click("ProductPoleRestorationCTruss_XPATH");
+		selectbyindex("ProductSizeDropdown_XPATH", 1);
+		click("ProductSizeEnterQuantity_XPATH");
+		clear("ProductSizeEnterQuantity_XPATH");
+		type("ProductSizeEnterQuantity_XPATH", "8");
+		click("ProductAddButton_XPATH");
+		click("ProductViewCartButton_XPATH");
+		click("SubmitQuoteRequestbtn_XPATH");
+		ClickActions("ShippingAttachment_XPATH");
+		Thread.sleep(5000);
+		Runtime.getRuntime().exec("C:\\Users\\AC38373\\Downloads\\AutoITScripts\\MultipleFileUploadPdf.exe");
+		Thread.sleep(3000);
+		ClickActions("ShippingAttachment_XPATH");
+		Thread.sleep(5000);
+		Runtime.getRuntime().exec("C:\\Users\\AC38373\\Downloads\\AutoITScripts\\MultipleFileUploaddocx.exe");
+		Thread.sleep(3000);
+		ClickActions("ShippingAttachment_XPATH");
+		Thread.sleep(5000);
+		Runtime.getRuntime().exec("C:\\Users\\AC38373\\Downloads\\AutoITScripts\\MultipleFileUploadXlsx.exe");
+		Thread.sleep(3000);
+		click("MultipleFileCreateQuoteSubmitBtn_XPATH");
+		click("QuoteRequestsubmittedpopupClosebtn_XPATH");
+	}
+
+	public void CreateQuoteByUpdateFileAddToShoppingCart() throws InterruptedException {
+		click("ProductPoleRestoration_XPATH");
+		Thread.sleep(1000);
+		click("ProductPoleRestoration_XPATH");
+		click("ProductPoleRestorationCTruss_XPATH");
+		selectbyindex("ProductSizeDropdown_XPATH", 1);
+		click("ProductSizeEnterQuantity_XPATH");
+		clear("ProductSizeEnterQuantity_XPATH");
+		type("ProductSizeEnterQuantity_XPATH", "8");
+		click("ProductAddButton_XPATH");
+		click("ProductViewCartButton_XPATH");
+		click("SubmitQuoteRequestbtn_XPATH");
+		type("ShippingAttachment_XPATH", "C:\\Users\\AC38373\\Desktop\\File_123.pdf");
+		Thread.sleep(3000);
+		click("DeleteAttachmnetbtn_XPATH");
+		type("ShippingAttachment_XPATH", "C:\\Users\\AC38373\\Desktop\\File_123.xlsx");
+		Thread.sleep(1000);
+		click("FileAttachmentSubmitbtn_XPATH");
+		click("QuoteRequestsubmittedpopupClosebtn_XPATH");
+	}
+
+	public void ShoppingCarrtAddbtnDisabled() throws InterruptedException {
+		click("ProductPoleRestoration_XPATH");
+		Thread.sleep(1000);
+		click("ProductPoleRestoration_XPATH");
+		click("ProductPoleRestorationCTruss_XPATH");
+	}
+
+	public void ShoppingCarrtAddbtnDisabledclearqty() throws InterruptedException {
+		click("ProductPoleRestoration_XPATH");
+		Thread.sleep(1000);
+		click("ProductPoleRestoration_XPATH");
+		click("ProductPoleRestorationCTruss_XPATH");
+		selectbyindex("ProductSizeDropdown_XPATH", 1);
+		click("ProductSizeEnterQuantity_XPATH");
+		clear("ProductSizeEnterQuantity_XPATH");
+	}
+
+	public void ShoppingCarrtAddbtnMaxqty() throws InterruptedException {
+		click("ProductPoleRestoration_XPATH");
+		Thread.sleep(1000);
+		click("ProductPoleRestoration_XPATH");
+		click("ProductPoleRestorationCTruss_XPATH");
+		selectbyindex("ProductSizeDropdown_XPATH", 1);
+		click("ProductSizeEnterQuantity_XPATH");
+		clear("ProductSizeEnterQuantity_XPATH");
+		type("ProductSizeEnterQuantity_XPATH", "1000");
+	}
+
+	public void ShoppingCarrtAddbtnZeroqty() throws InterruptedException {
+		click("ProductPoleRestoration_XPATH");
+		Thread.sleep(1000);
+		click("ProductPoleRestoration_XPATH");
+		click("ProductPoleRestorationCTruss_XPATH");
+		selectbyindex("ProductSizeDropdown_XPATH", 1);
+		click("ProductSizeEnterQuantity_XPATH");
+		clear("ProductSizeEnterQuantity_XPATH");
+		type("ProductSizeEnterQuantity_XPATH", "0");
+	}
+
+	public void ClickSubmitQuotewithoutFile() throws InterruptedException, Exception {
+		click("ClickAdminDropDown_XPATH");
+		click("ClickManageQuotes_XPATH");
+		Thread.sleep(3000);
+		click("Q00010QUOTEID_XPATH");
+		click("StatusdropdownQuotesubmit_XPATH");
+		selectbyindex("StatusdropdownQuotesubmit_XPATH", 2);
+		// click("BrowseFileSubmitQuote_XPATH");
+		Thread.sleep(5000);
+		click("SubmitbtnQuotesubmission_XPATH");
+	}
+
+	public void AddingRelatedProducts() throws InterruptedException {
+		// click("ProductPoleRestoration_XPATH");
+		Thread.sleep(1000);
+		click("ProductPoleRestoration_XPATH");
+		Thread.sleep(1000);
+		click("ProductPoleRestorationCTruss_XPATH");
+		Thread.sleep(1000);
+		click("RelatedProducts_XPATH");
+		Thread.sleep(1000);
+		selectbyindex("ProductSizeDropdown_XPATH", 1);
+		Thread.sleep(1000);
+		click("ProductSizeEnterQuantity_XPATH");
+		Thread.sleep(1000);
+		clear("ProductSizeEnterQuantity_XPATH");
+		Thread.sleep(1000);
+		type("ProductSizeEnterQuantity_XPATH", "2");
+		Thread.sleep(1000);
+		click("ProductAddButton_XPATH");
+		Thread.sleep(1000);
+		click("ProductViewCartButton_XPATH");
+	}
+
+	public void ToolTipForSize() throws InterruptedException {
+		click("ProductPoleRestoration_XPATH");
+		Thread.sleep(1000);
+		click("ProductPoleRestoration_XPATH");
+		click("ProductPoleRestorationCTruss_XPATH");
+		selectbyindex("ProductSizeDropdown_XPATH", 1);
+	}
+
+	public void UpdateChangeProductAddToShoppingCart() throws InterruptedException {
+		click("ProductPoleRestoration_XPATH");
+		Thread.sleep(1000);
+		click("ProductPoleRestoration_XPATH");
+		click("ProductPoleRestorationDummy3_XPATH");
+		selectbyindex("ProductSizeDropdown_XPATH", 1);
+		click("ProductSizeEnterQuantity_XPATH");
+		clear("ProductSizeEnterQuantity_XPATH");
+		type("ProductSizeEnterQuantity_XPATH", "8");
+		click("ProductAddButton_XPATH");
+		click("ProductViewCartButton_XPATH");
+		select("QuoteRequestSizeDrodwn_XPATH", "2");
+	}
+
+	public void DeleteQuantityOnShoppingCart() throws InterruptedException {
+		click("ProductPoleRestoration_XPATH");
+		Thread.sleep(1000);
+		click("ProductPoleRestoration_XPATH");
+		click("ProductPoleRestorationCTruss_XPATH");
+		selectbyindex("ProductSizeDropdown_XPATH", 1);
+		click("ProductSizeEnterQuantity_XPATH");
+		clear("ProductSizeEnterQuantity_XPATH");
+		type("ProductSizeEnterQuantity_XPATH", "8");
+		click("ProductAddButton_XPATH");
+		click("ProductViewCartButton_XPATH");
+		Thread.sleep(3000);
+		click("QuoteRequestCrossicon_XPATH");
+		click("ProductPageCartIcon_XPATH");
+		Thread.sleep(1000);
+		click("DeleteiconShoppingOverlay_XPATH");
+
 	}
 
 	public ContactPage goContact() {
