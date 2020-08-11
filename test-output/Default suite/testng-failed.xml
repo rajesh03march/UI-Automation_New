@@ -5,19 +5,25 @@
     <classes>
       <class name="com.OSMOSE.testcases.Product">
         <methods>
-          <include name="VerifyFPImageClick"/>
-          <include name="VerifyProductclick"/>
+          <include name="sliderItemPresent"/>
+          <include name="UpdateChangeProductAddToShoppingCart"/>
+          <include name="CreateQuote_MultipleAttachment"/>
+          <include name="verifyDeleteProductOnOverlay"/>
           <include name="openMyQuotesElementPresent"/>
           <include name="adminElementPresent"/>
           <include name="catalogElementPresent"/>
           <include name="shoppingCartElementPresent"/>
           <include name="verifyTheProductLink" invocation-numbers="0"/>
+          <include name="verifyCartIconCount"/>
           <include name="viewDetailsElementPresent"/>
+          <include name="VerifyShoppingCarrtAddbtnDisabledclearqty"/>
+          <include name="VerifyShoppingAddbtndisabled"/>
+          <include name="verifyExclamationOnMyQuotes"/>
           <include name="searchElementPresent"/>
+          <include name="CreateQuote_UpdateeAttachment"/>
           <include name="tearDown"/>
+          <include name="MyQuotesCOmments_COllapse"/>
           <include name="allSixProductPresent"/>
-          <include name="verifyViewDetail"/>
-          <include name="verifyCategoryFilter"/>
         </methods>
       </class> <!-- com.OSMOSE.testcases.Product -->
     </classes>
