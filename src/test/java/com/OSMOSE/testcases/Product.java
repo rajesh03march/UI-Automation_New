@@ -389,6 +389,7 @@ public class Product extends BaseTest {
 	public void CreateQuote() throws InterruptedException {
 		HomeOU ou = new HomeOU();
 		ProductPage pp = ou.goProduct();
+		Thread.sleep(3000);
 		pp.CreateQuoteByAddToShoppingCart();
 		Thread.sleep(1000);
 	}
@@ -397,6 +398,7 @@ public class Product extends BaseTest {
 	public void CreateQuote_Comments() throws InterruptedException {
 		HomeOU ou = new HomeOU();
 		ProductPage pp = ou.goProduct();
+		Thread.sleep(3000);
 		pp.CreateQuoteByCommentsAddToShoppingCart();
 		Thread.sleep(1000);
 	}
@@ -405,6 +407,7 @@ public class Product extends BaseTest {
 	public void CreateQuote_ZipCode() throws InterruptedException {
 		HomeOU ou = new HomeOU();
 		ProductPage pp = ou.goProduct();
+		Thread.sleep(3000);
 		pp.CreateQuoteByZipCodeAddToShoppingCart();
 		Thread.sleep(1000);
 	}
@@ -413,6 +416,7 @@ public class Product extends BaseTest {
 	public void CreateQuote_Attachment() throws InterruptedException {
 		HomeOU ou = new HomeOU();
 		ProductPage pp = ou.goProduct();
+		Thread.sleep(3000);
 		pp.CreateQuoteByFileAddToShoppingCart();
 		Thread.sleep(1000);
 	}
@@ -421,8 +425,9 @@ public class Product extends BaseTest {
 	public void ClickShoppingCartIcon() throws InterruptedException {
 		HomeOU ou = new HomeOU();
 		ProductPage pp = ou.goProduct();
+		Thread.sleep(3000);
 		pp.ClickShoppingCartIcon();
-		Thread.sleep(1000);
+		Thread.sleep(3000);
 		Assert.assertTrue(Page.driver
 				.findElement(By.xpath("//*[@id='topHeader-nav-collapse']/ul/li[4]/a/div/div[2]/li[1]/button"))
 				.isDisplayed());
@@ -440,6 +445,7 @@ public class Product extends BaseTest {
 		HomeOU ou = new HomeOU();
 		ProductPage pp = ou.goProduct();
 		Page.click("ProductPageCartIcon_XPATH");
+		Thread.sleep(3000);
 		pp.ClickShoppingViewCartbutton();
 		Thread.sleep(1000);
 		Assert.assertEquals(Page.getText("ProductsQuoterequest_XPATH"), "Quote Request");
@@ -449,6 +455,7 @@ public class Product extends BaseTest {
 	public void ClickShoppingSubmitCartbutton() throws InterruptedException {
 		HomeOU ou = new HomeOU();
 		ProductPage pp = ou.goProduct();
+		Thread.sleep(3000);
 		pp.ClickShoppingSubmitCartbutton();
 		Thread.sleep(1000);
 		Assert.assertEquals(Page.getText("ProductsQuoterequest_XPATH"), "Quote Request");
@@ -461,6 +468,7 @@ public class Product extends BaseTest {
 	public void verifyUpdatedQuantityOnOverlay() throws InterruptedException {
 		HomeOU ou = new HomeOU();
 		ProductPage pp = ou.goProduct();
+		Thread.sleep(3000);
 		pp.UpdateQuantityOnShoppingCart();
 		Thread.sleep(1000);
 		Assert.assertEquals(Page.driver.findElement(By.xpath("//div[@class='cQuantity']/span")).getText(), "33");
@@ -963,6 +971,7 @@ public class Product extends BaseTest {
 		pp.ClickSubmitQuotewithQUOTEDstatus();
 		Thread.sleep(2000);
 		pp.ClickApprovebtnManageQuote();
+		Thread.sleep(5000);
 		Assert.assertEquals(Page.driver.findElement(By.xpath("//div[@id='popupApprove']/h6")).getText(),
 				"Thank you! To approve your quote you will need to:");
 		Assert.assertTrue(Page.driver.findElement(By.xpath("//input[@id = 'purchaseOrder']")).isDisplayed());
@@ -986,13 +995,13 @@ public class Product extends BaseTest {
 		pp.ClickApprovebtnManageQuote();
 		Thread.sleep(2000);
 		pp.VerifyApprovebtndisabled();
-		Thread.sleep(2000);
+		Thread.sleep(5000);
 		// Assert.assertFalse(Page.driver.findElement(By.xpath("//div[@id =
 		// 'popupApprove']/div[1]/div[2]/div[1]/div[1]/div[2]/button[1]")).isDisplayed());
 		Assert.assertFalse(Page.driver
 				.findElement(By.xpath("//div[@id = 'popupApprove']/div[1]/div[2]/div[1]/div[1]/div[2]/button[1]"))
 				.isEnabled());
-		Thread.sleep(2000);
+		Thread.sleep(3000);
 		Page.click("ApproveClosebtn_XPATH");
 	}
 
@@ -1011,7 +1020,7 @@ public class Product extends BaseTest {
 		pp.ClickApprovebtnManageQuote();
 		Thread.sleep(2000);
 		pp.ClickApprovebtnApprove();
-		Thread.sleep(2000);
+		Thread.sleep(5000);
 		Assert.assertEquals(Page.driver.findElement(By.xpath("//div[@class='popupApproved text-center']/h6")).getText(),
 				"Thank you for submitting your request. We will contact you with an order confirmation shortly.");
 		Assert.assertEquals(
@@ -1053,7 +1062,7 @@ public class Product extends BaseTest {
 		pp.MyQuotes();
 		Thread.sleep(2000);
 		pp.ClickSubmitREQuotes();
-		Thread.sleep(2000);
+		Thread.sleep(5000);
 		Assert.assertTrue(Page.driver
 				.findElement(By.xpath("//*[@id='openMyCart___BV_modal_body_']/div/div[2]/div/div[3]/div/a[2]"))
 				.isDisplayed());
@@ -1084,7 +1093,7 @@ public class Product extends BaseTest {
 		Thread.sleep(2000);
 		pp.AddtoShoppingCartRequote();
 		Thread.sleep(2000);
-		Page.click("SubmitQuoteRequestbtn_XPATH");
+		//Page.click("SubmitQuoteRequestbtn_XPATH");
 		pp.CreateREQuoteAllFields();
 		Thread.sleep(10000);
 		Assert.assertEquals(Page.driver.findElement(By.xpath("//h5[@id='quoteSubmitted___BV_modal_title_']")).getText(),
@@ -1259,7 +1268,9 @@ public class Product extends BaseTest {
 		ProductPage pp = ou.goProduct();
 		pp.MyQuotes();
 		Thread.sleep(3000);
-
+		Page.click("CollapseExpandCOmmentbtn_XPATH");
+		Thread.sleep(3000);
+		Page.click("CollapseExpandCOmmentbtn_XPATH");
 		Assert.assertTrue(Page.driver.findElement(By
 				.xpath("//div[@id='openMyquotes___BV_modal_body_']/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/textarea"))
 				.isDisplayed());

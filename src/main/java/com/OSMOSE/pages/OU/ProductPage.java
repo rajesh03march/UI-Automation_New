@@ -271,15 +271,23 @@ public class ProductPage extends Page {
 
 	public void AddToShoppingCartApprove() throws InterruptedException {
 		// click("ProductPoleRestoration_XPATH");
-		Thread.sleep(1000);
+		Thread.sleep(3000);
 		click("ProductPoleRestoration_XPATH");
+		Thread.sleep(3000);
 		click("ProductPoleRestorationCTruss_XPATH");
+		Thread.sleep(3000);
 		selectbyindex("ProductSizeDropdown_XPATH", 2);
+		Thread.sleep(3000);
 		click("ProductSizeEnterQuantity_XPATH");
+		Thread.sleep(3000);
 		clear("ProductSizeEnterQuantity_XPATH");
+		Thread.sleep(3000);
 		type("ProductSizeEnterQuantity_XPATH", "8");
+		Thread.sleep(3000);
 		click("ProductAddButton_XPATH");
+		Thread.sleep(3000);
 		click("ProductViewCartButton_XPATH");
+		Thread.sleep(3000);
 
 	}
 
@@ -457,12 +465,17 @@ public class ProductPage extends Page {
 
 	public void ClickSubmitQuotewithQuotedPendingstatus() throws InterruptedException {
 		click("ClickAdminDropDown_XPATH");
+		Thread.sleep(2000);
 		click("ClickManageQuotes_XPATH");
 		Thread.sleep(3000);
 		click("Q00010QUOTEID_XPATH");
+		Thread.sleep(2000);
 		click("StatusdropdownQuotesubmit_XPATH");
+		Thread.sleep(2000);
 		ClickActions("StatusdropdownQuotesubmit_XPATH");
+		Thread.sleep(2000);
 		selectbyindex("StatusdropdownQuotesubmit_XPATH", 3);
+		Thread.sleep(2000);
 		click("SubmitbtnQuotesubmission_XPATH");
 		Thread.sleep(3000);
 
@@ -490,11 +503,15 @@ public class ProductPage extends Page {
 	public void ClickSubmitQuotewithQUOTEDstatus() throws InterruptedException, Exception {
 		// Below 2 lines are added by Varun 1july2020
 		click("ClickAdminDropDown_XPATH");
+		Thread.sleep(3000);
 		click("ClickManageQuotes_XPATH");
 		Thread.sleep(3000);
 		click("Q00010OrderedQUOTEID_XPATH");
+		Thread.sleep(3000);
 		click("StatusdropdownQuotesubmit_XPATH");
+		Thread.sleep(3000);
 		selectbyindex("StatusdropdownQuotesubmit_XPATH", 2);
+		Thread.sleep(3000);
 		click("BrowseFileSubmitQuote_XPATH");
 		Thread.sleep(5000);
 		// Below line is added by Varun 1july2020
@@ -502,6 +519,7 @@ public class ProductPage extends Page {
 		Runtime.getRuntime().exec("C:\\Users\\AC38373\\Downloads\\AutoITScripts\\ManageQuoteUpload.exe");
 		Thread.sleep(3000);
 		click("UploadbtnSubmitQuote_XPATH");
+		Thread.sleep(3000);
 		click("SubmitbtnQuotesubmission_XPATH");
 		Thread.sleep(3000);
 
@@ -549,17 +567,21 @@ public class ProductPage extends Page {
 		Page.driver.navigate().back();
 		Thread.sleep(6000);
 		click("MyQuotesMenu_XPATH");
-		Thread.sleep(3000);
+		Thread.sleep(10000);
 		click("MyQuotesApprovebtn_XPATH");
-		Thread.sleep(3000);
+		Thread.sleep(5000);
 	}
 
 	// Below method added by Varun 6july2020
 	public void ClickApprovebtnApprove() throws InterruptedException, Exception {
 		type("ApproveAttachPurchaseOrder_XPATH", "C:\\Users\\AC38373\\Desktop\\File_123.pdf");
+		Thread.sleep(2000);
 		type("ApproveOrtxtbox_XPATH", "123");
+		Thread.sleep(2000);
 		type("ApproveAndtxtbox_XPATH", "123");
+		Thread.sleep(2000);
 		type("ApproveCommentstxtarea_XPATH", "123");
+		Thread.sleep(2000);
 		click("ApproveApproveBtn_XPATH");
 		Thread.sleep(3000);
 
@@ -568,7 +590,7 @@ public class ProductPage extends Page {
 	// Added new test case on 7july,2020
 	public void VerifyApprovebtndisabled() throws InterruptedException, Exception {
 		type("ApproveOrtxtbox_XPATH", "123");
-		Thread.sleep(3000);
+		Thread.sleep(5000);
 
 	}
 
@@ -670,9 +692,13 @@ public class ProductPage extends Page {
 	// Below method added by Varun 6july2020
 	public void CreateQuoteAllFields() throws InterruptedException {
 		click("SubmitQuoteRequestbtn_XPATH");
+		Thread.sleep(3000);
 		type("ShippingZipCode_XPATH", "12345");
+		Thread.sleep(3000);
 		type("ShippingAttachment_XPATH", "C:\\Users\\AC38373\\Desktop\\File_123.pdf");
+		Thread.sleep(3000);
 		type("ShippingComments_XPATH", "AutomationTesting");
+		Thread.sleep(3000);
 		click("Submitbtn_XPATH");
 		Thread.sleep(3000);
 		click("QuoteRequestsubmittedpopupClosebtn_XPATH");
@@ -681,8 +707,11 @@ public class ProductPage extends Page {
 	// Created on 6july aman
 	public void CreateREQuoteAllFields() throws InterruptedException {
 		type("ShippingZipCode_XPATH", "12345");
+		Thread.sleep(2000);
 		type("ShippingAttachment_XPATH", "C:\\Users\\AC38373\\Desktop\\File_123.pdf");
+		Thread.sleep(2000);
 		type("ShippingComments_XPATH", "AutomationTesting");
+		Thread.sleep(2000);
 		click("Submitbtn_XPATH");
 		Thread.sleep(3000);
 		// click("QuoteRequestsubmittedpopupClosebtn_XPATH");
@@ -790,16 +819,25 @@ public class ProductPage extends Page {
 		ClickActions("AddToCartRequote_XPATH");
 	}
 
-	public void AddtoShoppingCartRequote() {
+	public void AddtoShoppingCartRequote() throws InterruptedException {
 		click("ContiuneSHoppingButton_XPATH");
+		Thread.sleep(2000);
 		click("ProductPoleRestoration_XPATH");
+		Thread.sleep(2000);
 		click("ProductPoleRestorationCTruss_XPATH");
+		Thread.sleep(2000);
 		selectbyindex("ProductSizeDropdown_XPATH", 2);
+		Thread.sleep(2000);
 		click("ProductSizeEnterQuantity_XPATH");
+		Thread.sleep(2000);
 		clear("ProductSizeEnterQuantity_XPATH");
+		Thread.sleep(2000);
 		type("ProductSizeEnterQuantity_XPATH", "8");
+		Thread.sleep(2000);
 		click("ProductAddButton_XPATH");
+		Thread.sleep(2000);
 		click("ProductViewCartButton_XPATH");
+		Thread.sleep(2000);
 		ClickActions("SubmitbuttonRequote_XPATH");
 	}
 
@@ -929,6 +967,7 @@ public class ProductPage extends Page {
 		click("ProductAddButton_XPATH");
 		click("ProductViewCartButton_XPATH");
 		click("SubmitQuoteRequestbtn_XPATH");
+		Thread.sleep(5000);
 		ClickActions("ShippingAttachment_XPATH");
 		Thread.sleep(5000);
 		Runtime.getRuntime().exec("C:\\Users\\AC38373\\Downloads\\AutoITScripts\\MultipleFileUploadPdf.exe");
