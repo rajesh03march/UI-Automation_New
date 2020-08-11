@@ -1,47 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [OSMOSE Test]">
-  <listeners>
-    <listener class-name="org.uncommons.reportng.HTMLReporter"/>
-    <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
-    <listener class-name="com.OSMOSE.listeners.CustomListeners"/>
-  </listeners>
-  <test thread-count="5" name="Product(failed)">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test thread-count="5" name="Default test(failed)">
     <classes>
       <class name="com.OSMOSE.testcases.Product">
         <methods>
-<<<<<<< HEAD
-          <include name="verifyTheSearchfirstname" invocation-numbers="0"/>
-          <include name="ReturnPolicy"/>
-          <include name="tearDown"/>
-          <include name="FeaturedProductPoleRestoration"/>
-=======
           <include name="sliderItemPresent"/>
-          <include name="SubmitQuotewithQuotePendingstatus"/>
-          <include name="verifyAddToCartWhileReQuoting"/>
-          <include name="verifyStatusFilterExpired"/>
-          <include name="VerifyApprovebtndisabled"/>
-          <include name="verifySubmitwhileREQuoting"/>
-          <include name="SubmitQuotewithOrderRequestedstatus"/>
-          <include name="verifyTheProductLink"/>
+          <include name="UpdateChangeProductAddToShoppingCart"/>
+          <include name="CreateQuote_MultipleAttachment"/>
+          <include name="verifyDeleteProductOnOverlay"/>
+          <include name="openMyQuotesElementPresent"/>
+          <include name="adminElementPresent"/>
+          <include name="catalogElementPresent"/>
+          <include name="shoppingCartElementPresent"/>
+          <include name="verifyTheProductLink" invocation-numbers="0"/>
+          <include name="verifyCartIconCount"/>
+          <include name="viewDetailsElementPresent"/>
+          <include name="VerifyShoppingCarrtAddbtnDisabledclearqty"/>
+          <include name="VerifyShoppingAddbtndisabled"/>
           <include name="verifyExclamationOnMyQuotes"/>
-          <include name="verifyStatusFilterQuotePending"/>
-          <include name="SubmitQuotewithQuoteCancelledstatus"/>
-          <include name="VerifyUIonApprove"/>
+          <include name="searchElementPresent"/>
+          <include name="CreateQuote_UpdateeAttachment"/>
           <include name="tearDown"/>
-          <include name="verifyStatusFilterQuoted"/>
-          <include name="SubmitQuotewithOrderedstatus"/>
-          <include name="verifyStatusFilterOrdered"/>
-          <include name="SubmitQuotewithQuotedstatus"/>
-          <include name="verifyThankyouPopup"/>
-          <include name="VerifyAddShopping_Sameitem"/>
-          <include name="verifyCancelwhileREQuoting"/>
-          <include name="verifyStatusFilterCancelled"/>
-          <include name="ClickDictionaryLink"/>
-          <include name="VerifyCrossicononhoppingCart_Differentitem"/>
->>>>>>> refs/remotes/origin/master
+          <include name="MyQuotesCOmments_COllapse"/>
+          <include name="allSixProductPresent"/>
         </methods>
       </class> <!-- com.OSMOSE.testcases.Product -->
     </classes>
-  </test> <!-- Product(failed) -->
-</suite> <!-- Failed suite [OSMOSE Test] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

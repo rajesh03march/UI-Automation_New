@@ -20,11 +20,11 @@
 			<class name="com.OSMOSE.testcases.Product" />
 		</classes>
 	</test> <!-- Test -->
-	<test name="Contact">
+	<!-- <test name="Contact">
 		<classes>
 			<class name="com.OSMOSE.testcases.Contact" />
 		</classes>
-	</test> <!-- Test -->
+	</test>  --> <!-- Test -->
 
 
 

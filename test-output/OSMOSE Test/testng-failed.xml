@@ -10,36 +10,37 @@
     <classes>
       <class name="com.OSMOSE.testcases.Product">
         <methods>
-<<<<<<< HEAD
-          <include name="verifyTheSearchfirstname" invocation-numbers="0"/>
-          <include name="ReturnPolicy"/>
-          <include name="tearDown"/>
-          <include name="FeaturedProductPoleRestoration"/>
-=======
-          <include name="sliderItemPresent"/>
-          <include name="SubmitQuotewithQuotePendingstatus"/>
+          <include name="ClickReject"/>
           <include name="verifyAddToCartWhileReQuoting"/>
-          <include name="verifyStatusFilterExpired"/>
-          <include name="VerifyApprovebtndisabled"/>
+          <include name="AddShoppingCart"/>
           <include name="verifySubmitwhileREQuoting"/>
-          <include name="SubmitQuotewithOrderRequestedstatus"/>
-          <include name="verifyTheProductLink"/>
-          <include name="verifyExclamationOnMyQuotes"/>
-          <include name="verifyStatusFilterQuotePending"/>
-          <include name="SubmitQuotewithQuoteCancelledstatus"/>
+          <include name="verifyUpdatedQuantityOnOverlay"/>
+          <include name="VerifyShoppingCarrtMinMaxqty"/>
+          <include name="verifyCartIconCount"/>
+          <include name="ReturnPolicy"/>
+          <include name="VerifyShoppingAddbtndisabled"/>
           <include name="VerifyUIonApprove"/>
           <include name="tearDown"/>
-          <include name="verifyStatusFilterQuoted"/>
-          <include name="SubmitQuotewithOrderedstatus"/>
-          <include name="verifyStatusFilterOrdered"/>
+          <include name="ClickShoppingCartIcon"/>
+          <include name="SortBydd"/>
+          <include name="SubmitQuotewithNegativeExpireDays"/>
+          <include name="ClickUploadProducts"/>
           <include name="SubmitQuotewithQuotedstatus"/>
-          <include name="verifyThankyouPopup"/>
           <include name="VerifyAddShopping_Sameitem"/>
           <include name="verifyCancelwhileREQuoting"/>
-          <include name="verifyStatusFilterCancelled"/>
+          <include name="ClickShoppingViewCartbutton"/>
+          <include name="ClickApprove"/>
+          <include name="CreateQuote_MultipleAttachment"/>
+          <include name="SubmitQuotewithInvalidFileType"/>
+          <include name="VerifyApprovebtndisabled"/>
+          <include name="GoBack"/>
+          <include name="VerifyShoppingCarrtAddbtnDisabledclearqty"/>
+          <include name="verifyAddShoppingCarttext"/>
+          <include name="CreateQuote_UpdateeAttachment"/>
+          <include name="SubmitQuotewithMoreThan20mbFile"/>
+          <include name="verifyThankyouPopup"/>
+          <include name="CreateQuote_Attachment"/>
           <include name="ClickDictionaryLink"/>
-          <include name="VerifyCrossicononhoppingCart_Differentitem"/>
->>>>>>> refs/remotes/origin/master
         </methods>
       </class> <!-- com.OSMOSE.testcases.Product -->
     </classes>

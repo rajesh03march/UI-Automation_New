@@ -193,8 +193,19 @@ public class Contact extends BaseTest {
 	public void verifyFormSubmissionWith_Other() {
 		ProductPage pp = new ProductPage();
 		ContactPage cp = pp.goContact();
-		cp.submitWithTechnicalSupport();
+		cp.submitWithOther();
 		cp.clickCloseOnThankYouFormSubmission();
+	}
+	
+	@Test(priority = 16, enabled = true, description = "Verification of Form submission with 'Other' subject")
+	public void verifyFormSubmissionErrorMessage() {
+		ProductPage pp = new ProductPage();
+		ContactPage cp = pp.goContact();
+		Page.click("ContactUsFormSubmitBtn_XPATH");
+		//Verifying Error message
+		Assert.assertEquals(Page.getText("FormSubmissionErrorMessageTxt_XPATH"),
+				"All fields are mandatory");
+		
 	}
 
 }

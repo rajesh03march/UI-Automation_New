@@ -274,7 +274,7 @@ public class Product extends BaseTest {
 		System.out.println(element.getText());
 		// Assert.assertEquals("element","No products match your search.");
 
-		Assert.assertEquals("", "");
+		// Assert.assertEquals("", "");
 	}
 
 	@Test(priority = 22, enabled = true, description = "Product Return Policies will be provided on the 'Quote Request Approval' page and will be presented to the customer as a pop-up for reading.")
@@ -389,6 +389,7 @@ public class Product extends BaseTest {
 	public void CreateQuote() throws InterruptedException {
 		HomeOU ou = new HomeOU();
 		ProductPage pp = ou.goProduct();
+		Thread.sleep(3000);
 		pp.CreateQuoteByAddToShoppingCart();
 		Thread.sleep(1000);
 	}
@@ -397,6 +398,7 @@ public class Product extends BaseTest {
 	public void CreateQuote_Comments() throws InterruptedException {
 		HomeOU ou = new HomeOU();
 		ProductPage pp = ou.goProduct();
+		Thread.sleep(3000);
 		pp.CreateQuoteByCommentsAddToShoppingCart();
 		Thread.sleep(1000);
 	}
@@ -405,6 +407,7 @@ public class Product extends BaseTest {
 	public void CreateQuote_ZipCode() throws InterruptedException {
 		HomeOU ou = new HomeOU();
 		ProductPage pp = ou.goProduct();
+		Thread.sleep(3000);
 		pp.CreateQuoteByZipCodeAddToShoppingCart();
 		Thread.sleep(1000);
 	}
@@ -413,6 +416,7 @@ public class Product extends BaseTest {
 	public void CreateQuote_Attachment() throws InterruptedException {
 		HomeOU ou = new HomeOU();
 		ProductPage pp = ou.goProduct();
+		Thread.sleep(3000);
 		pp.CreateQuoteByFileAddToShoppingCart();
 		Thread.sleep(1000);
 	}
@@ -421,8 +425,9 @@ public class Product extends BaseTest {
 	public void ClickShoppingCartIcon() throws InterruptedException {
 		HomeOU ou = new HomeOU();
 		ProductPage pp = ou.goProduct();
+		Thread.sleep(3000);
 		pp.ClickShoppingCartIcon();
-		Thread.sleep(1000);
+		Thread.sleep(3000);
 		Assert.assertTrue(Page.driver
 				.findElement(By.xpath("//*[@id='topHeader-nav-collapse']/ul/li[4]/a/div/div[2]/li[1]/button"))
 				.isDisplayed());
@@ -440,6 +445,7 @@ public class Product extends BaseTest {
 		HomeOU ou = new HomeOU();
 		ProductPage pp = ou.goProduct();
 		Page.click("ProductPageCartIcon_XPATH");
+		Thread.sleep(3000);
 		pp.ClickShoppingViewCartbutton();
 		Thread.sleep(1000);
 		Assert.assertEquals(Page.getText("ProductsQuoterequest_XPATH"), "Quote Request");
@@ -449,6 +455,7 @@ public class Product extends BaseTest {
 	public void ClickShoppingSubmitCartbutton() throws InterruptedException {
 		HomeOU ou = new HomeOU();
 		ProductPage pp = ou.goProduct();
+		Thread.sleep(3000);
 		pp.ClickShoppingSubmitCartbutton();
 		Thread.sleep(1000);
 		Assert.assertEquals(Page.getText("ProductsQuoterequest_XPATH"), "Quote Request");
@@ -461,6 +468,7 @@ public class Product extends BaseTest {
 	public void verifyUpdatedQuantityOnOverlay() throws InterruptedException {
 		HomeOU ou = new HomeOU();
 		ProductPage pp = ou.goProduct();
+		Thread.sleep(3000);
 		pp.UpdateQuantityOnShoppingCart();
 		Thread.sleep(1000);
 		Assert.assertEquals(Page.driver.findElement(By.xpath("//div[@class='cQuantity']/span")).getText(), "33");
@@ -647,10 +655,23 @@ public class Product extends BaseTest {
 		Assert.assertEquals(Page.driver
 				.findElement(By.xpath("//div[@id='popupQuotes']/div[2]/div/div[1]/ul[1]/li[3]/span[2]")).getText(),
 				"Order Requested");
-
+		pp.clickMyQuotesCrossicon();
 	}
 
-	@Test(priority = 47, enabled = true, description = "Verification of the presence of cart icon on Home page")
+	@Test(priority = 47, enabled = true, description = "Verification of values present in Sort dropdown")
+	public void SortBydd() throws InterruptedException {
+		HomeOU ou = new HomeOU();
+		ProductPage pp = ou.goProduct();
+		pp.MyQuotes();
+		Thread.sleep(3000);
+		Page.click("Sortdd_Xpath");
+		Thread.sleep(6000);
+		Assert.assertEquals(Page.getText("SortddFirstOption_XPATH"), "Quote Id");
+		Assert.assertEquals(Page.getText("SortddSecondOption_XPATH"), "Status");
+		Assert.assertEquals(Page.getText("SortddThirdOption_XPATH"), "Date");
+	}
+
+	@Test(priority = 48, enabled = true, description = "Verification of the presence of cart icon on Home page")
 	public void HomepageCarticon() throws InterruptedException {
 		HomeOU ou = new HomeOU();
 		ProductPage pp = ou.goProduct();
@@ -661,7 +682,7 @@ public class Product extends BaseTest {
 				.findElement(By.xpath("//nav[@id='topHeader']/div/ul/li[4]/a/div/div[1]/span/span")).isDisplayed());
 	}
 
-	@Test(priority = 48, enabled = true, description = "Verification of contents on Manage Quotes page")
+	@Test(priority = 49, enabled = true, description = "Verification of contents on Manage Quotes page")
 	public void ClickManageQuotesLink() throws InterruptedException {
 		HomeOU ou = new HomeOU();
 		ProductPage pp = ou.goProduct();
@@ -674,7 +695,7 @@ public class Product extends BaseTest {
 
 	}
 
-	@Test(priority = 49, enabled = true, description = "Verification of contents on a particular Quote")
+	@Test(priority = 50, enabled = true, description = "Verification of contents on a particular Quote")
 	public void VerifyUIonClickQuoteID() throws InterruptedException {
 		HomeOU ou = new HomeOU();
 		ProductPage pp = ou.goProduct();
@@ -689,7 +710,7 @@ public class Product extends BaseTest {
 
 	}
 
-	@Test(priority = 50, enabled = true, description = "Submitting a Quote with Ordered Status")
+	@Test(priority = 51, enabled = true, description = "Submitting a Quote with Ordered Status")
 	public void SubmitQuotewithOrderedstatus() throws InterruptedException {
 		HomeOU ou = new HomeOU();
 		ProductPage pp = ou.goProduct();
@@ -700,7 +721,7 @@ public class Product extends BaseTest {
 
 	}
 
-	@Test(priority = 51, enabled = true, description = "Submitting a Quote with Quote Pending Status")
+	@Test(priority = 52, enabled = true, description = "Submitting a Quote with Quote Pending Status")
 	public void SubmitQuotewithQuotePendingstatus() throws InterruptedException {
 		HomeOU ou = new HomeOU();
 		ProductPage pp = ou.goProduct();
@@ -710,7 +731,64 @@ public class Product extends BaseTest {
 
 	}
 
-	@Test(priority = 52, enabled = true, description = "Submitting a Quote with Quote Canceled Status")
+	@Test(priority = 53, enabled = true, description = "Submitting a Quote with a file more than 20mb")
+	public void SubmitQuotewithMoreThan20mbFile() throws Exception {
+		HomeOU ou = new HomeOU();
+		ProductPage pp = ou.goProduct();
+		Thread.sleep(2000);
+		Page.driver.navigate().back();
+		pp.ClickSubmitQuotewithQuotedPendingstatusmorethan20mb();
+		Thread.sleep(3000);
+		String tooltip = Page.driver
+				.findElement(
+						By.xpath("//*[@id='openAdminMyquotes___BV_modal_body_']/div/div/div/div[2]/div[2]/div[1]/div"))
+				.getAttribute("title");
+		System.out.println("The tooltip error message is: " + tooltip);
+		Thread.sleep(5000);
+		Assert.assertEquals(tooltip, "File size should not exceed 20 mb");
+		Page.click("ManageQuotesQuoteIDCloseBtn_XPATH");
+		Thread.sleep(3000);
+	}
+
+	// Keep this false always
+	@Test(priority = 54, enabled = false, description = "Submitting a Quote with a file more than 20mb")
+	public void SubmitQuotewithNegativeExpireDays() throws Exception {
+		HomeOU ou = new HomeOU();
+		ProductPage pp = ou.goProduct();
+		Thread.sleep(2000);
+		Page.driver.navigate().back();
+		pp.ClickSubmitQuotewithNegativeExpireDays();
+		Thread.sleep(3000);
+		String ExpireDaysTooltip = Page.driver.findElement(By.xpath("//input[@id='quoteExpire']"))
+				.getAttribute("title");
+		System.out.println("The tooltip error message is: " + ExpireDaysTooltip);
+		Thread.sleep(5000);
+		Assert.assertEquals(ExpireDaysTooltip, "Value must be greater than or equal to 1.");
+		Page.click("ManageQuotesQuoteIDCloseBtn_XPATH");
+		Thread.sleep(3000);
+	}
+
+	@Test(priority = 55, enabled = true, description = "Submitting a Quote with a file with not supported format")
+	public void SubmitQuotewithInvalidFileType() throws Exception {
+		HomeOU ou = new HomeOU();
+		ProductPage pp = ou.goProduct();
+		Thread.sleep(2000);
+		Page.driver.navigate().back();
+		pp.ClickSubmitQuotewithInvalidFileFormat();
+		Thread.sleep(3000);
+		String InvalidFileTooltip = Page.driver
+				.findElement(By
+						.xpath("//*[@id='openAdminMyquotes___BV_modal_body_']/div/div/div/div[2]/div[2]/div[1]/div[1]"))
+				.getAttribute("title");
+		System.out.println("The tooltip error message is: " + InvalidFileTooltip);
+		Thread.sleep(5000);
+		Assert.assertEquals(InvalidFileTooltip,
+				"Please select a valid supported file format (supported : .jpg, .jpeg, .png, .gif, .csv, .xls, .xlsx, .pdf, .doc, .docx, .ppt, .pptx, .txt)");
+		Page.click("ManageQuotesQuoteIDCloseBtn_XPATH");
+		Thread.sleep(3000);
+	}
+
+	@Test(priority = 56, enabled = true, description = "Submitting a Quote with Quote Canceled Status")
 	public void SubmitQuotewithQuoteCancelledstatus() throws InterruptedException {
 		HomeOU ou = new HomeOU();
 		ProductPage pp = ou.goProduct();
@@ -721,7 +799,7 @@ public class Product extends BaseTest {
 
 	}
 
-	@Test(priority = 53, enabled = true, description = "Submitting a Quote with Quoted Status")
+	@Test(priority = 57, enabled = true, description = "Submitting a Quote with Quoted Status")
 	public void SubmitQuotewithQuotedstatus() throws Exception {
 		HomeOU ou = new HomeOU();
 		ProductPage pp = ou.goProduct();
@@ -731,7 +809,7 @@ public class Product extends BaseTest {
 
 	}
 
-	@Test(priority = 54, enabled = true, description = "Submitting a Quote with Order Requested Status")
+	@Test(priority = 58, enabled = true, description = "Submitting a Quote with Order Requested Status")
 	public void SubmitQuotewithOrderRequestedstatus() throws InterruptedException {
 		HomeOU ou = new HomeOU();
 		ProductPage pp = ou.goProduct();
@@ -741,7 +819,17 @@ public class Product extends BaseTest {
 
 	}
 
-	@Test(priority = 55, enabled = true, description = "Verification of Manage Products dropdown menu")
+	@Test(priority = 59, enabled = true, description = "Submitting a Quote with Expired Status")
+	public void SubmitQuotewithExpiredstatus() throws InterruptedException {
+		HomeOU ou = new HomeOU();
+		ProductPage pp = ou.goProduct();
+		Thread.sleep(2000);
+		Page.driver.navigate().back();
+		pp.ClickSubmitExpiredstatus();
+
+	}
+
+	@Test(priority = 60, enabled = true, description = "Verification of Manage Products dropdown menu")
 	public void ClickManageProducts() throws InterruptedException {
 		HomeOU ou = new HomeOU();
 		ProductPage pp = ou.goProduct();
@@ -752,7 +840,7 @@ public class Product extends BaseTest {
 		Assert.assertEquals(Page.getText("ManageProductsheading_XPATH"), "Manage Products");
 	}
 
-	@Test(priority = 56, enabled = true, description = "Clicking Download Spreadsheet drop down and download")
+	@Test(priority = 61, enabled = true, description = "Clicking Download Spreadsheet drop down and download")
 	public void ClickDownloadProducts() throws InterruptedException {
 		HomeOU ou = new HomeOU();
 		ProductPage pp = ou.goProduct();
@@ -761,7 +849,7 @@ public class Product extends BaseTest {
 		pp.ClickDownloadProducts();
 	}
 
-	@Test(priority = 57, enabled = true, description = "Clicking ProductsInreview button and going back to Manage Products pop up")
+	@Test(priority = 62, enabled = true, description = "Clicking ProductsInreview button and going back to Manage Products pop up")
 	public void ClickProductsinReview() throws InterruptedException {
 		HomeOU ou = new HomeOU();
 		ProductPage pp = ou.goProduct();
@@ -772,7 +860,7 @@ public class Product extends BaseTest {
 		pp.ClickProductsInReviewbackLink();
 	}
 
-	@Test(priority = 58, enabled = true, description = "Verification of click on Review button on Manage Products")
+	@Test(priority = 63, enabled = true, description = "Verification of click on Review button on Manage Products")
 	public void ClickReview() throws Exception {
 		HomeOU ou = new HomeOU();
 		ProductPage pp = ou.goProduct();
@@ -785,7 +873,7 @@ public class Product extends BaseTest {
 		Page.ClickActions("CloseButton_XPATH");
 	}
 
-	@Test(priority = 59, enabled = true, description = "Verification of click on Approve button on Manage Products")
+	@Test(priority = 64, enabled = true, description = "Verification of click on Approve button on Manage Products")
 	public void ClickApprove() throws Exception {
 		HomeOU ou = new HomeOU();
 		ProductPage pp = ou.goProduct();
@@ -801,7 +889,7 @@ public class Product extends BaseTest {
 
 	}
 
-	@Test(priority = 60, enabled = true, description = "Verification of click on Reject button on Manage Products")
+	@Test(priority = 65, enabled = true, description = "Verification of click on Reject button on Manage Products")
 	public void ClickReject() throws Exception {
 		HomeOU ou = new HomeOU();
 		ProductPage pp = ou.goProduct();
@@ -817,7 +905,7 @@ public class Product extends BaseTest {
 		pp.ClickProductsInReviewbackLink();
 	}
 
-	@Test(priority = 61, enabled = true, description = "Verification of upload Spreadsheet on Manage Products")
+	@Test(priority = 66, enabled = true, description = "Verification of upload Spreadsheet on Manage Products")
 	public void ClickUploadProducts() throws Exception {
 		HomeOU ou = new HomeOU();
 		ProductPage pp = ou.goProduct();
@@ -834,7 +922,7 @@ public class Product extends BaseTest {
 	}
 
 	// Below method added by Varun 4August2020
-	@Test(priority = 62, enabled = true, description = "Verification of upload Spreadsheet on Manage Products")
+	@Test(priority = 67, enabled = true, description = "Verification of upload Spreadsheet on Manage Products")
 	public void ClickDictionaryLink() throws Exception {
 		HomeOU ou = new HomeOU();
 		ProductPage pp = ou.goProduct();
@@ -869,7 +957,7 @@ public class Product extends BaseTest {
 	}
 
 	// Below method added by Varun 6july2020
-	@Test(priority = 63, enabled = true, description = "Verification of contents on Approve<<QuoteId>> screen")
+	@Test(priority = 68, enabled = true, description = "Verification of contents on Approve<<QuoteId>> screen")
 	public void VerifyUIonApprove() throws Exception {
 		HomeOU ou = new HomeOU();
 		ProductPage pp = ou.goProduct();
@@ -883,6 +971,7 @@ public class Product extends BaseTest {
 		pp.ClickSubmitQuotewithQUOTEDstatus();
 		Thread.sleep(2000);
 		pp.ClickApprovebtnManageQuote();
+		Thread.sleep(5000);
 		Assert.assertEquals(Page.driver.findElement(By.xpath("//div[@id='popupApprove']/h6")).getText(),
 				"Thank you! To approve your quote you will need to:");
 		Assert.assertTrue(Page.driver.findElement(By.xpath("//input[@id = 'purchaseOrder']")).isDisplayed());
@@ -892,7 +981,7 @@ public class Product extends BaseTest {
 	}
 
 	// Added new test case on 7july,2020
-	@Test(priority = 64, enabled = true, description = "Verification of disabled Approve button")
+	@Test(priority = 69, enabled = true, description = "Verification of disabled Approve button")
 	public void VerifyApprovebtndisabled() throws Exception {
 		HomeOU ou = new HomeOU();
 		ProductPage pp = ou.goProduct();
@@ -906,18 +995,18 @@ public class Product extends BaseTest {
 		pp.ClickApprovebtnManageQuote();
 		Thread.sleep(2000);
 		pp.VerifyApprovebtndisabled();
-		Thread.sleep(2000);
+		Thread.sleep(5000);
 		// Assert.assertFalse(Page.driver.findElement(By.xpath("//div[@id =
 		// 'popupApprove']/div[1]/div[2]/div[1]/div[1]/div[2]/button[1]")).isDisplayed());
 		Assert.assertFalse(Page.driver
 				.findElement(By.xpath("//div[@id = 'popupApprove']/div[1]/div[2]/div[1]/div[1]/div[2]/button[1]"))
 				.isEnabled());
-		Thread.sleep(2000);
+		Thread.sleep(3000);
 		Page.click("ApproveClosebtn_XPATH");
 	}
 
 	// Below method added by Varun 6july2020
-	@Test(priority = 65, enabled = true, description = "Verification of Thank you pop after approving the Quoted Request")
+	@Test(priority = 70, enabled = true, description = "Verification of Thank you pop after approving the Quoted Request")
 	public void verifyThankyouPopup() throws Exception {
 		HomeOU ou = new HomeOU();
 		ProductPage pp = ou.goProduct();
@@ -931,7 +1020,7 @@ public class Product extends BaseTest {
 		pp.ClickApprovebtnManageQuote();
 		Thread.sleep(2000);
 		pp.ClickApprovebtnApprove();
-		Thread.sleep(2000);
+		Thread.sleep(5000);
 		Assert.assertEquals(Page.driver.findElement(By.xpath("//div[@class='popupApproved text-center']/h6")).getText(),
 				"Thank you for submitting your request. We will contact you with an order confirmation shortly.");
 		Assert.assertEquals(
@@ -942,7 +1031,7 @@ public class Product extends BaseTest {
 		Page.click("ApprovedClosebtn_XPATH");
 	}
 
-	@Test(priority = 66, enabled = true, description = "Verification of Cancel action on the quote screen")
+	@Test(priority = 71, enabled = true, description = "Verification of Cancel action on the quote screen")
 	public void verifyCancelwhileREQuoting() throws Exception {
 		HomeOU ou = new HomeOU();
 		ProductPage pp = ou.goProduct();
@@ -961,7 +1050,7 @@ public class Product extends BaseTest {
 		Page.click("Closebtn_XPATH");
 	}
 
-	@Test(priority = 67, enabled = true, description = "Verification of submission action on the quote screen")
+	@Test(priority = 72, enabled = true, description = "Verification of submission action on the quote screen")
 	public void verifySubmitwhileREQuoting() throws Exception {
 		HomeOU ou = new HomeOU();
 		ProductPage pp = ou.goProduct();
@@ -973,7 +1062,7 @@ public class Product extends BaseTest {
 		pp.MyQuotes();
 		Thread.sleep(2000);
 		pp.ClickSubmitREQuotes();
-		Thread.sleep(2000);
+		Thread.sleep(5000);
 		Assert.assertTrue(Page.driver
 				.findElement(By.xpath("//*[@id='openMyCart___BV_modal_body_']/div/div[2]/div/div[3]/div/a[2]"))
 				.isDisplayed());
@@ -989,7 +1078,7 @@ public class Product extends BaseTest {
 		Page.click("QuoteRequestsubmittedpopupClosebtn_XPATH");
 	}
 
-	@Test(priority = 68, enabled = true, description = "Verification of Add to Cart on the quote screen")
+	@Test(priority = 73, enabled = true, description = "Verification of Add to Cart on the quote screen")
 	public void verifyAddToCartWhileReQuoting() throws Exception {
 		HomeOU ou = new HomeOU();
 		ProductPage pp = ou.goProduct();
@@ -1004,7 +1093,7 @@ public class Product extends BaseTest {
 		Thread.sleep(2000);
 		pp.AddtoShoppingCartRequote();
 		Thread.sleep(2000);
-		Page.click("SubmitQuoteRequestbtn_XPATH");
+		//Page.click("SubmitQuoteRequestbtn_XPATH");
 		pp.CreateREQuoteAllFields();
 		Thread.sleep(10000);
 		Assert.assertEquals(Page.driver.findElement(By.xpath("//h5[@id='quoteSubmitted___BV_modal_title_']")).getText(),
@@ -1017,7 +1106,7 @@ public class Product extends BaseTest {
 	}
 
 	// Added on 23rd July 20
-	@Test(priority = 69, enabled = true, description = "Verification of Exclamation Mark on My Quotes for Quote Request")
+	@Test(priority = 74, enabled = true, description = "Verification of Exclamation Mark on My Quotes for Quote Request")
 	public void verifyExclamationOnMyQuotes() throws Exception {
 		HomeOU ou = new HomeOU();
 		ProductPage pp = ou.goProduct();
@@ -1025,6 +1114,174 @@ public class Product extends BaseTest {
 		pp.CreateQuoteExclamation();
 		Thread.sleep(10000);
 		Assert.assertTrue(Page.driver.findElement(By.xpath("//a[@id='openMyquotes']/span")).isDisplayed());
+	}
+
+	@Test(priority = 75, enabled = true, description = "ShoppingCart Add button verification")
+	public void VerifyShoppingAddbtndisabled() throws InterruptedException {
+		HomeOU ou = new HomeOU();
+		ProductPage pp = ou.goProduct();
+		pp.ShoppingCarrtAddbtnDisabled();
+		Thread.sleep(1000);
+		Assert.assertFalse(Page.driver.findElement(By.xpath("//*[@id='MypopupScroll']/div/div/div[2]/form/button[1]"))
+				.isEnabled());
+		Thread.sleep(2000);
+		Page.click("CloseButton_XPATH");
+	}
+
+	@Test(priority = 76, enabled = true, description = "ShoppingCart Add button disabled even if the qty is clear")
+	public void VerifyShoppingCarrtAddbtnDisabledclearqty() throws InterruptedException {
+		HomeOU ou = new HomeOU();
+		ProductPage pp = ou.goProduct();
+		pp.ShoppingCarrtAddbtnDisabledclearqty();
+		Thread.sleep(1000);
+		Assert.assertFalse(Page.driver.findElement(By.xpath("//*[@id='MypopupScroll']/div/div/div[2]/form/button[1]"))
+				.isEnabled());
+		Thread.sleep(2000);
+		Page.click("CloseButton_XPATH");
+	}
+
+	@Test(priority = 77, enabled = true, description = "Verify that shopping cart icon will be displayed with a number indicating the quantity of items in the cart ")
+	public void verifyCartIconCount() throws InterruptedException {
+		HomeOU ou = new HomeOU();
+		ProductPage pp = ou.goProduct();
+		pp.AddToCartShoppingCart();
+		Thread.sleep(5000);
+		Page.click("QuoteRequestCrossicon_XPATH");
+		String CartIconNumber = Page.driver.findElement(By.xpath("//*[@id='openMyCart']/span")).getText();
+		System.out.println("The number of products in the cart: " + CartIconNumber);
+		pp.AddToCartShoppingCart();
+		Thread.sleep(5000);
+		Page.click("QuoteRequestCrossicon_XPATH");
+		String CartIconNumberUpdated = Page.driver.findElement(By.xpath("//*[@id='openMyCart']/span")).getText();
+		System.out.println("The number of products in the cart after Updation: " + CartIconNumberUpdated);
+	}
+
+	@Test(priority = 78, enabled = true, description = "ShoppingCart Add button disabled even if the qty is out of the fiels limits")
+	public void VerifyShoppingCarrtMinMaxqty() throws InterruptedException {
+		HomeOU ou = new HomeOU();
+		ProductPage pp = ou.goProduct();
+		pp.ShoppingCarrtAddbtnDisabledclearqty();
+		Thread.sleep(1000);
+		String validationtooltip = Page.driver.findElement(By.xpath("//*[@id='selectQuantity']")).getAttribute("title");
+		Assert.assertEquals(validationtooltip, "Please enter quantity between 1 and 999");
+		Page.click("CloseButton_XPATH");
+		pp.ShoppingCarrtAddbtnMaxqty();
+		Thread.sleep(1000);
+		Assert.assertEquals(validationtooltip, "Please enter quantity between 1 and 999");
+		Page.click("CloseButton_XPATH");
+		pp.ShoppingCarrtAddbtnZeroqty();
+		Thread.sleep(1000);
+		Assert.assertEquals(validationtooltip, "Please enter quantity between 1 and 999");
+		Thread.sleep(1000);
+		Page.click("CloseButton_XPATH");
+	}
+
+	@Test(priority = 79, enabled = true, description = "Verify Go Back button funactionality on Quote Request screen")
+	public void GoBack() throws InterruptedException {
+		HomeOU ou = new HomeOU();
+		ProductPage pp = ou.goProduct();
+		pp.ProductGoBack();
+		Thread.sleep(6000);
+		Assert.assertTrue(
+				Page.driver.findElement(By.xpath("//*[@id='openMyCart___BV_modal_header_']/button")).isDisplayed());
+		pp.clickRequestCrossicon();
+	}
+
+	@Test(priority = 80, enabled = true, description = "Create Quote by adding product in the cart by Multiple attachment")
+	public void CreateQuote_MultipleAttachment() throws Exception {
+		HomeOU ou = new HomeOU();
+		ProductPage pp = ou.goProduct();
+		pp.CreateQuoteByMultipleFileAddToShoppingCart();
+		Thread.sleep(1000);
+	}
+
+	@Test(priority = 81, enabled = true, description = "Create Quote by adding product in the cart by updating attachment")
+	public void CreateQuote_UpdateeAttachment() throws InterruptedException {
+		HomeOU ou = new HomeOU();
+		ProductPage pp = ou.goProduct();
+		pp.CreateQuoteByUpdateFileAddToShoppingCart();
+		Thread.sleep(1000);
+	}
+
+	@Test(priority = 82, enabled = true, description = "Submitting a Quote with a file without attachment")
+	public void SubmitQuotewithoutFile() throws Exception {
+		HomeOU ou = new HomeOU();
+		ProductPage pp = ou.goProduct();
+		Thread.sleep(2000);
+		Page.driver.navigate().back();
+		pp.clickProductCartLink();
+		pp.ClickSubmitQuotewithoutFile();
+		Thread.sleep(3000);
+		String FileError = Page.driver
+				.findElement(
+						By.xpath("//*[@id='openAdminMyquotes___BV_modal_body_']/div/div/div/div[2]/div/div/div/div[3]"))
+				.getText();
+		Assert.assertEquals(FileError, "Quote attachment is required for Quoted status.");
+		Page.click("ManageQuotesQuoteIDCloseBtn_XPATH");
+		Thread.sleep(3000);
+		Page.driver.navigate().back();
+	}
+
+	@Test(priority = 83, enabled = true, description = "Add Related products to shopping Cart")
+	public void VerifyAddingRelatedProductsToShoppingCart() throws InterruptedException {
+		HomeOU ou = new HomeOU();
+		ProductPage pp = ou.goProduct();
+		pp.AddingRelatedProducts();
+		Thread.sleep(5000);
+		Assert.assertTrue(Page.driver.findElement(By.xpath(
+				"//*[@id='openMyCart___BV_modal_body_']/div/div[1]/div/div[1]/div/div/div/div/div[2]/div/div[3]/a/span/img"))
+				.isDisplayed());
+		Thread.sleep(3000);
+		Page.click("QuoteRequestCrossicon_XPATH");
+	}
+
+	@Test(priority = 84, enabled = true, description = "Verify the tooltip displayed for Size dropdown")
+	public void VerifyTooltipForSizeDropDown() throws InterruptedException {
+		HomeOU ou = new HomeOU();
+		ProductPage pp = ou.goProduct();
+		pp.ToolTipForSize();
+		Thread.sleep(5000);
+		String Sizetooltip = Page.driver.findElement(By.xpath("//*[@id='selectSize']/option[2]")).getAttribute("title");
+		Assert.assertEquals(Sizetooltip, "72-020-009-100 PR - C2-3611");
+		Page.click("CloseButton_XPATH");
+	}
+
+	@Test(priority = 85, enabled = true, description = "Create Quote by adding product in the cart by updating attachment")
+	public void UpdateChangeProductAddToShoppingCart() throws InterruptedException {
+		HomeOU ou = new HomeOU();
+		ProductPage pp = ou.goProduct();
+		pp.CreateQuoteByUpdateFileAddToShoppingCart();
+		Thread.sleep(1000);
+	}
+
+	@Test(priority = 86, enabled = true, description = "Verification of Quantity on ShoppingCart Overlay")
+	public void verifyDeleteProductOnOverlay() throws InterruptedException {
+		HomeOU ou = new HomeOU();
+		ProductPage pp = ou.goProduct();
+		pp.DeleteQuantityOnShoppingCart();
+		Thread.sleep(1000);
+	}
+
+	@Test(priority = 87, enabled = true, description = "Verification of Quantity on ShoppingCart Overlay")
+	public void MyQuotesComments_Collapse() throws InterruptedException {
+		HomeOU ou = new HomeOU();
+		ProductPage pp = ou.goProduct();
+		pp.MyQuotes();
+		Thread.sleep(3000);
+		Page.click("CollapseExpandCOmmentbtn_XPATH");
+		Thread.sleep(3000);
+		Page.click("CollapseExpandCOmmentbtn_XPATH");
+		Assert.assertTrue(Page.driver.findElement(By
+				.xpath("//div[@id='openMyquotes___BV_modal_body_']/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/textarea"))
+				.isDisplayed());
+		Thread.sleep(2000);
+		Page.click("CollapseExpandCOmmentbtn_XPATH");
+		Thread.sleep(3000);
+		Assert.assertFalse(Page.driver.findElement(By
+				.xpath("//div[@id='openMyquotes___BV_modal_body_']/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/textarea"))
+				.isDisplayed());
+		Thread.sleep(2000);
+		pp.clickMyQuotesCrossicon();
 	}
 
 }
