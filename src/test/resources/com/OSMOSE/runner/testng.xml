@@ -15,14 +15,16 @@
 			<class name="com.OSMOSE.testcases.OULogin" />
 		</classes>
 	</test> <!-- Test -->
-	<test name="Product">
-		<classes>
-			<class name="com.OSMOSE.testcases.Product" />
-		</classes>
-	</test> <!-- Test -->
-	<test name="Contact">
+	<!-- <test name="Product"> <classes> <class name="com.OSMOSE.testcases.Product" 
+		/> </classes> </test> --> <!-- Test -->
+<!-- 	<test name="Contact">
 		<classes>
 			<class name="com.OSMOSE.testcases.Contact" />
+		</classes>
+	</test> --> <!-- Test -->
+	<test name="KnowledgeBase">
+		<classes>
+			<class name="com.OSMOSE.testcases.KnowledgeBase" />
 		</classes>
 	</test> <!-- Test -->
 
