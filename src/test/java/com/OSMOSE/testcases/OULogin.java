@@ -61,6 +61,7 @@ public class OULogin extends BaseTest {
 	public void verifyOsmoseUniversityNavigationClick() throws InterruptedException {
 		HomeOU ou = new HomeOU();
 		ou.clickOsmoseUniversityNavigation();
+		Thread.sleep(3000);
 		Assert.assertEquals(Page.getText("OsmoseUniversityTxt_XPATH"), "Osmose University");
 		Page.click("HomePage_XPATH");
 		
