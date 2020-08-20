@@ -63,7 +63,6 @@ public class Product extends BaseTest {
 		HomeOU ou = new HomeOU();
 		ProductPage pp = ou.goProduct();
 		Assert.assertTrue(Page.driver.findElement(By.xpath("//*[@id='openMyCart']/img")).isDisplayed());
-
 	}
 
 	@Test(priority = 6, dependsOnMethods = "verifyTheProductLink", enabled = true, description = "Verification of the presence of Admin button")
@@ -84,7 +83,7 @@ public class Product extends BaseTest {
 	public void allSixProductPresent() throws InterruptedException {
 		HomeOU ou = new HomeOU();
 		ProductPage pp = ou.goProduct();
-		Assert.assertEquals(Page.getText("MITCFUME_XPATH"), "MITC-FUME®");
+		Assert.assertEquals(Page.getText("MITCFUME_XPATH"), "MP500-EXT® Preservative Paste");
 	}
 
 	@Test(priority = 9, dependsOnMethods = "verifyTheProductLink", enabled = true, description = "Verification of the presence of Slider items")
@@ -92,7 +91,7 @@ public class Product extends BaseTest {
 		HomeOU ou = new HomeOU();
 		ProductPage pp = ou.goProduct();
 		Page.click("ProductSlider_XPATH");
-		Assert.assertEquals(Page.getText("PoleTopper®_XPATH"), "MITC-FUME®");
+		Assert.assertEquals(Page.getText("PoleTopper®_XPATH"), "MP500-EXT® Preservative Paste");
 	}
 
 	@Test(priority = 10, dependsOnMethods = "verifyTheProductLink", enabled = true, description = "Verification of the presence of Category Filter button")
@@ -536,7 +535,7 @@ public class Product extends BaseTest {
 		pp.MyQuotes();
 		Thread.sleep(5000);
 		pp.MyQuotesStatusFilterExpired();
-		Thread.sleep(10000);
+		Thread.sleep(5000);
 		// verifying the first record
 		Assert.assertEquals(Page.driver
 				.findElement(By.xpath("//div[@id='popupQuotes']/div[1]/div/div[1]/ul[1]/li[3]/span[2]")).getText(),
@@ -1043,10 +1042,10 @@ public class Product extends BaseTest {
 		pp.MyQuotes();
 		Thread.sleep(2000);
 		pp.ClickCancelREQuotes();
-		Thread.sleep(10000);
+		Thread.sleep(5000);
 		Assert.assertTrue(Page.driver.findElement(By.xpath("//header[@id='openMyquotes___BV_modal_header_']/h5/select"))
 				.isDisplayed());
-		Thread.sleep(10000);
+		Thread.sleep(5000);
 		Page.click("Closebtn_XPATH");
 	}
 
@@ -1066,15 +1065,15 @@ public class Product extends BaseTest {
 		Assert.assertTrue(Page.driver
 				.findElement(By.xpath("//*[@id='openMyCart___BV_modal_body_']/div/div[2]/div/div[3]/div/a[2]"))
 				.isDisplayed());
-		Thread.sleep(10000);
+		Thread.sleep(5000);
 		pp.CreateREQuoteAllFields();
-		Thread.sleep(10000);
+		Thread.sleep(5000);
 		Assert.assertEquals(Page.driver.findElement(By.xpath("//h5[@id='quoteSubmitted___BV_modal_title_']")).getText(),
 				"Quote Request Submitted");
 		Assert.assertTrue(
 				Page.driver.findElement(By.xpath("//*[@id='quoteSubmitted___BV_modal_body_']/div/div/div[2]/button"))
 						.isDisplayed());
-		Thread.sleep(10000);
+		Thread.sleep(5000);
 		Page.click("QuoteRequestsubmittedpopupClosebtn_XPATH");
 	}
 
@@ -1095,13 +1094,13 @@ public class Product extends BaseTest {
 		Thread.sleep(2000);
 		//Page.click("SubmitQuoteRequestbtn_XPATH");
 		pp.CreateREQuoteAllFields();
-		Thread.sleep(10000);
+		Thread.sleep(5000);
 		Assert.assertEquals(Page.driver.findElement(By.xpath("//h5[@id='quoteSubmitted___BV_modal_title_']")).getText(),
 				"Quote Request Submitted");
 		Assert.assertTrue(
 				Page.driver.findElement(By.xpath("//*[@id='quoteSubmitted___BV_modal_body_']/div/div/div[2]/button"))
 						.isDisplayed());
-		Thread.sleep(10000);
+		Thread.sleep(5000);
 		Page.click("QuoteRequestsubmittedpopupClosebtn_XPATH");
 	}
 
@@ -1184,7 +1183,7 @@ public class Product extends BaseTest {
 		Thread.sleep(6000);
 		Assert.assertTrue(
 				Page.driver.findElement(By.xpath("//*[@id='openMyCart___BV_modal_header_']/button")).isDisplayed());
-		pp.clickRequestCrossicon();
+		Page.click("QuoteRequestCrossicon_XPATH");
 	}
 
 	@Test(priority = 80, enabled = true, description = "Create Quote by adding product in the cart by Multiple attachment")
@@ -1242,7 +1241,8 @@ public class Product extends BaseTest {
 		pp.ToolTipForSize();
 		Thread.sleep(5000);
 		String Sizetooltip = Page.driver.findElement(By.xpath("//*[@id='selectSize']/option[2]")).getAttribute("title");
-		Assert.assertEquals(Sizetooltip, "72-020-009-100 PR - C2-3611");
+		Assert.assertEquals(Sizetooltip, "767-020-001-4007 230 x 13' - 191,800 ft/lbs");
+		Thread.sleep(2000);
 		Page.click("CloseButton_XPATH");
 	}
 
@@ -1250,6 +1250,7 @@ public class Product extends BaseTest {
 	public void UpdateChangeProductAddToShoppingCart() throws InterruptedException {
 		HomeOU ou = new HomeOU();
 		ProductPage pp = ou.goProduct();
+		Thread.sleep(5000);
 		pp.CreateQuoteByUpdateFileAddToShoppingCart();
 		Thread.sleep(1000);
 	}

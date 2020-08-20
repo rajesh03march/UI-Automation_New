@@ -11,34 +11,12 @@
       <class name="com.OSMOSE.testcases.Product">
         <methods>
           <include name="UpdateChangeProductAddToShoppingCart"/>
-          <include name="verifyAddToCartWhileReQuoting"/>
-          <include name="SubmitQuotewithoutFile"/>
-          <include name="CreateQuote_MultipleAttachment"/>
-          <include name="verifyDeleteProductOnOverlay"/>
-          <include name="GoBack"/>
-          <include name="VerifyShoppingCarrtMinMaxqty"/>
-          <include name="VerifyShoppingCarrtAddbtnDisabledclearqty"/>
-          <include name="verifyCartIconCount"/>
-          <include name="VerifyShoppingAddbtndisabled"/>
-          <include name="verifyExclamationOnMyQuotes"/>
           <include name="VerifyTooltipForSizeDropDown"/>
-          <include name="CreateQuote_UpdateeAttachment"/>
           <include name="MyQuotesComments_Collapse"/>
           <include name="tearDown"/>
-          <include name="VerifyAddingRelatedProductsToShoppingCart"/>
+          <include name="verifyDeleteProductOnOverlay"/>
         </methods>
       </class> <!-- com.OSMOSE.testcases.Product -->
     </classes>
   </test> <!-- Product(failed) -->
-  <test thread-count="5" name="Contact(failed)">
-    <classes>
-      <class name="com.OSMOSE.testcases.Contact">
-        <methods>
-          <include name="tearDown"/>
-          <include name="verifyContactUsMenuContents"/>
-          <include name="verifyViewContactsHeaderContents"/>
-        </methods>
-      </class> <!-- com.OSMOSE.testcases.Contact -->
-    </classes>
-  </test> <!-- Contact(failed) -->
 </suite> <!-- Failed suite [OSMOSE Test] -->

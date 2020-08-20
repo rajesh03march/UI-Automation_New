@@ -645,6 +645,7 @@ public class ProductPage extends Page {
 		click("SubmitQuoteRequestbtn_XPATH");
 		type("ShippingZipCode_XPATH", "12345");
 		click("Submitbtn_XPATH");
+		Thread.sleep(1000);
 		click("QuoteRequestsubmittedpopupClosebtn_XPATH");
 	}
 
@@ -665,6 +666,7 @@ public class ProductPage extends Page {
 		click("SubmitQuoteRequestbtn_XPATH");
 		type("ShippingComments_XPATH", "AutomationTesting");
 		click("Submitbtn_XPATH");
+		Thread.sleep(1000);
 		click("QuoteRequestsubmittedpopupClosebtn_XPATH");
 	}
 
@@ -686,6 +688,7 @@ public class ProductPage extends Page {
 		type("ShippingAttachment_XPATH", "C:\\Users\\AC38373\\Desktop\\File_123.pdf");
 		Thread.sleep(1000);
 		click("FileAttachmentSubmitbtn_XPATH");
+		Thread.sleep(1000);
 		click("QuoteRequestsubmittedpopupClosebtn_XPATH");
 	}
 
@@ -933,6 +936,7 @@ public class ProductPage extends Page {
 		Thread.sleep(3000);
 		click("SubmitQuoteRequestbtn_XPATH");
 		click("Submitbtn_XPATH");
+		Thread.sleep(2000);
 		click("QuoteRequestsubmittedpopupClosebtn_XPATH");
 	}
 
@@ -1002,6 +1006,7 @@ public class ProductPage extends Page {
 		type("ShippingAttachment_XPATH", "C:\\Users\\AC38373\\Desktop\\File_123.xlsx");
 		Thread.sleep(1000);
 		click("FileAttachmentSubmitbtn_XPATH");
+		Thread.sleep(2000);
 		click("QuoteRequestsubmittedpopupClosebtn_XPATH");
 	}
 

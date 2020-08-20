@@ -404,20 +404,25 @@ public class Page {
 		// driver.close();
 	}
 
-//			public static void isVisiable(String locator){
-//
-//				if (locator.endsWith("_CSS")) {
-//					driver.findElement(By.cssSelector(OR.getProperty(locator))).isDisplayed();
-//				} else if (locator.endsWith("_XPATH")) {
-//					driver.findElement(By.xpath(OR.getProperty(locator))).isDisplayed();
-//				} else if (locator.endsWith("_ID")) {
-//					driver.findElement(By.id(OR.getProperty(locator))).isDisplayed();
-//				}
-//				log.debug("Clicking on an Element : "+locator);
-//				test.log(LogStatus.INFO, "Clicking on : " + locator);
-//
-//				return ;
-//			}
+		public static boolean isVisiable(String locator){
+			try {
+				if (locator.endsWith("_CSS")) {
+					driver.findElement(By.cssSelector(OR.getProperty(locator))).isDisplayed();
+				} else if (locator.endsWith("_XPATH")) {
+					driver.findElement(By.xpath(OR.getProperty(locator))).isDisplayed();
+				} else if (locator.endsWith("_ID")) {
+					driver.findElement(By.id(OR.getProperty(locator))).isDisplayed();
+				}
+				log.debug("Clicking on an Element : "+locator);
+				test.log(LogStatus.INFO, "Clicking on : " + locator);
+
+				return true;
+			}
+			
+			catch(Exception e) {
+				return false;
+			}
+		}
 
 	public static boolean isAlertPresent() {
 		try {
@@ -464,6 +469,22 @@ public class Page {
 		action.moveToElement(act).click().build().perform();
 		log.debug("Selecting from an element : " + locator);
 		test.log(LogStatus.INFO, "Selecting from dropdown : " + locator);
+
+	}
+	
+	public static void findelement(String locator) {
+
+		if (locator.endsWith("_CSS")) {
+			driver.findElement(By.cssSelector(OR.getProperty(locator)));
+		} else if (locator.endsWith("_XPATH")) {
+			driver.findElement(By.xpath(OR.getProperty(locator)));
+		} else if (locator.endsWith("_ID")) {
+			driver.findElement(By.id(OR.getProperty(locator)));
+		}
+
+		log.debug("Finding the Element : " + locator);
+
+		test.log(LogStatus.INFO, "Typing in : " + locator);
 
 	}
 
