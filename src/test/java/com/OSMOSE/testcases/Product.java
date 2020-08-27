@@ -7,8 +7,6 @@ import com.OSMOSE.utilities.Utilities;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.interactions.Actions;
-import org.openqa.selenium.remote.DriverCommand;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -69,7 +67,10 @@ public class Product extends BaseTest {
 	public void adminElementPresent() throws InterruptedException {
 		HomeOU ou = new HomeOU();
 		ProductPage pp = ou.goProduct();
-		Assert.assertTrue(Page.driver.findElement(By.xpath("//*[@id='openMyquotes']")).isDisplayed());
+		//Verifying the presence of MyQuotes button
+		WebElement MyQuotes = Page.driver.findElement(By.xpath("//*[@id='openMyquotes']"));
+		//Assert.assertTrue(Page.driver.findElement(By.xpath("//*[@id='openMyquotes']")).isDisplayed());
+		Assert.assertTrue(MyQuotes.isDisplayed());
 	}
 
 	@Test(priority = 7, dependsOnMethods = "verifyTheProductLink", enabled = true, description = "Verification of the presence of View Details button")

@@ -12,9 +12,13 @@
         <methods>
           <include name="UpdateChangeProductAddToShoppingCart"/>
           <include name="VerifyTooltipForSizeDropDown"/>
+          <include name="CreateQuote_UpdateeAttachment"/>
           <include name="MyQuotesComments_Collapse"/>
           <include name="tearDown"/>
+          <include name="SubmitQuotewithoutFile"/>
+          <include name="CreateQuote_MultipleAttachment"/>
           <include name="verifyDeleteProductOnOverlay"/>
+          <include name="VerifyAddingRelatedProductsToShoppingCart"/>
         </methods>
       </class> <!-- com.OSMOSE.testcases.Product -->
     </classes>

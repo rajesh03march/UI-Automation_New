@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="MyOsmoseServices"
+           tests="13"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="67.214">
+  <properties />
+  
+  
+            <testcase name="verifyWoodInspectionandTreatmentLearnMoreClick" time="5.211" classname="com.OSMOSE.testcases.OsmoseServices" />
+                <testcase name="verifyProductsLearnMoreClick" time="5.208" classname="com.OSMOSE.testcases.OsmoseServices" />
+                <testcase name="verifySteelandConcreteAssessmentLearnMoreClick" time="5.200" classname="com.OSMOSE.testcases.OsmoseServices" />
+                <testcase name="verifyOverheadLearnMoreClick" time="5.220" classname="com.OSMOSE.testcases.OsmoseServices" />
+                <testcase name="verifyUndergroundLearnMoreClick" time="5.253" classname="com.OSMOSE.testcases.OsmoseServices" />
+                <testcase name="verifySteelandConcreteRestorationLearnMoreClick" time="5.213" classname="com.OSMOSE.testcases.OsmoseServices" />
+                <testcase name="verifyJointUseLearnMoreClick" time="5.212" classname="com.OSMOSE.testcases.OsmoseServices" />
+                <testcase name="verifyTechnicalServicesLearnMoreClick" time="5.218" classname="com.OSMOSE.testcases.OsmoseServices" />
+                <testcase name="verifyMyOsmoseServicesCardClick" time="4.553" classname="com.OSMOSE.testcases.OsmoseServices" />
+                <testcase name="verifyWoodRestorationLearnMoreClick" time="5.246" classname="com.OSMOSE.testcases.OsmoseServices" />
+                <testcase name="verifyMapViewLearnMoreClick" time="5.235" classname="com.OSMOSE.testcases.OsmoseServices" />
+                <testcase name="verifyStrayVoltageLearnMoreClick" time="5.229" classname="com.OSMOSE.testcases.OsmoseServices" />
+                <testcase name="verifyOcalcProLearnMoreClick" time="5.216" classname="com.OSMOSE.testcases.OsmoseServices" />
+      
+</testsuite>

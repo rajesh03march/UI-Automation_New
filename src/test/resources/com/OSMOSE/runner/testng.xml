@@ -18,7 +18,7 @@
 	<test name="Product">
 		<classes>
 			<class name="com.OSMOSE.testcases.Product" />
-		</classes> <!-- Test -->
+		</classes>
 	</test> <!-- Test -->
 <!-- 	<test name="Contact">
 		<classes>
@@ -28,6 +28,11 @@
 <!-- 	<test name="KnowledgeBase">
 		<classes>
 			<class name="com.OSMOSE.testcases.KnowledgeBase" />
+		</classes>
+	</test> --> <!-- Test -->
+<!-- 	<test name="MyOsmoseServices">
+		<classes> 
+			<class name="com.OSMOSE.testcases.OsmoseServices" />
 		</classes>
 	</test> --> <!-- Test -->
 
