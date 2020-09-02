@@ -15,11 +15,11 @@
 			<class name="com.OSMOSE.testcases.OULogin" />
 		</classes>
 	</test> <!-- Test -->
-	<test name="Product">
+<!-- 	<test name="Product">
 		<classes>
 			<class name="com.OSMOSE.testcases.Product" />
 		</classes>
-	</test> <!-- Test -->
+	</test> --> <!-- Test -->
 <!-- 	<test name="Contact">
 		<classes>
 			<class name="com.OSMOSE.testcases.Contact" />
@@ -30,11 +30,11 @@
 			<class name="com.OSMOSE.testcases.KnowledgeBase" />
 		</classes>
 	</test> --> <!-- Test -->
-<!-- 	<test name="MyOsmoseServices">
+	<test name="MyOsmoseServices">
 		<classes> 
 			<class name="com.OSMOSE.testcases.OsmoseServices" />
 		</classes>
-	</test> --> <!-- Test -->
+	</test> <!-- Test -->
 
 
 

@@ -4,27 +4,27 @@
            failures="0"
            errors="0"
            skipped="0"
-           time="161.928">
+           time="161.803">
   <properties />
   
   
-            <testcase name="verifyContactUs" time="0.028" classname="com.OSMOSE.testcases.OULogin" />
-                <testcase name="verifyProductCard" time="0.027" classname="com.OSMOSE.testcases.OULogin" />
-                <testcase name="verifyDETAILSANDREGISTRATION" time="13.405" classname="com.OSMOSE.testcases.OULogin" />
-                <testcase name="verifyLiveEventCLick" time="12.205" classname="com.OSMOSE.testcases.OULogin" />
-                <testcase name="verifyOCalcClick" time="12.203" classname="com.OSMOSE.testcases.OULogin" />
-                <testcase name="verifyOUCard" time="2.577" classname="com.OSMOSE.testcases.OULogin" />
-                <testcase name="verifyOsmoseUniversityNavigationClick" time="15.267" classname="com.OSMOSE.testcases.OULogin" />
-                <testcase name="clickOnOuLink" time="12.218" classname="com.OSMOSE.testcases.OULogin" />
-                <testcase name="verifyWebinarsClick" time="12.231" classname="com.OSMOSE.testcases.OULogin" />
-                <testcase name="verifyVideoLinks" time="0.060" classname="com.OSMOSE.testcases.OULogin" />
-                <testcase name="verifyHyperlinks" time="0.087" classname="com.OSMOSE.testcases.OULogin" />
-                <testcase name="loginTest" time="16.942" classname="com.OSMOSE.testcases.OULogin" />
-                <testcase name="verifyKnowledgeBaseCard" time="0.035" classname="com.OSMOSE.testcases.OULogin" />
-                <testcase name="verifyOClacTrainingButton" time="13.237" classname="com.OSMOSE.testcases.OULogin" />
-                <testcase name="verifyLiveEventsJUS" time="12.965" classname="com.OSMOSE.testcases.OULogin" />
-                <testcase name="verifyLiveEventsWPTS" time="12.978" classname="com.OSMOSE.testcases.OULogin" />
-                <testcase name="verifyLiveEventsSTS" time="13.255" classname="com.OSMOSE.testcases.OULogin" />
-                <testcase name="verifyClickingTheWebinars" time="12.208" classname="com.OSMOSE.testcases.OULogin" />
+            <testcase name="verifyDETAILSANDREGISTRATION" time="13.285" classname="com.OSMOSE.testcases.OULogin" />
+                <testcase name="verifyWebinarsClick" time="12.211" classname="com.OSMOSE.testcases.OULogin" />
+                <testcase name="verifyClickingTheWebinars" time="12.211" classname="com.OSMOSE.testcases.OULogin" />
+                <testcase name="verifyLiveEventsWPTS" time="13.020" classname="com.OSMOSE.testcases.OULogin" />
+                <testcase name="verifyOsmoseUniversityNavigationClick" time="15.276" classname="com.OSMOSE.testcases.OULogin" />
+                <testcase name="loginTest" time="16.239" classname="com.OSMOSE.testcases.OULogin" />
+                <testcase name="verifyLiveEventCLick" time="12.339" classname="com.OSMOSE.testcases.OULogin" />
+                <testcase name="clickOnOuLink" time="12.189" classname="com.OSMOSE.testcases.OULogin" />
+                <testcase name="verifyKnowledgeBaseCard" time="0.101" classname="com.OSMOSE.testcases.OULogin" />
+                <testcase name="verifyOUCard" time="2.935" classname="com.OSMOSE.testcases.OULogin" />
+                <testcase name="verifyVideoLinks" time="0.076" classname="com.OSMOSE.testcases.OULogin" />
+                <testcase name="verifyOClacTrainingButton" time="13.242" classname="com.OSMOSE.testcases.OULogin" />
+                <testcase name="verifyHyperlinks" time="0.137" classname="com.OSMOSE.testcases.OULogin" />
+                <testcase name="verifyContactUs" time="0.031" classname="com.OSMOSE.testcases.OULogin" />
+                <testcase name="verifyProductCard" time="0.035" classname="com.OSMOSE.testcases.OULogin" />
+                <testcase name="verifyOCalcClick" time="12.233" classname="com.OSMOSE.testcases.OULogin" />
+                <testcase name="verifyLiveEventsSTS" time="13.257" classname="com.OSMOSE.testcases.OULogin" />
+                <testcase name="verifyLiveEventsJUS" time="12.986" classname="com.OSMOSE.testcases.OULogin" />
       
 </testsuite>

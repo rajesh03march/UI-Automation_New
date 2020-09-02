@@ -228,13 +228,193 @@ public class KnowledgeBasePage extends Page {
 	}
 	
 	public void clickJointUseOnAnImage() {
-		click("DailyGaffGalleryImage_XPATH");
+		ClickActions("DailyGaffGalleryImage_XPATH");
+	}
+	
+	public void clickJointUseOnAVideo() {
+		ClickActions("JointUsVideosVideoClick_XPATH");
 	}
 	
 	public void clickJointUseImagesBackbtn() throws InterruptedException {
 		ClickActions("DailyGaffGalleryImagesBackBtn_XPATH");
 	}
 	
+	public void clickJointUseVideosBackbtn() throws InterruptedException {
+		ClickActions("JointUseVideosBackBtn_XPATH");
+	}
+	
+	public void clickOverheadOnAVideo() {
+		ClickActions("OverheadVideosVideoClick_XPATH");
+	}
+	
+	public void clickOverheadVideosBackbtn() throws InterruptedException {
+		ClickActions("OverheadVideosBackBtn_XPATH");
+	}
+	
+	public void clickOverheadOnAnImage() {
+		ClickActions("OverheadImagesImage_XPATH");
+	}
+	
+	public void clickOverheadImagesBackbtn() throws InterruptedException {
+		ClickActions("OverheadImagesBackBtn_XPATH");
+	}
+	
+	public void clickOverheadOnADocument() {
+		ClickActions("OverheadDocumentsDocument_XPATH");
+	}
+	
+	public void clickOverheadProjectProfilesBackbtn() throws InterruptedException {
+		ClickActions("OverheadDocumentBackBtn_XPATH");
+	}
+	
+	public void clickPoleReplacementOnAnImage() {
+		ClickActions("PoleReplacementImagesImage_XPATH");
+	}
+	
+	public void clickPoleReplacementImagesBackbtn() throws InterruptedException {
+		ClickActions("PoleReplacementImagesBackBtn_XPATH");
+	}
+	
+	public void clickPoleReplacementOnAVideo() {
+		ClickActions("PoleReplacementVideosVideoClick_XPATH");
+	}
+	
+	public void clickPoleReplacementVideosBackbtn() throws InterruptedException {
+		ClickActions("PoleReplacementVideosBackBtn_XPATH");
+	}
+	
+	public void clickPoleReplacementOnADocument() {
+		ClickActions("PoleReplacementBrochureclick_XPATH");
+	}
+	
+	public void clickPoleReplacementBrochureBackbtn() throws InterruptedException {
+		ClickActions("PoleReplacementBrochureBackBtn_XPATH");
+	}
+	
+	public void clickProductsOnAnImage() {
+		ClickActions("ProductsImagesImage_XPATH");
+	}
+	
+	public void clickProductsImagesBackbtn() throws InterruptedException {
+		ClickActions("ProductsImagesBackBtn_XPATH");
+	}
+	
+	public void clickProductsOnAVideo() {
+		ClickActions("ProductsVideosVideoClick_XPATH");
+	}
+	
+	public void clickProductsVideosBackbtn() throws InterruptedException {
+		ClickActions("ProductsVideosBackBtn_XPATH");
+	}
+	
+	public void clickProductsOnADocument() {
+		ClickActions("ProductsProductCatalogclick_XPATH");
+	}
+	
+	public void clickProductsProductCatalogBackbtn() throws InterruptedException {
+		ClickActions("ProductsProductCatalogBackBtn_XPATH");
+	}
+	
+	public void clickSteelAndConcreteAssessmentOnAnImage() {
+		ClickActions("SteelAndConcreteAssessmentImagesImage_XPATH");
+	}
+	
+	public void clickSteelAndConcreteAssessmentImagesBackbtn() throws InterruptedException {
+		ClickActions("SteelAndConcreteAssessmentImagesBackBtn_XPATH");
+	}
+	
+	public void clickSteelAndConcreteRestorationOnAnImage() {
+		ClickActions("SteelAndConcreteRestorationImagesImage_XPATH");
+	}
+	
+	public void clickSteelAndConcreteRestorationImagesBackbtn() throws InterruptedException {
+		ClickActions("SteelAndConcreteRestorationImagesBackBtn_XPATH");
+	}
+	
+	public void clickStormSupportOnAnImage() {
+		ClickActions("StormSupportImagesImage_XPATH");
+	}
+	
+	public void clickStormSupportImagesBackbtn() throws InterruptedException {
+		ClickActions("StormSupportImagesBackBtn_XPATH");
+	}
+	
+	public void clickStormSupportOnAVideo() {
+		ClickActions("StormSupportVideosVideoClick_XPATH");
+	}
+	
+	public void clickStormSupportVideosBackbtn() throws InterruptedException {
+		ClickActions("StormSupportVideosBackBtn_XPATH");
+	}
+	
+	public void clickStormSupportonADocument() {
+		ClickActions("StormSupportProjectProfilesDocument_XPATH");
+	}
+	
+	public void clickStormSupportProjectProfilesBackbtn() throws InterruptedException {
+		ClickActions("StormSupportProjectProfilesBackBtn_XPATH");
+	}
+	
+	public void clickUndergroundOnAnImage() {
+		ClickActions("UndergroundImagesImage_XPATH");
+	}
+	
+	public void clickUndergroundImagesBackbtn() throws InterruptedException {
+		ClickActions("UndergroundImagesBackBtn_XPATH");
+	}
+	
+	public void clickUndergroundADocument() {
+		ClickActions("UndergroundBrochureDocument_XPATH");
+	}
+	
+	public void clickUndergroundBrochureBackbtn() throws InterruptedException {
+		ClickActions("UndergroundBrochureBackBtn_XPATH");
+	}
+	
+	public void clickUndergroundADiagramDocument() {
+		ClickActions("UndergroundDiagramDocument_XPATH");
+	}
+	
+	public void clickUndergroundDiagramBackbtn() throws InterruptedException {
+		ClickActions("UndergroundDiagramBackBtn_XPATH");
+	}
+	
+	public void clickWoodRestorationOnAVideo() {
+		ClickActions("WoodRestorationVideosVideoClick_XPATH");
+	}
+	
+	public void clickWoodRestorationVideosBackbtn() throws InterruptedException {
+		ClickActions("WoodRestorationVideosBackBtn_XPATH");
+	}
+	
+	public void clickWoodTreatmentOnAVideo() {
+		ClickActions("WoodTreatmentVideosVideoClick_XPATH");
+	}
+	
+	public void clickWoodTreatmentVideosBackbtn() throws InterruptedException {
+		ClickActions("WoodTreatmentVideosBackBtn_XPATH");
+	}
+	
+	public void clickWoodTreatmentOnAnImage() {
+		ClickActions("WoodTreatmentImagesImage_XPATH");
+	}
+	
+	public void clickWoodTreatmentImagesBackbtn() throws InterruptedException {
+		ClickActions("WoodTreatmentImagesBackBtn_XPATH");
+	}
+	
+	public void clickWoodTreatmentOnADocument() {
+		ClickActions("WoodTreatmentResearchDocument_XPATH");
+	}
+	
+	public void clickWoodTreatmentResearchBackbtn() throws InterruptedException {
+		ClickActions("WoodTreatmentResearchBackBtn_XPATH");
+	}
+	
+	public void clickJointUsePopularQuery() {
+		click("JointUseFilter_XPATH");
+	}
+
 	
     public OsmoseServicesPage goOsmoseServices(){
         return new OsmoseServicesPage();
