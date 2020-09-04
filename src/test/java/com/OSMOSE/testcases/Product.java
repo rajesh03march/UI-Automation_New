@@ -7,8 +7,6 @@ import com.OSMOSE.utilities.Utilities;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.interactions.Actions;
-import org.openqa.selenium.remote.DriverCommand;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -69,7 +67,10 @@ public class Product extends BaseTest {
 	public void adminElementPresent() throws InterruptedException {
 		HomeOU ou = new HomeOU();
 		ProductPage pp = ou.goProduct();
-		Assert.assertTrue(Page.driver.findElement(By.xpath("//*[@id='openMyquotes']")).isDisplayed());
+		//Verifying the presence of MyQuotes button
+		WebElement MyQuotes = Page.driver.findElement(By.xpath("//*[@id='openMyquotes']"));
+		//Assert.assertTrue(Page.driver.findElement(By.xpath("//*[@id='openMyquotes']")).isDisplayed());
+		Assert.assertTrue(MyQuotes.isDisplayed());
 	}
 
 	@Test(priority = 7, dependsOnMethods = "verifyTheProductLink", enabled = true, description = "Verification of the presence of View Details button")
@@ -1202,7 +1203,7 @@ public class Product extends BaseTest {
 		Thread.sleep(1000);
 	}
 
-	@Test(priority = 82, enabled = true, description = "Submitting a Quote with a file without attachment")
+	@Test(priority = 82, enabled = true, description = "Submitting a Quote without attachment")
 	public void SubmitQuotewithoutFile() throws Exception {
 		HomeOU ou = new HomeOU();
 		ProductPage pp = ou.goProduct();
@@ -1241,12 +1242,12 @@ public class Product extends BaseTest {
 		pp.ToolTipForSize();
 		Thread.sleep(5000);
 		String Sizetooltip = Page.driver.findElement(By.xpath("//*[@id='selectSize']/option[2]")).getAttribute("title");
-		Assert.assertEquals(Sizetooltip, "767-020-001-4007 230 x 13' - 191,800 ft/lbs");
+		Assert.assertEquals(Sizetooltip, "165-110-500-040 MP500-EXT® 4 gal. box");
 		Thread.sleep(2000);
 		Page.click("CloseButton_XPATH");
 	}
 
-	@Test(priority = 85, enabled = true, description = "Create Quote by adding product in the cart by updating attachment")
+	@Test(priority = 85, enabled = true, description = "Create Quote by adding product in the cart by updating attachment and filling all the details")
 	public void UpdateChangeProductAddToShoppingCart() throws InterruptedException {
 		HomeOU ou = new HomeOU();
 		ProductPage pp = ou.goProduct();
@@ -1255,7 +1256,7 @@ public class Product extends BaseTest {
 		Thread.sleep(1000);
 	}
 
-	@Test(priority = 86, enabled = true, description = "Verification of Quantity on ShoppingCart Overlay")
+	@Test(priority = 86, enabled = true, description = "Verification of deleting the Quantity on ShoppingCart Overlay")
 	public void verifyDeleteProductOnOverlay() throws InterruptedException {
 		HomeOU ou = new HomeOU();
 		ProductPage pp = ou.goProduct();
@@ -1263,7 +1264,7 @@ public class Product extends BaseTest {
 		Thread.sleep(1000);
 	}
 
-	@Test(priority = 87, enabled = true, description = "Verification of Quantity on ShoppingCart Overlay")
+	@Test(priority = 87, enabled = true, description = "Verification of Comments textarea when comments section is Expanded and collapsed")
 	public void MyQuotesComments_Collapse() throws InterruptedException {
 		HomeOU ou = new HomeOU();
 		ProductPage pp = ou.goProduct();

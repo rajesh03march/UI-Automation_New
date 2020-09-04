@@ -1,11 +1,11 @@
 package com.OSMOSE.testcases;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import com.OSMOSE.base.Page;
 import com.OSMOSE.pages.OU.ContactPage;
-import com.OSMOSE.pages.OU.HomeOU;
 import com.OSMOSE.pages.OU.ProductPage;
 
 public class Contact extends BaseTest {
@@ -19,13 +19,14 @@ public class Contact extends BaseTest {
 		Assert.assertEquals(Page.getText("ViewContactsMenu_XPATH"), "View Contacts");
 	}
 
-	@Test(priority = 1, enabled = true, description = "Verification of the Header content on View Contacts Menu item")
-	public void verifyViewContactsHeaderContents() {
+	@Test(priority = 1, enabled = true, description = "Verification of the Header content on View Contacts Menu item when Project Group is Colombiapit")
+	public void verifyViewContactsHeaderContentsColombiapit() {
 		ProductPage pp = new ProductPage();
 		ContactPage cp = pp.goContact();
 		cp.ClickViewContactsMenu();
 		Assert.assertEquals(Page.getText("ProductsContactstxt_XPATH"), "Products Contacts");
-		//Assert.assertEquals(Page.getText("ManageAllContacts_XPATH"), "Manage all your contacts in one place");
+		// Assert.assertEquals(Page.getText("ManageAllContacts_XPATH"), "Manage all your
+		// contacts in one place");
 	}
 
 	@Test(priority = 2, enabled = true, description = "Verification of the content on a contact card")
@@ -196,16 +197,24 @@ public class Contact extends BaseTest {
 		cp.submitWithOther();
 		cp.clickCloseOnThankYouFormSubmission();
 	}
-	
+
 	@Test(priority = 16, enabled = true, description = "Verification of Form submission with 'Other' subject")
 	public void verifyFormSubmissionErrorMessage() {
 		ProductPage pp = new ProductPage();
 		ContactPage cp = pp.goContact();
 		Page.click("ContactUsFormSubmitBtn_XPATH");
-		//Verifying Error message
-		Assert.assertEquals(Page.getText("FormSubmissionErrorMessageTxt_XPATH"),
-				"All fields are mandatory");
-		
+		// Verifying Error message
+		Assert.assertEquals(Page.getText("FormSubmissionErrorMessageTxt_XPATH"), "All fields are mandatory");
+	}
+	
+	@Test(priority = 17, enabled = true, description = "Verification of presence of Project Group dropdown")
+	public void verifyPresenceOfProjectGroupMenu() {
+		ProductPage pp = new ProductPage();
+		ContactPage cp = pp.goContact();
+		Page.driver.navigate().back();
+		//Verifying the presence of Project Group Menu
+		WebElement ProjectGroupMenu = Page.driver.findElement(By.xpath("//*[@id='o360projectSel__BV_button_']/span"));
+		Assert.assertTrue(ProjectGroupMenu.isDisplayed());
 	}
 
 }

@@ -1,276 +1,100 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuite name="KnowledgeBase"
-           tests="27"
-           failures="5"
+           tests="88"
+           failures="0"
            errors="0"
            skipped="0"
-           time="163.807">
+           time="2741.116">
   <properties />
-            <testcase name="verifyClickOnDailyGaffGalleryImage" time="62.067" classname="com.OSMOSE.testcases.KnowledgeBase">
-                <failure type="org.openqa.selenium.NoSuchElementException"
-                  message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&quot;card-knowBase&quot;]/div[1]/a/p&quot;}
-  (Session info: chrome=84.0.4147.125)
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
-System info: host: &apos;5CG6323N27&apos;, ip: &apos;192.168.0.8&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_191&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 84.0.4147.125, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Windows\Temp\scoped_dir1...}, goog:chromeOptions: {debuggerAddress: localhost:51523}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: none, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 33391e79ec2364a686bae7f70fbbecbf
-*** Element info: {Using=xpath, value=//*[@id=&quot;card-knowBase&quot;]/div[1]/a/p}"
-              >
-<![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="card-knowBase"]/div[1]/a/p"}
-  (Session info: chrome=84.0.4147.125)
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
-System info: host: '5CG6323N27', ip: '192.168.0.8', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 84.0.4147.125, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Windows\Temp\scoped_dir1...}, goog:chromeOptions: {debuggerAddress: localhost:51523}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: none, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 33391e79ec2364a686bae7f70fbbecbf
-*** Element info: {Using=xpath, value=//*[@id="card-knowBase"]/div[1]/a/p}
-  sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-  sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-  sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-  java.lang.reflect.Constructor.newInstance(Unknown Source)
-  org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-  org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-  org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-  org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-  org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-  org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
-  org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
-  org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:424)
-  org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-  org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
-  com.OSMOSE.base.Page.click(Page.java:180)
-  com.OSMOSE.pages.OU.KnowledgeBasePage.clickKBCard(KnowledgeBasePage.java:17)
-  com.OSMOSE.testcases.KnowledgeBase.verifyClickOnDailyGaffGalleryImage(KnowledgeBase.java:394)
-  sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-  sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-  sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-  java.lang.reflect.Method.invoke(Unknown Source)
-  org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
-  org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
-  org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-  org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-  org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
-  org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-  org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-  org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-  java.util.ArrayList.forEach(Unknown Source)
-  org.testng.TestRunner.privateRun(TestRunner.java:766)
-  org.testng.TestRunner.run(TestRunner.java:587)
-  org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
-  org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
-  org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
-  org.testng.SuiteRunner.run(SuiteRunner.java:286)
-  org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-  org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-  org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
-  org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
-  org.testng.TestNG.runSuites(TestNG.java:1039)
-  org.testng.TestNG.run(TestNG.java:1007)
-  org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-  org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-  org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-      </failure>
-
-          </testcase>
-            <testcase name="verifyCardContentsWoodInspectionTreatment" time="0.053" classname="com.OSMOSE.testcases.KnowledgeBase">
-                <failure type="java.lang.AssertionError"
-                  message="expected [VIDEOS] but found [IMAGES]"
-              >
-<![CDATA[java.lang.AssertionError: expected [VIDEOS] but found [IMAGES]
-  org.testng.Assert.fail(Assert.java:97)
-  org.testng.Assert.assertEqualsImpl(Assert.java:136)
-  org.testng.Assert.assertEquals(Assert.java:118)
-  org.testng.Assert.assertEquals(Assert.java:575)
-  org.testng.Assert.assertEquals(Assert.java:585)
-  com.OSMOSE.testcases.KnowledgeBase.verifyCardContentsWoodInspectionTreatment(KnowledgeBase.java:328)
-  sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-  sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-  sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-  java.lang.reflect.Method.invoke(Unknown Source)
-  org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
-  org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
-  org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-  org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-  org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
-  org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-  org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-  org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-  java.util.ArrayList.forEach(Unknown Source)
-  org.testng.TestRunner.privateRun(TestRunner.java:766)
-  org.testng.TestRunner.run(TestRunner.java:587)
-  org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
-  org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
-  org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
-  org.testng.SuiteRunner.run(SuiteRunner.java:286)
-  org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-  org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-  org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
-  org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
-  org.testng.TestNG.runSuites(TestNG.java:1039)
-  org.testng.TestNG.run(TestNG.java:1007)
-  org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-  org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-  org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-      </failure>
-
-          </testcase>
-            <testcase name="verifyCardContentsSteelConcreteAssessment" time="0.108" classname="com.OSMOSE.testcases.KnowledgeBase">
-                <failure type="java.lang.AssertionError"
-                  message="expected [BROCHURES] but found [VIDEOS]"
-              >
-<![CDATA[java.lang.AssertionError: expected [BROCHURES] but found [VIDEOS]
-  org.testng.Assert.fail(Assert.java:97)
-  org.testng.Assert.assertEqualsImpl(Assert.java:136)
-  org.testng.Assert.assertEquals(Assert.java:118)
-  org.testng.Assert.assertEquals(Assert.java:575)
-  org.testng.Assert.assertEquals(Assert.java:585)
-  com.OSMOSE.testcases.KnowledgeBase.verifyCardContentsSteelConcreteAssessment(KnowledgeBase.java:290)
-  sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-  sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-  sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-  java.lang.reflect.Method.invoke(Unknown Source)
-  org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
-  org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
-  org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-  org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-  org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
-  org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-  org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-  org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-  java.util.ArrayList.forEach(Unknown Source)
-  org.testng.TestRunner.privateRun(TestRunner.java:766)
-  org.testng.TestRunner.run(TestRunner.java:587)
-  org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
-  org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
-  org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
-  org.testng.SuiteRunner.run(SuiteRunner.java:286)
-  org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-  org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-  org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
-  org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
-  org.testng.TestNG.runSuites(TestNG.java:1039)
-  org.testng.TestNG.run(TestNG.java:1007)
-  org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-  org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-  org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-      </failure>
-
-          </testcase>
-            <testcase name="verifyCardContentsWoodRestoration" time="0.049" classname="com.OSMOSE.testcases.KnowledgeBase">
-                <failure type="java.lang.AssertionError"
-                  message="expected [VIDEOS] but found [IMAGES]"
-              >
-<![CDATA[java.lang.AssertionError: expected [VIDEOS] but found [IMAGES]
-  org.testng.Assert.fail(Assert.java:97)
-  org.testng.Assert.assertEqualsImpl(Assert.java:136)
-  org.testng.Assert.assertEquals(Assert.java:118)
-  org.testng.Assert.assertEquals(Assert.java:575)
-  org.testng.Assert.assertEquals(Assert.java:585)
-  com.OSMOSE.testcases.KnowledgeBase.verifyCardContentsWoodRestoration(KnowledgeBase.java:349)
-  sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-  sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-  sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-  java.lang.reflect.Method.invoke(Unknown Source)
-  org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
-  org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
-  org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-  org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-  org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
-  org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-  org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-  org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-  java.util.ArrayList.forEach(Unknown Source)
-  org.testng.TestRunner.privateRun(TestRunner.java:766)
-  org.testng.TestRunner.run(TestRunner.java:587)
-  org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
-  org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
-  org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
-  org.testng.SuiteRunner.run(SuiteRunner.java:286)
-  org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-  org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-  org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
-  org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
-  org.testng.TestNG.runSuites(TestNG.java:1039)
-  org.testng.TestNG.run(TestNG.java:1007)
-  org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-  org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-  org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-      </failure>
-
-          </testcase>
-            <testcase name="verifyCardContentsSteelConcreteRestoration" time="0.058" classname="com.OSMOSE.testcases.KnowledgeBase">
-                <failure type="java.lang.AssertionError"
-                  message="expected [ARTICLES] but found [VIDEOS]"
-              >
-<![CDATA[java.lang.AssertionError: expected [ARTICLES] but found [VIDEOS]
-  org.testng.Assert.fail(Assert.java:97)
-  org.testng.Assert.assertEqualsImpl(Assert.java:136)
-  org.testng.Assert.assertEquals(Assert.java:118)
-  org.testng.Assert.assertEquals(Assert.java:575)
-  org.testng.Assert.assertEquals(Assert.java:585)
-  com.OSMOSE.testcases.KnowledgeBase.verifyCardContentsSteelConcreteRestoration(KnowledgeBase.java:307)
-  sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-  sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-  sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-  java.lang.reflect.Method.invoke(Unknown Source)
-  org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
-  org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
-  org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-  org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-  org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
-  org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-  org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-  org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-  java.util.ArrayList.forEach(Unknown Source)
-  org.testng.TestRunner.privateRun(TestRunner.java:766)
-  org.testng.TestRunner.run(TestRunner.java:587)
-  org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
-  org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
-  org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
-  org.testng.SuiteRunner.run(SuiteRunner.java:286)
-  org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-  org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-  org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
-  org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
-  org.testng.TestNG.runSuites(TestNG.java:1039)
-  org.testng.TestNG.run(TestNG.java:1007)
-  org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-  org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-  org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-      </failure>
-
-          </testcase>
   
   
-            <testcase name="verifyPresenceOfFilterItems" time="2.224" classname="com.OSMOSE.testcases.KnowledgeBase" />
-                <testcase name="verifyPresenceOfPopularQueriesFilter" time="0.047" classname="com.OSMOSE.testcases.KnowledgeBase" />
-                <testcase name="verifyPresenceWoodInspectionAndTreatmentCard" time="0.031" classname="com.OSMOSE.testcases.KnowledgeBase" />
-                <testcase name="verifyIndustrySeeMore" time="28.463" classname="com.OSMOSE.testcases.KnowledgeBase" />
-                <testcase name="verifyKnowledgeBaseNavigationClick" time="30.734" classname="com.OSMOSE.testcases.KnowledgeBase" />
-                <testcase name="verifyPresenceSuggestedContentsCard" time="0.032" classname="com.OSMOSE.testcases.KnowledgeBase" />
-                <testcase name="verifyPresenceOfOcalCproButtons" time="3.222" classname="com.OSMOSE.testcases.KnowledgeBase" />
+            <testcase name="verifyPresenceIndustryNewsCard" time="0.076" classname="com.OSMOSE.testcases.KnowledgeBase" />
+                <testcase name="verifyPresenceProjectOfTheWeekCard" time="0.066" classname="com.OSMOSE.testcases.KnowledgeBase" />
+                <testcase name="verifyPresenceOfOcalCproButtons" time="3.198" classname="com.OSMOSE.testcases.KnowledgeBase" />
+                <testcase name="verifyClickOnSteelandConcreteAssessmentCard" time="71.268" classname="com.OSMOSE.testcases.KnowledgeBase" />
+                <testcase name="verifyClickonWoodRestorationVideos" time="31.473" classname="com.OSMOSE.testcases.KnowledgeBase" />
+                <testcase name="verifyCardContentsSteelConcreteRestoration" time="0.207" classname="com.OSMOSE.testcases.KnowledgeBase" />
+                <testcase name="verifyPresenceOfSliderOnSuggestedContents" time="8.138" classname="com.OSMOSE.testcases.KnowledgeBase" />
+                <testcase name="verifyClickonJointUsImages" time="21.715" classname="com.OSMOSE.testcases.KnowledgeBase" />
+                <testcase name="verifyClickOnViewProjectProjectOfTheWeek" time="5.168" classname="com.OSMOSE.testcases.KnowledgeBase" />
+                <testcase name="verifyPresenceOCalcProCard" time="0.042" classname="com.OSMOSE.testcases.KnowledgeBase" />
+                <testcase name="verifyCardContentsPoleReplacement" time="0.210" classname="com.OSMOSE.testcases.KnowledgeBase" />
+                <testcase name="verifyClickonDocumentsSeeMore" time="65.386" classname="com.OSMOSE.testcases.KnowledgeBase" />
+                <testcase name="verifyClickonProductsVideos" time="31.475" classname="com.OSMOSE.testcases.KnowledgeBase" />
+                <testcase name="verifySearchResultsOnTyping" time="59.566" classname="com.OSMOSE.testcases.KnowledgeBase" />
+                <testcase name="verifyClickonJointUsArticles" time="3.104" classname="com.OSMOSE.testcases.KnowledgeBase" />
+                <testcase name="verifyClickonVideosSeeMore" time="59.386" classname="com.OSMOSE.testcases.KnowledgeBase" />
+                <testcase name="verifyClickonJointUsVideos" time="31.521" classname="com.OSMOSE.testcases.KnowledgeBase" />
+                <testcase name="verifyClickOnItemFeaturedVideos" time="5.191" classname="com.OSMOSE.testcases.KnowledgeBase" />
                 <testcase name="verifyClickOnItemSuggestedContents" time="9.380" classname="com.OSMOSE.testcases.KnowledgeBase" />
-                <testcase name="verifyClickOnItemFeaturedVideos" time="5.163" classname="com.OSMOSE.testcases.KnowledgeBase" />
-                <testcase name="verifyPresenceWoodRestorationCard" time="0.032" classname="com.OSMOSE.testcases.KnowledgeBase" />
-                <testcase name="verifyPresenceFeaturedVideosCard" time="0.034" classname="com.OSMOSE.testcases.KnowledgeBase" />
-                <testcase name="verifyPresenceOfSliderOnSuggestedContents" time="8.143" classname="com.OSMOSE.testcases.KnowledgeBase" />
-                <testcase name="verifyPresenceOCalcProCard" time="0.032" classname="com.OSMOSE.testcases.KnowledgeBase" />
-                <testcase name="verifyPresenceProjectOfTheWeekCard" time="0.064" classname="com.OSMOSE.testcases.KnowledgeBase" />
-                <testcase name="verifyPresenceIndustryNewsCard" time="0.064" classname="com.OSMOSE.testcases.KnowledgeBase" />
-                <testcase name="verifyClickOnDailyGaffGallery" time="8.379" classname="com.OSMOSE.testcases.KnowledgeBase" />
-                <testcase name="verifyLinksPresentOnKb" time="0.090" classname="com.OSMOSE.testcases.KnowledgeBase" />
-                <testcase name="verifyClickOnViewProjectProjectOfTheWeek" time="5.184" classname="com.OSMOSE.testcases.KnowledgeBase" />
-                <testcase name="verifyPresenceOfSearchBox" time="0.058" classname="com.OSMOSE.testcases.KnowledgeBase" />
-                <testcase name="verifyPresenceSteelAndConcreteAssessmentCard" time="0.033" classname="com.OSMOSE.testcases.KnowledgeBase" />
-                <testcase name="verifyPresenceWhatswrongwiththisPictureCard" time="0.032" classname="com.OSMOSE.testcases.KnowledgeBase" />
-                <testcase name="verifyPresenceSteelAndConcreteRestorationCard" time="0.031" classname="com.OSMOSE.testcases.KnowledgeBase" />
+                <testcase name="verifyPresenceSuggestedContentsCard" time="0.033" classname="com.OSMOSE.testcases.KnowledgeBase" />
+                <testcase name="verifySearchResultsAreGroupedAfterfilterUpdation" time="229.746" classname="com.OSMOSE.testcases.KnowledgeBase" />
+                <testcase name="verifyCardContentsProducts" time="0.199" classname="com.OSMOSE.testcases.KnowledgeBase" />
+                <testcase name="verifyClickonSteelAndConcreteAssessmentStandardsCodes" time="3.075" classname="com.OSMOSE.testcases.KnowledgeBase" />
+                <testcase name="verifyClickOnDailyGaffGalleryImage" time="12.467" classname="com.OSMOSE.testcases.KnowledgeBase" />
+                <testcase name="verifyClickonProductsImages" time="21.518" classname="com.OSMOSE.testcases.KnowledgeBase" />
+                <testcase name="verifyClickonProductsProductCatalog" time="21.601" classname="com.OSMOSE.testcases.KnowledgeBase" />
+                <testcase name="verifyClickonWoodTreatmentImages" time="21.598" classname="com.OSMOSE.testcases.KnowledgeBase" />
+                <testcase name="verifyClickonOverheadImages" time="21.595" classname="com.OSMOSE.testcases.KnowledgeBase" />
+                <testcase name="verifyCardContentsWoodRestoration" time="0.233" classname="com.OSMOSE.testcases.KnowledgeBase" />
+                <testcase name="verifySearchResultsAreDocuments" time="151.366" classname="com.OSMOSE.testcases.KnowledgeBase" />
+                <testcase name="verifyClickonUndergroundImages" time="45.797" classname="com.OSMOSE.testcases.KnowledgeBase" />
+                <testcase name="verifyClickOnDailyGaffGallery" time="18.310" classname="com.OSMOSE.testcases.KnowledgeBase" />
+                <testcase name="verifyClickOnProductsCard" time="71.356" classname="com.OSMOSE.testcases.KnowledgeBase" />
+                <testcase name="verifyDynamicDropdown" time="16.493" classname="com.OSMOSE.testcases.KnowledgeBase" />
+                <testcase name="verifyClickonSteelAndConcreteRestorationArticles" time="3.068" classname="com.OSMOSE.testcases.KnowledgeBase" />
+                <testcase name="verifyPresenceOfSortBy" time="157.698" classname="com.OSMOSE.testcases.KnowledgeBase" />
+                <testcase name="verifyClickonOverheadProjectProfiles" time="21.712" classname="com.OSMOSE.testcases.KnowledgeBase" />
+                <testcase name="verifyClickonPoleReplacementImages" time="21.591" classname="com.OSMOSE.testcases.KnowledgeBase" />
+                <testcase name="verifyPresenceOfSearchBox" time="0.087" classname="com.OSMOSE.testcases.KnowledgeBase" />
+                <testcase name="verifyPresenceFeaturedVideosCard" time="0.035" classname="com.OSMOSE.testcases.KnowledgeBase" />
+                <testcase name="verifyClickOnOverheadCard" time="71.455" classname="com.OSMOSE.testcases.KnowledgeBase" />
+                <testcase name="verifyClickonWoodRestorationArticles" time="3.083" classname="com.OSMOSE.testcases.KnowledgeBase" />
+                <testcase name="verifyClickonUndergroundDiagram" time="21.599" classname="com.OSMOSE.testcases.KnowledgeBase" />
+                <testcase name="verifyNoResultsFoundMessage" time="6.961" classname="com.OSMOSE.testcases.KnowledgeBase" />
+                <testcase name="verifyClickOnUndergroundCard" time="71.339" classname="com.OSMOSE.testcases.KnowledgeBase" />
+                <testcase name="verifyPresenceWoodInspectionAndTreatmentCard" time="0.036" classname="com.OSMOSE.testcases.KnowledgeBase" />
+                <testcase name="verifyClickonOverheadVideos" time="31.462" classname="com.OSMOSE.testcases.KnowledgeBase" />
+                <testcase name="verifyClickonWoodRestorationBrochures" time="3.081" classname="com.OSMOSE.testcases.KnowledgeBase" />
+                <testcase name="verifyPresenceWoodRestorationCard" time="0.034" classname="com.OSMOSE.testcases.KnowledgeBase" />
+                <testcase name="verifyCardContentsStormSupport" time="0.221" classname="com.OSMOSE.testcases.KnowledgeBase" />
+                <testcase name="verifyCardContentsUnderground" time="0.201" classname="com.OSMOSE.testcases.KnowledgeBase" />
+                <testcase name="verifyClickonJointUseManagementServicesSeeMore" time="65.494" classname="com.OSMOSE.testcases.KnowledgeBase" />
+                <testcase name="verifyClickonUndergroundBrochure" time="21.568" classname="com.OSMOSE.testcases.KnowledgeBase" />
+                <testcase name="verifyClickonSteelAndConcreteRestorationImages" time="21.693" classname="com.OSMOSE.testcases.KnowledgeBase" />
+                <testcase name="verifyClickonSteelAndConcreteAssessmentBrochures" time="3.071" classname="com.OSMOSE.testcases.KnowledgeBase" />
+                <testcase name="verifyClickonSteelAndConcreteRestorationBrochures" time="3.070" classname="com.OSMOSE.testcases.KnowledgeBase" />
+                <testcase name="verifyClickOnPoleReplacementCard" time="71.243" classname="com.OSMOSE.testcases.KnowledgeBase" />
+                <testcase name="verifyClickOnStormSupportCard" time="71.290" classname="com.OSMOSE.testcases.KnowledgeBase" />
+                <testcase name="verifyPresenceOfPopularQueriesFilter" time="0.043" classname="com.OSMOSE.testcases.KnowledgeBase" />
+                <testcase name="verifyKnowledgeBaseNavigationClick" time="49.549" classname="com.OSMOSE.testcases.KnowledgeBase" />
+                <testcase name="verifyCardContentsWoodInspectionTreatment" time="0.207" classname="com.OSMOSE.testcases.KnowledgeBase" />
+                <testcase name="verifyLinksPresentOnKb" time="0.113" classname="com.OSMOSE.testcases.KnowledgeBase" />
+                <testcase name="verifyClickonImagesSeeMore" time="65.613" classname="com.OSMOSE.testcases.KnowledgeBase" />
+                <testcase name="verifyClickOnWoodInspectionCard" time="71.402" classname="com.OSMOSE.testcases.KnowledgeBase" />
+                <testcase name="verifyPresenceSteelAndConcreteAssessmentCard" time="0.038" classname="com.OSMOSE.testcases.KnowledgeBase" />
+                <testcase name="verifyPresenceWhatswrongwiththisPictureCard" time="0.038" classname="com.OSMOSE.testcases.KnowledgeBase" />
+                <testcase name="verifyPresenceOfFilterItems" time="2.226" classname="com.OSMOSE.testcases.KnowledgeBase" />
+                <testcase name="verifyCardContentsSteelConcreteAssessment" time="0.236" classname="com.OSMOSE.testcases.KnowledgeBase" />
+                <testcase name="verifyClickonSteelAndConcreteAssessmentImages" time="21.532" classname="com.OSMOSE.testcases.KnowledgeBase" />
+                <testcase name="verifyClickonWoodTreatmentVideos" time="31.454" classname="com.OSMOSE.testcases.KnowledgeBase" />
+                <testcase name="verifySearchTextUpdation" time="155.788" classname="com.OSMOSE.testcases.KnowledgeBase" />
+                <testcase name="verifySearchResultsAreGrouped" time="59.601" classname="com.OSMOSE.testcases.KnowledgeBase" />
+                <testcase name="verifyClearButtonOnTyping" time="6.233" classname="com.OSMOSE.testcases.KnowledgeBase" />
+                <testcase name="verifySearchResultsAreImages" time="91.286" classname="com.OSMOSE.testcases.KnowledgeBase" />
+                <testcase name="verifyClickOnSteelandConcreteRestorationCard" time="71.236" classname="com.OSMOSE.testcases.KnowledgeBase" />
+                <testcase name="verifyClickonWoodTreatmentResearch" time="21.540" classname="com.OSMOSE.testcases.KnowledgeBase" />
+                <testcase name="verifyCardContentsJointUse" time="0.200" classname="com.OSMOSE.testcases.KnowledgeBase" />
+                <testcase name="verifyClickOnJointUseCard" time="59.428" classname="com.OSMOSE.testcases.KnowledgeBase" />
+                <testcase name="verifyClickonStormSupportVideos" time="31.463" classname="com.OSMOSE.testcases.KnowledgeBase" />
+                <testcase name="verifyCardContentsOverhead" time="0.205" classname="com.OSMOSE.testcases.KnowledgeBase" />
+                <testcase name="verifyClickonPoleReplacementBrochure" time="21.544" classname="com.OSMOSE.testcases.KnowledgeBase" />
+                <testcase name="verifyClickonPoleReplacementVideos" time="32.326" classname="com.OSMOSE.testcases.KnowledgeBase" />
+                <testcase name="verifyPresenceSteelAndConcreteRestorationCard" time="0.033" classname="com.OSMOSE.testcases.KnowledgeBase" />
+                <testcase name="verifyIndustrySeeMore" time="28.323" classname="com.OSMOSE.testcases.KnowledgeBase" />
+                <testcase name="verifyClickonStormSupportImages" time="21.553" classname="com.OSMOSE.testcases.KnowledgeBase" />
+                <testcase name="verifyClickonStormSupportProjectProfiles" time="22.306" classname="com.OSMOSE.testcases.KnowledgeBase" />
+                <testcase name="verifyClickOnWoodRestorationCard" time="71.247" classname="com.OSMOSE.testcases.KnowledgeBase" />
+                <testcase name="verifySearchResultsAreVideos" time="91.304" classname="com.OSMOSE.testcases.KnowledgeBase" />
       
 </testsuite>
