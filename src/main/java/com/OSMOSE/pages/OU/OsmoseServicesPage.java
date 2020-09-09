@@ -4,7 +4,8 @@ import com.OSMOSE.base.Page;
 
 public class OsmoseServicesPage extends Page {
 
-	public void clickOnOU360() {
+	public void clickOnOU360() throws InterruptedException {
+		Thread.sleep(1000);
 		ClickActions("HomePage_XPATH");
 	}
 
@@ -63,6 +64,58 @@ public class OsmoseServicesPage extends Page {
 
 	public void clickLearnMorePopupCloseButton() {
 		click("LearnMorePopupCloseBtn_XPATH");
+	}
+	
+	public void navigateToPedernalesElecCoop() throws InterruptedException {
+		click("MOSProjectGroupMenu_XPATH");
+		Thread.sleep(1000);
+		click("MOSPedernalesElecCoop_XPATH");
+		Thread.sleep(1000);
+		click("MOSPedernalesECDev_XPATH");
+	}
+	
+	public void navigateToColombiapit() throws InterruptedException {
+		click("ProjectGroupMenu_XPATH");
+		Thread.sleep(1000);
+		click("MOSCityOfColumbia_XPATH");
+		Thread.sleep(1000);
+		click("MOSColombiapit_XPATH");
+	}
+	
+	public void clickWoodInspection() throws InterruptedException {
+		click("MOSWoodInspectionAndTreatmentCard_XPATH");
+	}
+	
+	public void clickWoodTreatmentVideos() {
+		click("MOSWoodInspectionVideos_XPATH");
+	}
+	
+	public void clickWoodTreatmentProjectProfiles() {
+		click("MOSWoodInspectionProjectProfiles_XPATH");
+	}
+	
+	public void clickWoodRestoration() throws InterruptedException {
+		click("MOSWoodRestorationCard_XPATH");
+	}
+	
+	public void clickWoodRestorationVideos() {
+		click("MOSWoodRestorationVideos_XPATH");
+	}
+	
+	public void clickWoodRestorationProjectProfiles() {
+		click("MOSWoodRestorationProjectProfiles_XPATH");
+	}
+	
+	public void clickUndergroundVideos() {
+		click("MOSUndergroundVideos_XPATH");
+	}
+	
+	public void clickUnderstandProjectProfiles() {
+		click("MOSUndergroundProjectProfiles_XPATH");
+	}
+	
+	public void clickUnderground() throws InterruptedException {
+		click("UndergroundCard_XPATH");
 	}
 
 }

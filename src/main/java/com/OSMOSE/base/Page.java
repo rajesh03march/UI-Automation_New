@@ -487,5 +487,23 @@ public class Page {
 		test.log(LogStatus.INFO, "Typing in : " + locator);
 
 	}
+	
+	public static String getdefaultValuefromdropdown(String locator) {
+
+		if (locator.endsWith("_CSS")) {
+			dropdown = driver.findElement(By.cssSelector(OR.getProperty(locator)));
+		} else if (locator.endsWith("_XPATH")) {
+			dropdown = driver.findElement(By.xpath(OR.getProperty(locator)));
+		} else if (locator.endsWith("_ID")) {
+			dropdown = driver.findElement(By.id(OR.getProperty(locator)));
+		}
+
+		Select select = new Select(dropdown);
+		WebElement Option = select.getFirstSelectedOption();
+		String defaultItem = Option.getText();
+		log.debug("Fetching Default value from dropdown : " + locator + " value as : ");
+		test.log(LogStatus.INFO, "Fetching Default value from dropdown : " + locator + " value as ");
+		return defaultItem;
+	}
 
 }
