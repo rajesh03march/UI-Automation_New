@@ -102,8 +102,8 @@ public class ContactPage extends Page {
 	public void navigateToIdahoPowerCompanyRestoration() throws InterruptedException {
 		click("ProjectGroupMenu_XPATH");
 		Thread.sleep(1000);
-		click("IdahoPowerCompany_XPATH");
-		Thread.sleep(1000);
+		/*click("IdahoPowerCompany_XPATH");
+		Thread.sleep(1000);*/
 		click("IdahoPowerRestoration_XPATH");
 	}
 	
@@ -142,8 +142,8 @@ public class ContactPage extends Page {
 	public void navigateToPugetSoundEnergyRestoration() throws InterruptedException {
 		click("ProjectGroupMenu_XPATH");
 		Thread.sleep(1000);
-		click("PugetSoundEnergy_XPATH");
-		Thread.sleep(1000);
+		/*click("PugetSoundEnergy_XPATH");
+		Thread.sleep(1000);*/
 		click("PugetSoundEnergyRestoration_XPATH");
 	}
 

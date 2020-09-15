@@ -7,13 +7,16 @@ import org.openqa.selenium.By;
 public class Login extends Page {
 
 
-   public DoLogin doLogin(String Username, String Password){
-       driver.findElement(By.id("logonIdentifier")).sendKeys(Username);
-       driver.findElement(By.id("password")).sendKeys(Password);
-       driver.findElement(By.id("next")).click();
-       return new DoLogin();
-
-   }
+	public void doLogin(String username, String password) throws InterruptedException {
+		Thread.sleep(12000);
+		type("email_XPATH", username);
+		type("password_XPATH", password);
+		click("submit_XPATH");
+	}
+	
+	public HomeOU goHomeOU() {
+		return new HomeOU();
+	}
 
 
 }

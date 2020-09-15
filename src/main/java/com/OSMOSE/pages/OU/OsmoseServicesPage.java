@@ -6,7 +6,7 @@ public class OsmoseServicesPage extends Page {
 
 	public void clickOnOU360() throws InterruptedException {
 		Thread.sleep(1000);
-		ClickActions("HomePage_XPATH");
+		ClickActions("MOSOsmoseLogo_XPATH");
 	}
 
 	public void clickMyOsmoseServices() throws InterruptedException {

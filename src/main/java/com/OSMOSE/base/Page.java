@@ -43,8 +43,8 @@ public class Page {
 	public static ExtentTest test;
 	public static String browser;
 
-	public static TopMenu menu;
-	JavascriptExecutor js = (JavascriptExecutor) driver;
+	/*public static TopMenu menu;
+	JavascriptExecutor js = (JavascriptExecutor) driver;*/
 	/*
 	 * Logs, Properties - OR, Config Excel Implicit and ExplicitWait Extent Reports
 	 * 
@@ -150,7 +150,7 @@ public class Page {
 					TimeUnit.SECONDS);
 			wait = new WebDriverWait(driver, 5);
 
-			menu = new TopMenu(driver);
+			//menu = new TopMenu(driver);
 
 		}
 	}

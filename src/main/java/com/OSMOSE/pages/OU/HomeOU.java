@@ -7,14 +7,6 @@ import org.openqa.selenium.WebElement;
 
 public class HomeOU extends Page {
 
-	public DoLogin doLogin(String username, String password) throws InterruptedException {
-		Thread.sleep(12000);
-		type("email_XPATH", username);
-		type("password_XPATH", password);
-		click("submit_XPATH");
-		return new DoLogin();
-	}
-	
 	public void clickOsmoseUniversityNavigation() throws InterruptedException {
 		Thread.sleep(12000);
 		click("OsmoseUniverityNav_XPATH");
@@ -89,7 +81,7 @@ public class HomeOU extends Page {
 		Thread.sleep(12000);
 		Page.driver.switchTo().defaultContent();
 		click("O-CALCTRAINING_XPATH");
-		Page.iFrames(2);
+		Page.iFrames(1);
 
 	}
 

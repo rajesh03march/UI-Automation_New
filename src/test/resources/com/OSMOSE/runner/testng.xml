@@ -10,6 +10,11 @@
 	</listeners>
 
 
+	<test name="Login">
+		<classes>
+			<class name="com.OSMOSE.testcases.LoginTest" />
+		</classes>
+	</test> <!-- Test -->
 	<test name="OULogin">
 		<classes>
 			<class name="com.OSMOSE.testcases.OULogin" />
@@ -30,11 +35,11 @@
 			<class name="com.OSMOSE.testcases.KnowledgeBase" />
 		</classes>
 	</test> --> <!-- Test -->
-	<test name="MyOsmoseServices">
+<!-- 	<test name="MyOsmoseServices">
 		<classes> 
 			<class name="com.OSMOSE.testcases.OsmoseServices" />
 		</classes>
-	</test> <!-- Test -->
+	</test> --> <!-- Test -->
 
 
 
