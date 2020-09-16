@@ -11,7 +11,7 @@
       <class name="com.OSMOSE.testcases.OsmoseServices">
         <methods>
           <include name="tearDown"/>
-          <include name="verifyProductsLearnMoreClick"/>
+          <include name="verifyClickonWoodRestorationVideos"/>
         </methods>
       </class> <!-- com.OSMOSE.testcases.OsmoseServices -->
     </classes>

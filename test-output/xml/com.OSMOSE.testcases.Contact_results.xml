@@ -1,114 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuite name="Contact"
-           tests="18"
-           failures="2"
+           tests="20"
+           failures="0"
            errors="0"
            skipped="0"
-           time="54.769">
+           time="130.220">
   <properties />
-            <testcase name="verifyViewContactsHeaderContents" time="0.134" classname="com.OSMOSE.testcases.Contact">
-                <failure type="java.lang.AssertionError"
-                  message="expected [Products Contacts] but found [Georgia Power Company Distribution Change Contacts]"
-              >
-<![CDATA[java.lang.AssertionError: expected [Products Contacts] but found [Georgia Power Company Distribution Change Contacts]
-  org.testng.Assert.fail(Assert.java:97)
-  org.testng.Assert.assertEqualsImpl(Assert.java:136)
-  org.testng.Assert.assertEquals(Assert.java:118)
-  org.testng.Assert.assertEquals(Assert.java:575)
-  org.testng.Assert.assertEquals(Assert.java:585)
-  com.OSMOSE.testcases.Contact.verifyViewContactsHeaderContents(Contact.java:28)
-  sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-  sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-  sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-  java.lang.reflect.Method.invoke(Unknown Source)
-  org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
-  org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
-  org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-  org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-  org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
-  org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-  org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-  org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-  java.util.ArrayList.forEach(Unknown Source)
-  org.testng.TestRunner.privateRun(TestRunner.java:766)
-  org.testng.TestRunner.run(TestRunner.java:587)
-  org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
-  org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
-  org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
-  org.testng.SuiteRunner.run(SuiteRunner.java:286)
-  org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-  org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-  org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
-  org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
-  org.testng.TestNG.runSuites(TestNG.java:1039)
-  org.testng.TestNG.run(TestNG.java:1007)
-  org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-  org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-  org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-      </failure>
-
-          </testcase>
-            <testcase name="verifyViewContactsContactCardContents" time="1.264" classname="com.OSMOSE.testcases.Contact">
-                <failure type="java.lang.AssertionError"
-                  message="expected [Simth, John (Simth)] but found [Heartsill,Jason Shane]"
-              >
-<![CDATA[java.lang.AssertionError: expected [Simth, John (Simth)] but found [Heartsill,Jason Shane]
-  org.testng.Assert.fail(Assert.java:97)
-  org.testng.Assert.assertEqualsImpl(Assert.java:136)
-  org.testng.Assert.assertEquals(Assert.java:118)
-  org.testng.Assert.assertEquals(Assert.java:575)
-  org.testng.Assert.assertEquals(Assert.java:585)
-  com.OSMOSE.testcases.Contact.verifyViewContactsContactCardContents(Contact.java:37)
-  sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-  sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-  sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-  java.lang.reflect.Method.invoke(Unknown Source)
-  org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
-  org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
-  org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-  org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-  org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
-  org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-  org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-  org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-  java.util.ArrayList.forEach(Unknown Source)
-  org.testng.TestRunner.privateRun(TestRunner.java:766)
-  org.testng.TestRunner.run(TestRunner.java:587)
-  org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
-  org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
-  org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
-  org.testng.SuiteRunner.run(SuiteRunner.java:286)
-  org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-  org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-  org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
-  org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
-  org.testng.TestNG.runSuites(TestNG.java:1039)
-  org.testng.TestNG.run(TestNG.java:1007)
-  org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-  org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-  org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-      </failure>
-
-          </testcase>
   
   
-            <testcase name="verifyFormSubmissionWith_Other" time="1.390" classname="com.OSMOSE.testcases.Contact" />
-                <testcase name="verifyClickOnBackButton" time="0.094" classname="com.OSMOSE.testcases.Contact" />
-                <testcase name="verifyFormSubmissionErrorMessage" time="0.065" classname="com.OSMOSE.testcases.Contact" />
-                <testcase name="verifyContactUsQueryFormContents" time="0.106" classname="com.OSMOSE.testcases.Contact" />
-                <testcase name="verifyContactUsOCalcProContents" time="0.088" classname="com.OSMOSE.testcases.Contact" />
-                <testcase name="verifyContactUsClickOnGoogleMap" time="31.126" classname="com.OSMOSE.testcases.Contact" />
-                <testcase name="verifyFormSubmissionWith_RequestForInformation" time="4.200" classname="com.OSMOSE.testcases.Contact" />
-                <testcase name="verifyFormSubmissionThankYouPopUp" time="11.921" classname="com.OSMOSE.testcases.Contact" />
-                <testcase name="verifyFormSubmissionWith_ProjectSupport" time="2.193" classname="com.OSMOSE.testcases.Contact" />
-                <testcase name="verifyContactUsHeaderContents" time="0.292" classname="com.OSMOSE.testcases.Contact" />
-                <testcase name="verifyContactUsSalesProductsContents" time="0.105" classname="com.OSMOSE.testcases.Contact" />
-                <testcase name="verifyContactUsSalesServicesContents" time="0.080" classname="com.OSMOSE.testcases.Contact" />
-                <testcase name="verifyContactUsGeneralInquiriesContents" time="0.096" classname="com.OSMOSE.testcases.Contact" />
-                <testcase name="verifyPresenceOfProjectGroupMenu" time="0.122" classname="com.OSMOSE.testcases.Contact" />
-                <testcase name="verifyFormSubmissionWith_TechnicalSupport" time="1.183" classname="com.OSMOSE.testcases.Contact" />
-                <testcase name="verifyContactUsMenuContents" time="0.310" classname="com.OSMOSE.testcases.Contact" />
+            <testcase name="verifyContactUsSalesProductsContents" time="0.074" classname="com.OSMOSE.testcases.Contact" />
+                <testcase name="verifyContactUsMenuContents" time="0.281" classname="com.OSMOSE.testcases.Contact" />
+                <testcase name="verifyPacificGasAndElectricCoContactCardContents" time="9.670" classname="com.OSMOSE.testcases.Contact" />
+                <testcase name="verifyContactUsOCalcProContents" time="0.090" classname="com.OSMOSE.testcases.Contact" />
+                <testcase name="verifyPresenceOfProjectGroup" time="0.042" classname="com.OSMOSE.testcases.Contact" />
+                <testcase name="verifyIdahoPowerRestorationContactCardContents" time="9.821" classname="com.OSMOSE.testcases.Contact" />
+                <testcase name="verifyFormSubmissionErrorMessage" time="0.115" classname="com.OSMOSE.testcases.Contact" />
+                <testcase name="verifyPugetSoundEnergyInspectionContactCardContents" time="9.807" classname="com.OSMOSE.testcases.Contact" />
+                <testcase name="verifyContactUsHeaderContents" time="0.275" classname="com.OSMOSE.testcases.Contact" />
+                <testcase name="verifyContactUsClickOnGoogleMap" time="31.297" classname="com.OSMOSE.testcases.Contact" />
+                <testcase name="verifyContactUsGeneralInquiriesContents" time="0.051" classname="com.OSMOSE.testcases.Contact" />
+                <testcase name="verifyContactUsQueryFormContents" time="0.110" classname="com.OSMOSE.testcases.Contact" />
+                <testcase name="verifyCityOfColumbiaContactCardContents" time="9.715" classname="com.OSMOSE.testcases.Contact" />
+                <testcase name="verifyPedernalesElecCoopContactCardContents" time="9.887" classname="com.OSMOSE.testcases.Contact" />
+                <testcase name="verifyOncurDistributionContactCardContents" time="9.750" classname="com.OSMOSE.testcases.Contact" />
+                <testcase name="verifyGrandElectricContactCardContents" time="9.661" classname="com.OSMOSE.testcases.Contact" />
+                <testcase name="verifyPugetSoundEnergyRestorationContactCardContents" time="9.841" classname="com.OSMOSE.testcases.Contact" />
+                <testcase name="verifyContactUsSalesServicesContents" time="0.072" classname="com.OSMOSE.testcases.Contact" />
+                <testcase name="verifyIdahoPowerInspectionContactCardContents" time="9.851" classname="com.OSMOSE.testcases.Contact" />
+                <testcase name="verifyGeorgiaPowerCompanyContactCardContents" time="9.810" classname="com.OSMOSE.testcases.Contact" />
       
 </testsuite>

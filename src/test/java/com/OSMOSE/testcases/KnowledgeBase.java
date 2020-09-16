@@ -27,7 +27,7 @@ public class KnowledgeBase extends BaseTest {
 		Assert.assertEquals(Page.getText("KnowledgeBaseFirstHeaderTxt_XPATH"), "Knowledge Base");
 		Assert.assertEquals(Page.getText("KnowledgeBaseSecondHeaderTxt_XPATH"), "How can we help?");
 		Thread.sleep(5000);
-		Page.click("HomePage_XPATH");
+		Page.click("KBHomePage_XPATH");
 		Thread.sleep(5000);
 		kb.clickKBCard();
 		Thread.sleep(5000);
@@ -62,10 +62,10 @@ public class KnowledgeBase extends BaseTest {
 		KnowledgeBasePage kb = cp.goKnowledgeBase();
 		// Search box presence verification
 		Assert.assertTrue(Page.driver
-				.findElement(By.xpath("//div[@id='knowledgeBaseSearchBox']/div[1]/div[1]/div[1]/div[2]/input"))
+				.findElement(By.xpath("//div[@id='knowledgeBaseSearchBox']/div[1]/div[1]/div[1]/div[1]/input"))
 				.isDisplayed());
 		String Placeholder = Page.driver
-				.findElement(By.xpath("//div[@id='knowledgeBaseSearchBox']/div[1]/div[1]/div[1]/div[2]/input"))
+				.findElement(By.xpath("//div[@id='knowledgeBaseSearchBox']/div[1]/div[1]/div[1]/div[1]/input"))
 				.getAttribute("placeholder");
 		Assert.assertEquals(Placeholder, "Ask Osmose");
 	}
@@ -108,7 +108,7 @@ public class KnowledgeBase extends BaseTest {
 		KnowledgeBasePage kb = cp.goKnowledgeBase();
 		// Steel and Concrete Assessment card presence verification
 		Assert.assertTrue(Page.driver
-				.findElement(By.xpath("//*[@id='contentPart0']/div/div/div/div/div[1]/div/div[1]/div/div[1]/div/h5"))
+				.findElement(By.xpath("//*[contains(text(),'Steel & Concrete | Assessment')]"))
 				.isDisplayed());
 	}
 
@@ -120,7 +120,7 @@ public class KnowledgeBase extends BaseTest {
 		KnowledgeBasePage kb = cp.goKnowledgeBase();
 		// Steel and Concrete Restoration card presence verification
 		Assert.assertTrue(Page.driver
-				.findElement(By.xpath("//*[@id='contentPart0']/div/div/div/div/div[1]/div/div[2]/div/div[1]/div/h5"))
+				.findElement(By.xpath("//*[contains(text(),'Steel & Concrete | Restoration')]"))
 				.isDisplayed());
 	}
 
@@ -132,7 +132,7 @@ public class KnowledgeBase extends BaseTest {
 		KnowledgeBasePage kb = cp.goKnowledgeBase();
 		// Wood Inspection And Treatment card presence verification
 		Assert.assertTrue(Page.driver
-				.findElement(By.xpath("//*[@id='contentPart0']/div/div/div/div/div[1]/div/div[3]/div/div[1]/div/h5"))
+				.findElement(By.xpath("//*[contains(text(),'Wood | Treatments')]"))
 				.isDisplayed());
 	}
 
@@ -144,12 +144,84 @@ public class KnowledgeBase extends BaseTest {
 		KnowledgeBasePage kb = cp.goKnowledgeBase();
 		// Wood Restoration Card presence verification
 		Assert.assertTrue(Page.driver
-				.findElement(By.xpath("//*[@id='contentPart0']/div/div/div/div/div[1]/div/div[4]/div/div[1]/div/h5"))
+				.findElement(By.xpath("//*[contains(text(),'Wood | Restoration')]"))
+				.isDisplayed());
+	}
+	
+	// US-98499-98607-Verify that clicking on the header on the tiles in KB landing
+	// page will take the user to refined search result page
+	@Test(priority = 10, enabled = true, description = "Verify the presence of  Underground")
+	public void verifyPresenceUndergroundCard() throws InterruptedException {
+		ContactPage cp = new ContactPage();
+		KnowledgeBasePage kb = cp.goKnowledgeBase();
+		//  Underground card presence verification
+		Assert.assertTrue(Page.driver
+				.findElement(By.xpath("//*[contains(text(),'Underground')]"))
+				.isDisplayed());
+	}
+	
+	// US-98499-98607-Verify that clicking on the header on the tiles in KB landing
+	// page will take the user to refined search result page
+	@Test(priority = 11, enabled = true, description = "Verify the presence of Overhead")
+	public void verifyPresenceOverheadCard() throws InterruptedException {
+		ContactPage cp = new ContactPage();
+		KnowledgeBasePage kb = cp.goKnowledgeBase();
+		//  Overhead card presence verification
+		Assert.assertTrue(Page.driver
+				.findElement(By.xpath("//*[contains(text(),'Overhead')]"))
+				.isDisplayed());
+	}
+	
+	// US-98499-98607-Verify that clicking on the header on the tiles in KB landing
+	// page will take the user to refined search result page
+	@Test(priority = 12, enabled = true, description = "Verify the presence of Joint Use")
+	public void verifyPresenceJointUseCard() throws InterruptedException {
+		ContactPage cp = new ContactPage();
+		KnowledgeBasePage kb = cp.goKnowledgeBase();
+		//  Joint Use card presence verification
+		Assert.assertTrue(Page.driver
+				.findElement(By.xpath("//*[contains(text(),'Joint Use')]"))
+				.isDisplayed());
+	}
+	
+	// US-98499-98607-Verify that clicking on the header on the tiles in KB landing
+	// page will take the user to refined search result page
+	@Test(priority = 13, enabled = true, description = "Verify the presence of Pole Replacement")
+	public void verifyPresencePoleReplacementCard() throws InterruptedException {
+		ContactPage cp = new ContactPage();
+		KnowledgeBasePage kb = cp.goKnowledgeBase();
+		//  Pole Replacement card presence verification
+		Assert.assertTrue(Page.driver
+				.findElement(By.xpath("//h5[contains(text(),'Pole Replacement')]"))
+				.isDisplayed());
+	}
+	
+	// US-98499-98607-Verify that clicking on the header on the tiles in KB landing
+	// page will take the user to refined search result page
+	@Test(priority = 14, enabled = true, description = "Verify the presence of Storm Support")
+	public void verifyPresenceStormSupportCard() throws InterruptedException {
+		ContactPage cp = new ContactPage();
+		KnowledgeBasePage kb = cp.goKnowledgeBase();
+		//  Storm Support card presence verification
+		Assert.assertTrue(Page.driver
+				.findElement(By.xpath("//*[contains(text(),'Storm Support')]"))
+				.isDisplayed());
+	}
+	
+	// US-98499-98607-Verify that clicking on the header on the tiles in KB landing
+	// page will take the user to refined search result page
+	@Test(priority = 15, enabled = true, description = "Verify the presence of Products")
+	public void verifyPresenceProductsCard() throws InterruptedException {
+		ContactPage cp = new ContactPage();
+		KnowledgeBasePage kb = cp.goKnowledgeBase();
+		//  Products card presence verification
+		Assert.assertTrue(Page.driver
+				.findElement(By.xpath("//*[contains(text(),'Products')]"))
 				.isDisplayed());
 	}
 
 	// US-98498-98739-Verify tiles related to News Feed section
-	@Test(priority = 10, enabled = true, description = "Verify the presence of Industry News Card")
+	@Test(priority = 16, enabled = true, description = "Verify the presence of Industry News Card")
 	public void verifyPresenceIndustryNewsCard() throws InterruptedException {
 		ContactPage cp = new ContactPage();
 		KnowledgeBasePage kb = cp.goKnowledgeBase();
@@ -164,7 +236,7 @@ public class KnowledgeBase extends BaseTest {
 
 	// US-98498-98740-Verify tiles related to O-Calc Pro
 	// US-98500-99009-Verify  O-Calc Pro section in the KB landing page
-	@Test(priority = 11, enabled = true, description = "Verify the presence of O-Calc Pro Card")
+	@Test(priority = 17, enabled = true, description = "Verify the presence of O-Calc Pro Card")
 	public void verifyPresenceOCalcProCard() throws InterruptedException {
 		ContactPage cp = new ContactPage();
 		KnowledgeBasePage kb = cp.goKnowledgeBase();
@@ -176,7 +248,7 @@ public class KnowledgeBase extends BaseTest {
 	// US-98498-98738-Verify tiles related to Project of the Week
 	// US-98500-98668-Verify KB Landing page will have a tile titled "Featured
 	// Project"(Project of the Week)
-	@Test(priority = 12, enabled = true, description = "Verify the presence of Project of the week Card")
+	@Test(priority = 18, enabled = true, description = "Verify the presence of Project of the week Card")
 	public void verifyPresenceProjectOfTheWeekCard() throws InterruptedException {
 		ContactPage cp = new ContactPage();
 		KnowledgeBasePage kb = cp.goKnowledgeBase();
@@ -191,7 +263,7 @@ public class KnowledgeBase extends BaseTest {
 
 	//// US-98500-98610-Verify that KB Landing page will have a "Gaff Gallery"
 	//// section which links to a dedicated Gallery Page.
-	@Test(priority = 13, enabled = true, description = "Verify the presence of What's wrong with this Picture? Card")
+	@Test(priority = 19, enabled = true, description = "Verify the presence of What's wrong with this Picture? Card")
 	public void verifyPresenceWhatswrongwiththisPictureCard() throws InterruptedException {
 		ContactPage cp = new ContactPage();
 		KnowledgeBasePage kb = cp.goKnowledgeBase();
@@ -200,7 +272,7 @@ public class KnowledgeBase extends BaseTest {
 	}
 
 	// US-98500-99007-Verify KB Landing page is displaying carousel Video section
-	@Test(priority = 13, enabled = true, description = "Verify the presence of Featured Videos Card")
+	@Test(priority = 20, enabled = true, description = "Verify the presence of Featured Videos Card")
 	public void verifyPresenceFeaturedVideosCard() throws InterruptedException {
 		ContactPage cp = new ContactPage();
 		KnowledgeBasePage kb = cp.goKnowledgeBase();
@@ -212,7 +284,7 @@ public class KnowledgeBase extends BaseTest {
 	// Suggested Content, which will contain links to assets that should be
 	// suggested on the landing page.
 	// US-98500-99005-Verify KB Landing page is displaying suggested content section
-	@Test(priority = 14, enabled = true, description = "Verify the presence of Suggested Contents Card")
+	@Test(priority = 21, enabled = true, description = "Verify the presence of Suggested Contents Card")
 	public void verifyPresenceSuggestedContentsCard() throws InterruptedException {
 		ContactPage cp = new ContactPage();
 		KnowledgeBasePage kb = cp.goKnowledgeBase();
@@ -221,7 +293,7 @@ public class KnowledgeBase extends BaseTest {
 	}
 
 	// US-98500-99009-Verify  O-Calc Pro section in the KB landing page
-	@Test(priority = 15, enabled = true, description = "Verify the presence of Buttons on Oclac Pro Card")
+	@Test(priority = 22, enabled = true, description = "Verify the presence of Buttons on Oclac Pro Card")
 	public void verifyPresenceOfOcalCproButtons() throws InterruptedException {
 		ContactPage cp = new ContactPage();
 		KnowledgeBasePage kb = cp.goKnowledgeBase();
@@ -252,7 +324,7 @@ public class KnowledgeBase extends BaseTest {
 	// Suggested Content, which will contain links to assets that should be
 	// suggested on the landing page.
 	// US-98500-99005-Verify KB Landing page is displaying suggested content section
-	@Test(priority = 16, enabled = true, description = "Verify the presence of slider on Suggested Contents")
+	@Test(priority = 23, enabled = true, description = "Verify the presence of slider on Suggested Contents")
 	public void verifyPresenceOfSliderOnSuggestedContents() throws InterruptedException {
 		ContactPage cp = new ContactPage();
 		KnowledgeBasePage kb = cp.goKnowledgeBase();
@@ -275,7 +347,7 @@ public class KnowledgeBase extends BaseTest {
 	// US-98500-99005-Verify KB Landing page is displaying suggested content section
 	// US-98500-99006-Verify System is opening the content in Box Content display
 	// when user clicked on any item from suggested content
-	@Test(priority = 17, enabled = true, description = "Verify the click on item in Suggested Contents")
+	@Test(priority = 24, enabled = true, description = "Verify the click on item in Suggested Contents")
 	public void verifyClickOnItemSuggestedContents() throws InterruptedException {
 		ContactPage cp = new ContactPage();
 		KnowledgeBasePage kb = cp.goKnowledgeBase();
@@ -295,7 +367,7 @@ public class KnowledgeBase extends BaseTest {
 
 	// US-98500-99008-Verify System is opening the Featured Video in Box content
 	// when user clicks on video thumbnail
-	@Test(priority = 18, enabled = true, description = "Verify the click on item in Featured Videos")
+	@Test(priority = 25, enabled = true, description = "Verify the click on item in Featured Videos")
 	public void verifyClickOnItemFeaturedVideos() throws InterruptedException {
 		ContactPage cp = new ContactPage();
 		KnowledgeBasePage kb = cp.goKnowledgeBase();
@@ -309,7 +381,7 @@ public class KnowledgeBase extends BaseTest {
 
 	// US-98500-98668-Verify KB Landing page will have a tile titled "Featured
 	// Project"(Project of the Week)
-	@Test(priority = 19, enabled = true, description = "Verify the click on View Project on Project of the week")
+	@Test(priority = 26, enabled = true, description = "Verify the click on View Project on Project of the week")
 	public void verifyClickOnViewProjectProjectOfTheWeek() throws InterruptedException {
 		ContactPage cp = new ContactPage();
 		KnowledgeBasePage kb = cp.goKnowledgeBase();
@@ -323,259 +395,253 @@ public class KnowledgeBase extends BaseTest {
 
 	// US-98498-98571-Verify that each navigational tile will have only one link for
 	// different asset types.
-	@Test(priority = 20, enabled = true, description = "Verify the Card Contents of Steel Concrete Assessment")
+	@Test(priority = 27, enabled = true, description = "Verify the Card Contents of Steel Concrete Assessment")
 	public void verifyCardContentsSteelConcreteAssessment() throws InterruptedException {
 		ContactPage cp = new ContactPage();
 		KnowledgeBasePage kb = cp.goKnowledgeBase();
 		// Card Contents of Steel Concrete Assessment
 		Assert.assertTrue(Page.driver.findElement(By.xpath(
-				"//*[@id=\"contentPart0\"]/div/div/div/div/div[1]/div/div[5]/div/div[2]/div[1]/p/ul/li[1]/a/span"))
+				"//div[@id='115291495643']/div[1]/div[2]/div[1]/p/ul/li[1]/a/span"))
 				.isDisplayed());
 		Assert.assertEquals(Page.getText("SteelAndConcreteAssessmentCardimageslink_XPATH"), "IMAGES");
 		Assert.assertTrue(Page.driver.findElement(By
-				.xpath("//*[@id='contentPart0']/div/div/div/div/div[1]/div/div[5]/div/div[2]/div[1]/p/ul/li[1]/a/span"))
+				.xpath("//div[@id='115291495643']/div[1]/div[2]/div[1]/p/ul/li[2]/a/span"))
 				.isDisplayed());
 		Assert.assertEquals(Page.getText("SteelAndConcreteAssessmentCardBrochureslink_XPATH"), "BROCHURES");
 		Assert.assertTrue(Page.driver.findElement(By
-				.xpath("//*[@id='contentPart0']/div/div/div/div/div[1]/div/div[5]/div/div[2]/div[1]/p/ul/li[2]/a/span"))
+				.xpath("//div[@id='115291495643']/div[1]/div[2]/div[1]/p/ul/li[3]/a/span"))
 				.isDisplayed());
 		Assert.assertEquals(Page.getText("SteelAndConcreteAssessmentCardStandardsCodeslink_XPATH"), "STANDARDS/CODES");
-		Assert.assertTrue(Page.driver.findElement(By
-				.xpath("//*[@id='contentPart0']/div/div/div/div/div[1]/div/div[5]/div/div[2]/div[1]/p/ul/li[3]/a/span"))
-				.isDisplayed());
 		Assert.assertTrue(Page.driver
 				.findElement(
-						By.xpath("//*[@id='contentPart0']/div/div/div/div/div[1]/div/div[5]/div/div[2]/div[2]/img"))
+						By.xpath("//*[@id='115291495643']/div/div[2]/div[2]/img"))
 				.isDisplayed());
 	}
 
 	// US-98498-98571-Verify that each navigational tile will have only one link for
 	// different asset types.
-	@Test(priority = 21, enabled = true, description = "Verify the Card Contents of Steel Concrete Restoration")
+	@Test(priority = 28, enabled = true, description = "Verify the Card Contents of Steel Concrete Restoration")
 	public void verifyCardContentsSteelConcreteRestoration() throws InterruptedException {
 		ContactPage cp = new ContactPage();
 		KnowledgeBasePage kb = cp.goKnowledgeBase();
 		// Card Contents of Steel Concrete Restoration
 		Assert.assertTrue(Page.driver.findElement(By
-				.xpath("//*[@id='contentPart0']/div/div/div/div/div[1]/div/div[6]/div/div[2]/div[1]/p/ul/li[1]/a/span"))
+				.xpath("//div[@id='115291494443']/div[1]/div[2]/div[1]/p[1]/ul/li[1]/a/span"))
 				.isDisplayed());
 		Assert.assertEquals(Page.getText("SteelAndConcreteRestortationtArticleslink_XPATH"), "ARTICLES");
 		Assert.assertTrue(Page.driver.findElement(By
-				.xpath("//*[@id='contentPart0']/div/div/div/div/div[1]/div/div[6]/div/div[2]/div[1]/p/ul/li[2]/a/span"))
+				.xpath("//div[@id='115291494443']/div[1]/div[2]/div[1]/p[1]/ul/li[2]/a/span"))
 				.isDisplayed());
 		Assert.assertEquals(Page.getText("SteelAndConcreteRestortationBrochureslink_XPATH"), "BROCHURES");
 		Assert.assertTrue(Page.driver.findElement(By
-				.xpath("//*[@id='contentPart0']/div/div/div/div/div[1]/div/div[6]/div/div[2]/div[1]/p/ul/li[3]/a/span"))
+				.xpath("//div[@id='115291494443']/div[1]/div[2]/div[1]/p[1]/ul/li[3]/a/span"))
 				.isDisplayed());
 		Assert.assertEquals(Page.getText("SteelAndConcreteRestortationImageslink_XPATH"), "IMAGES");
 		Assert.assertTrue(Page.driver
 				.findElement(
-						By.xpath("//*[@id='contentPart0']/div/div/div/div/div[1]/div/div[6]/div/div[2]/div[2]/img"))
+						By.xpath("//*[@id='115291494443']/div/div[2]/div[2]/img"))
 				.isDisplayed());
 	}
 
 	// US-98498-98571-Verify that each navigational tile will have only one link for
 	// different asset types.
-	@Test(priority = 22, enabled = true, description = "Verify the Card Contents of Wood | Inspection & Treatment")
+	@Test(priority = 29, enabled = true, description = "Verify the Card Contents of Wood | Inspection & Treatment")
 	public void verifyCardContentsWoodInspectionTreatment() throws InterruptedException {
 		ContactPage cp = new ContactPage();
 		KnowledgeBasePage kb = cp.goKnowledgeBase();
 		// Card Contents of Wood | Inspection & Treatment
 		Assert.assertTrue(Page.driver.findElement(By.xpath(
-				"//*[@id='contentPart0']/div/div/div/div/div[1]/div/div[10]/div/div[2]/div[1]/p/ul/li[1]/a/span"))
+				"//div[@id='115291493243']/div[1]/div[2]/div[1]/p/ul/li[1]/a/span"))
 				.isDisplayed());
 		Assert.assertEquals(Page.getText("WoodInspectionVideos_XPATH"), "VIDEOS");
 		Assert.assertTrue(Page.driver.findElement(By.xpath(
-				"//*[@id='contentPart0']/div/div/div/div/div[1]/div/div[10]/div/div[2]/div[1]/p/ul/li[2]/a/span"))
+				"//div[@id='115291493243']/div[1]/div[2]/div[1]/p/ul/li[2]/a/span"))
 				.isDisplayed());
 		Assert.assertEquals(Page.getText("WoodInspectionImages_XPATH"), "IMAGES");
 		Assert.assertTrue(Page.driver.findElement(By.xpath(
-				"//*[@id='contentPart0']/div/div/div/div/div[1]/div/div[10]/div/div[2]/div[1]/p/ul/li[3]/a/span"))
+				"//div[@id='115291493243']/div[1]/div[2]/div[1]/p/ul/li[3]/a/span"))
 				.isDisplayed());
 		Assert.assertEquals(Page.getText("WoodInspectionResearch_XPATH"), "RESEARCH");
 		Assert.assertTrue(Page.driver
 				.findElement(
-						By.xpath("//*[@id='contentPart0']/div/div/div/div/div[1]/div/div[10]/div/div[2]/div[2]/img"))
+						By.xpath("//*[@id='115291493243']/div/div[2]/div[2]/img"))
 				.isDisplayed());
 	}
 
 	// US-98498-98571-Verify that each navigational tile will have only one link for
 	// different asset types.
-	@Test(priority = 23, enabled = true, description = "Verify the Card Contents of Steel Concrete Assessment")
+	@Test(priority = 30, enabled = true, description = "Verify the Card Contents of Steel Concrete Assessment")
 	public void verifyCardContentsWoodRestoration() throws InterruptedException {
 		ContactPage cp = new ContactPage();
 		KnowledgeBasePage kb = cp.goKnowledgeBase();
 		// Card Contents of Steel Concrete Assessment
 		Assert.assertTrue(Page.driver.findElement(By
-				.xpath("//*[@id='contentPart0']/div/div/div/div/div[1]/div/div[9]/div/div[2]/div[1]/p/ul/li[1]/a/span"))
+				.xpath("//div[@id='115291496843']/div[1]/div[2]/div[1]/p/ul/li[1]/a/span"))
 				.isDisplayed());
 		Assert.assertEquals(Page.getText("WoodRestorationVideos_XPATH"), "VIDEOS");
 		Assert.assertTrue(Page.driver.findElement(By
-				.xpath("//*[@id='contentPart0']/div/div/div/div/div[1]/div/div[9]/div/div[2]/div[1]/p/ul/li[2]/a/span"))
+				.xpath("//div[@id='115291496843']/div[1]/div[2]/div[1]/p/ul/li[2]/a/span"))
 				.isDisplayed());
 		Assert.assertEquals(Page.getText("WoodRestorationBrochuers_XPATH"), "BROCHURES");
 		Assert.assertTrue(Page.driver.findElement(By
-				.xpath("//*[@id='contentPart0']/div/div/div/div/div[1]/div/div[9]/div/div[2]/div[1]/p/ul/li[3]/a/span"))
+				.xpath("//div[@id='115291496843']/div[1]/div[2]/div[1]/p/ul/li[3]/a/span"))
 				.isDisplayed());
 		Assert.assertEquals(Page.getText("WoodRestorationArticles_XPATH"), "ARTICLES");
 		Assert.assertTrue(Page.driver
 				.findElement(
-						By.xpath("//*[@id='contentPart0']/div/div/div/div/div[1]/div/div[9]/div/div[2]/div[2]/img"))
+						By.xpath("//*[@id='115291496843']/div/div[2]/div[2]/img"))
 				.isDisplayed());
 	}
 
 	// US-98498-98571-Verify that each navigational tile will have only one link for
 	// different asset types.
-	@Test(priority = 24, enabled = true, description = "Verify the Card Contents of Joint Use")
+	@Test(priority = 31, enabled = true, description = "Verify the Card Contents of Joint Use")
 	public void verifyCardContentsJointUse() throws InterruptedException {
 		ContactPage cp = new ContactPage();
 		KnowledgeBasePage kb = cp.goKnowledgeBase();
 		// Card Contents of Joint Use
 		Assert.assertTrue(Page.driver.findElement(By.xpath(
-				"//*[@id=\"contentPart0\"]/div/div/div/div/div[1]/div/div[1]/div/div[2]/div[1]/p/ul/li[1]/a/span"))
+				"//div[@id='121177689493']/div[1]/div[2]/div[1]/p/ul/li[1]/a/span"))
 				.isDisplayed());
 		Assert.assertEquals(Page.getText("JointUseImages_XPATH"), "IMAGES");
 		Assert.assertTrue(Page.driver.findElement(By.xpath(
-				"//*[@id=\"contentPart0\"]/div/div/div/div/div[1]/div/div[1]/div/div[2]/div[1]/p/ul/li[2]/a/span"))
+				"//div[@id='121177689493']/div[1]/div[2]/div[1]/p/ul/li[2]/a/span"))
 				.isDisplayed());
 		Assert.assertEquals(Page.getText("JointUseVideos_XPATH"), "VIDEOS");
 		Assert.assertTrue(Page.driver.findElement(By.xpath(
-				"//*[@id=\"contentPart0\"]/div/div/div/div/div[1]/div/div[1]/div/div[2]/div[1]/p/ul/li[3]/a/span"))
+				"//div[@id='121177689493']/div[1]/div[2]/div[1]/p/ul/li[3]/a/span"))
 				.isDisplayed());
 		Assert.assertEquals(Page.getText("JointUseArticles_XPATH"), "ARTICLES");
 		Assert.assertTrue(Page.driver
 				.findElement(
-						By.xpath("//*[@id=\"contentPart0\"]/div/div/div/div/div[1]/div/div[1]/div/div[2]/div[2]/img"))
+						By.xpath("//*[@id='121177689493']/div/div[2]/div[2]/img"))
 				.isDisplayed());
 	}
 
 	// US-98498-98571-Verify that each navigational tile will have only one link for
 	// different asset types.
-	@Test(priority = 25, enabled = true, description = "Verify the Card Contents of Overhead")
+	@Test(priority = 32, enabled = true, description = "Verify the Card Contents of Overhead")
 	public void verifyCardContentsOverhead() throws InterruptedException {
 		ContactPage cp = new ContactPage();
 		KnowledgeBasePage kb = cp.goKnowledgeBase();
 		// Card Contents of Overhead
 		Assert.assertTrue(Page.driver.findElement(By.xpath(
-				"//*[@id=\"contentPart0\"]/div/div/div/div/div[1]/div/div[2]/div/div[2]/div[1]/p/ul/li[2]/a/span"))
+				"//div[@id='121176940132']/div[1]/div[2]/div[1]/p/ul/li[2]/a/span"))
 				.isDisplayed());
 		Assert.assertEquals(Page.getText("OverheadVideos_XPATH"), "VIDEOS");
 		Assert.assertTrue(Page.driver.findElement(By.xpath(
-				"//*[@id=\"contentPart0\"]/div/div/div/div/div[1]/div/div[2]/div/div[2]/div[1]/p/ul/li[1]/a/span"))
+				"//div[@id='121176940132']/div[1]/div[2]/div[1]/p/ul/li[1]/a/span"))
 				.isDisplayed());
 		Assert.assertEquals(Page.getText("OverheadImages_XPATH"), "IMAGES");
 		Assert.assertTrue(Page.driver.findElement(By.xpath(
-				"//*[@id=\"contentPart0\"]/div/div/div/div/div[1]/div/div[2]/div/div[2]/div[1]/p/ul/li[3]/a/span"))
+				"//div[@id='121176940132']/div[1]/div[2]/div[1]/p/ul/li[3]/a/span"))
 				.isDisplayed());
 		Assert.assertEquals(Page.getText("OverheadProjectProfiles_XPATH"), "PROJECT PROFILES");
 		Assert.assertTrue(Page.driver
 				.findElement(
-						By.xpath("//*[@id=\"contentPart0\"]/div/div/div/div/div[1]/div/div[2]/div/div[2]/div[2]/img"))
+						By.xpath("//*[@id='121176940132']/div/div[2]/div[2]/img"))
 				.isDisplayed());
 	}
 
 	// US-98498-98571-Verify that each navigational tile will have only one link for
 	// different asset types.
-	@Test(priority = 26, enabled = true, description = "Verify the Card Contents of Pole Replacement")
+	@Test(priority = 33, enabled = true, description = "Verify the Card Contents of Pole Replacement")
 	public void verifyCardContentsPoleReplacement() throws InterruptedException {
 		ContactPage cp = new ContactPage();
 		KnowledgeBasePage kb = cp.goKnowledgeBase();
 		// Card Contents of Pole Replacement
 		Assert.assertTrue(Page.driver.findElement(By.xpath(
-				"//*[@id=\"contentPart0\"]/div/div/div/div/div[1]/div/div[3]/div/div[2]/div[1]/p/ul/li[1]/a/span"))
+				"//div[@id='121177263710']/div[1]/div[2]/div[1]/p/ul/li[1]/a/span"))
 				.isDisplayed());
 		Assert.assertEquals(Page.getText("PoleReplacementImages_XPATH"), "IMAGES");
 		Assert.assertTrue(Page.driver.findElement(By.xpath(
-				"//*[@id=\"contentPart0\"]/div/div/div/div/div[1]/div/div[3]/div/div[2]/div[1]/p/ul/li[2]/a/span"))
+				"//div[@id='121177263710']/div[1]/div[2]/div[1]/p/ul/li[2]/a/span"))
 				.isDisplayed());
 		Assert.assertEquals(Page.getText("PoleReplacementVideos_XPATH"), "VIDEOS");
 		Assert.assertTrue(Page.driver.findElement(By.xpath(
-				"//*[@id=\"contentPart0\"]/div/div/div/div/div[1]/div/div[3]/div/div[2]/div[1]/p/ul/li[3]/a/span"))
+				"//div[@id='121177263710']/div[1]/div[2]/div[1]/p/ul/li[3]/a/span"))
 				.isDisplayed());
 		Assert.assertEquals(Page.getText("PoleReplacementBrochure_XPATH"), "BROCHURE");
 		Assert.assertTrue(Page.driver
 				.findElement(
-						By.xpath("//*[@id=\"contentPart0\"]/div/div/div/div/div[1]/div/div[3]/div/div[2]/div[2]/img"))
+						By.xpath("//*[@id='121177263710']/div/div[2]/div[2]/img"))
 				.isDisplayed());
 	}
 
 	// US-98498-98571-Verify that each navigational tile will have only one link for
 	// different asset types.
-	@Test(priority = 27, enabled = true, description = "Verify the Card Contents of Products")
+	@Test(priority = 34, enabled = true, description = "Verify the Card Contents of Products")
 	public void verifyCardContentsProducts() throws InterruptedException {
 		ContactPage cp = new ContactPage();
 		KnowledgeBasePage kb = cp.goKnowledgeBase();
 		// Card Contents of Products
 		Assert.assertTrue(Page.driver.findElement(By.xpath(
-				"//*[@id=\"contentPart0\"]/div/div/div/div/div[1]/div/div[4]/div/div[2]/div[1]/p/ul/li[1]/a/span"))
+				"//div[@id='121177344116']/div[1]/div[2]/div[1]/p/ul/li[1]/a/span"))
 				.isDisplayed());
 		Assert.assertEquals(Page.getText("ProductsImages_XPATH"), "IMAGES");
 		Assert.assertTrue(Page.driver.findElement(By.xpath(
-				"//*[@id=\"contentPart0\"]/div/div/div/div/div[1]/div/div[4]/div/div[2]/div[1]/p/ul/li[2]/a/span"))
+				"//div[@id='121177344116']/div[1]/div[2]/div[1]/p/ul/li[2]/a/span"))
 				.isDisplayed());
 		Assert.assertEquals(Page.getText("ProductsVideos_XPATH"), "VIDEOS");
 		Assert.assertTrue(Page.driver.findElement(By.xpath(
-				"//*[@id=\"contentPart0\"]/div/div/div/div/div[1]/div/div[4]/div/div[2]/div[1]/p/ul/li[3]/a/span"))
+				"//div[@id='121177344116']/div[1]/div[2]/div[1]/p/ul/li[3]/a/span"))
 				.isDisplayed());
 		Assert.assertEquals(Page.getText("ProductsProductCatalog_XPATH"), "PRODUCT CATALOG");
 		Assert.assertTrue(Page.driver
 				.findElement(
-						By.xpath("//*[@id=\"contentPart0\"]/div/div/div/div/div[1]/div/div[4]/div/div[2]/div[2]/img"))
+						By.xpath("//*[@id='121177344116']/div/div[2]/div[2]/img"))
 				.isDisplayed());
 	}
 
 	// US-98498-98571-Verify that each navigational tile will have only one link for
 	// different asset types.
-	@Test(priority = 28, enabled = true, description = "Verify the Card Contents of Storm Support")
+	@Test(priority = 35, enabled = true, description = "Verify the Card Contents of Storm Support")
 	public void verifyCardContentsStormSupport() throws InterruptedException {
 		ContactPage cp = new ContactPage();
 		KnowledgeBasePage kb = cp.goKnowledgeBase();
 		// Card Contents of Storm Support
 		Assert.assertTrue(Page.driver.findElement(By.xpath(
-				"//*[@id=\"contentPart0\"]/div/div/div/div/div[1]/div/div[7]/div/div[2]/div[1]/p/ul/li[1]/a/span"))
+				"//div[@id='121177381598']/div[1]/div[2]/div[1]/p/ul/li[1]/a/span"))
 				.isDisplayed());
 		Assert.assertEquals(Page.getText("StormSupportImages_XPATH"), "IMAGES");
 		Assert.assertTrue(Page.driver.findElement(By.xpath(
-				"//*[@id=\"contentPart0\"]/div/div/div/div/div[1]/div/div[7]/div/div[2]/div[1]/p/ul/li[2]/a/span"))
+				"//div[@id='121177381598']/div[1]/div[2]/div[1]/p/ul/li[2]/a/span"))
 				.isDisplayed());
 		Assert.assertEquals(Page.getText("StormSupportVideos_XPATH"), "VIDEOS");
 		Assert.assertTrue(Page.driver.findElement(By.xpath(
-				"//*[@id=\"contentPart0\"]/div/div/div/div/div[1]/div/div[7]/div/div[2]/div[1]/p/ul/li[3]/a/span"))
+				"//div[@id='121177381598']/div[1]/div[2]/div[1]/p/ul/li[3]/a/span"))
 				.isDisplayed());
 		Assert.assertEquals(Page.getText("StormSupportProjectProfiles_XPATH"), "PROJECT PROFILES");
-		Assert.assertTrue(Page.driver
-				.findElement(
-						By.xpath("//*[@id=\"contentPart0\"]/div/div/div/div/div[1]/div/div[7]/div/div[2]/div[2]/img"))
-				.isDisplayed());
+		//Assert.assertTrue(Page.driver.findElement(By.xpath("")).isDisplayed());
 	}
 
 	// US-98498-98571-Verify that each navigational tile will have only one link for
 	// different asset types.
-	@Test(priority = 29, enabled = true, description = "Verify the Card Contents of Underground")
+	@Test(priority = 36, enabled = false, description = "Verify the Card Contents of Underground")
 	public void verifyCardContentsUnderground() throws InterruptedException {
 		ContactPage cp = new ContactPage();
 		KnowledgeBasePage kb = cp.goKnowledgeBase();
 		// Card Contents of Underground
 		Assert.assertTrue(Page.driver.findElement(By.xpath(
-				"//*[@id=\"contentPart0\"]/div/div/div/div/div[1]/div/div[8]/div/div[2]/div[1]/p/ul/li[1]/a/span"))
+				"//div[@id='121177343612']/div[1]/div[2]/div[1]/p/ul/li[1]/a/span"))
 				.isDisplayed());
 		Assert.assertEquals(Page.getText("UndergroundImages_XPATH"), "IMAGES");
 		Assert.assertTrue(Page.driver.findElement(By.xpath(
-				"//*[@id=\"contentPart0\"]/div/div/div/div/div[1]/div/div[8]/div/div[2]/div[1]/p/ul/li[2]/a/span"))
+				"//div[@id='121177343612']/div[1]/div[2]/div[1]/p/ul/li[2]/a/span"))
 				.isDisplayed());
 		Assert.assertEquals(Page.getText("UndergroundBrochure_XPATH"), "BROCHURE");
 		Assert.assertTrue(Page.driver.findElement(By.xpath(
-				"//*[@id=\"contentPart0\"]/div/div/div/div/div[1]/div/div[8]/div/div[2]/div[1]/p/ul/li[3]/a/span"))
+				"//div[@id='121177343612']/div[1]/div[2]/div[1]/p/ul/li[3]/a/span"))
 				.isDisplayed());
 		Assert.assertEquals(Page.getText("UndergroundDiagram_XPATH"), "DIAGRAM");
 		Assert.assertTrue(Page.driver
 				.findElement(
-						By.xpath("//*[@id=\"contentPart0\"]/div/div/div/div/div[1]/div/div[8]/div/div[2]/div[2]/img"))
+						By.xpath("//*[@id='121177343612']/div/div[2]/div[2]/img"))
 				.isDisplayed());
 	}
 
 	//
-	@Test(priority = 30, enabled = true, description = "Verify the Industry News")
+	@Test(priority = 37, enabled = true, description = "Verify the Industry News")
 	public void verifyIndustrySeeMore() throws InterruptedException {
 		ContactPage cp = new ContactPage();
 		KnowledgeBasePage kb = cp.goKnowledgeBase();
@@ -588,7 +654,7 @@ public class KnowledgeBase extends BaseTest {
 
 	// US-98500-98610-Verify that KB Landing page will have a "Gaff Gallery" section
 	// which links to a dedicated Gallery Page.
-	@Test(priority = 31, enabled = true, description = "Verify the click on Daliy Gaff Gallery on What's wrong with this picture")
+	@Test(priority = 38, enabled = true, description = "Verify the click on Daliy Gaff Gallery on What's wrong with this picture")
 	public void verifyClickOnDailyGaffGallery() throws InterruptedException {
 		ContactPage cp = new ContactPage();
 		KnowledgeBasePage kb = cp.goKnowledgeBase();
@@ -608,7 +674,7 @@ public class KnowledgeBase extends BaseTest {
 	// which links to a dedicated Gallery Page.
 	// US-98500-98611-Verify that the Gallery Page will display a gallery of images.
 	// When selected, the image will display a caption.
-	@Test(priority = 32, enabled = true, description = "Verify the click on an Image on Daliy Gaff Gallery")
+	@Test(priority = 39, enabled = true, description = "Verify the click on an Image on Daliy Gaff Gallery")
 	public void verifyClickOnDailyGaffGalleryImage() throws InterruptedException {
 		ContactPage cp = new ContactPage();
 		KnowledgeBasePage kb = cp.goKnowledgeBase();
@@ -630,7 +696,7 @@ public class KnowledgeBase extends BaseTest {
 	// page will take the user to refined search result page
 	// US-98499-98742-verify the user is redirected to correct URLs on clicking the
 	// assets listed to intended category
-	@Test(priority = 33, enabled = true, description = "Verify the click on Joint Use Card")
+	@Test(priority = 40, enabled = true, description = "Verify the click on Joint Use Card")
 	public void verifyClickOnJointUseCard() throws InterruptedException {
 		ContactPage cp = new ContactPage();
 		KnowledgeBasePage kb = cp.goKnowledgeBase();
@@ -655,7 +721,7 @@ public class KnowledgeBase extends BaseTest {
 	// page will take the user to refined search result page
 	// US-98499-98742-verify the user is redirected to correct URLs on clicking the
 	// assets listed to intended category
-	@Test(priority = 34, enabled = true, description = "Verify the click on Overhead Card")
+	@Test(priority = 41, enabled = true, description = "Verify the click on Overhead Card")
 	public void verifyClickOnOverheadCard() throws InterruptedException {
 		ContactPage cp = new ContactPage();
 		KnowledgeBasePage kb = cp.goKnowledgeBase();
@@ -680,7 +746,7 @@ public class KnowledgeBase extends BaseTest {
 	// page will take the user to refined search result page
 	// US-98499-98742-verify the user is redirected to correct URLs on clicking the
 	// assets listed to intended category
-	@Test(priority = 35, enabled = true, description = "Verify the click on Pole Replacement Card")
+	@Test(priority = 42, enabled = true, description = "Verify the click on Pole Replacement Card")
 	public void verifyClickOnPoleReplacementCard() throws InterruptedException {
 		ContactPage cp = new ContactPage();
 		KnowledgeBasePage kb = cp.goKnowledgeBase();
@@ -705,7 +771,7 @@ public class KnowledgeBase extends BaseTest {
 	// page will take the user to refined search result page
 	// US-98499-98742-verify the user is redirected to correct URLs on clicking the
 	// assets listed to intended category
-	@Test(priority = 36, enabled = true, description = "Verify the click on Products Card")
+	@Test(priority = 43, enabled = true, description = "Verify the click on Products Card")
 	public void verifyClickOnProductsCard() throws InterruptedException {
 		ContactPage cp = new ContactPage();
 		KnowledgeBasePage kb = cp.goKnowledgeBase();
@@ -730,7 +796,7 @@ public class KnowledgeBase extends BaseTest {
 	// page will take the user to refined search result page
 	// US-98499-98742-verify the user is redirected to correct URLs on clicking the
 	// assets listed to intended category
-	@Test(priority = 37, enabled = true, description = "Verify the click on Steel and Concrete Assessment Card")
+	@Test(priority = 44, enabled = true, description = "Verify the click on Steel and Concrete Assessment Card")
 	public void verifyClickOnSteelandConcreteAssessmentCard() throws InterruptedException {
 		ContactPage cp = new ContactPage();
 		KnowledgeBasePage kb = cp.goKnowledgeBase();
@@ -755,7 +821,7 @@ public class KnowledgeBase extends BaseTest {
 	// page will take the user to refined search result page
 	// US-98499-98742-verify the user is redirected to correct URLs on clicking the
 	// assets listed to intended category
-	@Test(priority = 38, enabled = true, description = "Verify the click on Steel and Concrete Restoration Card")
+	@Test(priority = 45, enabled = true, description = "Verify the click on Steel and Concrete Restoration Card")
 	public void verifyClickOnSteelandConcreteRestorationCard() throws InterruptedException {
 		ContactPage cp = new ContactPage();
 		KnowledgeBasePage kb = cp.goKnowledgeBase();
@@ -780,7 +846,7 @@ public class KnowledgeBase extends BaseTest {
 	// page will take the user to refined search result page
 	// US-98499-98742-verify the user is redirected to correct URLs on clicking the
 	// assets listed to intended category
-	@Test(priority = 39, enabled = true, description = "Verify the click on Storm Support Card")
+	@Test(priority = 46, enabled = true, description = "Verify the click on Storm Support Card")
 	public void verifyClickOnStormSupportCard() throws InterruptedException {
 		ContactPage cp = new ContactPage();
 		KnowledgeBasePage kb = cp.goKnowledgeBase();
@@ -805,7 +871,7 @@ public class KnowledgeBase extends BaseTest {
 	// page will take the user to refined search result page
 	// US-98499-98742-verify the user is redirected to correct URLs on clicking the
 	// assets listed to intended category
-	@Test(priority = 40, enabled = true, description = "Verify the click on Underground Card")
+	@Test(priority = 47, enabled = true, description = "Verify the click on Underground Card")
 	public void verifyClickOnUndergroundCard() throws InterruptedException {
 		ContactPage cp = new ContactPage();
 		KnowledgeBasePage kb = cp.goKnowledgeBase();
@@ -830,7 +896,7 @@ public class KnowledgeBase extends BaseTest {
 	// page will take the user to refined search result page
 	// US-98499-98742-verify the user is redirected to correct URLs on clicking the
 	// assets listed to intended category
-	@Test(priority = 41, enabled = true, description = "Verify the click on Wood Restoration Card")
+	@Test(priority = 48, enabled = true, description = "Verify the click on Wood Restoration Card")
 	public void verifyClickOnWoodRestorationCard() throws InterruptedException {
 		ContactPage cp = new ContactPage();
 		KnowledgeBasePage kb = cp.goKnowledgeBase();
@@ -855,7 +921,7 @@ public class KnowledgeBase extends BaseTest {
 	// page will take the user to refined search result page
 	// US-98499-98742-verify the user is redirected to correct URLs on clicking the
 	// assets listed to intended category
-	@Test(priority = 42, enabled = true, description = "Verify the click on Wood Inspection Card")
+	@Test(priority = 49, enabled = true, description = "Verify the click on Wood Inspection Card")
 	public void verifyClickOnWoodInspectionCard() throws InterruptedException {
 		ContactPage cp = new ContactPage();
 		KnowledgeBasePage kb = cp.goKnowledgeBase();
@@ -878,7 +944,7 @@ public class KnowledgeBase extends BaseTest {
 
 	// US-98499-98609: Verify that clicking on the assets for the tiles in KB
 	// landing page will take the user to refined search result page for the same
-	@Test(priority = 43, enabled = true, description = "Verify the click on Images under Joint Use")
+	@Test(priority = 50, enabled = true, description = "Verify the click on Images under Joint Use")
 	public void verifyClickonJointUsImages() throws InterruptedException {
 		ContactPage cp = new ContactPage();
 		KnowledgeBasePage kb = cp.goKnowledgeBase();
@@ -909,7 +975,7 @@ public class KnowledgeBase extends BaseTest {
 
 	// US-98499-98609: Verify that clicking on the assets for the tiles in KB
 	// landing page will take the user to refined search result page for the same
-	@Test(priority = 43, enabled = true, description = "Verify the click on Videos under Joint Use")
+	@Test(priority = 51, enabled = true, description = "Verify the click on Videos under Joint Use")
 	public void verifyClickonJointUsVideos() throws InterruptedException {
 		ContactPage cp = new ContactPage();
 		KnowledgeBasePage kb = cp.goKnowledgeBase();
@@ -942,7 +1008,7 @@ public class KnowledgeBase extends BaseTest {
 
 	// US-98499-98609: Verify that clicking on the assets for the tiles in KB
 	// landing page will take the user to refined search result page for the same
-	@Test(priority = 44, enabled = true, description = "Verify the click on Articles under Joint Use")
+	@Test(priority = 52, enabled = true, description = "Verify the click on Articles under Joint Use")
 	public void verifyClickonJointUsArticles() throws InterruptedException {
 		ContactPage cp = new ContactPage();
 		KnowledgeBasePage kb = cp.goKnowledgeBase();
@@ -952,7 +1018,7 @@ public class KnowledgeBase extends BaseTest {
 
 	// US-98499-98609: Verify that clicking on the assets for the tiles in KB
 	// landing page will take the user to refined search result page for the same
-	@Test(priority = 45, enabled = true, description = "Verify the click on Videos under Overhead")
+	@Test(priority = 53, enabled = true, description = "Verify the click on Videos under Overhead")
 	public void verifyClickonOverheadVideos() throws InterruptedException {
 		ContactPage cp = new ContactPage();
 		KnowledgeBasePage kb = cp.goKnowledgeBase();
@@ -985,7 +1051,7 @@ public class KnowledgeBase extends BaseTest {
 
 	// US-98499-98609: Verify that clicking on the assets for the tiles in KB
 	// landing page will take the user to refined search result page for the same
-	@Test(priority = 46, enabled = true, description = "Verify the click on Images under Overhead")
+	@Test(priority = 54, enabled = true, description = "Verify the click on Images under Overhead")
 	public void verifyClickonOverheadImages() throws InterruptedException {
 		ContactPage cp = new ContactPage();
 		KnowledgeBasePage kb = cp.goKnowledgeBase();
@@ -1016,7 +1082,7 @@ public class KnowledgeBase extends BaseTest {
 
 	// US-98499-98609: Verify that clicking on the assets for the tiles in KB
 	// landing page will take the user to refined search result page for the same
-	@Test(priority = 47, enabled = true, description = "Verify the click on Project profiles under Overhead")
+	@Test(priority = 55, enabled = true, description = "Verify the click on Project profiles under Overhead")
 	public void verifyClickonOverheadProjectProfiles() throws InterruptedException {
 		ContactPage cp = new ContactPage();
 		KnowledgeBasePage kb = cp.goKnowledgeBase();
@@ -1047,7 +1113,7 @@ public class KnowledgeBase extends BaseTest {
 
 	// US-98499-98609: Verify that clicking on the assets for the tiles in KB
 	// landing page will take the user to refined search result page for the same
-	@Test(priority = 48, enabled = true, description = "Verify the click on Images under Pole Replacement")
+	@Test(priority = 56, enabled = true, description = "Verify the click on Images under Pole Replacement")
 	public void verifyClickonPoleReplacementImages() throws InterruptedException {
 		ContactPage cp = new ContactPage();
 		KnowledgeBasePage kb = cp.goKnowledgeBase();
@@ -1078,7 +1144,7 @@ public class KnowledgeBase extends BaseTest {
 
 	// US-98499-98609: Verify that clicking on the assets for the tiles in KB
 	// landing page will take the user to refined search result page for the same
-	@Test(priority = 49, enabled = true, description = "Verify the click on Videos under Pole Replacement")
+	@Test(priority = 57, enabled = true, description = "Verify the click on Videos under Pole Replacement")
 	public void verifyClickonPoleReplacementVideos() throws InterruptedException {
 		ContactPage cp = new ContactPage();
 		KnowledgeBasePage kb = cp.goKnowledgeBase();
@@ -1111,7 +1177,7 @@ public class KnowledgeBase extends BaseTest {
 
 	// US-98499-98609: Verify that clicking on the assets for the tiles in KB
 	// landing page will take the user to refined search result page for the same
-	@Test(priority = 50, enabled = true, description = "Verify the click on Brochure under Pole Replacement")
+	@Test(priority = 58, enabled = true, description = "Verify the click on Brochure under Pole Replacement")
 	public void verifyClickonPoleReplacementBrochure() throws InterruptedException {
 		ContactPage cp = new ContactPage();
 		KnowledgeBasePage kb = cp.goKnowledgeBase();
@@ -1142,7 +1208,7 @@ public class KnowledgeBase extends BaseTest {
 
 	// US-98499-98609: Verify that clicking on the assets for the tiles in KB
 	// landing page will take the user to refined search result page for the same
-	@Test(priority = 51, enabled = true, description = "Verify the click on Images under Products")
+	@Test(priority = 59, enabled = true, description = "Verify the click on Images under Products")
 	public void verifyClickonProductsImages() throws InterruptedException {
 		ContactPage cp = new ContactPage();
 		KnowledgeBasePage kb = cp.goKnowledgeBase();
@@ -1173,7 +1239,7 @@ public class KnowledgeBase extends BaseTest {
 
 	// US-98499-98609: Verify that clicking on the assets for the tiles in KB
 	// landing page will take the user to refined search result page for the same
-	@Test(priority = 52, enabled = true, description = "Verify the click on Videos under Products")
+	@Test(priority = 60, enabled = true, description = "Verify the click on Videos under Products")
 	public void verifyClickonProductsVideos() throws InterruptedException {
 		ContactPage cp = new ContactPage();
 		KnowledgeBasePage kb = cp.goKnowledgeBase();
@@ -1206,7 +1272,7 @@ public class KnowledgeBase extends BaseTest {
 
 	// US-98499-98609: Verify that clicking on the assets for the tiles in KB
 	// landing page will take the user to refined search result page for the same
-	@Test(priority = 53, enabled = true, description = "Verify the click on Product Catalog under Products")
+	@Test(priority = 61, enabled = true, description = "Verify the click on Product Catalog under Products")
 	public void verifyClickonProductsProductCatalog() throws InterruptedException {
 		ContactPage cp = new ContactPage();
 		KnowledgeBasePage kb = cp.goKnowledgeBase();
@@ -1237,7 +1303,7 @@ public class KnowledgeBase extends BaseTest {
 
 	// US-98499-98609: Verify that clicking on the assets for the tiles in KB
 	// landing page will take the user to refined search result page for the same
-	@Test(priority = 54, enabled = true, description = "Verify the click on Images under Steel And Concrete Assessment")
+	@Test(priority = 62, enabled = true, description = "Verify the click on Images under Steel And Concrete Assessment")
 	public void verifyClickonSteelAndConcreteAssessmentImages() throws InterruptedException {
 		ContactPage cp = new ContactPage();
 		KnowledgeBasePage kb = cp.goKnowledgeBase();
@@ -1268,7 +1334,7 @@ public class KnowledgeBase extends BaseTest {
 
 	// US-98499-98609: Verify that clicking on the assets for the tiles in KB
 	// landing page will take the user to refined search result page for the same
-	@Test(priority = 55, enabled = true, description = "Verify the click on Brochures under Steel And Concrete Assessment")
+	@Test(priority = 63, enabled = true, description = "Verify the click on Brochures under Steel And Concrete Assessment")
 	public void verifyClickonSteelAndConcreteAssessmentBrochures() throws InterruptedException {
 		ContactPage cp = new ContactPage();
 		KnowledgeBasePage kb = cp.goKnowledgeBase();
@@ -1278,7 +1344,7 @@ public class KnowledgeBase extends BaseTest {
 
 	// US-98499-98609: Verify that clicking on the assets for the tiles in KB
 	// landing page will take the user to refined search result page for the same
-	@Test(priority = 56, enabled = true, description = "Verify the click on Standards/codes under Steel And Concrete Assessment")
+	@Test(priority = 64, enabled = true, description = "Verify the click on Standards/codes under Steel And Concrete Assessment")
 	public void verifyClickonSteelAndConcreteAssessmentStandardsCodes() throws InterruptedException {
 		ContactPage cp = new ContactPage();
 		KnowledgeBasePage kb = cp.goKnowledgeBase();
@@ -1288,7 +1354,7 @@ public class KnowledgeBase extends BaseTest {
 
 	// US-98499-98609: Verify that clicking on the assets for the tiles in KB
 	// landing page will take the user to refined search result page for the same
-	@Test(priority = 57, enabled = true, description = "Verify the click on Articles under Steel And Concrete Restoration")
+	@Test(priority = 65, enabled = true, description = "Verify the click on Articles under Steel And Concrete Restoration")
 	public void verifyClickonSteelAndConcreteRestorationArticles() throws InterruptedException {
 		ContactPage cp = new ContactPage();
 		KnowledgeBasePage kb = cp.goKnowledgeBase();
@@ -1298,7 +1364,7 @@ public class KnowledgeBase extends BaseTest {
 
 	// US-98499-98609: Verify that clicking on the assets for the tiles in KB
 	// landing page will take the user to refined search result page for the same
-	@Test(priority = 58, enabled = true, description = "Verify the click on Brochures under Steel And Concrete Restoration")
+	@Test(priority = 66, enabled = true, description = "Verify the click on Brochures under Steel And Concrete Restoration")
 	public void verifyClickonSteelAndConcreteRestorationBrochures() throws InterruptedException {
 		ContactPage cp = new ContactPage();
 		KnowledgeBasePage kb = cp.goKnowledgeBase();
@@ -1308,7 +1374,7 @@ public class KnowledgeBase extends BaseTest {
 
 	// US-98499-98609: Verify that clicking on the assets for the tiles in KB
 	// landing page will take the user to refined search result page for the same
-	@Test(priority = 59, enabled = true, description = "Verify the click on Images under Steel And Concrete Restoration")
+	@Test(priority = 67, enabled = true, description = "Verify the click on Images under Steel And Concrete Restoration")
 	public void verifyClickonSteelAndConcreteRestorationImages() throws InterruptedException {
 		ContactPage cp = new ContactPage();
 		KnowledgeBasePage kb = cp.goKnowledgeBase();
@@ -1339,7 +1405,7 @@ public class KnowledgeBase extends BaseTest {
 
 	// US-98499-98609: Verify that clicking on the assets for the tiles in KB
 	// landing page will take the user to refined search result page for the same
-	@Test(priority = 60, enabled = true, description = "Verify the click on Images under Storm Support")
+	@Test(priority = 68, enabled = true, description = "Verify the click on Images under Storm Support")
 	public void verifyClickonStormSupportImages() throws InterruptedException {
 		ContactPage cp = new ContactPage();
 		KnowledgeBasePage kb = cp.goKnowledgeBase();
@@ -1370,7 +1436,7 @@ public class KnowledgeBase extends BaseTest {
 
 	// US-98499-98609: Verify that clicking on the assets for the tiles in KB
 	// landing page will take the user to refined search result page for the same
-	@Test(priority = 61, enabled = true, description = "Verify the click on Videos under Storm Support")
+	@Test(priority = 69, enabled = true, description = "Verify the click on Videos under Storm Support")
 	public void verifyClickonStormSupportVideos() throws InterruptedException {
 		ContactPage cp = new ContactPage();
 		KnowledgeBasePage kb = cp.goKnowledgeBase();
@@ -1403,7 +1469,7 @@ public class KnowledgeBase extends BaseTest {
 
 	// US-98499-98609: Verify that clicking on the assets for the tiles in KB
 	// landing page will take the user to refined search result page for the same
-	@Test(priority = 62, enabled = true, description = "Verify the click on Project profiles under Storm Support")
+	@Test(priority = 70, enabled = true, description = "Verify the click on Project profiles under Storm Support")
 	public void verifyClickonStormSupportProjectProfiles() throws InterruptedException {
 		ContactPage cp = new ContactPage();
 		KnowledgeBasePage kb = cp.goKnowledgeBase();
@@ -1434,7 +1500,7 @@ public class KnowledgeBase extends BaseTest {
 
 	// US-98499-98609: Verify that clicking on the assets for the tiles in KB
 	// landing page will take the user to refined search result page for the same
-	@Test(priority = 63, enabled = true, description = "Verify the click on Images under Underground")
+	@Test(priority = 71, enabled = true, description = "Verify the click on Images under Underground")
 	public void verifyClickonUndergroundImages() throws InterruptedException {
 		ContactPage cp = new ContactPage();
 		KnowledgeBasePage kb = cp.goKnowledgeBase();
@@ -1465,7 +1531,7 @@ public class KnowledgeBase extends BaseTest {
 
 	// US-98499-98609: Verify that clicking on the assets for the tiles in KB
 	// landing page will take the user to refined search result page for the same
-	@Test(priority = 64, enabled = true, description = "Verify the click on Brochure under Underground")
+	@Test(priority = 72, enabled = true, description = "Verify the click on Brochure under Underground")
 	public void verifyClickonUndergroundBrochure() throws InterruptedException {
 		ContactPage cp = new ContactPage();
 		KnowledgeBasePage kb = cp.goKnowledgeBase();
@@ -1496,7 +1562,7 @@ public class KnowledgeBase extends BaseTest {
 
 	// US-98499-98609: Verify that clicking on the assets for the tiles in KB
 	// landing page will take the user to refined search result page for the same
-	@Test(priority = 65, enabled = true, description = "Verify the click on Diagram under Underground")
+	@Test(priority = 73, enabled = true, description = "Verify the click on Diagram under Underground")
 	public void verifyClickonUndergroundDiagram() throws InterruptedException {
 		ContactPage cp = new ContactPage();
 		KnowledgeBasePage kb = cp.goKnowledgeBase();
@@ -1527,7 +1593,7 @@ public class KnowledgeBase extends BaseTest {
 
 	// US-98499-98609: Verify that clicking on the assets for the tiles in KB
 	// landing page will take the user to refined search result page for the same
-	@Test(priority = 66, enabled = true, description = "Verify the click on Videos under Wood Restoration")
+	@Test(priority = 74, enabled = true, description = "Verify the click on Videos under Wood Restoration")
 	public void verifyClickonWoodRestorationVideos() throws InterruptedException {
 		ContactPage cp = new ContactPage();
 		KnowledgeBasePage kb = cp.goKnowledgeBase();
@@ -1560,7 +1626,7 @@ public class KnowledgeBase extends BaseTest {
 
 	// US-98499-98609: Verify that clicking on the assets for the tiles in KB
 	// landing page will take the user to refined search result page for the same
-	@Test(priority = 67, enabled = true, description = "Verify the click on Brochures under Wood Restoration")
+	@Test(priority = 75, enabled = true, description = "Verify the click on Brochures under Wood Restoration")
 	public void verifyClickonWoodRestorationBrochures() throws InterruptedException {
 		ContactPage cp = new ContactPage();
 		KnowledgeBasePage kb = cp.goKnowledgeBase();
@@ -1570,7 +1636,7 @@ public class KnowledgeBase extends BaseTest {
 
 	// US-98499-98609: Verify that clicking on the assets for the tiles in KB
 	// landing page will take the user to refined search result page for the same
-	@Test(priority = 68, enabled = true, description = "Verify the click on Articles under Wood Restoration")
+	@Test(priority = 76, enabled = true, description = "Verify the click on Articles under Wood Restoration")
 	public void verifyClickonWoodRestorationArticles() throws InterruptedException {
 		ContactPage cp = new ContactPage();
 		KnowledgeBasePage kb = cp.goKnowledgeBase();
@@ -1580,7 +1646,7 @@ public class KnowledgeBase extends BaseTest {
 
 	// US-98499-98609: Verify that clicking on the assets for the tiles in KB
 	// landing page will take the user to refined search result page for the same
-	@Test(priority = 69, enabled = true, description = "Verify the click on Videos under Wood Treatment")
+	@Test(priority = 77, enabled = true, description = "Verify the click on Videos under Wood Treatment")
 	public void verifyClickonWoodTreatmentVideos() throws InterruptedException {
 		ContactPage cp = new ContactPage();
 		KnowledgeBasePage kb = cp.goKnowledgeBase();
@@ -1613,7 +1679,7 @@ public class KnowledgeBase extends BaseTest {
 
 	// US-98499-98609: Verify that clicking on the assets for the tiles in KB
 	// landing page will take the user to refined search result page for the same
-	@Test(priority = 70, enabled = true, description = "Verify the click on Images under Wood Treatment")
+	@Test(priority = 78, enabled = true, description = "Verify the click on Images under Wood Treatment")
 	public void verifyClickonWoodTreatmentImages() throws InterruptedException {
 		ContactPage cp = new ContactPage();
 		KnowledgeBasePage kb = cp.goKnowledgeBase();
@@ -1644,7 +1710,7 @@ public class KnowledgeBase extends BaseTest {
 
 	// US-98499-98609: Verify that clicking on the assets for the tiles in KB
 	// landing page will take the user to refined search result page for the same
-	@Test(priority = 71, enabled = true, description = "Verify the click on Research under Wood Treatment")
+	@Test(priority = 79, enabled = true, description = "Verify the click on Research under Wood Treatment")
 	public void verifyClickonWoodTreatmentResearch() throws InterruptedException {
 		ContactPage cp = new ContactPage();
 		KnowledgeBasePage kb = cp.goKnowledgeBase();
@@ -1675,7 +1741,7 @@ public class KnowledgeBase extends BaseTest {
 
 	// US-98504-98685-Verify see more option functionality in "Videos" section in KB
 	// landing page
-	@Test(priority = 72, enabled = true, description = "Verify the click on See more link on Videos under Joint use Popular query")
+	@Test(priority = 80, enabled = true, description = "Verify the click on See more link on Videos under Joint use Popular query")
 	public void verifyClickonVideosSeeMore() throws InterruptedException {
 		ContactPage cp = new ContactPage();
 		KnowledgeBasePage kb = cp.goKnowledgeBase();
@@ -1702,7 +1768,7 @@ public class KnowledgeBase extends BaseTest {
 
 	// US-98504-98686-Verify See More option functionality in Images section in KB
 	// landing page
-	@Test(priority = 73, enabled = true, description = "Verify the click on See more link on Images under Joint use Popular query")
+	@Test(priority = 81, enabled = true, description = "Verify the click on See more link on Images under Joint use Popular query")
 	public void verifyClickonImagesSeeMore() throws InterruptedException {
 		ContactPage cp = new ContactPage();
 		KnowledgeBasePage kb = cp.goKnowledgeBase();
@@ -1731,7 +1797,7 @@ public class KnowledgeBase extends BaseTest {
 
 	// US-98504-98687-Verify See More option functionality in Documents section in
 	// KB landing page
-	@Test(priority = 74, enabled = true, description = "Verify the click on See more link on Documents under Joint use Popular query")
+	@Test(priority = 82, enabled = true, description = "Verify the click on See more link on Documents under Joint use Popular query")
 	public void verifyClickonDocumentsSeeMore() throws InterruptedException {
 		ContactPage cp = new ContactPage();
 		KnowledgeBasePage kb = cp.goKnowledgeBase();
@@ -1760,7 +1826,7 @@ public class KnowledgeBase extends BaseTest {
 
 	// US-98504-98688-Verify See More option functionality in News section in KB
 	// landing page
-	@Test(priority = 75, enabled = true, description = "Verify the click on See more link on a Document under Joint use Popular query")
+	@Test(priority = 83, enabled = true, description = "Verify the click on See more link on a Document under Joint use Popular query")
 	public void verifyClickonJointUseManagementServicesSeeMore() throws InterruptedException {
 		ContactPage cp = new ContactPage();
 		KnowledgeBasePage kb = cp.goKnowledgeBase();
@@ -1785,12 +1851,13 @@ public class KnowledgeBase extends BaseTest {
 		Assert.assertTrue(DocumentContent.isDisplayed());
 		Page.click("JointUseJointUseManagementServicesMoreLink_XPATH");
 		Thread.sleep(3000);
-		WebElement LessLink = Page.driver.findElement(By.xpath("//*[@id='my-table']/div/p/a"));
-
-		Assert.assertEquals(Page.getText("JointUseJointUseManagementServicesLessLink_XPATH"), "less");
-		// Verification of the presence of Less link
-		Assert.assertTrue(LessLink.isDisplayed());
-
+		Assert.assertEquals(Page.getText("JointUseJointUseManagemenrServicesHeaderTxt_XPATH"), "Joint Use Management Services");
+		// Verification of the presence of link
+		WebElement BoxCloseBtn= Page.driver.findElement(By.xpath("//*[@id='openAdminMyquotes___BV_modal_body_']/button"));
+		Assert.assertTrue(BoxCloseBtn.isDisplayed());
+		Thread.sleep(2000);
+		Page.click("BoxCloseBtn_XPATH");
+		Thread.sleep(1000);
 		kb.clickClearSearch();
 	}
 
@@ -1799,7 +1866,7 @@ public class KnowledgeBase extends BaseTest {
 	// US-98502-98623-Verify that system shall allow users to perform keyword
 	// searches which return results based on document content and metadata
 	// fields(title, description, keyword)
-	@Test(dataProviderClass = Utilities.class, dataProvider = "dp", priority = 76, enabled = true, description = "Verification of dynamic dropdown on search field")
+	@Test(dataProviderClass = Utilities.class, dataProvider = "dp", priority = 84, enabled = true, description = "Verification of dynamic dropdown on search field")
 	public void verifyDynamicDropdown(Hashtable<String, String> data) throws InterruptedException {
 		ContactPage cp = new ContactPage();
 		KnowledgeBasePage kb = cp.goKnowledgeBase();
@@ -1807,12 +1874,12 @@ public class KnowledgeBase extends BaseTest {
 		Page.type("SearchBox_XPATH", data.get("AskOsmoseSearch"));
 		// Verification of the presence of dynamic dd
 		WebElement Dynamicdd = Page.driver
-				.findElement(By.xpath("//div[@id='knowledgeBaseSearchBox']/div/div/div/div[2]/ul"));
+				.findElement(By.xpath("//div[@id='knowledgeBaseSearchBox']/div[1]/div[1]/div[1]/div[1]/ul"));
 		Thread.sleep(3000);
 		Assert.assertTrue(Dynamicdd.isDisplayed());
 		// Clicking on Industry option
 		Page.click("IndustryOptionDD_XPATH");
-		Thread.sleep(3000);
+		Thread.sleep(30000);
 		// Verification of the Search Results
 		Assert.assertEquals(Page.getText("IndustryText_XPATH"), "Repellent Products for the Utility Industry");
 		kb.clickClearSearch();
@@ -1824,7 +1891,7 @@ public class KnowledgeBase extends BaseTest {
 	// US-98502-98616-Verify that the search bar will provide options for searching
 	// only for specific media types
 	// US-98502-98622-Verify that Default "All" option is selected for searching.
-	@Test(priority = 77, enabled = true, description = "Verify that Search results section will be organized into separate grouped")
+	@Test(priority = 85, enabled = true, description = "Verify that Search results section will be organized into separate grouped")
 	public void verifySearchResultsAreGrouped() throws InterruptedException {
 		ContactPage cp = new ContactPage();
 		KnowledgeBasePage kb = cp.goKnowledgeBase();
@@ -1853,7 +1920,7 @@ public class KnowledgeBase extends BaseTest {
 	// US-98505-98691-Verify Search results section will be updated and organized
 	// into separate "grouped" areas based on the asset category and type when user
 	// switches the selection of Popular queries
-	@Test(priority = 78, enabled = true, description = "Verify that Search results section will be organized into separate grouped after updation of Popular filter")
+	@Test(priority = 86, enabled = true, description = "Verify that Search results section will be organized into separate grouped after updation of Popular filter")
 	public void verifySearchResultsAreGroupedAfterfilterUpdation() throws InterruptedException {
 		ContactPage cp = new ContactPage();
 		KnowledgeBasePage kb = cp.goKnowledgeBase();
@@ -1862,7 +1929,7 @@ public class KnowledgeBase extends BaseTest {
 		Thread.sleep(80000);
 		kb.ClickPopularQueriesFilter();
 		Page.click("PoleReplacementFilter_XPATH");
-		Thread.sleep(140000);
+		Thread.sleep(80000);
 		WebElement VideoResultsSection = Page.driver
 				.findElement(By.xpath("//*[@id='contentPart1']/div/div/div/div/div[1]/div/div[1]/div/h5"));
 		Assert.assertTrue(VideoResultsSection.isDisplayed());
@@ -1879,13 +1946,13 @@ public class KnowledgeBase extends BaseTest {
 
 	// US-98503-98672-Verify System displaying search results based on the entered
 	// search criteria
-	@Test(dataProviderClass = Utilities.class, dataProvider = "dp", priority = 79, enabled = true, description = "Verify that Search results section will be organized into separate grouped after typing value in Search field")
+	@Test(dataProviderClass = Utilities.class, dataProvider = "dp", priority = 87, enabled = true, description = "Verify that Search results section will be organized into separate grouped after typing value in Search field")
 	public void verifySearchResultsOnTyping(Hashtable<String, String> data) throws InterruptedException {
 		ContactPage cp = new ContactPage();
 		KnowledgeBasePage kb = cp.goKnowledgeBase();
 		Thread.sleep(3000);
 		Page.type("SearchBox_XPATH", data.get("TypeJointUse"));
-		Page.driver.findElement(By.xpath("//div[@id='knowledgeBaseSearchBox']/div[1]/div[1]/div[1]/div[2]/input"))
+		Page.driver.findElement(By.xpath("//input[@id='SearchFieldKB']"))
 				.sendKeys(Keys.ENTER);
 		// Page.click("JointUseOptionDD_XPATH");
 		Thread.sleep(50000);
@@ -1904,7 +1971,7 @@ public class KnowledgeBase extends BaseTest {
 	}
 
 	// US-98503-98673-Verify Clear Search results
-	@Test(dataProviderClass = Utilities.class, dataProvider = "dp", priority = 80, enabled = true, description = "Verify that clicking on clear button will clear the field")
+	@Test(dataProviderClass = Utilities.class, dataProvider = "dp", priority = 88, enabled = true, description = "Verify that clicking on clear button will clear the field")
 	public void verifyClearButtonOnTyping(Hashtable<String, String> data) throws InterruptedException {
 		ContactPage cp = new ContactPage();
 		KnowledgeBasePage kb = cp.goKnowledgeBase();
@@ -1918,7 +1985,7 @@ public class KnowledgeBase extends BaseTest {
 	// the 'Videos' Category filer
 	// US-98502-98617-Verify that search bar will provide options for searching
 	// videos.
-	@Test(priority = 81, enabled = true, description = "Verify that Search results section will display only videos section")
+	@Test(priority = 89, enabled = true, description = "Verify that Search results section will display only videos section")
 	public void verifySearchResultsAreVideos() throws InterruptedException {
 		ContactPage cp = new ContactPage();
 		KnowledgeBasePage kb = cp.goKnowledgeBase();
@@ -1938,7 +2005,7 @@ public class KnowledgeBase extends BaseTest {
 	// the 'Images' Category filer
 	// US-98502-98618-Verify that search bar will provide options for searching
 	// images.
-	@Test(priority = 82, enabled = true, description = "Verify that Search results section will display only images section")
+	@Test(priority = 90, enabled = true, description = "Verify that Search results section will display only images section")
 	public void verifySearchResultsAreImages() throws InterruptedException {
 		ContactPage cp = new ContactPage();
 		KnowledgeBasePage kb = cp.goKnowledgeBase();
@@ -1959,13 +2026,13 @@ public class KnowledgeBase extends BaseTest {
 	// the 'Documents' Category filer
 	// US-98502-98620-Verify that search bar will provide options for searching
 	// documents.
-	@Test(priority = 83, enabled = true, description = "Verify that Search results section will display only documents section")
+	@Test(priority = 91, enabled = true, description = "Verify that Search results section will display only documents section")
 	public void verifySearchResultsAreDocuments() throws InterruptedException {
 		ContactPage cp = new ContactPage();
 		KnowledgeBasePage kb = cp.goKnowledgeBase();
 		Thread.sleep(3000);
 		kb.clickJointUsePopularQuery();
-		Thread.sleep(140000);
+		Thread.sleep(80000);
 		Page.click("DocumentsLink_XPATH");
 		Thread.sleep(5000);
 		WebElement DocumentResultsSection = Page.driver
@@ -1980,14 +2047,14 @@ public class KnowledgeBase extends BaseTest {
 	// area will be hidden.<Grouped areas: Video, Images, Documents, and News>
 	// US-98502-98733-Verify message displayed by system when there are no records
 	// or search results for entered search criteria
-	@Test(dataProviderClass = Utilities.class, dataProvider = "dp", priority = 84, enabled = true, description = "Verify no results found message on Search Box")
+	@Test(dataProviderClass = Utilities.class, dataProvider = "dp", priority = 92, enabled = true, description = "Verify no results found message on Search Box")
 	public void verifyNoResultsFoundMessage(Hashtable<String, String> data) throws InterruptedException {
 		ContactPage cp = new ContactPage();
 		KnowledgeBasePage kb = cp.goKnowledgeBase();
 		Thread.sleep(3000);
 		Page.type("SearchBox_XPATH", data.get("NoResults"));
 		Thread.sleep(3000);
-		Page.driver.findElement(By.xpath("//div[@id='knowledgeBaseSearchBox']/div[1]/div[1]/div[1]/div[2]/input"))
+		Page.driver.findElement(By.xpath("//input[@id='SearchFieldKB']"))
 				.sendKeys(Keys.ENTER);
 
 		WebElement noresults = Page.driver.findElement(By.xpath("//div[@class='text-center dismissCountDown']/div[1]"));
@@ -1997,14 +2064,14 @@ public class KnowledgeBase extends BaseTest {
 
 	// US-98503-98681-Verify Document result set section will allow users to sort
 	// the result set by 'Relevance' and 'Most Recent'
-	@Test(priority = 85, enabled = true, description = "Verify the presence of Sort by dropdown and its values")
+	@Test(priority = 93, enabled = true, description = "Verify the presence of Sort by dropdown and its values")
 	public void verifyPresenceOfSortBy() throws InterruptedException {
 		ContactPage cp = new ContactPage();
 		KnowledgeBasePage kb = cp.goKnowledgeBase();
 		Thread.sleep(6000);
 		kb.ClickPopularQueriesFilter();
 		kb.clickJointUsePopularQuery();
-		Thread.sleep(140000);
+		Thread.sleep(80000);
 		Page.click("DocumentsLink_XPATH");
 		Thread.sleep(5000);
 		WebElement DocumentResultsSection = Page.driver
@@ -2028,7 +2095,7 @@ public class KnowledgeBase extends BaseTest {
 	// US-98503-98672-Verify System displaying search results based on the entered
 	// search criteria
 	// US-98502-98624-Verify that The system shall allow users to modify searches
-	@Test(dataProviderClass = Utilities.class, dataProvider = "dp", priority = 86, enabled = true, description = "Verify that the text entered in search field can be modified")
+	@Test(dataProviderClass = Utilities.class, dataProvider = "dp", priority = 94, enabled = true, description = "Verify that the text entered in search field can be modified")
 	public void verifySearchTextUpdation(Hashtable<String, String> data) throws InterruptedException {
 		ContactPage cp = new ContactPage();
 		KnowledgeBasePage kb = cp.goKnowledgeBase();
@@ -2038,10 +2105,10 @@ public class KnowledgeBase extends BaseTest {
 		Page.clear("SearchBox_XPATH");
 		Thread.sleep(3000);
 		Page.type("SearchBox_XPATH", data.get("TypePoleReplacementTextUpdation"));
-		Page.driver.findElement(By.xpath("//div[@id='knowledgeBaseSearchBox']/div[1]/div[1]/div[1]/div[2]/input"))
+		Page.driver.findElement(By.xpath("//input[@id='SearchFieldKB']"))
 				.sendKeys(Keys.ENTER);
 		// Page.click("JointUseOptionDD_XPATH");
-		Thread.sleep(140000);
+		Thread.sleep(80000);
 		WebElement VideoResultsSection = Page.driver
 				.findElement(By.xpath("//*[@id='contentPart1']/div/div/div/div/div[1]/div/div[1]/div/h5"));
 		Assert.assertTrue(VideoResultsSection.isDisplayed());

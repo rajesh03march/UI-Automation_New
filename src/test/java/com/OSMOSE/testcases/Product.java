@@ -18,7 +18,7 @@ public class Product extends BaseTest {
 	public void verifyTheProductLink(Hashtable<String, String> data) throws InterruptedException {
 		HomeOU ou = new HomeOU();
 		ProductPage pp = ou.goProduct();
-		pp.clickOnOU360();
+		//pp.clickOnOU360();
 		Thread.sleep(1200);
 		pp.clickProductLink();
 		Thread.sleep(1000);

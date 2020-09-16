@@ -1,82 +1,136 @@
-01/09/2020 19:44:54 devpinoyLogger Config file loaded !!!
-01/09/2020 19:44:54 devpinoyLogger OR file loaded !!!
-01/09/2020 19:44:57 devpinoyLogger Navigated to : https://osmose360cl.azurewebsites.net/
-01/09/2020 19:45:10 devpinoyLogger Typing in an Element : email_XPATH entered value as : rajesh.yadav@centurylink.com
-01/09/2020 19:45:10 devpinoyLogger Typing in an Element : password_XPATH entered value as : Hyde@2317
-01/09/2020 19:45:10 devpinoyLogger Clicking on an Element : submit_XPATH
-01/09/2020 19:45:14 devpinoyLogger Text of the locator: verify_ID value as :Rajesh Yadav
-01/09/2020 19:45:17 devpinoyLogger Text of the locator: OUCard_XPATH value as :Osmose University
-01/09/2020 19:45:18 devpinoyLogger Text of the locator: KBCard_XPATH value as :Knowledge Base
-01/09/2020 19:45:19 devpinoyLogger Text of the locator: ProCard_XPATH value as :Products
-01/09/2020 19:45:19 devpinoyLogger Text of the locator: ContactUsMainMenudd_XPATH value as :CONTACT US
-01/09/2020 19:45:20 devpinoyLogger Text of the locator: OUCartliveeventlink_XPATH value as :LIVE EVENTS
-01/09/2020 19:45:20 devpinoyLogger Text of the locator: OUCartWebinarLink_XPATH value as :WEBINARS
-01/09/2020 19:45:20 devpinoyLogger Text of the locator: OUCartOcalcLink_XPATH value as :O-CALC TRAINING
-01/09/2020 19:45:21 devpinoyLogger Text of the locator: OUCartVideo1_CSS value as :Wood Technical Seminar
-01/09/2020 19:45:21 devpinoyLogger Text of the locator: OUCarrVideo2_CSS value as :Steel Technical Seminar
-01/09/2020 19:45:33 devpinoyLogger Clicking on an Element : OsmoseUniverityNav_XPATH
-01/09/2020 19:45:36 devpinoyLogger Text of the locator: OsmoseUniversityTxt_XPATH value as :Osmose University
-01/09/2020 19:45:36 devpinoyLogger Clicking on an Element : HomePage_XPATH
-01/09/2020 19:45:49 devpinoyLogger Clicking on an Element : OUCartliveeventlink_XPATH
-01/09/2020 19:45:49 devpinoyLogger Text of the locator: LiveEvent_XPATH value as :LIVE EVENTS
-01/09/2020 19:46:02 devpinoyLogger Clicking on an Element : OUCartWebinarLink_XPATH
-01/09/2020 19:46:02 devpinoyLogger Text of the locator: WEBINAR_XPATH value as :WEBINARS
-01/09/2020 19:46:15 devpinoyLogger Clicking on an Element : OUCartOcalcLink_XPATH
-01/09/2020 19:46:15 devpinoyLogger Text of the locator: O-CALCTRAINING_XPATH value as :O-CALC TRAINING
-01/09/2020 19:46:28 devpinoyLogger Clicking on an Element : OUCard_XPATH
-01/09/2020 19:46:28 devpinoyLogger Text of the locator: LiveEvent_XPATH value as :LIVE EVENTS
-01/09/2020 19:46:41 devpinoyLogger Clicking on an Element : LiveEvent_XPATH
-01/09/2020 19:46:42 devpinoyLogger Text of the locator: SteelTechnicalSeminar_XPATH value as :Steel Technical Seminar
-01/09/2020 19:46:54 devpinoyLogger Clicking on an Element : LiveEvent_XPATH
-01/09/2020 19:46:55 devpinoyLogger Text of the locator: JointUseSeminar_XPATH value as :Joint Use Seminar
-01/09/2020 19:47:08 devpinoyLogger Clicking on an Element : LiveEvent_XPATH
-01/09/2020 19:47:09 devpinoyLogger Text of the locator: WoodPoleTechnicalSeminar_XPATH value as :Wood Pole Technical Seminar
-01/09/2020 19:47:21 devpinoyLogger Clicking on an Element : DETAILSANDREGISTRATION_XPATH
-01/09/2020 19:47:22 devpinoyLogger Text of the locator: FIRSTNAME_XPATH value as :Rajesh
-01/09/2020 19:47:22 devpinoyLogger Text of the locator: LASTNAME_XPATH value as :Yadav
-01/09/2020 19:47:22 devpinoyLogger Text of the locator: COMPANY_XPATH value as :Centurylink
-01/09/2020 19:47:22 devpinoyLogger Text of the locator: STATE_XPATH value as :Nevada
-01/09/2020 19:47:22 devpinoyLogger Text of the locator: TITLE_XPATH value as :Technical Lead
-01/09/2020 19:47:22 devpinoyLogger Text of the locator: EMAIL_XPATH value as :rajesh.yadav@centurylink.com
-01/09/2020 19:47:22 devpinoyLogger Text of the locator: PHONE_XPATH value as :9971236668
-01/09/2020 19:47:35 devpinoyLogger Selecting from an element : WEBINAR_XPATH
-01/09/2020 19:47:35 devpinoyLogger Text of the locator: WEBINAR_XPATH value as :WEBINARS
-01/09/2020 19:47:48 devpinoyLogger Clicking on an Element : O-CALCTRAINING_XPATH
-01/09/2020 19:47:49 devpinoyLogger Text of the locator: PrivateTraining_XPATH value as :Private Training Seminars
-01/09/2020 19:47:49 devpinoyLogger Selecting from an element : HomePage_XPATH
-01/09/2020 19:47:53 devpinoyLogger Clicking on an Element : MyOsmoseServicesCard_XPATH
-01/09/2020 19:47:54 devpinoyLogger Text of the locator: MyOsmoseServicesFirstHeader_XPATH value as :My Osmose Services
-01/09/2020 19:47:54 devpinoyLogger Text of the locator: MyOsmoseServicesSecondHeader_XPATH value as :View & Manage
-01/09/2020 19:47:54 devpinoyLogger Clicking on an Element : WoodInspectionAndTreatmentLearnMoreBtn_XPATH
-01/09/2020 19:47:59 devpinoyLogger Text of the locator: WoodInspectionAndTreatmentPopupHeaderTxt_XPATH value as :Wood | Inspection & Treatment
-01/09/2020 19:47:59 devpinoyLogger Clicking on an Element : LearnMorePopupCloseBtn_XPATH
-01/09/2020 19:48:00 devpinoyLogger Clicking on an Element : WoodRestorationLearnMoreBtn_XPATH
-01/09/2020 19:48:05 devpinoyLogger Text of the locator: WoodRestorationPopupHeaderTxt_XPATH value as :Wood | Restoration
-01/09/2020 19:48:05 devpinoyLogger Clicking on an Element : LearnMorePopupCloseBtn_XPATH
-01/09/2020 19:48:06 devpinoyLogger Clicking on an Element : OcalcProLearnMoreBtn_XPATH
-01/09/2020 19:48:11 devpinoyLogger Text of the locator: OcalcProPopupHeaderTxt_XPATH value as :O-Calc Pro
-01/09/2020 19:48:11 devpinoyLogger Clicking on an Element : LearnMorePopupCloseBtn_XPATH
-01/09/2020 19:48:11 devpinoyLogger Clicking on an Element : SteelandConcreteAssessmentLearnMoreBtn_XPATH
-01/09/2020 19:48:16 devpinoyLogger Text of the locator: SteelandConcreteAssessmentPopupHeaderTxt_XPATH value as :Steel & Concrete | Assessment
-01/09/2020 19:48:16 devpinoyLogger Clicking on an Element : LearnMorePopupCloseBtn_XPATH
-01/09/2020 19:48:17 devpinoyLogger Clicking on an Element : SteelandConcreteRestorationLearnMoreBtn_XPATH
-01/09/2020 19:48:22 devpinoyLogger Text of the locator: SteelandConcreteRestorationPopupHeaderTxt_XPATH value as :Steel & Concrete | Restoration
-01/09/2020 19:48:22 devpinoyLogger Clicking on an Element : LearnMorePopupCloseBtn_XPATH
-01/09/2020 19:48:23 devpinoyLogger Clicking on an Element : OverheadLearnMoreBtn_XPATH
-01/09/2020 19:48:28 devpinoyLogger Text of the locator: OverheadPopupHeaderTxt_XPATH value as :Overhead
-01/09/2020 19:48:28 devpinoyLogger Clicking on an Element : LearnMorePopupCloseBtn_XPATH
-01/09/2020 19:48:28 devpinoyLogger Clicking on an Element : UndergroundLearnMoreBtn_XPATH
-01/09/2020 19:48:33 devpinoyLogger Text of the locator: UndergroundPopupHeaderTxt_XPATH value as :Underground
-01/09/2020 19:48:33 devpinoyLogger Clicking on an Element : LearnMorePopupCloseBtn_XPATH
-01/09/2020 19:48:34 devpinoyLogger Clicking on an Element : JointUseLearnMoreBtn_XPATH
-01/09/2020 19:48:39 devpinoyLogger Text of the locator: JointUsePopupHeaderTxt_XPATH value as :Joint Use
-01/09/2020 19:48:39 devpinoyLogger Clicking on an Element : LearnMorePopupCloseBtn_XPATH
-01/09/2020 19:48:39 devpinoyLogger Clicking on an Element : StrayVoltageLearnMore_XPATH
-01/09/2020 19:48:44 devpinoyLogger Text of the locator: StrayVoltagePopupHeaderTxt_XPATH value as :Stray Voltage
-01/09/2020 19:48:45 devpinoyLogger Clicking on an Element : LearnMorePopupCloseBtn_XPATH
-01/09/2020 19:48:45 devpinoyLogger Clicking on an Element : TechnicalServicesLearnMore_XPATH
-01/09/2020 19:48:50 devpinoyLogger Text of the locator: TechnicalServicesPopupHeaderTxt_XPATH value as :Technical Services
-01/09/2020 19:48:50 devpinoyLogger Clicking on an Element : LearnMorePopupCloseBtn_XPATH
-01/09/2020 19:49:41 devpinoyLogger Clicking on an Element : MapViewLearnMore_XPATH
-01/09/2020 19:49:46 devpinoyLogger Text of the locator: MapViewPopupHeaderTxt_XPATH value as :Map View
-01/09/2020 19:49:46 devpinoyLogger Clicking on an Element : LearnMorePopupCloseBtn_XPATH
+08/09/2020 20:20:50 devpinoyLogger Config file loaded !!!
+08/09/2020 20:20:50 devpinoyLogger OR file loaded !!!
+08/09/2020 20:20:53 devpinoyLogger Navigated to : https://osmose360cl.azurewebsites.net/
+08/09/2020 20:21:06 devpinoyLogger Typing in an Element : email_XPATH entered value as : rajesh.yadav@centurylink.com
+08/09/2020 20:21:06 devpinoyLogger Typing in an Element : password_XPATH entered value as : Hyde@2317
+08/09/2020 20:21:06 devpinoyLogger Clicking on an Element : submit_XPATH
+08/09/2020 20:21:11 devpinoyLogger Text of the locator: verify_ID value as :Rajesh Yadav
+08/09/2020 20:21:15 devpinoyLogger Text of the locator: OUCard_XPATH value as :Osmose University
+08/09/2020 20:21:16 devpinoyLogger Text of the locator: KBCard_XPATH value as :Knowledge Base
+08/09/2020 20:21:16 devpinoyLogger Text of the locator: ProCard_XPATH value as :Products
+08/09/2020 20:21:17 devpinoyLogger Text of the locator: ContactUsMainMenudd_XPATH value as :CONTACT US
+08/09/2020 20:21:17 devpinoyLogger Text of the locator: OUCartliveeventlink_XPATH value as :LIVE EVENTS
+08/09/2020 20:21:17 devpinoyLogger Text of the locator: OUCartWebinarLink_XPATH value as :WEBINARS
+08/09/2020 20:21:17 devpinoyLogger Text of the locator: OUCartOcalcLink_XPATH value as :O-CALC TRAINING
+08/09/2020 20:21:18 devpinoyLogger Text of the locator: OUCartVideo1_CSS value as :Wood Technical Seminar
+08/09/2020 20:21:18 devpinoyLogger Text of the locator: OUCarrVideo2_CSS value as :Steel Technical Seminar
+08/09/2020 20:21:30 devpinoyLogger Clicking on an Element : OsmoseUniverityNav_XPATH
+08/09/2020 20:21:33 devpinoyLogger Text of the locator: OsmoseUniversityTxt_XPATH value as :Osmose University
+08/09/2020 20:21:34 devpinoyLogger Clicking on an Element : HomePage_XPATH
+08/09/2020 20:21:46 devpinoyLogger Clicking on an Element : OUCartliveeventlink_XPATH
+08/09/2020 20:21:46 devpinoyLogger Text of the locator: LiveEvent_XPATH value as :LIVE EVENTS
+08/09/2020 20:21:59 devpinoyLogger Clicking on an Element : OUCartWebinarLink_XPATH
+08/09/2020 20:21:59 devpinoyLogger Text of the locator: WEBINAR_XPATH value as :WEBINARS
+08/09/2020 20:22:12 devpinoyLogger Clicking on an Element : OUCartOcalcLink_XPATH
+08/09/2020 20:22:12 devpinoyLogger Text of the locator: O-CALCTRAINING_XPATH value as :O-CALC TRAINING
+08/09/2020 20:22:25 devpinoyLogger Clicking on an Element : OUCard_XPATH
+08/09/2020 20:22:25 devpinoyLogger Text of the locator: LiveEvent_XPATH value as :LIVE EVENTS
+08/09/2020 20:22:38 devpinoyLogger Clicking on an Element : LiveEvent_XPATH
+08/09/2020 20:22:39 devpinoyLogger Text of the locator: SteelTechnicalSeminar_XPATH value as :Steel Technical Seminar
+08/09/2020 20:22:51 devpinoyLogger Clicking on an Element : LiveEvent_XPATH
+08/09/2020 20:22:52 devpinoyLogger Text of the locator: JointUseSeminar_XPATH value as :Joint Use Seminar
+08/09/2020 20:23:05 devpinoyLogger Clicking on an Element : LiveEvent_XPATH
+08/09/2020 20:23:06 devpinoyLogger Text of the locator: WoodPoleTechnicalSeminar_XPATH value as :Wood Pole Technical Seminar
+08/09/2020 20:23:18 devpinoyLogger Clicking on an Element : DETAILSANDREGISTRATION_XPATH
+08/09/2020 20:23:19 devpinoyLogger Text of the locator: FIRSTNAME_XPATH value as :Rajesh
+08/09/2020 20:23:19 devpinoyLogger Text of the locator: LASTNAME_XPATH value as :Yadav
+08/09/2020 20:23:19 devpinoyLogger Text of the locator: COMPANY_XPATH value as :Centurylink
+08/09/2020 20:23:19 devpinoyLogger Text of the locator: STATE_XPATH value as :Nevada
+08/09/2020 20:23:19 devpinoyLogger Text of the locator: TITLE_XPATH value as :Technical Lead
+08/09/2020 20:23:19 devpinoyLogger Text of the locator: EMAIL_XPATH value as :rajesh.yadav@centurylink.com
+08/09/2020 20:23:20 devpinoyLogger Text of the locator: PHONE_XPATH value as :9971236668
+08/09/2020 20:23:32 devpinoyLogger Selecting from an element : WEBINAR_XPATH
+08/09/2020 20:23:32 devpinoyLogger Text of the locator: WEBINAR_XPATH value as :WEBINARS
+08/09/2020 20:23:45 devpinoyLogger Clicking on an Element : O-CALCTRAINING_XPATH
+08/09/2020 20:23:46 devpinoyLogger Text of the locator: PrivateTraining_XPATH value as :Private Training Seminars
+08/09/2020 20:23:47 devpinoyLogger Selecting from an element : HomePage_XPATH
+08/09/2020 20:23:52 devpinoyLogger Clicking on an Element : MyOsmoseServicesCard_XPATH
+08/09/2020 20:23:52 devpinoyLogger Text of the locator: MyOsmoseServicesFirstHeader_XPATH value as :My Osmose Services
+08/09/2020 20:23:52 devpinoyLogger Text of the locator: MyOsmoseServicesSecondHeader_XPATH value as :View & Manage
+08/09/2020 20:23:52 devpinoyLogger Clicking on an Element : ProjectGroupMenu_XPATH
+08/09/2020 20:23:53 devpinoyLogger Clicking on an Element : MOSCityOfColumbia_XPATH
+08/09/2020 20:23:54 devpinoyLogger Clicking on an Element : MOSColombiapit_XPATH
+08/09/2020 20:24:00 devpinoyLogger Clicking on an Element : WoodInspectionAndTreatmentLearnMoreBtn_XPATH
+08/09/2020 20:24:05 devpinoyLogger Text of the locator: WoodInspectionAndTreatmentPopupHeaderTxt_XPATH value as :Wood | Inspection & Treatment
+08/09/2020 20:24:05 devpinoyLogger Clicking on an Element : LearnMorePopupCloseBtn_XPATH
+08/09/2020 20:24:05 devpinoyLogger Clicking on an Element : WoodRestorationLearnMoreBtn_XPATH
+08/09/2020 20:24:11 devpinoyLogger Text of the locator: WoodRestorationPopupHeaderTxt_XPATH value as :Wood | Restoration
+08/09/2020 20:24:11 devpinoyLogger Clicking on an Element : LearnMorePopupCloseBtn_XPATH
+08/09/2020 20:24:11 devpinoyLogger Clicking on an Element : OcalcProLearnMoreBtn_XPATH
+08/09/2020 20:24:16 devpinoyLogger Text of the locator: OcalcProPopupHeaderTxt_XPATH value as :O-Calc Pro
+08/09/2020 20:24:16 devpinoyLogger Clicking on an Element : LearnMorePopupCloseBtn_XPATH
+08/09/2020 20:24:17 devpinoyLogger Clicking on an Element : SteelandConcreteAssessmentLearnMoreBtn_XPATH
+08/09/2020 20:24:22 devpinoyLogger Text of the locator: SteelandConcreteAssessmentPopupHeaderTxt_XPATH value as :Steel & Concrete | Assessment
+08/09/2020 20:24:22 devpinoyLogger Clicking on an Element : LearnMorePopupCloseBtn_XPATH
+08/09/2020 20:24:23 devpinoyLogger Clicking on an Element : SteelandConcreteRestorationLearnMoreBtn_XPATH
+08/09/2020 20:24:28 devpinoyLogger Text of the locator: SteelandConcreteRestorationPopupHeaderTxt_XPATH value as :Steel & Concrete | Restoration
+08/09/2020 20:24:28 devpinoyLogger Clicking on an Element : LearnMorePopupCloseBtn_XPATH
+08/09/2020 20:24:28 devpinoyLogger Clicking on an Element : OverheadLearnMoreBtn_XPATH
+08/09/2020 20:24:33 devpinoyLogger Text of the locator: OverheadPopupHeaderTxt_XPATH value as :Overhead
+08/09/2020 20:24:33 devpinoyLogger Clicking on an Element : LearnMorePopupCloseBtn_XPATH
+08/09/2020 20:24:34 devpinoyLogger Clicking on an Element : UndergroundLearnMoreBtn_XPATH
+08/09/2020 20:24:39 devpinoyLogger Text of the locator: UndergroundPopupHeaderTxt_XPATH value as :Underground
+08/09/2020 20:24:39 devpinoyLogger Clicking on an Element : LearnMorePopupCloseBtn_XPATH
+08/09/2020 20:24:40 devpinoyLogger Clicking on an Element : JointUseLearnMoreBtn_XPATH
+08/09/2020 20:24:45 devpinoyLogger Text of the locator: JointUsePopupHeaderTxt_XPATH value as :Joint Use
+08/09/2020 20:24:45 devpinoyLogger Clicking on an Element : LearnMorePopupCloseBtn_XPATH
+08/09/2020 20:24:45 devpinoyLogger Clicking on an Element : StrayVoltageLearnMore_XPATH
+08/09/2020 20:24:50 devpinoyLogger Text of the locator: StrayVoltagePopupHeaderTxt_XPATH value as :Stray Voltage
+08/09/2020 20:24:51 devpinoyLogger Clicking on an Element : LearnMorePopupCloseBtn_XPATH
+08/09/2020 20:24:51 devpinoyLogger Clicking on an Element : TechnicalServicesLearnMore_XPATH
+08/09/2020 20:24:56 devpinoyLogger Text of the locator: TechnicalServicesPopupHeaderTxt_XPATH value as :Technical Services
+08/09/2020 20:24:56 devpinoyLogger Clicking on an Element : LearnMorePopupCloseBtn_XPATH
+08/09/2020 20:24:57 devpinoyLogger Clicking on an Element : MapViewLearnMore_XPATH
+08/09/2020 20:25:02 devpinoyLogger Text of the locator: MapViewPopupHeaderTxt_XPATH value as :Map View
+08/09/2020 20:25:02 devpinoyLogger Clicking on an Element : LearnMorePopupCloseBtn_XPATH
+08/09/2020 20:25:03 devpinoyLogger Clicking on an Element : ProductCardFirstProduct_XPATH
+08/09/2020 20:25:09 devpinoyLogger Clicking on an Element : CloseButtonMOS_XPATH
+08/09/2020 20:25:10 devpinoyLogger Selecting from an element : HomePage_XPATH
+08/09/2020 20:25:13 devpinoyLogger Clicking on an Element : MyOsmoseServicesCard_XPATH
+08/09/2020 20:25:13 devpinoyLogger Clicking on an Element : ProductCardSecondProduct_XPATH
+08/09/2020 20:25:20 devpinoyLogger Clicking on an Element : CloseButtonMOS_XPATH
+08/09/2020 20:25:21 devpinoyLogger Selecting from an element : HomePage_XPATH
+08/09/2020 20:25:24 devpinoyLogger Clicking on an Element : MyOsmoseServicesCard_XPATH
+08/09/2020 20:25:24 devpinoyLogger Clicking on an Element : ProductCardThirdProduct_XPATH
+08/09/2020 20:25:30 devpinoyLogger Clicking on an Element : CloseButtonMOS_XPATH
+08/09/2020 20:25:31 devpinoyLogger Selecting from an element : HomePage_XPATH
+08/09/2020 20:25:35 devpinoyLogger Clicking on an Element : MyOsmoseServicesCard_XPATH
+08/09/2020 20:25:35 devpinoyLogger Clicking on an Element : ProductCardFourthProduct_XPATH
+08/09/2020 20:25:41 devpinoyLogger Clicking on an Element : CloseButtonMOS_XPATH
+08/09/2020 20:25:42 devpinoyLogger Selecting from an element : HomePage_XPATH
+08/09/2020 20:25:45 devpinoyLogger Clicking on an Element : MyOsmoseServicesCard_XPATH
+08/09/2020 20:25:46 devpinoyLogger Clicking on an Element : MOSProjectGroupMenu_XPATH
+08/09/2020 20:25:47 devpinoyLogger Clicking on an Element : MOSPedernalesElecCoop_XPATH
+08/09/2020 20:25:48 devpinoyLogger Clicking on an Element : MOSPedernalesECDev_XPATH
+08/09/2020 20:26:03 devpinoyLogger Clicking on an Element : MapViewCard_XPATH
+08/09/2020 20:26:06 devpinoyLogger Selecting from an element : HomePage_XPATH
+08/09/2020 20:26:09 devpinoyLogger Clicking on an Element : MyOsmoseServicesCard_XPATH
+08/09/2020 20:26:12 devpinoyLogger Clicking on an Element : MOSWoodInspectionAndTreatmentCard_XPATH
+08/09/2020 20:26:17 devpinoyLogger Selecting from an element : HomePage_XPATH
+08/09/2020 20:26:20 devpinoyLogger Clicking on an Element : MyOsmoseServicesCard_XPATH
+08/09/2020 20:26:40 devpinoyLogger Clicking on an Element : MOSWoodInspectionVideos_XPATH
+08/09/2020 20:26:57 devpinoyLogger Selecting from an element : HomePage_XPATH
+08/09/2020 20:27:00 devpinoyLogger Clicking on an Element : MyOsmoseServicesCard_XPATH
+08/09/2020 20:27:11 devpinoyLogger Clicking on an Element : MOSWoodInspectionProjectProfiles_XPATH
+08/09/2020 20:27:15 devpinoyLogger Selecting from an element : HomePage_XPATH
+08/09/2020 20:27:18 devpinoyLogger Clicking on an Element : MyOsmoseServicesCard_XPATH
+08/09/2020 20:27:22 devpinoyLogger Clicking on an Element : MOSWoodRestorationCard_XPATH
+08/09/2020 20:27:27 devpinoyLogger Selecting from an element : HomePage_XPATH
+08/09/2020 20:27:30 devpinoyLogger Clicking on an Element : MyOsmoseServicesCard_XPATH
+08/09/2020 20:27:50 devpinoyLogger Clicking on an Element : MOSWoodRestorationVideos_XPATH
+08/09/2020 20:28:05 devpinoyLogger Selecting from an element : HomePage_XPATH
+08/09/2020 20:28:08 devpinoyLogger Clicking on an Element : MyOsmoseServicesCard_XPATH
+08/09/2020 20:28:18 devpinoyLogger Clicking on an Element : MOSWoodRestorationProjectProfiles_XPATH
+08/09/2020 20:28:35 devpinoyLogger Selecting from an element : HomePage_XPATH
+08/09/2020 20:28:38 devpinoyLogger Clicking on an Element : MyOsmoseServicesCard_XPATH
+08/09/2020 20:28:48 devpinoyLogger Clicking on an Element : MOSUndergroundVideos_XPATH
+08/09/2020 20:28:56 devpinoyLogger Selecting from an element : HomePage_XPATH
+08/09/2020 20:28:59 devpinoyLogger Clicking on an Element : MyOsmoseServicesCard_XPATH
+08/09/2020 20:29:09 devpinoyLogger Clicking on an Element : MOSUndergroundProjectProfiles_XPATH
+08/09/2020 20:29:20 devpinoyLogger Selecting from an element : HomePage_XPATH
+08/09/2020 20:29:23 devpinoyLogger Clicking on an Element : MyOsmoseServicesCard_XPATH
+08/09/2020 20:29:25 devpinoyLogger Clicking on an Element : UndergroundCard_XPATH
+08/09/2020 20:29:32 devpinoyLogger Clicking on an Element : UndergroundPopUpCancelBtn_XPATH
+08/09/2020 20:29:35 devpinoyLogger Clicking on an Element : UndergroundCard_XPATH
+08/09/2020 20:29:37 devpinoyLogger Clicking on an Element : UndergroundPopUpOkBtn_XPATH
+08/09/2020 20:29:37 devpinoyLogger Selecting from an element : ContactUsFormSubjectdd_XPATH value as : 

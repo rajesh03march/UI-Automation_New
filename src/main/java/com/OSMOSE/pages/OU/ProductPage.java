@@ -10,7 +10,7 @@ import com.OSMOSE.base.Page;
 
 public class ProductPage extends Page {
 	public void clickOnOU360() {
-		ClickActions("HomePage_XPATH");
+		ClickActions("OUHomePage_XPATH");
 	}
 
 	public void clickProductLink() throws InterruptedException {
