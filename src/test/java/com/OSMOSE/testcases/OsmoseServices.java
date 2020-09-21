@@ -20,7 +20,6 @@ public class OsmoseServices extends BaseTest {
 	public void verifyMyOsmoseServicesCardClick() throws InterruptedException {
 		KnowledgeBasePage kb = new KnowledgeBasePage();
 		OsmoseServicesPage osp = kb.goOsmoseServices();
-		osp.clickOnOU360();
 		Thread.sleep(3000);
 		WebElement MyOsmoseServicesCard = Page.driver.findElement(By.xpath("//div[@id='card-knowBase']/div[1]/a/p"));
 		// Verifying the presence of My Osmose Services card on Home Page
@@ -369,8 +368,23 @@ public class OsmoseServices extends BaseTest {
 		Thread.sleep(10000);
 		osp.clickWoodTreatmentProjectProfiles();
 		Thread.sleep(3000);
+		// Verify the presence of Back Button
+		WebElement BackBtnProjectProfiles = Page.driver
+				.findElement(By.xpath("//*[@id='contentPart5']/div/div/div/div/div/div/div[1]/div[1]/h5/a"));
+		Assert.assertTrue(BackBtnProjectProfiles.isDisplayed());
+		Thread.sleep(3000);
+		// Verify the presence Document header text
+		String DocumentHeaderTxt = Page.driver
+				.findElement(By.xpath("//*[@id='contentPart5']/div/div/div/div/div/div/div[1]/div[1]/h5")).getText();
+		Assert.assertEquals(DocumentHeaderTxt, "Documents");
+		Thread.sleep(3000);
+		// Verification of the presence of document
+		WebElement DocumentContent = Page.driver
+				.findElement(By.xpath("//div[@class='pagiNation p-0']/div[1]/div[1]/a"));
+		Assert.assertTrue(DocumentContent.isDisplayed());
+		Thread.sleep(3000);
 	}
-	
+
 	@Test(priority = 18, enabled = true, description = "Verification of the click on Wood Restoration card")
 	public void VerifyWoodRestorationclick() throws InterruptedException {
 		KnowledgeBasePage kb = new KnowledgeBasePage();
@@ -445,7 +459,7 @@ public class OsmoseServices extends BaseTest {
 		Assert.assertTrue(DocumentContent.isDisplayed());
 		Thread.sleep(3000);
 	}
-	
+
 	@Test(priority = 21, enabled = true, description = "Verify the click on Videos under Underground card")
 	public void verifyClickonUndergroundVideos() throws InterruptedException {
 		KnowledgeBasePage kb = new KnowledgeBasePage();
@@ -458,8 +472,23 @@ public class OsmoseServices extends BaseTest {
 		Thread.sleep(10000);
 		osp.clickUndergroundVideos();
 		Thread.sleep(3000);
+		// Verify the presence of Back Button
+		WebElement BackButtonVideos = Page.driver
+				.findElement(By.xpath("//*[@id='contentPart3']/div/div/div/div/div/div/div[1]/div/h5/a"));
+		Assert.assertTrue(BackButtonVideos.isDisplayed());
+		Thread.sleep(3000);
+		// Verify the presence Videos header text
+		String VideosHeaderTxt = Page.driver
+				.findElement(By.xpath("//*[@id='contentPart3']/div/div/div/div/div/div/div[1]/div/h5")).getText();
+		Assert.assertEquals(VideosHeaderTxt, "Videos");
+		Thread.sleep(3000);
+		// Verification of the presence of video
+		WebElement VideoContent = Page.driver
+				.findElement(By.xpath("//*[@id='contentPart3']/div/div/div/div/div/div/div[2]/div/div[1]/div/img"));
+		Assert.assertTrue(VideoContent.isDisplayed());
+		Thread.sleep(3000);
 	}
-	
+
 	@Test(priority = 22, enabled = true, description = "Verify the click on Project Profiles under Underground card")
 	public void verifyClickonUndergroundProjectProfiles() throws InterruptedException {
 		KnowledgeBasePage kb = new KnowledgeBasePage();
@@ -472,8 +501,23 @@ public class OsmoseServices extends BaseTest {
 		Thread.sleep(10000);
 		osp.clickUnderstandProjectProfiles();
 		Thread.sleep(3000);
+		// Verify the presence of Back Button
+		WebElement BackBtnProjectProfiles = Page.driver
+				.findElement(By.xpath("//*[@id='contentPart5']/div/div/div/div/div/div/div[1]/div[1]/h5/a"));
+		Assert.assertTrue(BackBtnProjectProfiles.isDisplayed());
+		Thread.sleep(3000);
+		// Verify the presence Document header text
+		String DocumentHeaderTxt = Page.driver
+				.findElement(By.xpath("//*[@id='contentPart5']/div/div/div/div/div/div/div[1]/div[1]/h5")).getText();
+		Assert.assertEquals(DocumentHeaderTxt, "Documents");
+		Thread.sleep(3000);
+		// Verification of the presence of document
+		WebElement DocumentContent = Page.driver
+				.findElement(By.xpath("//div[@class='pagiNation p-0']/div[1]/div[1]/a"));
+		Assert.assertTrue(DocumentContent.isDisplayed());
+		Thread.sleep(3000);
 	}
-	
+
 	@Test(priority = 23, enabled = true, description = "Verify the pop-up after click on Underground card")
 	public void verifyPopUpUnderground() throws InterruptedException {
 		KnowledgeBasePage kb = new KnowledgeBasePage();
@@ -487,28 +531,32 @@ public class OsmoseServices extends BaseTest {
 		Thread.sleep(2000);
 		osp.clickUnderground();
 		Thread.sleep(3000);
-		WebElement popUptxt = Page.driver.findElement(By.xpath("//*[contains(text(),'Taking you to form to Request Setup for this Project')]"));
+		WebElement popUptxt = Page.driver
+				.findElement(By.xpath("//*[contains(text(),'Taking you to form to Request Setup for this Project')]"));
 		Assert.assertEquals(popUptxt.getText(), "Taking you to form to Request Setup for this Project");
-		WebElement cancelBtn = Page.driver.findElement(By.xpath("//*[@id='notMemberPG___BV_modal_body_']/div[2]/button[1]"));
+		WebElement cancelBtn = Page.driver
+				.findElement(By.xpath("//button[contains(text(),'CANCEL')]"));
 		Assert.assertTrue(cancelBtn.isDisplayed());
-		WebElement OkBtn = Page.driver.findElement(By.xpath("//*[@id='notMemberPG___BV_modal_body_']/div[2]/button[2]"));
+		WebElement OkBtn = Page.driver
+				.findElement(By.xpath("//button[contains(text(),'OK')]"));
 		Assert.assertTrue(OkBtn.isDisplayed());
 	}
-	
+
 	@Test(priority = 24, enabled = true, description = "Verify the click on Cancel button on the pop-up after click on Underground card")
 	public void verifyCancelClickOnPopUpUnderground() throws InterruptedException {
 		KnowledgeBasePage kb = new KnowledgeBasePage();
 		OsmoseServicesPage osp = kb.goOsmoseServices();
 		Thread.sleep(3000);
-		WebElement cancelBtn = Page.driver.findElement(By.xpath("//*[@id='notMemberPG___BV_modal_body_']/div[2]/button[1]"));
+		WebElement cancelBtn = Page.driver
+				.findElement(By.xpath("//button[contains(text(),'CANCEL')]"));
 		Assert.assertTrue(cancelBtn.isDisplayed());
 		Page.click("UndergroundPopUpCancelBtn_XPATH");
 		WebElement UndergroundCard = Page.driver
-				.findElement(By.xpath("//*[@id='contentPart']/div/div/div/div/div[7]/div"));
+				.findElement(By.xpath("//*[contains(text(),'Underground')]"));
 		// Verifying the presence of Underground card
-		Assert.assertTrue(UndergroundCard.isDisplayed());		
+		Assert.assertTrue(UndergroundCard.isDisplayed());
 	}
-	
+
 	@Test(priority = 25, enabled = true, description = "Verify the click on ok button on the pop-up after click on Underground card")
 	public void verifyOkClickOnPopUpUnderground() throws InterruptedException {
 		KnowledgeBasePage kb = new KnowledgeBasePage();
@@ -516,14 +564,12 @@ public class OsmoseServices extends BaseTest {
 		Thread.sleep(3000);
 		osp.clickUnderground();
 		Thread.sleep(2000);
-		WebElement okBtn = Page.driver.findElement(By.xpath("//*[@id='notMemberPG___BV_modal_body_']/div[2]/button[2]"));
+		WebElement okBtn = Page.driver
+				.findElement(By.xpath("//button[contains(text(),'OK')]"));
 		Assert.assertTrue(okBtn.isDisplayed());
 		Page.click("UndergroundPopUpOkBtn_XPATH");
 		String defaultValue = Page.getdefaultValuefromdropdown("ContactUsFormSubjectdd_XPATH");
 		Assert.assertEquals(defaultValue, "Project Support");
 	}
-	
-	
-	
 
 }

@@ -3,10 +3,6 @@ package com.OSMOSE.pages.OU;
 import com.OSMOSE.base.Page;
 
 public class ContactPage extends Page {
-	public void clickOnOU360() {
-		click("HomePage_XPATH");
-	}
-
 	public void clickContactUsMainMenudd() {
 		click("ContactUsMainMenudd_XPATH");
 	}
