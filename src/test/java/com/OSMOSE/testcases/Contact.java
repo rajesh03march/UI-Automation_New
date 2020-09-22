@@ -13,7 +13,6 @@ public class Contact extends BaseTest {
 	public void verifyContactUsMenuContents() {
 		ProductPage pp = new ProductPage();
 		ContactPage cp = pp.goContact();
-		cp.clickOnOU360();
 		cp.clickContactUsMainMenudd();
 		Assert.assertEquals(Page.getText("ContactUsMenu_XPATH"), "Contact Us");
 		Assert.assertEquals(Page.getText("ViewContactsMenu_XPATH"), "View Contacts");

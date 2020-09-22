@@ -16,14 +16,14 @@ import java.util.Hashtable;
 import java.util.Properties;
 
 public class OULogin extends BaseTest {
-	
+
 	public static Properties config = new Properties();
 
 	@Test(priority = 0, enabled = true, description = "Verify the Osmose University card on home page")
 	public void verifyOUCard() {
 		Assert.assertEquals(Page.getText("OUCard_XPATH"), "Osmose University");
 	}
-	
+
 	@Test(priority = 1, enabled = true, description = "Verify the Knowledge Base card on home page")
 	public void verifyKnowledgeBaseCard() {
 		Assert.assertEquals(Page.getText("KBCard_XPATH"), "Knowledge Base");
@@ -33,7 +33,7 @@ public class OULogin extends BaseTest {
 	public void verifyProductCard() {
 		Assert.assertEquals(Page.getText("ProCard_XPATH"), "Products");
 	}
-	
+
 	@Test(priority = 3, enabled = true, description = "Verify the Contact Us Main menu on home page")
 	public void verifyContactUs() {
 		Assert.assertEquals(Page.getText("ContactUsMainMenudd_XPATH"), "CONTACT US");
@@ -51,17 +51,17 @@ public class OULogin extends BaseTest {
 		Assert.assertEquals(Page.getAttributeValue("OUCartVideo1_CSS", "alt"), "Wood Technical Seminar");
 		Assert.assertEquals(Page.getAttributeValue("OUCarrVideo2_CSS", "alt"), "Steel Technical Seminar");
 	}
-	
+
 	@Test(priority = 6, enabled = true, description = "Verify the click on Osmose University Navigation")
 	public void verifyOsmoseUniversityNavigationClick() throws InterruptedException {
 		Login Lo = new Login();
 		HomeOU ou = Lo.goHomeOU();
 		ou.clickOsmoseUniversityNavigation();
 		Thread.sleep(3000);
-		//Thread.sleep(Integer.parseInt(config.getProperty("Thread1000")));
+		// Thread.sleep(Integer.parseInt(config.getProperty("Thread1000")));
 		Assert.assertEquals(Page.getText("OsmoseUniversityTxt_XPATH"), "Osmose University");
 		Page.click("OUHomePage_XPATH");
-		
+
 	}
 
 	@Test(priority = 7, enabled = true, description = "Verify that Live Events link is clickable")
@@ -149,8 +149,8 @@ public class OULogin extends BaseTest {
 		HomeOU ou = Lo.goHomeOU();
 		ou.clickWebinars();
 		Assert.assertEquals(Page.getText("WEBINAR_XPATH"), "WEBINARS");
-		Assert.assertEquals(Page.getText("UPCOMING_XPATH"),"UPCOMING");
-		Assert.assertEquals(Page.getText("HISTORICAL_XPATH"),"HISTORICAL");
+		Assert.assertEquals(Page.getText("UPCOMING_XPATH"), "UPCOMING");
+		Assert.assertEquals(Page.getText("HISTORICAL_XPATH"), "HISTORICAL");
 	}
 
 	// Keep this false always
@@ -208,10 +208,12 @@ public class OULogin extends BaseTest {
 		ou.OCALCTRAINING();
 		Assert.assertEquals(Page.getText("PrivateTraining_XPATH"), "Private Training Seminars");
 		Page.driver.switchTo().defaultContent();
-		//Page.click("OUHomePage_XPATH");
 	}
-	
-	//US-100560-100646-Verify the search functionality in Historical Webinars page
+
+	// US-100560-100646-Verify the search functionality in Historical Webinars page
+	// US-100559-100622-Verify user accessibility to Historical Webinars
+	// US-100559-100639-Verify User Interface and Contents in the Historical Webinar
+	// page
 	@Test(dataProviderClass = Utilities.class, dataProvider = "dp", priority = 22, enabled = true, description = "Verify the Search on Webinars - Historical and its contents")
 	public void verifySearchWebinarsHistorical(Hashtable<String, String> data) throws InterruptedException {
 		Login Lo = new Login();
@@ -219,21 +221,24 @@ public class OULogin extends BaseTest {
 		ou.clickWebinars();
 		Page.click("HISTORICAL_XPATH");
 		Thread.sleep(3000);
-		//Verification of the presence of Search Bar
-		WebElement historicalSearchBar = Page.driver.findElement(By.xpath("//input[@class='inputSearch form-control']"));
+		// Verification of the presence of Search Bar
+		WebElement historicalSearchBar = Page.driver
+				.findElement(By.xpath("//input[@class='inputSearch form-control']"));
 		Assert.assertTrue(historicalSearchBar.isDisplayed());
-		//Verification of Videos Text
-		Assert.assertEquals(Page.getText("HistoricalVideos_XPATH"), "Videos");
+		// Verification of Videos Text
+		Assert.assertEquals(Page.getText("HistoricalVideos_XPATH"), "Historical Webinars");
 		Page.type("historicalSearchBar_XPATH", data.get("TypeHistoricalSearchBar"));
 		Page.driver.findElement(By.xpath("//input[@class='inputSearch form-control']")).sendKeys(Keys.ENTER);
 		Thread.sleep(3000);
-		WebElement videoContent = Page.driver.findElement(By.xpath("//div[@class='vTitle' and contains(text(), 'Osmose Fire-Guard')]"));
+		WebElement videoContent = Page.driver
+				.findElement(By.xpath("//div[@class='vTitle' and contains(text(), 'Osmose Fire-Guard')]"));
 		Assert.assertTrue(videoContent.isDisplayed());
-		Assert.assertEquals(Page.getText("HistoricalVideContent_XPATH"), "Osmose Fire-Guard");
+		Assert.assertEquals(Page.getText("HistoricalVideoContent_XPATH"), "Osmose Fire-Guard");
 		Page.click("ClearSearchBtn_XPATH");
 	}
-	
-	//US-100560-100648-Verify the search functionality in  Historical Webinars page  for Invalid input
+
+	// US-100560-100647-Verify the search functionality in Historical Webinars page
+	// for Invalid input
 	@Test(dataProviderClass = Utilities.class, dataProvider = "dp", priority = 23, enabled = true, description = "Verify the Invalid search on Webinars - Historical and its contents")
 	public void verifyInvalidSearchHistorical(Hashtable<String, String> data) throws InterruptedException {
 		Login Lo = new Login();
@@ -246,31 +251,35 @@ public class OULogin extends BaseTest {
 		System.out.println(noresults.getText());
 		Page.click("SearchBoxClear_XPATH");
 	}
-	
-	//US-100560-100648-Verify the Sorting Order of the Search Results in the Historical Webinar page
-	@Test(dataProviderClass = Utilities.class, dataProvider = "dp", priority = 24, enabled = true, description = "Verify the Sort on Webinars - Historical and its contents")
+
+	// US-100560-100648-Verify the Sorting Order of the Search Results in the
+	// Historical Webinar page
+	@Test(dataProviderClass = Utilities.class, dataProvider = "dp", priority = 24, enabled = true, description = "Verify the Sort on Webinars - Historical")
 	public void verifySortWebinarsHistorical(Hashtable<String, String> data) throws InterruptedException {
 		Login Lo = new Login();
 		HomeOU ou = Lo.goHomeOU();
 		ou.clickWebinars();
 		Page.click("HISTORICAL_XPATH");
 		Thread.sleep(3000);
-		//Verification of the presence of Search Bar
-		WebElement historicalSearchBar = Page.driver.findElement(By.xpath("//input[@class='inputSearch form-control']"));
+		// Verification of the presence of Search Bar
+		WebElement historicalSearchBar = Page.driver
+				.findElement(By.xpath("//input[@class='inputSearch form-control']"));
 		Assert.assertTrue(historicalSearchBar.isDisplayed());
-		//Verification of Videos Text
-		Assert.assertEquals(Page.getText("HistoricalVideos_XPATH"), "Videos");
+		// Verification of Videos Text
+		Assert.assertEquals(Page.getText("HistoricalVideos_XPATH"), "Historical Webinars");
 		Page.type("historicalSearchBar_XPATH", data.get("TypeHistoricalSearchBarSort"));
 		Page.driver.findElement(By.xpath("//input[@class='inputSearch form-control']")).sendKeys(Keys.ENTER);
 		Thread.sleep(3000);
-		WebElement videoContent = Page.driver.findElement(By.xpath("//div[@class='vTitle' and contains(text(), 'Osmose Fire-Guard')]"));
+		WebElement videoContent = Page.driver
+				.findElement(By.xpath("//div[@class='vTitle' and contains(text(), 'Osmose Fire-Guard')]"));
 		Assert.assertTrue(videoContent.isDisplayed());
-		Assert.assertEquals(Page.getText("HistoricalVideContent_XPATH"), "Osmose Fire-Guard");
+		Assert.assertEquals(Page.getText("HistoricalVideoContent_XPATH"), "Osmose Fire-Guard");
 		Page.click("SearchBoxClear_XPATH");
 	}
-	
-	//US-100560-100649-Verify the Clear search functionality in Historical Webinars page
-	@Test(dataProviderClass = Utilities.class, dataProvider = "dp", priority = 25, enabled = true, description = "Verify the Sort on Webinars - Historical and its contents")
+
+	// US-100560-100649-Verify the Clear search functionality in Historical Webinars
+	// page
+	@Test(dataProviderClass = Utilities.class, dataProvider = "dp", priority = 25, enabled = true, description = "Verify the Clear search on Webinars - Historical")
 	public void verifyClearSearchHistorical(Hashtable<String, String> data) throws InterruptedException {
 		Login Lo = new Login();
 		HomeOU ou = Lo.goHomeOU();
@@ -286,4 +295,96 @@ public class OULogin extends BaseTest {
 		Page.click("ClearSearchBtn_XPATH");
 	}
 
+	// US-100559-100645-Verify the Video gallery layout in Historical Webinar page
+	// US-100559-100642-Verify System is allowing user to open the video to play in the content viewer on the same page.
+	@Test(priority = 26, enabled = true, description = "Verify the Video Gallery Layout on Webinars - Historical")
+	public void verifyVideoGalleryHistorical() throws InterruptedException {
+		Login Lo = new Login();
+		HomeOU ou = Lo.goHomeOU();
+		ou.clickWebinars();
+		Page.click("HISTORICAL_XPATH");
+		Thread.sleep(3000);
+		// Verification of the presence of Search Bar
+		WebElement historicalSearchBar = Page.driver
+				.findElement(By.xpath("//input[@class='inputSearch form-control']"));
+		Assert.assertTrue(historicalSearchBar.isDisplayed());
+		// Verification of Videos Text
+		Assert.assertEquals(Page.getText("HistoricalVideos_XPATH"), "Historical Webinars");
+		Thread.sleep(3000);
+		WebElement videoTitle = Page.driver
+				.findElement(By.xpath("//div[@class='vTitle' and contains(text(), 'Osmose Fire-Guard')]"));
+		Assert.assertTrue(videoTitle.isDisplayed());
+		Assert.assertEquals(Page.getText("HistoricalVideoContent_XPATH"), "Osmose Fire-Guard");
+		WebElement videoDescription = Page.driver.findElement(
+				By.xpath("//div[@class='vDesc text-left font12px' and contains(text(), 'Osmose Fire-Guard')]"));
+		Assert.assertTrue(videoDescription.isDisplayed());
+		Assert.assertEquals(Page.getText("HistoricalVideoDescription_XPATH"), "Osmose Fire-Guard");
+		videoTitle.click();
+		Thread.sleep(8000);
+		Page.click("OUBoxCloseBtn_XPATH");
+	}
+
+	// US-100559-100933-Verify System is displaying Search results based on the
+	// selected popular queries
+	//US-100559-100867-Check the Usability for Historical Webinar Page
+	@Test(priority = 27, enabled = true, description = "Verify that Search results based on the selected popular queries")
+	public void verifyPopularQueriesSearchResults() throws InterruptedException {
+		Login Lo = new Login();
+		HomeOU ou = Lo.goHomeOU();
+		ou.clickWebinars();
+		Page.click("HISTORICAL_XPATH");
+		Thread.sleep(3000);
+		// Verification of the presence of Popular filter
+		WebElement historicalPopularFilter = Page.driver.findElement(By.xpath("//a[@id='Filter']"));
+		Assert.assertTrue(historicalPopularFilter.isDisplayed());
+		Page.click("RestorationPopularFilter_XPATH");
+		Thread.sleep(3000);
+		Assert.assertEquals(Page.getText("HistoricalVideos_XPATH"), "Historical Webinars");
+		Thread.sleep(3000);
+		WebElement videoTitle = Page.driver
+				.findElement(By.xpath("//div[@class='vTitle' and contains(text(), 'OsmoWeld MPF Pole Repair')]"));
+		Assert.assertTrue(videoTitle.isDisplayed());
+		Assert.assertEquals(Page.getText("RestorationHVideoContent_XPATH"), "OsmoWeld MPF Pole Repair");
+		WebElement videoDescription = Page.driver.findElement(
+				By.xpath("//div[@class='vDesc text-left font12px' and contains(text(), 'OsmoWeld MPF & LV')]"));
+		Assert.assertTrue(videoDescription.isDisplayed());
+		Assert.assertEquals(Page.getText("RestorationHVideoDescription_XPATH"), "OsmoWeld MPF & LV");
+		Thread.sleep(3000);
+		Page.click("ClearSearchBtn_XPATH");
+	}
+	
+	//US-100559-100934-Verify System is updating Search results when user deselects buttons in the  popular queries sections
+	@Test(priority = 28, enabled = true, description = "Verify that Search results are updated when selected popular queries are deselected")
+	public void verifyPopularQueriesReset() throws InterruptedException {
+		Login Lo = new Login();
+		HomeOU ou = Lo.goHomeOU();
+		ou.clickWebinars();
+		Page.click("HISTORICAL_XPATH");
+		Thread.sleep(3000);
+		// Verification of the presence of Popular filter
+		WebElement historicalPopularFilter = Page.driver.findElement(By.xpath("//a[@id='Filter']"));
+		Assert.assertTrue(historicalPopularFilter.isDisplayed());
+		Page.click("RestorationPopularFilter_XPATH");
+		Thread.sleep(2000);
+		WebElement videoTitle = Page.driver
+				.findElement(By.xpath("//div[@class='vTitle' and contains(text(), 'OsmoWeld MPF Pole Repair')]"));
+		Assert.assertTrue(videoTitle.isDisplayed());
+		Assert.assertEquals(Page.getText("RestorationHVideoContent_XPATH"), "OsmoWeld MPF Pole Repair");
+		WebElement videoDescription = Page.driver.findElement(
+				By.xpath("//div[@class='vDesc text-left font12px' and contains(text(), 'OsmoWeld MPF & LV')]"));
+		Assert.assertTrue(videoDescription.isDisplayed());
+		Assert.assertEquals(Page.getText("RestorationHVideoDescription_XPATH"), "OsmoWeld MPF & LV");
+		Thread.sleep(2000);
+		Page.click("ClearSearchBtn_XPATH");
+		Thread.sleep(3000);
+		WebElement videoTitle1 = Page.driver
+				.findElement(By.xpath("//div[@class='vTitle' and contains(text(), 'Osmose Fire-Guard')]"));
+		Assert.assertTrue(videoTitle1.isDisplayed());
+		Assert.assertEquals(Page.getText("HistoricalVideoContent_XPATH"), "Osmose Fire-Guard");
+		WebElement videoDescription1 = Page.driver.findElement(
+				By.xpath("//div[@class='vDesc text-left font12px' and contains(text(), 'Osmose Fire-Guard')]"));
+		Assert.assertTrue(videoDescription1.isDisplayed());
+		Assert.assertEquals(Page.getText("HistoricalVideoDescription_XPATH"), "Osmose Fire-Guard");
+		Page.click("OUHomePage_XPATH");
+	}
 }

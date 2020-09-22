@@ -95,6 +95,7 @@ public class KnowledgeBase extends BaseTest {
 		Assert.assertTrue(Page.driver
 				.findElement(By.xpath("//*[@id='collapseFilter']/div/div/div/div/div/div[1]/label")).isDisplayed());
 		Assert.assertEquals(Page.getText("JointUseFilter_XPATH"), "Joint Use");
+		Thread.sleep(2000);
 		kb.ClickPopularQueriesFilter();
 		Thread.sleep(2000);
 		Assert.assertFalse(Page.driver.findElement(By.xpath("//div[@id='collapseFilter']/div")).isDisplayed());
@@ -107,8 +108,7 @@ public class KnowledgeBase extends BaseTest {
 		ContactPage cp = new ContactPage();
 		KnowledgeBasePage kb = cp.goKnowledgeBase();
 		// Steel and Concrete Assessment card presence verification
-		Assert.assertTrue(Page.driver
-				.findElement(By.xpath("//*[contains(text(),'Steel & Concrete | Assessment')]"))
+		Assert.assertTrue(Page.driver.findElement(By.xpath("//*[contains(text(),'Steel & Concrete | Assessment')]"))
 				.isDisplayed());
 	}
 
@@ -119,8 +119,7 @@ public class KnowledgeBase extends BaseTest {
 		ContactPage cp = new ContactPage();
 		KnowledgeBasePage kb = cp.goKnowledgeBase();
 		// Steel and Concrete Restoration card presence verification
-		Assert.assertTrue(Page.driver
-				.findElement(By.xpath("//*[contains(text(),'Steel & Concrete | Restoration')]"))
+		Assert.assertTrue(Page.driver.findElement(By.xpath("//*[contains(text(),'Steel & Concrete | Restoration')]"))
 				.isDisplayed());
 	}
 
@@ -131,9 +130,7 @@ public class KnowledgeBase extends BaseTest {
 		ContactPage cp = new ContactPage();
 		KnowledgeBasePage kb = cp.goKnowledgeBase();
 		// Wood Inspection And Treatment card presence verification
-		Assert.assertTrue(Page.driver
-				.findElement(By.xpath("//*[contains(text(),'Wood | Treatments')]"))
-				.isDisplayed());
+		Assert.assertTrue(Page.driver.findElement(By.xpath("//*[contains(text(),'Wood | Treatments')]")).isDisplayed());
 	}
 
 	// US-98499-98607-Verify that clicking on the header on the tiles in KB landing
@@ -143,85 +140,75 @@ public class KnowledgeBase extends BaseTest {
 		ContactPage cp = new ContactPage();
 		KnowledgeBasePage kb = cp.goKnowledgeBase();
 		// Wood Restoration Card presence verification
-		Assert.assertTrue(Page.driver
-				.findElement(By.xpath("//*[contains(text(),'Wood | Restoration')]"))
-				.isDisplayed());
+		Assert.assertTrue(
+				Page.driver.findElement(By.xpath("//*[contains(text(),'Wood | Restoration')]")).isDisplayed());
 	}
-	
+
 	// US-98499-98607-Verify that clicking on the header on the tiles in KB landing
 	// page will take the user to refined search result page
 	@Test(priority = 10, enabled = true, description = "Verify the presence of  Underground")
 	public void verifyPresenceUndergroundCard() throws InterruptedException {
 		ContactPage cp = new ContactPage();
 		KnowledgeBasePage kb = cp.goKnowledgeBase();
-		//  Underground card presence verification
-		Assert.assertTrue(Page.driver
-				.findElement(By.xpath("//*[contains(text(),'Underground')]"))
-				.isDisplayed());
+		// Underground card presence verification
+		Assert.assertTrue(Page.driver.findElement(By.xpath("//*[contains(text(),'Underground')]")).isDisplayed());
 	}
-	
+
 	// US-98499-98607-Verify that clicking on the header on the tiles in KB landing
 	// page will take the user to refined search result page
 	@Test(priority = 11, enabled = true, description = "Verify the presence of Overhead")
 	public void verifyPresenceOverheadCard() throws InterruptedException {
 		ContactPage cp = new ContactPage();
 		KnowledgeBasePage kb = cp.goKnowledgeBase();
-		//  Overhead card presence verification
-		Assert.assertTrue(Page.driver
-				.findElement(By.xpath("//*[contains(text(),'Overhead')]"))
-				.isDisplayed());
+		// Overhead card presence verification
+		Assert.assertTrue(Page.driver.findElement(By.xpath("//*[contains(text(),'Overhead')]")).isDisplayed());
 	}
-	
+
 	// US-98499-98607-Verify that clicking on the header on the tiles in KB landing
 	// page will take the user to refined search result page
 	@Test(priority = 12, enabled = true, description = "Verify the presence of Joint Use")
 	public void verifyPresenceJointUseCard() throws InterruptedException {
 		ContactPage cp = new ContactPage();
 		KnowledgeBasePage kb = cp.goKnowledgeBase();
-		//  Joint Use card presence verification
-		Assert.assertTrue(Page.driver
-				.findElement(By.xpath("//*[contains(text(),'Joint Use')]"))
-				.isDisplayed());
+		// Joint Use card presence verification
+		Assert.assertTrue(Page.driver.findElement(By.xpath("//*[contains(text(),'Joint Use')]")).isDisplayed());
 	}
-	
+
 	// US-98499-98607-Verify that clicking on the header on the tiles in KB landing
 	// page will take the user to refined search result page
 	@Test(priority = 13, enabled = true, description = "Verify the presence of Pole Replacement")
 	public void verifyPresencePoleReplacementCard() throws InterruptedException {
 		ContactPage cp = new ContactPage();
 		KnowledgeBasePage kb = cp.goKnowledgeBase();
-		//  Pole Replacement card presence verification
-		Assert.assertTrue(Page.driver
-				.findElement(By.xpath("//h5[contains(text(),'Pole Replacement')]"))
-				.isDisplayed());
+		// Pole Replacement card presence verification
+		Assert.assertTrue(Page.driver.findElement(By.xpath("//h5[contains(text(),'Pole Replacement')]")).isDisplayed());
 	}
-	
+
 	// US-98499-98607-Verify that clicking on the header on the tiles in KB landing
 	// page will take the user to refined search result page
 	@Test(priority = 14, enabled = true, description = "Verify the presence of Storm Support")
 	public void verifyPresenceStormSupportCard() throws InterruptedException {
 		ContactPage cp = new ContactPage();
 		KnowledgeBasePage kb = cp.goKnowledgeBase();
-		//  Storm Support card presence verification
-		Assert.assertTrue(Page.driver
-				.findElement(By.xpath("//*[contains(text(),'Storm Support')]"))
-				.isDisplayed());
+		// Storm Support card presence verification
+		Assert.assertTrue(Page.driver.findElement(By.xpath("//*[contains(text(),'Storm Support')]")).isDisplayed());
 	}
-	
+
 	// US-98499-98607-Verify that clicking on the header on the tiles in KB landing
 	// page will take the user to refined search result page
 	@Test(priority = 15, enabled = true, description = "Verify the presence of Products")
 	public void verifyPresenceProductsCard() throws InterruptedException {
 		ContactPage cp = new ContactPage();
 		KnowledgeBasePage kb = cp.goKnowledgeBase();
-		//  Products card presence verification
-		Assert.assertTrue(Page.driver
-				.findElement(By.xpath("//*[contains(text(),'Products')]"))
-				.isDisplayed());
+		// Products card presence verification
+		Assert.assertTrue(Page.driver.findElement(By.xpath("//*[contains(text(),'Products')]")).isDisplayed());
 	}
 
+	// Keep this false always
 	// US-98498-98739-Verify tiles related to News Feed section
-	@Test(priority = 16, enabled = true, description = "Verify the presence of Industry News Card")
+	// US-98508-98701-Verify Industry News layout and UI in KB landing
+	// US-98508-98702-Verify the number of items displayed in the Industry News tile
+	@Test(priority = 16, enabled = false, description = "Verify the presence of Industry News Card")
 	public void verifyPresenceIndustryNewsCard() throws InterruptedException {
 		ContactPage cp = new ContactPage();
 		KnowledgeBasePage kb = cp.goKnowledgeBase();
@@ -229,8 +216,21 @@ public class KnowledgeBase extends BaseTest {
 		Assert.assertTrue(
 				Page.driver.findElement(By.xpath("//*[@id='contentPart0']/div/div/div/div/div[2]/div[1]/div[1]/div/h5"))
 						.isDisplayed());
+		//Verification of See more link
 		Assert.assertTrue(Page.driver
 				.findElement(By.xpath("//*[@id='contentPart0']/div/div/div/div/div[2]/div[1]/div[2]/div[4]/a"))
+				.isDisplayed());
+		//Verification of First section of the news
+		Assert.assertTrue(Page.driver
+				.findElement(By.xpath("//div[@class='cardMain']/div[1]/div[1]"))
+				.isDisplayed());
+		//Verification of Second section of the news
+		Assert.assertTrue(Page.driver
+				.findElement(By.xpath("//div[@class='cardMain']/div[2]/div[1]"))
+				.isDisplayed());
+		//Verification of Third section of the news
+		Assert.assertTrue(Page.driver
+				.findElement(By.xpath("//div[@class='cardMain']/div[3]/div[1]"))
 				.isDisplayed());
 	}
 
@@ -254,21 +254,21 @@ public class KnowledgeBase extends BaseTest {
 		KnowledgeBasePage kb = cp.goKnowledgeBase();
 		// Project of the week Card presence verification
 		Assert.assertTrue(
-				Page.driver.findElement(By.xpath("//*[@id='contentPart0']/div/div/div/div/div[2]/div[3]/div[1]/div/h5"))
+				Page.driver.findElement(By.xpath("//*[contains(text(),'Project of the Week')]"))
 						.isDisplayed());
 		Assert.assertTrue(Page.driver
-				.findElement(By.xpath("//*[@id='contentPart0']/div/div/div/div/div[2]/div[3]/div[2]/div[2]/a"))
+				.findElement(By.xpath("//*[contains(text(),'View Project')]"))
 				.isDisplayed());
 	}
 
-	//// US-98500-98610-Verify that KB Landing page will have a "Gaff Gallery"
-	//// section which links to a dedicated Gallery Page.
+	// US-98500-98610-Verify that KB Landing page will have a "Gaff Gallery"
+	// section which links to a dedicated Gallery Page.
 	@Test(priority = 19, enabled = true, description = "Verify the presence of What's wrong with this Picture? Card")
 	public void verifyPresenceWhatswrongwiththisPictureCard() throws InterruptedException {
 		ContactPage cp = new ContactPage();
 		KnowledgeBasePage kb = cp.goKnowledgeBase();
 		// What's wrong with this Picture? Card presence verification
-		Assert.assertTrue(Page.driver.findElement(By.xpath("//*[@id='app']/div/div[5]/div/div/div[1]")).isDisplayed());
+		Assert.assertTrue(Page.driver.findElement(By.xpath("//h5[contains(text(),'Whats wrong with this picture?')]")).isDisplayed());
 	}
 
 	// US-98500-99007-Verify KB Landing page is displaying carousel Video section
@@ -277,7 +277,7 @@ public class KnowledgeBase extends BaseTest {
 		ContactPage cp = new ContactPage();
 		KnowledgeBasePage kb = cp.goKnowledgeBase();
 		// Featured Videos Card presence verification
-		Assert.assertTrue(Page.driver.findElement(By.xpath("//*[@id='app']/div/div[5]/div/div/div[2]")).isDisplayed());
+		Assert.assertTrue(Page.driver.findElement(By.xpath("//h5[contains(text(),'Featured Videos')]")).isDisplayed());
 	}
 
 	// US 98500-98612-Verify that KB landing page will also display a section for
@@ -289,7 +289,7 @@ public class KnowledgeBase extends BaseTest {
 		ContactPage cp = new ContactPage();
 		KnowledgeBasePage kb = cp.goKnowledgeBase();
 		// Suggested Contents Card presence verification
-		Assert.assertTrue(Page.driver.findElement(By.xpath("//*[@id='app']/div/div[5]/div/div/div[3]")).isDisplayed());
+		Assert.assertTrue(Page.driver.findElement(By.xpath("//h5[contains(text(),'Suggested Content')]")).isDisplayed());
 	}
 
 	// US-98500-99009-Verify  O-Calc Pro section in the KB landing page
@@ -300,22 +300,22 @@ public class KnowledgeBase extends BaseTest {
 		// verification of the presence of buttons and text
 		Assert.assertTrue(Page.driver
 				.findElement(By
-						.xpath("//*[@id=\"contentPart0\"]/div/div/div/div/div[2]/div[2]/div/div[2]/p/ul/li[1]/button"))
+						.xpath("//button[contains(text(),'TRY IT NOW')]"))
 				.isDisplayed());
 		Assert.assertEquals(Page.getText("TryItNowBtn_XPATH"), "TRY IT NOW");
 		Assert.assertTrue(Page.driver
 				.findElement(By
-						.xpath("//*[@id=\"contentPart0\"]/div/div/div/div/div[2]/div[2]/div/div[2]/p/ul/li[2]/button"))
+						.xpath("//button[contains(text(),'TRAINING SCHEDULE')]"))
 				.isDisplayed());
 		Assert.assertEquals(Page.getText("TrainingScheduleBtn_XPATH"), "TRAINING SCHEDULE");
 		Assert.assertTrue(Page.driver
 				.findElement(By
-						.xpath("//*[@id=\"contentPart0\"]/div/div/div/div/div[2]/div[2]/div/div[2]/p/ul/li[3]/button"))
+						.xpath("//button[contains(text(),'BROCHURE')]"))
 				.isDisplayed());
 		Assert.assertEquals(Page.getText("BrochureBtn_XPATH"), "BROCHURE");
 		Thread.sleep(3000);
 		String OcalProCard_Txt = Page.driver
-				.findElement(By.xpath("//*[@id='contentPart0']/div/div/div/div/div[2]/div[2]/div/div[1]/p")).getText();
+				.findElement(By.xpath("//*[contains(text(),'Structural Analysis Software for Utility Poles')]")).getText();
 		Assert.assertEquals(OcalProCard_Txt, "Structural Analysis Software for Utility Poles");
 
 	}
@@ -330,12 +330,12 @@ public class KnowledgeBase extends BaseTest {
 		KnowledgeBasePage kb = cp.goKnowledgeBase();
 		// verification of the presence of Items
 		Assert.assertTrue(
-				Page.driver.findElement(By.xpath("//*[@id=\"app\"]/div/div[5]/div/div/div[3]/div/div/div/button[2]"))
+				Page.driver.findElement(By.xpath("//button[@class='slick-next slick-arrow']"))
 						.isDisplayed());
 		Page.click("SuggestedContentsSlider_XPATH");
 		Thread.sleep(4000);
 		String suggestedContentsToolTip = Page.driver
-				.findElement(By.xpath("//*[@id=\"app\"]/div/div[5]/div/div/div[3]/div/div/div/div/div/div[3]/div/div"))
+				.findElement(By.xpath("//*[@title='Osmose Bulletin']"))
 				.getAttribute("title");
 		Thread.sleep(4000);
 		Assert.assertEquals(suggestedContentsToolTip, "Osmose Bulletin");
@@ -352,15 +352,13 @@ public class KnowledgeBase extends BaseTest {
 		ContactPage cp = new ContactPage();
 		KnowledgeBasePage kb = cp.goKnowledgeBase();
 		// verification of the presence of items
-		Assert.assertTrue(
-				Page.driver.findElement(By.xpath("//*[@id=\"app\"]/div/div[5]/div/div/div[3]/div/div/div/button[2]"))
-						.isDisplayed());
-		kb.clickSliderIcon();
+		//Assert.assertTrue(Page.driver.findElement(By.xpath("//button[@class='slick-next slick-arrow']")).isDisplayed());
+		//kb.clickSliderIcon();
 		Thread.sleep(4000);
 		kb.clickItemSuggestedContents();
 		Thread.sleep(5000);
 		// verification of cross icon
-		Assert.assertTrue(Page.driver.findElement(By.xpath("//*[@id=\"openAdminMyquotes___BV_modal_body_\"]/button"))
+		Assert.assertTrue(Page.driver.findElement(By.xpath("//*[@id='openAdminMyquotes___BV_modal_body_']/button"))
 				.isDisplayed());
 		kb.clickBoxCloseBtn();
 	}
@@ -374,7 +372,7 @@ public class KnowledgeBase extends BaseTest {
 		kb.clickVideoFeaturedVideo();
 		Thread.sleep(5000);
 		// verification of cross icon
-		Assert.assertTrue(Page.driver.findElement(By.xpath("//*[@id=\"openAdminMyquotes___BV_modal_body_\"]/button"))
+		Assert.assertTrue(Page.driver.findElement(By.xpath("//*[@id='openAdminMyquotes___BV_modal_body_']/button"))
 				.isDisplayed());
 		kb.clickBoxCloseBtn();
 	}
@@ -385,10 +383,11 @@ public class KnowledgeBase extends BaseTest {
 	public void verifyClickOnViewProjectProjectOfTheWeek() throws InterruptedException {
 		ContactPage cp = new ContactPage();
 		KnowledgeBasePage kb = cp.goKnowledgeBase();
+		Thread.sleep(2000);
 		kb.clickViewProject();
 		Thread.sleep(5000);
 		// verification of cross icon
-		Assert.assertTrue(Page.driver.findElement(By.xpath("//*[@id=\"openAdminMyquotes___BV_modal_body_\"]/button"))
+		Assert.assertTrue(Page.driver.findElement(By.xpath("//*[@id='openAdminMyquotes___BV_modal_body_']/button"))
 				.isDisplayed());
 		kb.clickBoxCloseBtn();
 	}
@@ -400,22 +399,20 @@ public class KnowledgeBase extends BaseTest {
 		ContactPage cp = new ContactPage();
 		KnowledgeBasePage kb = cp.goKnowledgeBase();
 		// Card Contents of Steel Concrete Assessment
-		Assert.assertTrue(Page.driver.findElement(By.xpath(
-				"//div[@id='115291495643']/div[1]/div[2]/div[1]/p/ul/li[1]/a/span"))
-				.isDisplayed());
+		Assert.assertTrue(
+				Page.driver.findElement(By.xpath("//div[@id='115291495643']/div[1]/div[2]/div[1]/p/ul/li[1]/a/span"))
+						.isDisplayed());
 		Assert.assertEquals(Page.getText("SteelAndConcreteAssessmentCardimageslink_XPATH"), "IMAGES");
-		Assert.assertTrue(Page.driver.findElement(By
-				.xpath("//div[@id='115291495643']/div[1]/div[2]/div[1]/p/ul/li[2]/a/span"))
-				.isDisplayed());
+		Assert.assertTrue(
+				Page.driver.findElement(By.xpath("//div[@id='115291495643']/div[1]/div[2]/div[1]/p/ul/li[2]/a/span"))
+						.isDisplayed());
 		Assert.assertEquals(Page.getText("SteelAndConcreteAssessmentCardBrochureslink_XPATH"), "BROCHURES");
-		Assert.assertTrue(Page.driver.findElement(By
-				.xpath("//div[@id='115291495643']/div[1]/div[2]/div[1]/p/ul/li[3]/a/span"))
-				.isDisplayed());
+		Assert.assertTrue(
+				Page.driver.findElement(By.xpath("//div[@id='115291495643']/div[1]/div[2]/div[1]/p/ul/li[3]/a/span"))
+						.isDisplayed());
 		Assert.assertEquals(Page.getText("SteelAndConcreteAssessmentCardStandardsCodeslink_XPATH"), "STANDARDS/CODES");
-		Assert.assertTrue(Page.driver
-				.findElement(
-						By.xpath("//*[@id='115291495643']/div/div[2]/div[2]/img"))
-				.isDisplayed());
+		Assert.assertTrue(
+				Page.driver.findElement(By.xpath("//*[@id='115291495643']/div/div[2]/div[2]/img")).isDisplayed());
 	}
 
 	// US-98498-98571-Verify that each navigational tile will have only one link for
@@ -425,22 +422,20 @@ public class KnowledgeBase extends BaseTest {
 		ContactPage cp = new ContactPage();
 		KnowledgeBasePage kb = cp.goKnowledgeBase();
 		// Card Contents of Steel Concrete Restoration
-		Assert.assertTrue(Page.driver.findElement(By
-				.xpath("//div[@id='115291494443']/div[1]/div[2]/div[1]/p[1]/ul/li[1]/a/span"))
-				.isDisplayed());
+		Assert.assertTrue(
+				Page.driver.findElement(By.xpath("//div[@id='115291494443']/div[1]/div[2]/div[1]/p[1]/ul/li[1]/a/span"))
+						.isDisplayed());
 		Assert.assertEquals(Page.getText("SteelAndConcreteRestortationtArticleslink_XPATH"), "ARTICLES");
-		Assert.assertTrue(Page.driver.findElement(By
-				.xpath("//div[@id='115291494443']/div[1]/div[2]/div[1]/p[1]/ul/li[2]/a/span"))
-				.isDisplayed());
+		Assert.assertTrue(
+				Page.driver.findElement(By.xpath("//div[@id='115291494443']/div[1]/div[2]/div[1]/p[1]/ul/li[2]/a/span"))
+						.isDisplayed());
 		Assert.assertEquals(Page.getText("SteelAndConcreteRestortationBrochureslink_XPATH"), "BROCHURES");
-		Assert.assertTrue(Page.driver.findElement(By
-				.xpath("//div[@id='115291494443']/div[1]/div[2]/div[1]/p[1]/ul/li[3]/a/span"))
-				.isDisplayed());
+		Assert.assertTrue(
+				Page.driver.findElement(By.xpath("//div[@id='115291494443']/div[1]/div[2]/div[1]/p[1]/ul/li[3]/a/span"))
+						.isDisplayed());
 		Assert.assertEquals(Page.getText("SteelAndConcreteRestortationImageslink_XPATH"), "IMAGES");
-		Assert.assertTrue(Page.driver
-				.findElement(
-						By.xpath("//*[@id='115291494443']/div/div[2]/div[2]/img"))
-				.isDisplayed());
+		Assert.assertTrue(
+				Page.driver.findElement(By.xpath("//*[@id='115291494443']/div/div[2]/div[2]/img")).isDisplayed());
 	}
 
 	// US-98498-98571-Verify that each navigational tile will have only one link for
@@ -450,22 +445,20 @@ public class KnowledgeBase extends BaseTest {
 		ContactPage cp = new ContactPage();
 		KnowledgeBasePage kb = cp.goKnowledgeBase();
 		// Card Contents of Wood | Inspection & Treatment
-		Assert.assertTrue(Page.driver.findElement(By.xpath(
-				"//div[@id='115291493243']/div[1]/div[2]/div[1]/p/ul/li[1]/a/span"))
-				.isDisplayed());
+		Assert.assertTrue(
+				Page.driver.findElement(By.xpath("//div[@id='115291493243']/div[1]/div[2]/div[1]/p/ul/li[1]/a/span"))
+						.isDisplayed());
 		Assert.assertEquals(Page.getText("WoodInspectionVideos_XPATH"), "VIDEOS");
-		Assert.assertTrue(Page.driver.findElement(By.xpath(
-				"//div[@id='115291493243']/div[1]/div[2]/div[1]/p/ul/li[2]/a/span"))
-				.isDisplayed());
+		Assert.assertTrue(
+				Page.driver.findElement(By.xpath("//div[@id='115291493243']/div[1]/div[2]/div[1]/p/ul/li[2]/a/span"))
+						.isDisplayed());
 		Assert.assertEquals(Page.getText("WoodInspectionImages_XPATH"), "IMAGES");
-		Assert.assertTrue(Page.driver.findElement(By.xpath(
-				"//div[@id='115291493243']/div[1]/div[2]/div[1]/p/ul/li[3]/a/span"))
-				.isDisplayed());
+		Assert.assertTrue(
+				Page.driver.findElement(By.xpath("//div[@id='115291493243']/div[1]/div[2]/div[1]/p/ul/li[3]/a/span"))
+						.isDisplayed());
 		Assert.assertEquals(Page.getText("WoodInspectionResearch_XPATH"), "RESEARCH");
-		Assert.assertTrue(Page.driver
-				.findElement(
-						By.xpath("//*[@id='115291493243']/div/div[2]/div[2]/img"))
-				.isDisplayed());
+		Assert.assertTrue(
+				Page.driver.findElement(By.xpath("//*[@id='115291493243']/div/div[2]/div[2]/img")).isDisplayed());
 	}
 
 	// US-98498-98571-Verify that each navigational tile will have only one link for
@@ -475,22 +468,20 @@ public class KnowledgeBase extends BaseTest {
 		ContactPage cp = new ContactPage();
 		KnowledgeBasePage kb = cp.goKnowledgeBase();
 		// Card Contents of Steel Concrete Assessment
-		Assert.assertTrue(Page.driver.findElement(By
-				.xpath("//div[@id='115291496843']/div[1]/div[2]/div[1]/p/ul/li[1]/a/span"))
-				.isDisplayed());
+		Assert.assertTrue(
+				Page.driver.findElement(By.xpath("//div[@id='115291496843']/div[1]/div[2]/div[1]/p/ul/li[1]/a/span"))
+						.isDisplayed());
 		Assert.assertEquals(Page.getText("WoodRestorationVideos_XPATH"), "VIDEOS");
-		Assert.assertTrue(Page.driver.findElement(By
-				.xpath("//div[@id='115291496843']/div[1]/div[2]/div[1]/p/ul/li[2]/a/span"))
-				.isDisplayed());
+		Assert.assertTrue(
+				Page.driver.findElement(By.xpath("//div[@id='115291496843']/div[1]/div[2]/div[1]/p/ul/li[2]/a/span"))
+						.isDisplayed());
 		Assert.assertEquals(Page.getText("WoodRestorationBrochuers_XPATH"), "BROCHURES");
-		Assert.assertTrue(Page.driver.findElement(By
-				.xpath("//div[@id='115291496843']/div[1]/div[2]/div[1]/p/ul/li[3]/a/span"))
-				.isDisplayed());
+		Assert.assertTrue(
+				Page.driver.findElement(By.xpath("//div[@id='115291496843']/div[1]/div[2]/div[1]/p/ul/li[3]/a/span"))
+						.isDisplayed());
 		Assert.assertEquals(Page.getText("WoodRestorationArticles_XPATH"), "ARTICLES");
-		Assert.assertTrue(Page.driver
-				.findElement(
-						By.xpath("//*[@id='115291496843']/div/div[2]/div[2]/img"))
-				.isDisplayed());
+		Assert.assertTrue(
+				Page.driver.findElement(By.xpath("//*[@id='115291496843']/div/div[2]/div[2]/img")).isDisplayed());
 	}
 
 	// US-98498-98571-Verify that each navigational tile will have only one link for
@@ -500,22 +491,20 @@ public class KnowledgeBase extends BaseTest {
 		ContactPage cp = new ContactPage();
 		KnowledgeBasePage kb = cp.goKnowledgeBase();
 		// Card Contents of Joint Use
-		Assert.assertTrue(Page.driver.findElement(By.xpath(
-				"//div[@id='121177689493']/div[1]/div[2]/div[1]/p/ul/li[1]/a/span"))
-				.isDisplayed());
+		Assert.assertTrue(
+				Page.driver.findElement(By.xpath("//div[@id='121177689493']/div[1]/div[2]/div[1]/p/ul/li[1]/a/span"))
+						.isDisplayed());
 		Assert.assertEquals(Page.getText("JointUseImages_XPATH"), "IMAGES");
-		Assert.assertTrue(Page.driver.findElement(By.xpath(
-				"//div[@id='121177689493']/div[1]/div[2]/div[1]/p/ul/li[2]/a/span"))
-				.isDisplayed());
+		Assert.assertTrue(
+				Page.driver.findElement(By.xpath("//div[@id='121177689493']/div[1]/div[2]/div[1]/p/ul/li[2]/a/span"))
+						.isDisplayed());
 		Assert.assertEquals(Page.getText("JointUseVideos_XPATH"), "VIDEOS");
-		Assert.assertTrue(Page.driver.findElement(By.xpath(
-				"//div[@id='121177689493']/div[1]/div[2]/div[1]/p/ul/li[3]/a/span"))
-				.isDisplayed());
+		Assert.assertTrue(
+				Page.driver.findElement(By.xpath("//div[@id='121177689493']/div[1]/div[2]/div[1]/p/ul/li[3]/a/span"))
+						.isDisplayed());
 		Assert.assertEquals(Page.getText("JointUseArticles_XPATH"), "ARTICLES");
-		Assert.assertTrue(Page.driver
-				.findElement(
-						By.xpath("//*[@id='121177689493']/div/div[2]/div[2]/img"))
-				.isDisplayed());
+		Assert.assertTrue(
+				Page.driver.findElement(By.xpath("//*[@id='121177689493']/div/div[2]/div[2]/img")).isDisplayed());
 	}
 
 	// US-98498-98571-Verify that each navigational tile will have only one link for
@@ -525,22 +514,20 @@ public class KnowledgeBase extends BaseTest {
 		ContactPage cp = new ContactPage();
 		KnowledgeBasePage kb = cp.goKnowledgeBase();
 		// Card Contents of Overhead
-		Assert.assertTrue(Page.driver.findElement(By.xpath(
-				"//div[@id='121176940132']/div[1]/div[2]/div[1]/p/ul/li[2]/a/span"))
-				.isDisplayed());
+		Assert.assertTrue(
+				Page.driver.findElement(By.xpath("//div[@id='121176940132']/div[1]/div[2]/div[1]/p/ul/li[2]/a/span"))
+						.isDisplayed());
 		Assert.assertEquals(Page.getText("OverheadVideos_XPATH"), "VIDEOS");
-		Assert.assertTrue(Page.driver.findElement(By.xpath(
-				"//div[@id='121176940132']/div[1]/div[2]/div[1]/p/ul/li[1]/a/span"))
-				.isDisplayed());
+		Assert.assertTrue(
+				Page.driver.findElement(By.xpath("//div[@id='121176940132']/div[1]/div[2]/div[1]/p/ul/li[1]/a/span"))
+						.isDisplayed());
 		Assert.assertEquals(Page.getText("OverheadImages_XPATH"), "IMAGES");
-		Assert.assertTrue(Page.driver.findElement(By.xpath(
-				"//div[@id='121176940132']/div[1]/div[2]/div[1]/p/ul/li[3]/a/span"))
-				.isDisplayed());
+		Assert.assertTrue(
+				Page.driver.findElement(By.xpath("//div[@id='121176940132']/div[1]/div[2]/div[1]/p/ul/li[3]/a/span"))
+						.isDisplayed());
 		Assert.assertEquals(Page.getText("OverheadProjectProfiles_XPATH"), "PROJECT PROFILES");
-		Assert.assertTrue(Page.driver
-				.findElement(
-						By.xpath("//*[@id='121176940132']/div/div[2]/div[2]/img"))
-				.isDisplayed());
+		Assert.assertTrue(
+				Page.driver.findElement(By.xpath("//*[@id='121176940132']/div/div[2]/div[2]/img")).isDisplayed());
 	}
 
 	// US-98498-98571-Verify that each navigational tile will have only one link for
@@ -550,22 +537,20 @@ public class KnowledgeBase extends BaseTest {
 		ContactPage cp = new ContactPage();
 		KnowledgeBasePage kb = cp.goKnowledgeBase();
 		// Card Contents of Pole Replacement
-		Assert.assertTrue(Page.driver.findElement(By.xpath(
-				"//div[@id='121177263710']/div[1]/div[2]/div[1]/p/ul/li[1]/a/span"))
-				.isDisplayed());
+		Assert.assertTrue(
+				Page.driver.findElement(By.xpath("//div[@id='121177263710']/div[1]/div[2]/div[1]/p/ul/li[1]/a/span"))
+						.isDisplayed());
 		Assert.assertEquals(Page.getText("PoleReplacementImages_XPATH"), "IMAGES");
-		Assert.assertTrue(Page.driver.findElement(By.xpath(
-				"//div[@id='121177263710']/div[1]/div[2]/div[1]/p/ul/li[2]/a/span"))
-				.isDisplayed());
+		Assert.assertTrue(
+				Page.driver.findElement(By.xpath("//div[@id='121177263710']/div[1]/div[2]/div[1]/p/ul/li[2]/a/span"))
+						.isDisplayed());
 		Assert.assertEquals(Page.getText("PoleReplacementVideos_XPATH"), "VIDEOS");
-		Assert.assertTrue(Page.driver.findElement(By.xpath(
-				"//div[@id='121177263710']/div[1]/div[2]/div[1]/p/ul/li[3]/a/span"))
-				.isDisplayed());
+		Assert.assertTrue(
+				Page.driver.findElement(By.xpath("//div[@id='121177263710']/div[1]/div[2]/div[1]/p/ul/li[3]/a/span"))
+						.isDisplayed());
 		Assert.assertEquals(Page.getText("PoleReplacementBrochure_XPATH"), "BROCHURE");
-		Assert.assertTrue(Page.driver
-				.findElement(
-						By.xpath("//*[@id='121177263710']/div/div[2]/div[2]/img"))
-				.isDisplayed());
+		Assert.assertTrue(
+				Page.driver.findElement(By.xpath("//*[@id='121177263710']/div/div[2]/div[2]/img")).isDisplayed());
 	}
 
 	// US-98498-98571-Verify that each navigational tile will have only one link for
@@ -575,22 +560,20 @@ public class KnowledgeBase extends BaseTest {
 		ContactPage cp = new ContactPage();
 		KnowledgeBasePage kb = cp.goKnowledgeBase();
 		// Card Contents of Products
-		Assert.assertTrue(Page.driver.findElement(By.xpath(
-				"//div[@id='121177344116']/div[1]/div[2]/div[1]/p/ul/li[1]/a/span"))
-				.isDisplayed());
+		Assert.assertTrue(
+				Page.driver.findElement(By.xpath("//div[@id='121177344116']/div[1]/div[2]/div[1]/p/ul/li[1]/a/span"))
+						.isDisplayed());
 		Assert.assertEquals(Page.getText("ProductsImages_XPATH"), "IMAGES");
-		Assert.assertTrue(Page.driver.findElement(By.xpath(
-				"//div[@id='121177344116']/div[1]/div[2]/div[1]/p/ul/li[2]/a/span"))
-				.isDisplayed());
+		Assert.assertTrue(
+				Page.driver.findElement(By.xpath("//div[@id='121177344116']/div[1]/div[2]/div[1]/p/ul/li[2]/a/span"))
+						.isDisplayed());
 		Assert.assertEquals(Page.getText("ProductsVideos_XPATH"), "VIDEOS");
-		Assert.assertTrue(Page.driver.findElement(By.xpath(
-				"//div[@id='121177344116']/div[1]/div[2]/div[1]/p/ul/li[3]/a/span"))
-				.isDisplayed());
+		Assert.assertTrue(
+				Page.driver.findElement(By.xpath("//div[@id='121177344116']/div[1]/div[2]/div[1]/p/ul/li[3]/a/span"))
+						.isDisplayed());
 		Assert.assertEquals(Page.getText("ProductsProductCatalog_XPATH"), "PRODUCT CATALOG");
-		Assert.assertTrue(Page.driver
-				.findElement(
-						By.xpath("//*[@id='121177344116']/div/div[2]/div[2]/img"))
-				.isDisplayed());
+		Assert.assertTrue(
+				Page.driver.findElement(By.xpath("//*[@id='121177344116']/div/div[2]/div[2]/img")).isDisplayed());
 	}
 
 	// US-98498-98571-Verify that each navigational tile will have only one link for
@@ -600,55 +583,54 @@ public class KnowledgeBase extends BaseTest {
 		ContactPage cp = new ContactPage();
 		KnowledgeBasePage kb = cp.goKnowledgeBase();
 		// Card Contents of Storm Support
-		Assert.assertTrue(Page.driver.findElement(By.xpath(
-				"//div[@id='121177381598']/div[1]/div[2]/div[1]/p/ul/li[1]/a/span"))
-				.isDisplayed());
+		Assert.assertTrue(
+				Page.driver.findElement(By.xpath("//div[@id='121177381598']/div[1]/div[2]/div[1]/p/ul/li[1]/a/span"))
+						.isDisplayed());
 		Assert.assertEquals(Page.getText("StormSupportImages_XPATH"), "IMAGES");
-		Assert.assertTrue(Page.driver.findElement(By.xpath(
-				"//div[@id='121177381598']/div[1]/div[2]/div[1]/p/ul/li[2]/a/span"))
-				.isDisplayed());
+		Assert.assertTrue(
+				Page.driver.findElement(By.xpath("//div[@id='121177381598']/div[1]/div[2]/div[1]/p/ul/li[2]/a/span"))
+						.isDisplayed());
 		Assert.assertEquals(Page.getText("StormSupportVideos_XPATH"), "VIDEOS");
-		Assert.assertTrue(Page.driver.findElement(By.xpath(
-				"//div[@id='121177381598']/div[1]/div[2]/div[1]/p/ul/li[3]/a/span"))
-				.isDisplayed());
+		Assert.assertTrue(
+				Page.driver.findElement(By.xpath("//div[@id='121177381598']/div[1]/div[2]/div[1]/p/ul/li[3]/a/span"))
+						.isDisplayed());
 		Assert.assertEquals(Page.getText("StormSupportProjectProfiles_XPATH"), "PROJECT PROFILES");
-		//Assert.assertTrue(Page.driver.findElement(By.xpath("")).isDisplayed());
+		// Assert.assertTrue(Page.driver.findElement(By.xpath("")).isDisplayed());
 	}
 
 	// US-98498-98571-Verify that each navigational tile will have only one link for
 	// different asset types.
-	@Test(priority = 36, enabled = false, description = "Verify the Card Contents of Underground")
+	@Test(priority = 36, enabled = true, description = "Verify the Card Contents of Underground")
 	public void verifyCardContentsUnderground() throws InterruptedException {
 		ContactPage cp = new ContactPage();
 		KnowledgeBasePage kb = cp.goKnowledgeBase();
 		// Card Contents of Underground
-		Assert.assertTrue(Page.driver.findElement(By.xpath(
-				"//div[@id='121177343612']/div[1]/div[2]/div[1]/p/ul/li[1]/a/span"))
-				.isDisplayed());
+		Assert.assertTrue(
+				Page.driver.findElement(By.xpath("//div[@id='121177343612']/div[1]/div[2]/div[1]/p/ul/li[1]/a/span"))
+						.isDisplayed());
 		Assert.assertEquals(Page.getText("UndergroundImages_XPATH"), "IMAGES");
-		Assert.assertTrue(Page.driver.findElement(By.xpath(
-				"//div[@id='121177343612']/div[1]/div[2]/div[1]/p/ul/li[2]/a/span"))
-				.isDisplayed());
+		Assert.assertTrue(
+				Page.driver.findElement(By.xpath("//div[@id='121177343612']/div[1]/div[2]/div[1]/p/ul/li[2]/a/span"))
+						.isDisplayed());
 		Assert.assertEquals(Page.getText("UndergroundBrochure_XPATH"), "BROCHURE");
-		Assert.assertTrue(Page.driver.findElement(By.xpath(
-				"//div[@id='121177343612']/div[1]/div[2]/div[1]/p/ul/li[3]/a/span"))
-				.isDisplayed());
+		Assert.assertTrue(
+				Page.driver.findElement(By.xpath("//div[@id='121177343612']/div[1]/div[2]/div[1]/p/ul/li[3]/a/span"))
+						.isDisplayed());
 		Assert.assertEquals(Page.getText("UndergroundDiagram_XPATH"), "DIAGRAM");
-		Assert.assertTrue(Page.driver
-				.findElement(
-						By.xpath("//*[@id='121177343612']/div/div[2]/div[2]/img"))
-				.isDisplayed());
+		Assert.assertTrue(
+				Page.driver.findElement(By.xpath("//*[@id='121177343612']/div/div[2]/div[2]/img")).isDisplayed());
 	}
 
-	//
-	@Test(priority = 37, enabled = true, description = "Verify the Industry News")
+	// Keep this false always
+	//US-98508-98703-Verify See More option functionality in Industry News section in KB landing page
+	@Test(priority = 37, enabled = false, description = "Verify the Industry News")
 	public void verifyIndustrySeeMore() throws InterruptedException {
 		ContactPage cp = new ContactPage();
 		KnowledgeBasePage kb = cp.goKnowledgeBase();
 		// Industry News
 		kb.clickIndustrySeeMore();
 		Thread.sleep(4000);
-		Assert.assertEquals(Page.getText("InustryText_XPATH"), "Industry News");
+		Assert.assertEquals(Page.getText("IndustryNewsText_XPATH"), "Industry News");
 		kb.clickIndustryBackbtn();
 	}
 
@@ -658,7 +640,7 @@ public class KnowledgeBase extends BaseTest {
 	public void verifyClickOnDailyGaffGallery() throws InterruptedException {
 		ContactPage cp = new ContactPage();
 		KnowledgeBasePage kb = cp.goKnowledgeBase();
-		Thread.sleep(6000);
+		Thread.sleep(12000);
 		kb.clickDailyGaffGallery();
 		Thread.sleep(6000);
 		// Verification of Back button and Images text
@@ -678,13 +660,13 @@ public class KnowledgeBase extends BaseTest {
 	public void verifyClickOnDailyGaffGalleryImage() throws InterruptedException {
 		ContactPage cp = new ContactPage();
 		KnowledgeBasePage kb = cp.goKnowledgeBase();
-		Thread.sleep(4000);
+		Thread.sleep(8000);
 		kb.clickDailyGaffGallery();
 		Thread.sleep(4000);
 		// Verification of the presence of image
 		Assert.assertTrue(Page.driver
 				.findElement(
-						By.xpath("//*[@id=\"contentPart2\"]/div/div/div/div/div/div/div/div[2]/div/div[1]/div/img"))
+						By.xpath("//*[@id='contentPart2']/div/div/div/div/div/div/div/div[2]/div/div[1]/div/img"))
 				.isDisplayed());
 		kb.clickDailyGaffGalleryImage();
 		Thread.sleep(4000);
@@ -696,13 +678,14 @@ public class KnowledgeBase extends BaseTest {
 	// page will take the user to refined search result page
 	// US-98499-98742-verify the user is redirected to correct URLs on clicking the
 	// assets listed to intended category
+	//US-100681-100877-Verify system is displaying results based on selection in sub-category "Filters" specific to the tile category selected.
 	@Test(priority = 40, enabled = true, description = "Verify the click on Joint Use Card")
 	public void verifyClickOnJointUseCard() throws InterruptedException {
 		ContactPage cp = new ContactPage();
 		KnowledgeBasePage kb = cp.goKnowledgeBase();
-		Thread.sleep(3000);
+		Thread.sleep(15000);
 		kb.clickJointUs();
-		Thread.sleep(50000);
+		Thread.sleep(25000);
 		WebElement VideoResultsSection = Page.driver
 				.findElement(By.xpath("//*[@id='contentPart1']/div/div/div/div/div[1]/div/div[1]/div/h5"));
 		Assert.assertTrue(VideoResultsSection.isDisplayed());
@@ -712,6 +695,15 @@ public class KnowledgeBase extends BaseTest {
 		WebElement DocumentResultsSection = Page.driver
 				.findElement(By.xpath("//*[@id='contentPart1']/div/div/div/div/div[3]/div/div[1]/div[1]/h5"));
 		Assert.assertTrue(DocumentResultsSection.isDisplayed());
+		Thread.sleep(2000);
+		Page.click("PopularQueriesFilter_XPATH");
+		Thread.sleep(2000);
+		WebElement JointUsePopularFilter1 = Page.driver.findElement(By.xpath("//*[contains(text(),'Joint Use Vanity 1')]"));
+		Assert.assertTrue(JointUsePopularFilter1.isDisplayed());
+		WebElement JointUsePopularFilter2 = Page.driver.findElement(By.xpath("//*[contains(text(),'Joint Use Vanity 2')]"));
+		Assert.assertTrue(JointUsePopularFilter2.isDisplayed());
+		WebElement JointUsePopularFilter3 = Page.driver.findElement(By.xpath("//*[contains(text(),'Joint Use Vanity 3')]"));
+		Assert.assertTrue(JointUsePopularFilter3.isDisplayed());
 		Thread.sleep(3000);
 		kb.clickClearSearch();
 		Thread.sleep(3000);
@@ -721,13 +713,14 @@ public class KnowledgeBase extends BaseTest {
 	// page will take the user to refined search result page
 	// US-98499-98742-verify the user is redirected to correct URLs on clicking the
 	// assets listed to intended category
+	//US-100681-100877-Verify system is displaying results based on selection in sub-category "Filters" specific to the tile category selected.
 	@Test(priority = 41, enabled = true, description = "Verify the click on Overhead Card")
 	public void verifyClickOnOverheadCard() throws InterruptedException {
 		ContactPage cp = new ContactPage();
 		KnowledgeBasePage kb = cp.goKnowledgeBase();
 		Thread.sleep(15000);
 		kb.clickOverhead();
-		Thread.sleep(50000);
+		Thread.sleep(25000);
 		WebElement VideoResultsSection = Page.driver
 				.findElement(By.xpath("//*[@id='contentPart1']/div/div/div/div/div[1]/div/div[1]/div/h5"));
 		Assert.assertTrue(VideoResultsSection.isDisplayed());
@@ -737,6 +730,13 @@ public class KnowledgeBase extends BaseTest {
 		WebElement DocumentResultsSection = Page.driver
 				.findElement(By.xpath("//*[@id='contentPart1']/div/div/div/div/div[3]/div/div[1]/div[1]/h5"));
 		Assert.assertTrue(DocumentResultsSection.isDisplayed());
+		//Page.click("PopularQueriesFilter_XPATH");
+		WebElement OverheadPopularFilter1 = Page.driver.findElement(By.xpath("//*[contains(text(),'Overhead Vanity 1')]"));
+		Assert.assertTrue(OverheadPopularFilter1.isDisplayed());
+		WebElement OverheadPopularFilter2 = Page.driver.findElement(By.xpath("//*[contains(text(),'Overhead Vanity 2')]"));
+		Assert.assertTrue(OverheadPopularFilter2.isDisplayed());
+		WebElement OverheadPopularFilter3 = Page.driver.findElement(By.xpath("//*[contains(text(),'Overhead Vanity 3')]"));
+		Assert.assertTrue(OverheadPopularFilter3.isDisplayed());
 		Thread.sleep(3000);
 		kb.clickClearSearch();
 		Thread.sleep(3000);
@@ -746,13 +746,14 @@ public class KnowledgeBase extends BaseTest {
 	// page will take the user to refined search result page
 	// US-98499-98742-verify the user is redirected to correct URLs on clicking the
 	// assets listed to intended category
+	//US-100681-100877-Verify system is displaying results based on selection in sub-category "Filters" specific to the tile category selected.
 	@Test(priority = 42, enabled = true, description = "Verify the click on Pole Replacement Card")
 	public void verifyClickOnPoleReplacementCard() throws InterruptedException {
 		ContactPage cp = new ContactPage();
 		KnowledgeBasePage kb = cp.goKnowledgeBase();
 		Thread.sleep(15000);
 		kb.clickPoleReplacement();
-		Thread.sleep(50000);
+		Thread.sleep(25000);
 		WebElement VideoResultsSection = Page.driver
 				.findElement(By.xpath("//*[@id='contentPart1']/div/div/div/div/div[1]/div/div[1]/div/h5"));
 		Assert.assertTrue(VideoResultsSection.isDisplayed());
@@ -762,6 +763,13 @@ public class KnowledgeBase extends BaseTest {
 		WebElement DocumentResultsSection = Page.driver
 				.findElement(By.xpath("//*[@id='contentPart1']/div/div/div/div/div[3]/div/div[1]/div[1]/h5"));
 		Assert.assertTrue(DocumentResultsSection.isDisplayed());
+		//Page.click("PopularQueriesFilter_XPATH");
+		WebElement PoleReplacementPopularFilter1 = Page.driver.findElement(By.xpath("//*[contains(text(),'Pole Replacement Vanity 1')]"));
+		Assert.assertTrue(PoleReplacementPopularFilter1.isDisplayed());
+		WebElement PoleReplacementPopularFilter2 = Page.driver.findElement(By.xpath("//*[contains(text(),'Pole Replacement Vanity 2')]"));
+		Assert.assertTrue(PoleReplacementPopularFilter2.isDisplayed());
+		WebElement PoleReplacementPopularFilter3 = Page.driver.findElement(By.xpath("//*[contains(text(),'Pole Replacement Vanity 3')]"));
+		Assert.assertTrue(PoleReplacementPopularFilter3.isDisplayed());
 		Thread.sleep(3000);
 		kb.clickClearSearch();
 		Thread.sleep(3000);
@@ -771,13 +779,14 @@ public class KnowledgeBase extends BaseTest {
 	// page will take the user to refined search result page
 	// US-98499-98742-verify the user is redirected to correct URLs on clicking the
 	// assets listed to intended category
+	//US-100681-100877-Verify system is displaying results based on selection in sub-category "Filters" specific to the tile category selected.
 	@Test(priority = 43, enabled = true, description = "Verify the click on Products Card")
 	public void verifyClickOnProductsCard() throws InterruptedException {
 		ContactPage cp = new ContactPage();
 		KnowledgeBasePage kb = cp.goKnowledgeBase();
 		Thread.sleep(15000);
 		kb.clickProducts();
-		Thread.sleep(50000);
+		Thread.sleep(25000);
 		WebElement VideoResultsSection = Page.driver
 				.findElement(By.xpath("//*[@id='contentPart1']/div/div/div/div/div[1]/div/div[1]/div/h5"));
 		Assert.assertTrue(VideoResultsSection.isDisplayed());
@@ -787,6 +796,13 @@ public class KnowledgeBase extends BaseTest {
 		WebElement DocumentResultsSection = Page.driver
 				.findElement(By.xpath("//*[@id='contentPart1']/div/div/div/div/div[3]/div/div[1]/div[1]/h5"));
 		Assert.assertTrue(DocumentResultsSection.isDisplayed());
+		//Page.click("PopularQueriesFilter_XPATH");
+		WebElement ProductsPopularFilter1 = Page.driver.findElement(By.xpath("//*[contains(text(),'Products Vanity 1')]"));
+		Assert.assertTrue(ProductsPopularFilter1.isDisplayed());
+		WebElement ProductsPopularFilter2 = Page.driver.findElement(By.xpath("//*[contains(text(),'Products Vanity 2')]"));
+		Assert.assertTrue(ProductsPopularFilter2.isDisplayed());
+		WebElement ProductsPopularFilter3 = Page.driver.findElement(By.xpath("//*[contains(text(),'Products Vanity 3')]"));
+		Assert.assertTrue(ProductsPopularFilter3.isDisplayed());
 		Thread.sleep(3000);
 		kb.clickClearSearch();
 		Thread.sleep(3000);
@@ -796,14 +812,15 @@ public class KnowledgeBase extends BaseTest {
 	// page will take the user to refined search result page
 	// US-98499-98742-verify the user is redirected to correct URLs on clicking the
 	// assets listed to intended category
+	//US-100681-100877-Verify system is displaying results based on selection in sub-category "Filters" specific to the tile category selected.
 	@Test(priority = 44, enabled = true, description = "Verify the click on Steel and Concrete Assessment Card")
 	public void verifyClickOnSteelandConcreteAssessmentCard() throws InterruptedException {
 		ContactPage cp = new ContactPage();
 		KnowledgeBasePage kb = cp.goKnowledgeBase();
 		Thread.sleep(15000);
 		kb.clickSteelAndConcreteAssessment();
-		Thread.sleep(50000);
-		// WebElement VideoResultsSection =
+		Thread.sleep(5000);
+		/*// WebElement VideoResultsSection =
 		// Page.driver.findElement(By.xpath("//*[@id='contentPart1']/div/div/div/div/div[1]/div/div[1]/div/h5"));
 		// Assert.assertTrue(VideoResultsSection.isDisplayed());
 		WebElement ImageResultsSection = Page.driver
@@ -812,23 +829,33 @@ public class KnowledgeBase extends BaseTest {
 		WebElement DocumentResultsSection = Page.driver
 				.findElement(By.xpath("//*[@id='contentPart1']/div/div/div/div/div[2]/div/div[1]/div/h5"));
 		Assert.assertTrue(DocumentResultsSection.isDisplayed());
+		WebElement SteelandConcreteAssessmentPopularFilter1 = Page.driver.findElement(By.xpath("//*[contains(text(),'')]"));
+		Assert.assertTrue(SteelandConcreteAssessmentPopularFilter1.isDisplayed());
+		WebElement SteelandConcreteAssessmentPopularFilter2 = Page.driver.findElement(By.xpath("//*[contains(text(),'')]"));
+		Assert.assertTrue(SteelandConcreteAssessmentPopularFilter2.isDisplayed());
+		WebElement SteelandConcreteAssessmentPopularFilter3 = Page.driver.findElement(By.xpath("//*[contains(text(),'')]"));
+		Assert.assertTrue(SteelandConcreteAssessmentPopularFilter3.isDisplayed());
 		Thread.sleep(3000);
 		kb.clickClearSearch();
-		Thread.sleep(3000);
+		Thread.sleep(3000);*/
+		WebElement noresults = Page.driver.findElement(By.xpath("//div[@class='text-center dismissCountDown']/div[1]"));
+
+		System.out.println(noresults.getText());
 	}
 
 	// US-98499-98607-Verify that clicking on the header on the tiles in KB landing
 	// page will take the user to refined search result page
 	// US-98499-98742-verify the user is redirected to correct URLs on clicking the
 	// assets listed to intended category
+	//US-100681-100877-Verify system is displaying results based on selection in sub-category "Filters" specific to the tile category selected.
 	@Test(priority = 45, enabled = true, description = "Verify the click on Steel and Concrete Restoration Card")
 	public void verifyClickOnSteelandConcreteRestorationCard() throws InterruptedException {
 		ContactPage cp = new ContactPage();
 		KnowledgeBasePage kb = cp.goKnowledgeBase();
 		Thread.sleep(15000);
 		kb.clickSteelAndConcreteAssessment();
-		Thread.sleep(50000);
-		// WebElement VideoResultsSection =
+		Thread.sleep(5000);
+		/*// WebElement VideoResultsSection =
 		// Page.driver.findElement(By.xpath("//*[@id='contentPart1']/div/div/div/div/div[1]/div/div[1]/div/h5"));
 		// Assert.assertTrue(VideoResultsSection.isDisplayed());
 		WebElement ImageResultsSection = Page.driver
@@ -837,22 +864,32 @@ public class KnowledgeBase extends BaseTest {
 		WebElement DocumentResultsSection = Page.driver
 				.findElement(By.xpath("//*[@id=\"contentPart1\"]/div/div/div/div/div[2]/div/div[1]/div[1]/h5"));
 		Assert.assertTrue(DocumentResultsSection.isDisplayed());
+		WebElement SteelandConcreteRestorationPopularFilter1 = Page.driver.findElement(By.xpath("//*[contains(text(),'')]"));
+		Assert.assertTrue(SteelandConcreteRestorationPopularFilter1.isDisplayed());
+		WebElement SteelandConcreteRestorationPopularFilter2 = Page.driver.findElement(By.xpath("//*[contains(text(),'')]"));
+		Assert.assertTrue(SteelandConcreteRestorationPopularFilter2.isDisplayed());
+		WebElement SteelandConcreteRestorationPopularFilter3 = Page.driver.findElement(By.xpath("//*[contains(text(),'')]"));
+		Assert.assertTrue(SteelandConcreteRestorationPopularFilter3.isDisplayed());
 		Thread.sleep(3000);
 		kb.clickClearSearch();
-		Thread.sleep(3000);
+		Thread.sleep(3000);*/
+		WebElement noresults = Page.driver.findElement(By.xpath("//div[@class='text-center dismissCountDown']/div[1]"));
+
+		System.out.println(noresults.getText());
 	}
 
 	// US-98499-98607-Verify that clicking on the header on the tiles in KB landing
 	// page will take the user to refined search result page
 	// US-98499-98742-verify the user is redirected to correct URLs on clicking the
 	// assets listed to intended category
+	//US-100681-100877-Verify system is displaying results based on selection in sub-category "Filters" specific to the tile category selected.
 	@Test(priority = 46, enabled = true, description = "Verify the click on Storm Support Card")
 	public void verifyClickOnStormSupportCard() throws InterruptedException {
 		ContactPage cp = new ContactPage();
 		KnowledgeBasePage kb = cp.goKnowledgeBase();
 		Thread.sleep(15000);
 		kb.clickStormSupport();
-		Thread.sleep(50000);
+		Thread.sleep(25000);
 		WebElement VideoResultsSection = Page.driver
 				.findElement(By.xpath("//*[@id='contentPart1']/div/div/div/div/div[1]/div/div[1]/div/h5"));
 		Assert.assertTrue(VideoResultsSection.isDisplayed());
@@ -862,6 +899,13 @@ public class KnowledgeBase extends BaseTest {
 		WebElement DocumentResultsSection = Page.driver
 				.findElement(By.xpath("//*[@id='contentPart1']/div/div/div/div/div[3]/div/div[1]/div[1]/h5"));
 		Assert.assertTrue(DocumentResultsSection.isDisplayed());
+		//Page.click("PopularQueriesFilter_XPATH");
+		WebElement StormSupportPopularFilter1 = Page.driver.findElement(By.xpath("//*[contains(text(),'Storm Support Vanity 1')]"));
+		Assert.assertTrue(StormSupportPopularFilter1.isDisplayed());
+		WebElement StormSupportPopularFilter2 = Page.driver.findElement(By.xpath("//*[contains(text(),'Storm Support Vanity 2')]"));
+		Assert.assertTrue(StormSupportPopularFilter2.isDisplayed());
+		WebElement StormSupportPopularFilter3 = Page.driver.findElement(By.xpath("//*[contains(text(),'Storm Support Vanity 3')]"));
+		Assert.assertTrue(StormSupportPopularFilter3.isDisplayed());
 		Thread.sleep(3000);
 		kb.clickClearSearch();
 		Thread.sleep(3000);
@@ -871,13 +915,14 @@ public class KnowledgeBase extends BaseTest {
 	// page will take the user to refined search result page
 	// US-98499-98742-verify the user is redirected to correct URLs on clicking the
 	// assets listed to intended category
+	//US-100681-100877-Verify system is displaying results based on selection in sub-category "Filters" specific to the tile category selected.
 	@Test(priority = 47, enabled = true, description = "Verify the click on Underground Card")
 	public void verifyClickOnUndergroundCard() throws InterruptedException {
 		ContactPage cp = new ContactPage();
 		KnowledgeBasePage kb = cp.goKnowledgeBase();
 		Thread.sleep(15000);
 		kb.clickUnderground();
-		Thread.sleep(50000);
+		Thread.sleep(25000);
 		// WebElement VideoResultsSection =
 		// Page.driver.findElement(By.xpath("//*[@id='contentPart1']/div/div/div/div/div[1]/div/div[1]/div/h5"));
 		// Assert.assertTrue(VideoResultsSection.isDisplayed());
@@ -887,6 +932,13 @@ public class KnowledgeBase extends BaseTest {
 		WebElement DocumentResultsSection = Page.driver
 				.findElement(By.xpath("//*[@id='contentPart1']/div/div/div/div/div[2]/div/div[1]/div/h5"));
 		Assert.assertTrue(DocumentResultsSection.isDisplayed());
+		//Page.click("PopularQueriesFilter_XPATH");
+		WebElement UndergroundPopularFilter1 = Page.driver.findElement(By.xpath("//*[contains(text(),'Underground Vanity 1')]"));
+		Assert.assertTrue(UndergroundPopularFilter1.isDisplayed());
+		WebElement UndergroundPopularFilter2 = Page.driver.findElement(By.xpath("//*[contains(text(),'Underground Vanity 2')]"));
+		Assert.assertTrue(UndergroundPopularFilter2.isDisplayed());
+		WebElement UndergroundPopularFilter3 = Page.driver.findElement(By.xpath("//*[contains(text(),'Underground Vanity 3')]"));
+		Assert.assertTrue(UndergroundPopularFilter3.isDisplayed());
 		Thread.sleep(3000);
 		kb.clickClearSearch();
 		Thread.sleep(3000);
@@ -896,14 +948,15 @@ public class KnowledgeBase extends BaseTest {
 	// page will take the user to refined search result page
 	// US-98499-98742-verify the user is redirected to correct URLs on clicking the
 	// assets listed to intended category
+	//US-100681-100877-Verify system is displaying results based on selection in sub-category "Filters" specific to the tile category selected.
 	@Test(priority = 48, enabled = true, description = "Verify the click on Wood Restoration Card")
 	public void verifyClickOnWoodRestorationCard() throws InterruptedException {
 		ContactPage cp = new ContactPage();
 		KnowledgeBasePage kb = cp.goKnowledgeBase();
 		Thread.sleep(15000);
 		kb.clickWoodRestoration();
-		Thread.sleep(50000);
-		WebElement VideoResultsSection = Page.driver
+		Thread.sleep(5000);
+		/*WebElement VideoResultsSection = Page.driver
 				.findElement(By.xpath("//*[@id='contentPart1']/div/div/div/div/div[1]/div/div[1]/div/h5"));
 		Assert.assertTrue(VideoResultsSection.isDisplayed());
 		// WebElement ImageResultsSection =
@@ -912,23 +965,33 @@ public class KnowledgeBase extends BaseTest {
 		WebElement DocumentResultsSection = Page.driver
 				.findElement(By.xpath("//*[@id=\"contentPart1\"]/div/div/div/div/div[2]/div/div[1]/div[1]/h5"));
 		Assert.assertTrue(DocumentResultsSection.isDisplayed());
+		WebElement WoodRestorationPopularFilter1 = Page.driver.findElement(By.xpath("//*[contains(text(),'')]"));
+		Assert.assertTrue(WoodRestorationPopularFilter1.isDisplayed());
+		WebElement WoodRestorationPopularFilter2 = Page.driver.findElement(By.xpath("//*[contains(text(),'')]"));
+		Assert.assertTrue(WoodRestorationPopularFilter2.isDisplayed());
+		WebElement WoodRestorationPopularFilter3 = Page.driver.findElement(By.xpath("//*[contains(text(),'')]"));
+		Assert.assertTrue(WoodRestorationPopularFilter3.isDisplayed());
 		Thread.sleep(3000);
 		kb.clickClearSearch();
-		Thread.sleep(3000);
+		Thread.sleep(3000);*/
+		WebElement noresults = Page.driver.findElement(By.xpath("//div[@class='text-center dismissCountDown']/div[1]"));
+
+		System.out.println(noresults.getText());
 	}
 
 	// US-98499-98607-Verify that clicking on the header on the tiles in KB landing
 	// page will take the user to refined search result page
 	// US-98499-98742-verify the user is redirected to correct URLs on clicking the
 	// assets listed to intended category
+	//US-100681-100877-Verify system is displaying results based on selection in sub-category "Filters" specific to the tile category selected.
 	@Test(priority = 49, enabled = true, description = "Verify the click on Wood Inspection Card")
 	public void verifyClickOnWoodInspectionCard() throws InterruptedException {
 		ContactPage cp = new ContactPage();
 		KnowledgeBasePage kb = cp.goKnowledgeBase();
 		Thread.sleep(15000);
 		kb.clickWoodInspection();
-		Thread.sleep(50000);
-		WebElement VideoResultsSection = Page.driver
+		Thread.sleep(5000);
+		/*WebElement VideoResultsSection = Page.driver
 				.findElement(By.xpath("//*[@id='contentPart1']/div/div/div/div/div[1]/div/div[1]/div/h5"));
 		Assert.assertTrue(VideoResultsSection.isDisplayed());
 		WebElement ImageResultsSection = Page.driver
@@ -937,13 +1000,24 @@ public class KnowledgeBase extends BaseTest {
 		WebElement DocumentResultsSection = Page.driver
 				.findElement(By.xpath("//*[@id='contentPart1']/div/div/div/div/div[3]/div/div[1]/div[1]/h5"));
 		Assert.assertTrue(DocumentResultsSection.isDisplayed());
+		WebElement WoodInspectionPopularFilter1 = Page.driver.findElement(By.xpath("//*[contains(text(),'')]"));
+		Assert.assertTrue(WoodInspectionPopularFilter1.isDisplayed());
+		WebElement WoodInspectionPopularFilter2 = Page.driver.findElement(By.xpath("//*[contains(text(),'')]"));
+		Assert.assertTrue(WoodInspectionPopularFilter2.isDisplayed());
+		WebElement WoodInspectionPopularFilter3 = Page.driver.findElement(By.xpath("//*[contains(text(),'')]"));
+		Assert.assertTrue(WoodInspectionPopularFilter3.isDisplayed());
 		Thread.sleep(3000);
 		kb.clickClearSearch();
-		Thread.sleep(3000);
+		Thread.sleep(3000);*/
+		WebElement noresults = Page.driver.findElement(By.xpath("//div[@class='text-center dismissCountDown']/div[1]"));
+
+		System.out.println(noresults.getText());
 	}
 
 	// US-98499-98609: Verify that clicking on the assets for the tiles in KB
 	// landing page will take the user to refined search result page for the same
+	//US-100681-100871-Verify Popular Queries" will be populated with a set of sub-category "Filters" specific to the tile category selected.
+	//US-98506-98724-Verify when user clicks on image from gallery system will open the image content display page (Box)
 	@Test(priority = 50, enabled = true, description = "Verify the click on Images under Joint Use")
 	public void verifyClickonJointUsImages() throws InterruptedException {
 		ContactPage cp = new ContactPage();
@@ -965,6 +1039,15 @@ public class KnowledgeBase extends BaseTest {
 		WebElement ImageContent = Page.driver
 				.findElement(By.xpath("//*[@id='contentPart2']/div/div/div/div/div/div/div/div[2]/div/div[1]/div/img"));
 		Assert.assertTrue(ImageContent.isDisplayed());
+		//Page.click("PopularQueriesFilter_XPATH");
+		WebElement JointUseImagesPopularFilter1 = Page.driver.findElement(By.xpath("//*[contains(text(),'Joint Use Vanity 1')]"));
+		Assert.assertTrue(JointUseImagesPopularFilter1.isDisplayed());
+		WebElement JointUseImagesPopularFilter2 = Page.driver.findElement(By.xpath("//*[contains(text(),'Joint Use Vanity 2')]"));
+		Assert.assertTrue(JointUseImagesPopularFilter2.isDisplayed());
+		WebElement JointUseImagesPopularFilter3 = Page.driver.findElement(By.xpath("//*[contains(text(),'Joint Use Vanity 3')]"));
+		Assert.assertTrue(JointUseImagesPopularFilter3.isDisplayed());
+		WebElement imageTitle = Page.driver.findElement(By.xpath("//*[contains(text(),'Test Image (Joint Use 2)')]"));
+		Assert.assertEquals(imageTitle.getText(), "Test Image (Joint Use 2)");
 		Thread.sleep(3000);
 		kb.clickJointUseOnAnImage();
 		Thread.sleep(3000);
@@ -975,11 +1058,14 @@ public class KnowledgeBase extends BaseTest {
 
 	// US-98499-98609: Verify that clicking on the assets for the tiles in KB
 	// landing page will take the user to refined search result page for the same
+	// US-98506-98723-Verify video content display page will display the asset title
+	// and description in addition to the embedded preview window.
+	//US-100681-100871-Verify Popular Queries" will be populated with a set of sub-category "Filters" specific to the tile category selected.
 	@Test(priority = 51, enabled = true, description = "Verify the click on Videos under Joint Use")
 	public void verifyClickonJointUsVideos() throws InterruptedException {
 		ContactPage cp = new ContactPage();
 		KnowledgeBasePage kb = cp.goKnowledgeBase();
-		Thread.sleep(3000);
+		Thread.sleep(8000);
 		kb.clickJointUseVideos();
 		Thread.sleep(3000);
 		// Verify the presence of Back Button
@@ -996,6 +1082,15 @@ public class KnowledgeBase extends BaseTest {
 		WebElement VideoContent = Page.driver
 				.findElement(By.xpath("//*[@id='contentPart3']/div/div/div/div/div/div/div[2]/div/div[1]/div/img"));
 		Assert.assertTrue(VideoContent.isDisplayed());
+		//Page.click("PopularQueriesFilter_XPATH");
+		WebElement JointUseVideosPopularFilter1 = Page.driver.findElement(By.xpath("//*[contains(text(),'Joint Use Vanity 1')]"));
+		Assert.assertTrue(JointUseVideosPopularFilter1.isDisplayed());
+		WebElement JointUseVideosPopularFilter2 = Page.driver.findElement(By.xpath("//*[contains(text(),'Joint Use Vanity 2')]"));
+		Assert.assertTrue(JointUseVideosPopularFilter2.isDisplayed());
+		WebElement JointUseVideosPopularFilter3 = Page.driver.findElement(By.xpath("//*[contains(text(),'Joint Use Vanity 3')]"));
+		Assert.assertTrue(JointUseVideosPopularFilter3.isDisplayed());
+		WebElement videoTitle = Page.driver.findElement(By.xpath("//*[contains(text(),'Test Video (Joint Use 2)')]"));
+		Assert.assertEquals(videoTitle.getText(), "Test Video (Joint Use 2)");
 		Thread.sleep(3000);
 		kb.clickJointUseOnAVideo();
 		Thread.sleep(10000);
@@ -1012,12 +1107,17 @@ public class KnowledgeBase extends BaseTest {
 	public void verifyClickonJointUsArticles() throws InterruptedException {
 		ContactPage cp = new ContactPage();
 		KnowledgeBasePage kb = cp.goKnowledgeBase();
-		Thread.sleep(3000);
+		Thread.sleep(8000);
 		kb.clickJointUseArticles();
+		WebElement noresults = Page.driver.findElement(By.xpath("//div[@class='text-center dismissCountDown']/div[1]"));
+
+		System.out.println(noresults.getText());
 	}
 
 	// US-98499-98609: Verify that clicking on the assets for the tiles in KB
 	// landing page will take the user to refined search result page for the same
+	// US-98506-98734-Verify When a user selects an asset(Video) for viewing, the video should be opened in content display
+	//US-100681-100871-Verify Popular Queries" will be populated with a set of sub-category "Filters" specific to the tile category selected.
 	@Test(priority = 53, enabled = true, description = "Verify the click on Videos under Overhead")
 	public void verifyClickonOverheadVideos() throws InterruptedException {
 		ContactPage cp = new ContactPage();
@@ -1041,6 +1141,16 @@ public class KnowledgeBase extends BaseTest {
 		Assert.assertTrue(VideoContent.isDisplayed());
 		Thread.sleep(3000);
 		kb.clickOverheadOnAVideo();
+		Thread.sleep(3000);
+		WebElement VideoHeader = Page.driver.findElement(By.xpath("//div[contains(text(),'Test Video (Overhead 1)') and @class='KBmtpx']"));
+		Assert.assertEquals(VideoHeader.getText(), "Test Video (Overhead 1)");
+		//Page.click("PopularQueriesFilter_XPATH");
+		WebElement OverheadVideosPopularFilter1 = Page.driver.findElement(By.xpath("//*[contains(text(),'Overhead Vanity 1')]"));
+		Assert.assertTrue(OverheadVideosPopularFilter1.isDisplayed());
+		WebElement OverheadVideosPopularFilter2 = Page.driver.findElement(By.xpath("//*[contains(text(),'Overhead Vanity 2')]"));
+		Assert.assertTrue(OverheadVideosPopularFilter2.isDisplayed());
+		WebElement OverheadVideosPopularFilter3 = Page.driver.findElement(By.xpath("//*[contains(text(),'Overhead Vanity 3')]"));
+		Assert.assertTrue(OverheadVideosPopularFilter3.isDisplayed());
 		Thread.sleep(10000);
 		kb.clickBoxCloseBtn();
 		Thread.sleep(6000);
@@ -1051,11 +1161,12 @@ public class KnowledgeBase extends BaseTest {
 
 	// US-98499-98609: Verify that clicking on the assets for the tiles in KB
 	// landing page will take the user to refined search result page for the same
+	//US-100681-100871-Verify Popular Queries" will be populated with a set of sub-category "Filters" specific to the tile category selected.
 	@Test(priority = 54, enabled = true, description = "Verify the click on Images under Overhead")
 	public void verifyClickonOverheadImages() throws InterruptedException {
 		ContactPage cp = new ContactPage();
 		KnowledgeBasePage kb = cp.goKnowledgeBase();
-		Thread.sleep(3000);
+		Thread.sleep(8000);
 		kb.clickOverheadImages();
 		Thread.sleep(3000);
 		// Verify the presence of Back Button
@@ -1072,6 +1183,13 @@ public class KnowledgeBase extends BaseTest {
 		WebElement ImageContent = Page.driver
 				.findElement(By.xpath("//*[@id='contentPart2']/div/div/div/div/div/div/div/div[2]/div/div[1]/div/img"));
 		Assert.assertTrue(ImageContent.isDisplayed());
+		//Page.click("PopularQueriesFilter_XPATH");
+		WebElement OverheadImagesPopularFilter1 = Page.driver.findElement(By.xpath("//*[contains(text(),'Overhead Vanity 1')]"));
+		Assert.assertTrue(OverheadImagesPopularFilter1.isDisplayed());
+		WebElement OverheadImagesPopularFilter2 = Page.driver.findElement(By.xpath("//*[contains(text(),'Overhead Vanity 2')]"));
+		Assert.assertTrue(OverheadImagesPopularFilter2.isDisplayed());
+		WebElement OverheadImagesPopularFilter3 = Page.driver.findElement(By.xpath("//*[contains(text(),'Overhead Vanity 3')]"));
+		Assert.assertTrue(OverheadImagesPopularFilter3.isDisplayed());
 		Thread.sleep(3000);
 		kb.clickOverheadOnAnImage();
 		Thread.sleep(3000);
@@ -1082,11 +1200,13 @@ public class KnowledgeBase extends BaseTest {
 
 	// US-98499-98609: Verify that clicking on the assets for the tiles in KB
 	// landing page will take the user to refined search result page for the same
+	//US-100681-100871-Verify Popular Queries" will be populated with a set of sub-category "Filters" specific to the tile category selected.
+	//US-98506-98737-Verify when user clicks on document from document list system will open the document content display
 	@Test(priority = 55, enabled = true, description = "Verify the click on Project profiles under Overhead")
 	public void verifyClickonOverheadProjectProfiles() throws InterruptedException {
 		ContactPage cp = new ContactPage();
 		KnowledgeBasePage kb = cp.goKnowledgeBase();
-		Thread.sleep(3000);
+		Thread.sleep(8000);
 		kb.clickOverheadProjectProfiles();
 		Thread.sleep(3000);
 		// Verify the presence of Back Button
@@ -1103,6 +1223,17 @@ public class KnowledgeBase extends BaseTest {
 		WebElement DocumentContent = Page.driver
 				.findElement(By.xpath("//div[@class='pagiNation p-0']/div[1]/div[1]/a"));
 		Assert.assertTrue(DocumentContent.isDisplayed());
+		//Page.click("PopularQueriesFilter_XPATH");
+		WebElement OverheadProjectProfilesPopularFilter1 = Page.driver.findElement(By.xpath("//*[contains(text(),'Overhead Vanity 1')]"));
+		Assert.assertTrue(OverheadProjectProfilesPopularFilter1.isDisplayed());
+		WebElement OverheadProjectProfilesPopularFilter2 = Page.driver.findElement(By.xpath("//*[contains(text(),'Overhead Vanity 2')]"));
+		Assert.assertTrue(OverheadProjectProfilesPopularFilter2.isDisplayed());
+		WebElement OverheadProjectProfilesPopularFilter3 = Page.driver.findElement(By.xpath("//*[contains(text(),'Overhead Vanity 3')]"));
+		Assert.assertTrue(OverheadProjectProfilesPopularFilter3.isDisplayed());
+		WebElement documentTitle = Page.driver.findElement(By.xpath("//*[contains(text(),'Test Project Profiles (Overhead 2)')]"));
+		Assert.assertEquals(documentTitle.getText(), "Test Project Profiles (Overhead 2)");
+		WebElement docDescription = Page.driver.findElement(By.xpath("//*[@class='pagiNation p-0']/div[1]/div[1]/p"));
+		Assert.assertEquals(docDescription.getText(), "Test brochure");
 		Thread.sleep(3000);
 		kb.clickOverheadOnADocument();
 		Thread.sleep(3000);
@@ -1113,11 +1244,12 @@ public class KnowledgeBase extends BaseTest {
 
 	// US-98499-98609: Verify that clicking on the assets for the tiles in KB
 	// landing page will take the user to refined search result page for the same
+	//US-100681-100871-Verify Popular Queries" will be populated with a set of sub-category "Filters" specific to the tile category selected.
 	@Test(priority = 56, enabled = true, description = "Verify the click on Images under Pole Replacement")
 	public void verifyClickonPoleReplacementImages() throws InterruptedException {
 		ContactPage cp = new ContactPage();
 		KnowledgeBasePage kb = cp.goKnowledgeBase();
-		Thread.sleep(3000);
+		Thread.sleep(8000);
 		kb.clickPoleReplacementImages();
 		Thread.sleep(3000);
 		// Verify the presence of Back Button
@@ -1134,6 +1266,13 @@ public class KnowledgeBase extends BaseTest {
 		WebElement ImageContent = Page.driver
 				.findElement(By.xpath("//*[@id='contentPart2']/div/div/div/div/div/div/div/div[2]/div/div[1]/div/img"));
 		Assert.assertTrue(ImageContent.isDisplayed());
+		//Page.click("PopularQueriesFilter_XPATH");
+		WebElement PoleReplacementImagesPopularFilter1 = Page.driver.findElement(By.xpath("//*[contains(text(),'Pole Replacement Vanity 1')]"));
+		Assert.assertTrue(PoleReplacementImagesPopularFilter1.isDisplayed());
+		WebElement PoleReplacementImagesPopularFilter2 = Page.driver.findElement(By.xpath("//*[contains(text(),'Pole Replacement Vanity 2')]"));
+		Assert.assertTrue(PoleReplacementImagesPopularFilter2.isDisplayed());
+		WebElement PoleReplacementImagesPopularFilter3 = Page.driver.findElement(By.xpath("//*[contains(text(),'Pole Replacement Vanity 3')]"));
+		Assert.assertTrue(PoleReplacementImagesPopularFilter3.isDisplayed());
 		Thread.sleep(3000);
 		kb.clickPoleReplacementOnAnImage();
 		Thread.sleep(3000);
@@ -1144,11 +1283,12 @@ public class KnowledgeBase extends BaseTest {
 
 	// US-98499-98609: Verify that clicking on the assets for the tiles in KB
 	// landing page will take the user to refined search result page for the same
+	//US-100681-100871-Verify Popular Queries" will be populated with a set of sub-category "Filters" specific to the tile category selected.
 	@Test(priority = 57, enabled = true, description = "Verify the click on Videos under Pole Replacement")
 	public void verifyClickonPoleReplacementVideos() throws InterruptedException {
 		ContactPage cp = new ContactPage();
 		KnowledgeBasePage kb = cp.goKnowledgeBase();
-		Thread.sleep(3000);
+		Thread.sleep(8000);
 		kb.clickPoleReplacementVideos();
 		Thread.sleep(3000);
 		// Verify the presence of Back Button
@@ -1165,6 +1305,13 @@ public class KnowledgeBase extends BaseTest {
 		WebElement VideoContent = Page.driver
 				.findElement(By.xpath("//*[@id='contentPart3']/div/div/div/div/div/div/div[2]/div/div[1]/div/img"));
 		Assert.assertTrue(VideoContent.isDisplayed());
+		//Page.click("PopularQueriesFilter_XPATH");
+		WebElement PoleReplacementVideosPopularFilter1 = Page.driver.findElement(By.xpath("//*[contains(text(),'Pole Replacement Vanity 1')]"));
+		Assert.assertTrue(PoleReplacementVideosPopularFilter1.isDisplayed());
+		WebElement PoleReplacementVideosPopularFilter2 = Page.driver.findElement(By.xpath("//*[contains(text(),'Pole Replacement Vanity 2')]"));
+		Assert.assertTrue(PoleReplacementVideosPopularFilter2.isDisplayed());
+		WebElement PoleReplacementVideosPopularFilter3 = Page.driver.findElement(By.xpath("//*[contains(text(),'Pole Replacement Vanity 3')]"));
+		Assert.assertTrue(PoleReplacementVideosPopularFilter3.isDisplayed());
 		Thread.sleep(3000);
 		kb.clickPoleReplacementOnAVideo();
 		Thread.sleep(10000);
@@ -1177,11 +1324,12 @@ public class KnowledgeBase extends BaseTest {
 
 	// US-98499-98609: Verify that clicking on the assets for the tiles in KB
 	// landing page will take the user to refined search result page for the same
+	//US-100681-100871-Verify Popular Queries" will be populated with a set of sub-category "Filters" specific to the tile category selected.
 	@Test(priority = 58, enabled = true, description = "Verify the click on Brochure under Pole Replacement")
 	public void verifyClickonPoleReplacementBrochure() throws InterruptedException {
 		ContactPage cp = new ContactPage();
 		KnowledgeBasePage kb = cp.goKnowledgeBase();
-		Thread.sleep(3000);
+		Thread.sleep(8000);
 		kb.clickPoleReplacementBrochure();
 		Thread.sleep(3000);
 		// Verify the presence of Back Button
@@ -1198,6 +1346,13 @@ public class KnowledgeBase extends BaseTest {
 		WebElement DocumentContent = Page.driver
 				.findElement(By.xpath("//div[@class='pagiNation p-0']/div[1]/div[1]/a"));
 		Assert.assertTrue(DocumentContent.isDisplayed());
+		//Page.click("PopularQueriesFilter_XPATH");
+		WebElement PoleReplacementBrochurePopularFilter1 = Page.driver.findElement(By.xpath("//*[contains(text(),'Pole Replacement Vanity 1')]"));
+		Assert.assertTrue(PoleReplacementBrochurePopularFilter1.isDisplayed());
+		WebElement PoleReplacementBrochurePopularFilter2 = Page.driver.findElement(By.xpath("//*[contains(text(),'Pole Replacement Vanity 2')]"));
+		Assert.assertTrue(PoleReplacementBrochurePopularFilter2.isDisplayed());
+		WebElement PoleReplacementBrochurePopularFilter3 = Page.driver.findElement(By.xpath("//*[contains(text(),'Pole Replacement Vanity 3')]"));
+		Assert.assertTrue(PoleReplacementBrochurePopularFilter3.isDisplayed());
 		Thread.sleep(3000);
 		kb.clickPoleReplacementOnADocument();
 		Thread.sleep(3000);
@@ -1208,11 +1363,12 @@ public class KnowledgeBase extends BaseTest {
 
 	// US-98499-98609: Verify that clicking on the assets for the tiles in KB
 	// landing page will take the user to refined search result page for the same
+	//US-100681-100871-Verify Popular Queries" will be populated with a set of sub-category "Filters" specific to the tile category selected.
 	@Test(priority = 59, enabled = true, description = "Verify the click on Images under Products")
 	public void verifyClickonProductsImages() throws InterruptedException {
 		ContactPage cp = new ContactPage();
 		KnowledgeBasePage kb = cp.goKnowledgeBase();
-		Thread.sleep(3000);
+		Thread.sleep(8000);
 		kb.clickProductsImages();
 		Thread.sleep(3000);
 		// Verify the presence of Back Button
@@ -1229,6 +1385,13 @@ public class KnowledgeBase extends BaseTest {
 		WebElement ImageContent = Page.driver
 				.findElement(By.xpath("//*[@id='contentPart2']/div/div/div/div/div/div/div/div[2]/div/div[1]/div/img"));
 		Assert.assertTrue(ImageContent.isDisplayed());
+		//Page.click("PopularQueriesFilter_XPATH");
+		WebElement ProductsImagesPopularFilter1 = Page.driver.findElement(By.xpath("//*[contains(text(),'Products Vanity 1')]"));
+		Assert.assertTrue(ProductsImagesPopularFilter1.isDisplayed());
+		WebElement ProductsImagesPopularFilter2 = Page.driver.findElement(By.xpath("//*[contains(text(),'Products Vanity 2')]"));
+		Assert.assertTrue(ProductsImagesPopularFilter2.isDisplayed());
+		WebElement ProductsImagesPopularFilter3 = Page.driver.findElement(By.xpath("//*[contains(text(),'Products Vanity 3')]"));
+		Assert.assertTrue(ProductsImagesPopularFilter3.isDisplayed());
 		Thread.sleep(3000);
 		kb.clickProductsOnAnImage();
 		Thread.sleep(3000);
@@ -1239,11 +1402,12 @@ public class KnowledgeBase extends BaseTest {
 
 	// US-98499-98609: Verify that clicking on the assets for the tiles in KB
 	// landing page will take the user to refined search result page for the same
+	//US-100681-100871-Verify Popular Queries" will be populated with a set of sub-category "Filters" specific to the tile category selected.
 	@Test(priority = 60, enabled = true, description = "Verify the click on Videos under Products")
 	public void verifyClickonProductsVideos() throws InterruptedException {
 		ContactPage cp = new ContactPage();
 		KnowledgeBasePage kb = cp.goKnowledgeBase();
-		Thread.sleep(3000);
+		Thread.sleep(8000);
 		kb.clickProductsVideos();
 		Thread.sleep(3000);
 		// Verify the presence of Back Button
@@ -1260,6 +1424,13 @@ public class KnowledgeBase extends BaseTest {
 		WebElement VideoContent = Page.driver
 				.findElement(By.xpath("//*[@id='contentPart3']/div/div/div/div/div/div/div[2]/div/div[1]/div/img"));
 		Assert.assertTrue(VideoContent.isDisplayed());
+		//Page.click("PopularQueriesFilter_XPATH");
+		WebElement ProductsVideosPopularFilter1 = Page.driver.findElement(By.xpath("//*[contains(text(),'Products Vanity 1')]"));
+		Assert.assertTrue(ProductsVideosPopularFilter1.isDisplayed());
+		WebElement ProductsVideosPopularFilter2 = Page.driver.findElement(By.xpath("//*[contains(text(),'Products Vanity 2')]"));
+		Assert.assertTrue(ProductsVideosPopularFilter2.isDisplayed());
+		WebElement ProductsVideosPopularFilter3 = Page.driver.findElement(By.xpath("//*[contains(text(),'Products Vanity 3')]"));
+		Assert.assertTrue(ProductsVideosPopularFilter3.isDisplayed());
 		Thread.sleep(3000);
 		kb.clickProductsOnAVideo();
 		Thread.sleep(10000);
@@ -1272,11 +1443,12 @@ public class KnowledgeBase extends BaseTest {
 
 	// US-98499-98609: Verify that clicking on the assets for the tiles in KB
 	// landing page will take the user to refined search result page for the same
+	//US-100681-100871-Verify Popular Queries" will be populated with a set of sub-category "Filters" specific to the tile category selected.
 	@Test(priority = 61, enabled = true, description = "Verify the click on Product Catalog under Products")
 	public void verifyClickonProductsProductCatalog() throws InterruptedException {
 		ContactPage cp = new ContactPage();
 		KnowledgeBasePage kb = cp.goKnowledgeBase();
-		Thread.sleep(3000);
+		Thread.sleep(8000);
 		kb.clickProductsProductCatalog();
 		Thread.sleep(3000);
 		// Verify the presence of Back Button
@@ -1293,6 +1465,13 @@ public class KnowledgeBase extends BaseTest {
 		WebElement DocumentContent = Page.driver
 				.findElement(By.xpath("//div[@class='pagiNation p-0']/div[1]/div[1]/a"));
 		Assert.assertTrue(DocumentContent.isDisplayed());
+		//Page.click("PopularQueriesFilter_XPATH");
+		WebElement ProductsProductCatalogPopularFilter1 = Page.driver.findElement(By.xpath("//*[contains(text(),'Products Vanity 1')]"));
+		Assert.assertTrue(ProductsProductCatalogPopularFilter1.isDisplayed());
+		WebElement ProductsProductCatalogPopularFilter2 = Page.driver.findElement(By.xpath("//*[contains(text(),'Products Vanity 2')]"));
+		Assert.assertTrue(ProductsProductCatalogPopularFilter2.isDisplayed());
+		WebElement ProductsProductCatalogPopularFilter3 = Page.driver.findElement(By.xpath("//*[contains(text(),'Products Vanity 3')]"));
+		Assert.assertTrue(ProductsProductCatalogPopularFilter3.isDisplayed());
 		Thread.sleep(3000);
 		kb.clickProductsOnADocument();
 		Thread.sleep(3000);
@@ -1303,11 +1482,12 @@ public class KnowledgeBase extends BaseTest {
 
 	// US-98499-98609: Verify that clicking on the assets for the tiles in KB
 	// landing page will take the user to refined search result page for the same
+	//US-100681-100871-Verify Popular Queries" will be populated with a set of sub-category "Filters" specific to the tile category selected.
 	@Test(priority = 62, enabled = true, description = "Verify the click on Images under Steel And Concrete Assessment")
 	public void verifyClickonSteelAndConcreteAssessmentImages() throws InterruptedException {
 		ContactPage cp = new ContactPage();
 		KnowledgeBasePage kb = cp.goKnowledgeBase();
-		Thread.sleep(3000);
+		Thread.sleep(8000);
 		kb.clickSteelandConcreteAssessmentImages();
 		Thread.sleep(3000);
 		// Verify the presence of Back Button
@@ -1324,6 +1504,13 @@ public class KnowledgeBase extends BaseTest {
 		WebElement ImageContent = Page.driver
 				.findElement(By.xpath("//*[@id='contentPart2']/div/div/div/div/div/div/div/div[2]/div/div[1]/div/img"));
 		Assert.assertTrue(ImageContent.isDisplayed());
+		//Page.click("PopularQueriesFilter_XPATH");
+		WebElement SteelandConcreteAssessmentImagesPopularFilter1 = Page.driver.findElement(By.xpath("//*[contains(text(),'Steel & Concrete Assessment Vanity 1')]"));
+		Assert.assertTrue(SteelandConcreteAssessmentImagesPopularFilter1.isDisplayed());
+		WebElement SteelandConcreteAssessmentImagesPopularFilter2 = Page.driver.findElement(By.xpath("//*[contains(text(),'Steel & Concrete Assessment Vanity 2')]"));
+		Assert.assertTrue(SteelandConcreteAssessmentImagesPopularFilter2.isDisplayed());
+		WebElement SteelandConcreteAssessmentImagesPopularFilter3 = Page.driver.findElement(By.xpath("//*[contains(text(),'Steel & Concrete Assessment Vanity 3')]"));
+		Assert.assertTrue(SteelandConcreteAssessmentImagesPopularFilter3.isDisplayed());
 		Thread.sleep(3000);
 		kb.clickSteelAndConcreteAssessmentOnAnImage();
 		Thread.sleep(3000);
@@ -1338,8 +1525,11 @@ public class KnowledgeBase extends BaseTest {
 	public void verifyClickonSteelAndConcreteAssessmentBrochures() throws InterruptedException {
 		ContactPage cp = new ContactPage();
 		KnowledgeBasePage kb = cp.goKnowledgeBase();
-		Thread.sleep(3000);
+		Thread.sleep(8000);
 		kb.clickSteelandConcreteAssessmentBrochures();
+		WebElement noresults = Page.driver.findElement(By.xpath("//div[@class='text-center dismissCountDown']/div[1]"));
+
+		System.out.println(noresults.getText());
 	}
 
 	// US-98499-98609: Verify that clicking on the assets for the tiles in KB
@@ -1348,8 +1538,11 @@ public class KnowledgeBase extends BaseTest {
 	public void verifyClickonSteelAndConcreteAssessmentStandardsCodes() throws InterruptedException {
 		ContactPage cp = new ContactPage();
 		KnowledgeBasePage kb = cp.goKnowledgeBase();
-		Thread.sleep(3000);
+		Thread.sleep(8000);
 		kb.clickSteelandConcreteAssessmentStandards_Codes();
+		WebElement noresults = Page.driver.findElement(By.xpath("//div[@class='text-center dismissCountDown']/div[1]"));
+
+		System.out.println(noresults.getText());
 	}
 
 	// US-98499-98609: Verify that clicking on the assets for the tiles in KB
@@ -1358,8 +1551,11 @@ public class KnowledgeBase extends BaseTest {
 	public void verifyClickonSteelAndConcreteRestorationArticles() throws InterruptedException {
 		ContactPage cp = new ContactPage();
 		KnowledgeBasePage kb = cp.goKnowledgeBase();
-		Thread.sleep(3000);
+		Thread.sleep(8000);
 		kb.clickSteelandConcreteRestorationArticles();
+		WebElement noresults = Page.driver.findElement(By.xpath("//div[@class='text-center dismissCountDown']/div[1]"));
+
+		System.out.println(noresults.getText());
 	}
 
 	// US-98499-98609: Verify that clicking on the assets for the tiles in KB
@@ -1368,17 +1564,21 @@ public class KnowledgeBase extends BaseTest {
 	public void verifyClickonSteelAndConcreteRestorationBrochures() throws InterruptedException {
 		ContactPage cp = new ContactPage();
 		KnowledgeBasePage kb = cp.goKnowledgeBase();
-		Thread.sleep(3000);
+		Thread.sleep(8000);
 		kb.clickSteelandConcreteRestorationBrochures();
+		WebElement noresults = Page.driver.findElement(By.xpath("//div[@class='text-center dismissCountDown']/div[1]"));
+
+		System.out.println(noresults.getText());
 	}
 
 	// US-98499-98609: Verify that clicking on the assets for the tiles in KB
 	// landing page will take the user to refined search result page for the same
+	//US-100681-100871-Verify Popular Queries" will be populated with a set of sub-category "Filters" specific to the tile category selected.
 	@Test(priority = 67, enabled = true, description = "Verify the click on Images under Steel And Concrete Restoration")
 	public void verifyClickonSteelAndConcreteRestorationImages() throws InterruptedException {
 		ContactPage cp = new ContactPage();
 		KnowledgeBasePage kb = cp.goKnowledgeBase();
-		Thread.sleep(3000);
+		Thread.sleep(8000);
 		kb.clickSteelandConcreteRestorationImages();
 		Thread.sleep(3000);
 		// Verify the presence of Back Button
@@ -1395,6 +1595,13 @@ public class KnowledgeBase extends BaseTest {
 		WebElement ImageContent = Page.driver
 				.findElement(By.xpath("//*[@id='contentPart2']/div/div/div/div/div/div/div/div[2]/div/div[1]/div/img"));
 		Assert.assertTrue(ImageContent.isDisplayed());
+		//Page.click("PopularQueriesFilter_XPATH");
+		WebElement SteelandConcreteRestorationImagesPopularFilter1 = Page.driver.findElement(By.xpath("//*[contains(text(),'Steel & Concrete Restoration Vanity 1')]"));
+		Assert.assertTrue(SteelandConcreteRestorationImagesPopularFilter1.isDisplayed());
+		WebElement SteelandConcreteRestorationImagesPopularFilter2 = Page.driver.findElement(By.xpath("//*[contains(text(),'Steel & Concrete Restoration Vanity 2')]"));
+		Assert.assertTrue(SteelandConcreteRestorationImagesPopularFilter2.isDisplayed());
+		WebElement SteelandConcreteRestorationImagesPopularFilter3 = Page.driver.findElement(By.xpath("//*[contains(text(),'Steel & Concrete Restoration Vanity 3')]"));
+		Assert.assertTrue(SteelandConcreteRestorationImagesPopularFilter3.isDisplayed());
 		Thread.sleep(3000);
 		kb.clickSteelAndConcreteRestorationOnAnImage();
 		Thread.sleep(3000);
@@ -1405,11 +1612,12 @@ public class KnowledgeBase extends BaseTest {
 
 	// US-98499-98609: Verify that clicking on the assets for the tiles in KB
 	// landing page will take the user to refined search result page for the same
+	//US-100681-100871-Verify Popular Queries" will be populated with a set of sub-category "Filters" specific to the tile category selected.
 	@Test(priority = 68, enabled = true, description = "Verify the click on Images under Storm Support")
 	public void verifyClickonStormSupportImages() throws InterruptedException {
 		ContactPage cp = new ContactPage();
 		KnowledgeBasePage kb = cp.goKnowledgeBase();
-		Thread.sleep(3000);
+		Thread.sleep(8000);
 		kb.clickStormSupportImages();
 		Thread.sleep(3000);
 		// Verify the presence of Back Button
@@ -1426,6 +1634,13 @@ public class KnowledgeBase extends BaseTest {
 		WebElement ImageContent = Page.driver
 				.findElement(By.xpath("//*[@id='contentPart2']/div/div/div/div/div/div/div/div[2]/div/div[1]/div/img"));
 		Assert.assertTrue(ImageContent.isDisplayed());
+		//Page.click("PopularQueriesFilter_XPATH");
+		WebElement StormSupportImagesPopularFilter1 = Page.driver.findElement(By.xpath("//*[contains(text(),'Storm Support Vanity 1')]"));
+		Assert.assertTrue(StormSupportImagesPopularFilter1.isDisplayed());
+		WebElement StormSupportImagesPopularFilter2 = Page.driver.findElement(By.xpath("//*[contains(text(),'Storm Support Vanity 2')]"));
+		Assert.assertTrue(StormSupportImagesPopularFilter2.isDisplayed());
+		WebElement StormSupportImagesPopularFilter3 = Page.driver.findElement(By.xpath("//*[contains(text(),'Storm Support Vanity 3')]"));
+		Assert.assertTrue(StormSupportImagesPopularFilter3.isDisplayed());
 		Thread.sleep(3000);
 		kb.clickStormSupportOnAnImage();
 		Thread.sleep(3000);
@@ -1436,11 +1651,12 @@ public class KnowledgeBase extends BaseTest {
 
 	// US-98499-98609: Verify that clicking on the assets for the tiles in KB
 	// landing page will take the user to refined search result page for the same
+	//US-100681-100871-Verify Popular Queries" will be populated with a set of sub-category "Filters" specific to the tile category selected.
 	@Test(priority = 69, enabled = true, description = "Verify the click on Videos under Storm Support")
 	public void verifyClickonStormSupportVideos() throws InterruptedException {
 		ContactPage cp = new ContactPage();
 		KnowledgeBasePage kb = cp.goKnowledgeBase();
-		Thread.sleep(3000);
+		Thread.sleep(8000);
 		kb.clickStormSupportVideos();
 		Thread.sleep(3000);
 		// Verify the presence of Back Button
@@ -1457,6 +1673,13 @@ public class KnowledgeBase extends BaseTest {
 		WebElement VideoContent = Page.driver
 				.findElement(By.xpath("//*[@id='contentPart3']/div/div/div/div/div/div/div[2]/div/div[1]/div/img"));
 		Assert.assertTrue(VideoContent.isDisplayed());
+		//Page.click("PopularQueriesFilter_XPATH");
+		WebElement StormSupportVideosPopularFilter1 = Page.driver.findElement(By.xpath("//*[contains(text(),'Storm Support Vanity 1')]"));
+		Assert.assertTrue(StormSupportVideosPopularFilter1.isDisplayed());
+		WebElement StormSupportVideosPopularFilter2 = Page.driver.findElement(By.xpath("//*[contains(text(),'Storm Support Vanity 2')]"));
+		Assert.assertTrue(StormSupportVideosPopularFilter2.isDisplayed());
+		WebElement StormSupportVideosPopularFilter3 = Page.driver.findElement(By.xpath("//*[contains(text(),'Storm Support Vanity 3')]"));
+		Assert.assertTrue(StormSupportVideosPopularFilter3.isDisplayed());
 		Thread.sleep(3000);
 		kb.clickStormSupportOnAVideo();
 		Thread.sleep(10000);
@@ -1469,11 +1692,12 @@ public class KnowledgeBase extends BaseTest {
 
 	// US-98499-98609: Verify that clicking on the assets for the tiles in KB
 	// landing page will take the user to refined search result page for the same
+	//US-100681-100871-Verify Popular Queries" will be populated with a set of sub-category "Filters" specific to the tile category selected.
 	@Test(priority = 70, enabled = true, description = "Verify the click on Project profiles under Storm Support")
 	public void verifyClickonStormSupportProjectProfiles() throws InterruptedException {
 		ContactPage cp = new ContactPage();
 		KnowledgeBasePage kb = cp.goKnowledgeBase();
-		Thread.sleep(3000);
+		Thread.sleep(8000);
 		kb.clickStormSupportProjectProfiles();
 		Thread.sleep(3000);
 		// Verify the presence of Back Button
@@ -1490,6 +1714,13 @@ public class KnowledgeBase extends BaseTest {
 		WebElement DocumentContent = Page.driver
 				.findElement(By.xpath("//div[@class='pagiNation p-0']/div[1]/div[1]/a"));
 		Assert.assertTrue(DocumentContent.isDisplayed());
+		//Page.click("PopularQueriesFilter_XPATH");
+		WebElement StormSupportProjectProfilesPopularFilter1 = Page.driver.findElement(By.xpath("//*[contains(text(),'Storm Support Vanity 1')]"));
+		Assert.assertTrue(StormSupportProjectProfilesPopularFilter1.isDisplayed());
+		WebElement StormSupportProjectProfilesPopularFilter2 = Page.driver.findElement(By.xpath("//*[contains(text(),'Storm Support Vanity 2')]"));
+		Assert.assertTrue(StormSupportProjectProfilesPopularFilter2.isDisplayed());
+		WebElement StormSupportProjectProfilesPopularFilter3 = Page.driver.findElement(By.xpath("//*[contains(text(),'Storm Support Vanity 3')]"));
+		Assert.assertTrue(StormSupportProjectProfilesPopularFilter3.isDisplayed());
 		Thread.sleep(3000);
 		kb.clickStormSupportonADocument();
 		Thread.sleep(3000);
@@ -1500,11 +1731,12 @@ public class KnowledgeBase extends BaseTest {
 
 	// US-98499-98609: Verify that clicking on the assets for the tiles in KB
 	// landing page will take the user to refined search result page for the same
+	//US-100681-100871-Verify Popular Queries" will be populated with a set of sub-category "Filters" specific to the tile category selected.
 	@Test(priority = 71, enabled = true, description = "Verify the click on Images under Underground")
 	public void verifyClickonUndergroundImages() throws InterruptedException {
 		ContactPage cp = new ContactPage();
 		KnowledgeBasePage kb = cp.goKnowledgeBase();
-		Thread.sleep(3000);
+		Thread.sleep(8000);
 		kb.clickUndergroundImages();
 		Thread.sleep(3000);
 		// Verify the presence of Back Button
@@ -1521,6 +1753,13 @@ public class KnowledgeBase extends BaseTest {
 		WebElement ImageContent = Page.driver
 				.findElement(By.xpath("//*[@id='contentPart2']/div/div/div/div/div/div/div/div[2]/div/div[1]/div/img"));
 		Assert.assertTrue(ImageContent.isDisplayed());
+		//Page.click("PopularQueriesFilter_XPATH");
+		WebElement UndergroundImagesPopularFilter1 = Page.driver.findElement(By.xpath("//*[contains(text(),'Underground Vanity 1')]"));
+		Assert.assertTrue(UndergroundImagesPopularFilter1.isDisplayed());
+		WebElement UndergroundImagesPopularFilter2 = Page.driver.findElement(By.xpath("//*[contains(text(),'Underground Vanity 2')]"));
+		Assert.assertTrue(UndergroundImagesPopularFilter2.isDisplayed());
+		WebElement UndergroundImagesPopularFilter3 = Page.driver.findElement(By.xpath("//*[contains(text(),'Underground Vanity 3')]"));
+		Assert.assertTrue(UndergroundImagesPopularFilter3.isDisplayed());
 		Thread.sleep(3000);
 		kb.clickUndergroundOnAnImage();
 		Thread.sleep(3000);
@@ -1531,11 +1770,12 @@ public class KnowledgeBase extends BaseTest {
 
 	// US-98499-98609: Verify that clicking on the assets for the tiles in KB
 	// landing page will take the user to refined search result page for the same
+	//US-100681-100871-Verify Popular Queries" will be populated with a set of sub-category "Filters" specific to the tile category selected.
 	@Test(priority = 72, enabled = true, description = "Verify the click on Brochure under Underground")
 	public void verifyClickonUndergroundBrochure() throws InterruptedException {
 		ContactPage cp = new ContactPage();
 		KnowledgeBasePage kb = cp.goKnowledgeBase();
-		Thread.sleep(3000);
+		Thread.sleep(8000);
 		kb.clickUndergroundBrochure();
 		Thread.sleep(3000);
 		// Verify the presence of Back Button
@@ -1552,6 +1792,13 @@ public class KnowledgeBase extends BaseTest {
 		WebElement DocumentContent = Page.driver
 				.findElement(By.xpath("//div[@class='pagiNation p-0']/div[1]/div[1]/a"));
 		Assert.assertTrue(DocumentContent.isDisplayed());
+		//Page.click("PopularQueriesFilter_XPATH");
+		WebElement UndergroundProjectProfilesPopularFilter1 = Page.driver.findElement(By.xpath("//*[contains(text(),'Underground Vanity 1')]"));
+		Assert.assertTrue(UndergroundProjectProfilesPopularFilter1.isDisplayed());
+		WebElement UndergroundProjectProfilesPopularFilter2 = Page.driver.findElement(By.xpath("//*[contains(text(),'Underground Vanity 2')]"));
+		Assert.assertTrue(UndergroundProjectProfilesPopularFilter2.isDisplayed());
+		WebElement UndergroundProjectProfilesPopularFilter3 = Page.driver.findElement(By.xpath("//*[contains(text(),'Underground Vanity 3')]"));
+		Assert.assertTrue(UndergroundProjectProfilesPopularFilter3.isDisplayed());
 		Thread.sleep(3000);
 		kb.clickUndergroundADocument();
 		Thread.sleep(3000);
@@ -1562,17 +1809,18 @@ public class KnowledgeBase extends BaseTest {
 
 	// US-98499-98609: Verify that clicking on the assets for the tiles in KB
 	// landing page will take the user to refined search result page for the same
+	//US-100681-100871-Verify Popular Queries" will be populated with a set of sub-category "Filters" specific to the tile category selected.
 	@Test(priority = 73, enabled = true, description = "Verify the click on Diagram under Underground")
 	public void verifyClickonUndergroundDiagram() throws InterruptedException {
 		ContactPage cp = new ContactPage();
 		KnowledgeBasePage kb = cp.goKnowledgeBase();
-		Thread.sleep(3000);
+		Thread.sleep(8000);
 		kb.clickUndergroundDiagram();
 		Thread.sleep(3000);
 		// Verify the presence of Back Button
-		WebElement BackBtnProjectProfiles = Page.driver
+		WebElement BackBtnDiagram = Page.driver
 				.findElement(By.xpath("//*[@id='contentPart5']/div/div/div/div/div/div/div[1]/div[1]/h5/a"));
-		Assert.assertTrue(BackBtnProjectProfiles.isDisplayed());
+		Assert.assertTrue(BackBtnDiagram.isDisplayed());
 		Thread.sleep(3000);
 		// Verify the presence Document header text
 		String DocumentHeaderTxt = Page.driver
@@ -1583,6 +1831,13 @@ public class KnowledgeBase extends BaseTest {
 		WebElement DocumentContent = Page.driver
 				.findElement(By.xpath("//div[@class='pagiNation p-0']/div[1]/div[1]/a"));
 		Assert.assertTrue(DocumentContent.isDisplayed());
+		//Page.click("PopularQueriesFilter_XPATH");
+		WebElement UndergroundDiagramPopularFilter1 = Page.driver.findElement(By.xpath("//*[contains(text(),'Underground Vanity 1')]"));
+		Assert.assertTrue(UndergroundDiagramPopularFilter1.isDisplayed());
+		WebElement UndergroundDiagramPopularFilter2 = Page.driver.findElement(By.xpath("//*[contains(text(),'Underground Vanity 2')]"));
+		Assert.assertTrue(UndergroundDiagramPopularFilter2.isDisplayed());
+		WebElement UndergroundDiagramPopularFilter3 = Page.driver.findElement(By.xpath("//*[contains(text(),'Underground Vanity 3')]"));
+		Assert.assertTrue(UndergroundDiagramPopularFilter3.isDisplayed());
 		Thread.sleep(3000);
 		kb.clickUndergroundADiagramDocument();
 		Thread.sleep(3000);
@@ -1593,11 +1848,12 @@ public class KnowledgeBase extends BaseTest {
 
 	// US-98499-98609: Verify that clicking on the assets for the tiles in KB
 	// landing page will take the user to refined search result page for the same
+	//US-100681-100871-Verify Popular Queries" will be populated with a set of sub-category "Filters" specific to the tile category selected.
 	@Test(priority = 74, enabled = true, description = "Verify the click on Videos under Wood Restoration")
 	public void verifyClickonWoodRestorationVideos() throws InterruptedException {
 		ContactPage cp = new ContactPage();
 		KnowledgeBasePage kb = cp.goKnowledgeBase();
-		Thread.sleep(3000);
+		Thread.sleep(8000);
 		kb.clickWoodRestorationVideos();
 		Thread.sleep(3000);
 		// Verify the presence of Back Button
@@ -1614,6 +1870,13 @@ public class KnowledgeBase extends BaseTest {
 		WebElement VideoContent = Page.driver
 				.findElement(By.xpath("//*[@id='contentPart3']/div/div/div/div/div/div/div[2]/div/div[1]/div/img"));
 		Assert.assertTrue(VideoContent.isDisplayed());
+		//Page.click("PopularQueriesFilter_XPATH");
+		WebElement WoodRestorationVideosPopularFilter1 = Page.driver.findElement(By.xpath("//*[contains(text(),'Wood Restoration 1')]"));
+		Assert.assertTrue(WoodRestorationVideosPopularFilter1.isDisplayed());
+		WebElement WoodRestorationVideosPopularFilter2 = Page.driver.findElement(By.xpath("//*[contains(text(),'Wood Restoration 2')]"));
+		Assert.assertTrue(WoodRestorationVideosPopularFilter2.isDisplayed());
+		WebElement WoodRestorationVideosPopularFilter3 = Page.driver.findElement(By.xpath("//*[contains(text(),'Wood Restoration 3')]"));
+		Assert.assertTrue(WoodRestorationVideosPopularFilter3.isDisplayed());
 		Thread.sleep(3000);
 		kb.clickWoodRestorationOnAVideo();
 		Thread.sleep(10000);
@@ -1630,8 +1893,11 @@ public class KnowledgeBase extends BaseTest {
 	public void verifyClickonWoodRestorationBrochures() throws InterruptedException {
 		ContactPage cp = new ContactPage();
 		KnowledgeBasePage kb = cp.goKnowledgeBase();
-		Thread.sleep(3000);
+		Thread.sleep(8000);
 		kb.clickWoodRestorationBrochures();
+		WebElement noresults = Page.driver.findElement(By.xpath("//div[@class='text-center dismissCountDown']/div[1]"));
+
+		System.out.println(noresults.getText());
 	}
 
 	// US-98499-98609: Verify that clicking on the assets for the tiles in KB
@@ -1640,17 +1906,21 @@ public class KnowledgeBase extends BaseTest {
 	public void verifyClickonWoodRestorationArticles() throws InterruptedException {
 		ContactPage cp = new ContactPage();
 		KnowledgeBasePage kb = cp.goKnowledgeBase();
-		Thread.sleep(3000);
+		Thread.sleep(8000);
 		kb.clickWoodRestorationArticles();
+		WebElement noresults = Page.driver.findElement(By.xpath("//div[@class='text-center dismissCountDown']/div[1]"));
+
+		System.out.println(noresults.getText());
 	}
 
 	// US-98499-98609: Verify that clicking on the assets for the tiles in KB
 	// landing page will take the user to refined search result page for the same
+	//US-100681-100871-Verify Popular Queries" will be populated with a set of sub-category "Filters" specific to the tile category selected.
 	@Test(priority = 77, enabled = true, description = "Verify the click on Videos under Wood Treatment")
 	public void verifyClickonWoodTreatmentVideos() throws InterruptedException {
 		ContactPage cp = new ContactPage();
 		KnowledgeBasePage kb = cp.goKnowledgeBase();
-		Thread.sleep(3000);
+		Thread.sleep(8000);
 		kb.clickWoodTreatmentVideos();
 		Thread.sleep(3000);
 		// Verify the presence of Back Button
@@ -1667,6 +1937,13 @@ public class KnowledgeBase extends BaseTest {
 		WebElement VideoContent = Page.driver
 				.findElement(By.xpath("//*[@id='contentPart3']/div/div/div/div/div/div/div[2]/div/div[1]/div/img"));
 		Assert.assertTrue(VideoContent.isDisplayed());
+		//Page.click("PopularQueriesFilter_XPATH");
+		WebElement WoodInspectionVideosPopularFilter1 = Page.driver.findElement(By.xpath("//*[contains(text(),'Wood Treatments Vanity 1')]"));
+		Assert.assertTrue(WoodInspectionVideosPopularFilter1.isDisplayed());
+		WebElement WoodInspectionVideosPopularFilter2 = Page.driver.findElement(By.xpath("//*[contains(text(),'Wood Treatments Vanity 2')]"));
+		Assert.assertTrue(WoodInspectionVideosPopularFilter2.isDisplayed());
+		WebElement WoodInspectionVideosPopularFilter3 = Page.driver.findElement(By.xpath("//*[contains(text(),'Wood Treatments Vanity 3')]"));
+		Assert.assertTrue(WoodInspectionVideosPopularFilter3.isDisplayed());
 		Thread.sleep(3000);
 		kb.clickWoodTreatmentOnAVideo();
 		Thread.sleep(10000);
@@ -1679,11 +1956,12 @@ public class KnowledgeBase extends BaseTest {
 
 	// US-98499-98609: Verify that clicking on the assets for the tiles in KB
 	// landing page will take the user to refined search result page for the same
+	// US-100681-100871-Verify Popular Queries" will be populated with a set of sub-category "Filters" specific to the tile category selected.
 	@Test(priority = 78, enabled = true, description = "Verify the click on Images under Wood Treatment")
 	public void verifyClickonWoodTreatmentImages() throws InterruptedException {
 		ContactPage cp = new ContactPage();
 		KnowledgeBasePage kb = cp.goKnowledgeBase();
-		Thread.sleep(3000);
+		Thread.sleep(8000);
 		kb.clickWoodTreatmentImages();
 		Thread.sleep(3000);
 		// Verify the presence of Back Button
@@ -1700,6 +1978,13 @@ public class KnowledgeBase extends BaseTest {
 		WebElement ImageContent = Page.driver
 				.findElement(By.xpath("//*[@id='contentPart2']/div/div/div/div/div/div/div/div[2]/div/div[1]/div/img"));
 		Assert.assertTrue(ImageContent.isDisplayed());
+		//Page.click("PopularQueriesFilter_XPATH");
+		WebElement WoodInspectionImagesPopularFilter1 = Page.driver.findElement(By.xpath("//*[contains(text(),'Wood Treatments Vanity 1')]"));
+		Assert.assertTrue(WoodInspectionImagesPopularFilter1.isDisplayed());
+		WebElement WoodInspectionImagesPopularFilter2 = Page.driver.findElement(By.xpath("//*[contains(text(),'Wood Treatments Vanity 2')]"));
+		Assert.assertTrue(WoodInspectionImagesPopularFilter2.isDisplayed());
+		WebElement WoodInspectionImagesPopularFilter3 = Page.driver.findElement(By.xpath("//*[contains(text(),'Wood Treatments Vanity 3')]"));
+		Assert.assertTrue(WoodInspectionImagesPopularFilter3.isDisplayed());
 		Thread.sleep(3000);
 		kb.clickWoodTreatmentOnAnImage();
 		Thread.sleep(3000);
@@ -1710,11 +1995,12 @@ public class KnowledgeBase extends BaseTest {
 
 	// US-98499-98609: Verify that clicking on the assets for the tiles in KB
 	// landing page will take the user to refined search result page for the same
+	// US-100681-100871-Verify Popular Queries" will be populated with a set of sub-category "Filters" specific to the tile category selected.
 	@Test(priority = 79, enabled = true, description = "Verify the click on Research under Wood Treatment")
 	public void verifyClickonWoodTreatmentResearch() throws InterruptedException {
 		ContactPage cp = new ContactPage();
 		KnowledgeBasePage kb = cp.goKnowledgeBase();
-		Thread.sleep(3000);
+		Thread.sleep(8000);
 		kb.clickWoodTreatmentResearch();
 		Thread.sleep(3000);
 		// Verify the presence of Back Button
@@ -1731,6 +2017,13 @@ public class KnowledgeBase extends BaseTest {
 		WebElement DocumentContent = Page.driver
 				.findElement(By.xpath("//div[@class='pagiNation p-0']/div[1]/div[1]/a"));
 		Assert.assertTrue(DocumentContent.isDisplayed());
+		//Page.click("PopularQueriesFilter_XPATH");
+		WebElement WoodInspectionResearchPopularFilter1 = Page.driver.findElement(By.xpath("//*[contains(text(),'Wood Treatments Vanity 1')]"));
+		Assert.assertTrue(WoodInspectionResearchPopularFilter1.isDisplayed());
+		WebElement WoodInspectionResearchPopularFilter2 = Page.driver.findElement(By.xpath("//*[contains(text(),'Wood Treatments Vanity 2')]"));
+		Assert.assertTrue(WoodInspectionResearchPopularFilter2.isDisplayed());
+		WebElement WoodInspectionResearchPopularFilter3 = Page.driver.findElement(By.xpath("//*[contains(text(),'Wood Treatments Vanity 3')]"));
+		Assert.assertTrue(WoodInspectionResearchPopularFilter3.isDisplayed());
 		Thread.sleep(3000);
 		kb.clickWoodTreatmentOnADocument();
 		Thread.sleep(3000);
@@ -1745,9 +2038,9 @@ public class KnowledgeBase extends BaseTest {
 	public void verifyClickonVideosSeeMore() throws InterruptedException {
 		ContactPage cp = new ContactPage();
 		KnowledgeBasePage kb = cp.goKnowledgeBase();
-		Thread.sleep(3000);
+		Thread.sleep(8000);
 		kb.clickJointUsePopularQuery();
-		Thread.sleep(50000);
+		Thread.sleep(25000);
 		Page.click("JointUseVideosSeeMoreLink_XPATH");
 		// Verify the presence of Back Button
 		WebElement BackButtonVideos = Page.driver
@@ -1772,9 +2065,9 @@ public class KnowledgeBase extends BaseTest {
 	public void verifyClickonImagesSeeMore() throws InterruptedException {
 		ContactPage cp = new ContactPage();
 		KnowledgeBasePage kb = cp.goKnowledgeBase();
-		Thread.sleep(3000);
+		Thread.sleep(8000);
 		kb.clickJointUsePopularQuery();
-		Thread.sleep(50000);
+		Thread.sleep(25000);
 		Page.click("JointUseImagesSeeMoreLink_XPATH");
 		Thread.sleep(3000);
 		// Verify the presence of Back Button
@@ -1801,9 +2094,9 @@ public class KnowledgeBase extends BaseTest {
 	public void verifyClickonDocumentsSeeMore() throws InterruptedException {
 		ContactPage cp = new ContactPage();
 		KnowledgeBasePage kb = cp.goKnowledgeBase();
-		Thread.sleep(3000);
+		Thread.sleep(8000);
 		kb.clickJointUsePopularQuery();
-		Thread.sleep(50000);
+		Thread.sleep(25000);
 		Page.click("JointUseDocumentsSeeMoreLink_XPATH");
 		Thread.sleep(3000);
 		// Verify the presence of Back Button
@@ -1830,9 +2123,9 @@ public class KnowledgeBase extends BaseTest {
 	public void verifyClickonJointUseManagementServicesSeeMore() throws InterruptedException {
 		ContactPage cp = new ContactPage();
 		KnowledgeBasePage kb = cp.goKnowledgeBase();
-		Thread.sleep(3000);
+		Thread.sleep(8000);
 		kb.clickJointUsePopularQuery();
-		Thread.sleep(50000);
+		Thread.sleep(25000);
 		Page.click("JointUseDocumentsSeeMoreLink_XPATH");
 		Thread.sleep(3000);
 		// Verify the presence of Back Button
@@ -1851,9 +2144,11 @@ public class KnowledgeBase extends BaseTest {
 		Assert.assertTrue(DocumentContent.isDisplayed());
 		Page.click("JointUseJointUseManagementServicesMoreLink_XPATH");
 		Thread.sleep(3000);
-		Assert.assertEquals(Page.getText("JointUseJointUseManagemenrServicesHeaderTxt_XPATH"), "Joint Use Management Services");
+		Assert.assertEquals(Page.getText("JointUseJointUseManagemenrServicesHeaderTxt_XPATH"),
+				"Joint Use Management Services");
 		// Verification of the presence of link
-		WebElement BoxCloseBtn= Page.driver.findElement(By.xpath("//*[@id='openAdminMyquotes___BV_modal_body_']/button"));
+		WebElement BoxCloseBtn = Page.driver
+				.findElement(By.xpath("//*[@id='openAdminMyquotes___BV_modal_body_']/button"));
 		Assert.assertTrue(BoxCloseBtn.isDisplayed());
 		Thread.sleep(2000);
 		Page.click("BoxCloseBtn_XPATH");
@@ -1870,18 +2165,19 @@ public class KnowledgeBase extends BaseTest {
 	public void verifyDynamicDropdown(Hashtable<String, String> data) throws InterruptedException {
 		ContactPage cp = new ContactPage();
 		KnowledgeBasePage kb = cp.goKnowledgeBase();
-		Thread.sleep(3000);
+		Thread.sleep(8000);
 		Page.type("SearchBox_XPATH", data.get("AskOsmoseSearch"));
 		// Verification of the presence of dynamic dd
 		WebElement Dynamicdd = Page.driver
-				.findElement(By.xpath("//div[@id='knowledgeBaseSearchBox']/div[1]/div[1]/div[1]/div[1]/ul"));
-		Thread.sleep(3000);
+				.findElement(By.xpath("//ul[@class='list-unstyled searchList']"));
+		Thread.sleep(8000);
 		Assert.assertTrue(Dynamicdd.isDisplayed());
 		// Clicking on Industry option
 		Page.click("IndustryOptionDD_XPATH");
-		Thread.sleep(30000);
+		Thread.sleep(25000);
 		// Verification of the Search Results
 		Assert.assertEquals(Page.getText("IndustryText_XPATH"), "Repellent Products for the Utility Industry");
+		Thread.sleep(2000);
 		kb.clickClearSearch();
 		Thread.sleep(3000);
 	}
@@ -1895,9 +2191,9 @@ public class KnowledgeBase extends BaseTest {
 	public void verifySearchResultsAreGrouped() throws InterruptedException {
 		ContactPage cp = new ContactPage();
 		KnowledgeBasePage kb = cp.goKnowledgeBase();
-		Thread.sleep(3000);
+		Thread.sleep(8000);
 		kb.clickJointUsePopularQuery();
-		Thread.sleep(50000);
+		Thread.sleep(25000);
 		WebElement VideoResultsSection = Page.driver
 				.findElement(By.xpath("//*[@id='contentPart1']/div/div/div/div/div[1]/div/div[1]/div/h5"));
 		Assert.assertTrue(VideoResultsSection.isDisplayed());
@@ -1924,12 +2220,12 @@ public class KnowledgeBase extends BaseTest {
 	public void verifySearchResultsAreGroupedAfterfilterUpdation() throws InterruptedException {
 		ContactPage cp = new ContactPage();
 		KnowledgeBasePage kb = cp.goKnowledgeBase();
-		Thread.sleep(3000);
+		Thread.sleep(8000);
 		kb.clickJointUsePopularQuery();
-		Thread.sleep(80000);
+		Thread.sleep(25000);
 		kb.ClickPopularQueriesFilter();
 		Page.click("PoleReplacementFilter_XPATH");
-		Thread.sleep(80000);
+		Thread.sleep(25000);
 		WebElement VideoResultsSection = Page.driver
 				.findElement(By.xpath("//*[@id='contentPart1']/div/div/div/div/div[1]/div/div[1]/div/h5"));
 		Assert.assertTrue(VideoResultsSection.isDisplayed());
@@ -1950,12 +2246,11 @@ public class KnowledgeBase extends BaseTest {
 	public void verifySearchResultsOnTyping(Hashtable<String, String> data) throws InterruptedException {
 		ContactPage cp = new ContactPage();
 		KnowledgeBasePage kb = cp.goKnowledgeBase();
-		Thread.sleep(3000);
+		Thread.sleep(8000);
 		Page.type("SearchBox_XPATH", data.get("TypeJointUse"));
-		Page.driver.findElement(By.xpath("//input[@id='SearchFieldKB']"))
-				.sendKeys(Keys.ENTER);
+		Page.driver.findElement(By.xpath("//input[@id='SearchFieldKB']")).sendKeys(Keys.ENTER);
 		// Page.click("JointUseOptionDD_XPATH");
-		Thread.sleep(50000);
+		Thread.sleep(25000);
 		WebElement VideoResultsSection = Page.driver
 				.findElement(By.xpath("//*[@id='contentPart1']/div/div/div/div/div[1]/div/div[1]/div/h5"));
 		Assert.assertTrue(VideoResultsSection.isDisplayed());
@@ -1975,7 +2270,7 @@ public class KnowledgeBase extends BaseTest {
 	public void verifyClearButtonOnTyping(Hashtable<String, String> data) throws InterruptedException {
 		ContactPage cp = new ContactPage();
 		KnowledgeBasePage kb = cp.goKnowledgeBase();
-		Thread.sleep(3000);
+		Thread.sleep(8000);
 		Page.type("SearchBox_XPATH", data.get("TypeJointUseInSearchbox"));
 		Thread.sleep(3000);
 		Page.click("SearchBoxClear_XPATH");
@@ -1989,9 +2284,9 @@ public class KnowledgeBase extends BaseTest {
 	public void verifySearchResultsAreVideos() throws InterruptedException {
 		ContactPage cp = new ContactPage();
 		KnowledgeBasePage kb = cp.goKnowledgeBase();
-		Thread.sleep(3000);
+		Thread.sleep(8000);
 		kb.clickJointUsePopularQuery();
-		Thread.sleep(80000);
+		Thread.sleep(25000);
 		Page.click("VideosLink_XPATH");
 		Thread.sleep(5000);
 		WebElement VideoResultsSection = Page.driver
@@ -2009,9 +2304,9 @@ public class KnowledgeBase extends BaseTest {
 	public void verifySearchResultsAreImages() throws InterruptedException {
 		ContactPage cp = new ContactPage();
 		KnowledgeBasePage kb = cp.goKnowledgeBase();
-		Thread.sleep(3000);
+		Thread.sleep(8000);
 		kb.clickJointUsePopularQuery();
-		Thread.sleep(80000);
+		Thread.sleep(25000);
 		Page.click("ImagesLink_XPATH");
 		Thread.sleep(5000);
 		WebElement ImageResultsSection = Page.driver
@@ -2030,9 +2325,9 @@ public class KnowledgeBase extends BaseTest {
 	public void verifySearchResultsAreDocuments() throws InterruptedException {
 		ContactPage cp = new ContactPage();
 		KnowledgeBasePage kb = cp.goKnowledgeBase();
-		Thread.sleep(3000);
+		Thread.sleep(8000);
 		kb.clickJointUsePopularQuery();
-		Thread.sleep(80000);
+		Thread.sleep(25000);
 		Page.click("DocumentsLink_XPATH");
 		Thread.sleep(5000);
 		WebElement DocumentResultsSection = Page.driver
@@ -2051,11 +2346,10 @@ public class KnowledgeBase extends BaseTest {
 	public void verifyNoResultsFoundMessage(Hashtable<String, String> data) throws InterruptedException {
 		ContactPage cp = new ContactPage();
 		KnowledgeBasePage kb = cp.goKnowledgeBase();
-		Thread.sleep(3000);
+		Thread.sleep(8000);
 		Page.type("SearchBox_XPATH", data.get("NoResults"));
 		Thread.sleep(3000);
-		Page.driver.findElement(By.xpath("//input[@id='SearchFieldKB']"))
-				.sendKeys(Keys.ENTER);
+		Page.driver.findElement(By.xpath("//input[@id='SearchFieldKB']")).sendKeys(Keys.ENTER);
 
 		WebElement noresults = Page.driver.findElement(By.xpath("//div[@class='text-center dismissCountDown']/div[1]"));
 
@@ -2071,7 +2365,7 @@ public class KnowledgeBase extends BaseTest {
 		Thread.sleep(6000);
 		kb.ClickPopularQueriesFilter();
 		kb.clickJointUsePopularQuery();
-		Thread.sleep(80000);
+		Thread.sleep(25000);
 		Page.click("DocumentsLink_XPATH");
 		Thread.sleep(5000);
 		WebElement DocumentResultsSection = Page.driver
@@ -2099,16 +2393,14 @@ public class KnowledgeBase extends BaseTest {
 	public void verifySearchTextUpdation(Hashtable<String, String> data) throws InterruptedException {
 		ContactPage cp = new ContactPage();
 		KnowledgeBasePage kb = cp.goKnowledgeBase();
-		Thread.sleep(3000);
+		Thread.sleep(8000);
 		Page.type("SearchBox_XPATH", data.get("TypeJointUseTextUpdation"));
 		Thread.sleep(3000);
 		Page.clear("SearchBox_XPATH");
 		Thread.sleep(3000);
 		Page.type("SearchBox_XPATH", data.get("TypePoleReplacementTextUpdation"));
-		Page.driver.findElement(By.xpath("//input[@id='SearchFieldKB']"))
-				.sendKeys(Keys.ENTER);
-		// Page.click("JointUseOptionDD_XPATH");
-		Thread.sleep(80000);
+		Page.driver.findElement(By.xpath("//input[@id='SearchFieldKB']")).sendKeys(Keys.ENTER);
+		Thread.sleep(25000);
 		WebElement VideoResultsSection = Page.driver
 				.findElement(By.xpath("//*[@id='contentPart1']/div/div/div/div/div[1]/div/div[1]/div/h5"));
 		Assert.assertTrue(VideoResultsSection.isDisplayed());
@@ -2121,6 +2413,68 @@ public class KnowledgeBase extends BaseTest {
 		Thread.sleep(3000);
 		kb.clickClearSearch();
 		Thread.sleep(3000);
+	}
+	
+	//US-100681-100877-Verify system is displaying results based on selection in sub-category "Filters" specific to the tile category selected.
+	@Test(priority = 95, enabled = true, description = "Verify the Popular filters on Images under Joint Use")
+	public void verifyPopularFiltersJointUsImages() throws InterruptedException {
+		ContactPage cp = new ContactPage();
+		KnowledgeBasePage kb = cp.goKnowledgeBase();
+		Thread.sleep(8000);
+		kb.clickJointUseImages();
+		Thread.sleep(3000);
+		Page.click("PopularQueriesFilter_XPATH");
+		WebElement JointUseImagesPopularFilter1 = Page.driver.findElement(By.xpath("//*[contains(text(),'Joint Use Vanity 1')]"));
+		JointUseImagesPopularFilter1.click();
+		Page.click("PopularFilterJointUseVideo_XPATH"); 
+		Thread.sleep(3000);
+		kb.clickBoxCloseBtn();
+		Thread.sleep(3000);
+		Page.click("ClearSearchBtn_XPATH");
+	}
+	
+	//US-100681-100878-Verify Popular Queries on the result page will revert to the default set when user performs free form search in the "Ask Osmose" box after sub-category filter search is performed
+	@Test(priority = 96, enabled = true, description = "Verify that popular queries are reset to default")
+	public void verifyPopularQueriesReset() throws InterruptedException {
+		ContactPage cp = new ContactPage();
+		KnowledgeBasePage kb = cp.goKnowledgeBase();
+		Thread.sleep(8000);
+		kb.clickJointUseImages();
+		Thread.sleep(3000);
+		WebElement PopFil1 = Page.driver.findElement(By.xpath("//*[contains(text(),'Joint Use Vanity 1')]"));
+		Assert.assertTrue(PopFil1.isDisplayed());
+		WebElement PopFil2 = Page.driver.findElement(By.xpath("//*[contains(text(),'Joint Use Vanity 2')]"));
+		Assert.assertTrue(PopFil2.isDisplayed());
+		WebElement PopFil3 = Page.driver.findElement(By.xpath("//*[contains(text(),'Joint Use Vanity 3')]"));
+		Assert.assertTrue(PopFil3.isDisplayed());
+		Thread.sleep(3000);
+		Page.click("ClearSearchBtn_XPATH");
+		Thread.sleep(3000);
+		WebElement PopFilDef1 = Page.driver.findElement(By.xpath("//*[contains(text(),'Joint Use')]"));
+		Assert.assertTrue(PopFilDef1.isDisplayed());
+		WebElement PopFilDef2 = Page.driver.findElement(By.xpath("//*[contains(text(),'Steel Assessment')]"));
+		Assert.assertTrue(PopFilDef2.isDisplayed());
+		WebElement PopFilDef3 = Page.driver.findElement(By.xpath("//*[contains(text(),'Pole Replacement')]"));
+		Assert.assertTrue(PopFilDef3.isDisplayed());		
+	}
+	
+	//US-98506-100683-Verify External video from YouTube and Vimeo should open in there respective video player
+	@Test(dataProviderClass = Utilities.class, dataProvider = "dp", priority = 97, enabled = true, description = "Verify presence of External video from YouTube and Vimeo")
+	public void verifyExternalVideo(Hashtable<String, String> data) throws InterruptedException {
+		ContactPage cp = new ContactPage();
+		KnowledgeBasePage kb = cp.goKnowledgeBase();
+		Thread.sleep(8000);
+		Page.type("SearchBox_XPATH", data.get("TypeExternal"));
+		Thread.sleep(3000);
+		Page.driver.findElement(By.xpath("//input[@id='SearchFieldKB']")).sendKeys(Keys.ENTER);
+		Thread.sleep(10000);
+		Page.click("SeeMoreVideos_ID");
+		WebElement youtubeVideo = Page.driver.findElement(By.xpath("//div[@class='vTitle' and contains(text(),'National Wood Pole Standa ...')]"));
+		Assert.assertTrue(youtubeVideo.isDisplayed());
+		WebElement vimeoVideo = Page.driver.findElement(By.xpath("//div[@class='vTitle' and contains(text(),'OsmoWeld MPF Pole Repair')]"));
+		Assert.assertTrue(vimeoVideo.isDisplayed());
+		Thread.sleep(4000);
+		Page.click("KBHomePage_XPATH");
 	}
 
 }

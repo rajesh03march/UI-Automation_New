@@ -34,11 +34,11 @@ public class KnowledgeBasePage extends Page {
 	}
 
 	public void clickVideoFeaturedVideo() {
-		click("FeaturedVideoMovie_XPATH");
+		ClickActions("FeaturedVideoMovie_XPATH");
 	}
 
 	public void clickViewProject() {
-		click("ViewProjectLink_XPATH");
+		ClickActions("ViewProjectLink_XPATH");
 	}
 
 	public void clickIndustrySeeMore() throws InterruptedException {
@@ -64,7 +64,7 @@ public class KnowledgeBasePage extends Page {
 	}
 	
 	public void clickJointUs() throws InterruptedException {
-		click("JointUseCardKb_XPATH");
+		ClickActions("JointUseCardKb_XPATH");
 	}
 	
 	public void clickOverhead() throws InterruptedException {
