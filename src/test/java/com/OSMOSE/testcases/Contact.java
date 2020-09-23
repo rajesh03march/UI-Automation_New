@@ -22,7 +22,7 @@ public class Contact extends BaseTest {
 	public void verifyPresenceOfProjectGroup() {
 		ProductPage pp = new ProductPage();
 		ContactPage cp = pp.goContact();
-		WebElement ProjectGroup = Page.driver.findElement(By.xpath("//*[@id='o360projectSel__BV_button_']/span"));
+		WebElement ProjectGroup = Page.driver.findElement(By.xpath("//a[@id='o360projectSel__BV_toggle_']"));
 		Assert.assertTrue(ProjectGroup.isDisplayed());
 	}
 	
@@ -178,6 +178,7 @@ public class Contact extends BaseTest {
 		Thread.sleep(3000);
 	}
 	
+	// 
 	@Test(priority = 10, enabled = true, description = "Verification of the content on a contact card on Puget Sound Energy-Puget Sound Energy Inspection")
 	public void verifyPugetSoundEnergyInspectionContactCardContents() throws InterruptedException {
 		ProductPage pp = new ProductPage();
