@@ -838,8 +838,9 @@ public class KnowledgeBase extends BaseTest {
 		Thread.sleep(3000);
 		kb.clickClearSearch();
 		Thread.sleep(3000);*/
-		WebElement noresults = Page.driver.findElement(By.xpath("//div[@class='text-center dismissCountDown']/div[1]"));
-
+		
+		//WebElement noresults = Page.driver.findElement(By.xpath("//div[@class='text-center dismissCountDown']/div[1]"));
+		WebElement noresults = Page.driver.findElement(By.xpath("//*[contains(text(),'No results match your search criteria')]"));
 		System.out.println(noresults.getText());
 	}
 
@@ -2167,11 +2168,13 @@ public class KnowledgeBase extends BaseTest {
 		KnowledgeBasePage kb = cp.goKnowledgeBase();
 		Thread.sleep(8000);
 		Page.type("SearchBox_XPATH", data.get("AskOsmoseSearch"));
+		Thread.sleep(2000);
 		// Verification of the presence of dynamic dd
 		WebElement Dynamicdd = Page.driver
 				.findElement(By.xpath("//ul[@class='list-unstyled searchList']"));
-		Thread.sleep(8000);
+		Thread.sleep(5000);
 		Assert.assertTrue(Dynamicdd.isDisplayed());
+		Thread.sleep(1000);
 		// Clicking on Industry option
 		Page.click("IndustryOptionDD_XPATH");
 		Thread.sleep(25000);
@@ -2224,7 +2227,8 @@ public class KnowledgeBase extends BaseTest {
 		kb.clickJointUsePopularQuery();
 		Thread.sleep(25000);
 		kb.ClickPopularQueriesFilter();
-		Page.click("PoleReplacementFilter_XPATH");
+		Thread.sleep(1000);
+		Page.click("JointUse2Filter_XPATH");
 		Thread.sleep(25000);
 		WebElement VideoResultsSection = Page.driver
 				.findElement(By.xpath("//*[@id='contentPart1']/div/div/div/div/div[1]/div/div[1]/div/h5"));
