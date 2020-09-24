@@ -17,7 +17,7 @@ import java.util.Properties;
 
 public class OULogin extends BaseTest {
 
-	public static Properties config = new Properties();
+	Page p = new Page();
 
 	@Test(priority = 0, enabled = true, description = "Verify the Osmose University card on home page")
 	public void verifyOUCard() {
@@ -57,7 +57,10 @@ public class OULogin extends BaseTest {
 		Login Lo = new Login();
 		HomeOU ou = Lo.goHomeOU();
 		ou.clickOsmoseUniversityNavigation();
-		Thread.sleep(3000);
+		//Thread.sleep(3000);
+		String time = p.config.getProperty("Thread1000");
+		System.out.println(time);
+		Thread.sleep((Long.parseLong(p.config.getProperty("Thread1000"))));
 		// Thread.sleep(Integer.parseInt(config.getProperty("Thread1000")));
 		Assert.assertEquals(Page.getText("OsmoseUniversityTxt_XPATH"), "Osmose University");
 		Page.click("OUHomePage_XPATH");
