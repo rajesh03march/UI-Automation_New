@@ -62,10 +62,10 @@ public class KnowledgeBase extends BaseTest {
 		KnowledgeBasePage kb = cp.goKnowledgeBase();
 		// Search box presence verification
 		Assert.assertTrue(Page.driver
-				.findElement(By.xpath("//div[@id='knowledgeBaseSearchBox']/div[1]/div[1]/div[1]/div[1]/input"))
+				.findElement(By.xpath("//input[@id='SearchFieldKB' and @placeholder='Ask Osmose']"))
 				.isDisplayed());
 		String Placeholder = Page.driver
-				.findElement(By.xpath("//div[@id='knowledgeBaseSearchBox']/div[1]/div[1]/div[1]/div[1]/input"))
+				.findElement(By.xpath("//input[@id='SearchFieldKB' and @placeholder='Ask Osmose']"))
 				.getAttribute("placeholder");
 		Assert.assertEquals(Placeholder, "Ask Osmose");
 	}
@@ -91,14 +91,14 @@ public class KnowledgeBase extends BaseTest {
 		ContactPage cp = new ContactPage();
 		KnowledgeBasePage kb = cp.goKnowledgeBase();
 		// Filter items presence verification
-		Assert.assertTrue(Page.driver.findElement(By.xpath("//div[@id='collapseFilter']/div")).isDisplayed());
+		Assert.assertTrue(Page.driver.findElement(By.xpath("//div[@class='card']")).isDisplayed());
 		Assert.assertTrue(Page.driver
-				.findElement(By.xpath("//*[@id='collapseFilter']/div/div/div/div/div/div[1]/label")).isDisplayed());
+				.findElement(By.xpath("//label[@class='custom-control-label' and text()='Joint Use']")).isDisplayed());
 		Assert.assertEquals(Page.getText("JointUseFilter_XPATH"), "Joint Use");
 		Thread.sleep(2000);
 		kb.ClickPopularQueriesFilter();
 		Thread.sleep(2000);
-		Assert.assertFalse(Page.driver.findElement(By.xpath("//div[@id='collapseFilter']/div")).isDisplayed());
+		Assert.assertFalse(Page.driver.findElement(By.xpath("//div[@class='card']")).isDisplayed());
 	}
 
 	// US-98499-98607-Verify that clicking on the header on the tiles in KB landing
@@ -241,7 +241,7 @@ public class KnowledgeBase extends BaseTest {
 		ContactPage cp = new ContactPage();
 		KnowledgeBasePage kb = cp.goKnowledgeBase();
 		// O-Calc Pro Card presence verification
-		Assert.assertTrue(Page.driver.findElement(By.xpath("//*[@id='contentPart0']/div/div/div/div/div[2]/div[2]/div"))
+		Assert.assertTrue(Page.driver.findElement(By.xpath("//img[@id='oCalLogo']"))
 				.isDisplayed());
 	}
 
@@ -268,7 +268,7 @@ public class KnowledgeBase extends BaseTest {
 		ContactPage cp = new ContactPage();
 		KnowledgeBasePage kb = cp.goKnowledgeBase();
 		// What's wrong with this Picture? Card presence verification
-		Assert.assertTrue(Page.driver.findElement(By.xpath("//h5[contains(text(),'Whats wrong with this picture?')]")).isDisplayed());
+		Assert.assertTrue(Page.driver.findElement(By.xpath("//h5[contains(text(),'This is a caption to be displayed as part of the Gaff Gallery.')]")).isDisplayed());
 	}
 
 	// US-98500-99007-Verify KB Landing page is displaying carousel Video section
@@ -357,8 +357,8 @@ public class KnowledgeBase extends BaseTest {
 		Thread.sleep(4000);
 		kb.clickItemSuggestedContents();
 		Thread.sleep(5000);
-		// verification of cross icon
-		Assert.assertTrue(Page.driver.findElement(By.xpath("//*[@id='openAdminMyquotes___BV_modal_body_']/button"))
+		// verification of cross/close icon
+		Assert.assertTrue(Page.driver.findElement(By.xpath("//button[@class='close closeCST' and @type='button']"))
 				.isDisplayed());
 		kb.clickBoxCloseBtn();
 	}
@@ -371,8 +371,8 @@ public class KnowledgeBase extends BaseTest {
 		KnowledgeBasePage kb = cp.goKnowledgeBase();
 		kb.clickVideoFeaturedVideo();
 		Thread.sleep(5000);
-		// verification of cross icon
-		Assert.assertTrue(Page.driver.findElement(By.xpath("//*[@id='openAdminMyquotes___BV_modal_body_']/button"))
+		// verification of cross/close icon
+		Assert.assertTrue(Page.driver.findElement(By.xpath("//button[@class='close closeCST' and @type='button']"))
 				.isDisplayed());
 		kb.clickBoxCloseBtn();
 	}
@@ -386,8 +386,8 @@ public class KnowledgeBase extends BaseTest {
 		Thread.sleep(2000);
 		kb.clickViewProject();
 		Thread.sleep(5000);
-		// verification of cross icon
-		Assert.assertTrue(Page.driver.findElement(By.xpath("//*[@id='openAdminMyquotes___BV_modal_body_']/button"))
+		// verification of cross/close icon
+		Assert.assertTrue(Page.driver.findElement(By.xpath("//button[@class='close closeCST' and @type='button']"))
 				.isDisplayed());
 		kb.clickBoxCloseBtn();
 	}
@@ -400,19 +400,19 @@ public class KnowledgeBase extends BaseTest {
 		KnowledgeBasePage kb = cp.goKnowledgeBase();
 		// Card Contents of Steel Concrete Assessment
 		Assert.assertTrue(
-				Page.driver.findElement(By.xpath("//div[@id='115291495643']/div[1]/div[2]/div[1]/p/ul/li[1]/a/span"))
+				Page.driver.findElement(By.xpath("(//li[@id='Images']/a/span)[2]"))
 						.isDisplayed());
 		Assert.assertEquals(Page.getText("SteelAndConcreteAssessmentCardimageslink_XPATH"), "IMAGES");
 		Assert.assertTrue(
-				Page.driver.findElement(By.xpath("//div[@id='115291495643']/div[1]/div[2]/div[1]/p/ul/li[2]/a/span"))
+				Page.driver.findElement(By.xpath("(//li[@id='Brochures']/a/span)[2]"))
 						.isDisplayed());
 		Assert.assertEquals(Page.getText("SteelAndConcreteAssessmentCardBrochureslink_XPATH"), "BROCHURES");
 		Assert.assertTrue(
-				Page.driver.findElement(By.xpath("//div[@id='115291495643']/div[1]/div[2]/div[1]/p/ul/li[3]/a/span"))
+				Page.driver.findElement(By.xpath("(//li[@id='Standards/Codes']/a/span)[1]"))
 						.isDisplayed());
 		Assert.assertEquals(Page.getText("SteelAndConcreteAssessmentCardStandardsCodeslink_XPATH"), "STANDARDS/CODES");
 		Assert.assertTrue(
-				Page.driver.findElement(By.xpath("//*[@id='115291495643']/div/div[2]/div[2]/img")).isDisplayed());
+				Page.driver.findElement(By.xpath("(//img[@alt='Thumbnail - Steel Tile.jpg'])[1]")).isDisplayed());
 	}
 
 	// US-98498-98571-Verify that each navigational tile will have only one link for
@@ -423,19 +423,19 @@ public class KnowledgeBase extends BaseTest {
 		KnowledgeBasePage kb = cp.goKnowledgeBase();
 		// Card Contents of Steel Concrete Restoration
 		Assert.assertTrue(
-				Page.driver.findElement(By.xpath("//div[@id='115291494443']/div[1]/div[2]/div[1]/p[1]/ul/li[1]/a/span"))
+				Page.driver.findElement(By.xpath("(//li[@id='Articles']/a/span)[2]"))
 						.isDisplayed());
 		Assert.assertEquals(Page.getText("SteelAndConcreteRestortationtArticleslink_XPATH"), "ARTICLES");
 		Assert.assertTrue(
-				Page.driver.findElement(By.xpath("//div[@id='115291494443']/div[1]/div[2]/div[1]/p[1]/ul/li[2]/a/span"))
+				Page.driver.findElement(By.xpath("(//li[@id='Brochures']/a/span)[3]"))
 						.isDisplayed());
 		Assert.assertEquals(Page.getText("SteelAndConcreteRestortationBrochureslink_XPATH"), "BROCHURES");
 		Assert.assertTrue(
-				Page.driver.findElement(By.xpath("//div[@id='115291494443']/div[1]/div[2]/div[1]/p[1]/ul/li[3]/a/span"))
+				Page.driver.findElement(By.xpath("(//li[@id='Images']/a/span)[3]"))
 						.isDisplayed());
 		Assert.assertEquals(Page.getText("SteelAndConcreteRestortationImageslink_XPATH"), "IMAGES");
 		Assert.assertTrue(
-				Page.driver.findElement(By.xpath("//*[@id='115291494443']/div/div[2]/div[2]/img")).isDisplayed());
+				Page.driver.findElement(By.xpath("(//img[@alt='Thumbnail - Steel Tile.jpg'])[2]")).isDisplayed());
 	}
 
 	// US-98498-98571-Verify that each navigational tile will have only one link for
@@ -446,19 +446,19 @@ public class KnowledgeBase extends BaseTest {
 		KnowledgeBasePage kb = cp.goKnowledgeBase();
 		// Card Contents of Wood | Inspection & Treatment
 		Assert.assertTrue(
-				Page.driver.findElement(By.xpath("//div[@id='115291493243']/div[1]/div[2]/div[1]/p/ul/li[1]/a/span"))
+				Page.driver.findElement(By.xpath("(//li[@id='Videos']/a/span)[1]"))
 						.isDisplayed());
 		Assert.assertEquals(Page.getText("WoodInspectionVideos_XPATH"), "VIDEOS");
 		Assert.assertTrue(
-				Page.driver.findElement(By.xpath("//div[@id='115291493243']/div[1]/div[2]/div[1]/p/ul/li[2]/a/span"))
+				Page.driver.findElement(By.xpath("(//li[@id='Images']/a/span)[1]"))
 						.isDisplayed());
 		Assert.assertEquals(Page.getText("WoodInspectionImages_XPATH"), "IMAGES");
 		Assert.assertTrue(
-				Page.driver.findElement(By.xpath("//div[@id='115291493243']/div[1]/div[2]/div[1]/p/ul/li[3]/a/span"))
+				Page.driver.findElement(By.xpath("(//li[@id='Research']/a/span)[1]"))
 						.isDisplayed());
 		Assert.assertEquals(Page.getText("WoodInspectionResearch_XPATH"), "RESEARCH");
 		Assert.assertTrue(
-				Page.driver.findElement(By.xpath("//*[@id='115291493243']/div/div[2]/div[2]/img")).isDisplayed());
+				Page.driver.findElement(By.xpath("//img[@alt='Thumbnail - wood.jpg']")).isDisplayed());
 	}
 
 	// US-98498-98571-Verify that each navigational tile will have only one link for
@@ -469,19 +469,19 @@ public class KnowledgeBase extends BaseTest {
 		KnowledgeBasePage kb = cp.goKnowledgeBase();
 		// Card Contents of Steel Concrete Assessment
 		Assert.assertTrue(
-				Page.driver.findElement(By.xpath("//div[@id='115291496843']/div[1]/div[2]/div[1]/p/ul/li[1]/a/span"))
+				Page.driver.findElement(By.xpath("(//li[@id='Videos']/a/span)[2]"))
 						.isDisplayed());
 		Assert.assertEquals(Page.getText("WoodRestorationVideos_XPATH"), "VIDEOS");
 		Assert.assertTrue(
-				Page.driver.findElement(By.xpath("//div[@id='115291496843']/div[1]/div[2]/div[1]/p/ul/li[2]/a/span"))
+				Page.driver.findElement(By.xpath("(//li[@id='Brochures']/a/span)[1]"))
 						.isDisplayed());
 		Assert.assertEquals(Page.getText("WoodRestorationBrochuers_XPATH"), "BROCHURES");
 		Assert.assertTrue(
-				Page.driver.findElement(By.xpath("//div[@id='115291496843']/div[1]/div[2]/div[1]/p/ul/li[3]/a/span"))
+				Page.driver.findElement(By.xpath("(//li[@id='Articles']/a/span)[1]"))
 						.isDisplayed());
 		Assert.assertEquals(Page.getText("WoodRestorationArticles_XPATH"), "ARTICLES");
 		Assert.assertTrue(
-				Page.driver.findElement(By.xpath("//*[@id='115291496843']/div/div[2]/div[2]/img")).isDisplayed());
+				Page.driver.findElement(By.xpath("//img[@alt='Thumbnail - wood restoration.jpg']")).isDisplayed());
 	}
 
 	// US-98498-98571-Verify that each navigational tile will have only one link for
@@ -492,19 +492,19 @@ public class KnowledgeBase extends BaseTest {
 		KnowledgeBasePage kb = cp.goKnowledgeBase();
 		// Card Contents of Joint Use
 		Assert.assertTrue(
-				Page.driver.findElement(By.xpath("//div[@id='121177689493']/div[1]/div[2]/div[1]/p/ul/li[1]/a/span"))
+				Page.driver.findElement(By.xpath("(//li[@id='Images']/a/span)[6]"))
 						.isDisplayed());
 		Assert.assertEquals(Page.getText("JointUseImages_XPATH"), "IMAGES");
 		Assert.assertTrue(
-				Page.driver.findElement(By.xpath("//div[@id='121177689493']/div[1]/div[2]/div[1]/p/ul/li[2]/a/span"))
+				Page.driver.findElement(By.xpath("(//li[@id='Videos']/a/span)[4]"))
 						.isDisplayed());
 		Assert.assertEquals(Page.getText("JointUseVideos_XPATH"), "VIDEOS");
 		Assert.assertTrue(
-				Page.driver.findElement(By.xpath("//div[@id='121177689493']/div[1]/div[2]/div[1]/p/ul/li[3]/a/span"))
+				Page.driver.findElement(By.xpath("(//li[@id='Articles']/a/span)[3]"))
 						.isDisplayed());
 		Assert.assertEquals(Page.getText("JointUseArticles_XPATH"), "ARTICLES");
 		Assert.assertTrue(
-				Page.driver.findElement(By.xpath("//*[@id='121177689493']/div/div[2]/div[2]/img")).isDisplayed());
+				Page.driver.findElement(By.xpath("(//img[@alt='Thumbnail.jpg'])[3]")).isDisplayed());
 	}
 
 	// US-98498-98571-Verify that each navigational tile will have only one link for
@@ -515,19 +515,19 @@ public class KnowledgeBase extends BaseTest {
 		KnowledgeBasePage kb = cp.goKnowledgeBase();
 		// Card Contents of Overhead
 		Assert.assertTrue(
-				Page.driver.findElement(By.xpath("//div[@id='121176940132']/div[1]/div[2]/div[1]/p/ul/li[2]/a/span"))
+				Page.driver.findElement(By.xpath("(//li[@id='Videos']/a/span)[3]"))
 						.isDisplayed());
 		Assert.assertEquals(Page.getText("OverheadVideos_XPATH"), "VIDEOS");
 		Assert.assertTrue(
-				Page.driver.findElement(By.xpath("//div[@id='121176940132']/div[1]/div[2]/div[1]/p/ul/li[1]/a/span"))
+				Page.driver.findElement(By.xpath("(//li[@id='Images']/a/span)[5]"))
 						.isDisplayed());
 		Assert.assertEquals(Page.getText("OverheadImages_XPATH"), "IMAGES");
 		Assert.assertTrue(
-				Page.driver.findElement(By.xpath("//div[@id='121176940132']/div[1]/div[2]/div[1]/p/ul/li[3]/a/span"))
+				Page.driver.findElement(By.xpath("(//li[@id='Project Profiles']/a/span)[1]"))
 						.isDisplayed());
 		Assert.assertEquals(Page.getText("OverheadProjectProfiles_XPATH"), "PROJECT PROFILES");
 		Assert.assertTrue(
-				Page.driver.findElement(By.xpath("//*[@id='121176940132']/div/div[2]/div[2]/img")).isDisplayed());
+				Page.driver.findElement(By.xpath("(//img[@alt='Thumbnail.jpg'])[2]")).isDisplayed());
 	}
 
 	// US-98498-98571-Verify that each navigational tile will have only one link for
@@ -538,19 +538,19 @@ public class KnowledgeBase extends BaseTest {
 		KnowledgeBasePage kb = cp.goKnowledgeBase();
 		// Card Contents of Pole Replacement
 		Assert.assertTrue(
-				Page.driver.findElement(By.xpath("//div[@id='121177263710']/div[1]/div[2]/div[1]/p/ul/li[1]/a/span"))
+				Page.driver.findElement(By.xpath("(//li[@id='Images']/a/span)[7]"))
 						.isDisplayed());
 		Assert.assertEquals(Page.getText("PoleReplacementImages_XPATH"), "IMAGES");
 		Assert.assertTrue(
-				Page.driver.findElement(By.xpath("//div[@id='121177263710']/div[1]/div[2]/div[1]/p/ul/li[2]/a/span"))
+				Page.driver.findElement(By.xpath("(//li[@id='Videos']/a/span)[5]"))
 						.isDisplayed());
 		Assert.assertEquals(Page.getText("PoleReplacementVideos_XPATH"), "VIDEOS");
 		Assert.assertTrue(
-				Page.driver.findElement(By.xpath("//div[@id='121177263710']/div[1]/div[2]/div[1]/p/ul/li[3]/a/span"))
+				Page.driver.findElement(By.xpath("(//li[@id='Brochure']/a/span)[2]"))
 						.isDisplayed());
 		Assert.assertEquals(Page.getText("PoleReplacementBrochure_XPATH"), "BROCHURE");
 		Assert.assertTrue(
-				Page.driver.findElement(By.xpath("//*[@id='121177263710']/div/div[2]/div[2]/img")).isDisplayed());
+				Page.driver.findElement(By.xpath("(//img[@alt='Thumbnail.jpg'])[4]")).isDisplayed());
 	}
 
 	// US-98498-98571-Verify that each navigational tile will have only one link for
@@ -561,19 +561,19 @@ public class KnowledgeBase extends BaseTest {
 		KnowledgeBasePage kb = cp.goKnowledgeBase();
 		// Card Contents of Products
 		Assert.assertTrue(
-				Page.driver.findElement(By.xpath("//div[@id='121177344116']/div[1]/div[2]/div[1]/p/ul/li[1]/a/span"))
+				Page.driver.findElement(By.xpath("(//li[@id='Images']/a/span)[9]"))
 						.isDisplayed());
 		Assert.assertEquals(Page.getText("ProductsImages_XPATH"), "IMAGES");
 		Assert.assertTrue(
-				Page.driver.findElement(By.xpath("//div[@id='121177344116']/div[1]/div[2]/div[1]/p/ul/li[2]/a/span"))
+				Page.driver.findElement(By.xpath("(//li[@id='Videos']/a/span)[7]"))
 						.isDisplayed());
 		Assert.assertEquals(Page.getText("ProductsVideos_XPATH"), "VIDEOS");
 		Assert.assertTrue(
-				Page.driver.findElement(By.xpath("//div[@id='121177344116']/div[1]/div[2]/div[1]/p/ul/li[3]/a/span"))
+				Page.driver.findElement(By.xpath("(//li[@id='Product Catalog']/a/span)[1]"))
 						.isDisplayed());
 		Assert.assertEquals(Page.getText("ProductsProductCatalog_XPATH"), "PRODUCT CATALOG");
 		Assert.assertTrue(
-				Page.driver.findElement(By.xpath("//*[@id='121177344116']/div/div[2]/div[2]/img")).isDisplayed());
+				Page.driver.findElement(By.xpath("(//img[@alt='Thumbnail.jpg'])[6]")).isDisplayed());
 	}
 
 	// US-98498-98571-Verify that each navigational tile will have only one link for
@@ -584,18 +584,18 @@ public class KnowledgeBase extends BaseTest {
 		KnowledgeBasePage kb = cp.goKnowledgeBase();
 		// Card Contents of Storm Support
 		Assert.assertTrue(
-				Page.driver.findElement(By.xpath("//div[@id='121177381598']/div[1]/div[2]/div[1]/p/ul/li[1]/a/span"))
+				Page.driver.findElement(By.xpath("(//li[@id='Images']/a/span)[8]"))
 						.isDisplayed());
 		Assert.assertEquals(Page.getText("StormSupportImages_XPATH"), "IMAGES");
 		Assert.assertTrue(
-				Page.driver.findElement(By.xpath("//div[@id='121177381598']/div[1]/div[2]/div[1]/p/ul/li[2]/a/span"))
+				Page.driver.findElement(By.xpath("(//li[@id='Videos']/a/span)[6]"))
 						.isDisplayed());
 		Assert.assertEquals(Page.getText("StormSupportVideos_XPATH"), "VIDEOS");
 		Assert.assertTrue(
-				Page.driver.findElement(By.xpath("//div[@id='121177381598']/div[1]/div[2]/div[1]/p/ul/li[3]/a/span"))
+				Page.driver.findElement(By.xpath("(//li[@id='Project Profiles']/a/span)[2]"))
 						.isDisplayed());
 		Assert.assertEquals(Page.getText("StormSupportProjectProfiles_XPATH"), "PROJECT PROFILES");
-		// Assert.assertTrue(Page.driver.findElement(By.xpath("")).isDisplayed());
+		Assert.assertTrue(Page.driver.findElement(By.xpath("(//img[@alt='Thumbnail.jpg'])[5]")).isDisplayed());
 	}
 
 	// US-98498-98571-Verify that each navigational tile will have only one link for
@@ -606,19 +606,19 @@ public class KnowledgeBase extends BaseTest {
 		KnowledgeBasePage kb = cp.goKnowledgeBase();
 		// Card Contents of Underground
 		Assert.assertTrue(
-				Page.driver.findElement(By.xpath("//div[@id='121177343612']/div[1]/div[2]/div[1]/p/ul/li[1]/a/span"))
+				Page.driver.findElement(By.xpath("(//li[@id='Images']/a/span)[4]"))
 						.isDisplayed());
 		Assert.assertEquals(Page.getText("UndergroundImages_XPATH"), "IMAGES");
 		Assert.assertTrue(
-				Page.driver.findElement(By.xpath("//div[@id='121177343612']/div[1]/div[2]/div[1]/p/ul/li[2]/a/span"))
+				Page.driver.findElement(By.xpath("(//li[@id='Brochure']/a/span)[1]"))
 						.isDisplayed());
 		Assert.assertEquals(Page.getText("UndergroundBrochure_XPATH"), "BROCHURE");
 		Assert.assertTrue(
-				Page.driver.findElement(By.xpath("//div[@id='121177343612']/div[1]/div[2]/div[1]/p/ul/li[3]/a/span"))
+				Page.driver.findElement(By.xpath("(//li[@id='Diagram']/a/span)[1]"))
 						.isDisplayed());
 		Assert.assertEquals(Page.getText("UndergroundDiagram_XPATH"), "DIAGRAM");
 		Assert.assertTrue(
-				Page.driver.findElement(By.xpath("//*[@id='121177343612']/div/div[2]/div[2]/img")).isDisplayed());
+				Page.driver.findElement(By.xpath("(//img[@alt='Thumbnail.jpg'])[1]")).isDisplayed());
 	}
 
 	// Keep this false always
@@ -645,7 +645,7 @@ public class KnowledgeBase extends BaseTest {
 		Thread.sleep(6000);
 		// Verification of Back button and Images text
 		Assert.assertTrue(Page.driver
-				.findElement(By.xpath("//*[@id='contentPart2']/div/div/div/div/div/div/div/div[1]/div/h5/a/i"))
+				.findElement(By.xpath("//a[@id='navFromImageResultsAll' and @class='btnLink m-0']"))
 				.isDisplayed());
 		Assert.assertEquals(Page.getText("DailyGaffGalleryImagesTxt_XPATH"), "Images");
 		Thread.sleep(6000);
@@ -666,7 +666,7 @@ public class KnowledgeBase extends BaseTest {
 		// Verification of the presence of image
 		Assert.assertTrue(Page.driver
 				.findElement(
-						By.xpath("//*[@id='contentPart2']/div/div/div/div/div/div/div/div[2]/div/div[1]/div/img"))
+						By.xpath("//img[@class='w-100' and @alt='Gaff Gallery Image']"))
 				.isDisplayed());
 		kb.clickDailyGaffGalleryImage();
 		Thread.sleep(4000);
@@ -685,15 +685,15 @@ public class KnowledgeBase extends BaseTest {
 		KnowledgeBasePage kb = cp.goKnowledgeBase();
 		Thread.sleep(15000);
 		kb.clickJointUs();
-		Thread.sleep(25000);
+		Thread.sleep(20000);
 		WebElement VideoResultsSection = Page.driver
-				.findElement(By.xpath("//*[@id='contentPart1']/div/div/div/div/div[1]/div/div[1]/div/h5"));
+				.findElement(By.xpath("//h5[@class='m-0' and text()='Videos']"));
 		Assert.assertTrue(VideoResultsSection.isDisplayed());
 		WebElement ImageResultsSection = Page.driver
-				.findElement(By.xpath("//*[@id='contentPart1']/div/div/div/div/div[2]/div/div[1]/div/h5"));
+				.findElement(By.xpath("//h5[@class='m-0' and text()='Images']"));
 		Assert.assertTrue(ImageResultsSection.isDisplayed());
 		WebElement DocumentResultsSection = Page.driver
-				.findElement(By.xpath("//*[@id='contentPart1']/div/div/div/div/div[3]/div/div[1]/div[1]/h5"));
+				.findElement(By.xpath("//h5[@class='m-0' and text()='Documents']"));
 		Assert.assertTrue(DocumentResultsSection.isDisplayed());
 		Thread.sleep(2000);
 		Page.click("PopularQueriesFilter_XPATH");
@@ -720,15 +720,15 @@ public class KnowledgeBase extends BaseTest {
 		KnowledgeBasePage kb = cp.goKnowledgeBase();
 		Thread.sleep(15000);
 		kb.clickOverhead();
-		Thread.sleep(25000);
+		Thread.sleep(20000);
 		WebElement VideoResultsSection = Page.driver
-				.findElement(By.xpath("//*[@id='contentPart1']/div/div/div/div/div[1]/div/div[1]/div/h5"));
+				.findElement(By.xpath("//h5[@class='m-0' and text()='Videos']"));
 		Assert.assertTrue(VideoResultsSection.isDisplayed());
 		WebElement ImageResultsSection = Page.driver
-				.findElement(By.xpath("//*[@id='contentPart1']/div/div/div/div/div[2]/div/div[1]/div/h5"));
+				.findElement(By.xpath("//h5[@class='m-0' and text()='Images']"));
 		Assert.assertTrue(ImageResultsSection.isDisplayed());
 		WebElement DocumentResultsSection = Page.driver
-				.findElement(By.xpath("//*[@id='contentPart1']/div/div/div/div/div[3]/div/div[1]/div[1]/h5"));
+				.findElement(By.xpath("//h5[@class='m-0' and text()='Documents']"));
 		Assert.assertTrue(DocumentResultsSection.isDisplayed());
 		//Page.click("PopularQueriesFilter_XPATH");
 		WebElement OverheadPopularFilter1 = Page.driver.findElement(By.xpath("//*[contains(text(),'Overhead Vanity 1')]"));
@@ -753,15 +753,15 @@ public class KnowledgeBase extends BaseTest {
 		KnowledgeBasePage kb = cp.goKnowledgeBase();
 		Thread.sleep(15000);
 		kb.clickPoleReplacement();
-		Thread.sleep(25000);
+		Thread.sleep(20000);
 		WebElement VideoResultsSection = Page.driver
-				.findElement(By.xpath("//*[@id='contentPart1']/div/div/div/div/div[1]/div/div[1]/div/h5"));
+				.findElement(By.xpath("//h5[@class='m-0' and text()='Videos']"));
 		Assert.assertTrue(VideoResultsSection.isDisplayed());
 		WebElement ImageResultsSection = Page.driver
-				.findElement(By.xpath("//*[@id='contentPart1']/div/div/div/div/div[2]/div/div[1]/div/h5"));
+				.findElement(By.xpath("//h5[@class='m-0' and text()='Images']"));
 		Assert.assertTrue(ImageResultsSection.isDisplayed());
 		WebElement DocumentResultsSection = Page.driver
-				.findElement(By.xpath("//*[@id='contentPart1']/div/div/div/div/div[3]/div/div[1]/div[1]/h5"));
+				.findElement(By.xpath("//h5[@class='m-0' and text()='Documents']"));
 		Assert.assertTrue(DocumentResultsSection.isDisplayed());
 		//Page.click("PopularQueriesFilter_XPATH");
 		WebElement PoleReplacementPopularFilter1 = Page.driver.findElement(By.xpath("//*[contains(text(),'Pole Replacement Vanity 1')]"));
@@ -786,15 +786,15 @@ public class KnowledgeBase extends BaseTest {
 		KnowledgeBasePage kb = cp.goKnowledgeBase();
 		Thread.sleep(15000);
 		kb.clickProducts();
-		Thread.sleep(25000);
+		Thread.sleep(20000);
 		WebElement VideoResultsSection = Page.driver
-				.findElement(By.xpath("//*[@id='contentPart1']/div/div/div/div/div[1]/div/div[1]/div/h5"));
+				.findElement(By.xpath("//h5[@class='m-0' and text()='Videos']"));
 		Assert.assertTrue(VideoResultsSection.isDisplayed());
 		WebElement ImageResultsSection = Page.driver
-				.findElement(By.xpath("//*[@id='contentPart1']/div/div/div/div/div[2]/div/div[1]/div/h5"));
+				.findElement(By.xpath("//h5[@class='m-0' and text()='Images']"));
 		Assert.assertTrue(ImageResultsSection.isDisplayed());
 		WebElement DocumentResultsSection = Page.driver
-				.findElement(By.xpath("//*[@id='contentPart1']/div/div/div/div/div[3]/div/div[1]/div[1]/h5"));
+				.findElement(By.xpath("//h5[@class='m-0' and text()='Documents']"));
 		Assert.assertTrue(DocumentResultsSection.isDisplayed());
 		//Page.click("PopularQueriesFilter_XPATH");
 		WebElement ProductsPopularFilter1 = Page.driver.findElement(By.xpath("//*[contains(text(),'Products Vanity 1')]"));
@@ -821,13 +821,13 @@ public class KnowledgeBase extends BaseTest {
 		kb.clickSteelAndConcreteAssessment();
 		Thread.sleep(5000);
 		/*// WebElement VideoResultsSection =
-		// Page.driver.findElement(By.xpath("//*[@id='contentPart1']/div/div/div/div/div[1]/div/div[1]/div/h5"));
+		// Page.driver.findElement(By.xpath("//h5[@class='m-0' and text()='Videos']"));
 		// Assert.assertTrue(VideoResultsSection.isDisplayed());
 		WebElement ImageResultsSection = Page.driver
-				.findElement(By.xpath("//*[@id=\"contentPart1\"]/div/div/div/div/div[1]/div/div[1]/div/h5"));
+				.findElement(By.xpath("//h5[@class='m-0' and text()='Images']"));
 		Assert.assertTrue(ImageResultsSection.isDisplayed());
 		WebElement DocumentResultsSection = Page.driver
-				.findElement(By.xpath("//*[@id='contentPart1']/div/div/div/div/div[2]/div/div[1]/div/h5"));
+				.findElement(By.xpath("//h5[@class='m-0' and text()='Documents']"));
 		Assert.assertTrue(DocumentResultsSection.isDisplayed());
 		WebElement SteelandConcreteAssessmentPopularFilter1 = Page.driver.findElement(By.xpath("//*[contains(text(),'')]"));
 		Assert.assertTrue(SteelandConcreteAssessmentPopularFilter1.isDisplayed());
@@ -839,9 +839,10 @@ public class KnowledgeBase extends BaseTest {
 		kb.clickClearSearch();
 		Thread.sleep(3000);*/
 		
-		//WebElement noresults = Page.driver.findElement(By.xpath("//div[@class='text-center dismissCountDown']/div[1]"));
-		WebElement noresults = Page.driver.findElement(By.xpath("//*[contains(text(),'No results match your search criteria')]"));
-		System.out.println(noresults.getText());
+		WebElement noresults = Page.driver.findElement(By.xpath("//div[contains(text(),'No results match your search criteria')]"));
+		String text = noresults.getText();
+		String newtext = text.substring(text.indexOf('\n')+1);
+		Assert.assertEquals(newtext,"No results match your search criteria.");
 	}
 
 	// US-98499-98607-Verify that clicking on the header on the tiles in KB landing
@@ -857,13 +858,13 @@ public class KnowledgeBase extends BaseTest {
 		kb.clickSteelAndConcreteAssessment();
 		Thread.sleep(5000);
 		/*// WebElement VideoResultsSection =
-		// Page.driver.findElement(By.xpath("//*[@id='contentPart1']/div/div/div/div/div[1]/div/div[1]/div/h5"));
+		// Page.driver.findElement(By.xpath("//h5[@class='m-0' and text()='Videos']"));
 		// Assert.assertTrue(VideoResultsSection.isDisplayed());
 		WebElement ImageResultsSection = Page.driver
-				.findElement(By.xpath("//*[@id=\"contentPart1\"]/div/div/div/div/div[1]/div/div[1]/div/h5"));
+				.findElement(By.xpath("//h5[@class='m-0' and text()='Images']"));
 		Assert.assertTrue(ImageResultsSection.isDisplayed());
 		WebElement DocumentResultsSection = Page.driver
-				.findElement(By.xpath("//*[@id=\"contentPart1\"]/div/div/div/div/div[2]/div/div[1]/div[1]/h5"));
+				.findElement(By.xpath("//h5[@class='m-0' and text()='Documents']"));
 		Assert.assertTrue(DocumentResultsSection.isDisplayed());
 		WebElement SteelandConcreteRestorationPopularFilter1 = Page.driver.findElement(By.xpath("//*[contains(text(),'')]"));
 		Assert.assertTrue(SteelandConcreteRestorationPopularFilter1.isDisplayed());
@@ -874,9 +875,11 @@ public class KnowledgeBase extends BaseTest {
 		Thread.sleep(3000);
 		kb.clickClearSearch();
 		Thread.sleep(3000);*/
-		WebElement noresults = Page.driver.findElement(By.xpath("//div[@class='text-center dismissCountDown']/div[1]"));
-
-		System.out.println(noresults.getText());
+		
+		WebElement noresults = Page.driver.findElement(By.xpath("//div[contains(text(),'No results match your search criteria')]"));
+		String text = noresults.getText();
+		String newtext = text.substring(text.indexOf('\n')+1);
+		Assert.assertEquals(newtext,"No results match your search criteria.");
 	}
 
 	// US-98499-98607-Verify that clicking on the header on the tiles in KB landing
@@ -890,15 +893,15 @@ public class KnowledgeBase extends BaseTest {
 		KnowledgeBasePage kb = cp.goKnowledgeBase();
 		Thread.sleep(15000);
 		kb.clickStormSupport();
-		Thread.sleep(25000);
+		Thread.sleep(20000);
 		WebElement VideoResultsSection = Page.driver
-				.findElement(By.xpath("//*[@id='contentPart1']/div/div/div/div/div[1]/div/div[1]/div/h5"));
+				.findElement(By.xpath("//h5[@class='m-0' and text()='Videos']"));
 		Assert.assertTrue(VideoResultsSection.isDisplayed());
 		WebElement ImageResultsSection = Page.driver
-				.findElement(By.xpath("//*[@id='contentPart1']/div/div/div/div/div[2]/div/div[1]/div/h5"));
+				.findElement(By.xpath("//h5[@class='m-0' and text()='Images']"));
 		Assert.assertTrue(ImageResultsSection.isDisplayed());
 		WebElement DocumentResultsSection = Page.driver
-				.findElement(By.xpath("//*[@id='contentPart1']/div/div/div/div/div[3]/div/div[1]/div[1]/h5"));
+				.findElement(By.xpath("//h5[@class='m-0' and text()='Documents']"));
 		Assert.assertTrue(DocumentResultsSection.isDisplayed());
 		//Page.click("PopularQueriesFilter_XPATH");
 		WebElement StormSupportPopularFilter1 = Page.driver.findElement(By.xpath("//*[contains(text(),'Storm Support Vanity 1')]"));
@@ -923,15 +926,15 @@ public class KnowledgeBase extends BaseTest {
 		KnowledgeBasePage kb = cp.goKnowledgeBase();
 		Thread.sleep(15000);
 		kb.clickUnderground();
-		Thread.sleep(25000);
+		Thread.sleep(20000);
 		// WebElement VideoResultsSection =
-		// Page.driver.findElement(By.xpath("//*[@id='contentPart1']/div/div/div/div/div[1]/div/div[1]/div/h5"));
+		// Page.driver.findElement(By.xpath("//h5[@class='m-0' and text()='Videos']"));
 		// Assert.assertTrue(VideoResultsSection.isDisplayed());
 		WebElement ImageResultsSection = Page.driver
-				.findElement(By.xpath("//*[@id=\"contentPart1\"]/div/div/div/div/div[1]/div/div[1]/div/h5"));
+				.findElement(By.xpath("//h5[@class='m-0' and text()='Images']"));
 		Assert.assertTrue(ImageResultsSection.isDisplayed());
 		WebElement DocumentResultsSection = Page.driver
-				.findElement(By.xpath("//*[@id='contentPart1']/div/div/div/div/div[2]/div/div[1]/div/h5"));
+				.findElement(By.xpath("//h5[@class='m-0' and text()='Documents']"));
 		Assert.assertTrue(DocumentResultsSection.isDisplayed());
 		//Page.click("PopularQueriesFilter_XPATH");
 		WebElement UndergroundPopularFilter1 = Page.driver.findElement(By.xpath("//*[contains(text(),'Underground Vanity 1')]"));
@@ -958,13 +961,13 @@ public class KnowledgeBase extends BaseTest {
 		kb.clickWoodRestoration();
 		Thread.sleep(5000);
 		/*WebElement VideoResultsSection = Page.driver
-				.findElement(By.xpath("//*[@id='contentPart1']/div/div/div/div/div[1]/div/div[1]/div/h5"));
+				.findElement(By.xpath("///h5[@class='m-0' and text()='Videos']"));
 		Assert.assertTrue(VideoResultsSection.isDisplayed());
 		// WebElement ImageResultsSection =
-		// Page.driver.findElement(By.xpath("//*[@id='contentPart1']/div/div/div/div/div[2]/div/div[1]/div/h5"));
+		// Page.driver.findElement(By.xpath("//h5[@class='m-0' and text()='Images']"));
 		// Assert.assertTrue(ImageResultsSection.isDisplayed());
 		WebElement DocumentResultsSection = Page.driver
-				.findElement(By.xpath("//*[@id=\"contentPart1\"]/div/div/div/div/div[2]/div/div[1]/div[1]/h5"));
+				.findElement(By.xpath("//h5[@class='m-0' and text()='Documents']"));
 		Assert.assertTrue(DocumentResultsSection.isDisplayed());
 		WebElement WoodRestorationPopularFilter1 = Page.driver.findElement(By.xpath("//*[contains(text(),'')]"));
 		Assert.assertTrue(WoodRestorationPopularFilter1.isDisplayed());
@@ -975,9 +978,11 @@ public class KnowledgeBase extends BaseTest {
 		Thread.sleep(3000);
 		kb.clickClearSearch();
 		Thread.sleep(3000);*/
-		WebElement noresults = Page.driver.findElement(By.xpath("//div[@class='text-center dismissCountDown']/div[1]"));
-
-		System.out.println(noresults.getText());
+		
+		WebElement noresults = Page.driver.findElement(By.xpath("//div[contains(text(),'No results match your search criteria')]"));
+		String text = noresults.getText();
+		String newtext = text.substring(text.indexOf('\n')+1);
+		Assert.assertEquals(newtext,"No results match your search criteria.");
 	}
 
 	// US-98499-98607-Verify that clicking on the header on the tiles in KB landing
@@ -993,13 +998,13 @@ public class KnowledgeBase extends BaseTest {
 		kb.clickWoodInspection();
 		Thread.sleep(5000);
 		/*WebElement VideoResultsSection = Page.driver
-				.findElement(By.xpath("//*[@id='contentPart1']/div/div/div/div/div[1]/div/div[1]/div/h5"));
+				.findElement(By.xpath("//h5[@class='m-0' and text()='Videos']"));
 		Assert.assertTrue(VideoResultsSection.isDisplayed());
 		WebElement ImageResultsSection = Page.driver
-				.findElement(By.xpath("//*[@id='contentPart1']/div/div/div/div/div[2]/div/div[1]/div/h5"));
+				.findElement(By.xpath("//h5[@class='m-0' and text()='Images']"));
 		Assert.assertTrue(ImageResultsSection.isDisplayed());
 		WebElement DocumentResultsSection = Page.driver
-				.findElement(By.xpath("//*[@id='contentPart1']/div/div/div/div/div[3]/div/div[1]/div[1]/h5"));
+				.findElement(By.xpath("//h5[@class='m-0' and text()='Documents']"));
 		Assert.assertTrue(DocumentResultsSection.isDisplayed());
 		WebElement WoodInspectionPopularFilter1 = Page.driver.findElement(By.xpath("//*[contains(text(),'')]"));
 		Assert.assertTrue(WoodInspectionPopularFilter1.isDisplayed());
@@ -1010,9 +1015,11 @@ public class KnowledgeBase extends BaseTest {
 		Thread.sleep(3000);
 		kb.clickClearSearch();
 		Thread.sleep(3000);*/
-		WebElement noresults = Page.driver.findElement(By.xpath("//div[@class='text-center dismissCountDown']/div[1]"));
-
-		System.out.println(noresults.getText());
+		
+		WebElement noresults = Page.driver.findElement(By.xpath("//div[contains(text(),'No results match your search criteria')]"));
+		String text = noresults.getText();
+		String newtext = text.substring(text.indexOf('\n')+1);
+		Assert.assertEquals(newtext,"No results match your search criteria.");
 	}
 
 	// US-98499-98609: Verify that clicking on the assets for the tiles in KB
@@ -1028,17 +1035,17 @@ public class KnowledgeBase extends BaseTest {
 		Thread.sleep(3000);
 		// Verify the presence of Back Button
 		WebElement BackBtnImages = Page.driver
-				.findElement(By.xpath("//*[@id='contentPart2']/div/div/div/div/div/div/div/div[1]/div/h5/a"));
+				.findElement(By.xpath("//h5[@class='m-0']//a[@class='btnLink m-0']"));
 		Assert.assertTrue(BackBtnImages.isDisplayed());
 		Thread.sleep(3000);
 		// Verify the presence Images header text
 		String ImagesHeaderTxt = Page.driver
-				.findElement(By.xpath("//*[@id='contentPart2']/div/div/div/div/div/div/div/div[1]/div/h5")).getText();
+				.findElement(By.xpath("//h5[@class='m-0' and text()=' Images ']")).getText();
 		Assert.assertEquals(ImagesHeaderTxt, "Images");
 		Thread.sleep(3000);
 		// Verification of the presence of image
 		WebElement ImageContent = Page.driver
-				.findElement(By.xpath("//*[@id='contentPart2']/div/div/div/div/div/div/div/div[2]/div/div[1]/div/img"));
+				.findElement(By.xpath("(//div[@class='imgBox']//img[@class='w-100'])[1]"));
 		Assert.assertTrue(ImageContent.isDisplayed());
 		//Page.click("PopularQueriesFilter_XPATH");
 		WebElement JointUseImagesPopularFilter1 = Page.driver.findElement(By.xpath("//*[contains(text(),'Joint Use Vanity 1')]"));
@@ -1047,8 +1054,8 @@ public class KnowledgeBase extends BaseTest {
 		Assert.assertTrue(JointUseImagesPopularFilter2.isDisplayed());
 		WebElement JointUseImagesPopularFilter3 = Page.driver.findElement(By.xpath("//*[contains(text(),'Joint Use Vanity 3')]"));
 		Assert.assertTrue(JointUseImagesPopularFilter3.isDisplayed());
-		WebElement imageTitle = Page.driver.findElement(By.xpath("//*[contains(text(),'Test Image (Joint Use 2)')]"));
-		Assert.assertEquals(imageTitle.getText(), "Test Image (Joint Use 2)");
+		//WebElement imageTitle = Page.driver.findElement(By.xpath("//*[contains(text(),'Test Image (Joint Use 2)')]"));
+		//Assert.assertEquals(imageTitle.getText(), "Test Image (Joint Use 2)");
 		Thread.sleep(3000);
 		kb.clickJointUseOnAnImage();
 		Thread.sleep(3000);
@@ -1071,17 +1078,17 @@ public class KnowledgeBase extends BaseTest {
 		Thread.sleep(3000);
 		// Verify the presence of Back Button
 		WebElement BackButtonVideos = Page.driver
-				.findElement(By.xpath("//*[@id='contentPart3']/div/div/div/div/div/div/div[1]/div/h5/a"));
+				.findElement(By.xpath("//h5[@class='m-0']//a[@class='btnLink m-0']"));
 		Assert.assertTrue(BackButtonVideos.isDisplayed());
 		Thread.sleep(3000);
 		// Verify the presence Videos header text
 		String VideosHeaderTxt = Page.driver
-				.findElement(By.xpath("//*[@id='contentPart3']/div/div/div/div/div/div/div[1]/div/h5")).getText();
+				.findElement(By.xpath("//h5[@class='m-0' and text()=' Videos ' ]")).getText();
 		Assert.assertEquals(VideosHeaderTxt, "Videos");
 		Thread.sleep(3000);
 		// Verification of the presence of video
 		WebElement VideoContent = Page.driver
-				.findElement(By.xpath("//*[@id='contentPart3']/div/div/div/div/div/div/div[2]/div/div[1]/div/img"));
+				.findElement(By.xpath("(//div[@class='imgBox']//img[@class='w-100'])[1]"));
 		Assert.assertTrue(VideoContent.isDisplayed());
 		//Page.click("PopularQueriesFilter_XPATH");
 		WebElement JointUseVideosPopularFilter1 = Page.driver.findElement(By.xpath("//*[contains(text(),'Joint Use Vanity 1')]"));
@@ -1110,9 +1117,10 @@ public class KnowledgeBase extends BaseTest {
 		KnowledgeBasePage kb = cp.goKnowledgeBase();
 		Thread.sleep(8000);
 		kb.clickJointUseArticles();
-		WebElement noresults = Page.driver.findElement(By.xpath("//div[@class='text-center dismissCountDown']/div[1]"));
-
-		System.out.println(noresults.getText());
+		WebElement noresults = Page.driver.findElement(By.xpath("//div[contains(text(),'No results match your search criteria')]"));
+		String text = noresults.getText();
+		String newtext = text.substring(text.indexOf('\n')+1);
+		Assert.assertEquals(newtext,"No results match your search criteria.");
 	}
 
 	// US-98499-98609: Verify that clicking on the assets for the tiles in KB
@@ -1128,17 +1136,17 @@ public class KnowledgeBase extends BaseTest {
 		Thread.sleep(3000);
 		// Verify the presence of Back Button
 		WebElement BackButtonVideos = Page.driver
-				.findElement(By.xpath("//*[@id='contentPart3']/div/div/div/div/div/div/div[1]/div/h5/a"));
+				.findElement(By.xpath("//h5[@class='m-0']//a[@class='btnLink m-0']"));
 		Assert.assertTrue(BackButtonVideos.isDisplayed());
 		Thread.sleep(3000);
 		// Verify the presence Videos header text
 		String VideosHeaderTxt = Page.driver
-				.findElement(By.xpath("//*[@id='contentPart3']/div/div/div/div/div/div/div[1]/div/h5")).getText();
+				.findElement(By.xpath("//h5[@class='m-0' and text()=' Videos ' ]")).getText();
 		Assert.assertEquals(VideosHeaderTxt, "Videos");
 		Thread.sleep(3000);
 		// Verification of the presence of video
 		WebElement VideoContent = Page.driver
-				.findElement(By.xpath("//*[@id='contentPart3']/div/div/div/div/div/div/div[2]/div/div[1]/div/img"));
+				.findElement(By.xpath("(//div[@class='imgBox']//img[@class='w-100'])[1]"));
 		Assert.assertTrue(VideoContent.isDisplayed());
 		Thread.sleep(3000);
 		kb.clickOverheadOnAVideo();
@@ -1172,17 +1180,17 @@ public class KnowledgeBase extends BaseTest {
 		Thread.sleep(3000);
 		// Verify the presence of Back Button
 		WebElement BackBtnImages = Page.driver
-				.findElement(By.xpath("//*[@id='contentPart2']/div/div/div/div/div/div/div/div[1]/div/h5/a"));
+				.findElement(By.xpath("//h5[@class='m-0']//a[@class='btnLink m-0']"));
 		Assert.assertTrue(BackBtnImages.isDisplayed());
 		Thread.sleep(3000);
 		// Verify the presence Images header text
 		String ImagesHeaderTxt = Page.driver
-				.findElement(By.xpath("//*[@id='contentPart2']/div/div/div/div/div/div/div/div[1]/div/h5")).getText();
+				.findElement(By.xpath("//h5[@class='m-0' and text()=' Images ']")).getText();
 		Assert.assertEquals(ImagesHeaderTxt, "Images");
 		Thread.sleep(3000);
 		// Verification of the presence of image
 		WebElement ImageContent = Page.driver
-				.findElement(By.xpath("//*[@id='contentPart2']/div/div/div/div/div/div/div/div[2]/div/div[1]/div/img"));
+				.findElement(By.xpath("(//div[@class='imgBox']//img[@class='w-100'])[1]"));
 		Assert.assertTrue(ImageContent.isDisplayed());
 		//Page.click("PopularQueriesFilter_XPATH");
 		WebElement OverheadImagesPopularFilter1 = Page.driver.findElement(By.xpath("//*[contains(text(),'Overhead Vanity 1')]"));
@@ -1212,17 +1220,17 @@ public class KnowledgeBase extends BaseTest {
 		Thread.sleep(3000);
 		// Verify the presence of Back Button
 		WebElement BackBtnProjectProfiles = Page.driver
-				.findElement(By.xpath("//*[@id='contentPart5']/div/div/div/div/div/div/div[1]/div[1]/h5/a"));
+				.findElement(By.xpath("//h5[@class='m-0']//a[@class='btnLink m-0']"));
 		Assert.assertTrue(BackBtnProjectProfiles.isDisplayed());
 		Thread.sleep(3000);
 		// Verify the presence Document header text
 		String DocumentHeaderTxt = Page.driver
-				.findElement(By.xpath("//*[@id='contentPart5']/div/div/div/div/div/div/div[1]/div[1]/h5")).getText();
+				.findElement(By.xpath("//h5[@class='m-0' and text()=' Documents ']")).getText();
 		Assert.assertEquals(DocumentHeaderTxt, "Documents");
 		Thread.sleep(3000);
 		// Verification of the presence of document
 		WebElement DocumentContent = Page.driver
-				.findElement(By.xpath("//div[@class='pagiNation p-0']/div[1]/div[1]/a"));
+				.findElement(By.xpath("//div[@class='docBox m-0 mb-2']//a[text()='Test Project Profiles (Overhead 2)']"));
 		Assert.assertTrue(DocumentContent.isDisplayed());
 		//Page.click("PopularQueriesFilter_XPATH");
 		WebElement OverheadProjectProfilesPopularFilter1 = Page.driver.findElement(By.xpath("//*[contains(text(),'Overhead Vanity 1')]"));
@@ -1233,7 +1241,7 @@ public class KnowledgeBase extends BaseTest {
 		Assert.assertTrue(OverheadProjectProfilesPopularFilter3.isDisplayed());
 		WebElement documentTitle = Page.driver.findElement(By.xpath("//*[contains(text(),'Test Project Profiles (Overhead 2)')]"));
 		Assert.assertEquals(documentTitle.getText(), "Test Project Profiles (Overhead 2)");
-		WebElement docDescription = Page.driver.findElement(By.xpath("//*[@class='pagiNation p-0']/div[1]/div[1]/p"));
+		WebElement docDescription = Page.driver.findElement(By.xpath("(//div[@class='docBox m-0 mb-2']//p)[1]"));
 		Assert.assertEquals(docDescription.getText(), "Test brochure");
 		Thread.sleep(3000);
 		kb.clickOverheadOnADocument();
@@ -1255,17 +1263,17 @@ public class KnowledgeBase extends BaseTest {
 		Thread.sleep(3000);
 		// Verify the presence of Back Button
 		WebElement BackBtnImages = Page.driver
-				.findElement(By.xpath("//*[@id='contentPart2']/div/div/div/div/div/div/div/div[1]/div/h5/a"));
+				.findElement(By.xpath("//h5[@class='m-0']//a[@class='btnLink m-0']"));
 		Assert.assertTrue(BackBtnImages.isDisplayed());
 		Thread.sleep(3000);
 		// Verify the presence Images header text
 		String ImagesHeaderTxt = Page.driver
-				.findElement(By.xpath("//*[@id='contentPart2']/div/div/div/div/div/div/div/div[1]/div/h5")).getText();
+				.findElement(By.xpath("//h5[@class='m-0' and text()=' Images ']")).getText();
 		Assert.assertEquals(ImagesHeaderTxt, "Images");
 		Thread.sleep(3000);
 		// Verification of the presence of image
 		WebElement ImageContent = Page.driver
-				.findElement(By.xpath("//*[@id='contentPart2']/div/div/div/div/div/div/div/div[2]/div/div[1]/div/img"));
+				.findElement(By.xpath("(//div[@class='imgBox']//img[@class='w-100'])[1]"));
 		Assert.assertTrue(ImageContent.isDisplayed());
 		//Page.click("PopularQueriesFilter_XPATH");
 		WebElement PoleReplacementImagesPopularFilter1 = Page.driver.findElement(By.xpath("//*[contains(text(),'Pole Replacement Vanity 1')]"));
@@ -1294,17 +1302,17 @@ public class KnowledgeBase extends BaseTest {
 		Thread.sleep(3000);
 		// Verify the presence of Back Button
 		WebElement BackButtonVideos = Page.driver
-				.findElement(By.xpath("//*[@id='contentPart3']/div/div/div/div/div/div/div[1]/div/h5/a"));
+				.findElement(By.xpath("//h5[@class='m-0']//a[@class='btnLink m-0']"));
 		Assert.assertTrue(BackButtonVideos.isDisplayed());
 		Thread.sleep(3000);
 		// Verify the presence Videos header text
 		String VideosHeaderTxt = Page.driver
-				.findElement(By.xpath("//*[@id='contentPart3']/div/div/div/div/div/div/div[1]/div/h5")).getText();
+				.findElement(By.xpath("//h5[@class='m-0' and text()=' Videos ']")).getText();
 		Assert.assertEquals(VideosHeaderTxt, "Videos");
 		Thread.sleep(3000);
 		// Verification of the presence of video
 		WebElement VideoContent = Page.driver
-				.findElement(By.xpath("//*[@id='contentPart3']/div/div/div/div/div/div/div[2]/div/div[1]/div/img"));
+				.findElement(By.xpath("(//div[@class='imgBox']//img[@class='w-100'])[1]"));
 		Assert.assertTrue(VideoContent.isDisplayed());
 		//Page.click("PopularQueriesFilter_XPATH");
 		WebElement PoleReplacementVideosPopularFilter1 = Page.driver.findElement(By.xpath("//*[contains(text(),'Pole Replacement Vanity 1')]"));
@@ -1335,17 +1343,17 @@ public class KnowledgeBase extends BaseTest {
 		Thread.sleep(3000);
 		// Verify the presence of Back Button
 		WebElement BackBtnBrochure = Page.driver
-				.findElement(By.xpath("//*[@id='contentPart5']/div/div/div/div/div/div/div[1]/div[1]/h5/a"));
+				.findElement(By.xpath("//h5[@class='m-0']//a[@class='btnLink m-0']"));
 		Assert.assertTrue(BackBtnBrochure.isDisplayed());
 		Thread.sleep(3000);
 		// Verify the presence Document header text
 		String DocumentHeaderTxt = Page.driver
-				.findElement(By.xpath("//*[@id='contentPart5']/div/div/div/div/div/div/div[1]/div[1]/h5")).getText();
+				.findElement(By.xpath("//h5[@class='m-0' and text()=' Documents ']")).getText();
 		Assert.assertEquals(DocumentHeaderTxt, "Documents");
 		Thread.sleep(3000);
 		// Verification of the presence of document
 		WebElement DocumentContent = Page.driver
-				.findElement(By.xpath("//div[@class='pagiNation p-0']/div[1]/div[1]/a"));
+				.findElement(By.xpath("//div[@class='docBox m-0 mb-2']//a[text()='Test brochure (Pole Replacement 1)']"));
 		Assert.assertTrue(DocumentContent.isDisplayed());
 		//Page.click("PopularQueriesFilter_XPATH");
 		WebElement PoleReplacementBrochurePopularFilter1 = Page.driver.findElement(By.xpath("//*[contains(text(),'Pole Replacement Vanity 1')]"));
@@ -1374,17 +1382,17 @@ public class KnowledgeBase extends BaseTest {
 		Thread.sleep(3000);
 		// Verify the presence of Back Button
 		WebElement BackBtnImages = Page.driver
-				.findElement(By.xpath("//*[@id='contentPart2']/div/div/div/div/div/div/div/div[1]/div/h5/a"));
+				.findElement(By.xpath("//h5[@class='m-0']//a[@class='btnLink m-0']"));
 		Assert.assertTrue(BackBtnImages.isDisplayed());
 		Thread.sleep(3000);
 		// Verify the presence Images header text
 		String ImagesHeaderTxt = Page.driver
-				.findElement(By.xpath("//*[@id='contentPart2']/div/div/div/div/div/div/div/div[1]/div/h5")).getText();
+				.findElement(By.xpath("//h5[@class='m-0' and text()=' Images ']")).getText();
 		Assert.assertEquals(ImagesHeaderTxt, "Images");
 		Thread.sleep(3000);
 		// Verification of the presence of image
 		WebElement ImageContent = Page.driver
-				.findElement(By.xpath("//*[@id='contentPart2']/div/div/div/div/div/div/div/div[2]/div/div[1]/div/img"));
+				.findElement(By.xpath("(//div[@class='imgBox']//img[@class='w-100'])[1]"));
 		Assert.assertTrue(ImageContent.isDisplayed());
 		//Page.click("PopularQueriesFilter_XPATH");
 		WebElement ProductsImagesPopularFilter1 = Page.driver.findElement(By.xpath("//*[contains(text(),'Products Vanity 1')]"));
@@ -1413,17 +1421,17 @@ public class KnowledgeBase extends BaseTest {
 		Thread.sleep(3000);
 		// Verify the presence of Back Button
 		WebElement BackButtonVideos = Page.driver
-				.findElement(By.xpath("//*[@id='contentPart3']/div/div/div/div/div/div/div[1]/div/h5/a"));
+				.findElement(By.xpath("//h5[@class='m-0']//a[@class='btnLink m-0']"));
 		Assert.assertTrue(BackButtonVideos.isDisplayed());
 		Thread.sleep(3000);
 		// Verify the presence Videos header text
 		String VideosHeaderTxt = Page.driver
-				.findElement(By.xpath("//*[@id='contentPart3']/div/div/div/div/div/div/div[1]/div/h5")).getText();
+				.findElement(By.xpath("//h5[@class='m-0' and text()=' Videos ']")).getText();
 		Assert.assertEquals(VideosHeaderTxt, "Videos");
 		Thread.sleep(3000);
 		// Verification of the presence of video
 		WebElement VideoContent = Page.driver
-				.findElement(By.xpath("//*[@id='contentPart3']/div/div/div/div/div/div/div[2]/div/div[1]/div/img"));
+				.findElement(By.xpath("(//div[@class='imgBox']//img[@class='w-100'])[1]"));
 		Assert.assertTrue(VideoContent.isDisplayed());
 		//Page.click("PopularQueriesFilter_XPATH");
 		WebElement ProductsVideosPopularFilter1 = Page.driver.findElement(By.xpath("//*[contains(text(),'Products Vanity 1')]"));
@@ -1454,17 +1462,17 @@ public class KnowledgeBase extends BaseTest {
 		Thread.sleep(3000);
 		// Verify the presence of Back Button
 		WebElement BackBtnBrochure = Page.driver
-				.findElement(By.xpath("//*[@id='contentPart5']/div/div/div/div/div/div/div[1]/div[1]/h5/a"));
+				.findElement(By.xpath("//h5[@class='m-0']//a[@class='btnLink m-0']"));
 		Assert.assertTrue(BackBtnBrochure.isDisplayed());
 		Thread.sleep(3000);
 		// Verify the presence Document header text
 		String DocumentHeaderTxt = Page.driver
-				.findElement(By.xpath("//*[@id='contentPart5']/div/div/div/div/div/div/div[1]/div[1]/h5")).getText();
+				.findElement(By.xpath("//h5[@class='m-0' and text()=' Documents ']")).getText();
 		Assert.assertEquals(DocumentHeaderTxt, "Documents");
 		Thread.sleep(3000);
 		// Verification of the presence of document
 		WebElement DocumentContent = Page.driver
-				.findElement(By.xpath("//div[@class='pagiNation p-0']/div[1]/div[1]/a"));
+				.findElement(By.xpath("//div[@class='docBox m-0 mb-2']//a[text()='Test Product Catalog (Products 2)']"));
 		Assert.assertTrue(DocumentContent.isDisplayed());
 		//Page.click("PopularQueriesFilter_XPATH");
 		WebElement ProductsProductCatalogPopularFilter1 = Page.driver.findElement(By.xpath("//*[contains(text(),'Products Vanity 1')]"));
@@ -1493,17 +1501,17 @@ public class KnowledgeBase extends BaseTest {
 		Thread.sleep(3000);
 		// Verify the presence of Back Button
 		WebElement BackBtnImages = Page.driver
-				.findElement(By.xpath("//*[@id='contentPart2']/div/div/div/div/div/div/div/div[1]/div/h5/a"));
+				.findElement(By.xpath("//h5[@class='m-0']//a[@class='btnLink m-0']"));
 		Assert.assertTrue(BackBtnImages.isDisplayed());
 		Thread.sleep(3000);
 		// Verify the presence Images header text
 		String ImagesHeaderTxt = Page.driver
-				.findElement(By.xpath("//*[@id='contentPart2']/div/div/div/div/div/div/div/div[1]/div/h5")).getText();
+				.findElement(By.xpath("//h5[@class='m-0' and text()=' Images ']")).getText();
 		Assert.assertEquals(ImagesHeaderTxt, "Images");
 		Thread.sleep(3000);
 		// Verification of the presence of image
 		WebElement ImageContent = Page.driver
-				.findElement(By.xpath("//*[@id='contentPart2']/div/div/div/div/div/div/div/div[2]/div/div[1]/div/img"));
+				.findElement(By.xpath("(//div[@class='imgBox']//img[@class='w-100'])[1]"));
 		Assert.assertTrue(ImageContent.isDisplayed());
 		//Page.click("PopularQueriesFilter_XPATH");
 		WebElement SteelandConcreteAssessmentImagesPopularFilter1 = Page.driver.findElement(By.xpath("//*[contains(text(),'Steel & Concrete Assessment Vanity 1')]"));
@@ -1528,9 +1536,10 @@ public class KnowledgeBase extends BaseTest {
 		KnowledgeBasePage kb = cp.goKnowledgeBase();
 		Thread.sleep(8000);
 		kb.clickSteelandConcreteAssessmentBrochures();
-		WebElement noresults = Page.driver.findElement(By.xpath("//div[@class='text-center dismissCountDown']/div[1]"));
-
-		System.out.println(noresults.getText());
+		WebElement noresults = Page.driver.findElement(By.xpath("//div[contains(text(),'No results match your search criteria')]"));
+		String text = noresults.getText();
+		String newtext = text.substring(text.indexOf('\n')+1);
+		Assert.assertEquals(newtext,"No results match your search criteria.");
 	}
 
 	// US-98499-98609: Verify that clicking on the assets for the tiles in KB
@@ -1541,9 +1550,10 @@ public class KnowledgeBase extends BaseTest {
 		KnowledgeBasePage kb = cp.goKnowledgeBase();
 		Thread.sleep(8000);
 		kb.clickSteelandConcreteAssessmentStandards_Codes();
-		WebElement noresults = Page.driver.findElement(By.xpath("//div[@class='text-center dismissCountDown']/div[1]"));
-
-		System.out.println(noresults.getText());
+		WebElement noresults = Page.driver.findElement(By.xpath("//div[contains(text(),'No results match your search criteria')]"));
+		String text = noresults.getText();
+		String newtext = text.substring(text.indexOf('\n')+1);
+		Assert.assertEquals(newtext,"No results match your search criteria.");
 	}
 
 	// US-98499-98609: Verify that clicking on the assets for the tiles in KB
@@ -1554,9 +1564,10 @@ public class KnowledgeBase extends BaseTest {
 		KnowledgeBasePage kb = cp.goKnowledgeBase();
 		Thread.sleep(8000);
 		kb.clickSteelandConcreteRestorationArticles();
-		WebElement noresults = Page.driver.findElement(By.xpath("//div[@class='text-center dismissCountDown']/div[1]"));
-
-		System.out.println(noresults.getText());
+		WebElement noresults = Page.driver.findElement(By.xpath("//div[contains(text(),'No results match your search criteria')]"));
+		String text = noresults.getText();
+		String newtext = text.substring(text.indexOf('\n')+1);
+		Assert.assertEquals(newtext,"No results match your search criteria.");
 	}
 
 	// US-98499-98609: Verify that clicking on the assets for the tiles in KB
@@ -1567,9 +1578,10 @@ public class KnowledgeBase extends BaseTest {
 		KnowledgeBasePage kb = cp.goKnowledgeBase();
 		Thread.sleep(8000);
 		kb.clickSteelandConcreteRestorationBrochures();
-		WebElement noresults = Page.driver.findElement(By.xpath("//div[@class='text-center dismissCountDown']/div[1]"));
-
-		System.out.println(noresults.getText());
+		WebElement noresults = Page.driver.findElement(By.xpath("//div[contains(text(),'No results match your search criteria')]"));
+		String text = noresults.getText();
+		String newtext = text.substring(text.indexOf('\n')+1);
+		Assert.assertEquals(newtext,"No results match your search criteria.");
 	}
 
 	// US-98499-98609: Verify that clicking on the assets for the tiles in KB
@@ -1584,17 +1596,17 @@ public class KnowledgeBase extends BaseTest {
 		Thread.sleep(3000);
 		// Verify the presence of Back Button
 		WebElement BackBtnImages = Page.driver
-				.findElement(By.xpath("//*[@id='contentPart2']/div/div/div/div/div/div/div/div[1]/div/h5/a"));
+				.findElement(By.xpath("//h5[@class='m-0']//a[@class='btnLink m-0']"));
 		Assert.assertTrue(BackBtnImages.isDisplayed());
 		Thread.sleep(3000);
 		// Verify the presence Images header text
 		String ImagesHeaderTxt = Page.driver
-				.findElement(By.xpath("//*[@id='contentPart2']/div/div/div/div/div/div/div/div[1]/div/h5")).getText();
+				.findElement(By.xpath("//h5[@class='m-0' and text()=' Images ']")).getText();
 		Assert.assertEquals(ImagesHeaderTxt, "Images");
 		Thread.sleep(3000);
 		// Verification of the presence of image
 		WebElement ImageContent = Page.driver
-				.findElement(By.xpath("//*[@id='contentPart2']/div/div/div/div/div/div/div/div[2]/div/div[1]/div/img"));
+				.findElement(By.xpath("(//div[@class='imgBox']//img[@class='w-100'])[1]"));
 		Assert.assertTrue(ImageContent.isDisplayed());
 		//Page.click("PopularQueriesFilter_XPATH");
 		WebElement SteelandConcreteRestorationImagesPopularFilter1 = Page.driver.findElement(By.xpath("//*[contains(text(),'Steel & Concrete Restoration Vanity 1')]"));
@@ -1623,17 +1635,17 @@ public class KnowledgeBase extends BaseTest {
 		Thread.sleep(3000);
 		// Verify the presence of Back Button
 		WebElement BackBtnImages = Page.driver
-				.findElement(By.xpath("//*[@id='contentPart2']/div/div/div/div/div/div/div/div[1]/div/h5/a"));
+				.findElement(By.xpath("//h5[@class='m-0']//a[@class='btnLink m-0']"));
 		Assert.assertTrue(BackBtnImages.isDisplayed());
 		Thread.sleep(3000);
 		// Verify the presence Images header text
 		String ImagesHeaderTxt = Page.driver
-				.findElement(By.xpath("//*[@id='contentPart2']/div/div/div/div/div/div/div/div[1]/div/h5")).getText();
+				.findElement(By.xpath("//h5[@class='m-0' and text()=' Images ']")).getText();
 		Assert.assertEquals(ImagesHeaderTxt, "Images");
 		Thread.sleep(3000);
 		// Verification of the presence of image
 		WebElement ImageContent = Page.driver
-				.findElement(By.xpath("//*[@id='contentPart2']/div/div/div/div/div/div/div/div[2]/div/div[1]/div/img"));
+				.findElement(By.xpath("(//div[@class='imgBox']//img[@class='w-100'])[1]"));
 		Assert.assertTrue(ImageContent.isDisplayed());
 		//Page.click("PopularQueriesFilter_XPATH");
 		WebElement StormSupportImagesPopularFilter1 = Page.driver.findElement(By.xpath("//*[contains(text(),'Storm Support Vanity 1')]"));
@@ -1662,17 +1674,17 @@ public class KnowledgeBase extends BaseTest {
 		Thread.sleep(3000);
 		// Verify the presence of Back Button
 		WebElement BackButtonVideos = Page.driver
-				.findElement(By.xpath("//*[@id='contentPart3']/div/div/div/div/div/div/div[1]/div/h5/a"));
+				.findElement(By.xpath("//h5[@class='m-0']//a[@class='btnLink m-0']"));
 		Assert.assertTrue(BackButtonVideos.isDisplayed());
 		Thread.sleep(3000);
 		// Verify the presence Videos header text
 		String VideosHeaderTxt = Page.driver
-				.findElement(By.xpath("//*[@id='contentPart3']/div/div/div/div/div/div/div[1]/div/h5")).getText();
+				.findElement(By.xpath("//h5[@class='m-0' and text()=' Videos ']")).getText();
 		Assert.assertEquals(VideosHeaderTxt, "Videos");
 		Thread.sleep(3000);
 		// Verification of the presence of video
 		WebElement VideoContent = Page.driver
-				.findElement(By.xpath("//*[@id='contentPart3']/div/div/div/div/div/div/div[2]/div/div[1]/div/img"));
+				.findElement(By.xpath("(//div[@class='imgBox']//img[@class='w-100'])[1]"));
 		Assert.assertTrue(VideoContent.isDisplayed());
 		//Page.click("PopularQueriesFilter_XPATH");
 		WebElement StormSupportVideosPopularFilter1 = Page.driver.findElement(By.xpath("//*[contains(text(),'Storm Support Vanity 1')]"));
@@ -1703,17 +1715,17 @@ public class KnowledgeBase extends BaseTest {
 		Thread.sleep(3000);
 		// Verify the presence of Back Button
 		WebElement BackBtnProjectProfiles = Page.driver
-				.findElement(By.xpath("//*[@id='contentPart5']/div/div/div/div/div/div/div[1]/div[1]/h5/a"));
+				.findElement(By.xpath("//h5[@class='m-0']//a[@class='btnLink m-0']"));
 		Assert.assertTrue(BackBtnProjectProfiles.isDisplayed());
 		Thread.sleep(3000);
 		// Verify the presence Document header text
 		String DocumentHeaderTxt = Page.driver
-				.findElement(By.xpath("//*[@id='contentPart5']/div/div/div/div/div/div/div[1]/div[1]/h5")).getText();
+				.findElement(By.xpath("//h5[@class='m-0' and text()=' Documents ']")).getText();
 		Assert.assertEquals(DocumentHeaderTxt, "Documents");
 		Thread.sleep(3000);
 		// Verification of the presence of document
 		WebElement DocumentContent = Page.driver
-				.findElement(By.xpath("//div[@class='pagiNation p-0']/div[1]/div[1]/a"));
+				.findElement(By.xpath("//div[@class='docBox m-0 mb-2']//a[text()='Test Project Profiles (Storm Support 2)']"));
 		Assert.assertTrue(DocumentContent.isDisplayed());
 		//Page.click("PopularQueriesFilter_XPATH");
 		WebElement StormSupportProjectProfilesPopularFilter1 = Page.driver.findElement(By.xpath("//*[contains(text(),'Storm Support Vanity 1')]"));
@@ -1742,17 +1754,17 @@ public class KnowledgeBase extends BaseTest {
 		Thread.sleep(3000);
 		// Verify the presence of Back Button
 		WebElement BackBtnImages = Page.driver
-				.findElement(By.xpath("//*[@id='contentPart2']/div/div/div/div/div/div/div/div[1]/div/h5/a"));
+				.findElement(By.xpath("//h5[@class='m-0']//a[@class='btnLink m-0']"));
 		Assert.assertTrue(BackBtnImages.isDisplayed());
 		Thread.sleep(3000);
 		// Verify the presence Images header text
 		String ImagesHeaderTxt = Page.driver
-				.findElement(By.xpath("//*[@id='contentPart2']/div/div/div/div/div/div/div/div[1]/div/h5")).getText();
+				.findElement(By.xpath("//h5[@class='m-0' and text()=' Images ']")).getText();
 		Assert.assertEquals(ImagesHeaderTxt, "Images");
 		Thread.sleep(3000);
 		// Verification of the presence of image
 		WebElement ImageContent = Page.driver
-				.findElement(By.xpath("//*[@id='contentPart2']/div/div/div/div/div/div/div/div[2]/div/div[1]/div/img"));
+				.findElement(By.xpath("(//div[@class='imgBox']//img[@class='w-100'])[1]"));
 		Assert.assertTrue(ImageContent.isDisplayed());
 		//Page.click("PopularQueriesFilter_XPATH");
 		WebElement UndergroundImagesPopularFilter1 = Page.driver.findElement(By.xpath("//*[contains(text(),'Underground Vanity 1')]"));
@@ -1781,17 +1793,17 @@ public class KnowledgeBase extends BaseTest {
 		Thread.sleep(3000);
 		// Verify the presence of Back Button
 		WebElement BackBtnProjectProfiles = Page.driver
-				.findElement(By.xpath("//*[@id='contentPart5']/div/div/div/div/div/div/div[1]/div[1]/h5/a"));
+				.findElement(By.xpath("//h5[@class='m-0']//a[@class='btnLink m-0']"));
 		Assert.assertTrue(BackBtnProjectProfiles.isDisplayed());
 		Thread.sleep(3000);
 		// Verify the presence Document header text
 		String DocumentHeaderTxt = Page.driver
-				.findElement(By.xpath("//*[@id='contentPart5']/div/div/div/div/div/div/div[1]/div[1]/h5")).getText();
+				.findElement(By.xpath("//h5[@class='m-0' and text()=' Documents ']")).getText();
 		Assert.assertEquals(DocumentHeaderTxt, "Documents");
 		Thread.sleep(3000);
 		// Verification of the presence of document
 		WebElement DocumentContent = Page.driver
-				.findElement(By.xpath("//div[@class='pagiNation p-0']/div[1]/div[1]/a"));
+				.findElement(By.xpath("//div[@class='docBox m-0 mb-2']//a[text()='Test brochure (Underground 1)']"));
 		Assert.assertTrue(DocumentContent.isDisplayed());
 		//Page.click("PopularQueriesFilter_XPATH");
 		WebElement UndergroundProjectProfilesPopularFilter1 = Page.driver.findElement(By.xpath("//*[contains(text(),'Underground Vanity 1')]"));
@@ -1820,17 +1832,17 @@ public class KnowledgeBase extends BaseTest {
 		Thread.sleep(3000);
 		// Verify the presence of Back Button
 		WebElement BackBtnDiagram = Page.driver
-				.findElement(By.xpath("//*[@id='contentPart5']/div/div/div/div/div/div/div[1]/div[1]/h5/a"));
+				.findElement(By.xpath("//h5[@class='m-0']//a[@class='btnLink m-0']"));
 		Assert.assertTrue(BackBtnDiagram.isDisplayed());
 		Thread.sleep(3000);
 		// Verify the presence Document header text
 		String DocumentHeaderTxt = Page.driver
-				.findElement(By.xpath("//*[@id='contentPart5']/div/div/div/div/div/div/div[1]/div[1]/h5")).getText();
+				.findElement(By.xpath("//h5[@class='m-0' and text()=' Documents ']")).getText();
 		Assert.assertEquals(DocumentHeaderTxt, "Documents");
 		Thread.sleep(3000);
 		// Verification of the presence of document
 		WebElement DocumentContent = Page.driver
-				.findElement(By.xpath("//div[@class='pagiNation p-0']/div[1]/div[1]/a"));
+				.findElement(By.xpath("//div[@class='docBox m-0 mb-2']//a[text()='Test Diagram (Underground 1)']"));
 		Assert.assertTrue(DocumentContent.isDisplayed());
 		//Page.click("PopularQueriesFilter_XPATH");
 		WebElement UndergroundDiagramPopularFilter1 = Page.driver.findElement(By.xpath("//*[contains(text(),'Underground Vanity 1')]"));
@@ -1859,17 +1871,17 @@ public class KnowledgeBase extends BaseTest {
 		Thread.sleep(3000);
 		// Verify the presence of Back Button
 		WebElement BackButtonVideos = Page.driver
-				.findElement(By.xpath("//*[@id='contentPart3']/div/div/div/div/div/div/div[1]/div/h5/a"));
+				.findElement(By.xpath("//h5[@class='m-0']//a[@class='btnLink m-0']"));
 		Assert.assertTrue(BackButtonVideos.isDisplayed());
 		Thread.sleep(3000);
 		// Verify the presence Videos header text
 		String VideosHeaderTxt = Page.driver
-				.findElement(By.xpath("//*[@id='contentPart3']/div/div/div/div/div/div/div[1]/div/h5")).getText();
+				.findElement(By.xpath("//h5[@class='m-0' and text()=' Videos ']")).getText();
 		Assert.assertEquals(VideosHeaderTxt, "Videos");
 		Thread.sleep(3000);
 		// Verification of the presence of video
 		WebElement VideoContent = Page.driver
-				.findElement(By.xpath("//*[@id='contentPart3']/div/div/div/div/div/div/div[2]/div/div[1]/div/img"));
+				.findElement(By.xpath("(//div[@class='imgBox']//img[@class='w-100'])[1]"));
 		Assert.assertTrue(VideoContent.isDisplayed());
 		//Page.click("PopularQueriesFilter_XPATH");
 		WebElement WoodRestorationVideosPopularFilter1 = Page.driver.findElement(By.xpath("//*[contains(text(),'Wood Restoration 1')]"));
@@ -1896,9 +1908,10 @@ public class KnowledgeBase extends BaseTest {
 		KnowledgeBasePage kb = cp.goKnowledgeBase();
 		Thread.sleep(8000);
 		kb.clickWoodRestorationBrochures();
-		WebElement noresults = Page.driver.findElement(By.xpath("//div[@class='text-center dismissCountDown']/div[1]"));
-
-		System.out.println(noresults.getText());
+		WebElement noresults = Page.driver.findElement(By.xpath("//div[contains(text(),'No results match your search criteria')]"));
+		String text = noresults.getText();
+		String newtext = text.substring(text.indexOf('\n')+1);
+		Assert.assertEquals(newtext,"No results match your search criteria.");
 	}
 
 	// US-98499-98609: Verify that clicking on the assets for the tiles in KB
@@ -1909,9 +1922,10 @@ public class KnowledgeBase extends BaseTest {
 		KnowledgeBasePage kb = cp.goKnowledgeBase();
 		Thread.sleep(8000);
 		kb.clickWoodRestorationArticles();
-		WebElement noresults = Page.driver.findElement(By.xpath("//div[@class='text-center dismissCountDown']/div[1]"));
-
-		System.out.println(noresults.getText());
+		WebElement noresults = Page.driver.findElement(By.xpath("//div[contains(text(),'No results match your search criteria')]"));
+		String text = noresults.getText();
+		String newtext = text.substring(text.indexOf('\n')+1);
+		Assert.assertEquals(newtext,"No results match your search criteria.");
 	}
 
 	// US-98499-98609: Verify that clicking on the assets for the tiles in KB
@@ -1926,17 +1940,17 @@ public class KnowledgeBase extends BaseTest {
 		Thread.sleep(3000);
 		// Verify the presence of Back Button
 		WebElement BackButtonVideos = Page.driver
-				.findElement(By.xpath("//*[@id='contentPart3']/div/div/div/div/div/div/div[1]/div/h5/a"));
+				.findElement(By.xpath("//h5[@class='m-0']//a[@class='btnLink m-0']"));
 		Assert.assertTrue(BackButtonVideos.isDisplayed());
 		Thread.sleep(3000);
 		// Verify the presence Videos header text
 		String VideosHeaderTxt = Page.driver
-				.findElement(By.xpath("//*[@id='contentPart3']/div/div/div/div/div/div/div[1]/div/h5")).getText();
+				.findElement(By.xpath("//h5[@class='m-0' and text()=' Videos ']")).getText();
 		Assert.assertEquals(VideosHeaderTxt, "Videos");
 		Thread.sleep(3000);
 		// Verification of the presence of video
 		WebElement VideoContent = Page.driver
-				.findElement(By.xpath("//*[@id='contentPart3']/div/div/div/div/div/div/div[2]/div/div[1]/div/img"));
+				.findElement(By.xpath("(//div[@class='imgBox']//img[@class='w-100'])[1]"));
 		Assert.assertTrue(VideoContent.isDisplayed());
 		//Page.click("PopularQueriesFilter_XPATH");
 		WebElement WoodInspectionVideosPopularFilter1 = Page.driver.findElement(By.xpath("//*[contains(text(),'Wood Treatments Vanity 1')]"));
@@ -1967,17 +1981,17 @@ public class KnowledgeBase extends BaseTest {
 		Thread.sleep(3000);
 		// Verify the presence of Back Button
 		WebElement BackBtnImages = Page.driver
-				.findElement(By.xpath("//*[@id='contentPart2']/div/div/div/div/div/div/div/div[1]/div/h5/a"));
+				.findElement(By.xpath("//h5[@class='m-0']//a[@class='btnLink m-0']"));
 		Assert.assertTrue(BackBtnImages.isDisplayed());
 		Thread.sleep(3000);
 		// Verify the presence Images header text
 		String ImagesHeaderTxt = Page.driver
-				.findElement(By.xpath("//*[@id='contentPart2']/div/div/div/div/div/div/div/div[1]/div/h5")).getText();
+				.findElement(By.xpath("//h5[@class='m-0' and text()=' Images ']")).getText();
 		Assert.assertEquals(ImagesHeaderTxt, "Images");
 		Thread.sleep(3000);
 		// Verification of the presence of image
 		WebElement ImageContent = Page.driver
-				.findElement(By.xpath("//*[@id='contentPart2']/div/div/div/div/div/div/div/div[2]/div/div[1]/div/img"));
+				.findElement(By.xpath("(//div[@class='imgBox']//img[@class='w-100'])[1]"));
 		Assert.assertTrue(ImageContent.isDisplayed());
 		//Page.click("PopularQueriesFilter_XPATH");
 		WebElement WoodInspectionImagesPopularFilter1 = Page.driver.findElement(By.xpath("//*[contains(text(),'Wood Treatments Vanity 1')]"));
@@ -2006,17 +2020,17 @@ public class KnowledgeBase extends BaseTest {
 		Thread.sleep(3000);
 		// Verify the presence of Back Button
 		WebElement BackBtnProjectProfiles = Page.driver
-				.findElement(By.xpath("//*[@id='contentPart5']/div/div/div/div/div/div/div[1]/div[1]/h5/a"));
+				.findElement(By.xpath("//h5[@class='m-0']//a[@class='btnLink m-0']"));
 		Assert.assertTrue(BackBtnProjectProfiles.isDisplayed());
 		Thread.sleep(3000);
 		// Verify the presence Document header text
 		String DocumentHeaderTxt = Page.driver
-				.findElement(By.xpath("//*[@id='contentPart5']/div/div/div/div/div/div/div[1]/div[1]/h5")).getText();
+				.findElement(By.xpath("//h5[@class='m-0' and text()=' Documents ']")).getText();
 		Assert.assertEquals(DocumentHeaderTxt, "Documents");
 		Thread.sleep(3000);
 		// Verification of the presence of document
 		WebElement DocumentContent = Page.driver
-				.findElement(By.xpath("//div[@class='pagiNation p-0']/div[1]/div[1]/a"));
+				.findElement(By.xpath("//div[@class='docBox m-0 mb-2']//a[text()='Test Research (Wood Treatments 1)']"));
 		Assert.assertTrue(DocumentContent.isDisplayed());
 		//Page.click("PopularQueriesFilter_XPATH");
 		WebElement WoodInspectionResearchPopularFilter1 = Page.driver.findElement(By.xpath("//*[contains(text(),'Wood Treatments Vanity 1')]"));
@@ -2041,21 +2055,21 @@ public class KnowledgeBase extends BaseTest {
 		KnowledgeBasePage kb = cp.goKnowledgeBase();
 		Thread.sleep(8000);
 		kb.clickJointUsePopularQuery();
-		Thread.sleep(25000);
+		Thread.sleep(20000);
 		Page.click("JointUseVideosSeeMoreLink_XPATH");
 		// Verify the presence of Back Button
 		WebElement BackButtonVideos = Page.driver
-				.findElement(By.xpath("//*[@id='contentPart3']/div/div/div/div/div/div/div[1]/div/h5/a"));
+				.findElement(By.xpath("//h5[@class='m-0']//a[@class='btnLink m-0']"));
 		Assert.assertTrue(BackButtonVideos.isDisplayed());
 		Thread.sleep(3000);
 		// Verify the presence Videos header text
 		String VideosHeaderTxt = Page.driver
-				.findElement(By.xpath("//*[@id='contentPart3']/div/div/div/div/div/div/div[1]/div/h5")).getText();
+				.findElement(By.xpath("//h5[@class='m-0' and text()=' Videos ']")).getText();
 		Assert.assertEquals(VideosHeaderTxt, "Videos");
 		Thread.sleep(3000);
 		// Verification of the presence of video
 		WebElement VideoContent = Page.driver
-				.findElement(By.xpath("//*[@id='contentPart3']/div/div/div/div/div/div/div[2]/div/div[1]/div/img"));
+				.findElement(By.xpath("(//div[@class='imgBox']//img[@class='w-100'])[1]"));
 		Assert.assertTrue(VideoContent.isDisplayed());
 		kb.clickClearSearch();
 	}
@@ -2068,22 +2082,22 @@ public class KnowledgeBase extends BaseTest {
 		KnowledgeBasePage kb = cp.goKnowledgeBase();
 		Thread.sleep(8000);
 		kb.clickJointUsePopularQuery();
-		Thread.sleep(25000);
+		Thread.sleep(20000);
 		Page.click("JointUseImagesSeeMoreLink_XPATH");
 		Thread.sleep(3000);
 		// Verify the presence of Back Button
 		WebElement BackBtnImages = Page.driver
-				.findElement(By.xpath("//*[@id='contentPart2']/div/div/div/div/div/div/div/div[1]/div/h5/a"));
+				.findElement(By.xpath("//h5[@class='m-0']//a[@class='btnLink m-0']"));
 		Assert.assertTrue(BackBtnImages.isDisplayed());
 		Thread.sleep(3000);
 		// Verify the presence Images header text
 		String ImagesHeaderTxt = Page.driver
-				.findElement(By.xpath("//*[@id='contentPart2']/div/div/div/div/div/div/div/div[1]/div/h5")).getText();
+				.findElement(By.xpath("//h5[@class='m-0' and text()=' Images ']")).getText();
 		Assert.assertEquals(ImagesHeaderTxt, "Images");
 		Thread.sleep(3000);
 		// Verification of the presence of image
 		WebElement ImageContent = Page.driver
-				.findElement(By.xpath("//*[@id='contentPart2']/div/div/div/div/div/div/div/div[2]/div/div[1]/div/img"));
+				.findElement(By.xpath("(//div[@class='imgBox']//img[@class='w-100'])[1]"));
 		Assert.assertTrue(ImageContent.isDisplayed());
 		Thread.sleep(3000);
 		kb.clickClearSearch();
@@ -2097,22 +2111,22 @@ public class KnowledgeBase extends BaseTest {
 		KnowledgeBasePage kb = cp.goKnowledgeBase();
 		Thread.sleep(8000);
 		kb.clickJointUsePopularQuery();
-		Thread.sleep(25000);
+		Thread.sleep(20000);
 		Page.click("JointUseDocumentsSeeMoreLink_XPATH");
 		Thread.sleep(3000);
 		// Verify the presence of Back Button
 		WebElement BackBtnProjectProfiles = Page.driver
-				.findElement(By.xpath("//*[@id='contentPart5']/div/div/div/div/div/div/div[1]/div[1]/h5/a"));
+				.findElement(By.xpath("//h5[@class='m-0']//a[@class='btnLink m-0']"));
 		Assert.assertTrue(BackBtnProjectProfiles.isDisplayed());
 		Thread.sleep(3000);
 		// Verify the presence Document header text
 		String DocumentHeaderTxt = Page.driver
-				.findElement(By.xpath("//*[@id='contentPart5']/div/div/div/div/div/div/div[1]/div[1]/h5")).getText();
+				.findElement(By.xpath("//h5[@class='m-0' and text()=' Documents ']")).getText();
 		Assert.assertEquals(DocumentHeaderTxt, "Documents");
 		Thread.sleep(3000);
 		// Verification of the presence of document
 		WebElement DocumentContent = Page.driver
-				.findElement(By.xpath("//div[@class='pagiNation p-0']/div[1]/div[1]/a"));
+				.findElement(By.xpath("//div[@class='docBox m-0 mb-2']//a[text()='Test article (Joint Use 2)']"));
 		Assert.assertTrue(DocumentContent.isDisplayed());
 		Thread.sleep(3000);
 		kb.clickClearSearch();
@@ -2126,22 +2140,22 @@ public class KnowledgeBase extends BaseTest {
 		KnowledgeBasePage kb = cp.goKnowledgeBase();
 		Thread.sleep(8000);
 		kb.clickJointUsePopularQuery();
-		Thread.sleep(25000);
+		Thread.sleep(20000);
 		Page.click("JointUseDocumentsSeeMoreLink_XPATH");
 		Thread.sleep(3000);
 		// Verify the presence of Back Button
 		WebElement BackBtnProjectProfiles = Page.driver
-				.findElement(By.xpath("//*[@id='contentPart5']/div/div/div/div/div/div/div[1]/div[1]/h5/a"));
+				.findElement(By.xpath("//h5[@class='m-0']//a[@class='btnLink m-0']"));
 		Assert.assertTrue(BackBtnProjectProfiles.isDisplayed());
 		Thread.sleep(3000);
 		// Verify the presence Document header text
 		String DocumentHeaderTxt = Page.driver
-				.findElement(By.xpath("//*[@id='contentPart5']/div/div/div/div/div/div/div[1]/div[1]/h5")).getText();
+				.findElement(By.xpath("//h5[@class='m-0' and text()=' Documents ']")).getText();
 		Assert.assertEquals(DocumentHeaderTxt, "Documents");
 		Thread.sleep(3000);
 		// Verification of the presence of document
 		WebElement DocumentContent = Page.driver
-				.findElement(By.xpath("//div[@class='pagiNation p-0']/div[1]/div[1]/a"));
+				.findElement(By.xpath("//div[@class='docBox m-0 mb-2']//a[text()='Test article (Joint Use 2)']"));
 		Assert.assertTrue(DocumentContent.isDisplayed());
 		Page.click("JointUseJointUseManagementServicesMoreLink_XPATH");
 		Thread.sleep(3000);
@@ -2149,7 +2163,7 @@ public class KnowledgeBase extends BaseTest {
 				"Joint Use Management Services");
 		// Verification of the presence of link
 		WebElement BoxCloseBtn = Page.driver
-				.findElement(By.xpath("//*[@id='openAdminMyquotes___BV_modal_body_']/button"));
+				.findElement(By.xpath("//button[@type='button' and @class='close closeCST']"));
 		Assert.assertTrue(BoxCloseBtn.isDisplayed());
 		Thread.sleep(2000);
 		Page.click("BoxCloseBtn_XPATH");
@@ -2168,16 +2182,14 @@ public class KnowledgeBase extends BaseTest {
 		KnowledgeBasePage kb = cp.goKnowledgeBase();
 		Thread.sleep(8000);
 		Page.type("SearchBox_XPATH", data.get("AskOsmoseSearch"));
-		Thread.sleep(2000);
 		// Verification of the presence of dynamic dd
 		WebElement Dynamicdd = Page.driver
 				.findElement(By.xpath("//ul[@class='list-unstyled searchList']"));
-		Thread.sleep(5000);
 		Assert.assertTrue(Dynamicdd.isDisplayed());
 		Thread.sleep(1000);
 		// Clicking on Industry option
 		Page.click("IndustryOptionDD_XPATH");
-		Thread.sleep(25000);
+		Thread.sleep(20000);
 		// Verification of the Search Results
 		Assert.assertEquals(Page.getText("IndustryText_XPATH"), "Repellent Products for the Utility Industry");
 		Thread.sleep(2000);
@@ -2196,15 +2208,15 @@ public class KnowledgeBase extends BaseTest {
 		KnowledgeBasePage kb = cp.goKnowledgeBase();
 		Thread.sleep(8000);
 		kb.clickJointUsePopularQuery();
-		Thread.sleep(25000);
+		Thread.sleep(20000);
 		WebElement VideoResultsSection = Page.driver
-				.findElement(By.xpath("//*[@id='contentPart1']/div/div/div/div/div[1]/div/div[1]/div/h5"));
+				.findElement(By.xpath("//h5[@class='m-0' and text()='Videos']"));
 		Assert.assertTrue(VideoResultsSection.isDisplayed());
 		WebElement ImageResultsSection = Page.driver
-				.findElement(By.xpath("//*[@id='contentPart1']/div/div/div/div/div[2]/div/div[1]/div/h5"));
+				.findElement(By.xpath("//h5[@class='m-0' and text()='Images']"));
 		Assert.assertTrue(ImageResultsSection.isDisplayed());
 		WebElement DocumentResultsSection = Page.driver
-				.findElement(By.xpath("//*[@id='contentPart1']/div/div/div/div/div[3]/div/div[1]/div[1]/h5"));
+				.findElement(By.xpath("//h5[@class='m-0' and text()='Documents']"));
 		Assert.assertTrue(DocumentResultsSection.isDisplayed());
 		Thread.sleep(3000);
 		kb.clickClearSearch();
@@ -2225,19 +2237,19 @@ public class KnowledgeBase extends BaseTest {
 		KnowledgeBasePage kb = cp.goKnowledgeBase();
 		Thread.sleep(8000);
 		kb.clickJointUsePopularQuery();
-		Thread.sleep(25000);
+		Thread.sleep(20000);
 		kb.ClickPopularQueriesFilter();
 		Thread.sleep(1000);
 		Page.click("JointUse2Filter_XPATH");
-		Thread.sleep(25000);
+		Thread.sleep(20000);
 		WebElement VideoResultsSection = Page.driver
-				.findElement(By.xpath("//*[@id='contentPart1']/div/div/div/div/div[1]/div/div[1]/div/h5"));
+				.findElement(By.xpath("//h5[@class='m-0' and text()='Videos']"));
 		Assert.assertTrue(VideoResultsSection.isDisplayed());
 		WebElement ImageResultsSection = Page.driver
-				.findElement(By.xpath("//*[@id='contentPart1']/div/div/div/div/div[2]/div/div[1]/div/h5"));
+				.findElement(By.xpath("//h5[@class='m-0' and text()='Images']"));
 		Assert.assertTrue(ImageResultsSection.isDisplayed());
 		WebElement DocumentResultsSection = Page.driver
-				.findElement(By.xpath("//*[@id='contentPart1']/div/div/div/div/div[3]/div/div[1]/div[1]/h5"));
+				.findElement(By.xpath("//h5[@class='m-0' and text()='Documents']"));
 		Assert.assertTrue(DocumentResultsSection.isDisplayed());
 		Thread.sleep(3000);
 		kb.clickClearSearch();
@@ -2253,16 +2265,15 @@ public class KnowledgeBase extends BaseTest {
 		Thread.sleep(8000);
 		Page.type("SearchBox_XPATH", data.get("TypeJointUse"));
 		Page.driver.findElement(By.xpath("//input[@id='SearchFieldKB']")).sendKeys(Keys.ENTER);
-		// Page.click("JointUseOptionDD_XPATH");
-		Thread.sleep(25000);
+		Thread.sleep(20000);
 		WebElement VideoResultsSection = Page.driver
-				.findElement(By.xpath("//*[@id='contentPart1']/div/div/div/div/div[1]/div/div[1]/div/h5"));
+				.findElement(By.xpath("//h5[@class='m-0' and text()='Videos']"));
 		Assert.assertTrue(VideoResultsSection.isDisplayed());
 		WebElement ImageResultsSection = Page.driver
-				.findElement(By.xpath("//*[@id='contentPart1']/div/div/div/div/div[2]/div/div[1]/div/h5"));
+				.findElement(By.xpath("//h5[@class='m-0' and text()='Images']"));
 		Assert.assertTrue(ImageResultsSection.isDisplayed());
 		WebElement DocumentResultsSection = Page.driver
-				.findElement(By.xpath("//*[@id='contentPart1']/div/div/div/div/div[3]/div/div[1]/div[1]/h5"));
+				.findElement(By.xpath("//h5[@class='m-0' and text()='Documents']"));
 		Assert.assertTrue(DocumentResultsSection.isDisplayed());
 		Thread.sleep(3000);
 		kb.clickClearSearch();
@@ -2290,11 +2301,11 @@ public class KnowledgeBase extends BaseTest {
 		KnowledgeBasePage kb = cp.goKnowledgeBase();
 		Thread.sleep(8000);
 		kb.clickJointUsePopularQuery();
-		Thread.sleep(25000);
+		Thread.sleep(20000);
 		Page.click("VideosLink_XPATH");
 		Thread.sleep(5000);
 		WebElement VideoResultsSection = Page.driver
-				.findElement(By.xpath("//*[@id='contentPart3']/div/div/div/div/div/div/div[1]/div/h5"));
+				.findElement(By.xpath("//h5[@class='m-0' and text()=' Videos ']"));
 		Assert.assertTrue(VideoResultsSection.isDisplayed());
 		kb.clickClearSearch();
 		Thread.sleep(3000);
@@ -2310,11 +2321,11 @@ public class KnowledgeBase extends BaseTest {
 		KnowledgeBasePage kb = cp.goKnowledgeBase();
 		Thread.sleep(8000);
 		kb.clickJointUsePopularQuery();
-		Thread.sleep(25000);
+		Thread.sleep(20000);
 		Page.click("ImagesLink_XPATH");
 		Thread.sleep(5000);
 		WebElement ImageResultsSection = Page.driver
-				.findElement(By.xpath("//*[@id='contentPart2']/div/div/div/div/div/div/div/div[1]/div/h5"));
+				.findElement(By.xpath("//h5[@class='m-0' and text()=' Images ']"));
 		Assert.assertTrue(ImageResultsSection.isDisplayed());
 		kb.clickClearSearch();
 		Thread.sleep(3000);
@@ -2331,11 +2342,11 @@ public class KnowledgeBase extends BaseTest {
 		KnowledgeBasePage kb = cp.goKnowledgeBase();
 		Thread.sleep(8000);
 		kb.clickJointUsePopularQuery();
-		Thread.sleep(25000);
+		Thread.sleep(20000);
 		Page.click("DocumentsLink_XPATH");
 		Thread.sleep(5000);
 		WebElement DocumentResultsSection = Page.driver
-				.findElement(By.xpath("//*[@id='contentPart5']/div/div/div/div/div/div/div[1]/div[1]/h5"));
+				.findElement(By.xpath("//h5[@class='m-0' and text()=' Documents ']"));
 		Assert.assertTrue(DocumentResultsSection.isDisplayed());
 		kb.clickClearSearch();
 		Thread.sleep(3000);
@@ -2355,9 +2366,10 @@ public class KnowledgeBase extends BaseTest {
 		Thread.sleep(3000);
 		Page.driver.findElement(By.xpath("//input[@id='SearchFieldKB']")).sendKeys(Keys.ENTER);
 
-		WebElement noresults = Page.driver.findElement(By.xpath("//div[@class='text-center dismissCountDown']/div[1]"));
-
-		System.out.println(noresults.getText());
+		WebElement noresults = Page.driver.findElement(By.xpath("//div[contains(text(),'No results match your search criteria')]"));
+		String text = noresults.getText();
+		String newtext = text.substring(text.indexOf('\n')+1);
+		Assert.assertEquals(newtext,"No results match your search criteria.");
 	}
 
 	// US-98503-98681-Verify Document result set section will allow users to sort
@@ -2369,11 +2381,11 @@ public class KnowledgeBase extends BaseTest {
 		Thread.sleep(6000);
 		kb.ClickPopularQueriesFilter();
 		kb.clickJointUsePopularQuery();
-		Thread.sleep(25000);
+		Thread.sleep(20000);
 		Page.click("DocumentsLink_XPATH");
 		Thread.sleep(5000);
 		WebElement DocumentResultsSection = Page.driver
-				.findElement(By.xpath("//*[@id='contentPart5']/div/div/div/div/div/div/div[1]/div[1]/h5"));
+				.findElement(By.xpath("//h5[@class='m-0' and text()=' Documents ']"));
 		Assert.assertTrue(DocumentResultsSection.isDisplayed());
 		// Verification of the presence of Sort By Dropdown
 		WebElement DocumentSortBy = Page.driver.findElement(By.xpath("//select[@class='sbox']"));
@@ -2404,15 +2416,15 @@ public class KnowledgeBase extends BaseTest {
 		Thread.sleep(3000);
 		Page.type("SearchBox_XPATH", data.get("TypePoleReplacementTextUpdation"));
 		Page.driver.findElement(By.xpath("//input[@id='SearchFieldKB']")).sendKeys(Keys.ENTER);
-		Thread.sleep(25000);
+		Thread.sleep(20000);
 		WebElement VideoResultsSection = Page.driver
-				.findElement(By.xpath("//*[@id='contentPart1']/div/div/div/div/div[1]/div/div[1]/div/h5"));
+				.findElement(By.xpath("//h5[@class='m-0' and text()='Videos']"));
 		Assert.assertTrue(VideoResultsSection.isDisplayed());
 		WebElement ImageResultsSection = Page.driver
-				.findElement(By.xpath("//*[@id='contentPart1']/div/div/div/div/div[2]/div/div[1]/div/h5"));
+				.findElement(By.xpath("//h5[@class='m-0' and text()='Images']"));
 		Assert.assertTrue(ImageResultsSection.isDisplayed());
 		WebElement DocumentResultsSection = Page.driver
-				.findElement(By.xpath("//*[@id='contentPart1']/div/div/div/div/div[3]/div/div[1]/div[1]/h5"));
+				.findElement(By.xpath("//h5[@class='m-0' and text()='Documents']"));
 		Assert.assertTrue(DocumentResultsSection.isDisplayed());
 		Thread.sleep(3000);
 		kb.clickClearSearch();

@@ -228,7 +228,7 @@ public class KnowledgeBasePage extends Page {
 	}
 	
 	public void clickJointUseOnAnImage() {
-		ClickActions("DailyGaffGalleryImage_XPATH");
+		ClickActions("JointUsImagesImageClick_XPATH");
 	}
 	
 	public void clickJointUseOnAVideo() {

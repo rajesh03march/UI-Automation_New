@@ -117,5 +117,10 @@ public class OsmoseServicesPage extends Page {
 	public void clickUnderground() throws InterruptedException {
 		click("UndergroundCard_XPATH");
 	}
+	
+	
+	public oCalcProPage gooCalcPro() {
+		return new oCalcProPage();
+	}
 
 }

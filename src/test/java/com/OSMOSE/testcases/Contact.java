@@ -220,7 +220,7 @@ public class Contact extends BaseTest {
 	}
 
 	@Test(priority = 12, enabled = true, description = "Verification of the Header content on Contact Us Menu item")
-	public void verifyContactUsHeaderContents() {
+	public void verifyContactUsHeaderContents() throws InterruptedException {
 		ProductPage pp = new ProductPage();
 		ContactPage cp = pp.goContact();
 		cp.clickContactUsMainMenudd();
@@ -229,6 +229,7 @@ public class Contact extends BaseTest {
 		//Assert.assertTrue(Page.isElementPresent(By.xpath("//div[@id='app']/div[1]/div[3]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/a/i")));
 		Assert.assertEquals(Page.getText("ContactUsHeaderTxt_XPATH"), "Contact Us");
 		Assert.assertEquals(Page.getText("ContactUsOsmoseUtilitiesTxt_XPATH"), "Osmose Utilities Services, Inc.");
+		Thread.sleep(2000);
 	}
 
 	// Keep this false always
@@ -306,25 +307,25 @@ public class Contact extends BaseTest {
 				"For more queries, please complete the form below and someone will be in touch with you as quickly as possible.");
 		// Verifying the presence of Email Textbox
 		Assert.assertTrue(Page.isElementPresent(
-				By.xpath("//div[@id='app']/div[1]/div[3]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/form/input[1]")));
+				By.xpath("//input[@type='email']")));
 		// Verifying the presence of Phone Textbox
 		Assert.assertTrue(Page.isElementPresent(
-				By.xpath("//div[@id='app']/div[1]/div[3]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/form/input[2]")));
+				By.xpath("//input[@type='text' and @placeholder='PHONE NUMBER']")));
 		// Verifying the presence of Email Radio Button
 		Assert.assertTrue(Page.isElementPresent(By.xpath(
-				"//div[@id='app']/div[1]/div[3]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/form/div[1]/div[2]/input")));
+				"//input[@id='Email']")));
 		// Verifying the presence of Phone Radio Button
 		Assert.assertTrue(Page.isElementPresent(By.xpath(
-				"//div[@id='app']/div[1]/div[3]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/form/div[1]/div[3]/input")));
+				"//input[@id='Phone']")));
 		// Verifying the presence of Subject Dropdown
 		Assert.assertTrue(Page.isElementPresent(
-				By.xpath("//div[@id='app']/div[1]/div[3]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/form/select")));
+				By.xpath("//select[@class='inputCst cstSelect custom-select']")));
 		// Verifying the presence of Message TextArea
 		Assert.assertTrue(Page.isElementPresent(
-				By.xpath("//div[@id='app']/div[1]/div[3]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/form/textarea")));
+				By.xpath("//textarea[@placeholder='MESSAGE']")));
 		// Verifying the presence of Submit Button
 		Assert.assertTrue(Page.isElementPresent(By
-				.xpath("//div[@id='app']/div[1]/div[3]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/form/div[2]/button")));
+				.xpath("//button[contains(text(),'SUBMIT')]")));
 	}
 
 	// Keep this false always

@@ -1,7 +1,5 @@
 package com.OSMOSE.pages.OU;
 
-import java.io.IOException;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
@@ -46,7 +44,7 @@ public class ProductPage extends Page {
 
 	public void clickOnProductImage() throws InterruptedException {
 		Thread.sleep(1000);
-		click("HomePage_XPATH");
+		click("ProHomePage_XPATH");
 		click("HeadingProducts_XPATH");
 	}
 
@@ -88,8 +86,9 @@ public class ProductPage extends Page {
 	}
 
 	public void AddQuantityInCart_AssertCellNumber() throws InterruptedException {
+		scrollbyjavaexecutor();
 		Thread.sleep(4000);
-		ClickActions("ProductPoleRestoration_XPATH");
+		click("ProductPoleRestoration_XPATH");
 		Thread.sleep(4000);
 		click("1stViewDetails_XPATH");
 		Thread.sleep(4000);
@@ -102,6 +101,7 @@ public class ProductPage extends Page {
 	}
 
 	public void ProductPoleRestoration() throws InterruptedException {
+		scrollbyjavaexecutor();
 		click("ProductPoleRestoration_XPATH");
 		click("ProductPoleRestorationCTruss_XPATH");
 		selectbyindex("ProductSizeDropdown_XPATH", 1);
@@ -195,6 +195,7 @@ public class ProductPage extends Page {
 	}
 
 	public void AddToCartShoppingCart() throws InterruptedException {
+		scrollbyjavaexecutor();
 		click("ProductPoleRestoration_XPATH");
 		Thread.sleep(1000);
 		click("ProductPoleRestoration_XPATH");
@@ -218,6 +219,7 @@ public class ProductPage extends Page {
 	}
 
 	public void ProductPoleRestoration_1() throws InterruptedException {
+		scrollbyjavaexecutor();
 		click("ProductPoleRestoration_XPATH");
 		click("ProductPoleRestorationDummy3_XPATH");
 		Thread.sleep(3000);
@@ -271,6 +273,7 @@ public class ProductPage extends Page {
 
 	public void AddToShoppingCartApprove() throws InterruptedException {
 		// click("ProductPoleRestoration_XPATH");
+		scrollbyjavaexecutor();
 		Thread.sleep(3000);
 		click("ProductPoleRestoration_XPATH");
 		Thread.sleep(3000);
@@ -293,6 +296,7 @@ public class ProductPage extends Page {
 
 	public void DeleteQuanityinShoppingCart() throws InterruptedException {
 		clickRequestCrossicon();
+		scrollbyjavaexecutor();
 		click("ProductPoleRestoration_XPATH");
 		Thread.sleep(1000);
 		click("ProductPoleRestoration_XPATH");
@@ -311,6 +315,7 @@ public class ProductPage extends Page {
 		click("ContiuneSHoppingButton_XPATH");
 		// click("ProductPoleRestoration_XPATH");
 		Thread.sleep(1000);
+		scrollbyjavaexecutor();
 		click("ProductPoleRestorationCTruss_XPATH");
 		selectbyindex("ProductSizeDropdown_XPATH", 1);
 		click("ProductSizeEnterQuantity_XPATH");
@@ -825,6 +830,7 @@ public class ProductPage extends Page {
 	public void AddtoShoppingCartRequote() throws InterruptedException {
 		click("ContiuneSHoppingButton_XPATH");
 		Thread.sleep(2000);
+		scrollbyjavaexecutor();
 		click("ProductPoleRestoration_XPATH");
 		Thread.sleep(2000);
 		click("ProductPoleRestorationCTruss_XPATH");
@@ -863,66 +869,67 @@ public class ProductPage extends Page {
 
 	public void MyQuotesStatusFilterAll() throws InterruptedException {
 		ClickActions("StatusFilterdd_XPATH");
-		Thread.sleep(5000);
+		Thread.sleep(2000);
 		ClickActions("StatusFilterddAll_XPATH");
-		Thread.sleep(5000);
+		Thread.sleep(2000);
 		ClickActions("StatusFilterdd_XPATH");
 	}
 
 	public void MyQuotesStatusFilterExpired() throws InterruptedException {
 		ClickActions("StatusFilterdd_XPATH");
-		Thread.sleep(5000);
+		Thread.sleep(2000);
 		ClickActions("StatusFilterddExpired_XPATH");
-		Thread.sleep(5000);
+		Thread.sleep(2000);
 		ClickActions("StatusFilterdd_XPATH");
 	}
 
 	public void MyQuotesStatusFilterOrdered() throws InterruptedException {
-		Thread.sleep(5000);
+		Thread.sleep(2000);
 		ClickActions("StatusFilterdd_XPATH");
-		Thread.sleep(5000);
+		Thread.sleep(2000);
 		ClickActions("StatusFilterddOrdered_XPATH");
-		Thread.sleep(5000);
+		Thread.sleep(2000);
 		ClickActions("StatusFilterdd_XPATH");
 	}
 
 	public void MyQuotesStatusFilterQuoted() throws InterruptedException {
-		Thread.sleep(5000);
+		Thread.sleep(2000);
 		ClickActions("StatusFilterdd_XPATH");
-		Thread.sleep(5000);
+		Thread.sleep(2000);
 		ClickActions("StatusFilterddQuoted_XPATH");
-		Thread.sleep(5000);
+		Thread.sleep(2000);
 		ClickActions("StatusFilterdd_XPATH");
 	}
 
 	public void MyQuotesStatusFilterQuotePending() throws InterruptedException {
-		Thread.sleep(5000);
+		Thread.sleep(2000);
 		ClickActions("StatusFilterdd_XPATH");
-		Thread.sleep(5000);
+		Thread.sleep(2000);
 		ClickActions("StatusFilterddQuotePending_XPATH");
-		Thread.sleep(5000);
+		Thread.sleep(2000);
 		ClickActions("StatusFilterdd_XPATH");
 	}
 
 	public void MyQuotesStatusFilterCancelled() throws InterruptedException {
-		Thread.sleep(5000);
+		Thread.sleep(2000);
 		ClickActions("StatusFilterdd_XPATH");
-		Thread.sleep(5000);
+		Thread.sleep(2000);
 		ClickActions("StatusFilterddCancelled_XPATH");
-		Thread.sleep(5000);
+		Thread.sleep(2000);
 		ClickActions("StatusFilterdd_XPATH");
 	}
 
 	public void MyQuotesStatusFilterOrderRequested() throws InterruptedException {
-		Thread.sleep(5000);
+		Thread.sleep(2000);
 		ClickActions("StatusFilterdd_XPATH");
-		Thread.sleep(5000);
+		Thread.sleep(2000);
 		ClickActions("StatusFilterddOrderRequested_XPATH");
-		Thread.sleep(5000);
+		Thread.sleep(2000);
 		ClickActions("StatusFilterdd_XPATH");
 	}
 
 	public void CreateQuoteExclamation() throws InterruptedException {
+		scrollbyjavaexecutor();
 		click("ProductPoleRestoration_XPATH");
 		Thread.sleep(1000);
 		click("ProductPoleRestoration_XPATH");
@@ -942,6 +949,7 @@ public class ProductPage extends Page {
 
 	public void ProductGoBack() throws InterruptedException {
 		Thread.sleep(1000);
+		scrollbyjavaexecutor();
 		click("ProductPoleRestoration_XPATH");
 		click("ProductPoleRestoration_XPATH");
 		Thread.sleep(1000);
@@ -960,6 +968,7 @@ public class ProductPage extends Page {
 	}
 
 	public void CreateQuoteByMultipleFileAddToShoppingCart() throws InterruptedException, Exception {
+		scrollbyjavaexecutor();
 		click("ProductPoleRestoration_XPATH");
 		Thread.sleep(1000);
 		click("ProductPoleRestoration_XPATH");
@@ -989,6 +998,7 @@ public class ProductPage extends Page {
 	}
 
 	public void CreateQuoteByUpdateFileAddToShoppingCart() throws InterruptedException {
+		scrollbyjavaexecutor();
 		click("ProductPoleRestoration_XPATH");
 		Thread.sleep(1000);
 		click("ProductPoleRestoration_XPATH");
@@ -1011,6 +1021,7 @@ public class ProductPage extends Page {
 	}
 
 	public void ShoppingCarrtAddbtnDisabled() throws InterruptedException {
+		scrollbyjavaexecutor();
 		click("ProductPoleRestoration_XPATH");
 		Thread.sleep(1000);
 		click("ProductPoleRestoration_XPATH");
@@ -1018,6 +1029,7 @@ public class ProductPage extends Page {
 	}
 
 	public void ShoppingCarrtAddbtnDisabledclearqty() throws InterruptedException {
+		scrollbyjavaexecutor();
 		click("ProductPoleRestoration_XPATH");
 		Thread.sleep(1000);
 		click("ProductPoleRestoration_XPATH");
@@ -1028,6 +1040,7 @@ public class ProductPage extends Page {
 	}
 
 	public void ShoppingCarrtAddbtnMaxqty() throws InterruptedException {
+		scrollbyjavaexecutor();
 		click("ProductPoleRestoration_XPATH");
 		Thread.sleep(1000);
 		click("ProductPoleRestoration_XPATH");
@@ -1039,6 +1052,7 @@ public class ProductPage extends Page {
 	}
 
 	public void ShoppingCarrtAddbtnZeroqty() throws InterruptedException {
+		scrollbyjavaexecutor();
 		click("ProductPoleRestoration_XPATH");
 		Thread.sleep(1000);
 		click("ProductPoleRestoration_XPATH");
@@ -1064,11 +1078,12 @@ public class ProductPage extends Page {
 	public void AddingRelatedProducts() throws InterruptedException {
 		// click("ProductPoleRestoration_XPATH");
 		Thread.sleep(1000);
+		scrollbyjavaexecutor();
 		click("ProductPoleRestoration_XPATH");
 		Thread.sleep(1000);
 		click("ProductPoleRestorationCTruss_XPATH");
 		Thread.sleep(1000);
-		click("RelatedProducts_XPATH");
+		click("RelatedProductsCart_XPATH");
 		Thread.sleep(1000);
 		selectbyindex("ProductSizeDropdown_XPATH", 1);
 		Thread.sleep(1000);
@@ -1084,6 +1099,7 @@ public class ProductPage extends Page {
 	}
 
 	public void ToolTipForSize() throws InterruptedException {
+		scrollbyjavaexecutor();
 		click("ProductPoleRestoration_XPATH");
 		Thread.sleep(1000);
 		click("ProductPoleRestoration_XPATH");
@@ -1106,6 +1122,7 @@ public class ProductPage extends Page {
 	}
 
 	public void DeleteQuantityOnShoppingCart() throws InterruptedException {
+		scrollbyjavaexecutor();
 		click("ProductPoleRestoration_XPATH");
 		Thread.sleep(1000);
 		click("ProductPoleRestoration_XPATH");

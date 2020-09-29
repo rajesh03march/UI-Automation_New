@@ -166,9 +166,9 @@ public class Page {
 
 	}
 
-	public static void scrollbyjavaexecutor(int X, int Y) {
+	public static void scrollbyjavaexecutor() {
 		JavascriptExecutor js = (JavascriptExecutor) driver;
-		js.executeScript("window.scrollBy(X,Y)", "");
+		js.executeScript("window.scrollBy(0, -350)", "");
 	}
 
 	// Common Keywords
@@ -402,6 +402,13 @@ public class Page {
 																														// current
 																														// window
 		// driver.close();
+	}
+	
+	
+	public void closeTab(int number) {
+		ArrayList<String> tabs = new ArrayList<String> (driver.getWindowHandles());
+	    driver.switchTo().window(tabs.get(number));
+	    driver.close();
 	}
 
 		public static boolean isVisiable(String locator){

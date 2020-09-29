@@ -21,7 +21,7 @@ public class OsmoseServices extends BaseTest {
 		KnowledgeBasePage kb = new KnowledgeBasePage();
 		OsmoseServicesPage osp = kb.goOsmoseServices();
 		Thread.sleep(3000);
-		WebElement MyOsmoseServicesCard = Page.driver.findElement(By.xpath("//div[@id='card-knowBase']/div[1]/a/p"));
+		WebElement MyOsmoseServicesCard = Page.driver.findElement(By.xpath("//p[@class='card-head-text' and text()='My Osmose Services']"));
 		// Verifying the presence of My Osmose Services card on Home Page
 		Assert.assertTrue(MyOsmoseServicesCard.isDisplayed());
 		osp.clickMyOsmoseServices();
@@ -40,7 +40,7 @@ public class OsmoseServices extends BaseTest {
 		OsmoseServicesPage osp = kb.goOsmoseServices();
 		Thread.sleep(5000);
 		WebElement WoodInspectionandTreatmentCard = Page.driver
-				.findElement(By.xpath("//*[@id='contentPart']/div/div/div/div/div[1]/div"));
+				.findElement(By.xpath("//h5[@class='m-0 colorBlue' and text()='Wood | Inspection & Treatment']"));
 		// Verifying the presence of Wood Inspection and Treatment card
 		Assert.assertTrue(WoodInspectionandTreatmentCard.isDisplayed());
 		osp.clickWoodInspectionandTreatmentLearnMore();
@@ -59,7 +59,7 @@ public class OsmoseServices extends BaseTest {
 		KnowledgeBasePage kb = new KnowledgeBasePage();
 		OsmoseServicesPage osp = kb.goOsmoseServices();
 		WebElement WoodRestorationCard = Page.driver
-				.findElement(By.xpath("//*[@id='contentPart']/div/div/div/div/div[2]/div"));
+				.findElement(By.xpath("//h5[@class='m-0 colorBlue' and text()='Wood | Restoration']"));
 		// Verifying the presence of Wood Restoration card
 		Assert.assertTrue(WoodRestorationCard.isDisplayed());
 		osp.clickWoodRestorationLearnMore();
@@ -77,7 +77,7 @@ public class OsmoseServices extends BaseTest {
 		KnowledgeBasePage kb = new KnowledgeBasePage();
 		OsmoseServicesPage osp = kb.goOsmoseServices();
 		WebElement OClacProCard = Page.driver
-				.findElement(By.xpath("//*[@id='contentPart']/div/div/div/div/div[3]/div"));
+				.findElement(By.xpath("(//img[@alt='Demo'])[1]"));
 		// Verifying the presence of Wood Restoration card
 		Assert.assertTrue(OClacProCard.isDisplayed());
 		osp.clickOcalProLearnMore();
@@ -95,7 +95,7 @@ public class OsmoseServices extends BaseTest {
 		KnowledgeBasePage kb = new KnowledgeBasePage();
 		OsmoseServicesPage osp = kb.goOsmoseServices();
 		WebElement SteelandConcreteAssessmentCard = Page.driver
-				.findElement(By.xpath("//*[@id='contentPart']/div/div/div/div/div[4]/div"));
+				.findElement(By.xpath("//h5[@class='m-0 colorBlue' and text()='Steel & Concrete | Assessment']"));
 		// Verifying the presence of Steel & Concrete | Assessment card
 		Assert.assertTrue(SteelandConcreteAssessmentCard.isDisplayed());
 		osp.clickSteelandConcreteAssessmentLearnMore();
@@ -114,7 +114,7 @@ public class OsmoseServices extends BaseTest {
 		KnowledgeBasePage kb = new KnowledgeBasePage();
 		OsmoseServicesPage osp = kb.goOsmoseServices();
 		WebElement SteelandConcreteRestorationCard = Page.driver
-				.findElement(By.xpath("//*[@id='contentPart']/div/div/div/div/div[5]/div"));
+				.findElement(By.xpath("//h5[@class='m-0 colorBlue' and text()='Steel & Concrete | Restoration']"));
 		// Verifying the presence of Steel & Concrete | Restoration card
 		Assert.assertTrue(SteelandConcreteRestorationCard.isDisplayed());
 		osp.clickSteelandConcreteRestorationLearnMore();
@@ -133,7 +133,7 @@ public class OsmoseServices extends BaseTest {
 		KnowledgeBasePage kb = new KnowledgeBasePage();
 		OsmoseServicesPage osp = kb.goOsmoseServices();
 		WebElement OverheadCard = Page.driver
-				.findElement(By.xpath("//*[@id='contentPart']/div/div/div/div/div[6]/div"));
+				.findElement(By.xpath("//h5[@class='m-0 colorBlue' and text()='Overhead']"));
 		// Verifying the presence of Overhead card
 		Assert.assertTrue(OverheadCard.isDisplayed());
 		osp.clickOverheadLearnMore();
@@ -151,7 +151,7 @@ public class OsmoseServices extends BaseTest {
 		KnowledgeBasePage kb = new KnowledgeBasePage();
 		OsmoseServicesPage osp = kb.goOsmoseServices();
 		WebElement UndergroundCard = Page.driver
-				.findElement(By.xpath("//*[@id='contentPart']/div/div/div/div/div[7]/div"));
+				.findElement(By.xpath("//h5[@class='m-0 colorBlue' and text()='Underground']"));
 		// Verifying the presence of Underground card
 		Assert.assertTrue(UndergroundCard.isDisplayed());
 		osp.clickUndergroundLearnMore();
@@ -169,7 +169,7 @@ public class OsmoseServices extends BaseTest {
 		KnowledgeBasePage kb = new KnowledgeBasePage();
 		OsmoseServicesPage osp = kb.goOsmoseServices();
 		WebElement JointUseCard = Page.driver
-				.findElement(By.xpath("//*[@id='contentPart']/div/div/div/div/div[8]/div"));
+				.findElement(By.xpath("//h5[@class='m-0 colorBlue' and text()='Joint Use']"));
 		// Verifying the presence of JointUse card
 		Assert.assertTrue(JointUseCard.isDisplayed());
 		osp.clickJointUseLearnMore();
@@ -187,7 +187,7 @@ public class OsmoseServices extends BaseTest {
 		KnowledgeBasePage kb = new KnowledgeBasePage();
 		OsmoseServicesPage osp = kb.goOsmoseServices();
 		WebElement StrayVoltageCard = Page.driver
-				.findElement(By.xpath("//*[@id='contentPart']/div/div/div/div/div[9]/div"));
+				.findElement(By.xpath("//h5[@class='m-0 colorBlue' and text()='Stray Voltage']"));
 		// Verifying the presence of Stray Voltage card
 		Assert.assertTrue(StrayVoltageCard.isDisplayed());
 		osp.clickStrayVoltageLearnMore();
@@ -205,7 +205,7 @@ public class OsmoseServices extends BaseTest {
 		KnowledgeBasePage kb = new KnowledgeBasePage();
 		OsmoseServicesPage osp = kb.goOsmoseServices();
 		WebElement TechnicalServicesCard = Page.driver
-				.findElement(By.xpath("//*[@id='contentPart']/div/div/div/div/div[10]/div"));
+				.findElement(By.xpath("//h5[@class='m-0 colorBlue' and text()='Technical Services']"));
 		// Verifying the presence of Technical Services card
 		Assert.assertTrue(TechnicalServicesCard.isDisplayed());
 		osp.clickTechnicalServicesLearnMore();
@@ -224,7 +224,7 @@ public class OsmoseServices extends BaseTest {
 		KnowledgeBasePage kb = new KnowledgeBasePage();
 		OsmoseServicesPage osp = kb.goOsmoseServices();
 		WebElement ProductsCard = Page.driver
-				.findElement(By.xpath("//*[@id='contentPart']/div/div/div/div/div[11]/div"));
+				.findElement(By.xpath("//h5[@class='m-0 colorBlue' and text()='Products']"));
 		// Verifying the presence of Products card
 		Assert.assertTrue(ProductsCard.isDisplayed());
 		osp.clickProductsLearnMore();
@@ -242,7 +242,7 @@ public class OsmoseServices extends BaseTest {
 		KnowledgeBasePage kb = new KnowledgeBasePage();
 		OsmoseServicesPage osp = kb.goOsmoseServices();
 		WebElement MapViewCard = Page.driver
-				.findElement(By.xpath("//*[@id='contentPart']/div/div/div/div/div[12]/div"));
+				.findElement(By.xpath("//h5[@class='m-0 colorBlue' and text()='Map View']"));
 		// Verifying the presence of Map View card
 		Assert.assertTrue(MapViewCard.isDisplayed());
 		osp.clickMapViewLearnMore();
@@ -259,7 +259,7 @@ public class OsmoseServices extends BaseTest {
 		Page.click("ProductCardFirstProduct_XPATH");
 		Thread.sleep(6000);
 		WebElement ProductFirstTxt = Page.driver
-				.findElement(By.xpath("//*[@id='MypopupScroll']/div/div/div[2]/div[1]/h3"));
+				.findElement(By.xpath("(//h3[text()='MP500-EXT® Preservative Paste'])[2]"));
 		Assert.assertEquals(ProductFirstTxt.getText(), "MP500-EXT® Preservative Paste");
 		Page.click("CloseButtonMOS_XPATH");
 		osp.clickOnOU360();
@@ -268,7 +268,7 @@ public class OsmoseServices extends BaseTest {
 		Page.click("ProductCardSecondProduct_XPATH");
 		Thread.sleep(6000);
 		WebElement ProductSecondTxt = Page.driver
-				.findElement(By.xpath("//*[@id='MypopupScroll']/div/div/div[2]/div[1]/h3"));
+				.findElement(By.xpath("(//h3[text()='Demo_MP500-EXT® Preservative Paste'])[2]"));
 		Assert.assertEquals(ProductSecondTxt.getText(), "Demo_MP500-EXT® Preservative Paste");
 		Page.click("CloseButtonMOS_XPATH");
 		osp.clickOnOU360();
@@ -277,8 +277,8 @@ public class OsmoseServices extends BaseTest {
 		Page.click("ProductCardThirdProduct_XPATH");
 		Thread.sleep(6000);
 		WebElement ProductThirdTxt = Page.driver
-				.findElement(By.xpath("//*[@id='MypopupScroll']/div/div/div[2]/div[1]/h3"));
-		Assert.assertEquals(ProductThirdTxt.getText(), "Demo_MITC-FUME®");
+				.findElement(By.xpath("(//h3[text()='TEST-MP500-EXT® Preservative Paste'])[2]"));
+		Assert.assertEquals(ProductThirdTxt.getText(), "TEST-MP500-EXT® Preservative Paste");
 		Page.click("CloseButtonMOS_XPATH");
 		osp.clickOnOU360();
 		Thread.sleep(2000);
@@ -286,8 +286,8 @@ public class OsmoseServices extends BaseTest {
 		Page.click("ProductCardFourthProduct_XPATH");
 		Thread.sleep(6000);
 		WebElement ProductFourthTxt = Page.driver
-				.findElement(By.xpath("//*[@id='MypopupScroll']/div/div/div[2]/div[1]/h3"));
-		Assert.assertEquals(ProductFourthTxt.getText(), "MITC-FUME®");
+				.findElement(By.xpath("(//h3[text()='Demo_MITC-FUME®'])[2]"));
+		Assert.assertEquals(ProductFourthTxt.getText(), "Demo_MITC-FUME®");
 		Page.click("CloseButtonMOS_XPATH");
 		osp.clickOnOU360();
 		Thread.sleep(2000);
@@ -302,10 +302,10 @@ public class OsmoseServices extends BaseTest {
 		Thread.sleep(15000);
 		Page.click("MapViewCard_XPATH");
 		WebElement MapView = Page.driver
-				.findElement(By.xpath("//*[@id='app']/div/div/div[3]/div/div[2]/header/ul/li[1]/p"));
+				.findElement(By.xpath("//p[@class='tab-head-text' and text()='Map View']"));
 		Assert.assertTrue(MapView.isDisplayed());
 		WebElement DataGrid = Page.driver
-				.findElement(By.xpath("//*[@id='app']/div/div/div[3]/div/div[2]/header/ul/li[2]/p"));
+				.findElement(By.xpath("//p[@class='tab-head-text' and text()='Data Grid']"));
 		Assert.assertTrue(DataGrid.isDisplayed());
 	}
 
@@ -341,17 +341,17 @@ public class OsmoseServices extends BaseTest {
 		Thread.sleep(3000);
 		// Verify the presence of Back Button
 		WebElement BackButtonVideos = Page.driver
-				.findElement(By.xpath("//*[@id='contentPart3']/div/div/div/div/div/div/div[1]/div/h5/a"));
+				.findElement(By.xpath("//i[@class='fas fa-chevron-circle-left colorBlue font16px']"));
 		Assert.assertTrue(BackButtonVideos.isDisplayed());
 		Thread.sleep(3000);
 		// Verify the presence Videos header text
 		String VideosHeaderTxt = Page.driver
-				.findElement(By.xpath("//*[@id='contentPart3']/div/div/div/div/div/div/div[1]/div/h5")).getText();
+				.findElement(By.xpath("//h5[@class='m-0']")).getText();
 		Assert.assertEquals(VideosHeaderTxt, "Videos");
 		Thread.sleep(3000);
 		// Verification of the presence of video
 		WebElement VideoContent = Page.driver
-				.findElement(By.xpath("//*[@id='contentPart3']/div/div/div/div/div/div/div[2]/div/div[1]/div/img"));
+				.findElement(By.xpath("(//img[@class='w-100'])[1]"));
 		Assert.assertTrue(VideoContent.isDisplayed());
 		Thread.sleep(3000);
 	}
@@ -368,21 +368,26 @@ public class OsmoseServices extends BaseTest {
 		Thread.sleep(10000);
 		osp.clickWoodTreatmentProjectProfiles();
 		Thread.sleep(3000);
-		// Verify the presence of Back Button
+		/*// Verify the presence of Back Button
 		WebElement BackBtnProjectProfiles = Page.driver
-				.findElement(By.xpath("//*[@id='contentPart5']/div/div/div/div/div/div/div[1]/div[1]/h5/a"));
+				.findElement(By.xpath("//i[@class='fas fa-chevron-circle-left colorBlue font16px']"));
 		Assert.assertTrue(BackBtnProjectProfiles.isDisplayed());
 		Thread.sleep(3000);
 		// Verify the presence Document header text
 		String DocumentHeaderTxt = Page.driver
-				.findElement(By.xpath("//*[@id='contentPart5']/div/div/div/div/div/div/div[1]/div[1]/h5")).getText();
+				.findElement(By.xpath("//h5[contains(text(),'Documents')]")).getText();
 		Assert.assertEquals(DocumentHeaderTxt, "Documents");
 		Thread.sleep(3000);
 		// Verification of the presence of document
 		WebElement DocumentContent = Page.driver
-				.findElement(By.xpath("//div[@class='pagiNation p-0']/div[1]/div[1]/a"));
+				.findElement(By.xpath("(//div[@class='docBox m-0 mb-2']/a)[1]"));
 		Assert.assertTrue(DocumentContent.isDisplayed());
-		Thread.sleep(3000);
+		Thread.sleep(3000);*/
+		
+		WebElement noresults = Page.driver.findElement(By.xpath("//div[contains(text(),'No results match your search criteria')]"));
+		String text = noresults.getText();
+		String newtext = text.substring(text.indexOf('\n')+1);
+		Assert.assertEquals(newtext,"No results match your search criteria.");
 	}
 
 	@Test(priority = 18, enabled = true, description = "Verification of the click on Wood Restoration card")
@@ -415,20 +420,24 @@ public class OsmoseServices extends BaseTest {
 		Thread.sleep(20000);
 		osp.clickWoodRestorationVideos();
 		// Verify the presence of Back Button
-		WebElement BackButtonVideos = Page.driver
-				.findElement(By.xpath("//*[@id='contentPart3']/div/div/div/div/div/div/div[1]/div/h5/a"));
+		/*WebElement BackButtonVideos = Page.driver
+				.findElement(By.xpath("//i[@class='fas fa-chevron-circle-left colorBlue font16px']"));
 		Assert.assertTrue(BackButtonVideos.isDisplayed());
 		Thread.sleep(3000);
 		// Verify the presence Videos header text
 		String VideosHeaderTxt = Page.driver
-				.findElement(By.xpath("//*[@id='contentPart3']/div/div/div/div/div/div/div[1]/div/h5")).getText();
+				.findElement(By.xpath("//h5[@class='m-0']")).getText();
 		Assert.assertEquals(VideosHeaderTxt, "Videos");
 		Thread.sleep(3000);
 		// Verification of the presence of video
 		WebElement VideoContent = Page.driver
-				.findElement(By.xpath("//*[@id='contentPart3']/div/div/div/div/div/div/div[2]/div/div[1]/div/img"));
+				.findElement(By.xpath("(//img[@class='w-100'])[1]"));
 		Assert.assertTrue(VideoContent.isDisplayed());
-		Thread.sleep(3000);
+		Thread.sleep(3000);*/
+		WebElement noresults = Page.driver.findElement(By.xpath("//div[contains(text(),'No results match your search criteria')]"));
+		String text = noresults.getText();
+		String newtext = text.substring(text.indexOf('\n')+1);
+		Assert.assertEquals(newtext,"No results match your search criteria.");
 	}
 
 	@Test(priority = 20, enabled = true, description = "Verify the click on Project Profiles under Wood Restoration card")
@@ -444,20 +453,24 @@ public class OsmoseServices extends BaseTest {
 		osp.clickWoodRestorationProjectProfiles();
 		Thread.sleep(3000);
 		// Verify the presence of Back Button
-		WebElement BackBtnProjectProfiles = Page.driver
-				.findElement(By.xpath("//*[@id='contentPart5']/div/div/div/div/div/div/div[1]/div[1]/h5/a"));
+		/*WebElement BackBtnProjectProfiles = Page.driver
+				.findElement(By.xpath("//i[@class='fas fa-chevron-circle-left colorBlue font16px']"));
 		Assert.assertTrue(BackBtnProjectProfiles.isDisplayed());
 		Thread.sleep(3000);
 		// Verify the presence Document header text
 		String DocumentHeaderTxt = Page.driver
-				.findElement(By.xpath("//*[@id='contentPart5']/div/div/div/div/div/div/div[1]/div[1]/h5")).getText();
+				.findElement(By.xpath("//h5[contains(text(),'Documents')]")).getText();
 		Assert.assertEquals(DocumentHeaderTxt, "Documents");
 		Thread.sleep(3000);
 		// Verification of the presence of document
 		WebElement DocumentContent = Page.driver
-				.findElement(By.xpath("//div[@class='pagiNation p-0']/div[1]/div[1]/a"));
+				.findElement(By.xpath("(//div[@class='docBox m-0 mb-2']/a)[1]"));
 		Assert.assertTrue(DocumentContent.isDisplayed());
-		Thread.sleep(3000);
+		Thread.sleep(3000);*/
+		WebElement noresults = Page.driver.findElement(By.xpath("//div[contains(text(),'No results match your search criteria')]"));
+		String text = noresults.getText();
+		String newtext = text.substring(text.indexOf('\n')+1);
+		Assert.assertEquals(newtext,"No results match your search criteria.");
 	}
 
 	@Test(priority = 21, enabled = true, description = "Verify the click on Videos under Underground card")
@@ -473,20 +486,24 @@ public class OsmoseServices extends BaseTest {
 		osp.clickUndergroundVideos();
 		Thread.sleep(3000);
 		// Verify the presence of Back Button
-		WebElement BackButtonVideos = Page.driver
-				.findElement(By.xpath("//*[@id='contentPart3']/div/div/div/div/div/div/div[1]/div/h5/a"));
+		/*WebElement BackButtonVideos = Page.driver
+				.findElement(By.xpath("//i[@class='fas fa-chevron-circle-left colorBlue font16px']"));
 		Assert.assertTrue(BackButtonVideos.isDisplayed());
 		Thread.sleep(3000);
 		// Verify the presence Videos header text
 		String VideosHeaderTxt = Page.driver
-				.findElement(By.xpath("//*[@id='contentPart3']/div/div/div/div/div/div/div[1]/div/h5")).getText();
+				.findElement(By.xpath("//h5[@class='m-0']")).getText();
 		Assert.assertEquals(VideosHeaderTxt, "Videos");
 		Thread.sleep(3000);
 		// Verification of the presence of video
 		WebElement VideoContent = Page.driver
-				.findElement(By.xpath("//*[@id='contentPart3']/div/div/div/div/div/div/div[2]/div/div[1]/div/img"));
+				.findElement(By.xpath("(//img[@class='w-100'])[1]"));
 		Assert.assertTrue(VideoContent.isDisplayed());
-		Thread.sleep(3000);
+		Thread.sleep(3000);*/
+		WebElement noresults = Page.driver.findElement(By.xpath("//div[contains(text(),'No results match your search criteria')]"));
+		String text = noresults.getText();
+		String newtext = text.substring(text.indexOf('\n')+1);
+		Assert.assertEquals(newtext,"No results match your search criteria.");
 	}
 
 	@Test(priority = 22, enabled = true, description = "Verify the click on Project Profiles under Underground card")
@@ -502,20 +519,24 @@ public class OsmoseServices extends BaseTest {
 		osp.clickUnderstandProjectProfiles();
 		Thread.sleep(3000);
 		// Verify the presence of Back Button
-		WebElement BackBtnProjectProfiles = Page.driver
-				.findElement(By.xpath("//*[@id='contentPart5']/div/div/div/div/div/div/div[1]/div[1]/h5/a"));
+		/*WebElement BackBtnProjectProfiles = Page.driver
+				.findElement(By.xpath("//i[@class='fas fa-chevron-circle-left colorBlue font16px']"));
 		Assert.assertTrue(BackBtnProjectProfiles.isDisplayed());
 		Thread.sleep(3000);
 		// Verify the presence Document header text
 		String DocumentHeaderTxt = Page.driver
-				.findElement(By.xpath("//*[@id='contentPart5']/div/div/div/div/div/div/div[1]/div[1]/h5")).getText();
+				.findElement(By.xpath("//h5[contains(text(),'Documents')]")).getText();
 		Assert.assertEquals(DocumentHeaderTxt, "Documents");
 		Thread.sleep(3000);
 		// Verification of the presence of document
 		WebElement DocumentContent = Page.driver
-				.findElement(By.xpath("//div[@class='pagiNation p-0']/div[1]/div[1]/a"));
+				.findElement(By.xpath("(//div[@class='docBox m-0 mb-2']/a)[1]"));
 		Assert.assertTrue(DocumentContent.isDisplayed());
-		Thread.sleep(3000);
+		Thread.sleep(3000);*/
+		WebElement noresults = Page.driver.findElement(By.xpath("//div[contains(text(),'No results match your search criteria')]"));
+		String text = noresults.getText();
+		String newtext = text.substring(text.indexOf('\n')+1);
+		Assert.assertEquals(newtext,"No results match your search criteria.");
 	}
 
 	@Test(priority = 23, enabled = true, description = "Verify the pop-up after click on Underground card")
@@ -570,6 +591,7 @@ public class OsmoseServices extends BaseTest {
 		Page.click("UndergroundPopUpOkBtn_XPATH");
 		String defaultValue = Page.getdefaultValuefromdropdown("ContactUsFormSubjectdd_XPATH");
 		Assert.assertEquals(defaultValue, "Project Support");
+		Page.click("//img[@class='logo360']");
 	}
 
 }

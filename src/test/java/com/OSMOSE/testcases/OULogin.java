@@ -17,7 +17,7 @@ import java.util.Properties;
 
 public class OULogin extends BaseTest {
 
-	public static Properties config = new Properties();
+	Page p = new Page();
 
 	@Test(priority = 0, enabled = true, description = "Verify the Osmose University card on home page")
 	public void verifyOUCard() {
@@ -57,7 +57,10 @@ public class OULogin extends BaseTest {
 		Login Lo = new Login();
 		HomeOU ou = Lo.goHomeOU();
 		ou.clickOsmoseUniversityNavigation();
-		Thread.sleep(3000);
+		//Thread.sleep(3000);
+		String time = p.config.getProperty("Thread1000");
+		System.out.println(time);
+		Thread.sleep((Long.parseLong(p.config.getProperty("Thread1000"))));
 		// Thread.sleep(Integer.parseInt(config.getProperty("Thread1000")));
 		Assert.assertEquals(Page.getText("OsmoseUniversityTxt_XPATH"), "Osmose University");
 		Page.click("OUHomePage_XPATH");
@@ -79,7 +82,8 @@ public class OULogin extends BaseTest {
 		Login Lo = new Login();
 		HomeOU ou = Lo.goHomeOU();
 		ou.clickWebinarLink();
-		Assert.assertEquals(Page.getText("WEBINAR_XPATH"), "WEBINARS");
+		Thread.sleep((Long.parseLong(p.config.getProperty("Thread1000"))));
+		Assert.assertEquals(Page.getText("WEBINAR_XPATH"), "UPCOMING WEBINARS");
 		Page.driver.navigate().back();
 	}
 
@@ -136,7 +140,7 @@ public class OULogin extends BaseTest {
 		ou.clickOnSTSDetailsAndRegistration();
 		Assert.assertEquals(Page.getAttributeValue("FIRSTNAME_XPATH", "value"), "Rajesh");
 		Assert.assertEquals(Page.getAttributeValue("LASTNAME_XPATH", "value"), "Yadav");
-		Assert.assertEquals(Page.getAttributeValue("COMPANY_XPATH", "value"), "Centurylink");
+		Assert.assertEquals(Page.getAttributeValue("COMPANY_XPATH", "value"), "Century Link");
 		Assert.assertEquals(Page.getAttributeValue("STATE_XPATH", "value"), "Nevada");
 		Assert.assertEquals(Page.getAttributeValue("TITLE_XPATH", "value"), "Technical Lead");
 		Assert.assertEquals(Page.getAttributeValue("EMAIL_XPATH", "value"), "rajesh.yadav@centurylink.com");
@@ -247,8 +251,10 @@ public class OULogin extends BaseTest {
 		Page.click("HISTORICAL_XPATH");
 		Page.type("historicalSearchBar_XPATH", data.get("TypeHistoricalSearchBarInvalid"));
 		Page.driver.findElement(By.xpath("//input[@class='inputSearch form-control']")).sendKeys(Keys.ENTER);
-		WebElement noresults = Page.driver.findElement(By.xpath("//div[@class='text-center dismissCountDown']/div[1]"));
-		System.out.println(noresults.getText());
+		WebElement noresults = Page.driver.findElement(By.xpath("//div[@class='alert alert-dismissible alert-danger']"));
+		String text = noresults.getText();
+		String newtext = text.substring(text.indexOf('\n')+1);
+		Assert.assertEquals(newtext,"No results match your search criteria.");
 		Page.click("SearchBoxClear_XPATH");
 	}
 

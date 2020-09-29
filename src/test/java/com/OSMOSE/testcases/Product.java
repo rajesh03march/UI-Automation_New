@@ -270,11 +270,12 @@ public class Product extends BaseTest {
 		// Page.driver.findElement(By.id("searchInput")).clear();
 		Thread.sleep(1000);
 
-		WebElement element = Page.driver.findElement(By.xpath("//div[@class='p-0 p15 col']/div[1]/div[1]"));
-		System.out.println(element.getText());
-		// Assert.assertEquals("element","No products match your search.");
+		WebElement element = Page.driver.findElement(By.xpath("//div[@class='alert alert-dismissible alert-danger']"));
+		String text = element.getText();
+		String newtext = text.substring(text.indexOf('\n')+1);
+		System.out.println(newtext);
+		Assert.assertEquals(newtext,"No products match your search.");
 
-		// Assert.assertEquals("", "");
 	}
 
 	@Test(priority = 22, enabled = true, description = "Product Return Policies will be provided on the 'Quote Request Approval' page and will be presented to the customer as a pop-up for reading.")
@@ -505,9 +506,9 @@ public class Product extends BaseTest {
 	public void verifyStatusFilterAll() throws InterruptedException {
 		HomeOU ou = new HomeOU();
 		ProductPage pp = ou.goProduct();
-		Thread.sleep(5000);
+		Thread.sleep(2000);
 		pp.MyQuotes();
-		Thread.sleep(5000);
+		Thread.sleep(2000);
 		pp.MyQuotesStatusFilterAll();
 		// verifying the first record
 		String First_All = Page.driver
@@ -523,7 +524,7 @@ public class Product extends BaseTest {
 		Assert.assertEquals(Page.driver
 				.findElement(By.xpath("//div[@id='popupQuotes']/div[2]/div/div[1]/ul[1]/li[3]/span[2]")).getText(),
 				Second_All);
-		Thread.sleep(5000);
+		Thread.sleep(4000);
 		pp.clickMyQuotesCrossicon();
 	}
 
@@ -532,11 +533,11 @@ public class Product extends BaseTest {
 	public void verifyStatusFilterExpired() throws InterruptedException {
 		HomeOU ou = new HomeOU();
 		ProductPage pp = ou.goProduct();
-		Thread.sleep(5000);
+		Thread.sleep(2000);
 		pp.MyQuotes();
-		Thread.sleep(5000);
+		Thread.sleep(2000);
 		pp.MyQuotesStatusFilterExpired();
-		Thread.sleep(5000);
+		Thread.sleep(4000);
 		// verifying the first record
 		Assert.assertEquals(Page.driver
 				.findElement(By.xpath("//div[@id='popupQuotes']/div[1]/div/div[1]/ul[1]/li[3]/span[2]")).getText(),
@@ -545,7 +546,7 @@ public class Product extends BaseTest {
 		Assert.assertEquals(Page.driver
 				.findElement(By.xpath("//div[@id='popupQuotes']/div[2]/div/div[1]/ul[1]/li[3]/span[2]")).getText(),
 				"Expired");
-		Thread.sleep(5000);
+		Thread.sleep(2000);
 		pp.clickMyQuotesCrossicon();
 	}
 
@@ -554,11 +555,11 @@ public class Product extends BaseTest {
 	public void verifyStatusFilterOrdered() throws InterruptedException {
 		HomeOU ou = new HomeOU();
 		ProductPage pp = ou.goProduct();
-		Thread.sleep(5000);
+		Thread.sleep(2000);
 		pp.MyQuotes();
-		Thread.sleep(5000);
+		Thread.sleep(2000);
 		pp.MyQuotesStatusFilterOrdered();
-		Thread.sleep(10000);
+		Thread.sleep(4000);
 		// verifying the first record
 		Assert.assertEquals(Page.driver
 				.findElement(By.xpath("//div[@id='popupQuotes']/div[1]/div/div[1]/ul[1]/li[3]/span[2]")).getText(),
@@ -567,7 +568,7 @@ public class Product extends BaseTest {
 		Assert.assertEquals(Page.driver
 				.findElement(By.xpath("//div[@id='popupQuotes']/div[2]/div/div[1]/ul[1]/li[3]/span[2]")).getText(),
 				"Ordered");
-		Thread.sleep(5000);
+		Thread.sleep(2000);
 		pp.clickMyQuotesCrossicon();
 	}
 
@@ -576,11 +577,11 @@ public class Product extends BaseTest {
 	public void verifyStatusFilterQuoted() throws InterruptedException {
 		HomeOU ou = new HomeOU();
 		ProductPage pp = ou.goProduct();
-		Thread.sleep(5000);
+		Thread.sleep(2000);
 		pp.MyQuotes();
-		Thread.sleep(5000);
+		Thread.sleep(2000);
 		pp.MyQuotesStatusFilterQuoted();
-		Thread.sleep(10000);
+		Thread.sleep(4000);
 		// verifying the first record
 		Assert.assertEquals(Page.driver
 				.findElement(By.xpath("//div[@id='popupQuotes']/div[1]/div/div[1]/ul[1]/li[3]/span[2]")).getText(),
@@ -589,7 +590,7 @@ public class Product extends BaseTest {
 		Assert.assertEquals(Page.driver
 				.findElement(By.xpath("//div[@id='popupQuotes']/div[2]/div/div[1]/ul[1]/li[3]/span[2]")).getText(),
 				"Quoted");
-		Thread.sleep(5000);
+		Thread.sleep(2000);
 		pp.clickMyQuotesCrossicon();
 	}
 
@@ -598,11 +599,11 @@ public class Product extends BaseTest {
 	public void verifyStatusFilterQuotePending() throws InterruptedException {
 		HomeOU ou = new HomeOU();
 		ProductPage pp = ou.goProduct();
-		Thread.sleep(5000);
+		Thread.sleep(2000);
 		pp.MyQuotes();
-		Thread.sleep(5000);
+		Thread.sleep(2000);
 		pp.MyQuotesStatusFilterQuotePending();
-		Thread.sleep(10000);
+		Thread.sleep(4000);
 		// verifying the first record
 		Assert.assertEquals(Page.driver
 				.findElement(By.xpath("//div[@id='popupQuotes']/div[1]/div/div[1]/ul[1]/li[3]/span[2]")).getText(),
@@ -611,7 +612,7 @@ public class Product extends BaseTest {
 		Assert.assertEquals(Page.driver
 				.findElement(By.xpath("//div[@id='popupQuotes']/div[2]/div/div[1]/ul[1]/li[3]/span[2]")).getText(),
 				"Quote Pending");
-		Thread.sleep(5000);
+		Thread.sleep(2000);
 		pp.clickMyQuotesCrossicon();
 	}
 
@@ -620,11 +621,11 @@ public class Product extends BaseTest {
 	public void verifyStatusFilterCancelled() throws InterruptedException {
 		HomeOU ou = new HomeOU();
 		ProductPage pp = ou.goProduct();
-		Thread.sleep(5000);
+		Thread.sleep(2000);
 		pp.MyQuotes();
-		Thread.sleep(5000);
+		Thread.sleep(2000);
 		pp.MyQuotesStatusFilterCancelled();
-		Thread.sleep(10000);
+		Thread.sleep(4000);
 		// verifying the first record
 		Assert.assertEquals(Page.driver
 				.findElement(By.xpath("//div[@id='popupQuotes']/div[1]/div/div[1]/ul[1]/li[3]/span[2]")).getText(),
@@ -633,7 +634,7 @@ public class Product extends BaseTest {
 		Assert.assertEquals(Page.driver
 				.findElement(By.xpath("//div[@id='popupQuotes']/div[2]/div/div[1]/ul[1]/li[3]/span[2]")).getText(),
 				"Cancelled");
-		Thread.sleep(5000);
+		Thread.sleep(2000);
 		pp.clickMyQuotesCrossicon();
 	}
 
@@ -642,11 +643,11 @@ public class Product extends BaseTest {
 	public void verifyStatusFilterOrderRequested() throws InterruptedException {
 		HomeOU ou = new HomeOU();
 		ProductPage pp = ou.goProduct();
-		Thread.sleep(5000);
+		Thread.sleep(2000);
 		pp.MyQuotes();
-		Thread.sleep(5000);
+		Thread.sleep(2000);
 		pp.MyQuotesStatusFilterOrderRequested();
-		Thread.sleep(10000);
+		Thread.sleep(4000);
 		// verifying the first record
 		Assert.assertEquals(Page.driver
 				.findElement(By.xpath("//div[@id='popupQuotes']/div[1]/div/div[1]/ul[1]/li[3]/span[2]")).getText(),
@@ -1242,7 +1243,7 @@ public class Product extends BaseTest {
 		pp.ToolTipForSize();
 		Thread.sleep(5000);
 		String Sizetooltip = Page.driver.findElement(By.xpath("//*[@id='selectSize']/option[2]")).getAttribute("title");
-		Assert.assertEquals(Sizetooltip, "165-110-500-040 MP500-EXT® 4 gal. box");
+		Assert.assertEquals(Sizetooltip, "767-020-001-4007 230 x 13' - 191,800 ft/lbs");
 		Thread.sleep(2000);
 		Page.click("CloseButton_XPATH");
 	}
