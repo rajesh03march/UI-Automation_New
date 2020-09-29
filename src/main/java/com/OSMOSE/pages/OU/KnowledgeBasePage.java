@@ -1,19 +1,16 @@
 package com.OSMOSE.pages.OU;
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
-
 import com.OSMOSE.base.Page;
 
 public class KnowledgeBasePage extends Page {
 
 	public void clickKBNavigation() throws InterruptedException {
-		Thread.sleep(12000);
+		Thread.sleep((Long.parseLong(config.getProperty("Thread12000"))));
 		click("KnowledgeBaseMenu_XPATH");
 	}
 
 	public void clickKBCard() throws InterruptedException {
-		Thread.sleep(12000);
+		Thread.sleep((Long.parseLong(config.getProperty("Thread12000"))));
 		click("KBCard_XPATH");
 	}
 	
@@ -42,12 +39,12 @@ public class KnowledgeBasePage extends Page {
 	}
 
 	public void clickIndustrySeeMore() throws InterruptedException {
-		Thread.sleep(12000);
+		Thread.sleep((Long.parseLong(config.getProperty("Thread1000"))));
 		ClickActions("IndustrySeeMoreLink_XPATH");
 	}
 
 	public void clickIndustryBackbtn() throws InterruptedException {
-		Thread.sleep(12000);
+		Thread.sleep((Long.parseLong(config.getProperty("Thread12000"))));
 		click("IndustryBACKbtn_XPATH");
 	}
 	

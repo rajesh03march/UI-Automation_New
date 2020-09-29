@@ -5,12 +5,12 @@ import com.OSMOSE.base.Page;
 public class OsmoseServicesPage extends Page {
 
 	public void clickOnOU360() throws InterruptedException {
-		Thread.sleep(1000);
+		Thread.sleep((Long.parseLong(config.getProperty("Thread1000"))));
 		ClickActions("MOSOsmoseLogo_XPATH");
 	}
 
 	public void clickMyOsmoseServices() throws InterruptedException {
-		Thread.sleep(1000);
+		Thread.sleep((Long.parseLong(config.getProperty("Thread1000"))));
 		click("MyOsmoseServicesCard_XPATH");
 	}
 
@@ -68,17 +68,17 @@ public class OsmoseServicesPage extends Page {
 	
 	public void navigateToPedernalesElecCoop() throws InterruptedException {
 		click("MOSProjectGroupMenu_XPATH");
-		Thread.sleep(1000);
+		Thread.sleep((Long.parseLong(config.getProperty("Thread1000"))));
 		click("MOSPedernalesElecCoop_XPATH");
-		Thread.sleep(1000);
+		Thread.sleep((Long.parseLong(config.getProperty("Thread1000"))));
 		click("MOSPedernalesECDev_XPATH");
 	}
 	
 	public void navigateToColombiapit() throws InterruptedException {
 		click("ProjectGroupMenu_XPATH");
-		Thread.sleep(1000);
+		Thread.sleep((Long.parseLong(config.getProperty("Thread1000"))));
 		click("MOSCityOfColumbia_XPATH");
-		Thread.sleep(1000);
+		Thread.sleep((Long.parseLong(config.getProperty("Thread1000"))));
 		click("MOSColombiapit_XPATH");
 	}
 	
