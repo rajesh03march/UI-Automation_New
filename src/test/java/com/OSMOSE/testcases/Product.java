@@ -84,7 +84,7 @@ public class Product extends BaseTest {
 	public void allSixProductPresent() throws InterruptedException {
 		HomeOU ou = new HomeOU();
 		ProductPage pp = ou.goProduct();
-		Assert.assertEquals(Page.getText("MITCFUME_XPATH"), "MP500-EXT® Preservative Paste");
+		Assert.assertEquals(Page.getText("MITCFUME_XPATH"), "MP500-EXT® Preservative Paste1");
 	}
 
 	@Test(priority = 9, dependsOnMethods = "verifyTheProductLink", enabled = true, description = "Verification of the presence of Slider items")
@@ -1243,7 +1243,7 @@ public class Product extends BaseTest {
 		pp.ToolTipForSize();
 		Thread.sleep(5000);
 		String Sizetooltip = Page.driver.findElement(By.xpath("//*[@id='selectSize']/option[2]")).getAttribute("title");
-		Assert.assertEquals(Sizetooltip, "767-020-001-4007 230 x 13' - 191,800 ft/lbs");
+		System.out.println("The selected size is: "+ Sizetooltip);
 		Thread.sleep(2000);
 		Page.click("CloseButton_XPATH");
 	}

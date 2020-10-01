@@ -674,5 +674,212 @@ public class oCalcPro extends BaseTest {
 						.isDisplayed());
 		Assert.assertEquals(Page.getText("TutorialContactOcalcPro_XPATH"), "Contact O-Calc Pro Support");
 	}
+	
+	
+	@Test(priority = 31, enabled = true, description = "Verify click on Products card for Licensed User")
+	public void verifyProductsClickLicensedUser() throws InterruptedException {
+		OsmoseServicesPage os = new OsmoseServicesPage();
+		oCalcProPage ocal = os.gooCalcPro();
+		ocal.clickProducts();
+		// Verification of header text
+		WebElement HeaderTxt = Page.driver
+				.findElement(By.xpath("//p[@class='mb-0' and text()='Pole and Line Products']"));
+		Assert.assertTrue(HeaderTxt.isDisplayed());
+		Assert.assertEquals(Page.getText("oCalcProductsHeaderTxt_XPATH"), "Pole and Line Products");
+		// Verification of the heading on the products
+		WebElement HeadingTxt = Page.driver
+				.findElement(By.xpath("//div[@class='projectHeading']//h3[text()='O-Calc Pro']"));
+		Assert.assertTrue(HeadingTxt.isDisplayed());
+		Assert.assertEquals(Page.getText("oCalcProductsHeadingTxt_XPATH"), "O-Calc Pro");
+		// Verification of ocalc-pro License product presence
+		WebElement OCalcLicense = Page.driver
+				.findElement(By.xpath("//div[@title='O-Calc License']//div[text()='O-Calc License']"));
+		Assert.assertTrue(OCalcLicense.isDisplayed());
+		Assert.assertEquals(Page.getText("ProductsoCalcLicense_XPATH"), "O-Calc License");
+		// Verification of ocalc-pro CVT product presence
+		WebElement OCalcCVT = Page.driver.findElement(By.xpath("//div[@title='O-Calc CVT']//div[text()='O-Calc CVT']"));
+		Assert.assertTrue(OCalcCVT.isDisplayed());
+		Assert.assertEquals(Page.getText("ProductsoCalcCVT_XPATH"), "O-Calc CVT");
+		// Verification of ocalc-pro Training product presence
+		WebElement OCalcTraining = Page.driver
+				.findElement(By.xpath("//div[@title='O-Calc Training']//div[text()='O-Calc Training']"));
+		Assert.assertTrue(OCalcTraining.isDisplayed());
+		Assert.assertEquals(Page.getText("ProductsoCalcTraining_XPATH"), "O-Calc Training");
+		Page.driver.navigate().back();
+	}
+
+	@Test(priority = 32, enabled = true, description = "Verify click on Request License Quote on Products card and submit quote for Licensed User")
+	public void verifyRequestLicenseQuoteClickLicensedUser() throws InterruptedException {
+		OsmoseServicesPage os = new OsmoseServicesPage();
+		oCalcProPage ocal = os.gooCalcPro();
+		ocal.clickoCalcProLogoForLicensedUser();
+		ocal.clickRequestLicenseQuote();
+		Thread.sleep(15000);
+		// Verification of header text
+		WebElement LicenseTxt = Page.driver
+				.findElement(By.xpath("(//div[@class='prdDetailhs2']//h3[text()='O-Calc License'])[1]"));
+		Assert.assertTrue(LicenseTxt.isDisplayed());
+		Assert.assertEquals(Page.getText("oCalcLicenseTxt_XPATH"), "O-Calc License");
+		WebElement LicenseDescTxt = Page.driver
+				.findElement(By.xpath("(//div[@class='prdDetailhs2']//p[text()=' O-Calc License description '])[1]"));
+		Assert.assertTrue(LicenseDescTxt.isDisplayed());
+		Assert.assertEquals(Page.getText("oCalcLicenseDescription_XPATH"), "O-Calc License description");
+		ocal.RequestLicenseProductQuoteSubmission();
+		Page.driver.navigate().back();
+	}
+
+
+	@Test(priority = 33, enabled = true, description = "Verify click on Request CVT Quote on Products card and submit quote for Licensed User")
+	public void verifyRequestCVTQuoteClickLicensedUser() throws InterruptedException {
+		OsmoseServicesPage os = new OsmoseServicesPage();
+		oCalcProPage ocal = os.gooCalcPro();
+		ocal.clickoCalcProLogoForLicensedUser();
+		ocal.clickRequestCVTQuote();
+		Thread.sleep(15000);
+		// Verification of header text
+		WebElement CVTTxt = Page.driver
+				.findElement(By.xpath("(//div[@class='prdDetailhs2']//h3[text()='O-Calc CVT'])[1]"));
+		Assert.assertTrue(CVTTxt.isDisplayed());
+		Assert.assertEquals(Page.getText("oCalcCVTTxt_XPATH"), "O-Calc CVT");
+		WebElement CVTDescTxt = Page.driver
+				.findElement(By.xpath("(//div[@class='prdDetailhs2']//p[text()=' O-Calc CVT description '])[1]"));
+		Assert.assertTrue(CVTDescTxt.isDisplayed());
+		Assert.assertEquals(Page.getText("oCalcCVTDescription_XPATH"), "O-Calc CVT description");
+		ocal.RequestCVTProductQuoteSubmission();
+		Page.driver.navigate().back();
+	}
+	
+	@Test(priority = 34, enabled = true, description = "Verify click on Request Training Quote on Products card and submit quote for Licensed User")
+	public void verifyRequestTrainingQuoteClickLicensedUser() throws InterruptedException {
+		OsmoseServicesPage os = new OsmoseServicesPage();
+		oCalcProPage ocal = os.gooCalcPro();
+		ocal.clickoCalcProLogoForLicensedUser();
+		ocal.clickRequestTrainingQuote();
+		Thread.sleep(15000);
+		// Verification of header text
+		WebElement TrainingTxt = Page.driver
+				.findElement(By.xpath("(//div[@class='prdDetailhs2']//h3[text()='O-Calc Training'])[1]"));
+		Assert.assertTrue(TrainingTxt.isDisplayed());
+		Assert.assertEquals(Page.getText("oCalcRequestTrainingTxt_XPATH"), "O-Calc Training");
+		WebElement TrainingDescTxt = Page.driver
+				.findElement(By.xpath("(//div[@class='prdDetailhs2']//p[text()=' O-Calc Training description '])[1]"));
+		Assert.assertTrue(TrainingDescTxt.isDisplayed());
+		Assert.assertEquals(Page.getText("oCalcRequestTrainingDescription_XPATH"), "O-Calc Training description");
+		ocal.RequestTrainingProductQuoteSubmission();
+		Page.driver.navigate().back();
+	}
+	
+	@Test(priority = 35, enabled = true, description = "Verify click on 30 days Trial button for Licensed User")
+	public void verify30daysbtnClickLicensedUser() throws InterruptedException {
+		OsmoseServicesPage os = new OsmoseServicesPage();
+		oCalcProPage ocal = os.gooCalcPro();
+		ocal.clickoCalcProLogoForLicensedUser();
+		ocal.click30daysTrialBtnLicensedUser();
+		Thread.sleep(2000);
+		// Verification of the Back button
+		WebElement BackBtn = Page.driver.findElement(By.xpath("//a[@id='OCalTrialCloseBtn']"));
+		Assert.assertTrue(BackBtn.isDisplayed());
+		// Verification of Back btn text
+		Assert.assertEquals(Page.getText("LicensedUser30daysBackTxt_XPATH"), "Back");
+		Page.iFrames(0);
+		// Verification of Header text
+		Assert.assertEquals(Page.getText("LicensedUser30daysHeaderTxt_XPATH"), "O-Calc® Pro Trial Version");
+		// Verification of FirstName field
+		WebElement FirstName = Page.driver.findElement(By.xpath("//input[@id='a100001_l100001_e100009_first_name']"));
+		Assert.assertTrue(FirstName.isDisplayed());
+		// Verification of LastName field
+		WebElement LastName = Page.driver.findElement(By.xpath("//input[@id='a100001_l100001_e100010_last_name']"));
+		Assert.assertTrue(LastName.isDisplayed());
+		// Verification of Company field
+		WebElement Company = Page.driver.findElement(By.xpath("//input[@id='a100001_l100001_e100011_company']"));
+		Assert.assertTrue(Company.isDisplayed());
+		// Verification of Title field
+		WebElement Title = Page.driver.findElement(By.xpath("//input[@id='a100001_l100001_e100012_title']"));
+		Assert.assertTrue(Title.isDisplayed());
+		// Verification of BusinessEmail field
+		WebElement BusinessEmail = Page.driver
+				.findElement(By.xpath("//input[@id='a100001_l100001_e100014_business_email']"));
+		Assert.assertTrue(BusinessEmail.isDisplayed());
+		// Verification of Phone field
+		WebElement Phone = Page.driver.findElement(By.xpath("//input[@id='a100001_l100001_e100013_phone']"));
+		Assert.assertTrue(Phone.isDisplayed());
+		// Verification of Country field
+		WebElement Country = Page.driver.findElement(By.xpath("//input[@id='a100001_l100001_e100015_country']"));
+		Assert.assertTrue(Country.isDisplayed());
+		// Verification of State field
+		WebElement State = Page.driver.findElement(By.xpath("//input[@id='a100001_l100001_e100016_state']"));
+		Assert.assertTrue(State.isDisplayed());
+		// Verification of RequestTrialBtn button
+		WebElement RequestTrialBtn = Page.driver
+				.findElement(By.xpath("//input[@id='a100001_submit_btn' and @value='Request Trial']"));
+		Assert.assertTrue(RequestTrialBtn.isDisplayed());
+		Page.driver.switchTo().defaultContent();
+		Thread.sleep(1000);
+		Page.click("LicensedUser30daysBackBtn_XPATH");
+	}
+
+	
+	@Test(priority = 36, enabled = true, description = "Verify click on Request Demo button for Licensed User")
+	public void verifyRequstDemoClickLicensedUser() throws InterruptedException {
+		OsmoseServicesPage os = new OsmoseServicesPage();
+		oCalcProPage ocal = os.gooCalcPro();
+		ocal.clickRequestDemoTrialBtnLicensedUser();
+		Thread.sleep(2000);
+		// Verification of the Back button
+		WebElement BackBtn = Page.driver.findElement(By.xpath("//a[@id='OCalTrialCloseBtn']"));
+		Assert.assertTrue(BackBtn.isDisplayed());
+		// Verification of Back btn text
+		Assert.assertEquals(Page.getText("LicensedUserDemoBackTxt_XPATH"), "Back");
+		Page.iFrames(0);
+		// Verification of Header text
+		Assert.assertEquals(Page.getText("LicensedUserDemoHeaderTxt_XPATH"), "O-Calc® Pro Trial Version");
+		// Verification of FirstName field
+		WebElement FirstName = Page.driver.findElement(By.xpath("//input[@id='a100035_l100019_e100193_first_name']"));
+		Assert.assertTrue(FirstName.isDisplayed());
+		// Verification of LastName field
+		WebElement LastName = Page.driver.findElement(By.xpath("//input[@id='a100035_l100019_e100194_last_name']"));
+		Assert.assertTrue(LastName.isDisplayed());
+		// Verification of Company field
+		WebElement Company = Page.driver.findElement(By.xpath("//input[@id='a100035_l100019_e100195_company']"));
+		Assert.assertTrue(Company.isDisplayed());
+		// Verification of Title field
+		WebElement Title = Page.driver.findElement(By.xpath("//input[@id='a100035_l100019_e100196_title']"));
+		Assert.assertTrue(Title.isDisplayed());
+		// Verification of BusinessEmail field
+		WebElement BusinessEmail = Page.driver
+				.findElement(By.xpath("//input[@id='a100035_l100019_e100197_business_email']"));
+		Assert.assertTrue(BusinessEmail.isDisplayed());
+		// Verification of Phone field
+		WebElement Phone = Page.driver.findElement(By.xpath("//input[@id='a100035_l100019_e100198_phone']"));
+		Assert.assertTrue(Phone.isDisplayed());
+		// Verification of Country field
+		WebElement Country = Page.driver.findElement(By.xpath("//input[@id='a100035_l100019_e100199_country']"));
+		Assert.assertTrue(Country.isDisplayed());
+		// Verification of State field
+		WebElement State = Page.driver.findElement(By.xpath("//input[@id='a100035_l100019_e100200_state']"));
+		Assert.assertTrue(State.isDisplayed());
+		// Verification of RequestTrialBtn button
+		WebElement RequestTrialBtn = Page.driver
+				.findElement(By.xpath("//input[@id='a100035_submit_btn' and @value='Request Trial']"));
+		Assert.assertTrue(RequestTrialBtn.isDisplayed());
+		Page.driver.switchTo().defaultContent();
+		Thread.sleep(1000);
+		Page.click("LicensedUserDemoBackBtn_XPATH");
+	}
+	
+	@Test(priority = 37, enabled = true, description = "Verify click on Contact O-calc Support for Licensed User")
+	public void verifyocalcSupportClickLicensedUser() throws InterruptedException {
+		OsmoseServicesPage os = new OsmoseServicesPage();
+		oCalcProPage ocal = os.gooCalcPro();
+		ocal.clickContactoCalcSupportLinkLicensedUser();
+		// Verification of header text
+		WebElement ContactUsHeaderTxt = Page.driver.findElement(By.xpath("//p[@class='mb-0' and text()='Contact Us']"));
+		Assert.assertTrue(ContactUsHeaderTxt.isDisplayed());
+		Assert.assertEquals(Page.getText("oCalcProContactUsHeaderTxt_XPATH"), "Contact Us");
+		// Verification of Default value on subject field
+		String defaultValue = Page.getdefaultValuefromdropdown("oCalcProContactUsFormSubjectdd_XPATH");
+		Assert.assertEquals(defaultValue, "O-Calc Pro Support");
+		Page.driver.navigate().back();
+	}
 
 }

@@ -95,5 +95,17 @@ public class oCalcProPage extends Page{
 	public void clickoCalcProLogoForLicensedUser() {
 		click("oCalProLogoForLicensedUser_XPATH");
 	}
+	
+	public void click30daysTrialBtnLicensedUser() {
+		click("Tutorial30DaysBtn_XPATH");
+	}
+	
+	public void clickRequestDemoTrialBtnLicensedUser() {
+		click("TutorialReqDemo_XPATH");
+	}
+	
+	public void clickContactoCalcSupportLinkLicensedUser() {
+		click("TutorialContactOcalcPro_XPATH");
+	}
 
 }

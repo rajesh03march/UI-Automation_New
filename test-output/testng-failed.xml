@@ -6,19 +6,16 @@
     <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
     <listener class-name="com.OSMOSE.listeners.CustomListeners"/>
   </listeners>
-  <test thread-count="5" name="MyOsmoseServices(failed)">
+  <test thread-count="5" name="Product(failed)">
     <classes>
-      <class name="com.OSMOSE.testcases.OsmoseServices">
+      <class name="com.OSMOSE.testcases.Product">
         <methods>
+          <include name="sliderItemPresent"/>
           <include name="tearDown"/>
-          <include name="verifyClickonWoodTreatmentProjectProfiles"/>
-          <include name="verifyClickonWoodTreatmentVideos"/>
-          <include name="verifyClickonWoodRestorationVideos"/>
-          <include name="verifyClickonUndergroundProjectProfiles"/>
-          <include name="verifyClickonUndergroundVideos"/>
-          <include name="verifyClickonWoodRestorationProjectProfiles"/>
+          <include name="allSixProductPresent"/>
+          <include name="verifyTheProductLink"/>
         </methods>
-      </class> <!-- com.OSMOSE.testcases.OsmoseServices -->
+      </class> <!-- com.OSMOSE.testcases.Product -->
     </classes>
-  </test> <!-- MyOsmoseServices(failed) -->
+  </test> <!-- Product(failed) -->
 </suite> <!-- Failed suite [OSMOSE Test] -->
