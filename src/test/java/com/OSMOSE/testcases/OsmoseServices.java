@@ -1,17 +1,12 @@
 package com.OSMOSE.testcases;
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.ui.Select;
-import org.testng.Assert;
-import org.testng.annotations.Test;
-
 import com.OSMOSE.base.Page;
-import com.OSMOSE.pages.OU.ContactPage;
-import com.OSMOSE.pages.OU.HomeOU;
 import com.OSMOSE.pages.OU.KnowledgeBasePage;
 import com.OSMOSE.pages.OU.OsmoseServicesPage;
-import com.OSMOSE.pages.OU.ProductPage;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import org.testng.Assert;
+import org.testng.annotations.Test;
 
 public class OsmoseServices extends BaseTest {
 
@@ -20,7 +15,7 @@ public class OsmoseServices extends BaseTest {
 	public void verifyMyOsmoseServicesCardClick() throws InterruptedException {
 		KnowledgeBasePage kb = new KnowledgeBasePage();
 		OsmoseServicesPage osp = kb.goOsmoseServices();
-		Thread.sleep(3000);
+		Thread.sleep((Long.parseLong(Page.config.getProperty("Thread3000"))));
 		WebElement MyOsmoseServicesCard = Page.driver.findElement(By.xpath("//div[@id='card-knowBase']/div[1]/a/p"));
 		// Verifying the presence of My Osmose Services card on Home Page
 		Assert.assertTrue(MyOsmoseServicesCard.isDisplayed());
@@ -38,7 +33,7 @@ public class OsmoseServices extends BaseTest {
 	public void verifyWoodInspectionandTreatmentLearnMoreClick() throws InterruptedException {
 		KnowledgeBasePage kb = new KnowledgeBasePage();
 		OsmoseServicesPage osp = kb.goOsmoseServices();
-		Thread.sleep(5000);
+		Thread.sleep((Long.parseLong(Page.config.getProperty("Thread5000"))));
 		WebElement WoodInspectionandTreatmentCard = Page.driver
 				.findElement(By.xpath("//*[@id='contentPart']/div/div/div/div/div[1]/div"));
 		// Verifying the presence of Wood Inspection and Treatment card
@@ -63,7 +58,7 @@ public class OsmoseServices extends BaseTest {
 		// Verifying the presence of Wood Restoration card
 		Assert.assertTrue(WoodRestorationCard.isDisplayed());
 		osp.clickWoodRestorationLearnMore();
-		Thread.sleep(5000);
+		Thread.sleep((Long.parseLong(Page.config.getProperty("Thread5000"))));
 		// Verifying the Header text of Wood Rstoration
 		Assert.assertEquals(Page.getText("WoodRestorationPopupHeaderTxt_XPATH"), "Wood | Restoration");
 		osp.clickLearnMorePopupCloseButton();
@@ -81,7 +76,7 @@ public class OsmoseServices extends BaseTest {
 		// Verifying the presence of Wood Restoration card
 		Assert.assertTrue(OClacProCard.isDisplayed());
 		osp.clickOcalProLearnMore();
-		Thread.sleep(5000);
+		Thread.sleep((Long.parseLong(Page.config.getProperty("Thread5000"))));
 		// Verifying the Header text of OcalPro
 		Assert.assertEquals(Page.getText("OcalcProPopupHeaderTxt_XPATH"), "O-Calc Pro");
 		osp.clickLearnMorePopupCloseButton();
@@ -99,7 +94,7 @@ public class OsmoseServices extends BaseTest {
 		// Verifying the presence of Steel & Concrete | Assessment card
 		Assert.assertTrue(SteelandConcreteAssessmentCard.isDisplayed());
 		osp.clickSteelandConcreteAssessmentLearnMore();
-		Thread.sleep(5000);
+		Thread.sleep((Long.parseLong(Page.config.getProperty("Thread5000"))));
 		// Verifying the Header text of Steel & Concrete | Assessment
 		Assert.assertEquals(Page.getText("SteelandConcreteAssessmentPopupHeaderTxt_XPATH"),
 				"Steel & Concrete | Assessment");
@@ -118,7 +113,7 @@ public class OsmoseServices extends BaseTest {
 		// Verifying the presence of Steel & Concrete | Restoration card
 		Assert.assertTrue(SteelandConcreteRestorationCard.isDisplayed());
 		osp.clickSteelandConcreteRestorationLearnMore();
-		Thread.sleep(5000);
+		Thread.sleep((Long.parseLong(Page.config.getProperty("Thread5000"))));
 		// Verifying the Header text of Steel & Concrete | Restoration
 		Assert.assertEquals(Page.getText("SteelandConcreteRestorationPopupHeaderTxt_XPATH"),
 				"Steel & Concrete | Restoration");
@@ -137,7 +132,7 @@ public class OsmoseServices extends BaseTest {
 		// Verifying the presence of Overhead card
 		Assert.assertTrue(OverheadCard.isDisplayed());
 		osp.clickOverheadLearnMore();
-		Thread.sleep(5000);
+		Thread.sleep((Long.parseLong(Page.config.getProperty("Thread5000"))));
 		// Verifying the Header text of Overhead
 		Assert.assertEquals(Page.getText("OverheadPopupHeaderTxt_XPATH"), "Overhead");
 		osp.clickLearnMorePopupCloseButton();
@@ -155,7 +150,7 @@ public class OsmoseServices extends BaseTest {
 		// Verifying the presence of Underground card
 		Assert.assertTrue(UndergroundCard.isDisplayed());
 		osp.clickUndergroundLearnMore();
-		Thread.sleep(5000);
+		Thread.sleep((Long.parseLong(Page.config.getProperty("Thread5000"))));
 		// Verifying the Header text of Underground
 		Assert.assertEquals(Page.getText("UndergroundPopupHeaderTxt_XPATH"), "Underground");
 		osp.clickLearnMorePopupCloseButton();
@@ -173,7 +168,7 @@ public class OsmoseServices extends BaseTest {
 		// Verifying the presence of JointUse card
 		Assert.assertTrue(JointUseCard.isDisplayed());
 		osp.clickJointUseLearnMore();
-		Thread.sleep(5000);
+		Thread.sleep((Long.parseLong(Page.config.getProperty("Thread5000"))));
 		// Verifying the Header text of JointUse
 		Assert.assertEquals(Page.getText("JointUsePopupHeaderTxt_XPATH"), "Joint Use");
 		osp.clickLearnMorePopupCloseButton();
@@ -191,7 +186,7 @@ public class OsmoseServices extends BaseTest {
 		// Verifying the presence of Stray Voltage card
 		Assert.assertTrue(StrayVoltageCard.isDisplayed());
 		osp.clickStrayVoltageLearnMore();
-		Thread.sleep(5000);
+		Thread.sleep((Long.parseLong(Page.config.getProperty("Thread5000"))));
 		// Verifying the Header text of Stray Voltage
 		Assert.assertEquals(Page.getText("StrayVoltagePopupHeaderTxt_XPATH"), "Stray Voltage");
 		osp.clickLearnMorePopupCloseButton();
@@ -209,7 +204,7 @@ public class OsmoseServices extends BaseTest {
 		// Verifying the presence of Technical Services card
 		Assert.assertTrue(TechnicalServicesCard.isDisplayed());
 		osp.clickTechnicalServicesLearnMore();
-		Thread.sleep(5000);
+		Thread.sleep((Long.parseLong(Page.config.getProperty("Thread5000"))));
 		// Verifying the Header text of Technical Services
 		Assert.assertEquals(Page.getText("TechnicalServicesPopupHeaderTxt_XPATH"), "Technical Services");
 		osp.clickLearnMorePopupCloseButton();
@@ -228,7 +223,7 @@ public class OsmoseServices extends BaseTest {
 		// Verifying the presence of Products card
 		Assert.assertTrue(ProductsCard.isDisplayed());
 		osp.clickProductsLearnMore();
-		Thread.sleep(5000);
+		Thread.sleep((Long.parseLong(Page.config.getProperty("Thread5000"))));
 		// Verifying the Header text of Products
 		Assert.assertEquals(Page.getText("ProductsPopupHeaderTxt_XPATH"), "Products");
 		osp.clickLearnMorePopupCloseButton();
@@ -246,7 +241,7 @@ public class OsmoseServices extends BaseTest {
 		// Verifying the presence of Map View card
 		Assert.assertTrue(MapViewCard.isDisplayed());
 		osp.clickMapViewLearnMore();
-		Thread.sleep(5000);
+		Thread.sleep((Long.parseLong(Page.config.getProperty("Thread5000"))));
 		// Verifying the Header text of Map View
 		Assert.assertEquals(Page.getText("MapViewPopupHeaderTxt_XPATH"), "Map View");
 		osp.clickLearnMorePopupCloseButton();
@@ -257,40 +252,40 @@ public class OsmoseServices extends BaseTest {
 		KnowledgeBasePage kb = new KnowledgeBasePage();
 		OsmoseServicesPage osp = kb.goOsmoseServices();
 		Page.click("ProductCardFirstProduct_XPATH");
-		Thread.sleep(6000);
+		Thread.sleep((Long.parseLong(Page.config.getProperty("Thread6000"))));
 		WebElement ProductFirstTxt = Page.driver
 				.findElement(By.xpath("//*[@id='MypopupScroll']/div/div/div[2]/div[1]/h3"));
 		Assert.assertEquals(ProductFirstTxt.getText(), "MP500-EXT® Preservative Paste");
 		Page.click("CloseButtonMOS_XPATH");
 		osp.clickOnOU360();
-		Thread.sleep(2000);
+		Thread.sleep((Long.parseLong(Page.config.getProperty("Thread2000"))));
 		osp.clickMyOsmoseServices();
 		Page.click("ProductCardSecondProduct_XPATH");
-		Thread.sleep(6000);
+		Thread.sleep((Long.parseLong(Page.config.getProperty("Thread6000"))));
 		WebElement ProductSecondTxt = Page.driver
 				.findElement(By.xpath("//*[@id='MypopupScroll']/div/div/div[2]/div[1]/h3"));
 		Assert.assertEquals(ProductSecondTxt.getText(), "Demo_MP500-EXT® Preservative Paste");
 		Page.click("CloseButtonMOS_XPATH");
 		osp.clickOnOU360();
-		Thread.sleep(2000);
+		Thread.sleep((Long.parseLong(Page.config.getProperty("Thread2000"))));
 		osp.clickMyOsmoseServices();
 		Page.click("ProductCardThirdProduct_XPATH");
-		Thread.sleep(6000);
+		Thread.sleep((Long.parseLong(Page.config.getProperty("Thread6000"))));
 		WebElement ProductThirdTxt = Page.driver
 				.findElement(By.xpath("//*[@id='MypopupScroll']/div/div/div[2]/div[1]/h3"));
 		Assert.assertEquals(ProductThirdTxt.getText(), "Demo_MITC-FUME®");
 		Page.click("CloseButtonMOS_XPATH");
 		osp.clickOnOU360();
-		Thread.sleep(2000);
+		Thread.sleep((Long.parseLong(Page.config.getProperty("Thread2000"))));
 		osp.clickMyOsmoseServices();
 		Page.click("ProductCardFourthProduct_XPATH");
-		Thread.sleep(6000);
+		Thread.sleep((Long.parseLong(Page.config.getProperty("Thread6000"))));
 		WebElement ProductFourthTxt = Page.driver
 				.findElement(By.xpath("//*[@id='MypopupScroll']/div/div/div[2]/div[1]/h3"));
 		Assert.assertEquals(ProductFourthTxt.getText(), "MITC-FUME®");
 		Page.click("CloseButtonMOS_XPATH");
 		osp.clickOnOU360();
-		Thread.sleep(2000);
+		Thread.sleep((Long.parseLong(Page.config.getProperty("Thread2000"))));
 		osp.clickMyOsmoseServices();
 	}
 
@@ -299,7 +294,7 @@ public class OsmoseServices extends BaseTest {
 		KnowledgeBasePage kb = new KnowledgeBasePage();
 		OsmoseServicesPage osp = kb.goOsmoseServices();
 		osp.navigateToPedernalesElecCoop();
-		Thread.sleep(15000);
+		Thread.sleep((Long.parseLong(Page.config.getProperty("Thread15000"))));
 		Page.click("MapViewCard_XPATH");
 		WebElement MapView = Page.driver
 				.findElement(By.xpath("//*[@id='app']/div/div/div[3]/div/div[2]/header/ul/li[1]/p"));
@@ -315,9 +310,9 @@ public class OsmoseServices extends BaseTest {
 		OsmoseServicesPage osp = kb.goOsmoseServices();
 		Page.driver.navigate().back();
 		osp.clickOnOU360();
-		Thread.sleep(2000);
+		Thread.sleep((Long.parseLong(Page.config.getProperty("Thread2000"))));
 		osp.clickMyOsmoseServices();
-		Thread.sleep(3000);
+		Thread.sleep((Long.parseLong(Page.config.getProperty("Thread3000"))));
 		osp.clickWoodInspection();
 		WebElement InspectionSummary = Page.driver.findElement(By.xpath("//p[contains(text(), 'Inspection Summary')]"));
 		Assert.assertEquals(InspectionSummary.getText(), "Inspection Summary");
@@ -331,58 +326,58 @@ public class OsmoseServices extends BaseTest {
 	public void verifyClickonWoodTreatmentVideos() throws InterruptedException {
 		KnowledgeBasePage kb = new KnowledgeBasePage();
 		OsmoseServicesPage osp = kb.goOsmoseServices();
-		Thread.sleep(3000);
+		Thread.sleep((Long.parseLong(Page.config.getProperty("Thread3000"))));
 		Page.driver.navigate().back();
 		osp.clickOnOU360();
-		Thread.sleep(2000);
+		Thread.sleep((Long.parseLong(Page.config.getProperty("Thread3000"))));
 		osp.clickMyOsmoseServices();
-		Thread.sleep(20000);
+		Thread.sleep((Long.parseLong(Page.config.getProperty("Thread20000"))));
 		osp.clickWoodTreatmentVideos();
-		Thread.sleep(3000);
+		Thread.sleep((Long.parseLong(Page.config.getProperty("Thread3000"))));
 		// Verify the presence of Back Button
 		WebElement BackButtonVideos = Page.driver
 				.findElement(By.xpath("//*[@id='contentPart3']/div/div/div/div/div/div/div[1]/div/h5/a"));
 		Assert.assertTrue(BackButtonVideos.isDisplayed());
-		Thread.sleep(3000);
+		Thread.sleep((Long.parseLong(Page.config.getProperty("Thread3000"))));
 		// Verify the presence Videos header text
 		String VideosHeaderTxt = Page.driver
 				.findElement(By.xpath("//*[@id='contentPart3']/div/div/div/div/div/div/div[1]/div/h5")).getText();
 		Assert.assertEquals(VideosHeaderTxt, "Videos");
-		Thread.sleep(3000);
+		Thread.sleep((Long.parseLong(Page.config.getProperty("Thread3000"))));
 		// Verification of the presence of video
 		WebElement VideoContent = Page.driver
 				.findElement(By.xpath("//*[@id='contentPart3']/div/div/div/div/div/div/div[2]/div/div[1]/div/img"));
 		Assert.assertTrue(VideoContent.isDisplayed());
-		Thread.sleep(3000);
+		Thread.sleep((Long.parseLong(Page.config.getProperty("Thread3000"))));
 	}
 
 	@Test(priority = 17, enabled = true, description = "Verify the click on Project Profiles under Wood Inspection and Treatment card")
 	public void verifyClickonWoodTreatmentProjectProfiles() throws InterruptedException {
 		KnowledgeBasePage kb = new KnowledgeBasePage();
 		OsmoseServicesPage osp = kb.goOsmoseServices();
-		Thread.sleep(3000);
+		Thread.sleep((Long.parseLong(Page.config.getProperty("Thread3000"))));
 		Page.driver.navigate().back();
 		osp.clickOnOU360();
-		Thread.sleep(2000);
+		Thread.sleep((Long.parseLong(Page.config.getProperty("Thread2000"))));
 		osp.clickMyOsmoseServices();
-		Thread.sleep(10000);
+		Thread.sleep((Long.parseLong(Page.config.getProperty("Thread10000"))));
 		osp.clickWoodTreatmentProjectProfiles();
-		Thread.sleep(3000);
+		Thread.sleep((Long.parseLong(Page.config.getProperty("Thread3000"))));
 		// Verify the presence of Back Button
 		WebElement BackBtnProjectProfiles = Page.driver
 				.findElement(By.xpath("//*[@id='contentPart5']/div/div/div/div/div/div/div[1]/div[1]/h5/a"));
 		Assert.assertTrue(BackBtnProjectProfiles.isDisplayed());
-		Thread.sleep(3000);
+		Thread.sleep((Long.parseLong(Page.config.getProperty("Thread3000"))));
 		// Verify the presence Document header text
 		String DocumentHeaderTxt = Page.driver
 				.findElement(By.xpath("//*[@id='contentPart5']/div/div/div/div/div/div/div[1]/div[1]/h5")).getText();
 		Assert.assertEquals(DocumentHeaderTxt, "Documents");
-		Thread.sleep(3000);
+		Thread.sleep((Long.parseLong(Page.config.getProperty("Thread3000"))));
 		// Verification of the presence of document
 		WebElement DocumentContent = Page.driver
 				.findElement(By.xpath("//div[@class='pagiNation p-0']/div[1]/div[1]/a"));
 		Assert.assertTrue(DocumentContent.isDisplayed());
-		Thread.sleep(3000);
+		Thread.sleep((Long.parseLong(Page.config.getProperty("Thread3000"))));
 	}
 
 	@Test(priority = 18, enabled = true, description = "Verification of the click on Wood Restoration card")
@@ -391,9 +386,9 @@ public class OsmoseServices extends BaseTest {
 		OsmoseServicesPage osp = kb.goOsmoseServices();
 		Page.driver.navigate().back();
 		osp.clickOnOU360();
-		Thread.sleep(2000);
+		Thread.sleep((Long.parseLong(Page.config.getProperty("Thread2000"))));
 		osp.clickMyOsmoseServices();
-		Thread.sleep(3000);
+		Thread.sleep((Long.parseLong(Page.config.getProperty("Thread3000"))));
 		osp.clickWoodRestoration();
 		WebElement InspectionSummary = Page.driver.findElement(By.xpath("//p[contains(text(), 'Inspection Summary')]"));
 		Assert.assertEquals(InspectionSummary.getText(), "Inspection Summary");
@@ -407,130 +402,130 @@ public class OsmoseServices extends BaseTest {
 	public void verifyClickonWoodRestorationVideos() throws InterruptedException {
 		KnowledgeBasePage kb = new KnowledgeBasePage();
 		OsmoseServicesPage osp = kb.goOsmoseServices();
-		Thread.sleep(3000);
+		Thread.sleep((Long.parseLong(Page.config.getProperty("Thread3000"))));
 		Page.driver.navigate().back();
 		osp.clickOnOU360();
-		Thread.sleep(2000);
+		Thread.sleep((Long.parseLong(Page.config.getProperty("Thread2000"))));
 		osp.clickMyOsmoseServices();
-		Thread.sleep(20000);
+		Thread.sleep((Long.parseLong(Page.config.getProperty("Thread20000"))));
 		osp.clickWoodRestorationVideos();
 		// Verify the presence of Back Button
 		WebElement BackButtonVideos = Page.driver
 				.findElement(By.xpath("//*[@id='contentPart3']/div/div/div/div/div/div/div[1]/div/h5/a"));
 		Assert.assertTrue(BackButtonVideos.isDisplayed());
-		Thread.sleep(3000);
+		Thread.sleep((Long.parseLong(Page.config.getProperty("Thread3000"))));
 		// Verify the presence Videos header text
 		String VideosHeaderTxt = Page.driver
 				.findElement(By.xpath("//*[@id='contentPart3']/div/div/div/div/div/div/div[1]/div/h5")).getText();
 		Assert.assertEquals(VideosHeaderTxt, "Videos");
-		Thread.sleep(3000);
+		Thread.sleep((Long.parseLong(Page.config.getProperty("Thread3000"))));
 		// Verification of the presence of video
 		WebElement VideoContent = Page.driver
 				.findElement(By.xpath("//*[@id='contentPart3']/div/div/div/div/div/div/div[2]/div/div[1]/div/img"));
 		Assert.assertTrue(VideoContent.isDisplayed());
-		Thread.sleep(3000);
+		Thread.sleep((Long.parseLong(Page.config.getProperty("Thread3000"))));
 	}
 
 	@Test(priority = 20, enabled = true, description = "Verify the click on Project Profiles under Wood Restoration card")
 	public void verifyClickonWoodRestorationProjectProfiles() throws InterruptedException {
 		KnowledgeBasePage kb = new KnowledgeBasePage();
 		OsmoseServicesPage osp = kb.goOsmoseServices();
-		Thread.sleep(3000);
+		Thread.sleep((Long.parseLong(Page.config.getProperty("Thread3000"))));
 		Page.driver.navigate().back();
 		osp.clickOnOU360();
-		Thread.sleep(2000);
+		Thread.sleep((Long.parseLong(Page.config.getProperty("Thread2000"))));
 		osp.clickMyOsmoseServices();
-		Thread.sleep(10000);
+		Thread.sleep((Long.parseLong(Page.config.getProperty("Thread10000"))));
 		osp.clickWoodRestorationProjectProfiles();
-		Thread.sleep(3000);
+		Thread.sleep((Long.parseLong(Page.config.getProperty("Thread3000"))));
 		// Verify the presence of Back Button
 		WebElement BackBtnProjectProfiles = Page.driver
 				.findElement(By.xpath("//*[@id='contentPart5']/div/div/div/div/div/div/div[1]/div[1]/h5/a"));
 		Assert.assertTrue(BackBtnProjectProfiles.isDisplayed());
-		Thread.sleep(3000);
+		Thread.sleep((Long.parseLong(Page.config.getProperty("Thread3000"))));
 		// Verify the presence Document header text
 		String DocumentHeaderTxt = Page.driver
 				.findElement(By.xpath("//*[@id='contentPart5']/div/div/div/div/div/div/div[1]/div[1]/h5")).getText();
 		Assert.assertEquals(DocumentHeaderTxt, "Documents");
-		Thread.sleep(3000);
+		Thread.sleep((Long.parseLong(Page.config.getProperty("Thread3000"))));
 		// Verification of the presence of document
 		WebElement DocumentContent = Page.driver
 				.findElement(By.xpath("//div[@class='pagiNation p-0']/div[1]/div[1]/a"));
 		Assert.assertTrue(DocumentContent.isDisplayed());
-		Thread.sleep(3000);
+		Thread.sleep((Long.parseLong(Page.config.getProperty("Thread3000"))));
 	}
 
 	@Test(priority = 21, enabled = true, description = "Verify the click on Videos under Underground card")
 	public void verifyClickonUndergroundVideos() throws InterruptedException {
 		KnowledgeBasePage kb = new KnowledgeBasePage();
 		OsmoseServicesPage osp = kb.goOsmoseServices();
-		Thread.sleep(3000);
+		Thread.sleep((Long.parseLong(Page.config.getProperty("Thread3000"))));
 		Page.driver.navigate().back();
 		osp.clickOnOU360();
-		Thread.sleep(2000);
+		Thread.sleep((Long.parseLong(Page.config.getProperty("Thread2000"))));
 		osp.clickMyOsmoseServices();
-		Thread.sleep(10000);
+		Thread.sleep((Long.parseLong(Page.config.getProperty("Thread10000"))));
 		osp.clickUndergroundVideos();
-		Thread.sleep(3000);
+		Thread.sleep((Long.parseLong(Page.config.getProperty("Thread3000"))));
 		// Verify the presence of Back Button
 		WebElement BackButtonVideos = Page.driver
 				.findElement(By.xpath("//*[@id='contentPart3']/div/div/div/div/div/div/div[1]/div/h5/a"));
 		Assert.assertTrue(BackButtonVideos.isDisplayed());
-		Thread.sleep(3000);
+		Thread.sleep((Long.parseLong(Page.config.getProperty("Thread3000"))));
 		// Verify the presence Videos header text
 		String VideosHeaderTxt = Page.driver
 				.findElement(By.xpath("//*[@id='contentPart3']/div/div/div/div/div/div/div[1]/div/h5")).getText();
 		Assert.assertEquals(VideosHeaderTxt, "Videos");
-		Thread.sleep(3000);
+		Thread.sleep((Long.parseLong(Page.config.getProperty("Thread3000"))));
 		// Verification of the presence of video
 		WebElement VideoContent = Page.driver
 				.findElement(By.xpath("//*[@id='contentPart3']/div/div/div/div/div/div/div[2]/div/div[1]/div/img"));
 		Assert.assertTrue(VideoContent.isDisplayed());
-		Thread.sleep(3000);
+		Thread.sleep((Long.parseLong(Page.config.getProperty("Thread3000"))));
 	}
 
 	@Test(priority = 22, enabled = true, description = "Verify the click on Project Profiles under Underground card")
 	public void verifyClickonUndergroundProjectProfiles() throws InterruptedException {
 		KnowledgeBasePage kb = new KnowledgeBasePage();
 		OsmoseServicesPage osp = kb.goOsmoseServices();
-		Thread.sleep(3000);
+		Thread.sleep((Long.parseLong(Page.config.getProperty("Thread3000"))));
 		Page.driver.navigate().back();
 		osp.clickOnOU360();
-		Thread.sleep(2000);
+		Thread.sleep((Long.parseLong(Page.config.getProperty("Thread2000"))));
 		osp.clickMyOsmoseServices();
-		Thread.sleep(10000);
+		Thread.sleep((Long.parseLong(Page.config.getProperty("Thread10000"))));
 		osp.clickUnderstandProjectProfiles();
-		Thread.sleep(3000);
+		Thread.sleep((Long.parseLong(Page.config.getProperty("Thread3000"))));
 		// Verify the presence of Back Button
 		WebElement BackBtnProjectProfiles = Page.driver
 				.findElement(By.xpath("//*[@id='contentPart5']/div/div/div/div/div/div/div[1]/div[1]/h5/a"));
 		Assert.assertTrue(BackBtnProjectProfiles.isDisplayed());
-		Thread.sleep(3000);
+		Thread.sleep((Long.parseLong(Page.config.getProperty("Thread3000"))));
 		// Verify the presence Document header text
 		String DocumentHeaderTxt = Page.driver
 				.findElement(By.xpath("//*[@id='contentPart5']/div/div/div/div/div/div/div[1]/div[1]/h5")).getText();
 		Assert.assertEquals(DocumentHeaderTxt, "Documents");
-		Thread.sleep(3000);
+		Thread.sleep((Long.parseLong(Page.config.getProperty("Thread3000"))));
 		// Verification of the presence of document
 		WebElement DocumentContent = Page.driver
 				.findElement(By.xpath("//div[@class='pagiNation p-0']/div[1]/div[1]/a"));
 		Assert.assertTrue(DocumentContent.isDisplayed());
-		Thread.sleep(3000);
+		Thread.sleep((Long.parseLong(Page.config.getProperty("Thread3000"))));
 	}
 
 	@Test(priority = 23, enabled = true, description = "Verify the pop-up after click on Underground card")
 	public void verifyPopUpUnderground() throws InterruptedException {
 		KnowledgeBasePage kb = new KnowledgeBasePage();
 		OsmoseServicesPage osp = kb.goOsmoseServices();
-		Thread.sleep(3000);
+		Thread.sleep((Long.parseLong(Page.config.getProperty("Thread3000"))));
 		Page.driver.navigate().back();
-		Thread.sleep(3000);
+		Thread.sleep((Long.parseLong(Page.config.getProperty("Thread3000"))));
 		osp.clickOnOU360();
-		Thread.sleep(2000);
+		Thread.sleep((Long.parseLong(Page.config.getProperty("Thread2000"))));
 		osp.clickMyOsmoseServices();
-		Thread.sleep(2000);
+		Thread.sleep((Long.parseLong(Page.config.getProperty("Thread2000"))));
 		osp.clickUnderground();
-		Thread.sleep(3000);
+		Thread.sleep((Long.parseLong(Page.config.getProperty("Thread2000"))));
 		WebElement popUptxt = Page.driver
 				.findElement(By.xpath("//*[contains(text(),'Taking you to form to Request Setup for this Project')]"));
 		Assert.assertEquals(popUptxt.getText(), "Taking you to form to Request Setup for this Project");
@@ -546,7 +541,7 @@ public class OsmoseServices extends BaseTest {
 	public void verifyCancelClickOnPopUpUnderground() throws InterruptedException {
 		KnowledgeBasePage kb = new KnowledgeBasePage();
 		OsmoseServicesPage osp = kb.goOsmoseServices();
-		Thread.sleep(3000);
+		Thread.sleep((Long.parseLong(Page.config.getProperty("Thread3000"))));
 		WebElement cancelBtn = Page.driver
 				.findElement(By.xpath("//button[contains(text(),'CANCEL')]"));
 		Assert.assertTrue(cancelBtn.isDisplayed());
@@ -561,9 +556,9 @@ public class OsmoseServices extends BaseTest {
 	public void verifyOkClickOnPopUpUnderground() throws InterruptedException {
 		KnowledgeBasePage kb = new KnowledgeBasePage();
 		OsmoseServicesPage osp = kb.goOsmoseServices();
-		Thread.sleep(3000);
+		Thread.sleep((Long.parseLong(Page.config.getProperty("Thread3000"))));
 		osp.clickUnderground();
-		Thread.sleep(2000);
+		Thread.sleep((Long.parseLong(Page.config.getProperty("Thread2000"))));
 		WebElement okBtn = Page.driver
 				.findElement(By.xpath("//button[contains(text(),'OK')]"));
 		Assert.assertTrue(okBtn.isDisplayed());
