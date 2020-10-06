@@ -6,14 +6,20 @@
     <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
     <listener class-name="com.OSMOSE.listeners.CustomListeners"/>
   </listeners>
-  <test thread-count="5" name="OULogin(failed)">
+  <test thread-count="5" name="OCalcPro(failed)">
     <classes>
-      <class name="com.OSMOSE.testcases.OULogin">
+      <class name="com.OSMOSE.testcases.oCalcPro">
         <methods>
+          <include name="verifyPresenceOfCreditCardOptions"/>
           <include name="tearDown"/>
-          <include name="verifyWebinarsClick"/>
+          <include name="verifyClickMakePaymentBtn"/>
+          <include name="verifyPresenceOfCCReceipt"/>
+          <include name="verifyDifferentProductsQuoteCreate"/>
+          <include name="verifyClickOnPaywithCCBtn"/>
+          <include name="verifyCCDetailsForNonOCalcProduct"/>
+          <include name="verifyClickIhaveCopiedMyReceiptChkBox"/>
         </methods>
-      </class> <!-- com.OSMOSE.testcases.OULogin -->
+      </class> <!-- com.OSMOSE.testcases.oCalcPro -->
     </classes>
-  </test> <!-- OULogin(failed) -->
+  </test> <!-- OCalcPro(failed) -->
 </suite> <!-- Failed suite [OSMOSE Test] -->

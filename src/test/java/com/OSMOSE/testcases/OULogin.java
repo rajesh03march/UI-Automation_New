@@ -57,11 +57,9 @@ public class OULogin extends BaseTest {
 		Login Lo = new Login();
 		HomeOU ou = Lo.goHomeOU();
 		ou.clickOsmoseUniversityNavigation();
-		//Thread.sleep(3000);
 		String time = p.config.getProperty("Thread1000");
 		System.out.println(time);
 		Thread.sleep((Long.parseLong(p.config.getProperty("Thread1000"))));
-		// Thread.sleep(Integer.parseInt(config.getProperty("Thread1000")));
 		Assert.assertEquals(Page.getText("OsmoseUniversityTxt_XPATH"), "Osmose University");
 		Page.click("OUHomePage_XPATH");
 
@@ -82,7 +80,8 @@ public class OULogin extends BaseTest {
 		Login Lo = new Login();
 		HomeOU ou = Lo.goHomeOU();
 		ou.clickWebinarLink();
-		Assert.assertEquals(Page.getText("WEBINAR_XPATH"), "WEBINARS");
+		Thread.sleep((Long.parseLong(p.config.getProperty("Thread1000"))));
+		Assert.assertEquals(Page.getText("WEBINAR_XPATH"), "UPCOMING WEBINARS");
 		Page.driver.navigate().back();
 	}
 
@@ -223,7 +222,7 @@ public class OULogin extends BaseTest {
 		HomeOU ou = Lo.goHomeOU();
 		ou.clickWebinars();
 		Page.click("HISTORICAL_XPATH");
-		Thread.sleep(3000);
+		Thread.sleep((Long.parseLong(p.config.getProperty("Thread3000"))));
 		// Verification of the presence of Search Bar
 		WebElement historicalSearchBar = Page.driver
 				.findElement(By.xpath("//input[@class='inputSearch form-control']"));
@@ -232,7 +231,7 @@ public class OULogin extends BaseTest {
 		Assert.assertEquals(Page.getText("HistoricalVideos_XPATH"), "Historical Webinars");
 		Page.type("historicalSearchBar_XPATH", data.get("TypeHistoricalSearchBar"));
 		Page.driver.findElement(By.xpath("//input[@class='inputSearch form-control']")).sendKeys(Keys.ENTER);
-		Thread.sleep(3000);
+		Thread.sleep((Long.parseLong(p.config.getProperty("Thread3000"))));
 		WebElement videoContent = Page.driver
 				.findElement(By.xpath("//div[@class='vTitle' and contains(text(), 'Osmose Fire-Guard')]"));
 		Assert.assertTrue(videoContent.isDisplayed());
@@ -250,8 +249,10 @@ public class OULogin extends BaseTest {
 		Page.click("HISTORICAL_XPATH");
 		Page.type("historicalSearchBar_XPATH", data.get("TypeHistoricalSearchBarInvalid"));
 		Page.driver.findElement(By.xpath("//input[@class='inputSearch form-control']")).sendKeys(Keys.ENTER);
-		WebElement noresults = Page.driver.findElement(By.xpath("//div[@class='text-center dismissCountDown']/div[1]"));
-		System.out.println(noresults.getText());
+		WebElement noresults = Page.driver.findElement(By.xpath("//div[@class='alert alert-dismissible alert-danger']"));
+		String text = noresults.getText();
+		String newtext = text.substring(text.indexOf('\n')+1);
+		Assert.assertEquals(newtext,"No results match your search criteria.");
 		Page.click("SearchBoxClear_XPATH");
 	}
 
@@ -263,7 +264,7 @@ public class OULogin extends BaseTest {
 		HomeOU ou = Lo.goHomeOU();
 		ou.clickWebinars();
 		Page.click("HISTORICAL_XPATH");
-		Thread.sleep(3000);
+		Thread.sleep((Long.parseLong(p.config.getProperty("Thread3000"))));
 		// Verification of the presence of Search Bar
 		WebElement historicalSearchBar = Page.driver
 				.findElement(By.xpath("//input[@class='inputSearch form-control']"));
@@ -272,7 +273,7 @@ public class OULogin extends BaseTest {
 		Assert.assertEquals(Page.getText("HistoricalVideos_XPATH"), "Historical Webinars");
 		Page.type("historicalSearchBar_XPATH", data.get("TypeHistoricalSearchBarSort"));
 		Page.driver.findElement(By.xpath("//input[@class='inputSearch form-control']")).sendKeys(Keys.ENTER);
-		Thread.sleep(3000);
+		Thread.sleep((Long.parseLong(p.config.getProperty("Thread3000"))));
 		WebElement videoContent = Page.driver
 				.findElement(By.xpath("//div[@class='vTitle' and contains(text(), 'Osmose Fire-Guard')]"));
 		Assert.assertTrue(videoContent.isDisplayed());
@@ -290,11 +291,11 @@ public class OULogin extends BaseTest {
 		Page.click("HISTORICAL_XPATH");
 		Page.type("historicalSearchBar_XPATH", data.get("TypeHistoricalClearSearch"));
 		Page.driver.findElement(By.xpath("//input[@class='inputSearch form-control']")).sendKeys(Keys.ENTER);
-		Thread.sleep(3000);
+		Thread.sleep((Long.parseLong(p.config.getProperty("Thread3000"))));
 		Page.click("SearchBoxClear_XPATH");
 		Page.type("historicalSearchBar_XPATH", data.get("TypeHistoricalClearSearch"));
 		Page.driver.findElement(By.xpath("//input[@class='inputSearch form-control']")).sendKeys(Keys.ENTER);
-		Thread.sleep(3000);
+		Thread.sleep((Long.parseLong(p.config.getProperty("Thread3000"))));
 		Page.click("ClearSearchBtn_XPATH");
 	}
 
@@ -306,14 +307,14 @@ public class OULogin extends BaseTest {
 		HomeOU ou = Lo.goHomeOU();
 		ou.clickWebinars();
 		Page.click("HISTORICAL_XPATH");
-		Thread.sleep(3000);
+		Thread.sleep((Long.parseLong(p.config.getProperty("Thread3000"))));
 		// Verification of the presence of Search Bar
 		WebElement historicalSearchBar = Page.driver
 				.findElement(By.xpath("//input[@class='inputSearch form-control']"));
 		Assert.assertTrue(historicalSearchBar.isDisplayed());
 		// Verification of Videos Text
 		Assert.assertEquals(Page.getText("HistoricalVideos_XPATH"), "Historical Webinars");
-		Thread.sleep(3000);
+		Thread.sleep((Long.parseLong(p.config.getProperty("Thread3000"))));
 		WebElement videoTitle = Page.driver
 				.findElement(By.xpath("//div[@class='vTitle' and contains(text(), 'Osmose Fire-Guard')]"));
 		Assert.assertTrue(videoTitle.isDisplayed());
@@ -323,7 +324,7 @@ public class OULogin extends BaseTest {
 		Assert.assertTrue(videoDescription.isDisplayed());
 		Assert.assertEquals(Page.getText("HistoricalVideoDescription_XPATH"), "Osmose Fire-Guard");
 		videoTitle.click();
-		Thread.sleep(8000);
+		Thread.sleep((Long.parseLong(p.config.getProperty("Thread8000"))));
 		Page.click("OUBoxCloseBtn_XPATH");
 	}
 
@@ -336,14 +337,14 @@ public class OULogin extends BaseTest {
 		HomeOU ou = Lo.goHomeOU();
 		ou.clickWebinars();
 		Page.click("HISTORICAL_XPATH");
-		Thread.sleep(3000);
+		Thread.sleep((Long.parseLong(p.config.getProperty("Thread3000"))));
 		// Verification of the presence of Popular filter
 		WebElement historicalPopularFilter = Page.driver.findElement(By.xpath("//a[@id='Filter']"));
 		Assert.assertTrue(historicalPopularFilter.isDisplayed());
 		Page.click("RestorationPopularFilter_XPATH");
-		Thread.sleep(3000);
+		Thread.sleep((Long.parseLong(p.config.getProperty("Thread3000"))));
 		Assert.assertEquals(Page.getText("HistoricalVideos_XPATH"), "Historical Webinars");
-		Thread.sleep(3000);
+		Thread.sleep((Long.parseLong(p.config.getProperty("Thread3000"))));
 		WebElement videoTitle = Page.driver
 				.findElement(By.xpath("//div[@class='vTitle' and contains(text(), 'OsmoWeld MPF Pole Repair')]"));
 		Assert.assertTrue(videoTitle.isDisplayed());
@@ -352,7 +353,7 @@ public class OULogin extends BaseTest {
 				By.xpath("//div[@class='vDesc text-left font12px' and contains(text(), 'OsmoWeld MPF & LV')]"));
 		Assert.assertTrue(videoDescription.isDisplayed());
 		Assert.assertEquals(Page.getText("RestorationHVideoDescription_XPATH"), "OsmoWeld MPF & LV");
-		Thread.sleep(3000);
+		Thread.sleep((Long.parseLong(p.config.getProperty("Thread3000"))));
 		Page.click("ClearSearchBtn_XPATH");
 	}
 	
@@ -363,12 +364,12 @@ public class OULogin extends BaseTest {
 		HomeOU ou = Lo.goHomeOU();
 		ou.clickWebinars();
 		Page.click("HISTORICAL_XPATH");
-		Thread.sleep(3000);
+		Thread.sleep((Long.parseLong(p.config.getProperty("Thread3000"))));
 		// Verification of the presence of Popular filter
 		WebElement historicalPopularFilter = Page.driver.findElement(By.xpath("//a[@id='Filter']"));
 		Assert.assertTrue(historicalPopularFilter.isDisplayed());
 		Page.click("RestorationPopularFilter_XPATH");
-		Thread.sleep(2000);
+		Thread.sleep((Long.parseLong(p.config.getProperty("Thread2000"))));
 		WebElement videoTitle = Page.driver
 				.findElement(By.xpath("//div[@class='vTitle' and contains(text(), 'OsmoWeld MPF Pole Repair')]"));
 		Assert.assertTrue(videoTitle.isDisplayed());
@@ -377,9 +378,9 @@ public class OULogin extends BaseTest {
 				By.xpath("//div[@class='vDesc text-left font12px' and contains(text(), 'OsmoWeld MPF & LV')]"));
 		Assert.assertTrue(videoDescription.isDisplayed());
 		Assert.assertEquals(Page.getText("RestorationHVideoDescription_XPATH"), "OsmoWeld MPF & LV");
-		Thread.sleep(2000);
+		Thread.sleep((Long.parseLong(p.config.getProperty("Thread2000"))));
 		Page.click("ClearSearchBtn_XPATH");
-		Thread.sleep(3000);
+		Thread.sleep((Long.parseLong(p.config.getProperty("Thread3000"))));
 		WebElement videoTitle1 = Page.driver
 				.findElement(By.xpath("//div[@class='vTitle' and contains(text(), 'Osmose Fire-Guard')]"));
 		Assert.assertTrue(videoTitle1.isDisplayed());

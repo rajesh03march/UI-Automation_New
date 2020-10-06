@@ -1,32 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuite name="MyOsmoseServices"
            tests="25"
-           failures="6"
+           failures="4"
            errors="0"
            skipped="0"
-           time="613.628">
+           time="453.048">
   <properties />
-            <testcase name="verifyClickonWoodRestorationVideos" time="77.796" classname="com.OSMOSE.testcases.OsmoseServices">
+            <testcase name="verifyClickonWoodRestorationVideos" time="77.870" classname="com.OSMOSE.testcases.OsmoseServices">
                 <failure type="org.openqa.selenium.NoSuchElementException"
-                  message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&apos;contentPart3&apos;]/div/div/div/div/div/div/div[1]/div/h5/a&quot;}
+                  message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[contains(text(),&apos;No results match your search criteria&apos;)]&quot;}
   (Session info: chrome=85.0.4183.102)
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
 System info: host: &apos;5CG6323N27&apos;, ip: &apos;192.168.0.11&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_191&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 85.0.4183.102, chrome: {chromedriverVersion: 85.0.4183.87 (cd6713ebf92fa..., userDataDir: C:\Windows\Temp\scoped_dir1...}, goog:chromeOptions: {debuggerAddress: localhost:52647}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: none, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 5a7dee32274d3786d6df32a0d69ee424
-*** Element info: {Using=xpath, value=//*[@id=&apos;contentPart3&apos;]/div/div/div/div/div/div/div[1]/div/h5/a}"
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 85.0.4183.102, chrome: {chromedriverVersion: 85.0.4183.87 (cd6713ebf92fa..., userDataDir: C:\Windows\Temp\scoped_dir1...}, goog:chromeOptions: {debuggerAddress: localhost:60358}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: none, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: a97474b7e9290e5148c885c9124be23f
+*** Element info: {Using=xpath, value=//div[contains(text(),&apos;No results match your search criteria&apos;)]}"
               >
-<![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id='contentPart3']/div/div/div/div/div/div/div[1]/div/h5/a"}
+<![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[contains(text(),'No results match your search criteria')]"}
   (Session info: chrome=85.0.4183.102)
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
 System info: host: '5CG6323N27', ip: '192.168.0.11', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 85.0.4183.102, chrome: {chromedriverVersion: 85.0.4183.87 (cd6713ebf92fa..., userDataDir: C:\Windows\Temp\scoped_dir1...}, goog:chromeOptions: {debuggerAddress: localhost:52647}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: none, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 5a7dee32274d3786d6df32a0d69ee424
-*** Element info: {Using=xpath, value=//*[@id='contentPart3']/div/div/div/div/div/div/div[1]/div/h5/a}
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 85.0.4183.102, chrome: {chromedriverVersion: 85.0.4183.87 (cd6713ebf92fa..., userDataDir: C:\Windows\Temp\scoped_dir1...}, goog:chromeOptions: {debuggerAddress: localhost:60358}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: none, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: a97474b7e9290e5148c885c9124be23f
+*** Element info: {Using=xpath, value=//div[contains(text(),'No results match your search criteria')]}
   sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
   sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
   sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
@@ -41,7 +41,7 @@ Session ID: 5a7dee32274d3786d6df32a0d69ee424
   org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:424)
   org.openqa.selenium.By$ByXPath.findElement(By.java:353)
   org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
-  com.OSMOSE.testcases.OsmoseServices.verifyClickonWoodRestorationVideos(OsmoseServices.java:419)
+  com.OSMOSE.testcases.OsmoseServices.verifyClickonWoodRestorationVideos(OsmoseServices.java:435)
   sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
   sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
   sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -74,27 +74,23 @@ Session ID: 5a7dee32274d3786d6df32a0d69ee424
       </failure>
 
           </testcase>
-            <testcase name="verifyClickonWoodTreatmentVideos" time="80.601" classname="com.OSMOSE.testcases.OsmoseServices">
-                <failure type="org.openqa.selenium.NoSuchElementException"
-                  message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&apos;contentPart3&apos;]/div/div/div/div/div/div/div[1]/div/h5/a&quot;}
+            <testcase name="verifyClickonWoodTreatmentVideos" time="28.903" classname="com.OSMOSE.testcases.OsmoseServices">
+                <failure type="org.openqa.selenium.ElementClickInterceptedException"
+                  message="element click intercepted: Element &lt;span data-v-2065c720=&quot;&quot;&gt;...&lt;/span&gt; is not clickable at point (140, 275). Other element would receive the click: &lt;div id=&quot;o360Modal&quot; role=&quot;dialog&quot; aria-describedby=&quot;o360Modal___BV_modal_body_&quot; class=&quot;modal fade show&quot; aria-modal=&quot;true&quot; style=&quot;display: block;&quot;&gt;...&lt;/div&gt;
   (Session info: chrome=85.0.4183.102)
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
 System info: host: &apos;5CG6323N27&apos;, ip: &apos;192.168.0.11&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_191&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 85.0.4183.102, chrome: {chromedriverVersion: 85.0.4183.87 (cd6713ebf92fa..., userDataDir: C:\Windows\Temp\scoped_dir1...}, goog:chromeOptions: {debuggerAddress: localhost:52647}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: none, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 5a7dee32274d3786d6df32a0d69ee424
-*** Element info: {Using=xpath, value=//*[@id=&apos;contentPart3&apos;]/div/div/div/div/div/div/div[1]/div/h5/a}"
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 85.0.4183.102, chrome: {chromedriverVersion: 85.0.4183.87 (cd6713ebf92fa..., userDataDir: C:\Windows\Temp\scoped_dir1...}, goog:chromeOptions: {debuggerAddress: localhost:60358}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: none, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: a97474b7e9290e5148c885c9124be23f"
               >
-<![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id='contentPart3']/div/div/div/div/div/div/div[1]/div/h5/a"}
+<![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <span data-v-2065c720="">...</span> is not clickable at point (140, 275). Other element would receive the click: <div id="o360Modal" role="dialog" aria-describedby="o360Modal___BV_modal_body_" class="modal fade show" aria-modal="true" style="display: block;">...</div>
   (Session info: chrome=85.0.4183.102)
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
 System info: host: '5CG6323N27', ip: '192.168.0.11', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 85.0.4183.102, chrome: {chromedriverVersion: 85.0.4183.87 (cd6713ebf92fa..., userDataDir: C:\Windows\Temp\scoped_dir1...}, goog:chromeOptions: {debuggerAddress: localhost:52647}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: none, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 5a7dee32274d3786d6df32a0d69ee424
-*** Element info: {Using=xpath, value=//*[@id='contentPart3']/div/div/div/div/div/div/div[1]/div/h5/a}
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 85.0.4183.102, chrome: {chromedriverVersion: 85.0.4183.87 (cd6713ebf92fa..., userDataDir: C:\Windows\Temp\scoped_dir1...}, goog:chromeOptions: {debuggerAddress: localhost:60358}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: none, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: a97474b7e9290e5148c885c9124be23f
   sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
   sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
   sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
@@ -105,11 +101,11 @@ Session ID: 5a7dee32274d3786d6df32a0d69ee424
   org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
   org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
   org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
-  org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
-  org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:424)
-  org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-  org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
-  com.OSMOSE.testcases.OsmoseServices.verifyClickonWoodTreatmentVideos(OsmoseServices.java:344)
+  org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:276)
+  org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
+  com.OSMOSE.base.Page.click(Page.java:180)
+  com.OSMOSE.pages.OU.OsmoseServicesPage.clickWoodTreatmentVideos(OsmoseServicesPage.java:90)
+  com.OSMOSE.testcases.OsmoseServices.verifyClickonWoodTreatmentVideos(OsmoseServices.java:340)
   sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
   sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
   sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -142,27 +138,27 @@ Session ID: 5a7dee32274d3786d6df32a0d69ee424
       </failure>
 
           </testcase>
-            <testcase name="verifyClickonWoodTreatmentProjectProfiles" time="70.741" classname="com.OSMOSE.testcases.OsmoseServices">
+            <testcase name="verifyClickonWoodTreatmentProjectProfiles" time="57.416" classname="com.OSMOSE.testcases.OsmoseServices">
                 <failure type="org.openqa.selenium.NoSuchElementException"
-                  message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&apos;contentPart5&apos;]/div/div/div/div/div/div/div[1]/div[1]/h5/a&quot;}
+                  message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//p[@class=&apos;card-head-text&apos; and text()=&apos;My Osmose Services&apos;]&quot;}
   (Session info: chrome=85.0.4183.102)
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
 System info: host: &apos;5CG6323N27&apos;, ip: &apos;192.168.0.11&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_191&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 85.0.4183.102, chrome: {chromedriverVersion: 85.0.4183.87 (cd6713ebf92fa..., userDataDir: C:\Windows\Temp\scoped_dir1...}, goog:chromeOptions: {debuggerAddress: localhost:52647}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: none, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 5a7dee32274d3786d6df32a0d69ee424
-*** Element info: {Using=xpath, value=//*[@id=&apos;contentPart5&apos;]/div/div/div/div/div/div/div[1]/div[1]/h5/a}"
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 85.0.4183.102, chrome: {chromedriverVersion: 85.0.4183.87 (cd6713ebf92fa..., userDataDir: C:\Windows\Temp\scoped_dir1...}, goog:chromeOptions: {debuggerAddress: localhost:60358}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: none, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: a97474b7e9290e5148c885c9124be23f
+*** Element info: {Using=xpath, value=//p[@class=&apos;card-head-text&apos; and text()=&apos;My Osmose Services&apos;]}"
               >
-<![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id='contentPart5']/div/div/div/div/div/div/div[1]/div[1]/h5/a"}
+<![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//p[@class='card-head-text' and text()='My Osmose Services']"}
   (Session info: chrome=85.0.4183.102)
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
 System info: host: '5CG6323N27', ip: '192.168.0.11', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 85.0.4183.102, chrome: {chromedriverVersion: 85.0.4183.87 (cd6713ebf92fa..., userDataDir: C:\Windows\Temp\scoped_dir1...}, goog:chromeOptions: {debuggerAddress: localhost:52647}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: none, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 5a7dee32274d3786d6df32a0d69ee424
-*** Element info: {Using=xpath, value=//*[@id='contentPart5']/div/div/div/div/div/div/div[1]/div[1]/h5/a}
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 85.0.4183.102, chrome: {chromedriverVersion: 85.0.4183.87 (cd6713ebf92fa..., userDataDir: C:\Windows\Temp\scoped_dir1...}, goog:chromeOptions: {debuggerAddress: localhost:60358}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: none, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: a97474b7e9290e5148c885c9124be23f
+*** Element info: {Using=xpath, value=//p[@class='card-head-text' and text()='My Osmose Services']}
   sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
   sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
   sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
@@ -177,7 +173,9 @@ Session ID: 5a7dee32274d3786d6df32a0d69ee424
   org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:424)
   org.openqa.selenium.By$ByXPath.findElement(By.java:353)
   org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
-  com.OSMOSE.testcases.OsmoseServices.verifyClickonWoodTreatmentProjectProfiles(OsmoseServices.java:373)
+  com.OSMOSE.base.Page.click(Page.java:180)
+  com.OSMOSE.pages.OU.OsmoseServicesPage.clickMyOsmoseServices(OsmoseServicesPage.java:14)
+  com.OSMOSE.testcases.OsmoseServices.verifyClickonWoodTreatmentProjectProfiles(OsmoseServices.java:367)
   sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
   sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
   sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -210,27 +208,27 @@ Session ID: 5a7dee32274d3786d6df32a0d69ee424
       </failure>
 
           </testcase>
-            <testcase name="verifyClickonWoodRestorationProjectProfiles" time="70.808" classname="com.OSMOSE.testcases.OsmoseServices">
+            <testcase name="VerifyWoodRestorationclick" time="54.265" classname="com.OSMOSE.testcases.OsmoseServices">
                 <failure type="org.openqa.selenium.NoSuchElementException"
-                  message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&apos;contentPart5&apos;]/div/div/div/div/div/div/div[1]/div[1]/h5/a&quot;}
+                  message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//p[@class=&apos;card-head-text&apos; and text()=&apos;My Osmose Services&apos;]&quot;}
   (Session info: chrome=85.0.4183.102)
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
 System info: host: &apos;5CG6323N27&apos;, ip: &apos;192.168.0.11&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_191&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 85.0.4183.102, chrome: {chromedriverVersion: 85.0.4183.87 (cd6713ebf92fa..., userDataDir: C:\Windows\Temp\scoped_dir1...}, goog:chromeOptions: {debuggerAddress: localhost:52647}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: none, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 5a7dee32274d3786d6df32a0d69ee424
-*** Element info: {Using=xpath, value=//*[@id=&apos;contentPart5&apos;]/div/div/div/div/div/div/div[1]/div[1]/h5/a}"
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 85.0.4183.102, chrome: {chromedriverVersion: 85.0.4183.87 (cd6713ebf92fa..., userDataDir: C:\Windows\Temp\scoped_dir1...}, goog:chromeOptions: {debuggerAddress: localhost:60358}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: none, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: a97474b7e9290e5148c885c9124be23f
+*** Element info: {Using=xpath, value=//p[@class=&apos;card-head-text&apos; and text()=&apos;My Osmose Services&apos;]}"
               >
-<![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id='contentPart5']/div/div/div/div/div/div/div[1]/div[1]/h5/a"}
+<![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//p[@class='card-head-text' and text()='My Osmose Services']"}
   (Session info: chrome=85.0.4183.102)
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
 System info: host: '5CG6323N27', ip: '192.168.0.11', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 85.0.4183.102, chrome: {chromedriverVersion: 85.0.4183.87 (cd6713ebf92fa..., userDataDir: C:\Windows\Temp\scoped_dir1...}, goog:chromeOptions: {debuggerAddress: localhost:52647}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: none, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 5a7dee32274d3786d6df32a0d69ee424
-*** Element info: {Using=xpath, value=//*[@id='contentPart5']/div/div/div/div/div/div/div[1]/div[1]/h5/a}
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 85.0.4183.102, chrome: {chromedriverVersion: 85.0.4183.87 (cd6713ebf92fa..., userDataDir: C:\Windows\Temp\scoped_dir1...}, goog:chromeOptions: {debuggerAddress: localhost:60358}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: none, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: a97474b7e9290e5148c885c9124be23f
+*** Element info: {Using=xpath, value=//p[@class='card-head-text' and text()='My Osmose Services']}
   sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
   sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
   sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
@@ -245,143 +243,9 @@ Session ID: 5a7dee32274d3786d6df32a0d69ee424
   org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:424)
   org.openqa.selenium.By$ByXPath.findElement(By.java:353)
   org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
-  com.OSMOSE.testcases.OsmoseServices.verifyClickonWoodRestorationProjectProfiles(OsmoseServices.java:448)
-  sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-  sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-  sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-  java.lang.reflect.Method.invoke(Unknown Source)
-  org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
-  org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
-  org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-  org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-  org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
-  org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-  org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-  org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-  java.util.ArrayList.forEach(Unknown Source)
-  org.testng.TestRunner.privateRun(TestRunner.java:766)
-  org.testng.TestRunner.run(TestRunner.java:587)
-  org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
-  org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
-  org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
-  org.testng.SuiteRunner.run(SuiteRunner.java:286)
-  org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-  org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-  org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
-  org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
-  org.testng.TestNG.runSuites(TestNG.java:1039)
-  org.testng.TestNG.run(TestNG.java:1007)
-  org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-  org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-  org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-      </failure>
-
-          </testcase>
-            <testcase name="verifyClickonUndergroundVideos" time="70.674" classname="com.OSMOSE.testcases.OsmoseServices">
-                <failure type="org.openqa.selenium.NoSuchElementException"
-                  message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&apos;contentPart3&apos;]/div/div/div/div/div/div/div[1]/div/h5/a&quot;}
-  (Session info: chrome=85.0.4183.102)
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
-System info: host: &apos;5CG6323N27&apos;, ip: &apos;192.168.0.11&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_191&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 85.0.4183.102, chrome: {chromedriverVersion: 85.0.4183.87 (cd6713ebf92fa..., userDataDir: C:\Windows\Temp\scoped_dir1...}, goog:chromeOptions: {debuggerAddress: localhost:52647}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: none, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 5a7dee32274d3786d6df32a0d69ee424
-*** Element info: {Using=xpath, value=//*[@id=&apos;contentPart3&apos;]/div/div/div/div/div/div/div[1]/div/h5/a}"
-              >
-<![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id='contentPart3']/div/div/div/div/div/div/div[1]/div/h5/a"}
-  (Session info: chrome=85.0.4183.102)
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
-System info: host: '5CG6323N27', ip: '192.168.0.11', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 85.0.4183.102, chrome: {chromedriverVersion: 85.0.4183.87 (cd6713ebf92fa..., userDataDir: C:\Windows\Temp\scoped_dir1...}, goog:chromeOptions: {debuggerAddress: localhost:52647}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: none, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 5a7dee32274d3786d6df32a0d69ee424
-*** Element info: {Using=xpath, value=//*[@id='contentPart3']/div/div/div/div/div/div/div[1]/div/h5/a}
-  sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-  sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-  sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-  java.lang.reflect.Constructor.newInstance(Unknown Source)
-  org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-  org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-  org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-  org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-  org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-  org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
-  org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
-  org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:424)
-  org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-  org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
-  com.OSMOSE.testcases.OsmoseServices.verifyClickonUndergroundVideos(OsmoseServices.java:477)
-  sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-  sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-  sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-  java.lang.reflect.Method.invoke(Unknown Source)
-  org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
-  org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
-  org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-  org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-  org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
-  org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-  org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-  org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-  java.util.ArrayList.forEach(Unknown Source)
-  org.testng.TestRunner.privateRun(TestRunner.java:766)
-  org.testng.TestRunner.run(TestRunner.java:587)
-  org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
-  org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
-  org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
-  org.testng.SuiteRunner.run(SuiteRunner.java:286)
-  org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-  org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-  org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
-  org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
-  org.testng.TestNG.runSuites(TestNG.java:1039)
-  org.testng.TestNG.run(TestNG.java:1007)
-  org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-  org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-  org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-      </failure>
-
-          </testcase>
-            <testcase name="verifyClickonUndergroundProjectProfiles" time="70.741" classname="com.OSMOSE.testcases.OsmoseServices">
-                <failure type="org.openqa.selenium.NoSuchElementException"
-                  message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&apos;contentPart5&apos;]/div/div/div/div/div/div/div[1]/div[1]/h5/a&quot;}
-  (Session info: chrome=85.0.4183.102)
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
-System info: host: &apos;5CG6323N27&apos;, ip: &apos;192.168.0.11&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_191&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 85.0.4183.102, chrome: {chromedriverVersion: 85.0.4183.87 (cd6713ebf92fa..., userDataDir: C:\Windows\Temp\scoped_dir1...}, goog:chromeOptions: {debuggerAddress: localhost:52647}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: none, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 5a7dee32274d3786d6df32a0d69ee424
-*** Element info: {Using=xpath, value=//*[@id=&apos;contentPart5&apos;]/div/div/div/div/div/div/div[1]/div[1]/h5/a}"
-              >
-<![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id='contentPart5']/div/div/div/div/div/div/div[1]/div[1]/h5/a"}
-  (Session info: chrome=85.0.4183.102)
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
-System info: host: '5CG6323N27', ip: '192.168.0.11', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 85.0.4183.102, chrome: {chromedriverVersion: 85.0.4183.87 (cd6713ebf92fa..., userDataDir: C:\Windows\Temp\scoped_dir1...}, goog:chromeOptions: {debuggerAddress: localhost:52647}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: none, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 5a7dee32274d3786d6df32a0d69ee424
-*** Element info: {Using=xpath, value=//*[@id='contentPart5']/div/div/div/div/div/div/div[1]/div[1]/h5/a}
-  sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-  sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-  sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-  java.lang.reflect.Constructor.newInstance(Unknown Source)
-  org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-  org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-  org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-  org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-  org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-  org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
-  org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
-  org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:424)
-  org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-  org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
-  com.OSMOSE.testcases.OsmoseServices.verifyClickonUndergroundProjectProfiles(OsmoseServices.java:506)
+  com.OSMOSE.base.Page.click(Page.java:180)
+  com.OSMOSE.pages.OU.OsmoseServicesPage.clickMyOsmoseServices(OsmoseServicesPage.java:14)
+  com.OSMOSE.testcases.OsmoseServices.VerifyWoodRestorationclick(OsmoseServices.java:398)
   sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
   sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
   sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -416,24 +280,26 @@ Session ID: 5a7dee32274d3786d6df32a0d69ee424
           </testcase>
   
   
-            <testcase name="verifyUndergroundLearnMoreClick" time="5.230" classname="com.OSMOSE.testcases.OsmoseServices" />
-                <testcase name="verifySteelandConcreteRestorationLearnMoreClick" time="5.272" classname="com.OSMOSE.testcases.OsmoseServices" />
-                <testcase name="verifyJointUseLearnMoreClick" time="5.214" classname="com.OSMOSE.testcases.OsmoseServices" />
-                <testcase name="verifyTechnicalServicesLearnMoreClick" time="5.297" classname="com.OSMOSE.testcases.OsmoseServices" />
-                <testcase name="verifyMyOsmoseServicesCardClick" time="8.618" classname="com.OSMOSE.testcases.OsmoseServices" />
-                <testcase name="VerifyWoodRestorationclick" time="7.735" classname="com.OSMOSE.testcases.OsmoseServices" />
-                <testcase name="verifyStrayVoltageLearnMoreClick" time="5.246" classname="com.OSMOSE.testcases.OsmoseServices" />
-                <testcase name="VerifyWoodInspectionAndTreatmentclick" time="7.761" classname="com.OSMOSE.testcases.OsmoseServices" />
-                <testcase name="verifyWoodInspectionandTreatmentLearnMoreClick" time="10.346" classname="com.OSMOSE.testcases.OsmoseServices" />
-                <testcase name="verifyMapViewLearnMoreClick" time="5.297" classname="com.OSMOSE.testcases.OsmoseServices" />
-                <testcase name="verifyWoodRestorationLearnMoreClick" time="5.256" classname="com.OSMOSE.testcases.OsmoseServices" />
-                <testcase name="verifyOverheadLearnMoreClick" time="5.214" classname="com.OSMOSE.testcases.OsmoseServices" />
-                <testcase name="verifyOkClickOnPopUpUnderground" time="5.419" classname="com.OSMOSE.testcases.OsmoseServices" />
-                <testcase name="verifyPopUpUnderground" time="15.661" classname="com.OSMOSE.testcases.OsmoseServices" />
-                <testcase name="VerifyProductclick" time="43.129" classname="com.OSMOSE.testcases.OsmoseServices" />
-                <testcase name="VerifyViewMapclick" time="17.877" classname="com.OSMOSE.testcases.OsmoseServices" />
-                <testcase name="verifyOcalcProLearnMoreClick" time="5.273" classname="com.OSMOSE.testcases.OsmoseServices" />
-                <testcase name="verifySteelandConcreteAssessmentLearnMoreClick" time="5.272" classname="com.OSMOSE.testcases.OsmoseServices" />
-                <testcase name="verifyCancelClickOnPopUpUnderground" time="3.150" classname="com.OSMOSE.testcases.OsmoseServices" />
+            <testcase name="verifyClickonUndergroundVideos" time="20.983" classname="com.OSMOSE.testcases.OsmoseServices" />
+                <testcase name="verifyUndergroundLearnMoreClick" time="5.346" classname="com.OSMOSE.testcases.OsmoseServices" />
+                <testcase name="verifySteelandConcreteRestorationLearnMoreClick" time="5.474" classname="com.OSMOSE.testcases.OsmoseServices" />
+                <testcase name="verifyJointUseLearnMoreClick" time="5.365" classname="com.OSMOSE.testcases.OsmoseServices" />
+                <testcase name="verifyTechnicalServicesLearnMoreClick" time="5.422" classname="com.OSMOSE.testcases.OsmoseServices" />
+                <testcase name="verifyMyOsmoseServicesCardClick" time="8.183" classname="com.OSMOSE.testcases.OsmoseServices" />
+                <testcase name="verifyStrayVoltageLearnMoreClick" time="5.511" classname="com.OSMOSE.testcases.OsmoseServices" />
+                <testcase name="VerifyWoodInspectionAndTreatmentclick" time="8.279" classname="com.OSMOSE.testcases.OsmoseServices" />
+                <testcase name="verifyWoodInspectionandTreatmentLearnMoreClick" time="10.708" classname="com.OSMOSE.testcases.OsmoseServices" />
+                <testcase name="verifyMapViewLearnMoreClick" time="5.512" classname="com.OSMOSE.testcases.OsmoseServices" />
+                <testcase name="verifyWoodRestorationLearnMoreClick" time="5.315" classname="com.OSMOSE.testcases.OsmoseServices" />
+                <testcase name="verifyOverheadLearnMoreClick" time="5.415" classname="com.OSMOSE.testcases.OsmoseServices" />
+                <testcase name="verifyClickonUndergroundProjectProfiles" time="21.056" classname="com.OSMOSE.testcases.OsmoseServices" />
+                <testcase name="verifyOkClickOnPopUpUnderground" time="6.935" classname="com.OSMOSE.testcases.OsmoseServices" />
+                <testcase name="verifyCancelClickOnPopUpUnderground" time="3.200" classname="com.OSMOSE.testcases.OsmoseServices" />
+                <testcase name="VerifyProductclick" time="45.071" classname="com.OSMOSE.testcases.OsmoseServices" />
+                <testcase name="verifyPopUpUnderground" time="16.100" classname="com.OSMOSE.testcases.OsmoseServices" />
+                <testcase name="verifyClickonWoodRestorationProjectProfiles" time="21.198" classname="com.OSMOSE.testcases.OsmoseServices" />
+                <testcase name="VerifyViewMapclick" time="18.688" classname="com.OSMOSE.testcases.OsmoseServices" />
+                <testcase name="verifyOcalcProLearnMoreClick" time="5.476" classname="com.OSMOSE.testcases.OsmoseServices" />
+                <testcase name="verifySteelandConcreteAssessmentLearnMoreClick" time="5.357" classname="com.OSMOSE.testcases.OsmoseServices" />
       
 </testsuite>
