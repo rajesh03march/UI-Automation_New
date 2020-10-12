@@ -1,16 +1,19 @@
 package com.OSMOSE.pages.OU;
 
+
 import com.OSMOSE.base.Page;
 
 public class KnowledgeBasePage extends Page {
+	
+	Page p = new Page();
 
 	public void clickKBNavigation() throws InterruptedException {
-		Thread.sleep((Long.parseLong(config.getProperty("Thread12000"))));
+		Thread.sleep((Long.parseLong(p.config.getProperty("Thread12000"))));
 		click("KnowledgeBaseMenu_XPATH");
 	}
 
 	public void clickKBCard() throws InterruptedException {
-		Thread.sleep((Long.parseLong(config.getProperty("Thread12000"))));
+		Thread.sleep((Long.parseLong(p.config.getProperty("Thread12000"))));
 		click("KBCard_XPATH");
 	}
 	
@@ -39,12 +42,12 @@ public class KnowledgeBasePage extends Page {
 	}
 
 	public void clickIndustrySeeMore() throws InterruptedException {
-		Thread.sleep((Long.parseLong(config.getProperty("Thread1000"))));
+		Thread.sleep((Long.parseLong(p.config.getProperty("Thread12000"))));
 		ClickActions("IndustrySeeMoreLink_XPATH");
 	}
 
 	public void clickIndustryBackbtn() throws InterruptedException {
-		Thread.sleep((Long.parseLong(config.getProperty("Thread12000"))));
+		Thread.sleep((Long.parseLong(p.config.getProperty("Thread12000"))));
 		click("IndustryBACKbtn_XPATH");
 	}
 	
@@ -225,7 +228,7 @@ public class KnowledgeBasePage extends Page {
 	}
 	
 	public void clickJointUseOnAnImage() {
-		ClickActions("DailyGaffGalleryImage_XPATH");
+		ClickActions("JointUsImagesImageClick_XPATH");
 	}
 	
 	public void clickJointUseOnAVideo() {
@@ -410,6 +413,10 @@ public class KnowledgeBasePage extends Page {
 	
 	public void clickJointUsePopularQuery() {
 		click("JointUseFilter_XPATH");
+	}
+	
+	public void clickPoleReplacementPopularQuery() {
+		click("PoleReplacementFilter_XPATH");
 	}
 
 	

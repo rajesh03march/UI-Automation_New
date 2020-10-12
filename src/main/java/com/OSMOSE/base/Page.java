@@ -148,7 +148,7 @@ public class Page {
 			driver.manage().window().maximize();
 			driver.manage().timeouts().implicitlyWait(Integer.parseInt(config.getProperty("implicit.wait")),
 					TimeUnit.SECONDS);
-			wait = new WebDriverWait(driver, 5);
+			wait = new WebDriverWait(driver, 100);
 
 			//menu = new TopMenu(driver);
 
@@ -166,9 +166,9 @@ public class Page {
 
 	}
 
-	public static void scrollbyjavaexecutor(int X, int Y) {
+	public static void scrollbyjavaexecutor() {
 		JavascriptExecutor js = (JavascriptExecutor) driver;
-		js.executeScript("window.scrollBy(X,Y)", "");
+		js.executeScript("window.scrollBy(0, -350)", "");
 	}
 
 	// Common Keywords
@@ -402,6 +402,15 @@ public class Page {
 																														// current
 																														// window
 		// driver.close();
+	}
+	
+	
+	public void closeTab(int number) throws InterruptedException {
+		ArrayList<String> tabs = new ArrayList<String> (driver.getWindowHandles());
+	    driver.switchTo().window(tabs.get(number));
+	    System.out.println("The window displaying is : " + driver.switchTo().window(tabs.get(number)).getCurrentUrl());
+	    Thread.sleep(3000);
+	    driver.close();
 	}
 
 		public static boolean isVisiable(String locator){
