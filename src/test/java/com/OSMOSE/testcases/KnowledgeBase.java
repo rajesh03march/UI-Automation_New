@@ -171,7 +171,7 @@ public class KnowledgeBase extends BaseTest {
 		ContactPage cp = new ContactPage();
 		KnowledgeBasePage kb = cp.goKnowledgeBase();
 		// Joint Use card presence verification
-		Assert.assertTrue(Page.driver.findElement(By.xpath("//*[contains(text(),'Joint Use')]")).isDisplayed());
+		Assert.assertTrue(Page.driver.findElement(By.xpath("//h5[contains(text(),'Joint Use')]")).isDisplayed());
 	}
 
 	// US-98499-98607-Verify that clicking on the header on the tiles in KB landing
