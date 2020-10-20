@@ -10,14 +10,8 @@
     <classes>
       <class name="com.OSMOSE.testcases.oCalcPro">
         <methods>
-          <include name="verifyPresenceOfCreditCardOptions"/>
           <include name="tearDown"/>
-          <include name="verifyClickMakePaymentBtn"/>
-          <include name="verifyPresenceOfCCReceipt"/>
-          <include name="verifyDifferentProductsQuoteCreate"/>
-          <include name="verifyClickOnPaywithCCBtn"/>
-          <include name="verifyCCDetailsForNonOCalcProduct"/>
-          <include name="verifyClickIhaveCopiedMyReceiptChkBox"/>
+          <include name="verifySearchResultsAreGroupedLicensedUser"/>
         </methods>
       </class> <!-- com.OSMOSE.testcases.oCalcPro -->
     </classes>

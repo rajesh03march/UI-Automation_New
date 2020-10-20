@@ -1,284 +1,60 @@
-06/10/2020 11:51:12 devpinoyLogger Config file loaded !!!
-06/10/2020 11:51:12 devpinoyLogger OR file loaded !!!
-06/10/2020 11:51:16 devpinoyLogger Navigated to : https://osmose360cl.azurewebsites.net/
-06/10/2020 11:51:30 devpinoyLogger Typing in an Element : email_XPATH entered value as : rajesh.yadav@centurylink.com
-06/10/2020 11:51:30 devpinoyLogger Typing in an Element : password_XPATH entered value as : Hyde@2317
-06/10/2020 11:51:30 devpinoyLogger Clicking on an Element : submit_XPATH
-06/10/2020 11:51:33 devpinoyLogger Text of the locator: verify_ID value as :Rajesh Yadav
-06/10/2020 11:51:38 devpinoyLogger Clicking on an Element : OcalcNavigation_XPATH
-06/10/2020 11:51:41 devpinoyLogger Text of the locator: OcalcProHeaderTxt_XPATH value as :Structural Analysis Software for Utility Poles
-06/10/2020 11:51:43 devpinoyLogger Clicking on an Element : OcalcOsmoseLogo_XPATH
-06/10/2020 11:51:46 devpinoyLogger Clicking on an Element : OcalcCard_XPATH
-06/10/2020 11:51:49 devpinoyLogger Text of the locator: OcalcProHeaderTxt_XPATH value as :Structural Analysis Software for Utility Poles
-06/10/2020 11:51:53 devpinoyLogger Text of the locator: GetStartedTxt_XPATH value as :O-Calc Pro takes the guesswork out of load calculation for line design, pole replacement, and joint-use loading.
-06/10/2020 11:51:53 devpinoyLogger Text of the locator: GetStartedLearnMoreLink_XPATH value as :Learn More
-06/10/2020 11:51:53 devpinoyLogger Text of the locator: GetStartedContactOcalcPro_XPATH value as :Contact O-Calc Support
-06/10/2020 11:51:54 devpinoyLogger Text of the locator: ProductsRequestLicense_XPATH value as :Request License Quote
-06/10/2020 11:51:54 devpinoyLogger Text of the locator: ProductsRequestCVT_XPATH value as :Request CVT Quote
-06/10/2020 11:51:54 devpinoyLogger Text of the locator: ProductsRequestPrivate_XPATH value as :Request Private Training Quote
-06/10/2020 11:51:54 devpinoyLogger Text of the locator: KBTraining_XPATH value as :Training Videos
-06/10/2020 11:51:54 devpinoyLogger Text of the locator: KBWikiPage_XPATH value as :Wiki Page
-06/10/2020 11:51:55 devpinoyLogger Text of the locator: AnnouncementFirst_XPATH value as :O-Calc Pro Seminar, Sept. 19, 2020
-06/10/2020 11:51:55 devpinoyLogger Text of the locator: AnnouncementSecond_XPATH value as :O-Calc Pro at DistribuTech2021
-06/10/2020 11:51:55 devpinoyLogger Text of the locator: AnnouncementThird_XPATH value as :O-Calc Pro Seminar, Sept. 19, 2020
-06/10/2020 11:51:56 devpinoyLogger Text of the locator: TrainingCurrent_XPATH value as :Current Public Classes
-06/10/2020 11:51:56 devpinoyLogger Text of the locator: TrainingRequestQuote_XPATH value as :Request quote for Private Training class
-06/10/2020 11:51:57 devpinoyLogger Clicking on an Element : GetStartedLearnMoreLink_XPATH
-06/10/2020 11:52:00 devpinoyLogger Text of the locator: GetStartedLearnMoreHeaderTxt_XPATH value as :O-Calc Pro
-06/10/2020 11:52:02 devpinoyLogger Text of the locator: GetStartedStructuralTxt_XPATH value as :Structural Analysis Software for Utility Poles
-06/10/2020 11:52:03 devpinoyLogger Clicking on an Element : GetStartedLearnMoreoCalProBrochure_XPATH
-06/10/2020 11:52:04 devpinoyLogger Clicking on an Element : GetStartedLearnMoreProfServicesBtn_XPATH
-06/10/2020 11:52:05 devpinoyLogger Clicking on an Element : GetStartedLearnMoreCloseBtn_XPATH
-06/10/2020 11:52:06 devpinoyLogger Clicking on an Element : GetStarted30DaysBtn_XPATH
-06/10/2020 11:52:08 devpinoyLogger Text of the locator: 30daysBackTxt_XPATH value as :Back
-06/10/2020 11:52:08 devpinoyLogger Text of the locator: 30daysHeaderTxt_XPATH value as :O-Calc® Pro Trial Version
-06/10/2020 11:52:10 devpinoyLogger Clicking on an Element : 30daysBackBtn_XPATH
-06/10/2020 11:52:10 devpinoyLogger Clicking on an Element : GetStartedReqDemo_XPATH
-06/10/2020 11:52:13 devpinoyLogger Text of the locator: DemoBackTxt_XPATH value as :Back
-06/10/2020 11:52:13 devpinoyLogger Text of the locator: DemoHeaderTxt_XPATH value as :O-Calc® Pro Live Demo
-06/10/2020 11:52:14 devpinoyLogger Clicking on an Element : DemoBackBtn_XPATH
-06/10/2020 11:52:15 devpinoyLogger Clicking on an Element : GetStartedContactOcalcPro_XPATH
-06/10/2020 11:52:15 devpinoyLogger Text of the locator: oCalcProContactUsHeaderTxt_XPATH value as :Contact Us
-06/10/2020 11:52:15 devpinoyLogger Fetching Default value from dropdown : oCalcProContactUsFormSubjectdd_XPATH value as : 
-06/10/2020 11:52:16 devpinoyLogger Clicking on an Element : OcalcProductsCard_XPATH
-06/10/2020 11:52:17 devpinoyLogger Text of the locator: oCalcProductsHeaderTxt_XPATH value as :Pole and Line Products
-06/10/2020 11:52:18 devpinoyLogger Text of the locator: oCalcProductsHeadingTxt_XPATH value as :O-Calc Pro
-06/10/2020 11:52:18 devpinoyLogger Text of the locator: ProductsoCalcLicense_XPATH value as :O-Calc License
-06/10/2020 11:52:19 devpinoyLogger Text of the locator: ProductsoCalcCVT_XPATH value as :O-Calc CVT
-06/10/2020 11:52:19 devpinoyLogger Text of the locator: ProductsoCalcTraining_XPATH value as :O-Calc Training
-06/10/2020 11:52:20 devpinoyLogger Clicking on an Element : ProductsRequestLicense_XPATH
-06/10/2020 11:52:35 devpinoyLogger Text of the locator: oCalcLicenseTxt_XPATH value as :O-Calc License
-06/10/2020 11:52:35 devpinoyLogger Text of the locator: oCalcLicenseDescription_XPATH value as :O-Calc License description
-06/10/2020 11:52:35 devpinoyLogger Text of the locator: oCalcCallNowTxt_XPATH value as :(716) 319-3423
-06/10/2020 11:52:37 devpinoyLogger Selecting from an element : oCalProductSizeDD_XPATH value as : 1
-06/10/2020 11:52:37 devpinoyLogger Clicking on an Element : oCalProductEnterQuantity_XPATH
-06/10/2020 11:52:37 devpinoyLogger clearing on an Element : oCalProductEnterQuantity_XPATH
-06/10/2020 11:52:37 devpinoyLogger Typing in an Element : oCalProductEnterQuantity_XPATH entered value as : 8
-06/10/2020 11:52:37 devpinoyLogger Clicking on an Element : oCalProductAddButton_XPATH
-06/10/2020 11:52:37 devpinoyLogger Clicking on an Element : oCalProductViewCartButton_XPATH
-06/10/2020 11:52:37 devpinoyLogger Clicking on an Element : oCalProductSubmitQuoteReqBtn_XPATH
-06/10/2020 11:52:38 devpinoyLogger Clicking on an Element : oCalProductSubmitBtn_XPATH
-06/10/2020 11:52:39 devpinoyLogger Clicking on an Element : oCalProductSubmittedCloseBtn_XPATH
-06/10/2020 11:52:40 devpinoyLogger Clicking on an Element : ProductsRequestCVT_XPATH
-06/10/2020 11:52:55 devpinoyLogger Text of the locator: oCalcCVTTxt_XPATH value as :O-Calc CVT
-06/10/2020 11:52:55 devpinoyLogger Text of the locator: oCalcCVTDescription_XPATH value as :O-Calc CVT description
-06/10/2020 11:52:56 devpinoyLogger Selecting from an element : oCalProductSizeDD_XPATH value as : 1
-06/10/2020 11:52:57 devpinoyLogger Clicking on an Element : oCalProductEnterQuantity_XPATH
-06/10/2020 11:52:57 devpinoyLogger clearing on an Element : oCalProductEnterQuantity_XPATH
-06/10/2020 11:52:57 devpinoyLogger Typing in an Element : oCalProductEnterQuantity_XPATH entered value as : 8
-06/10/2020 11:52:57 devpinoyLogger Clicking on an Element : oCalProductAddButton_XPATH
-06/10/2020 11:52:57 devpinoyLogger Clicking on an Element : oCalProductViewCartButton_XPATH
-06/10/2020 11:52:57 devpinoyLogger Clicking on an Element : oCalProductSubmitQuoteReqBtn_XPATH
-06/10/2020 11:52:57 devpinoyLogger Clicking on an Element : oCalProductSubmitBtn_XPATH
-06/10/2020 11:52:58 devpinoyLogger Clicking on an Element : oCalProductSubmittedCloseBtn_XPATH
-06/10/2020 11:52:59 devpinoyLogger Clicking on an Element : ProductsRequestPrivate_XPATH
-06/10/2020 11:53:14 devpinoyLogger Text of the locator: oCalcRequestTrainingTxt_XPATH value as :O-Calc Training
-06/10/2020 11:53:15 devpinoyLogger Text of the locator: oCalcRequestTrainingDescription_XPATH value as :O-Calc Training description
-06/10/2020 11:53:16 devpinoyLogger Selecting from an element : oCalProductSizeDD_XPATH value as : 1
-06/10/2020 11:53:16 devpinoyLogger Clicking on an Element : oCalProductEnterQuantity_XPATH
-06/10/2020 11:53:16 devpinoyLogger clearing on an Element : oCalProductEnterQuantity_XPATH
-06/10/2020 11:53:16 devpinoyLogger Typing in an Element : oCalProductEnterQuantity_XPATH entered value as : 8
-06/10/2020 11:53:16 devpinoyLogger Clicking on an Element : oCalProductAddButton_XPATH
-06/10/2020 11:53:16 devpinoyLogger Clicking on an Element : oCalProductViewCartButton_XPATH
-06/10/2020 11:53:17 devpinoyLogger Clicking on an Element : oCalProductSubmitQuoteReqBtn_XPATH
-06/10/2020 11:53:17 devpinoyLogger Clicking on an Element : oCalProductSubmitBtn_XPATH
-06/10/2020 11:53:18 devpinoyLogger Clicking on an Element : oCalProductSubmittedCloseBtn_XPATH
-06/10/2020 11:53:19 devpinoyLogger Clicking on an Element : oCalProLogoForLicensedUser_XPATH
-06/10/2020 11:53:23 devpinoyLogger Text of the locator: TrainingCurrent_XPATH value as :Current Public Classes
-06/10/2020 11:53:23 devpinoyLogger Text of the locator: TrainingRequestQuote_XPATH value as :Request quote for Private Training class
-06/10/2020 11:53:24 devpinoyLogger Text of the locator: ProductsRequestLicense_XPATH value as :Request License Quote
-06/10/2020 11:53:24 devpinoyLogger Text of the locator: ProductsRequestCVT_XPATH value as :Request CVT Quote
-06/10/2020 11:53:24 devpinoyLogger Text of the locator: ProductsRequestPrivate_XPATH value as :Request Private Training Quote
-06/10/2020 11:53:24 devpinoyLogger Text of the locator: KBTraining_XPATH value as :Training Videos
-06/10/2020 11:53:25 devpinoyLogger Text of the locator: KBWikiPage_XPATH value as :Wiki Page
-06/10/2020 11:53:25 devpinoyLogger Text of the locator: AnnouncementFirst_XPATH value as :O-Calc Pro Seminar, Sept. 19, 2020
-06/10/2020 11:53:25 devpinoyLogger Text of the locator: AnnouncementSecond_XPATH value as :O-Calc Pro at DistribuTech2021
-06/10/2020 11:53:25 devpinoyLogger Text of the locator: AnnouncementThird_XPATH value as :O-Calc Pro Seminar, Sept. 19, 2020
-06/10/2020 11:53:26 devpinoyLogger Text of the locator: oCalProLicenseMgmtActive_XPATH value as :0 Active
-06/10/2020 11:53:26 devpinoyLogger Text of the locator: oCalProLicenseMgmtExpired_XPATH value as :0 Expired
-06/10/2020 11:53:26 devpinoyLogger Text of the locator: oCalProLicenseMgmtExpiringSoon_XPATH value as :0 Expiring Soon
-06/10/2020 11:53:26 devpinoyLogger Text of the locator: oCalProLicenseMgmtInactive_XPATH value as :0 Inactive
-06/10/2020 11:53:27 devpinoyLogger Text of the locator: Tutorial30DaysBtn_XPATH value as :30 DAY FREE TRIAL
-06/10/2020 11:53:27 devpinoyLogger Text of the locator: TutorialReqDemo_XPATH value as :REQUEST A LIVE DEMO
-06/10/2020 11:53:27 devpinoyLogger Text of the locator: TutorialFAQ_XPATH value as :FAQ
-06/10/2020 11:53:27 devpinoyLogger Text of the locator: TutorialSubmitIssue_XPATH value as :Submit Issue
-06/10/2020 11:53:27 devpinoyLogger Text of the locator: TutorialFeatureRequest_XPATH value as :Feature Request
-06/10/2020 11:53:27 devpinoyLogger Text of the locator: TutorialContactOcalcPro_XPATH value as :Contact O-Calc Pro Support
-06/10/2020 11:53:28 devpinoyLogger Clicking on an Element : OcalcProductsCard_XPATH
-06/10/2020 11:53:28 devpinoyLogger Text of the locator: oCalcProductsHeaderTxt_XPATH value as :Pole and Line Products
-06/10/2020 11:53:30 devpinoyLogger Text of the locator: oCalcProductsHeadingTxt_XPATH value as :O-Calc Pro
-06/10/2020 11:53:30 devpinoyLogger Text of the locator: ProductsoCalcLicense_XPATH value as :O-Calc License
-06/10/2020 11:53:30 devpinoyLogger Text of the locator: ProductsoCalcCVT_XPATH value as :O-Calc CVT
-06/10/2020 11:53:30 devpinoyLogger Text of the locator: ProductsoCalcTraining_XPATH value as :O-Calc Training
-06/10/2020 11:53:31 devpinoyLogger Clicking on an Element : oCalProLogoForLicensedUser_XPATH
-06/10/2020 11:53:34 devpinoyLogger Clicking on an Element : ProductsRequestLicense_XPATH
-06/10/2020 11:53:38 devpinoyLogger Text of the locator: oCalcLicenseTxt_XPATH value as :O-Calc License
-06/10/2020 11:53:38 devpinoyLogger Text of the locator: oCalcLicenseDescription_XPATH value as :O-Calc License description
-06/10/2020 11:53:40 devpinoyLogger Selecting from an element : oCalProductSizeDD_XPATH value as : 1
-06/10/2020 11:53:40 devpinoyLogger Clicking on an Element : oCalProductEnterQuantity_XPATH
-06/10/2020 11:53:40 devpinoyLogger clearing on an Element : oCalProductEnterQuantity_XPATH
-06/10/2020 11:53:40 devpinoyLogger Typing in an Element : oCalProductEnterQuantity_XPATH entered value as : 8
-06/10/2020 11:53:40 devpinoyLogger Clicking on an Element : oCalProductAddButton_XPATH
-06/10/2020 11:53:40 devpinoyLogger Clicking on an Element : oCalProductViewCartButton_XPATH
-06/10/2020 11:53:40 devpinoyLogger Clicking on an Element : oCalProductSubmitQuoteReqBtn_XPATH
-06/10/2020 11:53:40 devpinoyLogger Clicking on an Element : oCalProductSubmitBtn_XPATH
-06/10/2020 11:53:56 devpinoyLogger Clicking on an Element : oCalProductSubmittedCloseBtn_XPATH
-06/10/2020 11:53:57 devpinoyLogger Clicking on an Element : oCalProLogoForLicensedUser_XPATH
-06/10/2020 11:54:00 devpinoyLogger Clicking on an Element : ProductsRequestCVT_XPATH
-06/10/2020 11:54:20 devpinoyLogger Text of the locator: oCalcCVTTxt_XPATH value as :O-Calc CVT
-06/10/2020 11:54:20 devpinoyLogger Text of the locator: oCalcCVTDescription_XPATH value as :O-Calc CVT description
-06/10/2020 11:54:21 devpinoyLogger Selecting from an element : oCalProductSizeDD_XPATH value as : 1
-06/10/2020 11:54:22 devpinoyLogger Clicking on an Element : oCalProductEnterQuantity_XPATH
-06/10/2020 11:54:22 devpinoyLogger clearing on an Element : oCalProductEnterQuantity_XPATH
-06/10/2020 11:54:22 devpinoyLogger Typing in an Element : oCalProductEnterQuantity_XPATH entered value as : 8
-06/10/2020 11:54:22 devpinoyLogger Clicking on an Element : oCalProductAddButton_XPATH
-06/10/2020 11:54:22 devpinoyLogger Clicking on an Element : oCalProductViewCartButton_XPATH
-06/10/2020 11:54:22 devpinoyLogger Clicking on an Element : oCalProductSubmitQuoteReqBtn_XPATH
-06/10/2020 11:54:22 devpinoyLogger Clicking on an Element : oCalProductSubmitBtn_XPATH
-06/10/2020 11:54:32 devpinoyLogger Clicking on an Element : oCalProductSubmittedCloseBtn_XPATH
-06/10/2020 11:54:33 devpinoyLogger Clicking on an Element : oCalProLogoForLicensedUser_XPATH
-06/10/2020 11:54:36 devpinoyLogger Clicking on an Element : ProductsRequestPrivate_XPATH
-06/10/2020 11:54:45 devpinoyLogger Text of the locator: oCalcRequestTrainingTxt_XPATH value as :O-Calc Training
-06/10/2020 11:54:45 devpinoyLogger Text of the locator: oCalcRequestTrainingDescription_XPATH value as :O-Calc Training description
-06/10/2020 11:54:46 devpinoyLogger Selecting from an element : oCalProductSizeDD_XPATH value as : 1
-06/10/2020 11:54:46 devpinoyLogger Clicking on an Element : oCalProductEnterQuantity_XPATH
-06/10/2020 11:54:46 devpinoyLogger clearing on an Element : oCalProductEnterQuantity_XPATH
-06/10/2020 11:54:46 devpinoyLogger Typing in an Element : oCalProductEnterQuantity_XPATH entered value as : 8
-06/10/2020 11:54:46 devpinoyLogger Clicking on an Element : oCalProductAddButton_XPATH
-06/10/2020 11:54:47 devpinoyLogger Clicking on an Element : oCalProductViewCartButton_XPATH
-06/10/2020 11:54:47 devpinoyLogger Clicking on an Element : oCalProductSubmitQuoteReqBtn_XPATH
-06/10/2020 11:54:47 devpinoyLogger Clicking on an Element : oCalProductSubmitBtn_XPATH
-06/10/2020 11:54:48 devpinoyLogger Clicking on an Element : oCalProductSubmittedCloseBtn_XPATH
-06/10/2020 11:54:49 devpinoyLogger Clicking on an Element : oCalProLogoForLicensedUser_XPATH
-06/10/2020 11:54:50 devpinoyLogger Clicking on an Element : Tutorial30DaysBtn_XPATH
-06/10/2020 11:54:52 devpinoyLogger Text of the locator: LicensedUser30daysBackTxt_XPATH value as :Back
-06/10/2020 11:54:53 devpinoyLogger Text of the locator: LicensedUser30daysHeaderTxt_XPATH value as :O-Calc® Pro Trial Version
-06/10/2020 11:54:54 devpinoyLogger Clicking on an Element : LicensedUser30daysBackBtn_XPATH
-06/10/2020 11:54:55 devpinoyLogger Clicking on an Element : TutorialReqDemo_XPATH
-06/10/2020 11:54:57 devpinoyLogger Text of the locator: LicensedUserDemoBackTxt_XPATH value as :Back
-06/10/2020 11:54:57 devpinoyLogger Text of the locator: LicensedUserDemoHeaderTxt_XPATH value as :O-Calc® Pro Live Demo
-06/10/2020 11:55:00 devpinoyLogger Clicking on an Element : LicensedUserDemoBackBtn_XPATH
-06/10/2020 11:55:01 devpinoyLogger Clicking on an Element : TutorialContactOcalcPro_XPATH
-06/10/2020 11:55:01 devpinoyLogger Text of the locator: oCalcProContactUsHeaderTxt_XPATH value as :Contact Us
-06/10/2020 11:55:01 devpinoyLogger Fetching Default value from dropdown : oCalcProContactUsFormSubjectdd_XPATH value as : 
-06/10/2020 11:55:02 devpinoyLogger Clicking on an Element : ProductsRequestLicense_XPATH
-06/10/2020 11:55:06 devpinoyLogger Selecting from an element : oCalProductSizeDD_XPATH value as : 1
-06/10/2020 11:55:06 devpinoyLogger Clicking on an Element : oCalProductEnterQuantity_XPATH
-06/10/2020 11:55:06 devpinoyLogger clearing on an Element : oCalProductEnterQuantity_XPATH
-06/10/2020 11:55:06 devpinoyLogger Typing in an Element : oCalProductEnterQuantity_XPATH entered value as : 8
-06/10/2020 11:55:06 devpinoyLogger Clicking on an Element : oCalProductAddButton_XPATH
-06/10/2020 11:55:06 devpinoyLogger Clicking on an Element : oCalProductViewCartButton_XPATH
-06/10/2020 11:55:06 devpinoyLogger Clicking on an Element : oCalProductContinueShoppingBtn_XPATH
-06/10/2020 11:55:06 devpinoyLogger Clicking on an Element : oCalPoleRestoration_XPATH
-06/10/2020 11:55:06 devpinoyLogger Clicking on an Element : oCalPoleRestorationProduct_XPATH
-06/10/2020 11:55:07 devpinoyLogger Selecting from an element : oCalProductSizeDD_XPATH value as : 1
-06/10/2020 11:55:07 devpinoyLogger Clicking on an Element : oCalProductEnterQuantity_XPATH
-06/10/2020 11:55:07 devpinoyLogger clearing on an Element : oCalProductEnterQuantity_XPATH
-06/10/2020 11:55:07 devpinoyLogger Typing in an Element : oCalProductEnterQuantity_XPATH entered value as : 8
-06/10/2020 11:55:08 devpinoyLogger Clicking on an Element : oCalProductAddButton_XPATH
-06/10/2020 11:55:08 devpinoyLogger Clicking on an Element : oCalProductViewCartButton_XPATH
-06/10/2020 11:55:08 devpinoyLogger Clicking on an Element : oCalProductSubmitQuoteReqBtn_XPATH
-06/10/2020 11:55:08 devpinoyLogger Clicking on an Element : oCalProductSubmitBtn_XPATH
-06/10/2020 11:55:23 devpinoyLogger Text of the locator: oCalProductQuoteSubmittedPopup_XPATH value as :Quote Request Submitted
-06/10/2020 11:55:25 devpinoyLogger Clicking on an Element : oCalProductSubmittedCloseBtn_XPATH
-06/10/2020 11:55:28 devpinoyLogger Clicking on an Element : ProductsRequestLicense_XPATH
-06/10/2020 11:56:11 devpinoyLogger Text of the locator: oCalcLicenseTxt_XPATH value as :O-Calc License
-06/10/2020 11:56:11 devpinoyLogger Text of the locator: oCalcLicenseDescription_XPATH value as :O-Calc License description
-06/10/2020 11:56:12 devpinoyLogger Selecting from an element : oCalProductSizeDD_XPATH value as : 1
-06/10/2020 11:56:12 devpinoyLogger Clicking on an Element : oCalProductEnterQuantity_XPATH
-06/10/2020 11:56:12 devpinoyLogger clearing on an Element : oCalProductEnterQuantity_XPATH
-06/10/2020 11:56:12 devpinoyLogger Typing in an Element : oCalProductEnterQuantity_XPATH entered value as : 8
-06/10/2020 11:56:12 devpinoyLogger Clicking on an Element : oCalProductAddButton_XPATH
-06/10/2020 11:56:12 devpinoyLogger Clicking on an Element : oCalProductViewCartButton_XPATH
-06/10/2020 11:56:13 devpinoyLogger Clicking on an Element : oCalProductSubmitQuoteReqBtn_XPATH
-06/10/2020 11:56:13 devpinoyLogger Clicking on an Element : oCalProductSubmitBtn_XPATH
-06/10/2020 11:56:14 devpinoyLogger Text of the locator: oCalProductQuoteSubmittedPopup_XPATH value as :Quote Request Submitted
-06/10/2020 11:56:18 devpinoyLogger Clicking on an Element : oCalProductSubmittedCloseBtn_XPATH
-06/10/2020 11:56:18 devpinoyLogger Clicking on an Element : oCalAdmin_XPATH
-06/10/2020 11:56:18 devpinoyLogger Clicking on an Element : oCalManageQuotes_XPATH
-06/10/2020 11:56:21 devpinoyLogger Clicking on an Element : oCalFirstQuote_XPATH
-06/10/2020 11:56:22 devpinoyLogger Selecting from an element : oCalManageQuoteStatus_XPATH value as : 2
-06/10/2020 11:56:22 devpinoyLogger Clicking on an Element : oCalManageQuoteBrowse_XPATH
-06/10/2020 11:56:27 devpinoyLogger Clicking on an Element : oCalManageQuoteUploadBtn_XPATH
-06/10/2020 11:56:27 devpinoyLogger Clicking on an Element : oCalManageQuoteSubmitBtn_XPATH
-06/10/2020 11:56:53 devpinoyLogger Clicking on an Element : oCalManageQuoteBackBtn_XPATH
-06/10/2020 11:56:53 devpinoyLogger Clicking on an Element : oCalMyQuotesBtn_XPATH
-06/10/2020 11:57:08 devpinoyLogger Clicking on an Element : oCalMyQuotesApproveBtn_XPATH
-06/10/2020 11:57:08 devpinoyLogger Text of the locator: oCalApprovalPayWithCCBtn_XPATH value as :PAY WITH CREDIT CARD
-06/10/2020 11:57:08 devpinoyLogger Text of the locator: OcalApprovalReceiptTxt_XPATH value as :I have copied my receipt
-06/10/2020 11:57:10 devpinoyLogger Clicking on an Element : oCalApprovalCloseBtn_XPATH
-06/10/2020 11:57:11 devpinoyLogger Selecting from an element : OcalcOsmoseLogo_XPATH
-06/10/2020 11:57:12 devpinoyLogger Clicking on an Element : ProCard_XPATH
-06/10/2020 11:57:12 devpinoyLogger Clicking on an Element : oCalMyQuotesBtn_XPATH
-06/10/2020 11:57:23 devpinoyLogger Clicking on an Element : oCalMyQuotesApproveBtn_XPATH
-06/10/2020 11:57:23 devpinoyLogger Clicking on an Element : oCalApprovalPayWithCCBtn_XPATH
-06/10/2020 11:57:25 devpinoyLogger Text of the locator: oCalPayCCStepsHeaderTxt_XPATH value as :Pay By Credit Card Steps
-06/10/2020 11:57:25 devpinoyLogger Text of the locator: oCalPayCCMakePymtBtn_XPATH value as :MAKE PAYMENT
-06/10/2020 11:57:26 devpinoyLogger Clicking on an Element : oCalPayCCMakePymtBtn_XPATH
-06/10/2020 11:57:26 devpinoyLogger Clicking on an Element : oCalApprovalPayWithCCBtn_XPATH
-06/10/2020 11:57:28 devpinoyLogger Clicking on an Element : oCalPayCCCloseBtn_XPATH
-06/10/2020 11:57:29 devpinoyLogger Clicking on an Element : OcalApprovalReceiptTxt_XPATH
-06/10/2020 11:57:39 devpinoyLogger Typing in an Element : oCalpasteReceiptdetailsTextArea_XPATH entered value as : Automation Testing
-06/10/2020 11:57:41 devpinoyLogger Typing in an Element : oCalApprovalAndTxtBox_XPATH entered value as : 123
-06/10/2020 11:57:43 devpinoyLogger Typing in an Element : oCalApprovalOrTxtBox_XPATH entered value as : 123
-06/10/2020 11:57:43 devpinoyLogger Clicking on an Element : oCalApprovalApproveBtn_XPATH
-06/10/2020 11:57:45 devpinoyLogger Text of the locator: oCalApprovedPopUpHeaderTxt_XPATH value as :Approved!
-06/10/2020 11:57:45 devpinoyLogger Text of the locator: oCalApprovedPopUpTxt_XPATH value as :Thank you for submitting your request. We will contact you with an order confirmation shortly.
-06/10/2020 11:57:46 devpinoyLogger Clicking on an Element : oCalApprovedPopUpCloseBtn_XPATH
-06/10/2020 11:57:48 devpinoyLogger Clicking on an Element : oCalPoleRestoration_XPATH
-06/10/2020 11:57:49 devpinoyLogger Clicking on an Element : oCalPoleRestorationProduct_XPATH
-06/10/2020 11:57:50 devpinoyLogger Selecting from an element : oCalProductSizeDD_XPATH value as : 1
-06/10/2020 11:57:50 devpinoyLogger Clicking on an Element : oCalProductEnterQuantity_XPATH
-06/10/2020 11:57:50 devpinoyLogger clearing on an Element : oCalProductEnterQuantity_XPATH
-06/10/2020 11:57:50 devpinoyLogger Typing in an Element : oCalProductEnterQuantity_XPATH entered value as : 8
-06/10/2020 11:57:50 devpinoyLogger Clicking on an Element : oCalProductAddButton_XPATH
-06/10/2020 11:57:50 devpinoyLogger Clicking on an Element : oCalProductViewCartButton_XPATH
-06/10/2020 11:57:50 devpinoyLogger Clicking on an Element : oCalProductSubmitQuoteReqBtn_XPATH
-06/10/2020 11:57:50 devpinoyLogger Clicking on an Element : oCalProductSubmitBtn_XPATH
-06/10/2020 11:57:51 devpinoyLogger Clicking on an Element : oCalProductSubmittedCloseBtn_XPATH
-06/10/2020 11:57:52 devpinoyLogger Clicking on an Element : oCalAdmin_XPATH
-06/10/2020 11:57:52 devpinoyLogger Clicking on an Element : oCalManageQuotes_XPATH
-06/10/2020 11:57:53 devpinoyLogger Clicking on an Element : oCalFirstQuote_XPATH
-06/10/2020 11:57:54 devpinoyLogger Selecting from an element : oCalManageQuoteStatus_XPATH value as : 2
-06/10/2020 11:57:54 devpinoyLogger Clicking on an Element : oCalManageQuoteBrowse_XPATH
-06/10/2020 11:58:00 devpinoyLogger Clicking on an Element : oCalManageQuoteUploadBtn_XPATH
-06/10/2020 11:58:00 devpinoyLogger Clicking on an Element : oCalManageQuoteSubmitBtn_XPATH
-06/10/2020 11:58:25 devpinoyLogger Clicking on an Element : oCalManageQuoteBackBtn_XPATH
-06/10/2020 11:58:25 devpinoyLogger Clicking on an Element : oCalMyQuotesBtn_XPATH
-06/10/2020 11:58:41 devpinoyLogger Clicking on an Element : oCalMyQuotesApproveBtn_XPATH
-06/10/2020 11:59:32 devpinoyLogger Clicking on an Element : oCalApprovalCloseBtn_XPATH
-06/10/2020 11:59:34 devpinoyLogger Selecting from an element : OcalcOsmoseLogo_XPATH
-06/10/2020 11:59:37 devpinoyLogger Clicking on an Element : OcalcCard_XPATH
-06/10/2020 11:59:37 devpinoyLogger Clicking on an Element : ProductsRequestLicense_XPATH
-06/10/2020 11:59:41 devpinoyLogger Text of the locator: oCalcLicenseTxt_XPATH value as :O-Calc License
-06/10/2020 11:59:43 devpinoyLogger Selecting from an element : oCalProductSizeDD_XPATH value as : 1
-06/10/2020 11:59:43 devpinoyLogger Clicking on an Element : oCalProductEnterQuantity_XPATH
-06/10/2020 11:59:43 devpinoyLogger clearing on an Element : oCalProductEnterQuantity_XPATH
-06/10/2020 11:59:43 devpinoyLogger Typing in an Element : oCalProductEnterQuantity_XPATH entered value as : 8
-06/10/2020 11:59:43 devpinoyLogger Clicking on an Element : oCalProductAddButton_XPATH
-06/10/2020 11:59:43 devpinoyLogger Clicking on an Element : oCalProductViewCartButton_XPATH
-06/10/2020 11:59:43 devpinoyLogger Clicking on an Element : oCalProductSubmitQuoteReqBtn_XPATH
-06/10/2020 11:59:43 devpinoyLogger Clicking on an Element : oCalProductSubmitBtn_XPATH
-06/10/2020 11:59:45 devpinoyLogger Text of the locator: oCalProductQuoteSubmittedPopup_XPATH value as :Quote Request Submitted
-06/10/2020 11:59:48 devpinoyLogger Clicking on an Element : oCalProductSubmittedCloseBtn_XPATH
-06/10/2020 11:59:48 devpinoyLogger Clicking on an Element : oCalAdmin_XPATH
-06/10/2020 11:59:48 devpinoyLogger Clicking on an Element : oCalManageQuotes_XPATH
-06/10/2020 11:59:50 devpinoyLogger Clicking on an Element : oCalFirstQuote_XPATH
-06/10/2020 11:59:51 devpinoyLogger Selecting from an element : oCalManageQuoteStatus_XPATH value as : 2
-06/10/2020 11:59:51 devpinoyLogger Clicking on an Element : oCalManageQuoteBrowse_XPATH
-06/10/2020 11:59:56 devpinoyLogger Clicking on an Element : oCalManageQuoteUploadBtn_XPATH
-06/10/2020 11:59:56 devpinoyLogger Clicking on an Element : oCalManageQuoteSubmitBtn_XPATH
-06/10/2020 12:00:22 devpinoyLogger Clicking on an Element : oCalManageQuoteBackBtn_XPATH
-06/10/2020 12:00:22 devpinoyLogger Clicking on an Element : oCalMyQuotesBtn_XPATH
-06/10/2020 12:00:36 devpinoyLogger Clicking on an Element : oCalMyQuotesApproveBtn_XPATH
-06/10/2020 12:00:37 devpinoyLogger Clicking on an Element : OcalApprovalReceiptTxt_XPATH
-06/10/2020 12:00:47 devpinoyLogger Typing in an Element : oCalpasteReceiptdetailsTextArea_XPATH entered value as : Automation Testing
-06/10/2020 12:00:50 devpinoyLogger Typing in an Element : oCalApprovalAndTxtBox_XPATH entered value as : 123
-06/10/2020 12:00:52 devpinoyLogger Typing in an Element : oCalApprovalOrTxtBox_XPATH entered value as : 123
-06/10/2020 12:00:52 devpinoyLogger Clicking on an Element : oCalApprovalApproveBtn_XPATH
-06/10/2020 12:00:54 devpinoyLogger Text of the locator: oCalApprovedPopUpHeaderTxt_XPATH value as :Approved!
-06/10/2020 12:00:55 devpinoyLogger Clicking on an Element : oCalApprovedPopUpCloseBtn_XPATH
-06/10/2020 12:00:56 devpinoyLogger Clicking on an Element : oCalMyQuotesBtn_XPATH
-06/10/2020 12:01:07 devpinoyLogger Clicking on an Element : oCalMyQuotesCCReceipt_XPATH
-06/10/2020 12:01:08 devpinoyLogger Text of the locator: oCalMyQuotesCCReceiptTxt_XPATH value as :Automation Testing
-06/10/2020 12:01:09 devpinoyLogger Clicking on an Element : oCalMyQuotesCloseBtn_XPATH
+20/10/2020 20:09:55 devpinoyLogger Config file loaded !!!
+20/10/2020 20:09:55 devpinoyLogger OR file loaded !!!
+20/10/2020 20:09:58 devpinoyLogger Navigated to : https://osmose360cl.azurewebsites.net/
+20/10/2020 20:10:14 devpinoyLogger Typing in an Element : email_XPATH entered value as : rajesh.yadav@centurylink.com
+20/10/2020 20:10:15 devpinoyLogger Typing in an Element : password_XPATH entered value as : Hyde@2317
+20/10/2020 20:10:15 devpinoyLogger Clicking on an Element : submit_XPATH
+20/10/2020 20:10:20 devpinoyLogger Text of the locator: verify_ID value as :Rajesh Yadav
+20/10/2020 20:10:24 devpinoyLogger Clicking on an Element : OcalcNavigation_XPATH
+20/10/2020 20:10:27 devpinoyLogger Text of the locator: OcalcProHeaderTxt_XPATH value as :Structural Analysis Software for Utility Poles
+20/10/2020 20:10:32 devpinoyLogger Clicking on an Element : OcalcOsmoseLogo_XPATH
+20/10/2020 20:10:34 devpinoyLogger Clicking on an Element : OcalcCard_XPATH
+20/10/2020 20:10:37 devpinoyLogger Text of the locator: OcalcProHeaderTxt_XPATH value as :Structural Analysis Software for Utility Poles
+20/10/2020 20:10:38 devpinoyLogger Clicking on an Element : OcalcKnowledgeBaseCard_XPATH
+20/10/2020 20:10:39 devpinoyLogger Text of the locator: KnowledgeBaseFirstHeaderTxt_XPATH value as :Knowledge Base
+20/10/2020 20:10:48 devpinoyLogger Selecting from an element : ocalVideosVideoClick_XPATH
+20/10/2020 20:10:54 devpinoyLogger Clicking on an Element : ocalBoxCloseBtn_XPATH
+20/10/2020 20:11:00 devpinoyLogger Selecting from an element : ocalDocumentsDocument_XPATH
+20/10/2020 20:11:10 devpinoyLogger Clicking on an Element : oCalProLogoForLicensedUser_XPATH
+20/10/2020 20:11:10 devpinoyLogger Clicking on an Element : OcalcKnowledgeBaseCard_XPATH
+20/10/2020 20:11:10 devpinoyLogger Text of the locator: KnowledgeBaseFirstHeaderTxt_XPATH value as :Knowledge Base
+20/10/2020 20:11:17 devpinoyLogger Selecting from an element : ocalVideosVideoClick_XPATH
+20/10/2020 20:11:23 devpinoyLogger Clicking on an Element : ocalBoxCloseBtn_XPATH
+20/10/2020 20:11:30 devpinoyLogger Selecting from an element : ocalDocumentsDocument_XPATH
+20/10/2020 20:11:38 devpinoyLogger Clicking on an Element : KBTraining_XPATH
+20/10/2020 20:11:40 devpinoyLogger Text of the locator: KnowledgeBaseFirstHeaderTxt_XPATH value as :Knowledge Base
+20/10/2020 20:11:40 devpinoyLogger Clicking on an Element : ocalVideosSeeMorelnk_XPATH
+20/10/2020 20:11:43 devpinoyLogger Selecting from an element : ocalVideosSeeMoreVideoClick_XPATH
+20/10/2020 20:11:50 devpinoyLogger Clicking on an Element : ocalBoxCloseBtn_XPATH
+20/10/2020 20:11:50 devpinoyLogger Clicking on an Element : oCalProLogoForLicensedUser_XPATH
+20/10/2020 20:11:51 devpinoyLogger Clicking on an Element : KBTraining_XPATH
+20/10/2020 20:11:53 devpinoyLogger Text of the locator: KnowledgeBaseFirstHeaderTxt_XPATH value as :Knowledge Base
+20/10/2020 20:11:53 devpinoyLogger Clicking on an Element : ocalVideosSeeMorelnk_XPATH
+20/10/2020 20:11:56 devpinoyLogger Selecting from an element : ocalVideosSeeMoreVideoClick_XPATH
+20/10/2020 20:12:03 devpinoyLogger Clicking on an Element : ocalBoxCloseBtn_XPATH
+20/10/2020 20:12:03 devpinoyLogger Clicking on an Element : KBWikiPage_XPATH
+20/10/2020 20:12:06 devpinoyLogger Text of the locator: KnowledgeBaseFirstHeaderTxt_XPATH value as :Knowledge Base
+20/10/2020 20:12:09 devpinoyLogger Clicking on an Element : ocalDocumentsSeeMorelnk_XPATH
+20/10/2020 20:12:12 devpinoyLogger Selecting from an element : ocalDocumentSeeMoreDocumentClick_XPATH
+20/10/2020 20:12:20 devpinoyLogger Clicking on an Element : ocalDocumentMorelnk_XPATH
+20/10/2020 20:12:28 devpinoyLogger Clicking on an Element : oCalProLogoForLicensedUser_XPATH
+20/10/2020 20:12:28 devpinoyLogger Clicking on an Element : KBWikiPage_XPATH
+20/10/2020 20:12:30 devpinoyLogger Text of the locator: KnowledgeBaseFirstHeaderTxt_XPATH value as :Knowledge Base
+20/10/2020 20:12:34 devpinoyLogger Clicking on an Element : ocalDocumentsSeeMorelnk_XPATH
+20/10/2020 20:12:37 devpinoyLogger Selecting from an element : ocalDocumentSeeMoreDocumentClick_XPATH
+20/10/2020 20:12:44 devpinoyLogger Clicking on an Element : ocalDocumentMorelnk_XPATH
+20/10/2020 20:12:53 devpinoyLogger Clicking on an Element : OcalcKnowledgeBaseCard_XPATH
+20/10/2020 20:12:59 devpinoyLogger Clicking on an Element : OCalcProVanityQuery1_XPATH
+20/10/2020 20:13:09 devpinoyLogger Clicking on an Element : oCalProLogoForLicensedUser_XPATH
+20/10/2020 20:13:09 devpinoyLogger Clicking on an Element : OcalcKnowledgeBaseCard_XPATH
+20/10/2020 20:13:15 devpinoyLogger Clicking on an Element : OCalcProVanityQuery1_XPATH
+20/10/2020 20:13:26 devpinoyLogger Clicking on an Element : KBTraining_XPATH
+20/10/2020 20:13:32 devpinoyLogger Clicking on an Element : OCalcProVanityQuery1_XPATH
+20/10/2020 20:13:54 devpinoyLogger Clicking on an Element : oCalProLogoForLicensedUser_XPATH
+20/10/2020 20:13:54 devpinoyLogger Clicking on an Element : KBTraining_XPATH
+20/10/2020 20:14:00 devpinoyLogger Clicking on an Element : OCalcProVanityQuery1_XPATH
+20/10/2020 20:14:10 devpinoyLogger Clicking on an Element : oCalProLogoForLicensedUser_XPATH
+20/10/2020 20:14:10 devpinoyLogger Clicking on an Element : LicensedUserLicenseManagementCard_XPATH
+20/10/2020 20:14:13 devpinoyLogger Clicking on an Element : ShowTourBtn_XPATH
+20/10/2020 20:14:19 devpinoyLogger Clicking on an Element : ShowTourBtn_XPATH
+20/10/2020 20:14:23 devpinoyLogger Clicking on an Element : LicenseManagementCloseBtn_XPATH

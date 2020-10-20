@@ -125,6 +125,7 @@ public class oCalcProPage extends Page {
 		click("oCalProductContinueShoppingBtn_XPATH");
 		scrollbyjavaexecutor();
 		click("oCalPoleRestoration_XPATH");
+		Thread.sleep((Long.parseLong(p.config.getProperty("Thread2000"))));
 		click("oCalPoleRestorationProduct_XPATH");
 		selectbyindex("oCalProductSizeDD_XPATH", 1);
 		click("oCalProductEnterQuantity_XPATH");
@@ -198,6 +199,58 @@ public class oCalcProPage extends Page {
 		click("oCalProductSubmitQuoteReqBtn_XPATH");
 		click("oCalProductSubmitBtn_XPATH");
 		click("oCalProductSubmittedCloseBtn_XPATH");
+	}
+	
+	public void clickCurrentPublicClasses() {
+		click("TrainingCurrent_XPATH");
+	}
+	
+	public void clickRequestQuoteForPrivateTrainingClasses() {
+		click("TrainingRequestQuote_XPATH");
+	}
+	
+	public void clickFAQ() {
+		click("TutorialFAQ_XPATH");
+	}
+	
+	public void clickSubmitIssue() {
+		click("TutorialSubmitIssue_XPATH");
+	}
+	
+	public void clickBoxCloseBtn() {
+		click("ocalBoxCloseBtn_XPATH");
+	}
+	
+	public void clickocalOnAVideo() {
+		ClickActions("ocalVideosVideoClick_XPATH");
+	}
+	
+	public void clickocalOnASeeMoreVideo() {
+		ClickActions("ocalVideosSeeMoreVideoClick_XPATH");
+	}
+	
+	public void clickocalOnADocument() {
+		ClickActions("ocalDocumentsDocument_XPATH");
+	}
+	
+	public void clickocalOnASeeMoreDocument() {
+		ClickActions("ocalDocumentSeeMoreDocumentClick_XPATH");
+	}
+	
+	public void clickKBTrainingVideos() {
+		click("KBTraining_XPATH");
+	}
+	
+	public void clickKBWikiPage() {
+		click("KBWikiPage_XPATH");
+	}
+	
+	public void clickOCalcProVanityQuery1() {
+		click("OCalcProVanityQuery1_XPATH");
+	}
+	
+	public void clickLicenseManagement() {
+		click("LicensedUserLicenseManagementCard_XPATH");
 	}
 
 }

@@ -30,21 +30,21 @@
 			<class name="com.OSMOSE.testcases.Contact" />
 		</classes>
 	</test>  --><!-- Test -->
-	<test name="KnowledgeBase">
+<!-- 	<test name="KnowledgeBase">
 		<classes>
 			<class name="com.OSMOSE.testcases.KnowledgeBase" />
 		</classes>
-	</test> <!-- Test -->
-<!-- 	<test name="MyOsmoseServices">
+	</test> --> <!-- Test -->
+	<!-- <test name="MyOsmoseServices">
 		<classes> 
 			<class name="com.OSMOSE.testcases.OsmoseServices" />
 		</classes>
-	</test> --> <!-- Test -->
-<!-- 	<test name="OCalcPro">
+	</test>  --><!-- Test -->
+	<test name="OCalcPro">
 		<classes> 
 			<class name="com.OSMOSE.testcases.oCalcPro" />
 		</classes>
-	</test> --><!-- Test -->
+	</test><!-- Test -->
 
 
 

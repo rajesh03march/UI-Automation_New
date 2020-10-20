@@ -414,6 +414,10 @@ public class KnowledgeBasePage extends Page {
 	public void clickJointUsePopularQuery() {
 		click("JointUseFilter_XPATH");
 	}
+	
+	public void clickPoleReplacementPopularQuery() {
+		click("PoleReplacementFilter_XPATH");
+	}
 
 	
     public OsmoseServicesPage goOsmoseServices(){

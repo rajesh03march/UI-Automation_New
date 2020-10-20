@@ -4,10 +4,10 @@
            failures="0"
            errors="0"
            skipped="0"
-           time="16.470">
+           time="21.063">
   <properties />
   
   
-            <testcase name="loginTest" time="16.470" classname="com.OSMOSE.testcases.LoginTest" />
+            <testcase name="loginTest" time="21.063" classname="com.OSMOSE.testcases.LoginTest" />
       
 </testsuite>

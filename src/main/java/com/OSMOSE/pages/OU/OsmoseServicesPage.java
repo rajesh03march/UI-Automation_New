@@ -52,16 +52,16 @@ public class OsmoseServicesPage extends Page {
 		click("StrayVoltageLearnMore_XPATH");
 	}
 
-	public void clickTechnicalServicesLearnMore() {
-		click("TechnicalServicesLearnMore_XPATH");
+	public void clickEngineeringServicesLearnMore() {
+		click("EngineeringServicesLearnMore_XPATH");
 	}
 
 	public void clickProductsLearnMore() {
 		click("ProductsLearnMore_XPATH");
 	}
 
-	public void clickMapViewLearnMore() {
-		click("MapViewLearnMore_XPATH");
+	public void clickStormServiceCardLearnMore() {
+		click("StormServiceLearnMore_XPATH");
 	}
 
 	public void clickLearnMorePopupCloseButton() {
@@ -96,6 +96,10 @@ public class OsmoseServicesPage extends Page {
 		click("MOSWoodInspectionProjectProfiles_XPATH");
 	}
 	
+	public void clickWoodTreatmentMAP() {
+		click("MOSWoodInspectionMAP_XPATH");
+	}
+	
 	public void clickWoodRestoration() throws InterruptedException {
 		click("MOSWoodRestorationCard_XPATH");
 	}
@@ -106,6 +110,10 @@ public class OsmoseServicesPage extends Page {
 	
 	public void clickWoodRestorationProjectProfiles() {
 		click("MOSWoodRestorationProjectProfiles_XPATH");
+	}
+	
+	public void clickWoodRestorationMAP() {
+		click("MOSWoodRestorationMAP_XPATH");
 	}
 	
 	public void clickUndergroundVideos() {

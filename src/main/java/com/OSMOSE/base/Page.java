@@ -148,7 +148,7 @@ public class Page {
 			driver.manage().window().maximize();
 			driver.manage().timeouts().implicitlyWait(Integer.parseInt(config.getProperty("implicit.wait")),
 					TimeUnit.SECONDS);
-			wait = new WebDriverWait(driver, 100);
+			wait = new WebDriverWait(driver, 200);
 
 			//menu = new TopMenu(driver);
 
@@ -405,9 +405,11 @@ public class Page {
 	}
 	
 	
-	public void closeTab(int number) {
+	public void closeTab(int number) throws InterruptedException {
 		ArrayList<String> tabs = new ArrayList<String> (driver.getWindowHandles());
 	    driver.switchTo().window(tabs.get(number));
+	    System.out.println("The window displaying is : " + driver.switchTo().window(tabs.get(number)).getCurrentUrl());
+	    Thread.sleep(3000);
 	    driver.close();
 	}
 
