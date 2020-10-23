@@ -68,33 +68,33 @@ public class ContactPage extends Page {
 
 	public void navigateToColombiapit() throws InterruptedException {
 		click("ProjectGroupMenu_XPATH");
-		Thread.sleep((Long.parseLong(p.config.getProperty("Thread1000"))));
+		Thread.sleep((Long.parseLong(config.getProperty("Thread1000"))));
 		click("CityOfColumbia_XPATH");
-		Thread.sleep((Long.parseLong(p.config.getProperty("Thread1000"))));
+		Thread.sleep((Long.parseLong(config.getProperty("Thread1000"))));
 		click("Colombiapit_XPATH");
 	}
 	
 	public void navigateToGeorgiaPowerCompanyDistributionChange() throws InterruptedException {
 		click("ProjectGroupMenu_XPATH");
-		Thread.sleep((Long.parseLong(p.config.getProperty("Thread1000"))));
+		Thread.sleep((Long.parseLong(config.getProperty("Thread1000"))));
 		click("GeorgiaPowerCompany_XPATH");
-		Thread.sleep((Long.parseLong(p.config.getProperty("Thread1000"))));
+		Thread.sleep((Long.parseLong(config.getProperty("Thread1000"))));
 		click("GeorgiaPowerCompanyDistributionChange_XPATH");
 	}
 	
 	public void navigateToGrandElectric() throws InterruptedException {
 		click("ProjectGroupMenu_XPATH");
-		Thread.sleep((Long.parseLong(p.config.getProperty("Thread1000"))));
+		Thread.sleep((Long.parseLong(config.getProperty("Thread1000"))));
 		click("GrandElectricMenu_XPATH");
-		Thread.sleep((Long.parseLong(p.config.getProperty("Thread1000"))));
+		Thread.sleep((Long.parseLong(config.getProperty("Thread1000"))));
 		click("GrandElectric_XPATH");
 	}
 	
 	public void navigateToIdahoPowerCompanyInspection() throws InterruptedException {
 		click("ProjectGroupMenu_XPATH");
-		Thread.sleep((Long.parseLong(p.config.getProperty("Thread1000"))));
+		Thread.sleep((Long.parseLong(config.getProperty("Thread1000"))));
 		click("IdahoPowerCompany_XPATH");
-		Thread.sleep((Long.parseLong(p.config.getProperty("Thread1000"))));
+		Thread.sleep((Long.parseLong(config.getProperty("Thread1000"))));
 		click("IdahoPowerInspection_XPATH");
 	}
 	

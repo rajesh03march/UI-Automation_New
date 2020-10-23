@@ -12,7 +12,7 @@ import com.OSMOSE.pages.OU.oCalcProPage;
 
 public class oCalcPro extends BaseTest {
 
-	Page p = new Page();
+
 
 	// US-101212-101307-Verify UI and Layout of the O-Calc Pro landing page for
 	// Prospective User
@@ -22,18 +22,18 @@ public class oCalcPro extends BaseTest {
 	public void verifyoCalcProNavigationClick() throws InterruptedException {
 		OsmoseServicesPage os = new OsmoseServicesPage();
 		oCalcProPage ocal = os.gooCalcPro();
-		Thread.sleep((Long.parseLong(p.config.getProperty("Thread2000"))));
+		Thread.sleep((Long.parseLong(Page.config.getProperty("Thread2000"))));
 		ocal.clickoCalcNavigation();
-		Thread.sleep((Long.parseLong(p.config.getProperty("Thread3000"))));
+		Thread.sleep((Long.parseLong(Page.config.getProperty("Thread3000"))));
 		Assert.assertEquals(Page.getText("OcalcProHeaderTxt_XPATH"), "Structural Analysis Software for Utility Poles");
 		WebElement OcalcProHeaderImg = Page.driver
 				.findElement(By.xpath("//img[@id='logoOcalProWelcom' and @class='ocalcLogo']"));
 		Assert.assertTrue(OcalcProHeaderImg.isDisplayed());
-		Thread.sleep((Long.parseLong(p.config.getProperty("Thread2000"))));
+		Thread.sleep((Long.parseLong(Page.config.getProperty("Thread2000"))));
 		Page.click("OcalcOsmoseLogo_XPATH");
-		Thread.sleep((Long.parseLong(p.config.getProperty("Thread2000"))));
+		Thread.sleep((Long.parseLong(Page.config.getProperty("Thread2000"))));
 		ocal.clickoCalcCard();
-		Thread.sleep((Long.parseLong(p.config.getProperty("Thread3000"))));
+		Thread.sleep((Long.parseLong(Page.config.getProperty("Thread3000"))));
 		Assert.assertEquals(Page.getText("OcalcProHeaderTxt_XPATH"), "Structural Analysis Software for Utility Poles");
 	}
 
@@ -220,26 +220,26 @@ public class oCalcPro extends BaseTest {
 		OsmoseServicesPage os = new OsmoseServicesPage();
 		oCalcProPage ocal = os.gooCalcPro();
 		ocal.clickLearnMore();
-		Thread.sleep((Long.parseLong(p.config.getProperty("Thread3000"))));
+		Thread.sleep((Long.parseLong(Page.config.getProperty("Thread3000"))));
 		// Verification of the Header text
 		Assert.assertEquals(Page.getText("GetStartedLearnMoreHeaderTxt_XPATH"), "O-Calc Pro");
 		// Verification of close button
 		WebElement closeBtn = Page.driver.findElement(By.xpath("//button[@class='close' and @type='button']"));
 		Assert.assertTrue(closeBtn.isDisplayed());
 		Page.iFrames(2);
-		Thread.sleep((Long.parseLong(p.config.getProperty("Thread2000"))));
+		Thread.sleep((Long.parseLong(Page.config.getProperty("Thread2000"))));
 		// Verification of Structural Analysis text
 		Assert.assertEquals(Page.getText("GetStartedStructuralTxt_XPATH"),
 				"Structural Analysis Software for Utility Poles");
 		Page.click("GetStartedLearnMoreoCalProBrochure_XPATH");
-		Thread.sleep((Long.parseLong(p.config.getProperty("Thread2000"))));
+		Thread.sleep((Long.parseLong(Page.config.getProperty("Thread2000"))));
 		ocal.closeTab(1);
-		Thread.sleep((Long.parseLong(p.config.getProperty("Thread2000"))));
+		Thread.sleep((Long.parseLong(Page.config.getProperty("Thread2000"))));
 		ocal.switchToparentWindow();
 		Page.iFrames(2);
 		Page.click("GetStartedLearnMoreProfServicesBtn_XPATH");
 		Page.driver.switchTo().defaultContent();
-		Thread.sleep((Long.parseLong(p.config.getProperty("Thread1000"))));
+		Thread.sleep((Long.parseLong(Page.config.getProperty("Thread1000"))));
 		Page.click("GetStartedLearnMoreCloseBtn_XPATH");
 	}
 
@@ -250,7 +250,7 @@ public class oCalcPro extends BaseTest {
 		OsmoseServicesPage os = new OsmoseServicesPage();
 		oCalcProPage ocal = os.gooCalcPro();
 		ocal.click30daysTrialBtn();
-		Thread.sleep((Long.parseLong(p.config.getProperty("Thread2000"))));
+		Thread.sleep((Long.parseLong(Page.config.getProperty("Thread2000"))));
 		// Verification of the Back button
 		WebElement BackBtn = Page.driver.findElement(By.xpath("//a[@id='OCalTrialCloseBtn']"));
 		Assert.assertTrue(BackBtn.isDisplayed());
@@ -289,7 +289,7 @@ public class oCalcPro extends BaseTest {
 				.findElement(By.xpath("//input[@id='a100001_submit_btn' and @value='Request Trial']"));
 		Assert.assertTrue(RequestTrialBtn.isDisplayed());
 		Page.driver.switchTo().defaultContent();
-		Thread.sleep((Long.parseLong(p.config.getProperty("Thread1000"))));
+		Thread.sleep((Long.parseLong(Page.config.getProperty("Thread1000"))));
 		Page.click("30daysBackBtn_XPATH");
 	}
 
@@ -300,7 +300,7 @@ public class oCalcPro extends BaseTest {
 		OsmoseServicesPage os = new OsmoseServicesPage();
 		oCalcProPage ocal = os.gooCalcPro();
 		ocal.clickRequestDemoTrialBtn();
-		Thread.sleep((Long.parseLong(p.config.getProperty("Thread2000"))));
+		Thread.sleep((Long.parseLong(Page.config.getProperty("Thread2000"))));
 		// Verification of the Back button
 		WebElement BackBtn = Page.driver.findElement(By.xpath("//a[@id='OCalTrialCloseBtn']"));
 		Assert.assertTrue(BackBtn.isDisplayed());
@@ -339,7 +339,7 @@ public class oCalcPro extends BaseTest {
 				.findElement(By.xpath("//input[@id='a100035_submit_btn' and @value='Request Trial']"));
 		Assert.assertTrue(RequestTrialBtn.isDisplayed());
 		Page.driver.switchTo().defaultContent();
-		Thread.sleep((Long.parseLong(p.config.getProperty("Thread1000"))));
+		Thread.sleep((Long.parseLong(Page.config.getProperty("Thread1000"))));
 		Page.click("DemoBackBtn_XPATH");
 	}
 
@@ -401,7 +401,7 @@ public class oCalcPro extends BaseTest {
 		OsmoseServicesPage os = new OsmoseServicesPage();
 		oCalcProPage ocal = os.gooCalcPro();
 		ocal.clickRequestLicenseQuote();
-		Thread.sleep((Long.parseLong(p.config.getProperty("Thread15000"))));
+		Thread.sleep((Long.parseLong(Page.config.getProperty("Thread15000"))));
 		// Verification of header text
 		WebElement LicenseTxt = Page.driver
 				.findElement(By.xpath("(//div[@class='prdDetailhs2']//h3[text()=' O-Calc License '])[1]"));
@@ -426,7 +426,7 @@ public class oCalcPro extends BaseTest {
 		OsmoseServicesPage os = new OsmoseServicesPage();
 		oCalcProPage ocal = os.gooCalcPro();
 		ocal.clickRequestCVTQuote();
-		Thread.sleep((Long.parseLong(p.config.getProperty("Thread15000"))));
+		Thread.sleep((Long.parseLong(Page.config.getProperty("Thread15000"))));
 		// Verification of header text
 		WebElement CVTTxt = Page.driver
 				.findElement(By.xpath("(//div[@class='prdDetailhs2']//h3[text()=' O-Calc CVT '])[1]"));
@@ -447,7 +447,7 @@ public class oCalcPro extends BaseTest {
 		OsmoseServicesPage os = new OsmoseServicesPage();
 		oCalcProPage ocal = os.gooCalcPro();
 		ocal.clickRequestTrainingQuote();
-		Thread.sleep((Long.parseLong(p.config.getProperty("Thread15000"))));
+		Thread.sleep((Long.parseLong(Page.config.getProperty("Thread15000"))));
 		// Verification of header text
 		WebElement TrainingTxt = Page.driver
 				.findElement(By.xpath("(//div[@class='prdDetailhs2']//h3[text()=' O-Calc Training '])[1]"));
@@ -717,7 +717,7 @@ public class oCalcPro extends BaseTest {
 		OsmoseServicesPage os = new OsmoseServicesPage();
 		oCalcProPage ocal = os.gooCalcPro();
 		ocal.clickoCalcProLogoForLicensedUser();
-		Thread.sleep((Long.parseLong(p.config.getProperty("Thread3000"))));
+		Thread.sleep((Long.parseLong(Page.config.getProperty("Thread3000"))));
 		ocal.clickRequestLicenseQuote();
 		Page.wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("(//div[@class='prdDetailhs2']//h3[text()=' O-Calc License '])[1]")));
 		// Verification of header text
@@ -739,9 +739,9 @@ public class oCalcPro extends BaseTest {
 		OsmoseServicesPage os = new OsmoseServicesPage();
 		oCalcProPage ocal = os.gooCalcPro();
 		ocal.clickoCalcProLogoForLicensedUser();
-		Thread.sleep((Long.parseLong(p.config.getProperty("Thread3000"))));
+		Thread.sleep((Long.parseLong(Page.config.getProperty("Thread3000"))));
 		ocal.clickRequestCVTQuote();
-		Thread.sleep((Long.parseLong(p.config.getProperty("Thread20000"))));
+		Thread.sleep((Long.parseLong(Page.config.getProperty("Thread20000"))));
 		// Verification of header text
 		WebElement CVTTxt = Page.driver
 				.findElement(By.xpath("(//div[@class='prdDetailhs2']//h3[text()=' O-Calc CVT '])[1]"));
@@ -760,9 +760,9 @@ public class oCalcPro extends BaseTest {
 		OsmoseServicesPage os = new OsmoseServicesPage();
 		oCalcProPage ocal = os.gooCalcPro();
 		ocal.clickoCalcProLogoForLicensedUser();
-		Thread.sleep((Long.parseLong(p.config.getProperty("Thread3000"))));
+		Thread.sleep((Long.parseLong(Page.config.getProperty("Thread3000"))));
 		ocal.clickRequestTrainingQuote();
-		Thread.sleep((Long.parseLong(p.config.getProperty("Thread8000"))));
+		Thread.sleep((Long.parseLong(Page.config.getProperty("Thread8000"))));
 		// Verification of header text
 		WebElement TrainingTxt = Page.driver
 				.findElement(By.xpath("(//div[@class='prdDetailhs2']//h3[text()=' O-Calc Training '])[1]"));
@@ -781,9 +781,9 @@ public class oCalcPro extends BaseTest {
 		OsmoseServicesPage os = new OsmoseServicesPage();
 		oCalcProPage ocal = os.gooCalcPro();
 		ocal.clickoCalcProLogoForLicensedUser();
-		Thread.sleep((Long.parseLong(p.config.getProperty("Thread1000"))));
+		Thread.sleep((Long.parseLong(Page.config.getProperty("Thread1000"))));
 		ocal.click30daysTrialBtnLicensedUser();
-		Thread.sleep((Long.parseLong(p.config.getProperty("Thread2000"))));
+		Thread.sleep((Long.parseLong(Page.config.getProperty("Thread2000"))));
 		// Verification of the Back button
 		WebElement BackBtn = Page.driver.findElement(By.xpath("//a[@id='OCalTrialCloseBtn']"));
 		Assert.assertTrue(BackBtn.isDisplayed());
@@ -822,7 +822,7 @@ public class oCalcPro extends BaseTest {
 				.findElement(By.xpath("//input[@id='a100001_submit_btn' and @value='Request Trial']"));
 		Assert.assertTrue(RequestTrialBtn.isDisplayed());
 		Page.driver.switchTo().defaultContent();
-		Thread.sleep((Long.parseLong(p.config.getProperty("Thread1000"))));
+		Thread.sleep((Long.parseLong(Page.config.getProperty("Thread1000"))));
 		Page.click("LicensedUser30daysBackBtn_XPATH");
 	}
 
@@ -831,7 +831,7 @@ public class oCalcPro extends BaseTest {
 		OsmoseServicesPage os = new OsmoseServicesPage();
 		oCalcProPage ocal = os.gooCalcPro();
 		ocal.clickRequestDemoTrialBtnLicensedUser();
-		Thread.sleep((Long.parseLong(p.config.getProperty("Thread2000"))));
+		Thread.sleep((Long.parseLong(Page.config.getProperty("Thread2000"))));
 		// Verification of the Back button
 		WebElement BackBtn = Page.driver.findElement(By.xpath("//a[@id='OCalTrialCloseBtn']"));
 		Assert.assertTrue(BackBtn.isDisplayed());
@@ -870,7 +870,7 @@ public class oCalcPro extends BaseTest {
 				.findElement(By.xpath("//input[@id='a100035_submit_btn' and @value='Request Trial']"));
 		Assert.assertTrue(RequestTrialBtn.isDisplayed());
 		Page.driver.switchTo().defaultContent();
-		Thread.sleep((Long.parseLong(p.config.getProperty("Thread2000"))));
+		Thread.sleep((Long.parseLong(Page.config.getProperty("Thread2000"))));
 		Page.click("LicensedUserDemoBackBtn_XPATH");
 	}
 
@@ -894,11 +894,11 @@ public class oCalcPro extends BaseTest {
 		OsmoseServicesPage os = new OsmoseServicesPage();
 		oCalcProPage ocal = os.gooCalcPro();
 		ocal.clickRequestLicenseQuote();
-		Thread.sleep((Long.parseLong(p.config.getProperty("Thread2000"))));
+		Thread.sleep((Long.parseLong(Page.config.getProperty("Thread2000"))));
 		ocal.DifferentProductQuoteSubmission();
-		Thread.sleep((Long.parseLong(p.config.getProperty("Thread15000"))));
+		Thread.sleep((Long.parseLong(Page.config.getProperty("Thread15000"))));
 		Assert.assertEquals(Page.getText("oCalProductQuoteSubmittedPopup_XPATH"), "Quote Request Submitted");
-		Thread.sleep((Long.parseLong(p.config.getProperty("Thread2000"))));
+		Thread.sleep((Long.parseLong(Page.config.getProperty("Thread2000"))));
 		Page.click("oCalProductSubmittedCloseBtn_XPATH");
 		Page.driver.navigate().back();
 	}
@@ -907,7 +907,7 @@ public class oCalcPro extends BaseTest {
 	public void verifyPresenceOfCreditCardOptions() throws Exception {
 		OsmoseServicesPage os = new OsmoseServicesPage();
 		oCalcProPage ocal = os.gooCalcPro();
-		Thread.sleep((Long.parseLong(p.config.getProperty("Thread2000"))));
+		Thread.sleep((Long.parseLong(Page.config.getProperty("Thread2000"))));
 		ocal.clickRequestLicenseQuote();
 		//Thread.sleep((Long.parseLong(p.config.getProperty("Thread15000"))));
 		Page.wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("(//div[@class='prdDetailhs2']//h3[text()=' O-Calc License '])[1]")));
@@ -918,7 +918,7 @@ public class oCalcPro extends BaseTest {
 		//Thread.sleep((Long.parseLong(p.config.getProperty("Thread25000"))));
 		Page.wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//h5[@id='quoteSubmitted___BV_modal_title_' and text()='Quote Request Submitted']")));
 		Assert.assertEquals(Page.getText("oCalProductQuoteSubmittedPopup_XPATH"), "Quote Request Submitted");
-		Thread.sleep((Long.parseLong(p.config.getProperty("Thread3000"))));
+		Thread.sleep((Long.parseLong(Page.config.getProperty("Thread3000"))));
 		Page.click("oCalProductSubmittedCloseBtn_XPATH");
 		ocal.clickSubmitWithQuotedStatus();
 		ocal.clickMyQuotes();
@@ -932,9 +932,9 @@ public class oCalcPro extends BaseTest {
 		Assert.assertEquals(Page.getText("oCalApprovalPayWithCCBtn_XPATH"), "PAY WITH CREDIT CARD");
 		// Verification of 'I have copied my Receipt' Checkbox and text
 		Assert.assertEquals(Page.getText("OcalApprovalReceiptTxt_XPATH"), "I have copied my receipt");
-		Thread.sleep((Long.parseLong(p.config.getProperty("Thread1000"))));
+		Thread.sleep((Long.parseLong(Page.config.getProperty("Thread1000"))));
 		Page.click("oCalApprovalCloseBtn_XPATH");
-		Thread.sleep((Long.parseLong(p.config.getProperty("Thread1000"))));
+		Thread.sleep((Long.parseLong(Page.config.getProperty("Thread1000"))));
 		ocal.clickOnOU360();
 	}
 
@@ -944,11 +944,11 @@ public class oCalcPro extends BaseTest {
 		oCalcProPage ocal = os.gooCalcPro();
 		Page.click("ProCard_XPATH");
 		ocal.clickMyQuotes();
-		Thread.sleep((Long.parseLong(p.config.getProperty("Thread10000"))));
+		Thread.sleep((Long.parseLong(Page.config.getProperty("Thread10000"))));
 		Page.click("oCalMyQuotesApproveBtn_XPATH");
 		ocal.clickPayWithCreditCard();
 		// Verification of Pay be Credit card Steps pop-up
-		Thread.sleep((Long.parseLong(p.config.getProperty("Thread2000"))));
+		Thread.sleep((Long.parseLong(Page.config.getProperty("Thread2000"))));
 		Assert.assertEquals(Page.getText("oCalPayCCStepsHeaderTxt_XPATH"), "Pay By Credit Card Steps");
 		WebElement MakePymtBtn = Page.driver
 				.findElement(By.xpath("//button[@class='btn cstBtnOne btn-link padMP' and text()=' MAKE PAYMENT ']"));
@@ -961,11 +961,11 @@ public class oCalcPro extends BaseTest {
 		OsmoseServicesPage os = new OsmoseServicesPage();
 		oCalcProPage ocal = os.gooCalcPro();
 		Page.click("oCalPayCCMakePymtBtn_XPATH");
-		Thread.sleep((Long.parseLong(p.config.getProperty("Thread2000"))));
+		Thread.sleep((Long.parseLong(Page.config.getProperty("Thread2000"))));
 		ocal.closeTab(1);
 		ocal.switchToparentWindow();
 		ocal.clickPayWithCreditCard();
-		Thread.sleep((Long.parseLong(p.config.getProperty("Thread2000"))));
+		Thread.sleep((Long.parseLong(Page.config.getProperty("Thread2000"))));
 		Page.click("oCalPayCCCloseBtn_XPATH");
 
 	}
@@ -981,7 +981,7 @@ public class oCalcPro extends BaseTest {
 				"//textarea[@class='form-control font12px txtBC' and @placeholder='Please copy and paste the details from your receipt here']"));
 		Assert.assertTrue(pasteReceiptdetails.isDisplayed());
 		ocal.ClickApprove();
-		Thread.sleep((Long.parseLong(p.config.getProperty("Thread2000"))));
+		Thread.sleep((Long.parseLong(Page.config.getProperty("Thread2000"))));
 		// Verification of Approved pop-up details
 		Assert.assertEquals(Page.getText("oCalApprovedPopUpHeaderTxt_XPATH"), "Approved!");
 		Assert.assertEquals(Page.getText("oCalApprovedPopUpTxt_XPATH"),
@@ -996,12 +996,12 @@ public class oCalcPro extends BaseTest {
 		ocal.NonOcalcProductQuoteSubmission();
 		ocal.clickSubmitWithQuotedStatus();
 		ocal.clickMyQuotes();
-		Thread.sleep((Long.parseLong(p.config.getProperty("Thread15000"))));
+		Thread.sleep((Long.parseLong(Page.config.getProperty("Thread15000"))));
 		Page.click("oCalMyQuotesApproveBtn_XPATH");
 		// Verification of Pay with Credit Card Button
 		Assert.assertFalse(Page.isElementPresent(By.xpath("oCalApprovalPayWithCCBtn_XPATH")));
 		Page.click("oCalApprovalCloseBtn_XPATH");
-		Thread.sleep((Long.parseLong(p.config.getProperty("Thread2000"))));
+		Thread.sleep((Long.parseLong(Page.config.getProperty("Thread2000"))));
 		ocal.clickOnOU360();
 	}
 
@@ -1009,29 +1009,29 @@ public class oCalcPro extends BaseTest {
 	public void verifyPresenceOfCCReceipt() throws Exception {
 		OsmoseServicesPage os = new OsmoseServicesPage();
 		oCalcProPage ocal = os.gooCalcPro();
-		Thread.sleep((Long.parseLong(p.config.getProperty("Thread2000"))));
+		Thread.sleep((Long.parseLong(Page.config.getProperty("Thread2000"))));
 		ocal.clickoCalcCard();
 		ocal.clickRequestLicenseQuote();
-		Thread.sleep((Long.parseLong(p.config.getProperty("Thread4000"))));
+		Thread.sleep((Long.parseLong(Page.config.getProperty("Thread4000"))));
 		// Verification of header text for O-calc Products
 		Assert.assertEquals(Page.getText("oCalcLicenseTxt_XPATH"), "O-Calc License");
 		ocal.OcalProductQuoteSubmission();
-		Thread.sleep((Long.parseLong(p.config.getProperty("Thread2000"))));
+		Thread.sleep((Long.parseLong(Page.config.getProperty("Thread2000"))));
 		Assert.assertEquals(Page.getText("oCalProductQuoteSubmittedPopup_XPATH"), "Quote Request Submitted");
-		Thread.sleep((Long.parseLong(p.config.getProperty("Thread2000"))));
+		Thread.sleep((Long.parseLong(Page.config.getProperty("Thread2000"))));
 		Page.click("oCalProductSubmittedCloseBtn_XPATH");
 		ocal.clickSubmitWithQuotedStatus();
 		ocal.clickMyQuotes();
-		Thread.sleep((Long.parseLong(p.config.getProperty("Thread10000"))));
+		Thread.sleep((Long.parseLong(Page.config.getProperty("Thread10000"))));
 		Page.click("oCalMyQuotesApproveBtn_XPATH");
 		ocal.clickIhaveCopiedMyReceiptChkBox();
 		ocal.ClickApprove();
-		Thread.sleep((Long.parseLong(p.config.getProperty("Thread2000"))));
+		Thread.sleep((Long.parseLong(Page.config.getProperty("Thread2000"))));
 		// Verification of Approved pop-up details
 		Assert.assertEquals(Page.getText("oCalApprovedPopUpHeaderTxt_XPATH"), "Approved!");
 		Page.click("oCalApprovedPopUpCloseBtn_XPATH");
 		ocal.clickMyQuotes();
-		Thread.sleep((Long.parseLong(p.config.getProperty("Thread15000"))));
+		Thread.sleep((Long.parseLong(Page.config.getProperty("Thread15000"))));
 		// Verification of CC Receipt field
 		WebElement CCReceipt = Page.driver.findElement(By.xpath(
 				"(//div[@class='ccReceiptbtn btn-light relative float-left clearfix' and text()=' CC Receipt '])[1]"));
