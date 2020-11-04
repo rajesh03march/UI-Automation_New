@@ -43,8 +43,10 @@ public class Page {
 	public static ExtentTest test;
 	public static String browser;
 
-	/*public static TopMenu menu;
-	JavascriptExecutor js = (JavascriptExecutor) driver;*/
+	/*
+	 * public static TopMenu menu; JavascriptExecutor js = (JavascriptExecutor)
+	 * driver;
+	 */
 	/*
 	 * Logs, Properties - OR, Config Excel Implicit and ExplicitWait Extent Reports
 	 * 
@@ -127,7 +129,7 @@ public class Page {
 				options.addArguments("--disable-gpu");
 				options.setExperimentalOption("prefs", prefs);
 				options.addArguments("--disable-infobars");
-				options.addArguments("incognito");
+				// options.addArguments("incognito");
 //			options.addArguments("disable-features=NetworkService");
 				capabilities.setCapability(ChromeOptions.CAPABILITY, options);
 
@@ -150,7 +152,7 @@ public class Page {
 					TimeUnit.SECONDS);
 			wait = new WebDriverWait(driver, 200);
 
-			//menu = new TopMenu(driver);
+			// menu = new TopMenu(driver);
 
 		}
 	}
@@ -403,35 +405,34 @@ public class Page {
 																														// window
 		// driver.close();
 	}
-	
-	
+
 	public void closeTab(int number) throws InterruptedException {
-		ArrayList<String> tabs = new ArrayList<String> (driver.getWindowHandles());
-	    driver.switchTo().window(tabs.get(number));
-	    System.out.println("The window displaying is : " + driver.switchTo().window(tabs.get(number)).getCurrentUrl());
-	    Thread.sleep(3000);
-	    driver.close();
+		ArrayList<String> tabs = new ArrayList<String>(driver.getWindowHandles());
+		driver.switchTo().window(tabs.get(number));
+		System.out.println("The window displaying is : " + driver.switchTo().window(tabs.get(number)).getCurrentUrl());
+		Thread.sleep(3000);
+		driver.close();
 	}
 
-		public static boolean isVisiable(String locator){
-			try {
-				if (locator.endsWith("_CSS")) {
-					driver.findElement(By.cssSelector(OR.getProperty(locator))).isDisplayed();
-				} else if (locator.endsWith("_XPATH")) {
-					driver.findElement(By.xpath(OR.getProperty(locator))).isDisplayed();
-				} else if (locator.endsWith("_ID")) {
-					driver.findElement(By.id(OR.getProperty(locator))).isDisplayed();
-				}
-				log.debug("Clicking on an Element : "+locator);
-				test.log(LogStatus.INFO, "Clicking on : " + locator);
+	public static boolean isVisiable(String locator) {
+		try {
+			if (locator.endsWith("_CSS")) {
+				driver.findElement(By.cssSelector(OR.getProperty(locator))).isDisplayed();
+			} else if (locator.endsWith("_XPATH")) {
+				driver.findElement(By.xpath(OR.getProperty(locator))).isDisplayed();
+			} else if (locator.endsWith("_ID")) {
+				driver.findElement(By.id(OR.getProperty(locator))).isDisplayed();
+			}
+			log.debug("Clicking on an Element : " + locator);
+			test.log(LogStatus.INFO, "Clicking on : " + locator);
 
-				return true;
-			}
-			
-			catch(Exception e) {
-				return false;
-			}
+			return true;
 		}
+
+		catch (Exception e) {
+			return false;
+		}
+	}
 
 	public static boolean isAlertPresent() {
 		try {
@@ -480,7 +481,7 @@ public class Page {
 		test.log(LogStatus.INFO, "Selecting from dropdown : " + locator);
 
 	}
-	
+
 	public static void findelement(String locator) {
 
 		if (locator.endsWith("_CSS")) {
@@ -496,7 +497,7 @@ public class Page {
 		test.log(LogStatus.INFO, "Typing in : " + locator);
 
 	}
-	
+
 	public static String getdefaultValuefromdropdown(String locator) {
 
 		if (locator.endsWith("_CSS")) {

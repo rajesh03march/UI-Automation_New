@@ -69,6 +69,8 @@ public class oCalcProPage extends Page {
 		click("oCalProductViewCartButton_XPATH");
 		click("oCalProductSubmitQuoteReqBtn_XPATH");
 		click("oCalProductSubmitBtn_XPATH");
+		Page.wait.until(ExpectedConditions
+				.visibilityOfElementLocated(By.xpath("//button[@class='btn btnMidBlue btn-link' and text()='CLOSE']")));
 		click("oCalProductSubmittedCloseBtn_XPATH");
 	}
 
@@ -82,6 +84,8 @@ public class oCalcProPage extends Page {
 		click("oCalProductViewCartButton_XPATH");
 		click("oCalProductSubmitQuoteReqBtn_XPATH");
 		click("oCalProductSubmitBtn_XPATH");
+		Page.wait.until(ExpectedConditions
+				.visibilityOfElementLocated(By.xpath("//button[@class='btn btnMidBlue btn-link' and text()='CLOSE']")));
 		click("oCalProductSubmittedCloseBtn_XPATH");
 	}
 
@@ -95,6 +99,8 @@ public class oCalcProPage extends Page {
 		click("oCalProductViewCartButton_XPATH");
 		click("oCalProductSubmitQuoteReqBtn_XPATH");
 		click("oCalProductSubmitBtn_XPATH");
+		Page.wait.until(ExpectedConditions
+				.visibilityOfElementLocated(By.xpath("//button[@class='btn btnMidBlue btn-link' and text()='CLOSE']")));
 		click("oCalProductSubmittedCloseBtn_XPATH");
 	}
 
@@ -198,6 +204,8 @@ public class oCalcProPage extends Page {
 		click("oCalProductViewCartButton_XPATH");
 		click("oCalProductSubmitQuoteReqBtn_XPATH");
 		click("oCalProductSubmitBtn_XPATH");
+		Page.wait.until(ExpectedConditions
+				.visibilityOfElementLocated(By.xpath("//button[@class='btn btnMidBlue btn-link' and text()='CLOSE']")));
 		click("oCalProductSubmittedCloseBtn_XPATH");
 	}
 	
@@ -245,12 +253,27 @@ public class oCalcProPage extends Page {
 		click("KBWikiPage_XPATH");
 	}
 	
-	public void clickOCalcProVanityQuery1() {
-		click("OCalcProVanityQuery1_XPATH");
+	public void clickOCalcProIntroduction() {
+		click("OCalcIntroduction_XPATH");
 	}
 	
 	public void clickLicenseManagement() {
 		click("LicensedUserLicenseManagementCard_XPATH");
+	}
+	
+	public void clickLicenseTransferBtn() {
+		type("TransferPopUpFirstName_XPATH","First");
+		type("TransferPopUpLastName_XPATH","Last");
+		type("TransferPopUpEmail_XPATH","email@gmail.com");
+		type("TransferPopUpPhone_XPATH","1234567890");
+		click("TransferPopUpTransferBtn_XPATH");
+	}
+	
+	public void RenewProductQuoteSubmission() throws InterruptedException {
+		Thread.sleep((Long.parseLong(p.config.getProperty("Thread1000"))));
+		click("oCalProductAddButton_XPATH");
+		click("oCalProductViewCartButton_XPATH");
+		click("oCalProductSubmitQuoteReqBtn_XPATH");
 	}
 
 }
