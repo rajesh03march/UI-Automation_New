@@ -1,28 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuite name="OCalcPro"
-           tests="16"
+           tests="21"
            failures="0"
            errors="0"
            skipped="0"
-           time="232.329">
+           time="99.371">
   <properties />
   
   
-            <testcase name="verifyKBClickLicensedUser" time="27.246" classname="com.OSMOSE.testcases.oCalcPro" />
-                <testcase name="verifyClickOnNextPreviousbtns" time="2.252" classname="com.OSMOSE.testcases.oCalcPro" />
-                <testcase name="verifyKBWikiPageClickLicensedUser" time="23.914" classname="com.OSMOSE.testcases.oCalcPro" />
-                <testcase name="verifyoCalcProNavigationClick" time="15.596" classname="com.OSMOSE.testcases.oCalcPro" />
-                <testcase name="verifyClickOnSkipTourExitTourbtns" time="4.681" classname="com.OSMOSE.testcases.oCalcPro" />
-                <testcase name="verifyPresenceOfShowTour" time="2.301" classname="com.OSMOSE.testcases.oCalcPro" />
-                <testcase name="verifySearchResultsAreGroupedLicensedUser" time="15.669" classname="com.OSMOSE.testcases.oCalcPro" />
-                <testcase name="verifyKBTrainingVideosClick" time="12.143" classname="com.OSMOSE.testcases.oCalcPro" />
-                <testcase name="verifyTrainingVideosAreGrouped" time="27.342" classname="com.OSMOSE.testcases.oCalcPro" />
-                <testcase name="verifyTrainingVideosAreGroupedLicensedUser" time="15.764" classname="com.OSMOSE.testcases.oCalcPro" />
-                <testcase name="verifyKBTrainingVideosClickLicensedUser" time="12.288" classname="com.OSMOSE.testcases.oCalcPro" />
-                <testcase name="verifySearchResultsAreGrouped" time="15.773" classname="com.OSMOSE.testcases.oCalcPro" />
-                <testcase name="verifyKBClick" time="30.565" classname="com.OSMOSE.testcases.oCalcPro" />
-                <testcase name="verifyPresenceOfSkipTourNextPreviousExitTour" time="2.653" classname="com.OSMOSE.testcases.oCalcPro" />
-                <testcase name="verifyPresenceOfKnowledgeBaseCard" time="0.068" classname="com.OSMOSE.testcases.oCalcPro" />
-                <testcase name="verifyKBWikiPageClick" time="24.074" classname="com.OSMOSE.testcases.oCalcPro" />
+            <testcase name="verifyUpdateContactBtn" time="12.632" classname="com.OSMOSE.testcases.oCalcPro" />
+                <testcase name="verifyContentsOfLicenseMgmtLicensedUser" time="0.373" classname="com.OSMOSE.testcases.oCalcPro" />
+                <testcase name="verifyClickOnSkipTourExitTourbtns" time="4.322" classname="com.OSMOSE.testcases.oCalcPro" />
+                <testcase name="verifyFilterContactName" time="3.493" classname="com.OSMOSE.testcases.oCalcPro" />
+                <testcase name="verifyTransferBtn" time="13.791" classname="com.OSMOSE.testcases.oCalcPro" />
+                <testcase name="verifyPresenceOfSkipTourNextPreviousExitTour" time="4.195" classname="com.OSMOSE.testcases.oCalcPro" />
+                <testcase name="verifyoCalcProNavigationClick" time="14.720" classname="com.OSMOSE.testcases.oCalcPro" />
+                <testcase name="verifyClickResend" time="4.381" classname="com.OSMOSE.testcases.oCalcPro" />
+                <testcase name="verifyClickRenewBtn" time="8.650" classname="com.OSMOSE.testcases.oCalcPro" />
+                <testcase name="verifyFilterLicenseKey" time="1.549" classname="com.OSMOSE.testcases.oCalcPro" />
+                <testcase name="verifyClickTransferLicenseBtn" time="2.701" classname="com.OSMOSE.testcases.oCalcPro" />
+                <testcase name="verifyFilterStatus" time="2.678" classname="com.OSMOSE.testcases.oCalcPro" />
+                <testcase name="verifyFilterLicenseType" time="2.633" classname="com.OSMOSE.testcases.oCalcPro" />
+                <testcase name="verifyFilterPurchaseDate" time="2.873" classname="com.OSMOSE.testcases.oCalcPro" />
+                <testcase name="verifyTransferErrorMsg" time="0.217" classname="com.OSMOSE.testcases.oCalcPro" />
+                <testcase name="verifyClickUpdateContactBtn" time="2.295" classname="com.OSMOSE.testcases.oCalcPro" />
+                <testcase name="verifyClickOnNextPreviousbtns" time="2.317" classname="com.OSMOSE.testcases.oCalcPro" />
+                <testcase name="verifyContentsLicenseManagementPopUp" time="4.508" classname="com.OSMOSE.testcases.oCalcPro" />
+                <testcase name="verifyFilterExpirationDate" time="2.888" classname="com.OSMOSE.testcases.oCalcPro" />
+                <testcase name="verifyOnlyRenewBtnIsEnabledOnMultipleRecordSelection" time="6.478" classname="com.OSMOSE.testcases.oCalcPro" />
+                <testcase name="verifyFilterExpToken" time="1.677" classname="com.OSMOSE.testcases.oCalcPro" />
       
 </testsuite>

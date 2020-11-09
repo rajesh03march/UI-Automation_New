@@ -741,6 +741,7 @@ public class ProductPage extends Page {
 		click("ProductViewCartButton_XPATH");
 		Thread.sleep((Long.parseLong(p.config.getProperty("Thread1000"))));
 		click("QuoteRequestCrossicon_XPATH");
+		Thread.sleep((Long.parseLong(p.config.getProperty("Thread1000"))));
 		click("ProductPageCartIcon_XPATH");
 	}
 
@@ -757,6 +758,7 @@ public class ProductPage extends Page {
 		click("ProductViewCartButton_XPATH");
 		Thread.sleep((Long.parseLong(p.config.getProperty("Thread1000"))));
 		click("QuoteRequestCrossicon_XPATH");
+		Thread.sleep((Long.parseLong(p.config.getProperty("Thread1000"))));
 		click("ProductPageCartIcon_XPATH");
 		click("productPageCartViewCartbtn_XPATH");
 	}
@@ -775,6 +777,7 @@ public class ProductPage extends Page {
 		click("ProductViewCartButton_XPATH");
 		Thread.sleep((Long.parseLong(p.config.getProperty("Thread1000"))));
 		click("QuoteRequestCrossicon_XPATH");
+		Thread.sleep((Long.parseLong(p.config.getProperty("Thread1000"))));
 		click("ProductPageCartIcon_XPATH");
 		click("productPageCartSubmitCartbtn_XPATH");
 	}
@@ -793,12 +796,14 @@ public class ProductPage extends Page {
 		click("ProductViewCartButton_XPATH");
 		Thread.sleep((Long.parseLong(p.config.getProperty("Thread1000"))));
 		click("QuoteRequestCrossicon_XPATH");
+		Thread.sleep((Long.parseLong(p.config.getProperty("Thread1000"))));
 		click("ProductPageCartIcon_XPATH");
 		click("productPageCartViewCartbtn_XPATH");
 		Thread.sleep((Long.parseLong(p.config.getProperty("Thread1000"))));
 		click("PlusicononShoppingCart_XPATH");
 		Thread.sleep((Long.parseLong(p.config.getProperty("Thread1000"))));
 		click("QuoteRequestCrossicon_XPATH");
+		Thread.sleep((Long.parseLong(p.config.getProperty("Thread1000"))));
 		click("ProductPageCartIcon_XPATH");
 	}
 
@@ -1138,6 +1143,7 @@ public class ProductPage extends Page {
 		click("ProductViewCartButton_XPATH");
 		Thread.sleep((Long.parseLong(p.config.getProperty("Thread3000"))));
 		click("QuoteRequestCrossicon_XPATH");
+		Thread.sleep((Long.parseLong(p.config.getProperty("Thread1000"))));
 		click("ProductPageCartIcon_XPATH");
 		Thread.sleep((Long.parseLong(p.config.getProperty("Thread1000"))));
 		click("DeleteiconShoppingOverlay_XPATH");

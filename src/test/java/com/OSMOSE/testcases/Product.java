@@ -13,14 +13,14 @@ import org.testng.annotations.Test;
 import java.util.Hashtable;
 
 public class Product extends BaseTest {
-	
+
 	Page p = new Page();
 
 	@Test(dataProviderClass = Utilities.class, dataProvider = "dp", priority = 0, description = "Verification of the Products Link on the Home Page")
 	public void verifyTheProductLink(Hashtable<String, String> data) throws InterruptedException {
 		HomeOU ou = new HomeOU();
 		ProductPage pp = ou.goProduct();
-		//pp.clickOnOU360();
+		// pp.clickOnOU360();
 		Thread.sleep((Long.parseLong(p.config.getProperty("Thread1200"))));
 		pp.clickProductLink();
 		Thread.sleep((Long.parseLong(p.config.getProperty("Thread1000"))));
@@ -62,14 +62,15 @@ public class Product extends BaseTest {
 	public void shoppingCartElementPresent() throws InterruptedException {
 		HomeOU ou = new HomeOU();
 		ProductPage pp = ou.goProduct();
-		Assert.assertTrue(Page.driver.findElement(By.xpath("//a[@id='openMyCart']//img[@alt='shopping cart']")).isDisplayed());
+		Assert.assertTrue(
+				Page.driver.findElement(By.xpath("//a[@id='openMyCart']//img[@alt='shopping cart']")).isDisplayed());
 	}
 
 	@Test(priority = 6, dependsOnMethods = "verifyTheProductLink", enabled = true, description = "Verification of the presence of Admin button")
 	public void adminElementPresent() throws InterruptedException {
 		HomeOU ou = new HomeOU();
 		ProductPage pp = ou.goProduct();
-		//Verifying the presence of MyQuotes button
+		// Verifying the presence of MyQuotes button
 		WebElement Admin = Page.driver.findElement(By.xpath("//div[@id='AdminDropdown']"));
 		Assert.assertTrue(Admin.isDisplayed());
 	}
@@ -120,8 +121,9 @@ public class Product extends BaseTest {
 		Thread.sleep((Long.parseLong(p.config.getProperty("Thread1200"))));
 		pp.clickOnViewDetails("Productsimageclick2_XPATH");
 		Thread.sleep((Long.parseLong(p.config.getProperty("Thread5000"))));
-		//WebElement SizeDD = Page.driver.findElement(By.xpath("(//select[@id='selectSize' and @title='Select Size'])[1]"));
-		Assert.assertTrue(Page.isElementPresent(By.xpath("ProductSizeDropdown_XPATH")));
+		WebElement SizeDD = Page.driver
+				.findElement(By.xpath("(//select[@id='selectSize' and @title='Select Size'])[1]"));
+		Assert.assertTrue(SizeDD.isDisplayed());
 		Thread.sleep((Long.parseLong(p.config.getProperty("Thread5000"))));
 		Page.click("CloseButton_XPATH");
 	}
@@ -172,6 +174,8 @@ public class Product extends BaseTest {
 		pp.ProductPoleRestoration();
 		Assert.assertEquals(Page.getText("FeaturedProductsCellNumber_XPATH"), "(770) 632-6700 Option 3");
 		Thread.sleep((Long.parseLong(p.config.getProperty("Thread1000"))));
+		pp.closeTab(1);
+		Thread.sleep((Long.parseLong(p.config.getProperty("Thread2000"))));
 		pp.switchToparentWindow();
 		Page.click("CloseButton_XPATH");
 		Page.driver.navigate().back();
@@ -179,23 +183,34 @@ public class Product extends BaseTest {
 		pp.clickProductCartLink();
 		Thread.sleep((Long.parseLong(p.config.getProperty("Thread1000"))));
 		pp.ProductPoleRestoration_1();
+		Thread.sleep((Long.parseLong(p.config.getProperty("Thread1000"))));
+		pp.closeTab(1);
+		Thread.sleep((Long.parseLong(p.config.getProperty("Thread2000"))));
 		pp.switchToparentWindow();
 		Assert.assertEquals(Page.getText("FeaturedProductsCellNumber_XPATH"), "(770) 632-6700 Option 3");
 		Page.click("CloseButton_XPATH");
 		Thread.sleep((Long.parseLong(p.config.getProperty("Thread1000"))));
 
 		/*
-		 * Page.driver.navigate().back(); pp.clickProductCartLink(); Thread.sleep((Long.parseLong(p.config.getProperty("Thread1000"))));
+		 * Page.driver.navigate().back(); pp.clickProductCartLink();
+		 * Thread.sleep((Long.parseLong(p.config.getProperty("Thread1000"))));
 		 * pp.ProductPoleRestoration_2(); pp.switchToparentWindow();
 		 * Assert.assertEquals(Page.getText("FeaturedProductsCellNumber1_XPATH"),
 		 * "(770) 632-6700 Option 3"); Page.click("CloseButton_XPATH");
-		 * Thread.sleep((Long.parseLong(p.config.getProperty("Thread1000")))); Page.driver.navigate().back();
+		 * Thread.sleep((Long.parseLong(p.config.getProperty("Thread1000"))));
+		 * Page.driver.navigate().back();
 		 * 
-		 * pp.clickProductCartLink(); Thread.sleep((Long.parseLong(p.config.getProperty("Thread1000")))); pp.ProductPoleRestoration_3();
+		 * pp.clickProductCartLink();
+		 * Thread.sleep((Long.parseLong(p.config.getProperty("Thread1000"))));
+		 * pp.ProductPoleRestoration_3();
+		 * Thread.sleep((Long.parseLong(p.config.getProperty("Thread1000"))));
+		 * pp.closeTab(1);
+		 * Thread.sleep((Long.parseLong(p.config.getProperty("Thread2000"))));
 		 * pp.switchToparentWindow();
 		 * Assert.assertEquals(Page.getText("FeaturedProductsCellNumber_XPATH"),
 		 * "(770) 632-6700 Option 3"); Page.click("CloseButton_XPATH");
-		 * Thread.sleep((Long.parseLong(p.config.getProperty("Thread1000")))); Page.driver.navigate().back(); pp.clickProductCartLink();
+		 * Thread.sleep((Long.parseLong(p.config.getProperty("Thread1000"))));
+		 * Page.driver.navigate().back(); pp.clickProductCartLink();
 		 */
 
 	}
@@ -211,7 +226,7 @@ public class Product extends BaseTest {
 		Assert.assertEquals("", "");
 	}
 
-	@Test(dataProviderClass = Utilities.class, priority = 17, enabled = false, dataProvider = "dp", description = "Verify that User clicks on the Slider icon and search for firstname Pole")
+	@Test(dataProviderClass = Utilities.class, priority = 17, enabled = true, dataProvider = "dp", description = "Verify that User clicks on the Slider icon and search for firstname Pole")
 	public void verifyTheSearchfirstname(Hashtable<String, String> data) throws InterruptedException {
 		HomeOU ou = new HomeOU();
 		ProductPage pp = ou.goProduct();
@@ -223,7 +238,7 @@ public class Product extends BaseTest {
 		pp.ProductSearchFirstname();
 	}
 
-	@Test(dataProviderClass = Utilities.class, priority = 18, enabled = false, dataProvider = "dp", description = "Verify that User clicks on the Slider icon and search for full name Pole Restoration")
+	@Test(dataProviderClass = Utilities.class, priority = 18, enabled = true, dataProvider = "dp", description = "Verify that User clicks on the Slider icon and search for full name Pole Restoration")
 	public void verifyTheSearchFullname(Hashtable<String, String> data) throws InterruptedException {
 		HomeOU ou = new HomeOU();
 		ProductPage pp = ou.goProduct();
@@ -235,7 +250,7 @@ public class Product extends BaseTest {
 				Page.driver.findElement(By.xpath("//*[@id='productSlider']/div[1]/div[2]/img")).isDisplayed());
 	}
 
-	@Test(dataProviderClass = Utilities.class, priority = 19, enabled = false, dataProvider = "dp", description = "Verify that User clicks on the Slider icon and search for One Alphabeted like H")
+	@Test(dataProviderClass = Utilities.class, priority = 19, enabled = true, dataProvider = "dp", description = "Verify that User clicks on the Slider icon and search for One Alphabeted like H")
 	public void verifyTheSearchOneAlphabet(Hashtable<String, String> data) throws InterruptedException {
 		HomeOU ou = new HomeOU();
 		ProductPage pp = ou.goProduct();
@@ -249,7 +264,7 @@ public class Product extends BaseTest {
 
 	}
 
-	@Test(dataProviderClass = Utilities.class, priority = 20, enabled = false, dataProvider = "dp", description = "Verify that User clicks on the Slider icon and Click on Crosss icon")
+	@Test(dataProviderClass = Utilities.class, priority = 20, enabled = true, dataProvider = "dp", description = "Verify that User clicks on the Slider icon and Click on Crosss icon")
 	public void verifyTheSearchCrossButton(Hashtable<String, String> data) throws InterruptedException {
 		HomeOU ou = new HomeOU();
 		ProductPage pp = ou.goProduct();
@@ -261,7 +276,7 @@ public class Product extends BaseTest {
 		Page.click("SearchCrossIcon_XPATH");
 	}
 
-	@Test(dataProviderClass = Utilities.class, priority = 21, enabled = false, dataProvider = "dp", description = "Verify that User clicks on the Slider icon and validate the validation message is shown wrong input")
+	@Test(dataProviderClass = Utilities.class, priority = 21, enabled = true, dataProvider = "dp", description = "Verify that User clicks on the Slider icon and validate the validation message is shown wrong input")
 	public void verifyTheValidationmessage(Hashtable<String, String> data) throws InterruptedException {
 		HomeOU ou = new HomeOU();
 		ProductPage pp = ou.goProduct();
@@ -274,12 +289,12 @@ public class Product extends BaseTest {
 
 		WebElement element = Page.driver.findElement(By.xpath("//div[@class='alert alert-dismissible alert-danger']"));
 		String text = element.getText();
-		String newtext = text.substring(text.indexOf('\n')+1);
-		Assert.assertEquals(newtext,"No products match your search.");
+		String newtext = text.substring(text.indexOf('\n') + 1);
+		Assert.assertEquals(newtext, "No products match your search.");
 
 	}
 
-	@Test(priority = 22, enabled = false, description = "Product Return Policies will be provided on the 'Quote Request Approval' page and will be presented to the customer as a pop-up for reading.")
+	@Test(priority = 22, enabled = true, description = "Product Return Policies will be provided on the 'Quote Request Approval' page and will be presented to the customer as a pop-up for reading.")
 	public void ReturnPolicy() throws InterruptedException {
 		HomeOU ou = new HomeOU();
 		ProductPage pp = ou.goProduct();
@@ -290,26 +305,24 @@ public class Product extends BaseTest {
 		pp.clickRequestCrossicon();
 	}
 
-	@Test(priority = 23, enabled = false, description = "On the Product Group Details Page, verify the text present")
+	@Test(priority = 23, enabled = true, description = "On the Product Group Details Page, verify the text present")
 	public void verifyAddShoppingCarttext() throws InterruptedException {
 		HomeOU ou = new HomeOU();
 		ProductPage pp = ou.goProduct();
 		pp.AddToCartShoppingCart();
 		Thread.sleep((Long.parseLong(p.config.getProperty("Thread5000"))));
-		Assert.assertEquals(
-				Page.driver.findElement(By.xpath("//div[@class='addCartStepOne']/div/div[2]/div[2]")).getText(),
-				"For information or to place an order");
-		Assert.assertEquals(
-				Page.driver.findElement(By.xpath("//div[@class='addCartStepOne']/div/div[2]/div[3]/strong")).getText(),
-				"(770) 632-6700 Option 3");
-		Assert.assertEquals(Page.driver
-				.findElement(By.xpath("//div[@class='addCartStepOne']/div/div[2]/div[4]/strong/a")).getText(),
-				"products@osmose.com");
+		WebElement ForInfoTxt = Page.driver
+				.findElement(By.xpath("(//div[@class=\"mt-1\" and text()='For information or to place an order'])[1]"));
+		Assert.assertEquals(ForInfoTxt.getText(), "For information or to place an order");
+		WebElement CallTxt = Page.driver.findElement(By.xpath("(//a[text()='(770) 632-6700 Option 3'])[1]"));
+		Assert.assertEquals(CallTxt.getText(),"(770) 632-6700 Option 3");
+		WebElement EmailTxt = Page.driver.findElement(By.xpath("(//a[contains(text(),'products@osmose.com')])[1]"));
+		Assert.assertEquals(EmailTxt.getText(),"products@osmose.com");
 		Thread.sleep((Long.parseLong(p.config.getProperty("Thread10000"))));
 		Page.click("QuoteRequestCrossicon_XPATH");
 	}
 
-	@Test(priority = 24, enabled = false, description = "On the Product Group Details Page, the user will be provided with the “ADD”  button  with a quantity selector.")
+	@Test(priority = 24, enabled = true, description = "On the Product Group Details Page, the user will be provided with the “ADD”  button  with a quantity selector.")
 	public void AddShoppingCart() throws InterruptedException {
 		HomeOU ou = new HomeOU();
 		ProductPage pp = ou.goProduct();
@@ -322,7 +335,7 @@ public class Product extends BaseTest {
 	}
 
 	// Shopping Cart
-	@Test(priority = 25, enabled = false, description = "On the Product Group Details Page, the user will be provided with the “ADD”  button  with a quantity selector.")
+	@Test(priority = 25, enabled = true, description = "On the Product Group Details Page, the user will be provided with the “ADD”  button  with a quantity selector.")
 	public void VerifyCrossicononhoppingCart() throws InterruptedException {
 		HomeOU ou = new HomeOU();
 		ProductPage pp = ou.goProduct();
@@ -333,7 +346,7 @@ public class Product extends BaseTest {
 	}
 
 	// Shopping Cart
-	@Test(priority = 26, enabled = false, description = "User is able to add different product multiple times in cart by clicking on contiune button")
+	@Test(priority = 26, enabled = true, description = "User is able to add different product multiple times in cart by clicking on contiune button")
 	public void VerifyCrossicononhoppingCart_Differentitem() throws InterruptedException {
 		HomeOU ou = new HomeOU();
 		ProductPage pp = ou.goProduct();
@@ -348,7 +361,7 @@ public class Product extends BaseTest {
 	}
 
 	// Shopping Cart
-	@Test(priority = 27, enabled = false, description = "User is able to add same product multiple times in cart by clicking on contiune button")
+	@Test(priority = 27, enabled = true, description = "User is able to add same product multiple times in cart by clicking on contiune button")
 	public void VerifyAddShopping_Sameitem() throws InterruptedException {
 		HomeOU ou = new HomeOU();
 		ProductPage pp = ou.goProduct();
@@ -362,7 +375,7 @@ public class Product extends BaseTest {
 				.isDisplayed());
 	}
 
-	@Test(priority = 28, enabled = false, description = "Delete product from the cart")
+	@Test(priority = 28, enabled = true, description = "Delete product from the cart")
 	public void DeleteQuanityinShoppingCart() throws InterruptedException {
 		HomeOU ou = new HomeOU();
 		ProductPage pp = ou.goProduct();
@@ -370,7 +383,7 @@ public class Product extends BaseTest {
 		pp.DeleteQuanityinShoppingCart();
 	}
 
-	@Test(priority = 29, enabled = false, description = "Increase product quantity from the cart")
+	@Test(priority = 29, enabled = true, description = "Increase product quantity from the cart")
 	public void UpdateIncreaseQuanityinShoppingCart() throws InterruptedException {
 		HomeOU ou = new HomeOU();
 		ProductPage pp = ou.goProduct();
@@ -378,7 +391,7 @@ public class Product extends BaseTest {
 		pp.UpdateIncreaseQuanityinShoppingCart();
 	}
 
-	@Test(priority = 30, enabled = false, description = "Decrease product quantity from the cart")
+	@Test(priority = 30, enabled = true, description = "Decrease product quantity from the cart")
 	public void UpdateDecreaseQuanityinShoppingCart() throws InterruptedException {
 		HomeOU ou = new HomeOU();
 		ProductPage pp = ou.goProduct();
@@ -387,7 +400,7 @@ public class Product extends BaseTest {
 		Thread.sleep((Long.parseLong(p.config.getProperty("Thread15000"))));
 	}
 
-	@Test(priority = 31, enabled = false, description = "Create Quote by adding product in the cart")
+	@Test(priority = 31, enabled = true, description = "Create Quote by adding product in the cart")
 	public void CreateQuote() throws InterruptedException {
 		HomeOU ou = new HomeOU();
 		ProductPage pp = ou.goProduct();
@@ -396,7 +409,7 @@ public class Product extends BaseTest {
 		Thread.sleep((Long.parseLong(p.config.getProperty("Thread1000"))));
 	}
 
-	@Test(priority = 32, enabled = false, description = "Create Quote by adding product in the cart by adding comments")
+	@Test(priority = 32, enabled = true, description = "Create Quote by adding product in the cart by adding comments")
 	public void CreateQuote_Comments() throws InterruptedException {
 		HomeOU ou = new HomeOU();
 		ProductPage pp = ou.goProduct();
@@ -405,7 +418,7 @@ public class Product extends BaseTest {
 		Thread.sleep((Long.parseLong(p.config.getProperty("Thread1000"))));
 	}
 
-	@Test(priority = 33, enabled = false, description = "Create Quote by adding product in the cart by adding zip code")
+	@Test(priority = 33, enabled = true, description = "Create Quote by adding product in the cart by adding zip code")
 	public void CreateQuote_ZipCode() throws InterruptedException {
 		HomeOU ou = new HomeOU();
 		ProductPage pp = ou.goProduct();
@@ -414,7 +427,7 @@ public class Product extends BaseTest {
 		Thread.sleep((Long.parseLong(p.config.getProperty("Thread1000"))));
 	}
 
-	@Test(priority = 34, enabled = false, description = "Create Quote by adding product in the cart by adding attachment")
+	@Test(priority = 34, enabled = true, description = "Create Quote by adding product in the cart by adding attachment")
 	public void CreateQuote_Attachment() throws InterruptedException {
 		HomeOU ou = new HomeOU();
 		ProductPage pp = ou.goProduct();
@@ -423,7 +436,7 @@ public class Product extends BaseTest {
 		Thread.sleep((Long.parseLong(p.config.getProperty("Thread1000"))));
 	}
 
-	@Test(priority = 35, enabled = false, description = "ShoppingCartOverlaycarticonverification")
+	@Test(priority = 35, enabled = true, description = "ShoppingCartOverlaycarticonverification")
 	public void ClickShoppingCartIcon() throws InterruptedException {
 		HomeOU ou = new HomeOU();
 		ProductPage pp = ou.goProduct();
@@ -442,7 +455,7 @@ public class Product extends BaseTest {
 				.isDisplayed());
 	}
 
-	@Test(priority = 36, enabled = false, description = "ShoppingCart Overlay cart ViewCart Button")
+	@Test(priority = 36, enabled = true, description = "ShoppingCart Overlay cart ViewCart Button")
 	public void ClickShoppingViewCartbutton() throws InterruptedException {
 		HomeOU ou = new HomeOU();
 		ProductPage pp = ou.goProduct();
@@ -453,7 +466,7 @@ public class Product extends BaseTest {
 		Assert.assertEquals(Page.getText("ProductsQuoterequest_XPATH"), "Quote Request");
 	}
 
-	@Test(priority = 37, enabled = false, description = "ShoppingCart Overlay cart ViewCart Button")
+	@Test(priority = 37, enabled = true, description = "ShoppingCart Overlay cart ViewCart Button")
 	public void ClickShoppingSubmitCartbutton() throws InterruptedException {
 		HomeOU ou = new HomeOU();
 		ProductPage pp = ou.goProduct();
@@ -466,7 +479,7 @@ public class Product extends BaseTest {
 				.isDisplayed());
 	}
 
-	@Test(priority = 38, enabled = false, description = "Verification of Quantity on ShoppingCart Overlay")
+	@Test(priority = 38, enabled = true, description = "Verification of Quantity on ShoppingCart Overlay")
 	public void verifyUpdatedQuantityOnOverlay() throws InterruptedException {
 		HomeOU ou = new HomeOU();
 		ProductPage pp = ou.goProduct();
@@ -476,7 +489,7 @@ public class Product extends BaseTest {
 		Assert.assertEquals(Page.driver.findElement(By.xpath("//div[@class='cQuantity']/span")).getText(), "33");
 	}
 
-	@Test(priority = 39, enabled = false, description = "Verification of contents on MyQuotes popup")
+	@Test(priority = 39, enabled = true, description = "Verification of contents on MyQuotes popup")
 	public void MyQuotes_96421() throws InterruptedException {
 		HomeOU ou = new HomeOU();
 		ProductPage pp = ou.goProduct();
@@ -503,7 +516,7 @@ public class Product extends BaseTest {
 	}
 
 	// Below method added by Varun 22july2020
-	@Test(priority = 40, enabled = false, description = "Verification of Status filter 'All'")
+	@Test(priority = 40, enabled = true, description = "Verification of Status filter 'All'")
 	public void verifyStatusFilterAll() throws InterruptedException {
 		HomeOU ou = new HomeOU();
 		ProductPage pp = ou.goProduct();
@@ -530,7 +543,7 @@ public class Product extends BaseTest {
 	}
 
 	// Below method added by Varun 22july2020
-	@Test(priority = 41, enabled = false, description = "Verification of Status filter 'Expired'")
+	@Test(priority = 41, enabled = true, description = "Verification of Status filter 'Expired'")
 	public void verifyStatusFilterExpired() throws InterruptedException {
 		HomeOU ou = new HomeOU();
 		ProductPage pp = ou.goProduct();
@@ -552,7 +565,7 @@ public class Product extends BaseTest {
 	}
 
 	// Below method added by Varun 22july2020
-	@Test(priority = 42, enabled = false, description = "Verification of Status filter 'Ordered'")
+	@Test(priority = 42, enabled = true, description = "Verification of Status filter 'Ordered'")
 	public void verifyStatusFilterOrdered() throws InterruptedException {
 		HomeOU ou = new HomeOU();
 		ProductPage pp = ou.goProduct();
@@ -574,7 +587,7 @@ public class Product extends BaseTest {
 	}
 
 	// Below method added by Varun 22july2020
-	@Test(priority = 43, enabled = false, description = "Verification of Status filter 'Quoted'")
+	@Test(priority = 43, enabled = true, description = "Verification of Status filter 'Quoted'")
 	public void verifyStatusFilterQuoted() throws InterruptedException {
 		HomeOU ou = new HomeOU();
 		ProductPage pp = ou.goProduct();
@@ -596,7 +609,7 @@ public class Product extends BaseTest {
 	}
 
 	// Below method added by Varun 22july2020
-	@Test(priority = 44, enabled = false, description = "Verification of Status filter 'Quote Pending'")
+	@Test(priority = 44, enabled = true, description = "Verification of Status filter 'Quote Pending'")
 	public void verifyStatusFilterQuotePending() throws InterruptedException {
 		HomeOU ou = new HomeOU();
 		ProductPage pp = ou.goProduct();
@@ -618,7 +631,7 @@ public class Product extends BaseTest {
 	}
 
 	// Below method added by Varun 22july2020
-	@Test(priority = 45, enabled = false, description = "Verification of Status filter 'Cancelled'")
+	@Test(priority = 45, enabled = true, description = "Verification of Status filter 'Cancelled'")
 	public void verifyStatusFilterCancelled() throws InterruptedException {
 		HomeOU ou = new HomeOU();
 		ProductPage pp = ou.goProduct();
@@ -640,7 +653,7 @@ public class Product extends BaseTest {
 	}
 
 	// Below method added by Varun 22july2020
-	@Test(priority = 46, enabled = false, description = "Verification of Status filter 'Order Requested'")
+	@Test(priority = 46, enabled = true, description = "Verification of Status filter 'Order Requested'")
 	public void verifyStatusFilterOrderRequested() throws InterruptedException {
 		HomeOU ou = new HomeOU();
 		ProductPage pp = ou.goProduct();
@@ -660,7 +673,7 @@ public class Product extends BaseTest {
 		pp.clickMyQuotesCrossicon();
 	}
 
-	@Test(priority = 47, enabled = false, description = "Verification of values present in Sort dropdown")
+	@Test(priority = 47, enabled = true, description = "Verification of values present in Sort dropdown")
 	public void SortBydd() throws InterruptedException {
 		HomeOU ou = new HomeOU();
 		ProductPage pp = ou.goProduct();
@@ -673,7 +686,7 @@ public class Product extends BaseTest {
 		Assert.assertEquals(Page.getText("SortddThirdOption_XPATH"), "Date");
 	}
 
-	@Test(priority = 48, enabled = false, description = "Verification of the presence of cart icon on Home page")
+	@Test(priority = 48, enabled = true, description = "Verification of the presence of cart icon on Home page")
 	public void HomepageCarticon() throws InterruptedException {
 		HomeOU ou = new HomeOU();
 		ProductPage pp = ou.goProduct();
@@ -684,7 +697,7 @@ public class Product extends BaseTest {
 				.findElement(By.xpath("//nav[@id='topHeader']/div/ul/li[4]/a/div/div[1]/span/span")).isDisplayed());
 	}
 
-	@Test(priority = 49, enabled = false, description = "Verification of contents on Manage Quotes page")
+	@Test(priority = 49, enabled = true, description = "Verification of contents on Manage Quotes page")
 	public void ClickManageQuotesLink() throws InterruptedException {
 		HomeOU ou = new HomeOU();
 		ProductPage pp = ou.goProduct();
@@ -697,7 +710,7 @@ public class Product extends BaseTest {
 
 	}
 
-	@Test(priority = 50, enabled = false, description = "Verification of contents on a particular Quote")
+	@Test(priority = 50, enabled = true, description = "Verification of contents on a particular Quote")
 	public void VerifyUIonClickQuoteID() throws InterruptedException {
 		HomeOU ou = new HomeOU();
 		ProductPage pp = ou.goProduct();
@@ -712,7 +725,7 @@ public class Product extends BaseTest {
 
 	}
 
-	@Test(priority = 51, enabled = false, description = "Submitting a Quote with Ordered Status")
+	@Test(priority = 51, enabled = true, description = "Submitting a Quote with Ordered Status")
 	public void SubmitQuotewithOrderedstatus() throws InterruptedException {
 		HomeOU ou = new HomeOU();
 		ProductPage pp = ou.goProduct();
@@ -723,7 +736,7 @@ public class Product extends BaseTest {
 
 	}
 
-	@Test(priority = 52, enabled = false, description = "Submitting a Quote with Quote Pending Status")
+	@Test(priority = 52, enabled = true, description = "Submitting a Quote with Quote Pending Status")
 	public void SubmitQuotewithQuotePendingstatus() throws InterruptedException {
 		HomeOU ou = new HomeOU();
 		ProductPage pp = ou.goProduct();
@@ -733,7 +746,7 @@ public class Product extends BaseTest {
 
 	}
 
-	@Test(priority = 53, enabled = false, description = "Submitting a Quote with a file more than 20mb")
+	@Test(priority = 53, enabled = true, description = "Submitting a Quote with a file more than 20mb")
 	public void SubmitQuotewithMoreThan20mbFile() throws Exception {
 		HomeOU ou = new HomeOU();
 		ProductPage pp = ou.goProduct();
@@ -770,7 +783,7 @@ public class Product extends BaseTest {
 		Thread.sleep((Long.parseLong(p.config.getProperty("Thread3000"))));
 	}
 
-	@Test(priority = 55, enabled = false, description = "Submitting a Quote with a file with not supported format")
+	@Test(priority = 55, enabled = true, description = "Submitting a Quote with a file with not supported format")
 	public void SubmitQuotewithInvalidFileType() throws Exception {
 		HomeOU ou = new HomeOU();
 		ProductPage pp = ou.goProduct();
@@ -790,7 +803,7 @@ public class Product extends BaseTest {
 		Thread.sleep((Long.parseLong(p.config.getProperty("Thread3000"))));
 	}
 
-	@Test(priority = 56, enabled = false, description = "Submitting a Quote with Quote Canceled Status")
+	@Test(priority = 56, enabled = true, description = "Submitting a Quote with Quote Canceled Status")
 	public void SubmitQuotewithQuoteCancelledstatus() throws InterruptedException {
 		HomeOU ou = new HomeOU();
 		ProductPage pp = ou.goProduct();
@@ -801,7 +814,7 @@ public class Product extends BaseTest {
 
 	}
 
-	@Test(priority = 57, enabled = false, description = "Submitting a Quote with Quoted Status")
+	@Test(priority = 57, enabled = true, description = "Submitting a Quote with Quoted Status")
 	public void SubmitQuotewithQuotedstatus() throws Exception {
 		HomeOU ou = new HomeOU();
 		ProductPage pp = ou.goProduct();
@@ -811,7 +824,7 @@ public class Product extends BaseTest {
 
 	}
 
-	@Test(priority = 58, enabled = false, description = "Submitting a Quote with Order Requested Status")
+	@Test(priority = 58, enabled = true, description = "Submitting a Quote with Order Requested Status")
 	public void SubmitQuotewithOrderRequestedstatus() throws InterruptedException {
 		HomeOU ou = new HomeOU();
 		ProductPage pp = ou.goProduct();
@@ -821,7 +834,7 @@ public class Product extends BaseTest {
 
 	}
 
-	@Test(priority = 59, enabled = false, description = "Submitting a Quote with Expired Status")
+	@Test(priority = 59, enabled = true, description = "Submitting a Quote with Expired Status")
 	public void SubmitQuotewithExpiredstatus() throws InterruptedException {
 		HomeOU ou = new HomeOU();
 		ProductPage pp = ou.goProduct();
@@ -831,7 +844,7 @@ public class Product extends BaseTest {
 
 	}
 
-	@Test(priority = 60, enabled = false, description = "Verification of Manage Products dropdown menu")
+	@Test(priority = 60, enabled = true, description = "Verification of Manage Products dropdown menu")
 	public void ClickManageProducts() throws InterruptedException {
 		HomeOU ou = new HomeOU();
 		ProductPage pp = ou.goProduct();
@@ -842,7 +855,7 @@ public class Product extends BaseTest {
 		Assert.assertEquals(Page.getText("ManageProductsheading_XPATH"), "Manage Products");
 	}
 
-	@Test(priority = 61, enabled = false, description = "Clicking Download Spreadsheet drop down and download")
+	@Test(priority = 61, enabled = true, description = "Clicking Download Spreadsheet drop down and download")
 	public void ClickDownloadProducts() throws InterruptedException {
 		HomeOU ou = new HomeOU();
 		ProductPage pp = ou.goProduct();
@@ -851,7 +864,7 @@ public class Product extends BaseTest {
 		pp.ClickDownloadProducts();
 	}
 
-	@Test(priority = 62, enabled = false, description = "Clicking ProductsInreview button and going back to Manage Products pop up")
+	@Test(priority = 62, enabled = true, description = "Clicking ProductsInreview button and going back to Manage Products pop up")
 	public void ClickProductsinReview() throws InterruptedException {
 		HomeOU ou = new HomeOU();
 		ProductPage pp = ou.goProduct();
@@ -862,7 +875,7 @@ public class Product extends BaseTest {
 		pp.ClickProductsInReviewbackLink();
 	}
 
-	@Test(priority = 63, enabled = false, description = "Verification of click on Review button on Manage Products")
+	@Test(priority = 63, enabled = true, description = "Verification of click on Review button on Manage Products")
 	public void ClickReview() throws Exception {
 		HomeOU ou = new HomeOU();
 		ProductPage pp = ou.goProduct();
@@ -872,10 +885,10 @@ public class Product extends BaseTest {
 		pp.ClickReview();
 		Assert.assertTrue(Page.isElementPresent(By.xpath("//*[@id='selectSize']")));
 		Thread.sleep((Long.parseLong(p.config.getProperty("Thread5000"))));
-		Page.ClickActions("CloseButton_XPATH");
+		Page.click("ManageProductsReviewCloseButton_XPATH");
 	}
 
-	@Test(priority = 64, enabled = false, description = "Verification of click on Approve button on Manage Products")
+	@Test(priority = 64, enabled = true, description = "Verification of click on Approve button on Manage Products")
 	public void ClickApprove() throws Exception {
 		HomeOU ou = new HomeOU();
 		ProductPage pp = ou.goProduct();
@@ -891,7 +904,7 @@ public class Product extends BaseTest {
 
 	}
 
-	@Test(priority = 65, enabled = false, description = "Verification of click on Reject button on Manage Products")
+	@Test(priority = 65, enabled = true, description = "Verification of click on Reject button on Manage Products")
 	public void ClickReject() throws Exception {
 		HomeOU ou = new HomeOU();
 		ProductPage pp = ou.goProduct();
@@ -907,7 +920,7 @@ public class Product extends BaseTest {
 		pp.ClickProductsInReviewbackLink();
 	}
 
-	@Test(priority = 66, enabled = false, description = "Verification of upload Spreadsheet on Manage Products")
+	@Test(priority = 66, enabled = true, description = "Verification of upload Spreadsheet on Manage Products")
 	public void ClickUploadProducts() throws Exception {
 		HomeOU ou = new HomeOU();
 		ProductPage pp = ou.goProduct();
@@ -924,7 +937,7 @@ public class Product extends BaseTest {
 	}
 
 	// Below method added by Varun 4August2020
-	@Test(priority = 67, enabled = false, description = "Verification of upload Spreadsheet on Manage Products")
+	@Test(priority = 67, enabled = true, description = "Verification of upload Spreadsheet on Manage Products")
 	public void ClickDictionaryLink() throws Exception {
 		HomeOU ou = new HomeOU();
 		ProductPage pp = ou.goProduct();
@@ -959,7 +972,7 @@ public class Product extends BaseTest {
 	}
 
 	// Below method added by Varun 6july2020
-	@Test(priority = 68, enabled = false, description = "Verification of contents on Approve<<QuoteId>> screen")
+	@Test(priority = 68, enabled = true, description = "Verification of contents on Approve<<QuoteId>> screen")
 	public void VerifyUIonApprove() throws Exception {
 		HomeOU ou = new HomeOU();
 		ProductPage pp = ou.goProduct();
@@ -983,7 +996,7 @@ public class Product extends BaseTest {
 	}
 
 	// Added new test case on 7july,2020
-	@Test(priority = 69, enabled = false, description = "Verification of disabled Approve button")
+	@Test(priority = 69, enabled = true, description = "Verification of disabled Approve button")
 	public void VerifyApprovebtndisabled() throws Exception {
 		HomeOU ou = new HomeOU();
 		ProductPage pp = ou.goProduct();
@@ -1008,7 +1021,7 @@ public class Product extends BaseTest {
 	}
 
 	// Below method added by Varun 6july2020
-	@Test(priority = 70, enabled = false, description = "Verification of Thank you pop after approving the Quoted Request")
+	@Test(priority = 70, enabled = true, description = "Verification of Thank you pop after approving the Quoted Request")
 	public void verifyThankyouPopup() throws Exception {
 		HomeOU ou = new HomeOU();
 		ProductPage pp = ou.goProduct();
@@ -1033,7 +1046,7 @@ public class Product extends BaseTest {
 		Page.click("ApprovedClosebtn_XPATH");
 	}
 
-	@Test(priority = 71, enabled = false, description = "Verification of Cancel action on the quote screen")
+	@Test(priority = 71, enabled = true, description = "Verification of Cancel action on the quote screen")
 	public void verifyCancelwhileREQuoting() throws Exception {
 		HomeOU ou = new HomeOU();
 		ProductPage pp = ou.goProduct();
@@ -1052,7 +1065,7 @@ public class Product extends BaseTest {
 		Page.click("Closebtn_XPATH");
 	}
 
-	@Test(priority = 72, enabled = false, description = "Verification of submission action on the quote screen")
+	@Test(priority = 72, enabled = true, description = "Verification of submission action on the quote screen")
 	public void verifySubmitwhileREQuoting() throws Exception {
 		HomeOU ou = new HomeOU();
 		ProductPage pp = ou.goProduct();
@@ -1080,7 +1093,7 @@ public class Product extends BaseTest {
 		Page.click("QuoteRequestsubmittedpopupClosebtn_XPATH");
 	}
 
-	@Test(priority = 73, enabled = false, description = "Verification of Add to Cart on the quote screen")
+	@Test(priority = 73, enabled = true, description = "Verification of Add to Cart on the quote screen")
 	public void verifyAddToCartWhileReQuoting() throws Exception {
 		HomeOU ou = new HomeOU();
 		ProductPage pp = ou.goProduct();
@@ -1095,7 +1108,7 @@ public class Product extends BaseTest {
 		Thread.sleep((Long.parseLong(p.config.getProperty("Thread2000"))));
 		pp.AddtoShoppingCartRequote();
 		Thread.sleep((Long.parseLong(p.config.getProperty("Thread2000"))));
-		//Page.click("SubmitQuoteRequestbtn_XPATH");
+		// Page.click("SubmitQuoteRequestbtn_XPATH");
 		pp.CreateREQuoteAllFields();
 		Thread.sleep((Long.parseLong(p.config.getProperty("Thread5000"))));
 		Assert.assertEquals(Page.driver.findElement(By.xpath("//h5[@id='quoteSubmitted___BV_modal_title_']")).getText(),
@@ -1108,7 +1121,7 @@ public class Product extends BaseTest {
 	}
 
 	// Added on 23rd July 20
-	@Test(priority = 74, enabled = false, description = "Verification of Exclamation Mark on My Quotes for Quote Request")
+	@Test(priority = 74, enabled = true, description = "Verification of Exclamation Mark on My Quotes for Quote Request")
 	public void verifyExclamationOnMyQuotes() throws Exception {
 		HomeOU ou = new HomeOU();
 		ProductPage pp = ou.goProduct();
@@ -1118,7 +1131,7 @@ public class Product extends BaseTest {
 		Assert.assertTrue(Page.driver.findElement(By.xpath("//a[@id='openMyquotes']/span")).isDisplayed());
 	}
 
-	@Test(priority = 75, enabled = false, description = "ShoppingCart Add button verification")
+	@Test(priority = 75, enabled = true, description = "ShoppingCart Add button verification")
 	public void VerifyShoppingAddbtndisabled() throws InterruptedException {
 		HomeOU ou = new HomeOU();
 		ProductPage pp = ou.goProduct();
@@ -1130,7 +1143,7 @@ public class Product extends BaseTest {
 		Page.click("CloseButton_XPATH");
 	}
 
-	@Test(priority = 76, enabled = false, description = "ShoppingCart Add button disabled even if the qty is clear")
+	@Test(priority = 76, enabled = true, description = "ShoppingCart Add button disabled even if the qty is clear")
 	public void VerifyShoppingCarrtAddbtnDisabledclearqty() throws InterruptedException {
 		HomeOU ou = new HomeOU();
 		ProductPage pp = ou.goProduct();
@@ -1142,7 +1155,7 @@ public class Product extends BaseTest {
 		Page.click("CloseButton_XPATH");
 	}
 
-	@Test(priority = 77, enabled = false, description = "Verify that shopping cart icon will be displayed with a number indicating the quantity of items in the cart ")
+	@Test(priority = 77, enabled = true, description = "Verify that shopping cart icon will be displayed with a number indicating the quantity of items in the cart ")
 	public void verifyCartIconCount() throws InterruptedException {
 		HomeOU ou = new HomeOU();
 		ProductPage pp = ou.goProduct();
@@ -1158,7 +1171,7 @@ public class Product extends BaseTest {
 		System.out.println("The number of products in the cart after Updation: " + CartIconNumberUpdated);
 	}
 
-	@Test(priority = 78, enabled = false, description = "ShoppingCart Add button disabled even if the qty is out of the fiels limits")
+	@Test(priority = 78, enabled = true, description = "ShoppingCart Add button disabled even if the qty is out of the fiels limits")
 	public void VerifyShoppingCarrtMinMaxqty() throws InterruptedException {
 		HomeOU ou = new HomeOU();
 		ProductPage pp = ou.goProduct();
@@ -1178,7 +1191,7 @@ public class Product extends BaseTest {
 		Page.click("CloseButton_XPATH");
 	}
 
-	@Test(priority = 79, enabled = false, description = "Verify Go Back button funactionality on Quote Request screen")
+	@Test(priority = 79, enabled = true, description = "Verify Go Back button funactionality on Quote Request screen")
 	public void GoBack() throws InterruptedException {
 		HomeOU ou = new HomeOU();
 		ProductPage pp = ou.goProduct();
@@ -1189,7 +1202,7 @@ public class Product extends BaseTest {
 		Page.click("QuoteRequestCrossicon_XPATH");
 	}
 
-	@Test(priority = 80, enabled = false, description = "Create Quote by adding product in the cart by Multiple attachment")
+	@Test(priority = 80, enabled = true, description = "Create Quote by adding product in the cart by Multiple attachment")
 	public void CreateQuote_MultipleAttachment() throws Exception {
 		HomeOU ou = new HomeOU();
 		ProductPage pp = ou.goProduct();
@@ -1197,7 +1210,7 @@ public class Product extends BaseTest {
 		Thread.sleep((Long.parseLong(p.config.getProperty("Thread1000"))));
 	}
 
-	@Test(priority = 81, enabled = false, description = "Create Quote by adding product in the cart by updating attachment")
+	@Test(priority = 81, enabled = true, description = "Create Quote by adding product in the cart by updating attachment")
 	public void CreateQuote_UpdateeAttachment() throws InterruptedException {
 		HomeOU ou = new HomeOU();
 		ProductPage pp = ou.goProduct();
@@ -1205,7 +1218,7 @@ public class Product extends BaseTest {
 		Thread.sleep((Long.parseLong(p.config.getProperty("Thread1000"))));
 	}
 
-	@Test(priority = 82, enabled = false, description = "Submitting a Quote without attachment")
+	@Test(priority = 82, enabled = true, description = "Submitting a Quote without attachment")
 	public void SubmitQuotewithoutFile() throws Exception {
 		HomeOU ou = new HomeOU();
 		ProductPage pp = ou.goProduct();
@@ -1224,7 +1237,7 @@ public class Product extends BaseTest {
 		Page.driver.navigate().back();
 	}
 
-	@Test(priority = 83, enabled = false, description = "Add Related products to shopping Cart")
+	@Test(priority = 83, enabled = true, description = "Add Related products to shopping Cart")
 	public void VerifyAddingRelatedProductsToShoppingCart() throws InterruptedException {
 		HomeOU ou = new HomeOU();
 		ProductPage pp = ou.goProduct();
@@ -1237,19 +1250,19 @@ public class Product extends BaseTest {
 		Page.click("QuoteRequestCrossicon_XPATH");
 	}
 
-	@Test(priority = 84, enabled = false, description = "Verify the tooltip displayed for Size dropdown")
+	@Test(priority = 84, enabled = true, description = "Verify the tooltip displayed for Size dropdown")
 	public void VerifyTooltipForSizeDropDown() throws InterruptedException {
 		HomeOU ou = new HomeOU();
 		ProductPage pp = ou.goProduct();
 		pp.ToolTipForSize();
 		Thread.sleep((Long.parseLong(p.config.getProperty("Thread5000"))));
 		String Sizetooltip = Page.driver.findElement(By.xpath("//*[@id='selectSize']/option[2]")).getAttribute("title");
-		Assert.assertEquals(Sizetooltip, "767-020-001-4007 230 x 13' - 191,800 ft/lbs");
+		System.out.println("The size tooltip is: "+Sizetooltip);
 		Thread.sleep((Long.parseLong(p.config.getProperty("Thread2000"))));
 		Page.click("CloseButton_XPATH");
 	}
 
-	@Test(priority = 85, enabled = false, description = "Create Quote by adding product in the cart by updating attachment and filling all the details")
+	@Test(priority = 85, enabled = true, description = "Create Quote by adding product in the cart by updating attachment and filling all the details")
 	public void UpdateChangeProductAddToShoppingCart() throws InterruptedException {
 		HomeOU ou = new HomeOU();
 		ProductPage pp = ou.goProduct();
@@ -1258,7 +1271,7 @@ public class Product extends BaseTest {
 		Thread.sleep((Long.parseLong(p.config.getProperty("Thread1000"))));
 	}
 
-	@Test(priority = 86, enabled = false, description = "Verification of deleting the Quantity on ShoppingCart Overlay")
+	@Test(priority = 86, enabled = true, description = "Verification of deleting the Quantity on ShoppingCart Overlay")
 	public void verifyDeleteProductOnOverlay() throws InterruptedException {
 		HomeOU ou = new HomeOU();
 		ProductPage pp = ou.goProduct();
@@ -1266,7 +1279,7 @@ public class Product extends BaseTest {
 		Thread.sleep((Long.parseLong(p.config.getProperty("Thread1000"))));
 	}
 
-	@Test(priority = 87, enabled = false, description = "Verification of Comments textarea when comments section is Expanded and collapsed")
+	@Test(priority = 87, enabled = true, description = "Verification of Comments textarea when comments section is Expanded and collapsed")
 	public void MyQuotesComments_Collapse() throws InterruptedException {
 		HomeOU ou = new HomeOU();
 		ProductPage pp = ou.goProduct();

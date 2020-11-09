@@ -20,17 +20,17 @@
 			<class name="com.OSMOSE.testcases.OULogin" />
 		</classes>
 	</test> --> <!-- Test -->
-<!-- 	<test name="Product">
+	<test name="Product">
 		<classes>
 			<class name="com.OSMOSE.testcases.Product" />
 		</classes>
-	</test> --> <!-- Test -->
+	</test> <!-- Test -->
 <!-- 	<test name="Contact">
 		<classes>
 			<class name="com.OSMOSE.testcases.Contact" />
 		</classes>
 	</test>  --><!-- Test -->
-<!-- 	<test name="KnowledgeBase">
+	<!-- <test name="KnowledgeBase">
 		<classes>
 			<class name="com.OSMOSE.testcases.KnowledgeBase" />
 		</classes>
@@ -40,11 +40,11 @@
 			<class name="com.OSMOSE.testcases.OsmoseServices" />
 		</classes>
 	</test>  --><!-- Test -->
-	<test name="OCalcPro">
+	<!-- <test name="OCalcPro">
 		<classes> 
 			<class name="com.OSMOSE.testcases.oCalcPro" />
 		</classes>
-	</test><!-- Test -->
+	</test> --><!-- Test -->
 
 
 
