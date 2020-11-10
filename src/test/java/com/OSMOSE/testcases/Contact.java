@@ -35,13 +35,13 @@ public class Contact extends BaseTest {
 		ContactPage cp = pp.goContact();
 		cp.navigateToColombiapit();
 		cp.clickContactUsMainMenudd();
-		Thread.sleep((Long.parseLong(p.config.getProperty("Thread1000"))));
+		Thread.sleep((Long.parseLong(Page.config.getProperty("Thread1000"))));
 		cp.ClickViewContactsMenu();
-		Thread.sleep((Long.parseLong(p.config.getProperty("Thread3000"))));
+		Thread.sleep((Long.parseLong(Page.config.getProperty("Thread3000"))));
 		Assert.assertEquals(Page.getText("CityOfColumbiaContactstxt_XPATH"), "COLOMBIAPIT Contacts");
 		Assert.assertEquals(Page.getText("ContractsTxt_XPATH"), "Contracts");
 		Assert.assertEquals(Page.getText("ContactsEmail_XPATH"), "OsmoseContracts@Osmose.com");
-		Thread.sleep((Long.parseLong(p.config.getProperty("Thread3000"))));
+		Thread.sleep((Long.parseLong(Page.config.getProperty("Thread3000"))));
 	}
 	
 	@Test(priority = 3, enabled = true, description = "Verification of the content on a contact card on Georgia Power Company-Georgia Power Company Distribution Change")
@@ -49,11 +49,11 @@ public class Contact extends BaseTest {
 		ProductPage pp = new ProductPage();
 		ContactPage cp = pp.goContact();
 		cp.navigateToGeorgiaPowerCompanyDistributionChange();
-		Thread.sleep((Long.parseLong(p.config.getProperty("Thread3000"))));
+		Thread.sleep((Long.parseLong(Page.config.getProperty("Thread3000"))));
 		cp.clickContactUsMainMenudd();
-		Thread.sleep((Long.parseLong(p.config.getProperty("Thread1000"))));
+		Thread.sleep((Long.parseLong(Page.config.getProperty("Thread1000"))));
 		cp.ClickViewContactsMenu();
-		Thread.sleep((Long.parseLong(p.config.getProperty("Thread6000"))));
+		Thread.sleep((Long.parseLong(Page.config.getProperty("Thread6000"))));
 		Assert.assertEquals(Page.getText("GeorgiaContactstxt_XPATH"), "Georgia Power Company Distribution Change Contacts");
 		Assert.assertEquals(Page.getText("GeorgiaContactCardName_XPATH"), "Heartsill,Jason Shane");
 		Assert.assertEquals(Page.getText("GeorgiaContactCardDesignation_XPATH"), "Director Business Development");
@@ -61,7 +61,7 @@ public class Contact extends BaseTest {
 		Assert.assertEquals(Page.getText("GeorgiaContactCardMobile_XPATH"), "(901) 494-2129");
 		Assert.assertEquals(Page.getText("ContractsTxt_XPATH"), "Contracts");
 		Assert.assertEquals(Page.getText("ContactsEmail_XPATH"), "OsmoseContracts@Osmose.com");
-		Thread.sleep((Long.parseLong(p.config.getProperty("Thread6000"))));
+		Thread.sleep((Long.parseLong(Page.config.getProperty("Thread6000"))));
 	}
 	
 	@Test(priority = 4, enabled = true, description = "Verification of the content on a contact card on Grand Electric-GrandElectric")
