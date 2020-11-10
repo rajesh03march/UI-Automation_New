@@ -1,11 +1,8 @@
 package com.OSMOSE.pages.OU;
 
-import java.io.IOException;
-
+import com.OSMOSE.base.Page;
 import org.openqa.selenium.By;
 import org.openqa.selenium.support.ui.ExpectedConditions;
-
-import com.OSMOSE.base.Page;
 
 public class oCalcProPage extends Page {
 
