@@ -21,8 +21,6 @@ public class oCalcPro_Admin extends BaseTest {
 	public void ocalcloginTestAdmin(Hashtable<String, String> data) throws InterruptedException {
 		Login lo = new Login();
 		lo.doLogin(data.get("username"), data.get("password"));
-		/*Page.type("email_XPATH", "shanthling.kodli@centurylink.com");
-		Page.type("password_XPATH", "Denver*235");*/
 		Page.click("submit_XPATH");
 		String element = Page.getText("verify_ID");
 		Assert.assertEquals(element, "Shanthling Kodli");
