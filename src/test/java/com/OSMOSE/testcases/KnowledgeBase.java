@@ -261,7 +261,7 @@ public class KnowledgeBase extends BaseTest {
 		// What's wrong with this Picture? Card presence verification
 		Assert.assertTrue(Page.driver
 				.findElement(By.xpath(
-						"//h5[contains(text(),' Gaff Gallery Caption 1 ')]"))
+						"//h5[contains(text(),'This is a caption to be displayed as part of the Gaff Gallery.')]"))
 				.isDisplayed());
 	}
 

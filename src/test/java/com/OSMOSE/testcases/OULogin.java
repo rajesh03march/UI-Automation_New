@@ -136,13 +136,13 @@ public class OULogin extends BaseTest {
 		Login Lo = new Login();
 		HomeOU ou = Lo.goHomeOU();
 		ou.clickOnSTSDetailsAndRegistration();
-		Assert.assertEquals(Page.getAttributeValue("FIRSTNAME_XPATH", "value"), "Varun");
-		Assert.assertEquals(Page.getAttributeValue("LASTNAME_XPATH", "value"), "M R");
-		Assert.assertEquals(Page.getAttributeValue("COMPANY_XPATH", "value"), "Centurylink");
-		Assert.assertEquals(Page.getAttributeValue("STATE_XPATH", "value"), "Ohio");
-		Assert.assertEquals(Page.getAttributeValue("TITLE_XPATH", "value"), "SSE");
-		Assert.assertEquals(Page.getAttributeValue("EMAIL_XPATH", "value"), "varun.magadiranganath@centurylink.com");
-		Assert.assertEquals(Page.getAttributeValue("PHONE_XPATH", "value"), "9036217034");
+		Assert.assertEquals(Page.getAttributeValue("FIRSTNAME_XPATH", "value"), "Rajesh");
+		Assert.assertEquals(Page.getAttributeValue("LASTNAME_XPATH", "value"), "Yadav");
+		Assert.assertEquals(Page.getAttributeValue("COMPANY_XPATH", "value"), "Century Link");
+		Assert.assertEquals(Page.getAttributeValue("STATE_XPATH", "value"), "Nevada");
+		Assert.assertEquals(Page.getAttributeValue("TITLE_XPATH", "value"), "Technical Lead");
+		Assert.assertEquals(Page.getAttributeValue("EMAIL_XPATH", "value"), "rajesh.yadav@centurylink.com");
+		Assert.assertEquals(Page.getAttributeValue("PHONE_XPATH", "value"), "9971236668");
 	}
 
 	@Test(priority = 15, enabled = true, description = "Verify that Webinars button is displayed")

@@ -1,27 +1,32 @@
 package com.OSMOSE.testcases;
 
+import java.util.Hashtable;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.testng.Assert;
 import org.testng.annotations.Test;
+
 import com.OSMOSE.base.Page;
 import com.OSMOSE.pages.OU.Login;
 import com.OSMOSE.pages.OU.OsmoseServicesPage;
 import com.OSMOSE.pages.OU.oCalcProPage;
+import com.OSMOSE.utilities.Utilities;
 
 public class oCalcPro_Nor extends BaseTest {
 
 	Page p = new Page();
 
-	@Test(priority = 0, description = "Verify the login functionality")
-	public void loginTest() throws InterruptedException {
+	@Test(dataProviderClass = Utilities.class, dataProvider = "dp",priority = 0, description = "Verify the login functionality")
+	public void ocalcloginTestNormal(Hashtable<String, String> data) throws InterruptedException {
 		Login lo = new Login();
-		Page.type("email_XPATH", "rajesh.yadav@centurylink.com");
-		Page.type("password_XPATH", "Hyde@2317");
+		lo.doLogin(data.get("username"), data.get("password"));
+		/*Page.type("email_XPATH", "mohammedjunaid.kaikade@centurylink.com");
+		Page.type("password_XPATH", "prime@12345");*/
 		Page.click("submit_XPATH");
 		String element = Page.getText("verify_ID");
-		Assert.assertEquals(element, "Rajesh Yadav");
+		Assert.assertEquals(element, "Mohammed Junaid");
 	}
 
 	// US-101212-101307-Verify UI and Layout of the O-Calc Pro landing page for
@@ -36,8 +41,7 @@ public class oCalcPro_Nor extends BaseTest {
 		ocal.clickoCalcNavigation();
 		Thread.sleep((Long.parseLong(p.config.getProperty("Thread3000"))));
 		Assert.assertEquals(Page.getText("OcalcProHeaderTxt_XPATH"), "Structural Analysis Software for Utility Poles");
-		WebElement OcalcProHeaderImg = Page.driver
-				.findElement(By.xpath("//img[@id='logoOcalProWelcom' and @class='ocalcLogo']"));
+		WebElement OcalcProHeaderImg = Page.findelement("oCalProLogoForLicensedUser_XPATH");
 		Thread.sleep((Long.parseLong(p.config.getProperty("Thread2000"))));
 		Assert.assertTrue(OcalcProHeaderImg.isDisplayed());
 		Thread.sleep((Long.parseLong(p.config.getProperty("Thread2000"))));
@@ -57,9 +61,8 @@ public class oCalcPro_Nor extends BaseTest {
 		OsmoseServicesPage os = new OsmoseServicesPage();
 		oCalcProPage ocal = os.gooCalcPro();
 		// Get Started with Ocalc Pro card presence verification
-		Assert.assertTrue(Page.driver
-				.findElement(By.xpath("//h5[@class='m-0 showPointer' and text()='Get Started With O-Calc Pro']"))
-				.isDisplayed());
+		WebElement OcalcProCard = Page.findelement("GetStartedWithOcalcProCard_XPATH");
+		Assert.assertTrue(OcalcProCard.isDisplayed());
 	}
 
 	// US-101212-101307-Verify UI and Layout of the O-Calc Pro landing page for
@@ -71,8 +74,8 @@ public class oCalcPro_Nor extends BaseTest {
 		OsmoseServicesPage os = new OsmoseServicesPage();
 		oCalcProPage ocal = os.gooCalcPro();
 		// Products presence verification
-		Assert.assertTrue(
-				Page.driver.findElement(By.xpath("//h5[@id='OCalProductsTile' and text()='Products ']")).isDisplayed());
+		WebElement ProductsCard = Page.findelement("OcalcProductsCard_XPATH");
+		Assert.assertTrue(ProductsCard.isDisplayed());
 	}
 
 	// US-101212-101307-Verify UI and Layout of the O-Calc Pro landing page for
@@ -84,8 +87,8 @@ public class oCalcPro_Nor extends BaseTest {
 		OsmoseServicesPage os = new OsmoseServicesPage();
 		oCalcProPage ocal = os.gooCalcPro();
 		// Knowledge Base presence verification
-		Assert.assertTrue(Page.driver
-				.findElement(By.xpath("//h5[@class='m-0 crspointer' and text()='Knowledge Base ']")).isDisplayed());
+		WebElement KBCard = Page.findelement("OcalcKnowledgeBaseCard_XPATH");
+		Assert.assertTrue(KBCard.isDisplayed());
 	}
 
 	// US-101212-101307-Verify UI and Layout of the O-Calc Pro landing page for
@@ -97,8 +100,8 @@ public class oCalcPro_Nor extends BaseTest {
 		OsmoseServicesPage os = new OsmoseServicesPage();
 		oCalcProPage ocal = os.gooCalcPro();
 		// Announcements presence verification
-		Assert.assertTrue(
-				Page.driver.findElement(By.xpath("//h5[@class='m-0' and text()='Announcements ']")).isDisplayed());
+		WebElement AnnouncementCard = Page.findelement("OcalcAnnouncementsCard_XPATH");
+		Assert.assertTrue(AnnouncementCard.isDisplayed());
 	}
 
 	// US-101212-101307-Verify UI and Layout of the O-Calc Pro landing page for
@@ -110,8 +113,8 @@ public class oCalcPro_Nor extends BaseTest {
 		OsmoseServicesPage os = new OsmoseServicesPage();
 		oCalcProPage ocal = os.gooCalcPro();
 		// Training Options presence verification
-		Assert.assertTrue(
-				Page.driver.findElement(By.xpath("//h5[@class='m-0' and text()='Training Options ']")).isDisplayed());
+		WebElement TrainingOptionsCard = Page.findelement("OcalcTrainingOptionsCard_XPATH");
+		Assert.assertTrue(TrainingOptionsCard.isDisplayed());
 	}
 
 	// US-101214-101355-Verify the Content displayed in Get Started With O-Calc Pro
@@ -121,25 +124,23 @@ public class oCalcPro_Nor extends BaseTest {
 		OsmoseServicesPage os = new OsmoseServicesPage();
 		oCalcProPage ocal = os.gooCalcPro();
 		// Get Started with Ocalc Pro card Header text Presence verification
-		Assert.assertTrue(Page.driver.findElement(By.xpath(
-				"//div[@class='mt-2 mb-2 font12px' and text()=' O-Calc Pro takes the guesswork out of load calculation for line design, pole replacement, and joint-use loading. ']"))
-				.isDisplayed());
+		WebElement OcalcProCardHeaderTxt = Page.findelement("GetStartedTxt_XPATH");
+		Assert.assertTrue(OcalcProCardHeaderTxt.isDisplayed());
 		Assert.assertEquals(Page.getText("GetStartedTxt_XPATH"),
 				"O-Calc Pro takes the guesswork out of load calculation for line design, pole replacement, and joint-use loading.");
 		// Get Started with Ocal Pro card Learn More presence verification
-		Assert.assertTrue(
-				Page.driver.findElement(By.xpath("//a[@id='OCalOpenLrnMore' and text()='Learn More']")).isDisplayed());
+		WebElement LearnMore = Page.findelement("GetStartedLearnMoreLink_XPATH");
+		Assert.assertTrue(LearnMore.isDisplayed());
 		Assert.assertEquals(Page.getText("GetStartedLearnMoreLink_XPATH"), "Learn More");
 		// Get Started with Ocal Pro card 30 days trial presence verification
-		Assert.assertTrue(Page.driver.findElement(By.xpath("//button[@id='OCaltrialDwnldBtn' and @class='btnRounded']"))
-				.isDisplayed());
+		WebElement Btn30daysTrial = Page.findelement("GetStarted30DaysBtn_XPATH");
+		Assert.assertTrue(Btn30daysTrial.isDisplayed());
 		// Get Started with Ocal Pro card Request a Demo presence verification
-		Assert.assertTrue(Page.driver
-				.findElement(By.xpath("//button[@id='OCalReqDemoPageBtn' and @class='btnRounded']")).isDisplayed());
+		WebElement DemoBtn = Page.findelement("GetStartedReqDemo_XPATH");
+		Assert.assertTrue(DemoBtn.isDisplayed());
 		// Get Started with Ocal Pro card Contact O-Calc Support presence verification
-		Assert.assertTrue(Page.driver
-				.findElement(By.xpath("//a[@id='OCalContSupportLink' and text()='Contact O-Calc Pro Support']"))
-				.isDisplayed());
+		WebElement ContactOcalcSupport = Page.findelement("GetStartedContactOcalcPro_XPATH");
+		Assert.assertTrue(ContactOcalcSupport.isDisplayed());
 		Assert.assertEquals(Page.getText("GetStartedContactOcalcPro_XPATH"), "Contact O-Calc Pro Support");
 	}
 
@@ -242,10 +243,10 @@ public class oCalcPro_Nor extends BaseTest {
 		// Verification of the Header text
 		Assert.assertEquals(Page.getText("GetStartedLearnMoreHeaderTxt_XPATH"), "O-Calc Pro");
 		// Verification of close button
-		WebElement closeBtn = Page.driver.findElement(By.xpath("//button[@class='close' and @type='button']"));
+		WebElement closeBtn = Page.findelement("GetStartedLearnMoreCloseBtn_XPATH");
 		Assert.assertTrue(closeBtn.isDisplayed());
 		// Verification of the Back button
-		WebElement BackBtn = Page.driver.findElement(By.xpath("//h5[@class='m-0' and text()=' Back ']"));
+		WebElement BackBtn = Page.findelement("GetStartedLearnMoreBackTxt_XPATH");
 		Assert.assertTrue(BackBtn.isDisplayed());
 		// Verification of Back btn text
 		Assert.assertEquals(Page.getText("GetStartedLearnMoreBackTxt_XPATH"), "Back");
@@ -284,39 +285,37 @@ public class oCalcPro_Nor extends BaseTest {
 		// Verification of Header text
 		Assert.assertEquals(Page.getText("30daysHeaderTxt_XPATH"), "O-Calc® Pro Trial Version");
 		// Verification of FirstName field
-		WebElement FirstName = Page.driver.findElement(By.xpath("//input[@id='a100001_l100001_e100009_first_name']"));
+		WebElement FirstName = Page.findelement("30daysFirstName_XPATH");
 		Assert.assertTrue(FirstName.isDisplayed());
 		// Verification of LastName field
-		WebElement LastName = Page.driver.findElement(By.xpath("//input[@id='a100001_l100001_e100010_last_name']"));
+		WebElement LastName = Page.findelement("30daysLastName_XPATH");
 		Assert.assertTrue(LastName.isDisplayed());
 		// Verification of Company field
-		WebElement Company = Page.driver.findElement(By.xpath("//input[@id='a100001_l100001_e100011_company']"));
+		WebElement Company = Page.findelement("30daysCompany_XPATH");
 		Assert.assertTrue(Company.isDisplayed());
 		// Verification of Title field
-		WebElement Title = Page.driver.findElement(By.xpath("//input[@id='a100001_l100001_e100012_title']"));
+		WebElement Title = Page.findelement("30daysTitle_XPATH");
 		Assert.assertTrue(Title.isDisplayed());
 		// Verification of BusinessEmail field
-		WebElement BusinessEmail = Page.driver
-				.findElement(By.xpath("//input[@id='a100001_l100001_e100014_business_email']"));
+		WebElement BusinessEmail = Page.findelement("30daysBusinessEmail_XPATH");
 		Assert.assertTrue(BusinessEmail.isDisplayed());
 		// Verification of Phone field
-		WebElement Phone = Page.driver.findElement(By.xpath("//input[@id='a100001_l100001_e100013_phone']"));
+		WebElement Phone = Page.findelement("30daysPhone_XPATH");
 		Assert.assertTrue(Phone.isDisplayed());
 		// Verification of Country field
-		WebElement Country = Page.driver.findElement(By.xpath("//input[@id='a100001_l100001_e100015_country']"));
+		WebElement Country = Page.findelement("30daysCountry_XPATH");
 		Assert.assertTrue(Country.isDisplayed());
 		// Verification of State field
-		WebElement State = Page.driver.findElement(By.xpath("//input[@id='a100001_l100001_e100016_state']"));
+		WebElement State = Page.findelement("30daysState_XPATH");
 		Assert.assertTrue(State.isDisplayed());
 		// Verification of RequestTrialBtn button
-		WebElement RequestTrialBtn = Page.driver
-				.findElement(By.xpath("//input[@id='a100001_submit_btn' and @value='Request Trial']"));
+		WebElement RequestTrialBtn = Page.findelement("30daysRequestTrialBtn_XPATH");
 		Assert.assertTrue(RequestTrialBtn.isDisplayed());
 		Page.driver.switchTo().defaultContent();
 		Thread.sleep((Long.parseLong(p.config.getProperty("Thread1000"))));
 		// Page.click("30daysBackBtn_XPATH");
 		// Verification of close button
-		WebElement closeBtn = Page.driver.findElement(By.xpath("//button[@class='close' and @type='button']"));
+		WebElement closeBtn = Page.findelement("30daysCloseBtn_XPATH");
 		Assert.assertTrue(closeBtn.isDisplayed());
 		Page.click("30daysCloseBtn_XPATH");
 	}
@@ -339,39 +338,37 @@ public class oCalcPro_Nor extends BaseTest {
 		// Verification of Header text
 		Assert.assertEquals(Page.getText("DemoHeaderTxt_XPATH"), "O-Calc® Pro Live Demo");
 		// Verification of FirstName field
-		WebElement FirstName = Page.driver.findElement(By.xpath("//input[@id='a100035_l100019_e100193_first_name']"));
+		WebElement FirstName = Page.findelement("DemoFirstName_XPATH");
 		Assert.assertTrue(FirstName.isDisplayed());
 		// Verification of LastName field
-		WebElement LastName = Page.driver.findElement(By.xpath("//input[@id='a100035_l100019_e100194_last_name']"));
+		WebElement LastName = Page.findelement("DemoLastName_XPATH");
 		Assert.assertTrue(LastName.isDisplayed());
 		// Verification of Company field
-		WebElement Company = Page.driver.findElement(By.xpath("//input[@id='a100035_l100019_e100195_company']"));
+		WebElement Company = Page.findelement("DemoCompany_XPATH");
 		Assert.assertTrue(Company.isDisplayed());
 		// Verification of Title field
-		WebElement Title = Page.driver.findElement(By.xpath("//input[@id='a100035_l100019_e100196_title']"));
+		WebElement Title = Page.findelement("DemoTitle_XPATH");
 		Assert.assertTrue(Title.isDisplayed());
 		// Verification of BusinessEmail field
-		WebElement BusinessEmail = Page.driver
-				.findElement(By.xpath("//input[@id='a100035_l100019_e100197_business_email']"));
+		WebElement BusinessEmail = Page.findelement("DemoBusinessEmail_XPATH");
 		Assert.assertTrue(BusinessEmail.isDisplayed());
 		// Verification of Phone field
-		WebElement Phone = Page.driver.findElement(By.xpath("//input[@id='a100035_l100019_e100198_phone']"));
+		WebElement Phone = Page.findelement("DemoPhone_XPATH");
 		Assert.assertTrue(Phone.isDisplayed());
 		// Verification of Country field
-		WebElement Country = Page.driver.findElement(By.xpath("//input[@id='a100035_l100019_e100199_country']"));
+		WebElement Country = Page.findelement("DemoCountry_XPATH");
 		Assert.assertTrue(Country.isDisplayed());
 		// Verification of State field
-		WebElement State = Page.driver.findElement(By.xpath("//input[@id='a100035_l100019_e100200_state']"));
+		WebElement State = Page.findelement("DemoState_XPATH");
 		Assert.assertTrue(State.isDisplayed());
 		// Verification of RequestTrialBtn button
-		WebElement RequestTrialBtn = Page.driver
-				.findElement(By.xpath("//input[@id='a100035_submit_btn' and @value='Request Demo']"));
+		WebElement RequestTrialBtn = Page.findelement("DemoRequestTrialBtn_XPATH");
 		Assert.assertTrue(RequestTrialBtn.isDisplayed());
 		Page.driver.switchTo().defaultContent();
 		Thread.sleep((Long.parseLong(p.config.getProperty("Thread1000"))));
 		// Page.click("DemoBackBtn_XPATH");
 		// Verification of close button
-		WebElement closeBtn = Page.driver.findElement(By.xpath("//button[@class='close' and @type='button']"));
+		WebElement closeBtn = Page.findelement("DemoCloseBtn_XPATH");
 		Assert.assertTrue(closeBtn.isDisplayed());
 		Page.click("DemoCloseBtn_XPATH");
 	}
@@ -382,18 +379,16 @@ public class oCalcPro_Nor extends BaseTest {
 	public void verifyocalcSupportClickonGetStartedWithOcalcProcard() throws InterruptedException {
 		OsmoseServicesPage os = new OsmoseServicesPage();
 		oCalcProPage ocal = os.gooCalcPro();
+		Thread.sleep((Long.parseLong(p.config.getProperty("Thread3000"))));
 		ocal.clickContactoCalcSupportLink();
-		Thread.sleep((Long.parseLong(p.config.getProperty("Thread5000"))));
 		// Verification of header text
-		WebElement ContactUsHeaderTxt = Page.driver
-				.findElement(By.xpath("//h5[@class='text-center' and text()=' Contact Us ']"));
+		WebElement ContactUsHeaderTxt = Page.findelement("oCalcProContactUsHeaderTxt_XPATH");
 		Assert.assertTrue(ContactUsHeaderTxt.isDisplayed());
 		Assert.assertEquals(Page.getText("oCalcProContactUsHeaderTxt_XPATH"), "Contact Us");
 		// Verification of Default value on subject field
 		String defaultValue = Page.getdefaultValuefromdropdown("oCalcProContactUsFormSubjectdd_XPATH");
 		Assert.assertEquals(defaultValue, "O-Calc Pro Support");
 		Page.click("oCalcProContactUscloseBtn_XPATH");
-		// ocal.clickoCalcNavigation();
 	}
 
 	// US-101215-101369-Verify by clicking on Product title in Product Tile in
@@ -402,31 +397,28 @@ public class oCalcPro_Nor extends BaseTest {
 	public void verifyProductsClick() throws InterruptedException {
 		OsmoseServicesPage os = new OsmoseServicesPage();
 		oCalcProPage ocal = os.gooCalcPro();
+		Thread.sleep((Long.parseLong(p.config.getProperty("Thread3000"))));
 		ocal.clickProducts();
 		// Verification of header text
-		WebElement HeaderTxt = Page.driver
-				.findElement(By.xpath("//p[@class='mb-0' and text()='Pole and Line Products']"));
+		WebElement HeaderTxt = Page.findelement("oCalcProductsHeaderTxt_XPATH");
 		Assert.assertTrue(HeaderTxt.isDisplayed());
 		Assert.assertEquals(Page.getText("oCalcProductsHeaderTxt_XPATH"), "Pole and Line Products");
 		// Verification of the heading on the products
 		Page.wait.until(ExpectedConditions
 				.visibilityOfElementLocated(By.xpath("//div[@class='projectHeading']//h3[text()='O-Calc Pro']")));
-		WebElement HeadingTxt = Page.driver
-				.findElement(By.xpath("//div[@class='projectHeading']//h3[text()='O-Calc Pro']"));
+		WebElement HeadingTxt = Page.findelement("oCalcProductsHeadingTxt_XPATH");
 		Assert.assertTrue(HeadingTxt.isDisplayed());
 		Assert.assertEquals(Page.getText("oCalcProductsHeadingTxt_XPATH"), "O-Calc Pro");
 		// Verification of ocalc-pro License product presence
-		WebElement OCalcLicense = Page.driver
-				.findElement(By.xpath("//div[@title='O-Calc License']//div[text()='O-Calc License']"));
+		WebElement OCalcLicense = Page.findelement("ProductsoCalcLicense_XPATH");
 		Assert.assertTrue(OCalcLicense.isDisplayed());
 		Assert.assertEquals(Page.getText("ProductsoCalcLicense_XPATH"), "O-Calc License");
 		// Verification of ocalc-pro CVT product presence
-		WebElement OCalcCVT = Page.driver.findElement(By.xpath("//div[@title='O-Calc CVT']//div[text()='O-Calc CVT']"));
+		WebElement OCalcCVT = Page.findelement("ProductsoCalcCVT_XPATH");
 		Assert.assertTrue(OCalcCVT.isDisplayed());
 		Assert.assertEquals(Page.getText("ProductsoCalcCVT_XPATH"), "O-Calc CVT");
 		// Verification of ocalc-pro Training product presence
-		WebElement OCalcTraining = Page.driver
-				.findElement(By.xpath("//div[@title='O-Calc Training']//div[text()='O-Calc Training']"));
+		WebElement OCalcTraining = Page.findelement("ProductsoCalcTraining_XPATH");
 		Assert.assertTrue(OCalcTraining.isDisplayed());
 		Assert.assertEquals(Page.getText("ProductsoCalcTraining_XPATH"), "O-Calc Training");
 		ocal.clickoCalcNavigation();
@@ -438,19 +430,18 @@ public class oCalcPro_Nor extends BaseTest {
 	public void verifyRequestLicenseQuoteClick() throws InterruptedException {
 		OsmoseServicesPage os = new OsmoseServicesPage();
 		oCalcProPage ocal = os.gooCalcPro();
+		Thread.sleep((Long.parseLong(p.config.getProperty("Thread3000"))));
 		ocal.clickRequestLicenseQuote();
 		Page.wait.until(ExpectedConditions.visibilityOfElementLocated(
 				By.xpath("(//div[@class='prdDetailhs2']//h3[text()=' O-Calc License '])[1]")));
 		// Verification of header text
-		WebElement LicenseTxt = Page.driver
-				.findElement(By.xpath("(//div[@class='prdDetailhs2']//h3[text()=' O-Calc License '])[1]"));
+		WebElement LicenseTxt = Page.findelement("oCalcLicenseTxt_XPATH");
 		Assert.assertTrue(LicenseTxt.isDisplayed());
 		Assert.assertEquals(Page.getText("oCalcLicenseTxt_XPATH"), "O-Calc License");
-		WebElement LicenseDescTxt = Page.driver
-				.findElement(By.xpath("(//div[@class='prdDetailhs2']//p[text()=' O-Calc License description '])[1]"));
+		WebElement LicenseDescTxt = Page.findelement("oCalcLicenseDescription_XPATH");
 		Assert.assertTrue(LicenseDescTxt.isDisplayed());
 		Assert.assertEquals(Page.getText("oCalcLicenseDescription_XPATH"), "O-Calc License description");
-		WebElement callNowTxt = Page.driver.findElement(By.xpath("(//a[contains(text(),'(716) 319-3423')])[1]"));
+		WebElement callNowTxt = Page.findelement("oCalcCallNowTxt_XPATH");
 		Assert.assertTrue(callNowTxt.isDisplayed());
 		Assert.assertEquals(Page.getText("oCalcCallNowTxt_XPATH"), "(716) 319-3423");
 		ocal.RequestLicenseProductQuoteSubmission();
@@ -463,16 +454,15 @@ public class oCalcPro_Nor extends BaseTest {
 	public void verifyRequestCVTQuoteClick() throws InterruptedException {
 		OsmoseServicesPage os = new OsmoseServicesPage();
 		oCalcProPage ocal = os.gooCalcPro();
+		Thread.sleep((Long.parseLong(p.config.getProperty("Thread3000"))));
 		ocal.clickRequestCVTQuote();
 		Page.wait.until(ExpectedConditions
 				.visibilityOfElementLocated(By.xpath("(//div[@class='prdDetailhs2']//h3[text()=' O-Calc CVT '])[1]")));
 		// Verification of header text
-		WebElement CVTTxt = Page.driver
-				.findElement(By.xpath("(//div[@class='prdDetailhs2']//h3[text()=' O-Calc CVT '])[1]"));
+		WebElement CVTTxt = Page.findelement("oCalcCVTTxt_XPATH");
 		Assert.assertTrue(CVTTxt.isDisplayed());
 		Assert.assertEquals(Page.getText("oCalcCVTTxt_XPATH"), "O-Calc CVT");
-		WebElement CVTDescTxt = Page.driver
-				.findElement(By.xpath("(//div[@class='prdDetailhs2']//p[text()=' O-Calc CVT description '])[1]"));
+		WebElement CVTDescTxt = Page.findelement("oCalcCVTDescription_XPATH");
 		Assert.assertTrue(CVTDescTxt.isDisplayed());
 		Assert.assertEquals(Page.getText("oCalcCVTDescription_XPATH"), "O-Calc CVT description");
 		ocal.RequestCVTProductQuoteSubmission();
@@ -485,16 +475,15 @@ public class oCalcPro_Nor extends BaseTest {
 	public void verifyRequestTrainingQuoteClick() throws InterruptedException {
 		OsmoseServicesPage os = new OsmoseServicesPage();
 		oCalcProPage ocal = os.gooCalcPro();
+		Thread.sleep((Long.parseLong(p.config.getProperty("Thread3000"))));
 		ocal.clickRequestTrainingQuote();
 		Page.wait.until(ExpectedConditions.visibilityOfElementLocated(
 				By.xpath("(//div[@class='prdDetailhs2']//h3[text()=' O-Calc Training '])[1]")));
 		// Verification of header text
-		WebElement TrainingTxt = Page.driver
-				.findElement(By.xpath("(//div[@class='prdDetailhs2']//h3[text()=' O-Calc Training '])[1]"));
+		WebElement TrainingTxt = Page.findelement("oCalcRequestTrainingTxt_XPATH");
 		Assert.assertTrue(TrainingTxt.isDisplayed());
 		Assert.assertEquals(Page.getText("oCalcRequestTrainingTxt_XPATH"), "O-Calc Training");
-		WebElement TrainingDescTxt = Page.driver
-				.findElement(By.xpath("(//div[@class='prdDetailhs2']//p[text()=' O-Calc Training description '])[1]"));
+		WebElement TrainingDescTxt = Page.findelement("oCalcRequestTrainingDescription_XPATH");
 		Assert.assertTrue(TrainingDescTxt.isDisplayed());
 		Assert.assertEquals(Page.getText("oCalcRequestTrainingDescription_XPATH"), "O-Calc Training description");
 		ocal.RequestTrainingProductQuoteSubmission();
@@ -505,19 +494,18 @@ public class oCalcPro_Nor extends BaseTest {
 	public void verifyCurrentPublicClassesClick() throws InterruptedException {
 		OsmoseServicesPage os = new OsmoseServicesPage();
 		oCalcProPage ocal = os.gooCalcPro();
-		// ocal.clickoCalcCard();
 		Thread.sleep((Long.parseLong(p.config.getProperty("Thread4000"))));
 		ocal.clickCurrentPublicClasses();
 		Thread.sleep((Long.parseLong(p.config.getProperty("Thread3000"))));
 		// Verification of the Back button
-		WebElement BackBtn = Page.driver.findElement(By.xpath("//h5[@class='m-0' and text()=' Back ']"));
+		WebElement BackBtn = Page.findelement("oCalCurrentPublicClassBackBtn_XPATH");
 		Assert.assertTrue(BackBtn.isDisplayed());
 		// Verification of Back btn text
 		Assert.assertEquals(Page.getText("oCalCurrentPublicClassBackBtn_XPATH"), "Back");
 		// Verification of the Header text
 		Assert.assertEquals(Page.getText("oCalCurrentPublicClassesHeaderTxt_XPATH"), "O-Calc Pro Classes");
 		// Verification of close button
-		WebElement closeBtn = Page.driver.findElement(By.xpath("//button[@class='close' and @type='button']"));
+		WebElement closeBtn = Page.findelement("oCalCurrentPublicClassesCloseBtn_XPATH");
 		Assert.assertTrue(closeBtn.isDisplayed());
 		Page.iFrames(1);
 		Thread.sleep((Long.parseLong(p.config.getProperty("Thread2000"))));
@@ -540,12 +528,10 @@ public class oCalcPro_Nor extends BaseTest {
 		ocal.clickRequestQuoteForPrivateTrainingClasses();
 		Thread.sleep((Long.parseLong(p.config.getProperty("Thread8000"))));
 		// Verification of header text
-		WebElement TrainingTxt = Page.driver
-				.findElement(By.xpath("(//div[@class='prdDetailhs2']//h3[text()=' O-Calc Training '])[1]"));
+		WebElement TrainingTxt = Page.findelement("oCalcRequestTrainingTxt_XPATH");
 		Assert.assertTrue(TrainingTxt.isDisplayed());
 		Assert.assertEquals(Page.getText("oCalcRequestTrainingTxt_XPATH"), "O-Calc Training");
-		WebElement TrainingDescTxt = Page.driver
-				.findElement(By.xpath("(//div[@class='prdDetailhs2']//p[text()=' O-Calc Training description '])[1]"));
+		WebElement TrainingDescTxt = Page.findelement("oCalcRequestTrainingDescription_XPATH");
 		Assert.assertTrue(TrainingDescTxt.isDisplayed());
 		Assert.assertEquals(Page.getText("oCalcRequestTrainingDescription_XPATH"), "O-Calc Training description");
 		ocal.RequestTrainingProductQuoteSubmission();
@@ -556,11 +542,12 @@ public class oCalcPro_Nor extends BaseTest {
 	public void verifyClickOnAnAnnouncement() throws InterruptedException {
 		OsmoseServicesPage os = new OsmoseServicesPage();
 		oCalcProPage ocal = os.gooCalcPro();
+		Thread.sleep((Long.parseLong(p.config.getProperty("Thread3000"))));
 		// Announcements First Announcement Presence verification
 		Assert.assertTrue(Page.driver.findElement(By.xpath("(//a[@id='OCalProSeminar'])[1]")).isDisplayed());
 		Page.click("AnnouncementFirst_XPATH");
 		// Verification of close button
-		WebElement closeBtn = Page.driver.findElement(By.xpath("//button[@class='close' and @type='button']"));
+		WebElement closeBtn = Page.findelement("AnnouncementCloseBtn_XPATH");
 		Assert.assertTrue(closeBtn.isDisplayed());
 		// Verification of the Back button
 		WebElement BackBtn = Page.driver.findElement(By.xpath("//h5[@class='m-0' and text()=' Back ']"));
@@ -578,40 +565,30 @@ public class oCalcPro_Nor extends BaseTest {
 		OsmoseServicesPage os = new OsmoseServicesPage();
 		oCalcProPage ocal = os.gooCalcPro();
 		ocal.clickKnowledgeBase();
-		Thread.sleep((Long.parseLong(p.config.getProperty("Thread5000"))));
 		// Verification of header text
-		WebElement HeaderTxt = Page.driver.findElement(By.xpath("//p[@class='mb-0' and text()='Knowledge Base']"));
+		WebElement HeaderTxt = Page.findelement("KnowledgeBaseFirstHeaderTxt_XPATH");
 		Assert.assertTrue(HeaderTxt.isDisplayed());
 		Assert.assertEquals(Page.getText("KnowledgeBaseFirstHeaderTxt_XPATH"), "Knowledge Base");
-		/*
-		 * WebElement VideoResultsSection =
-		 * Page.driver.findElement(By.xpath("//h5[@class='m-0' and text()='Videos']"));
-		 * Assert.assertTrue(VideoResultsSection.isDisplayed());
-		 */
+		WebElement VideoResultsSection = Page.driver.findElement(By.xpath("//h5[@class='m-0' and text()='Videos']"));
+		Assert.assertTrue(VideoResultsSection.isDisplayed());
 		WebElement DocumentResultsSection = Page.driver
 				.findElement(By.xpath("//h5[@class='m-0' and text()='Documents']"));
 		Assert.assertTrue(DocumentResultsSection.isDisplayed());
 		Thread.sleep((Long.parseLong(p.config.getProperty("Thread3000"))));
-		/*
-		 * WebElement OcalPopularFilter1 = Page.driver
-		 * .findElement(By.xpath("//*[contains(text(),'Introduction to Pole Modeling')]"
-		 * )); Assert.assertTrue(OcalPopularFilter1.isDisplayed()); WebElement
-		 * OcalPopularFilter2 = Page.driver
-		 * .findElement(By.xpath("//*[contains(text(),'Advanced Pole Modeling')]"));
-		 * Assert.assertTrue(OcalPopularFilter2.isDisplayed()); WebElement
-		 * OcalPopularFilter3 =
-		 * Page.driver.findElement(By.xpath("//*[contains(text(),'Line Design')]"));
-		 * Assert.assertTrue(OcalPopularFilter3.isDisplayed());
-		 */
-		/*
-		 * WebElement videoContent = Page.driver.findElement(By.xpath(
-		 * "(//div[@class='Vplay']//img[@alt='play'])[1]"));
-		 * Assert.assertTrue(videoContent.isDisplayed());
-		 * Thread.sleep((Long.parseLong(p.config.getProperty("Thread3000"))));
-		 * ocal.clickocalOnAVideo();
-		 * Thread.sleep((Long.parseLong(p.config.getProperty("Thread6000"))));
-		 * ocal.clickBoxCloseBtn();
-		 */
+		WebElement OcalPopularFilter1 = Page.driver
+				.findElement(By.xpath("//*[contains(text(),'Introduction to Pole Modeling')]"));
+		Assert.assertTrue(OcalPopularFilter1.isDisplayed());
+		WebElement OcalPopularFilter2 = Page.driver
+				.findElement(By.xpath("//*[contains(text(),'Advanced Pole Modeling')]"));
+		Assert.assertTrue(OcalPopularFilter2.isDisplayed());
+		WebElement OcalPopularFilter3 = Page.driver.findElement(By.xpath("//*[contains(text(),'Line Design')]"));
+		Assert.assertTrue(OcalPopularFilter3.isDisplayed());
+		WebElement videoContent = Page.driver.findElement(By.xpath("(//div[@class='Vplay']//img[@alt='play'])[1]"));
+		Assert.assertTrue(videoContent.isDisplayed());
+		Thread.sleep((Long.parseLong(p.config.getProperty("Thread3000"))));
+		ocal.clickocalOnAVideo();
+		Thread.sleep((Long.parseLong(p.config.getProperty("Thread6000"))));
+		ocal.clickBoxCloseBtn();
 		Thread.sleep((Long.parseLong(p.config.getProperty("Thread2000"))));
 		ocal.clickocalOnADocument();
 		Thread.sleep((Long.parseLong(p.config.getProperty("Thread3000"))));
@@ -627,31 +604,20 @@ public class oCalcPro_Nor extends BaseTest {
 		oCalcProPage ocal = os.gooCalcPro();
 		Thread.sleep((Long.parseLong(p.config.getProperty("Thread4000"))));
 		ocal.clickKBTrainingVideos();
-		Thread.sleep((Long.parseLong(p.config.getProperty("Thread5000"))));
+		Thread.sleep((Long.parseLong(p.config.getProperty("Thread2000"))));
 		// Verification of header text
-		/*
-		 * WebElement HeaderTxt = Page.driver.findElement(By.
-		 * xpath("//p[@class='mb-0' and text()='Knowledge Base']"));
-		 * Assert.assertTrue(HeaderTxt.isDisplayed());
-		 * Assert.assertEquals(Page.getText("KnowledgeBaseFirstHeaderTxt_XPATH"),
-		 * "Knowledge Base"); WebElement VideoResultsSection =
-		 * Page.driver.findElement(By.xpath("//h5[@class='m-0' and text()='Videos']"));
-		 * Assert.assertTrue(VideoResultsSection.isDisplayed());
-		 * Page.click("ocalVideosSeeMorelnk_XPATH"); WebElement videoContent =
-		 * Page.driver.findElement(By.xpath(
-		 * "(//div[@class='imgBox']//img[@class='w-100'])[1]"));
-		 * Assert.assertTrue(videoContent.isDisplayed());
-		 * Thread.sleep((Long.parseLong(p.config.getProperty("Thread3000"))));
-		 * ocal.clickocalOnASeeMoreVideo();
-		 * Thread.sleep((Long.parseLong(p.config.getProperty("Thread2000"))));
-		 * ocal.clickBoxCloseBtn();
-		 */
-
-		WebElement noresults = Page.driver
-				.findElement(By.xpath("//div[contains(text(),'No results match your search criteria')]"));
-		String text = noresults.getText();
-		String newtext = text.substring(text.indexOf('\n') + 1);
-		Assert.assertEquals(newtext, "No results match your search criteria.");
+		WebElement HeaderTxt = Page.driver.findElement(By.xpath("//p[@class='mb-0' and text()='Knowledge Base']"));
+		Assert.assertTrue(HeaderTxt.isDisplayed());
+		Assert.assertEquals(Page.getText("KnowledgeBaseFirstHeaderTxt_XPATH"), "Knowledge Base");
+		WebElement VideoResultsSection = Page.driver.findElement(By.xpath("//h5[@class='m-0' and text()='Videos']"));
+		Assert.assertTrue(VideoResultsSection.isDisplayed());
+		Page.click("ocalVideosSeeMorelnk_XPATH");
+		WebElement videoContent = Page.driver.findElement(By.xpath("(//div[@class='imgBox']//img[@class='w-100'])[1]"));
+		Assert.assertTrue(videoContent.isDisplayed());
+		Thread.sleep((Long.parseLong(p.config.getProperty("Thread3000"))));
+		ocal.clickocalOnASeeMoreVideo();
+		Thread.sleep((Long.parseLong(p.config.getProperty("Thread2000"))));
+		ocal.clickBoxCloseBtn();
 		ocal.clickoCalcNavigation();
 	}
 
@@ -660,9 +626,9 @@ public class oCalcPro_Nor extends BaseTest {
 		OsmoseServicesPage os = new OsmoseServicesPage();
 		oCalcProPage ocal = os.gooCalcPro();
 		ocal.clickKBWikiPage();
-		Thread.sleep((Long.parseLong(p.config.getProperty("Thread5000"))));
+		Thread.sleep((Long.parseLong(p.config.getProperty("Thread2000"))));
 		// Verification of header text
-		WebElement HeaderTxt = Page.driver.findElement(By.xpath("//p[@class='mb-0' and text()='Knowledge Base']"));
+		WebElement HeaderTxt = Page.findelement("KnowledgeBaseFirstHeaderTxt_XPATH");
 		Assert.assertTrue(HeaderTxt.isDisplayed());
 		Assert.assertEquals(Page.getText("KnowledgeBaseFirstHeaderTxt_XPATH"), "Knowledge Base");
 		WebElement DocumentResultsSection = Page.driver
@@ -693,27 +659,17 @@ public class oCalcPro_Nor extends BaseTest {
 		oCalcProPage ocal = os.gooCalcPro();
 		ocal.clickKnowledgeBase();
 		Thread.sleep((Long.parseLong(p.config.getProperty("Thread6000"))));
-		// ocal.clickOCalcProIntroduction();
+		ocal.clickOCalcProIntroduction();
 		Thread.sleep((Long.parseLong(p.config.getProperty("Thread6000"))));
-
+		WebElement VideoResultsSection = Page.driver.findElement(By.xpath("//h5[@class='m-0' and text()='Videos']"));
+		Assert.assertTrue(VideoResultsSection.isDisplayed());
 		/*
-		 * WebElement VideoResultsSection =
-		 * Page.driver.findElement(By.xpath("//h5[@class='m-0' and text()='Videos']"));
-		 * Assert.assertTrue(VideoResultsSection.isDisplayed()); WebElement
-		 * ImageResultsSection =
+		 * WebElement ImageResultsSection =
 		 * Page.driver.findElement(By.xpath("//h5[@class='m-0' and text()='Images']"));
-		 * Assert.assertTrue(ImageResultsSection.isDisplayed());
-		 */
-		WebElement DocumentResultsSection = Page.driver
-				.findElement(By.xpath("//h5[@class='m-0' and text()='Documents']"));
-		Assert.assertTrue(DocumentResultsSection.isDisplayed());
-
-		/*
-		 * WebElement noresults = Page.driver .findElement(By.
-		 * xpath("//div[contains(text(),'No results match your search criteria')]"));
-		 * String text = noresults.getText(); String newtext =
-		 * text.substring(text.indexOf('\n') + 1); Assert.assertEquals(newtext,
-		 * "No results match your search criteria.");
+		 * Assert.assertTrue(ImageResultsSection.isDisplayed()); WebElement
+		 * DocumentResultsSection = Page.driver
+		 * .findElement(By.xpath("//h5[@class='m-0' and text()='Documents']"));
+		 * Assert.assertTrue(DocumentResultsSection.isDisplayed());
 		 */
 		Thread.sleep((Long.parseLong(p.config.getProperty("Thread3000"))));
 		ocal.clickoCalcNavigation();
@@ -725,24 +681,18 @@ public class oCalcPro_Nor extends BaseTest {
 		oCalcProPage ocal = os.gooCalcPro();
 		ocal.clickKBTrainingVideos();
 		Thread.sleep((Long.parseLong(p.config.getProperty("Thread6000"))));
+		ocal.clickOCalcProIntroduction();
+		Thread.sleep((Long.parseLong(p.config.getProperty("Thread6000"))));
+		WebElement VideoResultsSection = Page.driver.findElement(By.xpath("//h5[@class='m-0' and text()='Videos']"));
+		Assert.assertTrue(VideoResultsSection.isDisplayed());
 		/*
-		 * ocal.clickOCalcProIntroduction();
-		 * Thread.sleep((Long.parseLong(p.config.getProperty("Thread6000"))));
-		 * WebElement VideoResultsSection =
-		 * Page.driver.findElement(By.xpath("//h5[@class='m-0' and text()='Videos']"));
-		 * Assert.assertTrue(VideoResultsSection.isDisplayed()); WebElement
-		 * ImageResultsSection =
+		 * WebElement ImageResultsSection =
 		 * Page.driver.findElement(By.xpath("//h5[@class='m-0' and text()='Images']"));
 		 * Assert.assertTrue(ImageResultsSection.isDisplayed()); WebElement
 		 * DocumentResultsSection = Page.driver
 		 * .findElement(By.xpath("//h5[@class='m-0' and text()='Documents']"));
 		 * Assert.assertTrue(DocumentResultsSection.isDisplayed());
 		 */
-		WebElement noresults = Page.driver
-				.findElement(By.xpath("//div[contains(text(),'No results match your search criteria')]"));
-		String text = noresults.getText();
-		String newtext = text.substring(text.indexOf('\n') + 1);
-		Assert.assertEquals(newtext, "No results match your search criteria.");
 		Thread.sleep((Long.parseLong(p.config.getProperty("Thread3000"))));
 		ocal.clickoCalcNavigation();
 	}
@@ -752,8 +702,6 @@ public class oCalcPro_Nor extends BaseTest {
 		OsmoseServicesPage os = new OsmoseServicesPage();
 		oCalcProPage ocal = os.gooCalcPro();
 		// License Management card presence verification
-		// Assert.assertFalse(Page.driver.findElement(By.xpath("//h5[@class='m-0
-		// crspointer' and text()='License Management ']")).isDisplayed());
 		Assert.assertFalse(Page.isElementPresent(By.xpath("LicensedUserLicenseManagementCard_XPATH")));
 	}
 

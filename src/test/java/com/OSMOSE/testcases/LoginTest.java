@@ -17,7 +17,7 @@ public class LoginTest extends BaseTest{
 		Login lo = new Login();
 		lo.doLogin(data.get("username"), data.get("password"));
 		String element = Page.getText("verify_ID");
-		Assert.assertEquals(element, "Varun M R");
+		Assert.assertEquals(element, "Rajesh Yadav");
 	}
 
 }

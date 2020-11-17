@@ -170,7 +170,7 @@ public class Contact extends BaseTest {
 		Thread.sleep((Long.parseLong(p.config.getProperty("Thread1000"))));
 		cp.ClickViewContactsMenu();
 		Thread.sleep((Long.parseLong(p.config.getProperty("Thread3000"))));
-		Assert.assertEquals(Page.getText("PedernalesElecCoopContactstxt_XPATH"), "Pedernales EC Test Contacts");
+		Assert.assertEquals(Page.getText("PedernalesElecCoopContactstxt_XPATH"), "Pedernales EC Dev Contacts");
 		Assert.assertEquals(Page.getText("PedernalesElecCoopContactCardName_XPATH"), "Spaulding,Kevin L");
 		Assert.assertEquals(Page.getText("PedernalesElecCoopContactCardDesignation_XPATH"), "Director Business Development");
 		Assert.assertEquals(Page.getText("PedernalesElecCoopContactCardEmail_XPATH"), "kspaulding@osmose.com");

@@ -255,12 +255,11 @@ public class OsmoseServices extends BaseTest {
 	public void VerifyProductclick() throws InterruptedException {
 		KnowledgeBasePage kb = new KnowledgeBasePage();
 		OsmoseServicesPage osp = kb.goOsmoseServices();
-		Thread.sleep((Long.parseLong(p.config.getProperty("Thread2000"))));
 		Page.click("ProductCardFirstProduct_XPATH");
 		Thread.sleep((Long.parseLong(p.config.getProperty("Thread6000"))));
 		WebElement ProductFirstTxt = Page.driver
-				.findElement(By.xpath("//div[@class='prdDetailhs2']//h3"));
-		System.out.println("First Product is: "+ProductFirstTxt.getText());
+				.findElement(By.xpath("//h3[contains(text(),' MP500-EXT® Preservative Paste ')]"));
+		Assert.assertEquals(ProductFirstTxt.getText(), "MP500-EXT® Preservative Paste");
 		Page.click("CloseButtonMOS_XPATH");
 		osp.clickOnOU360();
 		Thread.sleep((Long.parseLong(p.config.getProperty("Thread2000"))));
@@ -268,8 +267,8 @@ public class OsmoseServices extends BaseTest {
 		Page.click("ProductCardSecondProduct_XPATH");
 		Thread.sleep((Long.parseLong(p.config.getProperty("Thread6000"))));
 		WebElement ProductSecondTxt = Page.driver
-				.findElement(By.xpath("//div[@class='prdDetailhs2']//h3"));
-		System.out.println("Second Product is: "+ProductSecondTxt.getText());
+				.findElement(By.xpath("//h3[contains(text(),' Demo_MP500-EXT® Preservative Paste ')]"));
+		Assert.assertEquals(ProductSecondTxt.getText(), "Demo_MP500-EXT® Preservative Paste");
 		Page.click("CloseButtonMOS_XPATH");
 		osp.clickOnOU360();
 		Thread.sleep((Long.parseLong(p.config.getProperty("Thread2000"))));
@@ -277,16 +276,16 @@ public class OsmoseServices extends BaseTest {
 		Page.click("ProductCardThirdProduct_XPATH");
 		Thread.sleep((Long.parseLong(p.config.getProperty("Thread6000"))));
 		WebElement ProductThirdTxt = Page.driver
-				.findElement(By.xpath("//div[@class='prdDetailhs2']//h3"));
-		System.out.println("Third Product is: "+ProductThirdTxt.getText());
+				.findElement(By.xpath("//h3[contains(text(),' TEST-MP500-EXT® Preservative Paste ')]"));
+		Assert.assertEquals(ProductThirdTxt.getText(), "TEST-MP500-EXT® Preservative Paste");
 		Page.click("CloseButtonMOS_XPATH");
 		osp.clickOnOU360();
 		Thread.sleep((Long.parseLong(p.config.getProperty("Thread2000"))));
 		osp.clickMyOsmoseServices();
 		Page.click("ProductCardFourthProduct_XPATH");
 		Thread.sleep((Long.parseLong(p.config.getProperty("Thread6000"))));
-		WebElement ProductFourthTxt = Page.driver.findElement(By.xpath("//div[@class='prdDetailhs2']//h3"));
-		System.out.println("Fourth Product is: "+ProductFourthTxt.getText());
+		WebElement ProductFourthTxt = Page.driver.findElement(By.xpath("//h3[contains(text(),' Demo_MITC-FUME® ')]"));
+		Assert.assertEquals(ProductFourthTxt.getText(), "Demo_MITC-FUME®");
 		Page.click("CloseButtonMOS_XPATH");
 		osp.clickOnOU360();
 		Thread.sleep((Long.parseLong(p.config.getProperty("Thread2000"))));
