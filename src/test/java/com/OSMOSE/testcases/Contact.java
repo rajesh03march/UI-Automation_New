@@ -54,7 +54,7 @@ public class Contact extends BaseTest {
 		Thread.sleep((Long.parseLong(p.config.getProperty("Thread1000"))));
 		cp.ClickViewContactsMenu();
 		Thread.sleep((Long.parseLong(p.config.getProperty("Thread6000"))));
-		Assert.assertEquals(Page.getText("GeorgiaContactstxt_XPATH"), "Georgia Power Company Distribution Change Contacts");
+		Assert.assertEquals(Page.getText("GeorgiaContactstxt_XPATH"), "Georgia Power Company Distribution Contacts");
 		Assert.assertEquals(Page.getText("GeorgiaContactCardName_XPATH"), "Heartsill,Jason Shane");
 		Assert.assertEquals(Page.getText("GeorgiaContactCardDesignation_XPATH"), "Director Business Development");
 		Assert.assertEquals(Page.getText("GeorgiaContactCardEmail_XPATH"), "sheartsill@osmose.com");
@@ -170,7 +170,7 @@ public class Contact extends BaseTest {
 		Thread.sleep((Long.parseLong(p.config.getProperty("Thread1000"))));
 		cp.ClickViewContactsMenu();
 		Thread.sleep((Long.parseLong(p.config.getProperty("Thread3000"))));
-		Assert.assertEquals(Page.getText("PedernalesElecCoopContactstxt_XPATH"), "Pedernales EC Dev Contacts");
+		Assert.assertEquals(Page.getText("PedernalesElecCoopContactstxt_XPATH"), "Pedernales EC Test Contacts");
 		Assert.assertEquals(Page.getText("PedernalesElecCoopContactCardName_XPATH"), "Spaulding,Kevin L");
 		Assert.assertEquals(Page.getText("PedernalesElecCoopContactCardDesignation_XPATH"), "Director Business Development");
 		Assert.assertEquals(Page.getText("PedernalesElecCoopContactCardEmail_XPATH"), "kspaulding@osmose.com");

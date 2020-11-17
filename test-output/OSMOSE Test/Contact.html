@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Contact</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>20/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>12/8/0</td>
 </tr><tr>
-<td>Started on:</td><td>Mon Sep 21 14:36:41 IST 2020</td>
+<td>Started on:</td><td>Fri Nov 13 14:33:20 IST 2020</td>
 </tr>
-<tr><td>Total time:</td><td>171 seconds (171826 ms)</td>
+<tr><td>Total time:</td><td>446 seconds (446606 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,6 +67,758 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.OSMOSE.testcases.Contact.verifyCityOfColumbiaContactCardContents()'><b>verifyCityOfColumbiaContactCardContents</b><br>Test class: com.OSMOSE.testcases.Contact<br>Test method: Verification of the content on a contact card on City Of Columbia-Colombiapit<br/>
+<a href="#Output-701681793" onClick='toggleBox("Output-701681793", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-701681793" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-701681793">
+Click to see Screenshot<br/>
+<a target="_blank" href=Fri_Nov_13_14_34_20_IST_2020.jpg>Screenshot</a><br/>
+<br><br/>
+<br><br/>
+<a target="_blank" href=Fri_Nov_13_14_34_20_IST_2020.jpg><img src=Fri_Nov_13_14_34_20_IST_2020.jpg height=200 width=200></img></a><br/>
+</div>
+</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//button[contains(text(),&apos;City of Columbia&apos;)]&quot;}
+  (Session info: chrome=86.0.4240.75)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
+System info: host: &apos;5CG6323N27&apos;, ip: &apos;192.168.0.11&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_191&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.75, chrome: {chromedriverVersion: 85.0.4183.87 (cd6713ebf92fa..., userDataDir: C:\Windows\Temp\scoped_dir2...}, goog:chromeOptions: {debuggerAddress: localhost:50139}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: none, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 46f4ea62595331bec3d5b7a0316626e7
+*** Element info: {Using=xpath, value=//button[contains(text(),&apos;City of Columbia&apos;)]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:424)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
+	at com.OSMOSE.base.Page.click(Page.java:182)
+	at com.OSMOSE.pages.OU.ContactPage.navigateToColombiapit(ContactPage.java:72)
+	at com.OSMOSE.testcases.Contact.verifyCityOfColumbiaContactCardContents(Contact.java:36)
+	at java.util.ArrayList.forEach(Unknown Source)
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace701681793", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace701681793'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//button[contains(text(),&apos;City of Columbia&apos;)]&quot;}
+  (Session info: chrome=86.0.4240.75)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
+System info: host: &apos;5CG6323N27&apos;, ip: &apos;192.168.0.11&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_191&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.75, chrome: {chromedriverVersion: 85.0.4183.87 (cd6713ebf92fa..., userDataDir: C:\Windows\Temp\scoped_dir2...}, goog:chromeOptions: {debuggerAddress: localhost:50139}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: none, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 46f4ea62595331bec3d5b7a0316626e7
+*** Element info: {Using=xpath, value=//button[contains(text(),&apos;City of Columbia&apos;)]}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:424)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
+	at com.OSMOSE.base.Page.click(Page.java:182)
+	at com.OSMOSE.pages.OU.ContactPage.navigateToColombiapit(ContactPage.java:72)
+	at com.OSMOSE.testcases.Contact.verifyCityOfColumbiaContactCardContents(Contact.java:36)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(Unknown Source)
+	at org.testng.TestRunner.privateRun(TestRunner.java:766)
+	at org.testng.TestRunner.run(TestRunner.java:587)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+	at org.testng.TestNG.runSuites(TestNG.java:1039)
+	at org.testng.TestNG.run(TestNG.java:1007)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>51</td>
+<td>com.OSMOSE.testcases.Contact@45e37a7e</td></tr>
+<tr>
+<td title='com.OSMOSE.testcases.Contact.verifyGrandElectricContactCardContents()'><b>verifyGrandElectricContactCardContents</b><br>Test class: com.OSMOSE.testcases.Contact<br>Test method: Verification of the content on a contact card on Grand Electric-GrandElectric<br/>
+<a href="#Output-2004655561" onClick='toggleBox("Output-2004655561", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2004655561" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2004655561">
+Click to see Screenshot<br/>
+<a target="_blank" href=Fri_Nov_13_14_35_31_IST_2020.jpg>Screenshot</a><br/>
+<br><br/>
+<br><br/>
+<a target="_blank" href=Fri_Nov_13_14_35_31_IST_2020.jpg><img src=Fri_Nov_13_14_35_31_IST_2020.jpg height=200 width=200></img></a><br/>
+</div>
+</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//button[contains(text(),&apos;Grand Electric&apos;)]&quot;}
+  (Session info: chrome=86.0.4240.75)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
+System info: host: &apos;5CG6323N27&apos;, ip: &apos;192.168.0.11&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_191&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.75, chrome: {chromedriverVersion: 85.0.4183.87 (cd6713ebf92fa..., userDataDir: C:\Windows\Temp\scoped_dir2...}, goog:chromeOptions: {debuggerAddress: localhost:50139}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: none, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 46f4ea62595331bec3d5b7a0316626e7
+*** Element info: {Using=xpath, value=//button[contains(text(),&apos;Grand Electric&apos;)]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:424)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
+	at com.OSMOSE.base.Page.click(Page.java:182)
+	at com.OSMOSE.pages.OU.ContactPage.navigateToGrandElectric(ContactPage.java:88)
+	at com.OSMOSE.testcases.Contact.verifyGrandElectricContactCardContents(Contact.java:71)
+	at java.util.ArrayList.forEach(Unknown Source)
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2004655561", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2004655561'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//button[contains(text(),&apos;Grand Electric&apos;)]&quot;}
+  (Session info: chrome=86.0.4240.75)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
+System info: host: &apos;5CG6323N27&apos;, ip: &apos;192.168.0.11&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_191&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.75, chrome: {chromedriverVersion: 85.0.4183.87 (cd6713ebf92fa..., userDataDir: C:\Windows\Temp\scoped_dir2...}, goog:chromeOptions: {debuggerAddress: localhost:50139}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: none, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 46f4ea62595331bec3d5b7a0316626e7
+*** Element info: {Using=xpath, value=//button[contains(text(),&apos;Grand Electric&apos;)]}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:424)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
+	at com.OSMOSE.base.Page.click(Page.java:182)
+	at com.OSMOSE.pages.OU.ContactPage.navigateToGrandElectric(ContactPage.java:88)
+	at com.OSMOSE.testcases.Contact.verifyGrandElectricContactCardContents(Contact.java:71)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(Unknown Source)
+	at org.testng.TestRunner.privateRun(TestRunner.java:766)
+	at org.testng.TestRunner.run(TestRunner.java:587)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+	at org.testng.TestNG.runSuites(TestNG.java:1039)
+	at org.testng.TestNG.run(TestNG.java:1007)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>51</td>
+<td>com.OSMOSE.testcases.Contact@45e37a7e</td></tr>
+<tr>
+<td title='com.OSMOSE.testcases.Contact.verifyIdahoPowerInspectionContactCardContents()'><b>verifyIdahoPowerInspectionContactCardContents</b><br>Test class: com.OSMOSE.testcases.Contact<br>Test method: Verification of the content on a contact card on Idaho Power Company-Idaho Power Inspection<br/>
+<a href="#Output-2099932844" onClick='toggleBox("Output-2099932844", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2099932844" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2099932844">
+Click to see Screenshot<br/>
+<a target="_blank" href=Fri_Nov_13_14_36_23_IST_2020.jpg>Screenshot</a><br/>
+<br><br/>
+<br><br/>
+<a target="_blank" href=Fri_Nov_13_14_36_23_IST_2020.jpg><img src=Fri_Nov_13_14_36_23_IST_2020.jpg height=200 width=200></img></a><br/>
+</div>
+</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//button[contains(text(),&apos;Idaho Power Company&apos;)]&quot;}
+  (Session info: chrome=86.0.4240.75)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
+System info: host: &apos;5CG6323N27&apos;, ip: &apos;192.168.0.11&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_191&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.75, chrome: {chromedriverVersion: 85.0.4183.87 (cd6713ebf92fa..., userDataDir: C:\Windows\Temp\scoped_dir2...}, goog:chromeOptions: {debuggerAddress: localhost:50139}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: none, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 46f4ea62595331bec3d5b7a0316626e7
+*** Element info: {Using=xpath, value=//button[contains(text(),&apos;Idaho Power Company&apos;)]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:424)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
+	at com.OSMOSE.base.Page.click(Page.java:182)
+	at com.OSMOSE.pages.OU.ContactPage.navigateToIdahoPowerCompanyInspection(ContactPage.java:96)
+	at com.OSMOSE.testcases.Contact.verifyIdahoPowerInspectionContactCardContents(Contact.java:87)
+	at java.util.ArrayList.forEach(Unknown Source)
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2099932844", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2099932844'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//button[contains(text(),&apos;Idaho Power Company&apos;)]&quot;}
+  (Session info: chrome=86.0.4240.75)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
+System info: host: &apos;5CG6323N27&apos;, ip: &apos;192.168.0.11&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_191&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.75, chrome: {chromedriverVersion: 85.0.4183.87 (cd6713ebf92fa..., userDataDir: C:\Windows\Temp\scoped_dir2...}, goog:chromeOptions: {debuggerAddress: localhost:50139}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: none, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 46f4ea62595331bec3d5b7a0316626e7
+*** Element info: {Using=xpath, value=//button[contains(text(),&apos;Idaho Power Company&apos;)]}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:424)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
+	at com.OSMOSE.base.Page.click(Page.java:182)
+	at com.OSMOSE.pages.OU.ContactPage.navigateToIdahoPowerCompanyInspection(ContactPage.java:96)
+	at com.OSMOSE.testcases.Contact.verifyIdahoPowerInspectionContactCardContents(Contact.java:87)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(Unknown Source)
+	at org.testng.TestRunner.privateRun(TestRunner.java:766)
+	at org.testng.TestRunner.run(TestRunner.java:587)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+	at org.testng.TestNG.runSuites(TestNG.java:1039)
+	at org.testng.TestNG.run(TestNG.java:1007)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>51</td>
+<td>com.OSMOSE.testcases.Contact@45e37a7e</td></tr>
+<tr>
+<td title='com.OSMOSE.testcases.Contact.verifyIdahoPowerRestorationContactCardContents()'><b>verifyIdahoPowerRestorationContactCardContents</b><br>Test class: com.OSMOSE.testcases.Contact<br>Test method: Verification of the content on a contact card on Idaho Power Company-Idaho Power Restoration<br/>
+<a href="#Output-308021294" onClick='toggleBox("Output-308021294", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-308021294" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-308021294">
+Click to see Screenshot<br/>
+<a target="_blank" href=Fri_Nov_13_14_37_14_IST_2020.jpg>Screenshot</a><br/>
+<br><br/>
+<br><br/>
+<a target="_blank" href=Fri_Nov_13_14_37_14_IST_2020.jpg><img src=Fri_Nov_13_14_37_14_IST_2020.jpg height=200 width=200></img></a><br/>
+</div>
+</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[contains(text(),&apos;Idaho Power Restoration&apos;)]&quot;}
+  (Session info: chrome=86.0.4240.75)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
+System info: host: &apos;5CG6323N27&apos;, ip: &apos;192.168.0.11&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_191&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.75, chrome: {chromedriverVersion: 85.0.4183.87 (cd6713ebf92fa..., userDataDir: C:\Windows\Temp\scoped_dir2...}, goog:chromeOptions: {debuggerAddress: localhost:50139}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: none, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 46f4ea62595331bec3d5b7a0316626e7
+*** Element info: {Using=xpath, value=//a[contains(text(),&apos;Idaho Power Restoration&apos;)]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:424)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
+	at com.OSMOSE.base.Page.click(Page.java:182)
+	at com.OSMOSE.pages.OU.ContactPage.navigateToIdahoPowerCompanyRestoration(ContactPage.java:106)
+	at com.OSMOSE.testcases.Contact.verifyIdahoPowerRestorationContactCardContents(Contact.java:107)
+	at java.util.ArrayList.forEach(Unknown Source)
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace308021294", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace308021294'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[contains(text(),&apos;Idaho Power Restoration&apos;)]&quot;}
+  (Session info: chrome=86.0.4240.75)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
+System info: host: &apos;5CG6323N27&apos;, ip: &apos;192.168.0.11&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_191&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.75, chrome: {chromedriverVersion: 85.0.4183.87 (cd6713ebf92fa..., userDataDir: C:\Windows\Temp\scoped_dir2...}, goog:chromeOptions: {debuggerAddress: localhost:50139}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: none, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 46f4ea62595331bec3d5b7a0316626e7
+*** Element info: {Using=xpath, value=//a[contains(text(),&apos;Idaho Power Restoration&apos;)]}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:424)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
+	at com.OSMOSE.base.Page.click(Page.java:182)
+	at com.OSMOSE.pages.OU.ContactPage.navigateToIdahoPowerCompanyRestoration(ContactPage.java:106)
+	at com.OSMOSE.testcases.Contact.verifyIdahoPowerRestorationContactCardContents(Contact.java:107)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(Unknown Source)
+	at org.testng.TestRunner.privateRun(TestRunner.java:766)
+	at org.testng.TestRunner.run(TestRunner.java:587)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+	at org.testng.TestNG.runSuites(TestNG.java:1039)
+	at org.testng.TestNG.run(TestNG.java:1007)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>51</td>
+<td>com.OSMOSE.testcases.Contact@45e37a7e</td></tr>
+<tr>
+<td title='com.OSMOSE.testcases.Contact.verifyOncurDistributionContactCardContents()'><b>verifyOncurDistributionContactCardContents</b><br>Test class: com.OSMOSE.testcases.Contact<br>Test method: Verification of the content on a contact card on Oncur - Oncur Distribution<br/>
+<a href="#Output-1112940474" onClick='toggleBox("Output-1112940474", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1112940474" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1112940474">
+Click to see Screenshot<br/>
+<a target="_blank" href=Fri_Nov_13_14_38_06_IST_2020.jpg>Screenshot</a><br/>
+<br><br/>
+<br><br/>
+<a target="_blank" href=Fri_Nov_13_14_38_06_IST_2020.jpg><img src=Fri_Nov_13_14_38_06_IST_2020.jpg height=200 width=200></img></a><br/>
+</div>
+</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//button[contains(text(),&apos;Oncor&apos;)]&quot;}
+  (Session info: chrome=86.0.4240.75)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
+System info: host: &apos;5CG6323N27&apos;, ip: &apos;192.168.0.11&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_191&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.75, chrome: {chromedriverVersion: 85.0.4183.87 (cd6713ebf92fa..., userDataDir: C:\Windows\Temp\scoped_dir2...}, goog:chromeOptions: {debuggerAddress: localhost:50139}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: none, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 46f4ea62595331bec3d5b7a0316626e7
+*** Element info: {Using=xpath, value=//button[contains(text(),&apos;Oncor&apos;)]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:424)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
+	at com.OSMOSE.base.Page.click(Page.java:182)
+	at com.OSMOSE.pages.OU.ContactPage.navigateToOncor(ContactPage.java:112)
+	at com.OSMOSE.testcases.Contact.verifyOncurDistributionContactCardContents(Contact.java:127)
+	at java.util.ArrayList.forEach(Unknown Source)
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1112940474", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1112940474'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//button[contains(text(),&apos;Oncor&apos;)]&quot;}
+  (Session info: chrome=86.0.4240.75)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
+System info: host: &apos;5CG6323N27&apos;, ip: &apos;192.168.0.11&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_191&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.75, chrome: {chromedriverVersion: 85.0.4183.87 (cd6713ebf92fa..., userDataDir: C:\Windows\Temp\scoped_dir2...}, goog:chromeOptions: {debuggerAddress: localhost:50139}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: none, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 46f4ea62595331bec3d5b7a0316626e7
+*** Element info: {Using=xpath, value=//button[contains(text(),&apos;Oncor&apos;)]}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:424)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
+	at com.OSMOSE.base.Page.click(Page.java:182)
+	at com.OSMOSE.pages.OU.ContactPage.navigateToOncor(ContactPage.java:112)
+	at com.OSMOSE.testcases.Contact.verifyOncurDistributionContactCardContents(Contact.java:127)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(Unknown Source)
+	at org.testng.TestRunner.privateRun(TestRunner.java:766)
+	at org.testng.TestRunner.run(TestRunner.java:587)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+	at org.testng.TestNG.runSuites(TestNG.java:1039)
+	at org.testng.TestNG.run(TestNG.java:1007)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>51</td>
+<td>com.OSMOSE.testcases.Contact@45e37a7e</td></tr>
+<tr>
+<td title='com.OSMOSE.testcases.Contact.verifyPacificGasAndElectricCoContactCardContents()'><b>verifyPacificGasAndElectricCoContactCardContents</b><br>Test class: com.OSMOSE.testcases.Contact<br>Test method: Verification of the content on a contact card on Pacific Gas And Electric Co-Pacific Gas And Electric Transmission<br/>
+<a href="#Output-2097361633" onClick='toggleBox("Output-2097361633", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2097361633" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2097361633">
+Click to see Screenshot<br/>
+<a target="_blank" href=Fri_Nov_13_14_38_13_IST_2020.jpg>Screenshot</a><br/>
+<br><br/>
+<br><br/>
+<a target="_blank" href=Fri_Nov_13_14_38_13_IST_2020.jpg><img src=Fri_Nov_13_14_38_13_IST_2020.jpg height=200 width=200></img></a><br/>
+</div>
+</td>
+<td><div><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;span class=&quot;cnText&quot;&gt;...&lt;/span&gt; is not clickable at point (1040, 20). Other element would receive the click: &lt;div data-v-a80ba6a0=&quot;&quot; class=&quot;Oloader&quot; style=&quot;&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=86.0.4240.75)
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
+System info: host: &apos;5CG6323N27&apos;, ip: &apos;192.168.0.11&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_191&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.75, chrome: {chromedriverVersion: 85.0.4183.87 (cd6713ebf92fa..., userDataDir: C:\Windows\Temp\scoped_dir2...}, goog:chromeOptions: {debuggerAddress: localhost:50139}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: none, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 46f4ea62595331bec3d5b7a0316626e7
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:276)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
+	at com.OSMOSE.base.Page.click(Page.java:182)
+	at com.OSMOSE.pages.OU.ContactPage.clickContactUsMainMenudd(ContactPage.java:10)
+	at com.OSMOSE.testcases.Contact.verifyPacificGasAndElectricCoContactCardContents(Contact.java:149)
+	at java.util.ArrayList.forEach(Unknown Source)
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2097361633", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2097361633'><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;span class=&quot;cnText&quot;&gt;...&lt;/span&gt; is not clickable at point (1040, 20). Other element would receive the click: &lt;div data-v-a80ba6a0=&quot;&quot; class=&quot;Oloader&quot; style=&quot;&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=86.0.4240.75)
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
+System info: host: &apos;5CG6323N27&apos;, ip: &apos;192.168.0.11&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_191&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.75, chrome: {chromedriverVersion: 85.0.4183.87 (cd6713ebf92fa..., userDataDir: C:\Windows\Temp\scoped_dir2...}, goog:chromeOptions: {debuggerAddress: localhost:50139}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: none, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 46f4ea62595331bec3d5b7a0316626e7
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:276)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
+	at com.OSMOSE.base.Page.click(Page.java:182)
+	at com.OSMOSE.pages.OU.ContactPage.clickContactUsMainMenudd(ContactPage.java:10)
+	at com.OSMOSE.testcases.Contact.verifyPacificGasAndElectricCoContactCardContents(Contact.java:149)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(Unknown Source)
+	at org.testng.TestRunner.privateRun(TestRunner.java:766)
+	at org.testng.TestRunner.run(TestRunner.java:587)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+	at org.testng.TestNG.runSuites(TestNG.java:1039)
+	at org.testng.TestNG.run(TestNG.java:1007)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>6</td>
+<td>com.OSMOSE.testcases.Contact@45e37a7e</td></tr>
+<tr>
+<td title='com.OSMOSE.testcases.Contact.verifyPugetSoundEnergyInspectionContactCardContents()'><b>verifyPugetSoundEnergyInspectionContactCardContents</b><br>Test class: com.OSMOSE.testcases.Contact<br>Test method: Verification of the content on a contact card on Puget Sound Energy-Puget Sound Energy Inspection<br/>
+<a href="#Output-809822663" onClick='toggleBox("Output-809822663", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-809822663" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-809822663">
+Click to see Screenshot<br/>
+<a target="_blank" href=Fri_Nov_13_14_39_18_IST_2020.jpg>Screenshot</a><br/>
+<br><br/>
+<br><br/>
+<a target="_blank" href=Fri_Nov_13_14_39_18_IST_2020.jpg><img src=Fri_Nov_13_14_39_18_IST_2020.jpg height=200 width=200></img></a><br/>
+</div>
+</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//button[contains(text(),&apos;Puget Sound Energy&apos;)]&quot;}
+  (Session info: chrome=86.0.4240.75)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
+System info: host: &apos;5CG6323N27&apos;, ip: &apos;192.168.0.11&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_191&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.75, chrome: {chromedriverVersion: 85.0.4183.87 (cd6713ebf92fa..., userDataDir: C:\Windows\Temp\scoped_dir2...}, goog:chromeOptions: {debuggerAddress: localhost:50139}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: none, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 46f4ea62595331bec3d5b7a0316626e7
+*** Element info: {Using=xpath, value=//button[contains(text(),&apos;Puget Sound Energy&apos;)]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:424)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
+	at com.OSMOSE.base.Page.click(Page.java:182)
+	at com.OSMOSE.pages.OU.ContactPage.navigateToPugetSoundEnergyInspection(ContactPage.java:136)
+	at com.OSMOSE.testcases.Contact.verifyPugetSoundEnergyInspectionContactCardContents(Contact.java:188)
+	at java.util.ArrayList.forEach(Unknown Source)
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace809822663", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace809822663'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//button[contains(text(),&apos;Puget Sound Energy&apos;)]&quot;}
+  (Session info: chrome=86.0.4240.75)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
+System info: host: &apos;5CG6323N27&apos;, ip: &apos;192.168.0.11&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_191&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.75, chrome: {chromedriverVersion: 85.0.4183.87 (cd6713ebf92fa..., userDataDir: C:\Windows\Temp\scoped_dir2...}, goog:chromeOptions: {debuggerAddress: localhost:50139}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: none, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 46f4ea62595331bec3d5b7a0316626e7
+*** Element info: {Using=xpath, value=//button[contains(text(),&apos;Puget Sound Energy&apos;)]}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:424)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
+	at com.OSMOSE.base.Page.click(Page.java:182)
+	at com.OSMOSE.pages.OU.ContactPage.navigateToPugetSoundEnergyInspection(ContactPage.java:136)
+	at com.OSMOSE.testcases.Contact.verifyPugetSoundEnergyInspectionContactCardContents(Contact.java:188)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(Unknown Source)
+	at org.testng.TestRunner.privateRun(TestRunner.java:766)
+	at org.testng.TestRunner.run(TestRunner.java:587)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+	at org.testng.TestNG.runSuites(TestNG.java:1039)
+	at org.testng.TestNG.run(TestNG.java:1007)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>51</td>
+<td>com.OSMOSE.testcases.Contact@45e37a7e</td></tr>
+<tr>
+<td title='com.OSMOSE.testcases.Contact.verifyPugetSoundEnergyRestorationContactCardContents()'><b>verifyPugetSoundEnergyRestorationContactCardContents</b><br>Test class: com.OSMOSE.testcases.Contact<br>Test method: Verification of the content on a contact card on Puget Sound Energy-Puget Sound Energy Restoration<br/>
+<a href="#Output-1857007886" onClick='toggleBox("Output-1857007886", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1857007886" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1857007886">
+Click to see Screenshot<br/>
+<a target="_blank" href=Fri_Nov_13_14_40_09_IST_2020.jpg>Screenshot</a><br/>
+<br><br/>
+<br><br/>
+<a target="_blank" href=Fri_Nov_13_14_40_09_IST_2020.jpg><img src=Fri_Nov_13_14_40_09_IST_2020.jpg height=200 width=200></img></a><br/>
+</div>
+</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[contains(text(),&apos;Puget Sound Energy Restoration&apos;)]&quot;}
+  (Session info: chrome=86.0.4240.75)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
+System info: host: &apos;5CG6323N27&apos;, ip: &apos;192.168.0.11&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_191&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.75, chrome: {chromedriverVersion: 85.0.4183.87 (cd6713ebf92fa..., userDataDir: C:\Windows\Temp\scoped_dir2...}, goog:chromeOptions: {debuggerAddress: localhost:50139}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: none, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 46f4ea62595331bec3d5b7a0316626e7
+*** Element info: {Using=xpath, value=//a[contains(text(),&apos;Puget Sound Energy Restoration&apos;)]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:424)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
+	at com.OSMOSE.base.Page.click(Page.java:182)
+	at com.OSMOSE.pages.OU.ContactPage.navigateToPugetSoundEnergyRestoration(ContactPage.java:146)
+	at com.OSMOSE.testcases.Contact.verifyPugetSoundEnergyRestorationContactCardContents(Contact.java:208)
+	at java.util.ArrayList.forEach(Unknown Source)
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1857007886", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1857007886'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[contains(text(),&apos;Puget Sound Energy Restoration&apos;)]&quot;}
+  (Session info: chrome=86.0.4240.75)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
+System info: host: &apos;5CG6323N27&apos;, ip: &apos;192.168.0.11&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_191&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.75, chrome: {chromedriverVersion: 85.0.4183.87 (cd6713ebf92fa..., userDataDir: C:\Windows\Temp\scoped_dir2...}, goog:chromeOptions: {debuggerAddress: localhost:50139}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: none, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 46f4ea62595331bec3d5b7a0316626e7
+*** Element info: {Using=xpath, value=//a[contains(text(),&apos;Puget Sound Energy Restoration&apos;)]}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:424)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
+	at com.OSMOSE.base.Page.click(Page.java:182)
+	at com.OSMOSE.pages.OU.ContactPage.navigateToPugetSoundEnergyRestoration(ContactPage.java:146)
+	at com.OSMOSE.testcases.Contact.verifyPugetSoundEnergyRestorationContactCardContents(Contact.java:208)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(Unknown Source)
+	at org.testng.TestRunner.privateRun(TestRunner.java:766)
+	at org.testng.TestRunner.run(TestRunner.java:587)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+	at org.testng.TestNG.runSuites(TestNG.java:1039)
+	at org.testng.TestNG.run(TestNG.java:1007)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>51</td>
+<td>com.OSMOSE.testcases.Contact@45e37a7e</td></tr>
+</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -75,341 +827,213 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.OSMOSE.testcases.LoginTest.loginTest()'><b>loginTest</b><br>Test class: com.OSMOSE.testcases.LoginTest<br>Test method: Verify the login functionality<br>Parameters: {password=Hyde@2317, runmode=Y, username=rajesh.yadav@centurylink.com}<br/>
-<a href="#Output-690822257" onClick='toggleBox("Output-690822257", this, "Show output", "Hide output");'>Show output</a>
+<td title='com.OSMOSE.testcases.LoginTest.loginTest()'><b>loginTest</b><br>Test class: com.OSMOSE.testcases.LoginTest<br>Test method: Verify the login functionality<br>Parameters: {password=Qwerty1@, runmode=Y, username=varun.magadiranganath@centurylink.com}<br/>
+<a href="#Output-726212590" onClick='toggleBox("Output-726212590", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-690822257" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-690822257">
+<a href="#Output-726212590" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-726212590">
 Click to see Screenshot<br/>
-<a target="_blank" href=Mon_Sep_21_14_36_40_IST_2020.jpg>Screenshot</a><br/>
+<a target="_blank" href=Fri_Nov_13_14_33_20_IST_2020.jpg>Screenshot</a><br/>
 <br><br/>
 <br><br/>
-<a target="_blank" href=Mon_Sep_21_14_36_40_IST_2020.jpg><img src=Mon_Sep_21_14_36_40_IST_2020.jpg height=200 width=200></img></a><br/>
+<a target="_blank" href=Fri_Nov_13_14_33_20_IST_2020.jpg><img src=Fri_Nov_13_14_33_20_IST_2020.jpg height=200 width=200></img></a><br/>
 </div>
 </td>
 <td></td>
-<td>16</td>
-<td>com.OSMOSE.testcases.LoginTest@5b1f29fa</td></tr>
-<tr>
-<td title='com.OSMOSE.testcases.Contact.verifyCityOfColumbiaContactCardContents()'><b>verifyCityOfColumbiaContactCardContents</b><br>Test class: com.OSMOSE.testcases.Contact<br>Test method: Verification of the content on a contact card on City Of Columbia-Colombiapit<br/>
-<a href="#Output-300811000" onClick='toggleBox("Output-300811000", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-300811000" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-300811000">
-Click to see Screenshot<br/>
-<a target="_blank" href=Mon_Sep_21_14_36_55_IST_2020.jpg>Screenshot</a><br/>
-<br><br/>
-<br><br/>
-<a target="_blank" href=Mon_Sep_21_14_36_55_IST_2020.jpg><img src=Mon_Sep_21_14_36_55_IST_2020.jpg height=200 width=200></img></a><br/>
-</div>
-</td>
-<td></td>
-<td>9</td>
-<td>com.OSMOSE.testcases.Contact@7e22550a</td></tr>
+<td>19</td>
+<td>com.OSMOSE.testcases.LoginTest@aeab9a1</td></tr>
 <tr>
 <td title='com.OSMOSE.testcases.Contact.verifyContactUsClickOnGoogleMap()'><b>verifyContactUsClickOnGoogleMap</b><br>Test class: com.OSMOSE.testcases.Contact<br>Test method: Verify that user is able to click on View On Google Map<br/>
-<a href="#Output-1712666248" onClick='toggleBox("Output-1712666248", this, "Show output", "Hide output");'>Show output</a>
+<a href="#Output-1338770454" onClick='toggleBox("Output-1338770454", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-1712666248" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1712666248">
+<a href="#Output-1338770454" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1338770454">
 Click to see Screenshot<br/>
-<a target="_blank" href=Mon_Sep_21_14_39_30_IST_2020.jpg>Screenshot</a><br/>
+<a target="_blank" href=Fri_Nov_13_14_40_44_IST_2020.jpg>Screenshot</a><br/>
 <br><br/>
 <br><br/>
-<a target="_blank" href=Mon_Sep_21_14_39_30_IST_2020.jpg><img src=Mon_Sep_21_14_39_30_IST_2020.jpg height=200 width=200></img></a><br/>
+<a target="_blank" href=Fri_Nov_13_14_40_44_IST_2020.jpg><img src=Fri_Nov_13_14_40_44_IST_2020.jpg height=200 width=200></img></a><br/>
 </div>
 </td>
 <td></td>
 <td>31</td>
-<td>com.OSMOSE.testcases.Contact@7e22550a</td></tr>
+<td>com.OSMOSE.testcases.Contact@45e37a7e</td></tr>
 <tr>
 <td title='com.OSMOSE.testcases.Contact.verifyContactUsGeneralInquiriesContents()'><b>verifyContactUsGeneralInquiriesContents</b><br>Test class: com.OSMOSE.testcases.Contact<br>Test method: Verification of the contents under General Inquiries section<br/>
-<a href="#Output-481792876" onClick='toggleBox("Output-481792876", this, "Show output", "Hide output");'>Show output</a>
+<a href="#Output-1707901480" onClick='toggleBox("Output-1707901480", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-481792876" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-481792876">
+<a href="#Output-1707901480" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1707901480">
 Click to see Screenshot<br/>
-<a target="_blank" href=Mon_Sep_21_14_39_30_IST_2020.jpg>Screenshot</a><br/>
+<a target="_blank" href=Fri_Nov_13_14_40_44_IST_2020.jpg>Screenshot</a><br/>
 <br><br/>
 <br><br/>
-<a target="_blank" href=Mon_Sep_21_14_39_30_IST_2020.jpg><img src=Mon_Sep_21_14_39_30_IST_2020.jpg height=200 width=200></img></a><br/>
+<a target="_blank" href=Fri_Nov_13_14_40_44_IST_2020.jpg><img src=Fri_Nov_13_14_40_44_IST_2020.jpg height=200 width=200></img></a><br/>
 </div>
 </td>
 <td></td>
 <td>0</td>
-<td>com.OSMOSE.testcases.Contact@7e22550a</td></tr>
+<td>com.OSMOSE.testcases.Contact@45e37a7e</td></tr>
 <tr>
 <td title='com.OSMOSE.testcases.Contact.verifyContactUsHeaderContents()'><b>verifyContactUsHeaderContents</b><br>Test class: com.OSMOSE.testcases.Contact<br>Test method: Verification of the Header content on Contact Us Menu item<br/>
-<a href="#Output-466661605" onClick='toggleBox("Output-466661605", this, "Show output", "Hide output");'>Show output</a>
+<a href="#Output-1476812556" onClick='toggleBox("Output-1476812556", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-466661605" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-466661605">
+<a href="#Output-1476812556" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1476812556">
 Click to see Screenshot<br/>
-<a target="_blank" href=Mon_Sep_21_14_38_58_IST_2020.jpg>Screenshot</a><br/>
+<a target="_blank" href=Fri_Nov_13_14_40_12_IST_2020.jpg>Screenshot</a><br/>
 <br><br/>
 <br><br/>
-<a target="_blank" href=Mon_Sep_21_14_38_58_IST_2020.jpg><img src=Mon_Sep_21_14_38_58_IST_2020.jpg height=200 width=200></img></a><br/>
+<a target="_blank" href=Fri_Nov_13_14_40_12_IST_2020.jpg><img src=Fri_Nov_13_14_40_12_IST_2020.jpg height=200 width=200></img></a><br/>
 </div>
 </td>
 <td></td>
-<td>0</td>
-<td>com.OSMOSE.testcases.Contact@7e22550a</td></tr>
+<td>2</td>
+<td>com.OSMOSE.testcases.Contact@45e37a7e</td></tr>
 <tr>
 <td title='com.OSMOSE.testcases.Contact.verifyContactUsMenuContents()'><b>verifyContactUsMenuContents</b><br>Test class: com.OSMOSE.testcases.Contact<br>Test method: Verification of the presence of Contact Us Menu items.<br/>
-<a href="#Output-1790387225" onClick='toggleBox("Output-1790387225", this, "Show output", "Hide output");'>Show output</a>
+<a href="#Output-984412970" onClick='toggleBox("Output-984412970", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-1790387225" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1790387225">
+<a href="#Output-984412970" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-984412970">
 Click to see Screenshot<br/>
-<a target="_blank" href=Mon_Sep_21_14_36_41_IST_2020.jpg>Screenshot</a><br/>
+<a target="_blank" href=Fri_Nov_13_14_33_21_IST_2020.jpg>Screenshot</a><br/>
 <br><br/>
 <br><br/>
-<a target="_blank" href=Mon_Sep_21_14_36_41_IST_2020.jpg><img src=Mon_Sep_21_14_36_41_IST_2020.jpg height=200 width=200></img></a><br/>
+<a target="_blank" href=Fri_Nov_13_14_33_21_IST_2020.jpg><img src=Fri_Nov_13_14_33_21_IST_2020.jpg height=200 width=200></img></a><br/>
 </div>
 </td>
 <td></td>
 <td>0</td>
-<td>com.OSMOSE.testcases.Contact@7e22550a</td></tr>
+<td>com.OSMOSE.testcases.Contact@45e37a7e</td></tr>
 <tr>
 <td title='com.OSMOSE.testcases.Contact.verifyContactUsOCalcProContents()'><b>verifyContactUsOCalcProContents</b><br>Test class: com.OSMOSE.testcases.Contact<br>Test method: Verification of the contents under O-Calc Pro section<br/>
-<a href="#Output-1694239102" onClick='toggleBox("Output-1694239102", this, "Show output", "Hide output");'>Show output</a>
+<a href="#Output-1146484093" onClick='toggleBox("Output-1146484093", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-1694239102" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1694239102">
+<a href="#Output-1146484093" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1146484093">
 Click to see Screenshot<br/>
-<a target="_blank" href=Mon_Sep_21_14_39_32_IST_2020.jpg>Screenshot</a><br/>
+<a target="_blank" href=Fri_Nov_13_14_40_46_IST_2020.jpg>Screenshot</a><br/>
 <br><br/>
 <br><br/>
-<a target="_blank" href=Mon_Sep_21_14_39_32_IST_2020.jpg><img src=Mon_Sep_21_14_39_32_IST_2020.jpg height=200 width=200></img></a><br/>
+<a target="_blank" href=Fri_Nov_13_14_40_46_IST_2020.jpg><img src=Fri_Nov_13_14_40_46_IST_2020.jpg height=200 width=200></img></a><br/>
 </div>
 </td>
 <td></td>
 <td>0</td>
-<td>com.OSMOSE.testcases.Contact@7e22550a</td></tr>
+<td>com.OSMOSE.testcases.Contact@45e37a7e</td></tr>
 <tr>
 <td title='com.OSMOSE.testcases.Contact.verifyContactUsQueryFormContents()'><b>verifyContactUsQueryFormContents</b><br>Test class: com.OSMOSE.testcases.Contact<br>Test method: Verification of the contents inside Queries form<br/>
-<a href="#Output-1875532039" onClick='toggleBox("Output-1875532039", this, "Show output", "Hide output");'>Show output</a>
+<a href="#Output-739703515" onClick='toggleBox("Output-739703515", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-1875532039" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1875532039">
+<a href="#Output-739703515" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-739703515">
 Click to see Screenshot<br/>
-<a target="_blank" href=Mon_Sep_21_14_39_32_IST_2020.jpg>Screenshot</a><br/>
+<a target="_blank" href=Fri_Nov_13_14_40_46_IST_2020.jpg>Screenshot</a><br/>
 <br><br/>
 <br><br/>
-<a target="_blank" href=Mon_Sep_21_14_39_32_IST_2020.jpg><img src=Mon_Sep_21_14_39_32_IST_2020.jpg height=200 width=200></img></a><br/>
+<a target="_blank" href=Fri_Nov_13_14_40_46_IST_2020.jpg><img src=Fri_Nov_13_14_40_46_IST_2020.jpg height=200 width=200></img></a><br/>
 </div>
 </td>
 <td></td>
 <td>0</td>
-<td>com.OSMOSE.testcases.Contact@7e22550a</td></tr>
+<td>com.OSMOSE.testcases.Contact@45e37a7e</td></tr>
 <tr>
 <td title='com.OSMOSE.testcases.Contact.verifyContactUsSalesProductsContents()'><b>verifyContactUsSalesProductsContents</b><br>Test class: com.OSMOSE.testcases.Contact<br>Test method: Verification of the contents under Sales-Products section<br/>
-<a href="#Output-1201614274" onClick='toggleBox("Output-1201614274", this, "Show output", "Hide output");'>Show output</a>
+<a href="#Output-838627755" onClick='toggleBox("Output-838627755", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-1201614274" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1201614274">
+<a href="#Output-838627755" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-838627755">
 Click to see Screenshot<br/>
-<a target="_blank" href=Mon_Sep_21_14_39_31_IST_2020.jpg>Screenshot</a><br/>
+<a target="_blank" href=Fri_Nov_13_14_40_45_IST_2020.jpg>Screenshot</a><br/>
 <br><br/>
 <br><br/>
-<a target="_blank" href=Mon_Sep_21_14_39_31_IST_2020.jpg><img src=Mon_Sep_21_14_39_31_IST_2020.jpg height=200 width=200></img></a><br/>
+<a target="_blank" href=Fri_Nov_13_14_40_45_IST_2020.jpg><img src=Fri_Nov_13_14_40_45_IST_2020.jpg height=200 width=200></img></a><br/>
 </div>
 </td>
 <td></td>
 <td>0</td>
-<td>com.OSMOSE.testcases.Contact@7e22550a</td></tr>
+<td>com.OSMOSE.testcases.Contact@45e37a7e</td></tr>
 <tr>
 <td title='com.OSMOSE.testcases.Contact.verifyContactUsSalesServicesContents()'><b>verifyContactUsSalesServicesContents</b><br>Test class: com.OSMOSE.testcases.Contact<br>Test method: Verification of the contents under Sales-Services section<br/>
-<a href="#Output-146346292" onClick='toggleBox("Output-146346292", this, "Show output", "Hide output");'>Show output</a>
+<a href="#Output-1288815068" onClick='toggleBox("Output-1288815068", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-146346292" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-146346292">
+<a href="#Output-1288815068" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1288815068">
 Click to see Screenshot<br/>
-<a target="_blank" href=Mon_Sep_21_14_39_31_IST_2020.jpg>Screenshot</a><br/>
+<a target="_blank" href=Fri_Nov_13_14_40_45_IST_2020.jpg>Screenshot</a><br/>
 <br><br/>
 <br><br/>
-<a target="_blank" href=Mon_Sep_21_14_39_31_IST_2020.jpg><img src=Mon_Sep_21_14_39_31_IST_2020.jpg height=200 width=200></img></a><br/>
+<a target="_blank" href=Fri_Nov_13_14_40_45_IST_2020.jpg><img src=Fri_Nov_13_14_40_45_IST_2020.jpg height=200 width=200></img></a><br/>
 </div>
 </td>
 <td></td>
 <td>0</td>
-<td>com.OSMOSE.testcases.Contact@7e22550a</td></tr>
+<td>com.OSMOSE.testcases.Contact@45e37a7e</td></tr>
 <tr>
 <td title='com.OSMOSE.testcases.Contact.verifyFormSubmissionErrorMessage()'><b>verifyFormSubmissionErrorMessage</b><br>Test class: com.OSMOSE.testcases.Contact<br>Test method: Verification of Required fields validation message<br/>
-<a href="#Output-1664757401" onClick='toggleBox("Output-1664757401", this, "Show output", "Hide output");'>Show output</a>
+<a href="#Output-2104842259" onClick='toggleBox("Output-2104842259", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-1664757401" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1664757401">
+<a href="#Output-2104842259" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2104842259">
 Click to see Screenshot<br/>
-<a target="_blank" href=Mon_Sep_21_14_39_33_IST_2020.jpg>Screenshot</a><br/>
+<a target="_blank" href=Fri_Nov_13_14_40_47_IST_2020.jpg>Screenshot</a><br/>
 <br><br/>
 <br><br/>
-<a target="_blank" href=Mon_Sep_21_14_39_33_IST_2020.jpg><img src=Mon_Sep_21_14_39_33_IST_2020.jpg height=200 width=200></img></a><br/>
+<a target="_blank" href=Fri_Nov_13_14_40_47_IST_2020.jpg><img src=Fri_Nov_13_14_40_47_IST_2020.jpg height=200 width=200></img></a><br/>
 </div>
 </td>
 <td></td>
 <td>0</td>
-<td>com.OSMOSE.testcases.Contact@7e22550a</td></tr>
+<td>com.OSMOSE.testcases.Contact@45e37a7e</td></tr>
 <tr>
 <td title='com.OSMOSE.testcases.Contact.verifyGeorgiaPowerCompanyContactCardContents()'><b>verifyGeorgiaPowerCompanyContactCardContents</b><br>Test class: com.OSMOSE.testcases.Contact<br>Test method: Verification of the content on a contact card on Georgia Power Company-Georgia Power Company Distribution Change<br/>
-<a href="#Output-1604342290" onClick='toggleBox("Output-1604342290", this, "Show output", "Hide output");'>Show output</a>
+<a href="#Output-1716551994" onClick='toggleBox("Output-1716551994", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-1604342290" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1604342290">
+<a href="#Output-1716551994" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1716551994">
 Click to see Screenshot<br/>
-<a target="_blank" href=Mon_Sep_21_14_37_14_IST_2020.jpg>Screenshot</a><br/>
+<a target="_blank" href=Fri_Nov_13_14_34_39_IST_2020.jpg>Screenshot</a><br/>
 <br><br/>
 <br><br/>
-<a target="_blank" href=Mon_Sep_21_14_37_14_IST_2020.jpg><img src=Mon_Sep_21_14_37_14_IST_2020.jpg height=200 width=200></img></a><br/>
+<a target="_blank" href=Fri_Nov_13_14_34_39_IST_2020.jpg><img src=Fri_Nov_13_14_34_39_IST_2020.jpg height=200 width=200></img></a><br/>
 </div>
 </td>
 <td></td>
 <td>18</td>
-<td>com.OSMOSE.testcases.Contact@7e22550a</td></tr>
-<tr>
-<td title='com.OSMOSE.testcases.Contact.verifyGrandElectricContactCardContents()'><b>verifyGrandElectricContactCardContents</b><br>Test class: com.OSMOSE.testcases.Contact<br>Test method: Verification of the content on a contact card on Grand Electric-GrandElectric<br/>
-<a href="#Output-450589816" onClick='toggleBox("Output-450589816", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-450589816" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-450589816">
-Click to see Screenshot<br/>
-<a target="_blank" href=Mon_Sep_21_14_37_27_IST_2020.jpg>Screenshot</a><br/>
-<br><br/>
-<br><br/>
-<a target="_blank" href=Mon_Sep_21_14_37_27_IST_2020.jpg><img src=Mon_Sep_21_14_37_27_IST_2020.jpg height=200 width=200></img></a><br/>
-</div>
-</td>
-<td></td>
-<td>12</td>
-<td>com.OSMOSE.testcases.Contact@7e22550a</td></tr>
-<tr>
-<td title='com.OSMOSE.testcases.Contact.verifyIdahoPowerInspectionContactCardContents()'><b>verifyIdahoPowerInspectionContactCardContents</b><br>Test class: com.OSMOSE.testcases.Contact<br>Test method: Verification of the content on a contact card on Idaho Power Company-Idaho Power Inspection<br/>
-<a href="#Output-1414744767" onClick='toggleBox("Output-1414744767", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-1414744767" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1414744767">
-Click to see Screenshot<br/>
-<a target="_blank" href=Mon_Sep_21_14_37_40_IST_2020.jpg>Screenshot</a><br/>
-<br><br/>
-<br><br/>
-<a target="_blank" href=Mon_Sep_21_14_37_40_IST_2020.jpg><img src=Mon_Sep_21_14_37_40_IST_2020.jpg height=200 width=200></img></a><br/>
-</div>
-</td>
-<td></td>
-<td>12</td>
-<td>com.OSMOSE.testcases.Contact@7e22550a</td></tr>
-<tr>
-<td title='com.OSMOSE.testcases.Contact.verifyIdahoPowerRestorationContactCardContents()'><b>verifyIdahoPowerRestorationContactCardContents</b><br>Test class: com.OSMOSE.testcases.Contact<br>Test method: Verification of the content on a contact card on Idaho Power Company-Idaho Power Restoration<br/>
-<a href="#Output-2088969892" onClick='toggleBox("Output-2088969892", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-2088969892" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-2088969892">
-Click to see Screenshot<br/>
-<a target="_blank" href=Mon_Sep_21_14_37_52_IST_2020.jpg>Screenshot</a><br/>
-<br><br/>
-<br><br/>
-<a target="_blank" href=Mon_Sep_21_14_37_52_IST_2020.jpg><img src=Mon_Sep_21_14_37_52_IST_2020.jpg height=200 width=200></img></a><br/>
-</div>
-</td>
-<td></td>
-<td>11</td>
-<td>com.OSMOSE.testcases.Contact@7e22550a</td></tr>
-<tr>
-<td title='com.OSMOSE.testcases.Contact.verifyOncurDistributionContactCardContents()'><b>verifyOncurDistributionContactCardContents</b><br>Test class: com.OSMOSE.testcases.Contact<br>Test method: Verification of the content on a contact card on Oncur - Oncur Distribution<br/>
-<a href="#Output-1859823482" onClick='toggleBox("Output-1859823482", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-1859823482" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1859823482">
-Click to see Screenshot<br/>
-<a target="_blank" href=Mon_Sep_21_14_38_06_IST_2020.jpg>Screenshot</a><br/>
-<br><br/>
-<br><br/>
-<a target="_blank" href=Mon_Sep_21_14_38_06_IST_2020.jpg><img src=Mon_Sep_21_14_38_06_IST_2020.jpg height=200 width=200></img></a><br/>
-</div>
-</td>
-<td></td>
-<td>12</td>
-<td>com.OSMOSE.testcases.Contact@7e22550a</td></tr>
-<tr>
-<td title='com.OSMOSE.testcases.Contact.verifyPacificGasAndElectricCoContactCardContents()'><b>verifyPacificGasAndElectricCoContactCardContents</b><br>Test class: com.OSMOSE.testcases.Contact<br>Test method: Verification of the content on a contact card on Pacific Gas And Electric Co-Pacific Gas And Electric Transmission<br/>
-<a href="#Output-929482343" onClick='toggleBox("Output-929482343", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-929482343" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-929482343">
-Click to see Screenshot<br/>
-<a target="_blank" href=Mon_Sep_21_14_38_19_IST_2020.jpg>Screenshot</a><br/>
-<br><br/>
-<br><br/>
-<a target="_blank" href=Mon_Sep_21_14_38_19_IST_2020.jpg><img src=Mon_Sep_21_14_38_19_IST_2020.jpg height=200 width=200></img></a><br/>
-</div>
-</td>
-<td></td>
-<td>12</td>
-<td>com.OSMOSE.testcases.Contact@7e22550a</td></tr>
+<td>com.OSMOSE.testcases.Contact@45e37a7e</td></tr>
 <tr>
 <td title='com.OSMOSE.testcases.Contact.verifyPedernalesElecCoopContactCardContents()'><b>verifyPedernalesElecCoopContactCardContents</b><br>Test class: com.OSMOSE.testcases.Contact<br>Test method: Verification of the content on a contact card on Pedernales Elec Coop-Pedernales EC Dev<br/>
-<a href="#Output-368955890" onClick='toggleBox("Output-368955890", this, "Show output", "Hide output");'>Show output</a>
+<a href="#Output-262815725" onClick='toggleBox("Output-262815725", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-368955890" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-368955890">
+<a href="#Output-262815725" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-262815725">
 Click to see Screenshot<br/>
-<a target="_blank" href=Mon_Sep_21_14_38_32_IST_2020.jpg>Screenshot</a><br/>
+<a target="_blank" href=Fri_Nov_13_14_38_26_IST_2020.jpg>Screenshot</a><br/>
 <br><br/>
 <br><br/>
-<a target="_blank" href=Mon_Sep_21_14_38_32_IST_2020.jpg><img src=Mon_Sep_21_14_38_32_IST_2020.jpg height=200 width=200></img></a><br/>
+<a target="_blank" href=Fri_Nov_13_14_38_26_IST_2020.jpg><img src=Fri_Nov_13_14_38_26_IST_2020.jpg height=200 width=200></img></a><br/>
 </div>
 </td>
 <td></td>
 <td>12</td>
-<td>com.OSMOSE.testcases.Contact@7e22550a</td></tr>
+<td>com.OSMOSE.testcases.Contact@45e37a7e</td></tr>
 <tr>
 <td title='com.OSMOSE.testcases.Contact.verifyPresenceOfProjectGroup()'><b>verifyPresenceOfProjectGroup</b><br>Test class: com.OSMOSE.testcases.Contact<br>Test method: Verification of the presence Project Group<br/>
-<a href="#Output-622820646" onClick='toggleBox("Output-622820646", this, "Show output", "Hide output");'>Show output</a>
+<a href="#Output-2008159348" onClick='toggleBox("Output-2008159348", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-622820646" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-622820646">
+<a href="#Output-2008159348" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2008159348">
 Click to see Screenshot<br/>
-<a target="_blank" href=Mon_Sep_21_14_36_45_IST_2020.jpg>Screenshot</a><br/>
+<a target="_blank" href=Fri_Nov_13_14_33_29_IST_2020.jpg>Screenshot</a><br/>
 <br><br/>
 <br><br/>
-<a target="_blank" href=Mon_Sep_21_14_36_45_IST_2020.jpg><img src=Mon_Sep_21_14_36_45_IST_2020.jpg height=200 width=200></img></a><br/>
+<a target="_blank" href=Fri_Nov_13_14_33_29_IST_2020.jpg><img src=Fri_Nov_13_14_33_29_IST_2020.jpg height=200 width=200></img></a><br/>
 </div>
 </td>
 <td></td>
-<td>3</td>
-<td>com.OSMOSE.testcases.Contact@7e22550a</td></tr>
-<tr>
-<td title='com.OSMOSE.testcases.Contact.verifyPugetSoundEnergyInspectionContactCardContents()'><b>verifyPugetSoundEnergyInspectionContactCardContents</b><br>Test class: com.OSMOSE.testcases.Contact<br>Test method: Verification of the content on a contact card on Puget Sound Energy-Puget Sound Energy Inspection<br/>
-<a href="#Output-153443333" onClick='toggleBox("Output-153443333", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-153443333" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-153443333">
-Click to see Screenshot<br/>
-<a target="_blank" href=Mon_Sep_21_14_38_45_IST_2020.jpg>Screenshot</a><br/>
-<br><br/>
-<br><br/>
-<a target="_blank" href=Mon_Sep_21_14_38_45_IST_2020.jpg><img src=Mon_Sep_21_14_38_45_IST_2020.jpg height=200 width=200></img></a><br/>
-</div>
-</td>
-<td></td>
-<td>12</td>
-<td>com.OSMOSE.testcases.Contact@7e22550a</td></tr>
-<tr>
-<td title='com.OSMOSE.testcases.Contact.verifyPugetSoundEnergyRestorationContactCardContents()'><b>verifyPugetSoundEnergyRestorationContactCardContents</b><br>Test class: com.OSMOSE.testcases.Contact<br>Test method: Verification of the content on a contact card on Puget Sound Energy-Puget Sound Energy Restoration<br/>
-<a href="#Output-2041611826" onClick='toggleBox("Output-2041611826", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-2041611826" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-2041611826">
-Click to see Screenshot<br/>
-<a target="_blank" href=Mon_Sep_21_14_38_57_IST_2020.jpg>Screenshot</a><br/>
-<br><br/>
-<br><br/>
-<a target="_blank" href=Mon_Sep_21_14_38_57_IST_2020.jpg><img src=Mon_Sep_21_14_38_57_IST_2020.jpg height=200 width=200></img></a><br/>
-</div>
-</td>
-<td></td>
-<td>11</td>
-<td>com.OSMOSE.testcases.Contact@7e22550a</td></tr>
+<td>7</td>
+<td>com.OSMOSE.testcases.Contact@45e37a7e</td></tr>
 </table><p>
 </body>
 </html>

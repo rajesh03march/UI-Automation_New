@@ -261,7 +261,7 @@ public class KnowledgeBase extends BaseTest {
 		// What's wrong with this Picture? Card presence verification
 		Assert.assertTrue(Page.driver
 				.findElement(By.xpath(
-						"//h5[contains(text(),'This is a caption to be displayed as part of the Gaff Gallery.')]"))
+						"//h5[contains(text(),' Gaff Gallery Caption 1 ')]"))
 				.isDisplayed());
 	}
 
@@ -2226,7 +2226,7 @@ public class KnowledgeBase extends BaseTest {
 
 	// US-98504-98686-Verify See More option functionality in Images section in KB
 	// landing page
-	@Test(priority = 81, enabled = true, description = "Verify the click on See more link on Images under Joint use PopularQuery")
+	@Test(priority = 81, enabled = true, description = "Verify the click on See more link on Images under Pole Replacement Popular Query")
 	public void verifyClickonImagesSeeMore() throws InterruptedException {
 		ContactPage cp = new ContactPage();
 		KnowledgeBasePage kb = cp.goKnowledgeBase();

@@ -6,14 +6,16 @@
     <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
     <listener class-name="com.OSMOSE.listeners.CustomListeners"/>
   </listeners>
-  <test thread-count="5" name="Login(failed)">
+  <test thread-count="5" name="OCalcProLicense(failed)">
     <classes>
-      <class name="com.OSMOSE.testcases.LoginTest">
+      <class name="com.OSMOSE.testcases.oCalcPro">
         <methods>
-          <include name="loginTest" invocation-numbers="0"/>
           <include name="tearDown"/>
+          <include name="verifyKBTrainingVideosClickLicensedUser"/>
+          <include name="verifyKBWikiPageClickLicensedUser"/>
+          <include name="verifyKBClickLicensedUser"/>
         </methods>
-      </class> <!-- com.OSMOSE.testcases.LoginTest -->
+      </class> <!-- com.OSMOSE.testcases.oCalcPro -->
     </classes>
-  </test> <!-- Login(failed) -->
+  </test> <!-- OCalcProLicense(failed) -->
 </suite> <!-- Failed suite [OSMOSE Test] -->

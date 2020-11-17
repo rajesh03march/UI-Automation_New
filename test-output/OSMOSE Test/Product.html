@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Product</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>85/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>82/3/0</td>
 </tr><tr>
-<td>Started on:</td><td>Fri Aug 28 11:22:35 IST 2020</td>
+<td>Started on:</td><td>Fri Nov 13 17:06:26 IST 2020</td>
 </tr>
-<tr><td>Total time:</td><td>1882 seconds (1882006 ms)</td>
+<tr><td>Total time:</td><td>1635 seconds (1635244 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,6 +67,280 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.OSMOSE.testcases.Product.UpdateChangeProductAddToShoppingCart()'><b>UpdateChangeProductAddToShoppingCart</b><br>Test class: com.OSMOSE.testcases.Product<br>Test method: Create Quote by adding product in the cart by updating attachment and filling all the details<br/>
+<a href="#Output-70240068" onClick='toggleBox("Output-70240068", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-70240068" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-70240068">
+Click to see Screenshot<br/>
+<a target="_blank" href=Fri_Nov_13_17_33_16_IST_2020.jpg>Screenshot</a><br/>
+<br><br/>
+<br><br/>
+<a target="_blank" href=Fri_Nov_13_17_33_16_IST_2020.jpg><img src=Fri_Nov_13_17_33_16_IST_2020.jpg height=200 width=200></img></a><br/>
+</div>
+</td>
+<td><div><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;label data-v-14dfae46=&quot;&quot; for=&quot;4&quot; class=&quot;custom-control-label&quot; style=&quot;width: 152.082px;&quot;&gt;...&lt;/label&gt; is not clickable at point (926, 20). Other element would receive the click: &lt;a id=&quot;contactUsLink__BV_toggle_&quot; role=&quot;button&quot; aria-haspopup=&quot;true&quot; aria-expanded=&quot;false&quot; href=&quot;#contactUsLink&quot; target=&quot;_self&quot; class=&quot;nav-link dropdown-toggle&quot;&gt;...&lt;/a&gt;
+  (Session info: chrome=86.0.4240.75)
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
+System info: host: &apos;5CG6323N27&apos;, ip: &apos;192.168.0.11&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_191&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.75, chrome: {chromedriverVersion: 85.0.4183.87 (cd6713ebf92fa..., userDataDir: C:\Windows\Temp\scoped_dir1...}, goog:chromeOptions: {debuggerAddress: localhost:61527}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: none, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 558f08fa90269a8c35938da9f2c64faa
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:276)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
+	at com.OSMOSE.base.Page.click(Page.java:182)
+	at com.OSMOSE.pages.OU.ProductPage.CreateQuoteByUpdateFileAddToShoppingCart(ProductPage.java:1011)
+	at com.OSMOSE.testcases.Product.UpdateChangeProductAddToShoppingCart(Product.java:1270)
+	at java.util.ArrayList.forEach(Unknown Source)
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace70240068", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace70240068'><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;label data-v-14dfae46=&quot;&quot; for=&quot;4&quot; class=&quot;custom-control-label&quot; style=&quot;width: 152.082px;&quot;&gt;...&lt;/label&gt; is not clickable at point (926, 20). Other element would receive the click: &lt;a id=&quot;contactUsLink__BV_toggle_&quot; role=&quot;button&quot; aria-haspopup=&quot;true&quot; aria-expanded=&quot;false&quot; href=&quot;#contactUsLink&quot; target=&quot;_self&quot; class=&quot;nav-link dropdown-toggle&quot;&gt;...&lt;/a&gt;
+  (Session info: chrome=86.0.4240.75)
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
+System info: host: &apos;5CG6323N27&apos;, ip: &apos;192.168.0.11&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_191&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.75, chrome: {chromedriverVersion: 85.0.4183.87 (cd6713ebf92fa..., userDataDir: C:\Windows\Temp\scoped_dir1...}, goog:chromeOptions: {debuggerAddress: localhost:61527}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: none, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 558f08fa90269a8c35938da9f2c64faa
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:276)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
+	at com.OSMOSE.base.Page.click(Page.java:182)
+	at com.OSMOSE.pages.OU.ProductPage.CreateQuoteByUpdateFileAddToShoppingCart(ProductPage.java:1011)
+	at com.OSMOSE.testcases.Product.UpdateChangeProductAddToShoppingCart(Product.java:1270)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(Unknown Source)
+	at org.testng.TestRunner.privateRun(TestRunner.java:766)
+	at org.testng.TestRunner.run(TestRunner.java:587)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+	at org.testng.TestNG.runSuites(TestNG.java:1039)
+	at org.testng.TestNG.run(TestNG.java:1007)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>9</td>
+<td>com.OSMOSE.testcases.Product@6941827a</td></tr>
+<tr>
+<td title='com.OSMOSE.testcases.Product.VerifyAddingRelatedProductsToShoppingCart()'><b>VerifyAddingRelatedProductsToShoppingCart</b><br>Test class: com.OSMOSE.testcases.Product<br>Test method: Add Related products to shopping Cart<br/>
+<a href="#Output-931163339" onClick='toggleBox("Output-931163339", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-931163339" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-931163339">
+Click to see Screenshot<br/>
+<a target="_blank" href=Fri_Nov_13_17_33_04_IST_2020.jpg>Screenshot</a><br/>
+<br><br/>
+<br><br/>
+<a target="_blank" href=Fri_Nov_13_17_33_04_IST_2020.jpg><img src=Fri_Nov_13_17_33_04_IST_2020.jpg height=200 width=200></img></a><br/>
+</div>
+</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;(//div[@class=&quot;mbMob crsPointer&quot;]//img)[4]&quot;}
+  (Session info: chrome=86.0.4240.75)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
+System info: host: &apos;5CG6323N27&apos;, ip: &apos;192.168.0.11&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_191&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.75, chrome: {chromedriverVersion: 85.0.4183.87 (cd6713ebf92fa..., userDataDir: C:\Windows\Temp\scoped_dir1...}, goog:chromeOptions: {debuggerAddress: localhost:61527}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: none, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 558f08fa90269a8c35938da9f2c64faa
+*** Element info: {Using=xpath, value=(//div[@class=&quot;mbMob crsPointer&quot;]//img)[4]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:424)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
+	at com.OSMOSE.base.Page.click(Page.java:182)
+	at com.OSMOSE.pages.OU.ProductPage.AddingRelatedProducts(ProductPage.java:1093)
+	at com.OSMOSE.testcases.Product.VerifyAddingRelatedProductsToShoppingCart(Product.java:1244)
+	at java.util.ArrayList.forEach(Unknown Source)
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace931163339", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace931163339'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;(//div[@class=&quot;mbMob crsPointer&quot;]//img)[4]&quot;}
+  (Session info: chrome=86.0.4240.75)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
+System info: host: &apos;5CG6323N27&apos;, ip: &apos;192.168.0.11&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_191&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.75, chrome: {chromedriverVersion: 85.0.4183.87 (cd6713ebf92fa..., userDataDir: C:\Windows\Temp\scoped_dir1...}, goog:chromeOptions: {debuggerAddress: localhost:61527}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: none, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 558f08fa90269a8c35938da9f2c64faa
+*** Element info: {Using=xpath, value=(//div[@class=&quot;mbMob crsPointer&quot;]//img)[4]}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:424)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
+	at com.OSMOSE.base.Page.click(Page.java:182)
+	at com.OSMOSE.pages.OU.ProductPage.AddingRelatedProducts(ProductPage.java:1093)
+	at com.OSMOSE.testcases.Product.VerifyAddingRelatedProductsToShoppingCart(Product.java:1244)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(Unknown Source)
+	at org.testng.TestRunner.privateRun(TestRunner.java:766)
+	at org.testng.TestRunner.run(TestRunner.java:587)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+	at org.testng.TestNG.runSuites(TestNG.java:1039)
+	at org.testng.TestNG.run(TestNG.java:1007)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>53</td>
+<td>com.OSMOSE.testcases.Product@6941827a</td></tr>
+<tr>
+<td title='com.OSMOSE.testcases.Product.VerifyTooltipForSizeDropDown()'><b>VerifyTooltipForSizeDropDown</b><br>Test class: com.OSMOSE.testcases.Product<br>Test method: Verify the tooltip displayed for Size dropdown<br/>
+<a href="#Output-324419172" onClick='toggleBox("Output-324419172", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-324419172" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-324419172">
+Click to see Screenshot<br/>
+<a target="_blank" href=Fri_Nov_13_17_33_06_IST_2020.jpg>Screenshot</a><br/>
+<br><br/>
+<br><br/>
+<a target="_blank" href=Fri_Nov_13_17_33_06_IST_2020.jpg><img src=Fri_Nov_13_17_33_06_IST_2020.jpg height=200 width=200></img></a><br/>
+</div>
+</td>
+<td><div><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;label data-v-14dfae46=&quot;&quot; for=&quot;4&quot; class=&quot;custom-control-label&quot; style=&quot;width: 152.082px;&quot;&gt;...&lt;/label&gt; is not clickable at point (926, 269). Other element would receive the click: &lt;select data-v-76bb5794=&quot;&quot; id=&quot;selectSize&quot; class=&quot;w-100 mb-2 custom-select&quot; title=&quot;Select Size&quot;&gt;...&lt;/select&gt;
+  (Session info: chrome=86.0.4240.75)
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
+System info: host: &apos;5CG6323N27&apos;, ip: &apos;192.168.0.11&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_191&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.75, chrome: {chromedriverVersion: 85.0.4183.87 (cd6713ebf92fa..., userDataDir: C:\Windows\Temp\scoped_dir1...}, goog:chromeOptions: {debuggerAddress: localhost:61527}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: none, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 558f08fa90269a8c35938da9f2c64faa
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:276)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
+	at com.OSMOSE.base.Page.click(Page.java:182)
+	at com.OSMOSE.pages.OU.ProductPage.ToolTipForSize(ProductPage.java:1110)
+	at com.OSMOSE.testcases.Product.VerifyTooltipForSizeDropDown(Product.java:1257)
+	at java.util.ArrayList.forEach(Unknown Source)
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace324419172", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace324419172'><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;label data-v-14dfae46=&quot;&quot; for=&quot;4&quot; class=&quot;custom-control-label&quot; style=&quot;width: 152.082px;&quot;&gt;...&lt;/label&gt; is not clickable at point (926, 269). Other element would receive the click: &lt;select data-v-76bb5794=&quot;&quot; id=&quot;selectSize&quot; class=&quot;w-100 mb-2 custom-select&quot; title=&quot;Select Size&quot;&gt;...&lt;/select&gt;
+  (Session info: chrome=86.0.4240.75)
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
+System info: host: &apos;5CG6323N27&apos;, ip: &apos;192.168.0.11&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_191&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.75, chrome: {chromedriverVersion: 85.0.4183.87 (cd6713ebf92fa..., userDataDir: C:\Windows\Temp\scoped_dir1...}, goog:chromeOptions: {debuggerAddress: localhost:61527}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: none, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 558f08fa90269a8c35938da9f2c64faa
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:276)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
+	at com.OSMOSE.base.Page.click(Page.java:182)
+	at com.OSMOSE.pages.OU.ProductPage.ToolTipForSize(ProductPage.java:1110)
+	at com.OSMOSE.testcases.Product.VerifyTooltipForSizeDropDown(Product.java:1257)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(Unknown Source)
+	at org.testng.TestRunner.privateRun(TestRunner.java:766)
+	at org.testng.TestRunner.run(TestRunner.java:587)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+	at org.testng.TestNG.runSuites(TestNG.java:1039)
+	at org.testng.TestNG.run(TestNG.java:1007)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>1</td>
+<td>com.OSMOSE.testcases.Product@6941827a</td></tr>
+</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -76,1652 +350,1332 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='com.OSMOSE.testcases.Product.AddQuantityandverifyCellNumber()'><b>AddQuantityandverifyCellNumber</b><br>Test class: com.OSMOSE.testcases.Product<br>Test method: Verifying the quantity entered in the Quantity field<br/>
-<a href="#Output-1359603919" onClick='toggleBox("Output-1359603919", this, "Show output", "Hide output");'>Show output</a>
+<a href="#Output-670153696" onClick='toggleBox("Output-670153696", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-1359603919" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1359603919">
+<a href="#Output-670153696" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-670153696">
 Click to see Screenshot<br/>
-<a target="_blank" href=Fri_Aug_28_11_26_03_IST_2020.jpg>Screenshot</a><br/>
+<a target="_blank" href=Fri_Nov_13_17_09_59_IST_2020.jpg>Screenshot</a><br/>
 <br><br/>
 <br><br/>
-<a target="_blank" href=Fri_Aug_28_11_26_03_IST_2020.jpg><img src=Fri_Aug_28_11_26_03_IST_2020.jpg height=200 width=200></img></a><br/>
-</div>
-</td>
-<td></td>
-<td>18</td>
-<td>com.OSMOSE.testcases.Product@1c6804cd</td></tr>
-<tr>
-<td title='com.OSMOSE.testcases.Product.AddShoppingCart()'><b>AddShoppingCart</b><br>Test class: com.OSMOSE.testcases.Product<br>Test method: On the Product Group Details Page, the user will be provided with the “ADD”  button  with a quantity selector.<br/>
-<a href="#Output-598284487" onClick='toggleBox("Output-598284487", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-598284487" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-598284487">
-Click to see Screenshot<br/>
-<a target="_blank" href=Fri_Aug_28_11_28_18_IST_2020.jpg>Screenshot</a><br/>
-<br><br/>
-<br><br/>
-<a target="_blank" href=Fri_Aug_28_11_28_18_IST_2020.jpg><img src=Fri_Aug_28_11_28_18_IST_2020.jpg height=200 width=200></img></a><br/>
-</div>
-</td>
-<td></td>
-<td>6</td>
-<td>com.OSMOSE.testcases.Product@1c6804cd</td></tr>
-<tr>
-<td title='com.OSMOSE.testcases.Product.ClickApprove()'><b>ClickApprove</b><br>Test class: com.OSMOSE.testcases.Product<br>Test method: Verification of click on Approve button on Manage Products<br/>
-<a href="#Output-1099766787" onClick='toggleBox("Output-1099766787", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-1099766787" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1099766787">
-Click to see Screenshot<br/>
-<a target="_blank" href=Fri_Aug_28_11_39_39_IST_2020.jpg>Screenshot</a><br/>
-<br><br/>
-<br><br/>
-<a target="_blank" href=Fri_Aug_28_11_39_39_IST_2020.jpg><img src=Fri_Aug_28_11_39_39_IST_2020.jpg height=200 width=200></img></a><br/>
-</div>
-</td>
-<td></td>
-<td>9</td>
-<td>com.OSMOSE.testcases.Product@1c6804cd</td></tr>
-<tr>
-<td title='com.OSMOSE.testcases.Product.ClickDictionaryLink()'><b>ClickDictionaryLink</b><br>Test class: com.OSMOSE.testcases.Product<br>Test method: Verification of upload Spreadsheet on Manage Products<br/>
-<a href="#Output-605660635" onClick='toggleBox("Output-605660635", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-605660635" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-605660635">
-Click to see Screenshot<br/>
-<a target="_blank" href=Fri_Aug_28_11_40_44_IST_2020.jpg>Screenshot</a><br/>
-<br><br/>
-<br><br/>
-<a target="_blank" href=Fri_Aug_28_11_40_44_IST_2020.jpg><img src=Fri_Aug_28_11_40_44_IST_2020.jpg height=200 width=200></img></a><br/>
-</div>
-</td>
-<td></td>
-<td>41</td>
-<td>com.OSMOSE.testcases.Product@1c6804cd</td></tr>
-<tr>
-<td title='com.OSMOSE.testcases.Product.ClickDownloadProducts()'><b>ClickDownloadProducts</b><br>Test class: com.OSMOSE.testcases.Product<br>Test method: Clicking Download Spreadsheet drop down and download<br/>
-<a href="#Output-1601704307" onClick='toggleBox("Output-1601704307", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-1601704307" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1601704307">
-Click to see Screenshot<br/>
-<a target="_blank" href=Fri_Aug_28_11_39_18_IST_2020.jpg>Screenshot</a><br/>
-<br><br/>
-<br><br/>
-<a target="_blank" href=Fri_Aug_28_11_39_18_IST_2020.jpg><img src=Fri_Aug_28_11_39_18_IST_2020.jpg height=200 width=200></img></a><br/>
-</div>
-</td>
-<td></td>
-<td>7</td>
-<td>com.OSMOSE.testcases.Product@1c6804cd</td></tr>
-<tr>
-<td title='com.OSMOSE.testcases.Product.ClickManageProducts()'><b>ClickManageProducts</b><br>Test class: com.OSMOSE.testcases.Product<br>Test method: Verification of Manage Products dropdown menu<br/>
-<a href="#Output-379886033" onClick='toggleBox("Output-379886033", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-379886033" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-379886033">
-Click to see Screenshot<br/>
-<a target="_blank" href=Fri_Aug_28_11_39_10_IST_2020.jpg>Screenshot</a><br/>
-<br><br/>
-<br><br/>
-<a target="_blank" href=Fri_Aug_28_11_39_10_IST_2020.jpg><img src=Fri_Aug_28_11_39_10_IST_2020.jpg height=200 width=200></img></a><br/>
-</div>
-</td>
-<td></td>
-<td>2</td>
-<td>com.OSMOSE.testcases.Product@1c6804cd</td></tr>
-<tr>
-<td title='com.OSMOSE.testcases.Product.ClickManageQuotesLink()'><b>ClickManageQuotesLink</b><br>Test class: com.OSMOSE.testcases.Product<br>Test method: Verification of contents on Manage Quotes page<br/>
-<a href="#Output-1242584406" onClick='toggleBox("Output-1242584406", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-1242584406" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1242584406">
-Click to see Screenshot<br/>
-<a target="_blank" href=Fri_Aug_28_11_36_17_IST_2020.jpg>Screenshot</a><br/>
-<br><br/>
-<br><br/>
-<a target="_blank" href=Fri_Aug_28_11_36_17_IST_2020.jpg><img src=Fri_Aug_28_11_36_17_IST_2020.jpg height=200 width=200></img></a><br/>
-</div>
-</td>
-<td></td>
-<td>4</td>
-<td>com.OSMOSE.testcases.Product@1c6804cd</td></tr>
-<tr>
-<td title='com.OSMOSE.testcases.Product.ClickProductsinReview()'><b>ClickProductsinReview</b><br>Test class: com.OSMOSE.testcases.Product<br>Test method: Clicking ProductsInreview button and going back to Manage Products pop up<br/>
-<a href="#Output-763398106" onClick='toggleBox("Output-763398106", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-763398106" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-763398106">
-Click to see Screenshot<br/>
-<a target="_blank" href=Fri_Aug_28_11_39_21_IST_2020.jpg>Screenshot</a><br/>
-<br><br/>
-<br><br/>
-<a target="_blank" href=Fri_Aug_28_11_39_21_IST_2020.jpg><img src=Fri_Aug_28_11_39_21_IST_2020.jpg height=200 width=200></img></a><br/>
-</div>
-</td>
-<td></td>
-<td>2</td>
-<td>com.OSMOSE.testcases.Product@1c6804cd</td></tr>
-<tr>
-<td title='com.OSMOSE.testcases.Product.ClickReject()'><b>ClickReject</b><br>Test class: com.OSMOSE.testcases.Product<br>Test method: Verification of click on Reject button on Manage Products<br/>
-<a href="#Output-1748949019" onClick='toggleBox("Output-1748949019", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-1748949019" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1748949019">
-Click to see Screenshot<br/>
-<a target="_blank" href=Fri_Aug_28_11_39_50_IST_2020.jpg>Screenshot</a><br/>
-<br><br/>
-<br><br/>
-<a target="_blank" href=Fri_Aug_28_11_39_50_IST_2020.jpg><img src=Fri_Aug_28_11_39_50_IST_2020.jpg height=200 width=200></img></a><br/>
-</div>
-</td>
-<td></td>
-<td>9</td>
-<td>com.OSMOSE.testcases.Product@1c6804cd</td></tr>
-<tr>
-<td title='com.OSMOSE.testcases.Product.ClickReview()'><b>ClickReview</b><br>Test class: com.OSMOSE.testcases.Product<br>Test method: Verification of click on Review button on Manage Products<br/>
-<a href="#Output-98674643" onClick='toggleBox("Output-98674643", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-98674643" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-98674643">
-Click to see Screenshot<br/>
-<a target="_blank" href=Fri_Aug_28_11_39_29_IST_2020.jpg>Screenshot</a><br/>
-<br><br/>
-<br><br/>
-<a target="_blank" href=Fri_Aug_28_11_39_29_IST_2020.jpg><img src=Fri_Aug_28_11_39_29_IST_2020.jpg height=200 width=200></img></a><br/>
-</div>
-</td>
-<td></td>
-<td>8</td>
-<td>com.OSMOSE.testcases.Product@1c6804cd</td></tr>
-<tr>
-<td title='com.OSMOSE.testcases.Product.ClickShoppingCartIcon()'><b>ClickShoppingCartIcon</b><br>Test class: com.OSMOSE.testcases.Product<br>Test method: ShoppingCartOverlaycarticonverification<br/>
-<a href="#Output-162774556" onClick='toggleBox("Output-162774556", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-162774556" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-162774556">
-Click to see Screenshot<br/>
-<a target="_blank" href=Fri_Aug_28_11_30_29_IST_2020.jpg>Screenshot</a><br/>
-<br><br/>
-<br><br/>
-<a target="_blank" href=Fri_Aug_28_11_30_29_IST_2020.jpg><img src=Fri_Aug_28_11_30_29_IST_2020.jpg height=200 width=200></img></a><br/>
-</div>
-</td>
-<td></td>
-<td>11</td>
-<td>com.OSMOSE.testcases.Product@1c6804cd</td></tr>
-<tr>
-<td title='com.OSMOSE.testcases.Product.ClickShoppingSubmitCartbutton()'><b>ClickShoppingSubmitCartbutton</b><br>Test class: com.OSMOSE.testcases.Product<br>Test method: ShoppingCart Overlay cart ViewCart Button<br/>
-<a href="#Output-731573979" onClick='toggleBox("Output-731573979", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-731573979" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-731573979">
-Click to see Screenshot<br/>
-<a target="_blank" href=Fri_Aug_28_11_30_48_IST_2020.jpg>Screenshot</a><br/>
-<br><br/>
-<br><br/>
-<a target="_blank" href=Fri_Aug_28_11_30_48_IST_2020.jpg><img src=Fri_Aug_28_11_30_48_IST_2020.jpg height=200 width=200></img></a><br/>
-</div>
-</td>
-<td></td>
-<td>10</td>
-<td>com.OSMOSE.testcases.Product@1c6804cd</td></tr>
-<tr>
-<td title='com.OSMOSE.testcases.Product.ClickShoppingViewCartbutton()'><b>ClickShoppingViewCartbutton</b><br>Test class: com.OSMOSE.testcases.Product<br>Test method: ShoppingCart Overlay cart ViewCart Button<br/>
-<a href="#Output-205988608" onClick='toggleBox("Output-205988608", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-205988608" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-205988608">
-Click to see Screenshot<br/>
-<a target="_blank" href=Fri_Aug_28_11_30_38_IST_2020.jpg>Screenshot</a><br/>
-<br><br/>
-<br><br/>
-<a target="_blank" href=Fri_Aug_28_11_30_38_IST_2020.jpg><img src=Fri_Aug_28_11_30_38_IST_2020.jpg height=200 width=200></img></a><br/>
-</div>
-</td>
-<td></td>
-<td>8</td>
-<td>com.OSMOSE.testcases.Product@1c6804cd</td></tr>
-<tr>
-<td title='com.OSMOSE.testcases.Product.ClickUploadProducts()'><b>ClickUploadProducts</b><br>Test class: com.OSMOSE.testcases.Product<br>Test method: Verification of upload Spreadsheet on Manage Products<br/>
-<a href="#Output-1580467617" onClick='toggleBox("Output-1580467617", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-1580467617" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1580467617">
-Click to see Screenshot<br/>
-<a target="_blank" href=Fri_Aug_28_11_40_01_IST_2020.jpg>Screenshot</a><br/>
-<br><br/>
-<br><br/>
-<a target="_blank" href=Fri_Aug_28_11_40_01_IST_2020.jpg><img src=Fri_Aug_28_11_40_01_IST_2020.jpg height=200 width=200></img></a><br/>
-</div>
-</td>
-<td></td>
-<td>10</td>
-<td>com.OSMOSE.testcases.Product@1c6804cd</td></tr>
-<tr>
-<td title='com.OSMOSE.testcases.Product.CreateQuote()'><b>CreateQuote</b><br>Test class: com.OSMOSE.testcases.Product<br>Test method: Create Quote by adding product in the cart<br/>
-<a href="#Output-1021311233" onClick='toggleBox("Output-1021311233", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-1021311233" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1021311233">
-Click to see Screenshot<br/>
-<a target="_blank" href=Fri_Aug_28_11_29_44_IST_2020.jpg>Screenshot</a><br/>
-<br><br/>
-<br><br/>
-<a target="_blank" href=Fri_Aug_28_11_29_44_IST_2020.jpg><img src=Fri_Aug_28_11_29_44_IST_2020.jpg height=200 width=200></img></a><br/>
-</div>
-</td>
-<td></td>
-<td>12</td>
-<td>com.OSMOSE.testcases.Product@1c6804cd</td></tr>
-<tr>
-<td title='com.OSMOSE.testcases.Product.CreateQuote_Attachment()'><b>CreateQuote_Attachment</b><br>Test class: com.OSMOSE.testcases.Product<br>Test method: Create Quote by adding product in the cart by adding attachment<br/>
-<a href="#Output-1227041903" onClick='toggleBox("Output-1227041903", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-1227041903" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1227041903">
-Click to see Screenshot<br/>
-<a target="_blank" href=Fri_Aug_28_11_30_17_IST_2020.jpg>Screenshot</a><br/>
-<br><br/>
-<br><br/>
-<a target="_blank" href=Fri_Aug_28_11_30_17_IST_2020.jpg><img src=Fri_Aug_28_11_30_17_IST_2020.jpg height=200 width=200></img></a><br/>
-</div>
-</td>
-<td></td>
-<td>11</td>
-<td>com.OSMOSE.testcases.Product@1c6804cd</td></tr>
-<tr>
-<td title='com.OSMOSE.testcases.Product.CreateQuote_Comments()'><b>CreateQuote_Comments</b><br>Test class: com.OSMOSE.testcases.Product<br>Test method: Create Quote by adding product in the cart by adding comments<br/>
-<a href="#Output-1259950595" onClick='toggleBox("Output-1259950595", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-1259950595" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1259950595">
-Click to see Screenshot<br/>
-<a target="_blank" href=Fri_Aug_28_11_29_55_IST_2020.jpg>Screenshot</a><br/>
-<br><br/>
-<br><br/>
-<a target="_blank" href=Fri_Aug_28_11_29_55_IST_2020.jpg><img src=Fri_Aug_28_11_29_55_IST_2020.jpg height=200 width=200></img></a><br/>
-</div>
-</td>
-<td></td>
-<td>10</td>
-<td>com.OSMOSE.testcases.Product@1c6804cd</td></tr>
-<tr>
-<td title='com.OSMOSE.testcases.Product.CreateQuote_MultipleAttachment()'><b>CreateQuote_MultipleAttachment</b><br>Test class: com.OSMOSE.testcases.Product<br>Test method: Create Quote by adding product in the cart by Multiple attachment<br/>
-<a href="#Output-1372745709" onClick='toggleBox("Output-1372745709", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-1372745709" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1372745709">
-Click to see Screenshot<br/>
-<a target="_blank" href=Fri_Aug_28_11_52_06_IST_2020.jpg>Screenshot</a><br/>
-<br><br/>
-<br><br/>
-<a target="_blank" href=Fri_Aug_28_11_52_06_IST_2020.jpg><img src=Fri_Aug_28_11_52_06_IST_2020.jpg height=200 width=200></img></a><br/>
-</div>
-</td>
-<td></td>
-<td>38</td>
-<td>com.OSMOSE.testcases.Product@1c6804cd</td></tr>
-<tr>
-<td title='com.OSMOSE.testcases.Product.CreateQuote_UpdateeAttachment()'><b>CreateQuote_UpdateeAttachment</b><br>Test class: com.OSMOSE.testcases.Product<br>Test method: Create Quote by adding product in the cart by updating attachment<br/>
-<a href="#Output-949988699" onClick='toggleBox("Output-949988699", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-949988699" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-949988699">
-Click to see Screenshot<br/>
-<a target="_blank" href=Fri_Aug_28_11_52_19_IST_2020.jpg>Screenshot</a><br/>
-<br><br/>
-<br><br/>
-<a target="_blank" href=Fri_Aug_28_11_52_19_IST_2020.jpg><img src=Fri_Aug_28_11_52_19_IST_2020.jpg height=200 width=200></img></a><br/>
-</div>
-</td>
-<td></td>
-<td>12</td>
-<td>com.OSMOSE.testcases.Product@1c6804cd</td></tr>
-<tr>
-<td title='com.OSMOSE.testcases.Product.CreateQuote_ZipCode()'><b>CreateQuote_ZipCode</b><br>Test class: com.OSMOSE.testcases.Product<br>Test method: Create Quote by adding product in the cart by adding zip code<br/>
-<a href="#Output-605244604" onClick='toggleBox("Output-605244604", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-605244604" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-605244604">
-Click to see Screenshot<br/>
-<a target="_blank" href=Fri_Aug_28_11_30_05_IST_2020.jpg>Screenshot</a><br/>
-<br><br/>
-<br><br/>
-<a target="_blank" href=Fri_Aug_28_11_30_05_IST_2020.jpg><img src=Fri_Aug_28_11_30_05_IST_2020.jpg height=200 width=200></img></a><br/>
-</div>
-</td>
-<td></td>
-<td>10</td>
-<td>com.OSMOSE.testcases.Product@1c6804cd</td></tr>
-<tr>
-<td title='com.OSMOSE.testcases.Product.DeleteQuanityinShoppingCart()'><b>DeleteQuanityinShoppingCart</b><br>Test class: com.OSMOSE.testcases.Product<br>Test method: Delete product from the cart<br/>
-<a href="#Output-1307024253" onClick='toggleBox("Output-1307024253", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-1307024253" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1307024253">
-Click to see Screenshot<br/>
-<a target="_blank" href=Fri_Aug_28_11_28_47_IST_2020.jpg>Screenshot</a><br/>
-<br><br/>
-<br><br/>
-<a target="_blank" href=Fri_Aug_28_11_28_47_IST_2020.jpg><img src=Fri_Aug_28_11_28_47_IST_2020.jpg height=200 width=200></img></a><br/>
-</div>
-</td>
-<td></td>
-<td>6</td>
-<td>com.OSMOSE.testcases.Product@1c6804cd</td></tr>
-<tr>
-<td title='com.OSMOSE.testcases.Product.FeaturedProductPoleRestoration()'><b>FeaturedProductPoleRestoration</b><br>Test class: com.OSMOSE.testcases.Product<br>Test method: Verify the tel number text on Add to Shopping cart pop-up<br/>
-<a href="#Output-1421650289" onClick='toggleBox("Output-1421650289", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-1421650289" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1421650289">
-Click to see Screenshot<br/>
-<a target="_blank" href=Fri_Aug_28_11_26_18_IST_2020.jpg>Screenshot</a><br/>
-<br><br/>
-<br><br/>
-<a target="_blank" href=Fri_Aug_28_11_26_18_IST_2020.jpg><img src=Fri_Aug_28_11_26_18_IST_2020.jpg height=200 width=200></img></a><br/>
-</div>
-</td>
-<td></td>
-<td>14</td>
-<td>com.OSMOSE.testcases.Product@1c6804cd</td></tr>
-<tr>
-<td title='com.OSMOSE.testcases.Product.GoBack()'><b>GoBack</b><br>Test class: com.OSMOSE.testcases.Product<br>Test method: Verify Go Back button funactionality on Quote Request screen<br/>
-<a href="#Output-292880130" onClick='toggleBox("Output-292880130", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-292880130" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-292880130">
-Click to see Screenshot<br/>
-<a target="_blank" href=Fri_Aug_28_11_51_27_IST_2020.jpg>Screenshot</a><br/>
-<br><br/>
-<br><br/>
-<a target="_blank" href=Fri_Aug_28_11_51_27_IST_2020.jpg><img src=Fri_Aug_28_11_51_27_IST_2020.jpg height=200 width=200></img></a><br/>
-</div>
-</td>
-<td></td>
-<td>14</td>
-<td>com.OSMOSE.testcases.Product@1c6804cd</td></tr>
-<tr>
-<td title='com.OSMOSE.testcases.Product.HomepageCarticon()'><b>HomepageCarticon</b><br>Test class: com.OSMOSE.testcases.Product<br>Test method: Verification of the presence of cart icon on Home page<br/>
-<a href="#Output-740993938" onClick='toggleBox("Output-740993938", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-740993938" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-740993938">
-Click to see Screenshot<br/>
-<a target="_blank" href=Fri_Aug_28_11_36_12_IST_2020.jpg>Screenshot</a><br/>
-<br><br/>
-<br><br/>
-<a target="_blank" href=Fri_Aug_28_11_36_12_IST_2020.jpg><img src=Fri_Aug_28_11_36_12_IST_2020.jpg height=200 width=200></img></a><br/>
+<a target="_blank" href=Fri_Nov_13_17_09_59_IST_2020.jpg><img src=Fri_Nov_13_17_09_59_IST_2020.jpg height=200 width=200></img></a><br/>
 </div>
 </td>
 <td></td>
 <td>17</td>
-<td>com.OSMOSE.testcases.Product@1c6804cd</td></tr>
+<td>com.OSMOSE.testcases.Product@6941827a</td></tr>
 <tr>
-<td title='com.OSMOSE.testcases.Product.MyQuotesComments_Collapse()'><b>MyQuotesComments_Collapse</b><br>Test class: com.OSMOSE.testcases.Product<br>Test method: Verification of Comments textarea when comments section is Expanded and collapsed<br/>
-<a href="#Output-1886522232" onClick='toggleBox("Output-1886522232", this, "Show output", "Hide output");'>Show output</a>
+<td title='com.OSMOSE.testcases.Product.AddShoppingCart()'><b>AddShoppingCart</b><br>Test class: com.OSMOSE.testcases.Product<br>Test method: On the Product Group Details Page, the user will be provided with the “ADD”  button  with a quantity selector.<br/>
+<a href="#Output-224219987" onClick='toggleBox("Output-224219987", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-1886522232" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1886522232">
+<a href="#Output-224219987" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-224219987">
 Click to see Screenshot<br/>
-<a target="_blank" href=Fri_Aug_28_11_53_57_IST_2020.jpg>Screenshot</a><br/>
+<a target="_blank" href=Fri_Nov_13_17_12_15_IST_2020.jpg>Screenshot</a><br/>
 <br><br/>
 <br><br/>
-<a target="_blank" href=Fri_Aug_28_11_53_57_IST_2020.jpg><img src=Fri_Aug_28_11_53_57_IST_2020.jpg height=200 width=200></img></a><br/>
+<a target="_blank" href=Fri_Nov_13_17_12_15_IST_2020.jpg><img src=Fri_Nov_13_17_12_15_IST_2020.jpg height=200 width=200></img></a><br/>
 </div>
 </td>
 <td></td>
-<td>15</td>
-<td>com.OSMOSE.testcases.Product@1c6804cd</td></tr>
+<td>4</td>
+<td>com.OSMOSE.testcases.Product@6941827a</td></tr>
 <tr>
-<td title='com.OSMOSE.testcases.Product.MyQuotes_96421()'><b>MyQuotes_96421</b><br>Test class: com.OSMOSE.testcases.Product<br>Test method: Verification of contents on MyQuotes popup<br/>
-<a href="#Output-819790006" onClick='toggleBox("Output-819790006", this, "Show output", "Hide output");'>Show output</a>
+<td title='com.OSMOSE.testcases.Product.ClickApprove()'><b>ClickApprove</b><br>Test class: com.OSMOSE.testcases.Product<br>Test method: Verification of click on Approve button on Manage Products<br/>
+<a href="#Output-1818827263" onClick='toggleBox("Output-1818827263", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-819790006" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-819790006">
+<a href="#Output-1818827263" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1818827263">
 Click to see Screenshot<br/>
-<a target="_blank" href=Fri_Aug_28_11_31_10_IST_2020.jpg>Screenshot</a><br/>
+<a target="_blank" href=Fri_Nov_13_17_20_06_IST_2020.jpg>Screenshot</a><br/>
 <br><br/>
 <br><br/>
-<a target="_blank" href=Fri_Aug_28_11_31_10_IST_2020.jpg><img src=Fri_Aug_28_11_31_10_IST_2020.jpg height=200 width=200></img></a><br/>
+<a target="_blank" href=Fri_Nov_13_17_20_06_IST_2020.jpg><img src=Fri_Nov_13_17_20_06_IST_2020.jpg height=200 width=200></img></a><br/>
+</div>
+</td>
+<td></td>
+<td>9</td>
+<td>com.OSMOSE.testcases.Product@6941827a</td></tr>
+<tr>
+<td title='com.OSMOSE.testcases.Product.ClickDictionaryLink()'><b>ClickDictionaryLink</b><br>Test class: com.OSMOSE.testcases.Product<br>Test method: Verification of upload Spreadsheet on Manage Products<br/>
+<a href="#Output-812423980" onClick='toggleBox("Output-812423980", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-812423980" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-812423980">
+Click to see Screenshot<br/>
+<a target="_blank" href=Fri_Nov_13_17_21_01_IST_2020.jpg>Screenshot</a><br/>
+<br><br/>
+<br><br/>
+<a target="_blank" href=Fri_Nov_13_17_21_01_IST_2020.jpg><img src=Fri_Nov_13_17_21_01_IST_2020.jpg height=200 width=200></img></a><br/>
+</div>
+</td>
+<td></td>
+<td>35</td>
+<td>com.OSMOSE.testcases.Product@6941827a</td></tr>
+<tr>
+<td title='com.OSMOSE.testcases.Product.ClickDownloadProducts()'><b>ClickDownloadProducts</b><br>Test class: com.OSMOSE.testcases.Product<br>Test method: Clicking Download Spreadsheet drop down and download<br/>
+<a href="#Output-707108719" onClick='toggleBox("Output-707108719", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-707108719" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-707108719">
+Click to see Screenshot<br/>
+<a target="_blank" href=Fri_Nov_13_17_19_45_IST_2020.jpg>Screenshot</a><br/>
+<br><br/>
+<br><br/>
+<a target="_blank" href=Fri_Nov_13_17_19_45_IST_2020.jpg><img src=Fri_Nov_13_17_19_45_IST_2020.jpg height=200 width=200></img></a><br/>
 </div>
 </td>
 <td></td>
 <td>7</td>
-<td>com.OSMOSE.testcases.Product@1c6804cd</td></tr>
+<td>com.OSMOSE.testcases.Product@6941827a</td></tr>
 <tr>
-<td title='com.OSMOSE.testcases.Product.ReturnPolicy()'><b>ReturnPolicy</b><br>Test class: com.OSMOSE.testcases.Product<br>Test method: Product Return Policies will be provided on the 'Quote Request Approval' page and will be presented to the customer as a pop-up for reading.<br/>
-<a href="#Output-641011362" onClick='toggleBox("Output-641011362", this, "Show output", "Hide output");'>Show output</a>
+<td title='com.OSMOSE.testcases.Product.ClickManageProducts()'><b>ClickManageProducts</b><br>Test class: com.OSMOSE.testcases.Product<br>Test method: Verification of Manage Products dropdown menu<br/>
+<a href="#Output-1351568309" onClick='toggleBox("Output-1351568309", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-641011362" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-641011362">
+<a href="#Output-1351568309" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1351568309">
 Click to see Screenshot<br/>
-<a target="_blank" href=Fri_Aug_28_11_27_51_IST_2020.jpg>Screenshot</a><br/>
+<a target="_blank" href=Fri_Nov_13_17_19_38_IST_2020.jpg>Screenshot</a><br/>
 <br><br/>
 <br><br/>
-<a target="_blank" href=Fri_Aug_28_11_27_51_IST_2020.jpg><img src=Fri_Aug_28_11_27_51_IST_2020.jpg height=200 width=200></img></a><br/>
+<a target="_blank" href=Fri_Nov_13_17_19_38_IST_2020.jpg><img src=Fri_Nov_13_17_19_38_IST_2020.jpg height=200 width=200></img></a><br/>
 </div>
 </td>
 <td></td>
-<td>11</td>
-<td>com.OSMOSE.testcases.Product@1c6804cd</td></tr>
+<td>2</td>
+<td>com.OSMOSE.testcases.Product@6941827a</td></tr>
 <tr>
-<td title='com.OSMOSE.testcases.Product.SortBydd()'><b>SortBydd</b><br>Test class: com.OSMOSE.testcases.Product<br>Test method: Verification of values present in Sort dropdown<br/>
-<a href="#Output-889546737" onClick='toggleBox("Output-889546737", this, "Show output", "Hide output");'>Show output</a>
+<td title='com.OSMOSE.testcases.Product.ClickManageQuotesLink()'><b>ClickManageQuotesLink</b><br>Test class: com.OSMOSE.testcases.Product<br>Test method: Verification of contents on Manage Quotes page<br/>
+<a href="#Output-1844621058" onClick='toggleBox("Output-1844621058", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-889546737" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-889546737">
+<a href="#Output-1844621058" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1844621058">
 Click to see Screenshot<br/>
-<a target="_blank" href=Fri_Aug_28_11_35_54_IST_2020.jpg>Screenshot</a><br/>
+<a target="_blank" href=Fri_Nov_13_17_17_01_IST_2020.jpg>Screenshot</a><br/>
 <br><br/>
 <br><br/>
-<a target="_blank" href=Fri_Aug_28_11_35_54_IST_2020.jpg><img src=Fri_Aug_28_11_35_54_IST_2020.jpg height=200 width=200></img></a><br/>
+<a target="_blank" href=Fri_Nov_13_17_17_01_IST_2020.jpg><img src=Fri_Nov_13_17_17_01_IST_2020.jpg height=200 width=200></img></a><br/>
+</div>
+</td>
+<td></td>
+<td>3</td>
+<td>com.OSMOSE.testcases.Product@6941827a</td></tr>
+<tr>
+<td title='com.OSMOSE.testcases.Product.ClickProductsinReview()'><b>ClickProductsinReview</b><br>Test class: com.OSMOSE.testcases.Product<br>Test method: Clicking ProductsInreview button and going back to Manage Products pop up<br/>
+<a href="#Output-1632468927" onClick='toggleBox("Output-1632468927", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1632468927" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1632468927">
+Click to see Screenshot<br/>
+<a target="_blank" href=Fri_Nov_13_17_19_48_IST_2020.jpg>Screenshot</a><br/>
+<br><br/>
+<br><br/>
+<a target="_blank" href=Fri_Nov_13_17_19_48_IST_2020.jpg><img src=Fri_Nov_13_17_19_48_IST_2020.jpg height=200 width=200></img></a><br/>
+</div>
+</td>
+<td></td>
+<td>2</td>
+<td>com.OSMOSE.testcases.Product@6941827a</td></tr>
+<tr>
+<td title='com.OSMOSE.testcases.Product.ClickReject()'><b>ClickReject</b><br>Test class: com.OSMOSE.testcases.Product<br>Test method: Verification of click on Reject button on Manage Products<br/>
+<a href="#Output-924067193" onClick='toggleBox("Output-924067193", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-924067193" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-924067193">
+Click to see Screenshot<br/>
+<a target="_blank" href=Fri_Nov_13_17_20_15_IST_2020.jpg>Screenshot</a><br/>
+<br><br/>
+<br><br/>
+<a target="_blank" href=Fri_Nov_13_17_20_15_IST_2020.jpg><img src=Fri_Nov_13_17_20_15_IST_2020.jpg height=200 width=200></img></a><br/>
 </div>
 </td>
 <td></td>
 <td>9</td>
-<td>com.OSMOSE.testcases.Product@1c6804cd</td></tr>
+<td>com.OSMOSE.testcases.Product@6941827a</td></tr>
 <tr>
-<td title='com.OSMOSE.testcases.Product.SubmitQuotewithExpiredstatus()'><b>SubmitQuotewithExpiredstatus</b><br>Test class: com.OSMOSE.testcases.Product<br>Test method: Submitting a Quote with Expired Status<br/>
-<a href="#Output-1541119081" onClick='toggleBox("Output-1541119081", this, "Show output", "Hide output");'>Show output</a>
+<td title='com.OSMOSE.testcases.Product.ClickReview()'><b>ClickReview</b><br>Test class: com.OSMOSE.testcases.Product<br>Test method: Verification of click on Review button on Manage Products<br/>
+<a href="#Output-1722528506" onClick='toggleBox("Output-1722528506", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-1541119081" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1541119081">
+<a href="#Output-1722528506" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1722528506">
 Click to see Screenshot<br/>
-<a target="_blank" href=Fri_Aug_28_11_39_07_IST_2020.jpg>Screenshot</a><br/>
+<a target="_blank" href=Fri_Nov_13_17_19_56_IST_2020.jpg>Screenshot</a><br/>
 <br><br/>
 <br><br/>
-<a target="_blank" href=Fri_Aug_28_11_39_07_IST_2020.jpg><img src=Fri_Aug_28_11_39_07_IST_2020.jpg height=200 width=200></img></a><br/>
+<a target="_blank" href=Fri_Nov_13_17_19_56_IST_2020.jpg><img src=Fri_Nov_13_17_19_56_IST_2020.jpg height=200 width=200></img></a><br/>
+</div>
+</td>
+<td></td>
+<td>7</td>
+<td>com.OSMOSE.testcases.Product@6941827a</td></tr>
+<tr>
+<td title='com.OSMOSE.testcases.Product.ClickShoppingCartIcon()'><b>ClickShoppingCartIcon</b><br>Test class: com.OSMOSE.testcases.Product<br>Test method: ShoppingCartOverlaycarticonverification<br/>
+<a href="#Output-2061424899" onClick='toggleBox("Output-2061424899", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2061424899" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2061424899">
+Click to see Screenshot<br/>
+<a target="_blank" href=Fri_Nov_13_17_14_09_IST_2020.jpg>Screenshot</a><br/>
+<br><br/>
+<br><br/>
+<a target="_blank" href=Fri_Nov_13_17_14_09_IST_2020.jpg><img src=Fri_Nov_13_17_14_09_IST_2020.jpg height=200 width=200></img></a><br/>
 </div>
 </td>
 <td></td>
 <td>10</td>
-<td>com.OSMOSE.testcases.Product@1c6804cd</td></tr>
+<td>com.OSMOSE.testcases.Product@6941827a</td></tr>
 <tr>
-<td title='com.OSMOSE.testcases.Product.SubmitQuotewithInvalidFileType()'><b>SubmitQuotewithInvalidFileType</b><br>Test class: com.OSMOSE.testcases.Product<br>Test method: Submitting a Quote with a file with not supported format<br/>
-<a href="#Output-1315209017" onClick='toggleBox("Output-1315209017", this, "Show output", "Hide output");'>Show output</a>
+<td title='com.OSMOSE.testcases.Product.ClickShoppingSubmitCartbutton()'><b>ClickShoppingSubmitCartbutton</b><br>Test class: com.OSMOSE.testcases.Product<br>Test method: ShoppingCart Overlay cart ViewCart Button<br/>
+<a href="#Output-164877646" onClick='toggleBox("Output-164877646", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-1315209017" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1315209017">
+<a href="#Output-164877646" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-164877646">
 Click to see Screenshot<br/>
-<a target="_blank" href=Fri_Aug_28_11_37_53_IST_2020.jpg>Screenshot</a><br/>
+<a target="_blank" href=Fri_Nov_13_17_14_28_IST_2020.jpg>Screenshot</a><br/>
 <br><br/>
 <br><br/>
-<a target="_blank" href=Fri_Aug_28_11_37_53_IST_2020.jpg><img src=Fri_Aug_28_11_37_53_IST_2020.jpg height=200 width=200></img></a><br/>
+<a target="_blank" href=Fri_Nov_13_17_14_28_IST_2020.jpg><img src=Fri_Nov_13_17_14_28_IST_2020.jpg height=200 width=200></img></a><br/>
 </div>
 </td>
 <td></td>
-<td>27</td>
-<td>com.OSMOSE.testcases.Product@1c6804cd</td></tr>
+<td>9</td>
+<td>com.OSMOSE.testcases.Product@6941827a</td></tr>
 <tr>
-<td title='com.OSMOSE.testcases.Product.SubmitQuotewithMoreThan20mbFile()'><b>SubmitQuotewithMoreThan20mbFile</b><br>Test class: com.OSMOSE.testcases.Product<br>Test method: Submitting a Quote with a file more than 20mb<br/>
-<a href="#Output-1066437568" onClick='toggleBox("Output-1066437568", this, "Show output", "Hide output");'>Show output</a>
+<td title='com.OSMOSE.testcases.Product.ClickShoppingViewCartbutton()'><b>ClickShoppingViewCartbutton</b><br>Test class: com.OSMOSE.testcases.Product<br>Test method: ShoppingCart Overlay cart ViewCart Button<br/>
+<a href="#Output-786722925" onClick='toggleBox("Output-786722925", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-1066437568" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1066437568">
+<a href="#Output-786722925" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-786722925">
 Click to see Screenshot<br/>
-<a target="_blank" href=Fri_Aug_28_11_37_25_IST_2020.jpg>Screenshot</a><br/>
+<a target="_blank" href=Fri_Nov_13_17_14_18_IST_2020.jpg>Screenshot</a><br/>
 <br><br/>
 <br><br/>
-<a target="_blank" href=Fri_Aug_28_11_37_25_IST_2020.jpg><img src=Fri_Aug_28_11_37_25_IST_2020.jpg height=200 width=200></img></a><br/>
+<a target="_blank" href=Fri_Nov_13_17_14_18_IST_2020.jpg><img src=Fri_Nov_13_17_14_18_IST_2020.jpg height=200 width=200></img></a><br/>
 </div>
 </td>
 <td></td>
-<td>30</td>
-<td>com.OSMOSE.testcases.Product@1c6804cd</td></tr>
+<td>8</td>
+<td>com.OSMOSE.testcases.Product@6941827a</td></tr>
 <tr>
-<td title='com.OSMOSE.testcases.Product.SubmitQuotewithOrderRequestedstatus()'><b>SubmitQuotewithOrderRequestedstatus</b><br>Test class: com.OSMOSE.testcases.Product<br>Test method: Submitting a Quote with Order Requested Status<br/>
-<a href="#Output-1460265227" onClick='toggleBox("Output-1460265227", this, "Show output", "Hide output");'>Show output</a>
+<td title='com.OSMOSE.testcases.Product.ClickUploadProducts()'><b>ClickUploadProducts</b><br>Test class: com.OSMOSE.testcases.Product<br>Test method: Verification of upload Spreadsheet on Manage Products<br/>
+<a href="#Output-1268892066" onClick='toggleBox("Output-1268892066", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-1460265227" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1460265227">
+<a href="#Output-1268892066" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1268892066">
 Click to see Screenshot<br/>
-<a target="_blank" href=Fri_Aug_28_11_38_56_IST_2020.jpg>Screenshot</a><br/>
+<a target="_blank" href=Fri_Nov_13_17_20_24_IST_2020.jpg>Screenshot</a><br/>
 <br><br/>
 <br><br/>
-<a target="_blank" href=Fri_Aug_28_11_38_56_IST_2020.jpg><img src=Fri_Aug_28_11_38_56_IST_2020.jpg height=200 width=200></img></a><br/>
+<a target="_blank" href=Fri_Nov_13_17_20_24_IST_2020.jpg><img src=Fri_Nov_13_17_20_24_IST_2020.jpg height=200 width=200></img></a><br/>
 </div>
 </td>
 <td></td>
-<td>12</td>
-<td>com.OSMOSE.testcases.Product@1c6804cd</td></tr>
+<td>8</td>
+<td>com.OSMOSE.testcases.Product@6941827a</td></tr>
 <tr>
-<td title='com.OSMOSE.testcases.Product.SubmitQuotewithOrderedstatus()'><b>SubmitQuotewithOrderedstatus</b><br>Test class: com.OSMOSE.testcases.Product<br>Test method: Submitting a Quote with Ordered Status<br/>
-<a href="#Output-1900836075" onClick='toggleBox("Output-1900836075", this, "Show output", "Hide output");'>Show output</a>
+<td title='com.OSMOSE.testcases.Product.CreateQuote()'><b>CreateQuote</b><br>Test class: com.OSMOSE.testcases.Product<br>Test method: Create Quote by adding product in the cart<br/>
+<a href="#Output-1338074614" onClick='toggleBox("Output-1338074614", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-1900836075" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1900836075">
+<a href="#Output-1338074614" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1338074614">
 Click to see Screenshot<br/>
-<a target="_blank" href=Fri_Aug_28_11_36_35_IST_2020.jpg>Screenshot</a><br/>
+<a target="_blank" href=Fri_Nov_13_17_13_30_IST_2020.jpg>Screenshot</a><br/>
 <br><br/>
 <br><br/>
-<a target="_blank" href=Fri_Aug_28_11_36_35_IST_2020.jpg><img src=Fri_Aug_28_11_36_35_IST_2020.jpg height=200 width=200></img></a><br/>
+<a target="_blank" href=Fri_Nov_13_17_13_30_IST_2020.jpg><img src=Fri_Nov_13_17_13_30_IST_2020.jpg height=200 width=200></img></a><br/>
+</div>
+</td>
+<td></td>
+<td>8</td>
+<td>com.OSMOSE.testcases.Product@6941827a</td></tr>
+<tr>
+<td title='com.OSMOSE.testcases.Product.CreateQuote_Attachment()'><b>CreateQuote_Attachment</b><br>Test class: com.OSMOSE.testcases.Product<br>Test method: Create Quote by adding product in the cart by adding attachment<br/>
+<a href="#Output-1144838820" onClick='toggleBox("Output-1144838820", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1144838820" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1144838820">
+Click to see Screenshot<br/>
+<a target="_blank" href=Fri_Nov_13_17_13_58_IST_2020.jpg>Screenshot</a><br/>
+<br><br/>
+<br><br/>
+<a target="_blank" href=Fri_Nov_13_17_13_58_IST_2020.jpg><img src=Fri_Nov_13_17_13_58_IST_2020.jpg height=200 width=200></img></a><br/>
 </div>
 </td>
 <td></td>
 <td>10</td>
-<td>com.OSMOSE.testcases.Product@1c6804cd</td></tr>
+<td>com.OSMOSE.testcases.Product@6941827a</td></tr>
 <tr>
-<td title='com.OSMOSE.testcases.Product.SubmitQuotewithQuoteCancelledstatus()'><b>SubmitQuotewithQuoteCancelledstatus</b><br>Test class: com.OSMOSE.testcases.Product<br>Test method: Submitting a Quote with Quote Canceled Status<br/>
-<a href="#Output-1887701594" onClick='toggleBox("Output-1887701594", this, "Show output", "Hide output");'>Show output</a>
+<td title='com.OSMOSE.testcases.Product.CreateQuote_Comments()'><b>CreateQuote_Comments</b><br>Test class: com.OSMOSE.testcases.Product<br>Test method: Create Quote by adding product in the cart by adding comments<br/>
+<a href="#Output-786058987" onClick='toggleBox("Output-786058987", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-1887701594" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1887701594">
+<a href="#Output-786058987" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-786058987">
 Click to see Screenshot<br/>
-<a target="_blank" href=Fri_Aug_28_11_38_08_IST_2020.jpg>Screenshot</a><br/>
+<a target="_blank" href=Fri_Nov_13_17_13_38_IST_2020.jpg>Screenshot</a><br/>
 <br><br/>
 <br><br/>
-<a target="_blank" href=Fri_Aug_28_11_38_08_IST_2020.jpg><img src=Fri_Aug_28_11_38_08_IST_2020.jpg height=200 width=200></img></a><br/>
+<a target="_blank" href=Fri_Nov_13_17_13_38_IST_2020.jpg><img src=Fri_Nov_13_17_13_38_IST_2020.jpg height=200 width=200></img></a><br/>
 </div>
 </td>
 <td></td>
-<td>14</td>
-<td>com.OSMOSE.testcases.Product@1c6804cd</td></tr>
+<td>8</td>
+<td>com.OSMOSE.testcases.Product@6941827a</td></tr>
 <tr>
-<td title='com.OSMOSE.testcases.Product.SubmitQuotewithQuotePendingstatus()'><b>SubmitQuotewithQuotePendingstatus</b><br>Test class: com.OSMOSE.testcases.Product<br>Test method: Submitting a Quote with Quote Pending Status<br/>
-<a href="#Output-2009885224" onClick='toggleBox("Output-2009885224", this, "Show output", "Hide output");'>Show output</a>
+<td title='com.OSMOSE.testcases.Product.CreateQuote_MultipleAttachment()'><b>CreateQuote_MultipleAttachment</b><br>Test class: com.OSMOSE.testcases.Product<br>Test method: Create Quote by adding product in the cart by Multiple attachment<br/>
+<a href="#Output-889659405" onClick='toggleBox("Output-889659405", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-2009885224" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-2009885224">
+<a href="#Output-889659405" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-889659405">
 Click to see Screenshot<br/>
-<a target="_blank" href=Fri_Aug_28_11_36_54_IST_2020.jpg>Screenshot</a><br/>
+<a target="_blank" href=Fri_Nov_13_17_31_41_IST_2020.jpg>Screenshot</a><br/>
 <br><br/>
 <br><br/>
-<a target="_blank" href=Fri_Aug_28_11_36_54_IST_2020.jpg><img src=Fri_Aug_28_11_36_54_IST_2020.jpg height=200 width=200></img></a><br/>
+<a target="_blank" href=Fri_Nov_13_17_31_41_IST_2020.jpg><img src=Fri_Nov_13_17_31_41_IST_2020.jpg height=200 width=200></img></a><br/>
 </div>
 </td>
 <td></td>
-<td>19</td>
-<td>com.OSMOSE.testcases.Product@1c6804cd</td></tr>
+<td>38</td>
+<td>com.OSMOSE.testcases.Product@6941827a</td></tr>
 <tr>
-<td title='com.OSMOSE.testcases.Product.SubmitQuotewithQuotedstatus()'><b>SubmitQuotewithQuotedstatus</b><br>Test class: com.OSMOSE.testcases.Product<br>Test method: Submitting a Quote with Quoted Status<br/>
-<a href="#Output-307441207" onClick='toggleBox("Output-307441207", this, "Show output", "Hide output");'>Show output</a>
+<td title='com.OSMOSE.testcases.Product.CreateQuote_UpdateeAttachment()'><b>CreateQuote_UpdateeAttachment</b><br>Test class: com.OSMOSE.testcases.Product<br>Test method: Create Quote by adding product in the cart by updating attachment<br/>
+<a href="#Output-92712774" onClick='toggleBox("Output-92712774", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-307441207" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-307441207">
+<a href="#Output-92712774" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-92712774">
 Click to see Screenshot<br/>
-<a target="_blank" href=Fri_Aug_28_11_38_43_IST_2020.jpg>Screenshot</a><br/>
+<a target="_blank" href=Fri_Nov_13_17_31_51_IST_2020.jpg>Screenshot</a><br/>
 <br><br/>
 <br><br/>
-<a target="_blank" href=Fri_Aug_28_11_38_43_IST_2020.jpg><img src=Fri_Aug_28_11_38_43_IST_2020.jpg height=200 width=200></img></a><br/>
+<a target="_blank" href=Fri_Nov_13_17_31_51_IST_2020.jpg><img src=Fri_Nov_13_17_31_51_IST_2020.jpg height=200 width=200></img></a><br/>
 </div>
 </td>
 <td></td>
-<td>33</td>
-<td>com.OSMOSE.testcases.Product@1c6804cd</td></tr>
+<td>10</td>
+<td>com.OSMOSE.testcases.Product@6941827a</td></tr>
 <tr>
-<td title='com.OSMOSE.testcases.Product.SubmitQuotewithoutFile()'><b>SubmitQuotewithoutFile</b><br>Test class: com.OSMOSE.testcases.Product<br>Test method: Submitting a Quote without attachment<br/>
-<a href="#Output-1711756103" onClick='toggleBox("Output-1711756103", this, "Show output", "Hide output");'>Show output</a>
+<td title='com.OSMOSE.testcases.Product.CreateQuote_ZipCode()'><b>CreateQuote_ZipCode</b><br>Test class: com.OSMOSE.testcases.Product<br>Test method: Create Quote by adding product in the cart by adding zip code<br/>
+<a href="#Output-362311125" onClick='toggleBox("Output-362311125", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-1711756103" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1711756103">
+<a href="#Output-362311125" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-362311125">
 Click to see Screenshot<br/>
-<a target="_blank" href=Fri_Aug_28_11_52_39_IST_2020.jpg>Screenshot</a><br/>
+<a target="_blank" href=Fri_Nov_13_17_13_46_IST_2020.jpg>Screenshot</a><br/>
 <br><br/>
 <br><br/>
-<a target="_blank" href=Fri_Aug_28_11_52_39_IST_2020.jpg><img src=Fri_Aug_28_11_52_39_IST_2020.jpg height=200 width=200></img></a><br/>
+<a target="_blank" href=Fri_Nov_13_17_13_46_IST_2020.jpg><img src=Fri_Nov_13_17_13_46_IST_2020.jpg height=200 width=200></img></a><br/>
 </div>
 </td>
 <td></td>
-<td>19</td>
-<td>com.OSMOSE.testcases.Product@1c6804cd</td></tr>
+<td>8</td>
+<td>com.OSMOSE.testcases.Product@6941827a</td></tr>
 <tr>
-<td title='com.OSMOSE.testcases.Product.UpdateChangeProductAddToShoppingCart()'><b>UpdateChangeProductAddToShoppingCart</b><br>Test class: com.OSMOSE.testcases.Product<br>Test method: Create Quote by adding product in the cart by updating attachment and filling all the details<br/>
-<a href="#Output-1395746279" onClick='toggleBox("Output-1395746279", this, "Show output", "Hide output");'>Show output</a>
+<td title='com.OSMOSE.testcases.Product.DeleteQuanityinShoppingCart()'><b>DeleteQuanityinShoppingCart</b><br>Test class: com.OSMOSE.testcases.Product<br>Test method: Delete product from the cart<br/>
+<a href="#Output-849520318" onClick='toggleBox("Output-849520318", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-1395746279" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1395746279">
+<a href="#Output-849520318" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-849520318">
 Click to see Screenshot<br/>
-<a target="_blank" href=Fri_Aug_28_11_53_31_IST_2020.jpg>Screenshot</a><br/>
+<a target="_blank" href=Fri_Nov_13_17_12_39_IST_2020.jpg>Screenshot</a><br/>
 <br><br/>
 <br><br/>
-<a target="_blank" href=Fri_Aug_28_11_53_31_IST_2020.jpg><img src=Fri_Aug_28_11_53_31_IST_2020.jpg height=200 width=200></img></a><br/>
+<a target="_blank" href=Fri_Nov_13_17_12_39_IST_2020.jpg><img src=Fri_Nov_13_17_12_39_IST_2020.jpg height=200 width=200></img></a><br/>
 </div>
 </td>
 <td></td>
-<td>20</td>
-<td>com.OSMOSE.testcases.Product@1c6804cd</td></tr>
+<td>4</td>
+<td>com.OSMOSE.testcases.Product@6941827a</td></tr>
 <tr>
-<td title='com.OSMOSE.testcases.Product.UpdateDecreaseQuanityinShoppingCart()'><b>UpdateDecreaseQuanityinShoppingCart</b><br>Test class: com.OSMOSE.testcases.Product<br>Test method: Decrease product quantity from the cart<br/>
-<a href="#Output-898655932" onClick='toggleBox("Output-898655932", this, "Show output", "Hide output");'>Show output</a>
+<td title='com.OSMOSE.testcases.Product.FeaturedProductPoleRestoration()'><b>FeaturedProductPoleRestoration</b><br>Test class: com.OSMOSE.testcases.Product<br>Test method: Verify the tel number text on Add to Shopping cart pop-up<br/>
+<a href="#Output-1788432625" onClick='toggleBox("Output-1788432625", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-898655932" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-898655932">
+<a href="#Output-1788432625" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1788432625">
 Click to see Screenshot<br/>
-<a target="_blank" href=Fri_Aug_28_11_29_31_IST_2020.jpg>Screenshot</a><br/>
+<a target="_blank" href=Fri_Nov_13_17_10_22_IST_2020.jpg>Screenshot</a><br/>
 <br><br/>
 <br><br/>
-<a target="_blank" href=Fri_Aug_28_11_29_31_IST_2020.jpg><img src=Fri_Aug_28_11_29_31_IST_2020.jpg height=200 width=200></img></a><br/>
+<a target="_blank" href=Fri_Nov_13_17_10_22_IST_2020.jpg><img src=Fri_Nov_13_17_10_22_IST_2020.jpg height=200 width=200></img></a><br/>
 </div>
 </td>
 <td></td>
-<td>29</td>
-<td>com.OSMOSE.testcases.Product@1c6804cd</td></tr>
+<td>23</td>
+<td>com.OSMOSE.testcases.Product@6941827a</td></tr>
 <tr>
-<td title='com.OSMOSE.testcases.Product.UpdateIncreaseQuanityinShoppingCart()'><b>UpdateIncreaseQuanityinShoppingCart</b><br>Test class: com.OSMOSE.testcases.Product<br>Test method: Increase product quantity from the cart<br/>
-<a href="#Output-925955862" onClick='toggleBox("Output-925955862", this, "Show output", "Hide output");'>Show output</a>
+<td title='com.OSMOSE.testcases.Product.GoBack()'><b>GoBack</b><br>Test class: com.OSMOSE.testcases.Product<br>Test method: Verify Go Back button funactionality on Quote Request screen<br/>
+<a href="#Output-1894492702" onClick='toggleBox("Output-1894492702", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-925955862" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-925955862">
+<a href="#Output-1894492702" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1894492702">
 Click to see Screenshot<br/>
-<a target="_blank" href=Fri_Aug_28_11_29_01_IST_2020.jpg>Screenshot</a><br/>
+<a target="_blank" href=Fri_Nov_13_17_31_02_IST_2020.jpg>Screenshot</a><br/>
 <br><br/>
 <br><br/>
-<a target="_blank" href=Fri_Aug_28_11_29_01_IST_2020.jpg><img src=Fri_Aug_28_11_29_01_IST_2020.jpg height=200 width=200></img></a><br/>
+<a target="_blank" href=Fri_Nov_13_17_31_02_IST_2020.jpg><img src=Fri_Nov_13_17_31_02_IST_2020.jpg height=200 width=200></img></a><br/>
 </div>
 </td>
 <td></td>
 <td>13</td>
-<td>com.OSMOSE.testcases.Product@1c6804cd</td></tr>
+<td>com.OSMOSE.testcases.Product@6941827a</td></tr>
 <tr>
-<td title='com.OSMOSE.testcases.Product.VerifyAddShopping_Sameitem()'><b>VerifyAddShopping_Sameitem</b><br>Test class: com.OSMOSE.testcases.Product<br>Test method: User is able to add same product multiple times in cart by clicking on contiune button<br/>
-<a href="#Output-1907758892" onClick='toggleBox("Output-1907758892", this, "Show output", "Hide output");'>Show output</a>
+<td title='com.OSMOSE.testcases.Product.HomepageCarticon()'><b>HomepageCarticon</b><br>Test class: com.OSMOSE.testcases.Product<br>Test method: Verification of the presence of cart icon on Home page<br/>
+<a href="#Output-407285007" onClick='toggleBox("Output-407285007", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-1907758892" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1907758892">
+<a href="#Output-407285007" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-407285007">
 Click to see Screenshot<br/>
-<a target="_blank" href=Fri_Aug_28_11_28_41_IST_2020.jpg>Screenshot</a><br/>
+<a target="_blank" href=Fri_Nov_13_17_16_57_IST_2020.jpg>Screenshot</a><br/>
 <br><br/>
 <br><br/>
-<a target="_blank" href=Fri_Aug_28_11_28_41_IST_2020.jpg><img src=Fri_Aug_28_11_28_41_IST_2020.jpg height=200 width=200></img></a><br/>
+<a target="_blank" href=Fri_Nov_13_17_16_57_IST_2020.jpg><img src=Fri_Nov_13_17_16_57_IST_2020.jpg height=200 width=200></img></a><br/>
 </div>
 </td>
 <td></td>
-<td>9</td>
-<td>com.OSMOSE.testcases.Product@1c6804cd</td></tr>
+<td>14</td>
+<td>com.OSMOSE.testcases.Product@6941827a</td></tr>
 <tr>
-<td title='com.OSMOSE.testcases.Product.VerifyAddingRelatedProductsToShoppingCart()'><b>VerifyAddingRelatedProductsToShoppingCart</b><br>Test class: com.OSMOSE.testcases.Product<br>Test method: Add Related products to shopping Cart<br/>
-<a href="#Output-264953989" onClick='toggleBox("Output-264953989", this, "Show output", "Hide output");'>Show output</a>
+<td title='com.OSMOSE.testcases.Product.MyQuotesComments_Collapse()'><b>MyQuotesComments_Collapse</b><br>Test class: com.OSMOSE.testcases.Product<br>Test method: Verification of Comments textarea when comments section is Expanded and collapsed<br/>
+<a href="#Output-1421022166" onClick='toggleBox("Output-1421022166", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-264953989" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-264953989">
+<a href="#Output-1421022166" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1421022166">
 Click to see Screenshot<br/>
-<a target="_blank" href=Fri_Aug_28_11_52_58_IST_2020.jpg>Screenshot</a><br/>
+<a target="_blank" href=Fri_Nov_13_17_33_41_IST_2020.jpg>Screenshot</a><br/>
 <br><br/>
 <br><br/>
-<a target="_blank" href=Fri_Aug_28_11_52_58_IST_2020.jpg><img src=Fri_Aug_28_11_52_58_IST_2020.jpg height=200 width=200></img></a><br/>
+<a target="_blank" href=Fri_Nov_13_17_33_41_IST_2020.jpg><img src=Fri_Nov_13_17_33_41_IST_2020.jpg height=200 width=200></img></a><br/>
 </div>
 </td>
 <td></td>
-<td>18</td>
-<td>com.OSMOSE.testcases.Product@1c6804cd</td></tr>
+<td>13</td>
+<td>com.OSMOSE.testcases.Product@6941827a</td></tr>
 <tr>
-<td title='com.OSMOSE.testcases.Product.VerifyApprovebtndisabled()'><b>VerifyApprovebtndisabled</b><br>Test class: com.OSMOSE.testcases.Product<br>Test method: Verification of disabled Approve button<br/>
-<a href="#Output-2061394598" onClick='toggleBox("Output-2061394598", this, "Show output", "Hide output");'>Show output</a>
+<td title='com.OSMOSE.testcases.Product.MyQuotes_96421()'><b>MyQuotes_96421</b><br>Test class: com.OSMOSE.testcases.Product<br>Test method: Verification of contents on MyQuotes popup<br/>
+<a href="#Output-2115555031" onClick='toggleBox("Output-2115555031", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-2061394598" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-2061394598">
+<a href="#Output-2115555031" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2115555031">
 Click to see Screenshot<br/>
-<a target="_blank" href=Fri_Aug_28_11_44_45_IST_2020.jpg>Screenshot</a><br/>
+<a target="_blank" href=Fri_Nov_13_17_14_47_IST_2020.jpg>Screenshot</a><br/>
 <br><br/>
 <br><br/>
-<a target="_blank" href=Fri_Aug_28_11_44_45_IST_2020.jpg><img src=Fri_Aug_28_11_44_45_IST_2020.jpg height=200 width=200></img></a><br/>
-</div>
-</td>
-<td></td>
-<td>123</td>
-<td>com.OSMOSE.testcases.Product@1c6804cd</td></tr>
-<tr>
-<td title='com.OSMOSE.testcases.Product.VerifyCrossicononhoppingCart()'><b>VerifyCrossicononhoppingCart</b><br>Test class: com.OSMOSE.testcases.Product<br>Test method: On the Product Group Details Page, the user will be provided with the “ADD”  button  with a quantity selector.<br/>
-<a href="#Output-771459166" onClick='toggleBox("Output-771459166", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-771459166" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-771459166">
-Click to see Screenshot<br/>
-<a target="_blank" href=Fri_Aug_28_11_28_19_IST_2020.jpg>Screenshot</a><br/>
-<br><br/>
-<br><br/>
-<a target="_blank" href=Fri_Aug_28_11_28_19_IST_2020.jpg><img src=Fri_Aug_28_11_28_19_IST_2020.jpg height=200 width=200></img></a><br/>
-</div>
-</td>
-<td></td>
-<td>1</td>
-<td>com.OSMOSE.testcases.Product@1c6804cd</td></tr>
-<tr>
-<td title='com.OSMOSE.testcases.Product.VerifyCrossicononhoppingCart_Differentitem()'><b>VerifyCrossicononhoppingCart_Differentitem</b><br>Test class: com.OSMOSE.testcases.Product<br>Test method: User is able to add different product multiple times in cart by clicking on contiune button<br/>
-<a href="#Output-2044211046" onClick='toggleBox("Output-2044211046", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-2044211046" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-2044211046">
-Click to see Screenshot<br/>
-<a target="_blank" href=Fri_Aug_28_11_28_31_IST_2020.jpg>Screenshot</a><br/>
-<br><br/>
-<br><br/>
-<a target="_blank" href=Fri_Aug_28_11_28_31_IST_2020.jpg><img src=Fri_Aug_28_11_28_31_IST_2020.jpg height=200 width=200></img></a><br/>
-</div>
-</td>
-<td></td>
-<td>10</td>
-<td>com.OSMOSE.testcases.Product@1c6804cd</td></tr>
-<tr>
-<td title='com.OSMOSE.testcases.Product.VerifyFPImageClick()'><b>VerifyFPImageClick</b><br>Test class: com.OSMOSE.testcases.Product<br>Test method: Verify that a Featured product can be clicked<br/>
-<a href="#Output-1399398408" onClick='toggleBox("Output-1399398408", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-1399398408" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1399398408">
-Click to see Screenshot<br/>
-<a target="_blank" href=Fri_Aug_28_11_25_17_IST_2020.jpg>Screenshot</a><br/>
-<br><br/>
-<br><br/>
-<a target="_blank" href=Fri_Aug_28_11_25_17_IST_2020.jpg><img src=Fri_Aug_28_11_25_17_IST_2020.jpg height=200 width=200></img></a><br/>
-</div>
-</td>
-<td></td>
-<td>52</td>
-<td>com.OSMOSE.testcases.Product@1c6804cd</td></tr>
-<tr>
-<td title='com.OSMOSE.testcases.Product.VerifyProductclick()'><b>VerifyProductclick</b><br>Test class: com.OSMOSE.testcases.Product<br>Test method: Verification of the contents on Products Page<br/>
-<a href="#Output-1646234040" onClick='toggleBox("Output-1646234040", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-1646234040" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1646234040">
-Click to see Screenshot<br/>
-<a target="_blank" href=Fri_Aug_28_11_25_43_IST_2020.jpg>Screenshot</a><br/>
-<br><br/>
-<br><br/>
-<a target="_blank" href=Fri_Aug_28_11_25_43_IST_2020.jpg><img src=Fri_Aug_28_11_25_43_IST_2020.jpg height=200 width=200></img></a><br/>
-</div>
-</td>
-<td></td>
-<td>15</td>
-<td>com.OSMOSE.testcases.Product@1c6804cd</td></tr>
-<tr>
-<td title='com.OSMOSE.testcases.Product.VerifyShoppingAddbtndisabled()'><b>VerifyShoppingAddbtndisabled</b><br>Test class: com.OSMOSE.testcases.Product<br>Test method: ShoppingCart Add button verification<br/>
-<a href="#Output-627937047" onClick='toggleBox("Output-627937047", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-627937047" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-627937047">
-Click to see Screenshot<br/>
-<a target="_blank" href=Fri_Aug_28_11_50_30_IST_2020.jpg>Screenshot</a><br/>
-<br><br/>
-<br><br/>
-<a target="_blank" href=Fri_Aug_28_11_50_30_IST_2020.jpg><img src=Fri_Aug_28_11_50_30_IST_2020.jpg height=200 width=200></img></a><br/>
-</div>
-</td>
-<td></td>
-<td>5</td>
-<td>com.OSMOSE.testcases.Product@1c6804cd</td></tr>
-<tr>
-<td title='com.OSMOSE.testcases.Product.VerifyShoppingCarrtAddbtnDisabledclearqty()'><b>VerifyShoppingCarrtAddbtnDisabledclearqty</b><br>Test class: com.OSMOSE.testcases.Product<br>Test method: ShoppingCart Add button disabled even if the qty is clear<br/>
-<a href="#Output-1463891130" onClick='toggleBox("Output-1463891130", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-1463891130" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1463891130">
-Click to see Screenshot<br/>
-<a target="_blank" href=Fri_Aug_28_11_50_36_IST_2020.jpg>Screenshot</a><br/>
-<br><br/>
-<br><br/>
-<a target="_blank" href=Fri_Aug_28_11_50_36_IST_2020.jpg><img src=Fri_Aug_28_11_50_36_IST_2020.jpg height=200 width=200></img></a><br/>
+<a target="_blank" href=Fri_Nov_13_17_14_47_IST_2020.jpg><img src=Fri_Nov_13_17_14_47_IST_2020.jpg height=200 width=200></img></a><br/>
 </div>
 </td>
 <td></td>
 <td>6</td>
-<td>com.OSMOSE.testcases.Product@1c6804cd</td></tr>
+<td>com.OSMOSE.testcases.Product@6941827a</td></tr>
 <tr>
-<td title='com.OSMOSE.testcases.Product.VerifyShoppingCarrtMinMaxqty()'><b>VerifyShoppingCarrtMinMaxqty</b><br>Test class: com.OSMOSE.testcases.Product<br>Test method: ShoppingCart Add button disabled even if the qty is out of the fiels limits<br/>
-<a href="#Output-454923241" onClick='toggleBox("Output-454923241", this, "Show output", "Hide output");'>Show output</a>
+<td title='com.OSMOSE.testcases.Product.ReturnPolicy()'><b>ReturnPolicy</b><br>Test class: com.OSMOSE.testcases.Product<br>Test method: Product Return Policies will be provided on the 'Quote Request Approval' page and will be presented to the customer as a pop-up for reading.<br/>
+<a href="#Output-320321288" onClick='toggleBox("Output-320321288", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-454923241" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-454923241">
+<a href="#Output-320321288" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-320321288">
 Click to see Screenshot<br/>
-<a target="_blank" href=Fri_Aug_28_11_51_12_IST_2020.jpg>Screenshot</a><br/>
+<a target="_blank" href=Fri_Nov_13_17_11_51_IST_2020.jpg>Screenshot</a><br/>
 <br><br/>
 <br><br/>
-<a target="_blank" href=Fri_Aug_28_11_51_12_IST_2020.jpg><img src=Fri_Aug_28_11_51_12_IST_2020.jpg height=200 width=200></img></a><br/>
+<a target="_blank" href=Fri_Nov_13_17_11_51_IST_2020.jpg><img src=Fri_Nov_13_17_11_51_IST_2020.jpg height=200 width=200></img></a><br/>
 </div>
 </td>
 <td></td>
-<td>15</td>
-<td>com.OSMOSE.testcases.Product@1c6804cd</td></tr>
+<td>10</td>
+<td>com.OSMOSE.testcases.Product@6941827a</td></tr>
 <tr>
-<td title='com.OSMOSE.testcases.Product.VerifyTooltipForSizeDropDown()'><b>VerifyTooltipForSizeDropDown</b><br>Test class: com.OSMOSE.testcases.Product<br>Test method: Verify the tooltip displayed for Size dropdown<br/>
-<a href="#Output-2068534685" onClick='toggleBox("Output-2068534685", this, "Show output", "Hide output");'>Show output</a>
+<td title='com.OSMOSE.testcases.Product.SortBydd()'><b>SortBydd</b><br>Test class: com.OSMOSE.testcases.Product<br>Test method: Verification of values present in Sort dropdown<br/>
+<a href="#Output-1560844138" onClick='toggleBox("Output-1560844138", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-2068534685" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-2068534685">
+<a href="#Output-1560844138" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1560844138">
 Click to see Screenshot<br/>
-<a target="_blank" href=Fri_Aug_28_11_53_10_IST_2020.jpg>Screenshot</a><br/>
+<a target="_blank" href=Fri_Nov_13_17_16_42_IST_2020.jpg>Screenshot</a><br/>
 <br><br/>
 <br><br/>
-<a target="_blank" href=Fri_Aug_28_11_53_10_IST_2020.jpg><img src=Fri_Aug_28_11_53_10_IST_2020.jpg height=200 width=200></img></a><br/>
+<a target="_blank" href=Fri_Nov_13_17_16_42_IST_2020.jpg><img src=Fri_Nov_13_17_16_42_IST_2020.jpg height=200 width=200></img></a><br/>
 </div>
 </td>
 <td></td>
-<td>11</td>
-<td>com.OSMOSE.testcases.Product@1c6804cd</td></tr>
+<td>9</td>
+<td>com.OSMOSE.testcases.Product@6941827a</td></tr>
 <tr>
-<td title='com.OSMOSE.testcases.Product.VerifyUIonApprove()'><b>VerifyUIonApprove</b><br>Test class: com.OSMOSE.testcases.Product<br>Test method: Verification of contents on Approve<<QuoteId>> screen<br/>
-<a href="#Output-1622460244" onClick='toggleBox("Output-1622460244", this, "Show output", "Hide output");'>Show output</a>
+<td title='com.OSMOSE.testcases.Product.SubmitQuotewithExpiredstatus()'><b>SubmitQuotewithExpiredstatus</b><br>Test class: com.OSMOSE.testcases.Product<br>Test method: Submitting a Quote with Expired Status<br/>
+<a href="#Output-31676014" onClick='toggleBox("Output-31676014", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-1622460244" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1622460244">
+<a href="#Output-31676014" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-31676014">
 Click to see Screenshot<br/>
-<a target="_blank" href=Fri_Aug_28_11_42_41_IST_2020.jpg>Screenshot</a><br/>
+<a target="_blank" href=Fri_Nov_13_17_19_35_IST_2020.jpg>Screenshot</a><br/>
 <br><br/>
 <br><br/>
-<a target="_blank" href=Fri_Aug_28_11_42_41_IST_2020.jpg><img src=Fri_Aug_28_11_42_41_IST_2020.jpg height=200 width=200></img></a><br/>
+<a target="_blank" href=Fri_Nov_13_17_19_35_IST_2020.jpg><img src=Fri_Nov_13_17_19_35_IST_2020.jpg height=200 width=200></img></a><br/>
 </div>
 </td>
 <td></td>
-<td>117</td>
-<td>com.OSMOSE.testcases.Product@1c6804cd</td></tr>
+<td>9</td>
+<td>com.OSMOSE.testcases.Product@6941827a</td></tr>
 <tr>
-<td title='com.OSMOSE.testcases.Product.VerifyUIonClickQuoteID()'><b>VerifyUIonClickQuoteID</b><br>Test class: com.OSMOSE.testcases.Product<br>Test method: Verification of contents on a particular Quote<br/>
-<a href="#Output-414205222" onClick='toggleBox("Output-414205222", this, "Show output", "Hide output");'>Show output</a>
+<td title='com.OSMOSE.testcases.Product.SubmitQuotewithInvalidFileType()'><b>SubmitQuotewithInvalidFileType</b><br>Test class: com.OSMOSE.testcases.Product<br>Test method: Submitting a Quote with a file with not supported format<br/>
+<a href="#Output-1563607495" onClick='toggleBox("Output-1563607495", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-414205222" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-414205222">
+<a href="#Output-1563607495" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1563607495">
 Click to see Screenshot<br/>
-<a target="_blank" href=Fri_Aug_28_11_36_24_IST_2020.jpg>Screenshot</a><br/>
+<a target="_blank" href=Fri_Nov_13_17_18_31_IST_2020.jpg>Screenshot</a><br/>
 <br><br/>
 <br><br/>
-<a target="_blank" href=Fri_Aug_28_11_36_24_IST_2020.jpg><img src=Fri_Aug_28_11_36_24_IST_2020.jpg height=200 width=200></img></a><br/>
+<a target="_blank" href=Fri_Nov_13_17_18_31_IST_2020.jpg><img src=Fri_Nov_13_17_18_31_IST_2020.jpg height=200 width=200></img></a><br/>
 </div>
 </td>
 <td></td>
-<td>5</td>
-<td>com.OSMOSE.testcases.Product@1c6804cd</td></tr>
+<td>26</td>
+<td>com.OSMOSE.testcases.Product@6941827a</td></tr>
 <tr>
-<td title='com.OSMOSE.testcases.Product.adminElementPresent()'><b>adminElementPresent</b><br>Test class: com.OSMOSE.testcases.Product<br>Test method: Verification of the presence of Admin button<br/>
-<a href="#Output-332234405" onClick='toggleBox("Output-332234405", this, "Show output", "Hide output");'>Show output</a>
+<td title='com.OSMOSE.testcases.Product.SubmitQuotewithMoreThan20mbFile()'><b>SubmitQuotewithMoreThan20mbFile</b><br>Test class: com.OSMOSE.testcases.Product<br>Test method: Submitting a Quote with a file more than 20mb<br/>
+<a href="#Output-1886878309" onClick='toggleBox("Output-1886878309", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-332234405" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-332234405">
+<a href="#Output-1886878309" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1886878309">
 Click to see Screenshot<br/>
-<a target="_blank" href=Fri_Aug_28_11_23_32_IST_2020.jpg>Screenshot</a><br/>
+<a target="_blank" href=Fri_Nov_13_17_18_04_IST_2020.jpg>Screenshot</a><br/>
 <br><br/>
 <br><br/>
-<a target="_blank" href=Fri_Aug_28_11_23_32_IST_2020.jpg><img src=Fri_Aug_28_11_23_32_IST_2020.jpg height=200 width=200></img></a><br/>
+<a target="_blank" href=Fri_Nov_13_17_18_04_IST_2020.jpg><img src=Fri_Nov_13_17_18_04_IST_2020.jpg height=200 width=200></img></a><br/>
 </div>
 </td>
 <td></td>
-<td>0</td>
-<td>com.OSMOSE.testcases.Product@1c6804cd</td></tr>
+<td>29</td>
+<td>com.OSMOSE.testcases.Product@6941827a</td></tr>
 <tr>
-<td title='com.OSMOSE.testcases.Product.allSixProductPresent()'><b>allSixProductPresent</b><br>Test class: com.OSMOSE.testcases.Product<br>Test method: Verification of the presence of all six products<br/>
-<a href="#Output-329481770" onClick='toggleBox("Output-329481770", this, "Show output", "Hide output");'>Show output</a>
+<td title='com.OSMOSE.testcases.Product.SubmitQuotewithOrderRequestedstatus()'><b>SubmitQuotewithOrderRequestedstatus</b><br>Test class: com.OSMOSE.testcases.Product<br>Test method: Submitting a Quote with Order Requested Status<br/>
+<a href="#Output-306321254" onClick='toggleBox("Output-306321254", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-329481770" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-329481770">
+<a href="#Output-306321254" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-306321254">
 Click to see Screenshot<br/>
-<a target="_blank" href=Fri_Aug_28_11_23_33_IST_2020.jpg>Screenshot</a><br/>
+<a target="_blank" href=Fri_Nov_13_17_19_26_IST_2020.jpg>Screenshot</a><br/>
 <br><br/>
 <br><br/>
-<a target="_blank" href=Fri_Aug_28_11_23_33_IST_2020.jpg><img src=Fri_Aug_28_11_23_33_IST_2020.jpg height=200 width=200></img></a><br/>
+<a target="_blank" href=Fri_Nov_13_17_19_26_IST_2020.jpg><img src=Fri_Nov_13_17_19_26_IST_2020.jpg height=200 width=200></img></a><br/>
 </div>
 </td>
 <td></td>
-<td>0</td>
-<td>com.OSMOSE.testcases.Product@1c6804cd</td></tr>
+<td>9</td>
+<td>com.OSMOSE.testcases.Product@6941827a</td></tr>
 <tr>
-<td title='com.OSMOSE.testcases.Product.catalogElementPresent()'><b>catalogElementPresent</b><br>Test class: com.OSMOSE.testcases.Product<br>Test method: Verification of the presence of Catalog Element<br/>
-<a href="#Output-456314134" onClick='toggleBox("Output-456314134", this, "Show output", "Hide output");'>Show output</a>
+<td title='com.OSMOSE.testcases.Product.SubmitQuotewithOrderedstatus()'><b>SubmitQuotewithOrderedstatus</b><br>Test class: com.OSMOSE.testcases.Product<br>Test method: Submitting a Quote with Ordered Status<br/>
+<a href="#Output-825176144" onClick='toggleBox("Output-825176144", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-456314134" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-456314134">
+<a href="#Output-825176144" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-825176144">
 Click to see Screenshot<br/>
-<a target="_blank" href=Fri_Aug_28_11_23_31_IST_2020.jpg>Screenshot</a><br/>
+<a target="_blank" href=Fri_Nov_13_17_17_15_IST_2020.jpg>Screenshot</a><br/>
 <br><br/>
 <br><br/>
-<a target="_blank" href=Fri_Aug_28_11_23_31_IST_2020.jpg><img src=Fri_Aug_28_11_23_31_IST_2020.jpg height=200 width=200></img></a><br/>
+<a target="_blank" href=Fri_Nov_13_17_17_15_IST_2020.jpg><img src=Fri_Nov_13_17_17_15_IST_2020.jpg height=200 width=200></img></a><br/>
 </div>
 </td>
 <td></td>
-<td>0</td>
-<td>com.OSMOSE.testcases.Product@1c6804cd</td></tr>
+<td>9</td>
+<td>com.OSMOSE.testcases.Product@6941827a</td></tr>
 <tr>
-<td title='com.OSMOSE.testcases.OULogin.clickOnOuLink()'><b>clickOnOuLink</b><br>Test class: com.OSMOSE.testcases.OULogin<br>Test method: Verify that Live Events button is displayed<br>Parameters: {password=Hyde@2317, runmode=Y, username=rajesh.yadav@centurylink.com}<br/>
-<a href="#Output-167693809" onClick='toggleBox("Output-167693809", this, "Show output", "Hide output");'>Show output</a>
+<td title='com.OSMOSE.testcases.Product.SubmitQuotewithQuoteCancelledstatus()'><b>SubmitQuotewithQuoteCancelledstatus</b><br>Test class: com.OSMOSE.testcases.Product<br>Test method: Submitting a Quote with Quote Canceled Status<br/>
+<a href="#Output-717249075" onClick='toggleBox("Output-717249075", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-167693809" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-167693809">
+<a href="#Output-717249075" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-717249075">
 Click to see Screenshot<br/>
-<a target="_blank" href=Fri_Aug_28_11_21_11_IST_2020.jpg>Screenshot</a><br/>
+<a target="_blank" href=Fri_Nov_13_17_18_44_IST_2020.jpg>Screenshot</a><br/>
 <br><br/>
 <br><br/>
-<a target="_blank" href=Fri_Aug_28_11_21_11_IST_2020.jpg><img src=Fri_Aug_28_11_21_11_IST_2020.jpg height=200 width=200></img></a><br/>
+<a target="_blank" href=Fri_Nov_13_17_18_44_IST_2020.jpg><img src=Fri_Nov_13_17_18_44_IST_2020.jpg height=200 width=200></img></a><br/>
 </div>
 </td>
 <td></td>
 <td>12</td>
-<td>com.OSMOSE.testcases.OULogin@62f68dff</td></tr>
+<td>com.OSMOSE.testcases.Product@6941827a</td></tr>
 <tr>
-<td title='com.OSMOSE.testcases.OULogin.loginTest()'><b>loginTest</b><br>Test class: com.OSMOSE.testcases.OULogin<br>Test method: Verify the login functionality<br>Parameters: {password=Hyde@2317, runmode=Y, username=rajesh.yadav@centurylink.com}<br/>
-<a href="#Output-1717473929" onClick='toggleBox("Output-1717473929", this, "Show output", "Hide output");'>Show output</a>
+<td title='com.OSMOSE.testcases.Product.SubmitQuotewithQuotePendingstatus()'><b>SubmitQuotewithQuotePendingstatus</b><br>Test class: com.OSMOSE.testcases.Product<br>Test method: Submitting a Quote with Quote Pending Status<br/>
+<a href="#Output-53188062" onClick='toggleBox("Output-53188062", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-1717473929" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1717473929">
+<a href="#Output-53188062" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-53188062">
 Click to see Screenshot<br/>
-<a target="_blank" href=Fri_Aug_28_11_19_51_IST_2020.jpg>Screenshot</a><br/>
+<a target="_blank" href=Fri_Nov_13_17_17_34_IST_2020.jpg>Screenshot</a><br/>
 <br><br/>
 <br><br/>
-<a target="_blank" href=Fri_Aug_28_11_19_51_IST_2020.jpg><img src=Fri_Aug_28_11_19_51_IST_2020.jpg height=200 width=200></img></a><br/>
-</div>
-</td>
-<td></td>
-<td>15</td>
-<td>com.OSMOSE.testcases.OULogin@62f68dff</td></tr>
-<tr>
-<td title='com.OSMOSE.testcases.Product.openMyQuotesElementPresent()'><b>openMyQuotesElementPresent</b><br>Test class: com.OSMOSE.testcases.Product<br>Test method: Verification of the presence of My Quotes button<br/>
-<a href="#Output-611739613" onClick='toggleBox("Output-611739613", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-611739613" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-611739613">
-Click to see Screenshot<br/>
-<a target="_blank" href=Fri_Aug_28_11_23_31_IST_2020.jpg>Screenshot</a><br/>
-<br><br/>
-<br><br/>
-<a target="_blank" href=Fri_Aug_28_11_23_31_IST_2020.jpg><img src=Fri_Aug_28_11_23_31_IST_2020.jpg height=200 width=200></img></a><br/>
-</div>
-</td>
-<td></td>
-<td>0</td>
-<td>com.OSMOSE.testcases.Product@1c6804cd</td></tr>
-<tr>
-<td title='com.OSMOSE.testcases.Product.searchElementPresent()'><b>searchElementPresent</b><br>Test class: com.OSMOSE.testcases.Product<br>Test method: Verification of the presence of Search field<br/>
-<a href="#Output-92864491" onClick='toggleBox("Output-92864491", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-92864491" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-92864491">
-Click to see Screenshot<br/>
-<a target="_blank" href=Fri_Aug_28_11_23_30_IST_2020.jpg>Screenshot</a><br/>
-<br><br/>
-<br><br/>
-<a target="_blank" href=Fri_Aug_28_11_23_30_IST_2020.jpg><img src=Fri_Aug_28_11_23_30_IST_2020.jpg height=200 width=200></img></a><br/>
-</div>
-</td>
-<td></td>
-<td>50</td>
-<td>com.OSMOSE.testcases.Product@1c6804cd</td></tr>
-<tr>
-<td title='com.OSMOSE.testcases.Product.shoppingCartElementPresent()'><b>shoppingCartElementPresent</b><br>Test class: com.OSMOSE.testcases.Product<br>Test method: Verification of the presence of Shopping Cart Icon<br/>
-<a href="#Output-1327539680" onClick='toggleBox("Output-1327539680", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-1327539680" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1327539680">
-Click to see Screenshot<br/>
-<a target="_blank" href=Fri_Aug_28_11_23_32_IST_2020.jpg>Screenshot</a><br/>
-<br><br/>
-<br><br/>
-<a target="_blank" href=Fri_Aug_28_11_23_32_IST_2020.jpg><img src=Fri_Aug_28_11_23_32_IST_2020.jpg height=200 width=200></img></a><br/>
-</div>
-</td>
-<td></td>
-<td>0</td>
-<td>com.OSMOSE.testcases.Product@1c6804cd</td></tr>
-<tr>
-<td title='com.OSMOSE.testcases.Product.sliderItemPresent()'><b>sliderItemPresent</b><br>Test class: com.OSMOSE.testcases.Product<br>Test method: Verification of the presence of Slider items<br/>
-<a href="#Output-810169941" onClick='toggleBox("Output-810169941", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-810169941" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-810169941">
-Click to see Screenshot<br/>
-<a target="_blank" href=Fri_Aug_28_11_23_34_IST_2020.jpg>Screenshot</a><br/>
-<br><br/>
-<br><br/>
-<a target="_blank" href=Fri_Aug_28_11_23_34_IST_2020.jpg><img src=Fri_Aug_28_11_23_34_IST_2020.jpg height=200 width=200></img></a><br/>
-</div>
-</td>
-<td></td>
-<td>0</td>
-<td>com.OSMOSE.testcases.Product@1c6804cd</td></tr>
-<tr>
-<td title='com.OSMOSE.testcases.Product.verifyAddShoppingCarttext()'><b>verifyAddShoppingCarttext</b><br>Test class: com.OSMOSE.testcases.Product<br>Test method: On the Product Group Details Page, verify the text present<br/>
-<a href="#Output-204078646" onClick='toggleBox("Output-204078646", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-204078646" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-204078646">
-Click to see Screenshot<br/>
-<a target="_blank" href=Fri_Aug_28_11_28_11_IST_2020.jpg>Screenshot</a><br/>
-<br><br/>
-<br><br/>
-<a target="_blank" href=Fri_Aug_28_11_28_11_IST_2020.jpg><img src=Fri_Aug_28_11_28_11_IST_2020.jpg height=200 width=200></img></a><br/>
+<a target="_blank" href=Fri_Nov_13_17_17_34_IST_2020.jpg><img src=Fri_Nov_13_17_17_34_IST_2020.jpg height=200 width=200></img></a><br/>
 </div>
 </td>
 <td></td>
 <td>18</td>
-<td>com.OSMOSE.testcases.Product@1c6804cd</td></tr>
+<td>com.OSMOSE.testcases.Product@6941827a</td></tr>
 <tr>
-<td title='com.OSMOSE.testcases.Product.verifyAddToCartWhileReQuoting()'><b>verifyAddToCartWhileReQuoting</b><br>Test class: com.OSMOSE.testcases.Product<br>Test method: Verification of Add to Cart on the quote screen<br/>
-<a href="#Output-1950774259" onClick='toggleBox("Output-1950774259", this, "Show output", "Hide output");'>Show output</a>
+<td title='com.OSMOSE.testcases.Product.SubmitQuotewithQuotedstatus()'><b>SubmitQuotewithQuotedstatus</b><br>Test class: com.OSMOSE.testcases.Product<br>Test method: Submitting a Quote with Quoted Status<br/>
+<a href="#Output-1676585156" onClick='toggleBox("Output-1676585156", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-1950774259" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1950774259">
+<a href="#Output-1676585156" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1676585156">
 Click to see Screenshot<br/>
-<a target="_blank" href=Fri_Aug_28_11_50_02_IST_2020.jpg>Screenshot</a><br/>
+<a target="_blank" href=Fri_Nov_13_17_19_16_IST_2020.jpg>Screenshot</a><br/>
 <br><br/>
 <br><br/>
-<a target="_blank" href=Fri_Aug_28_11_50_02_IST_2020.jpg><img src=Fri_Aug_28_11_50_02_IST_2020.jpg height=200 width=200></img></a><br/>
+<a target="_blank" href=Fri_Nov_13_17_19_16_IST_2020.jpg><img src=Fri_Nov_13_17_19_16_IST_2020.jpg height=200 width=200></img></a><br/>
 </div>
 </td>
 <td></td>
-<td>78</td>
-<td>com.OSMOSE.testcases.Product@1c6804cd</td></tr>
+<td>32</td>
+<td>com.OSMOSE.testcases.Product@6941827a</td></tr>
 <tr>
-<td title='com.OSMOSE.testcases.Product.verifyCancelwhileREQuoting()'><b>verifyCancelwhileREQuoting</b><br>Test class: com.OSMOSE.testcases.Product<br>Test method: Verification of Cancel action on the quote screen<br/>
-<a href="#Output-285721701" onClick='toggleBox("Output-285721701", this, "Show output", "Hide output");'>Show output</a>
+<td title='com.OSMOSE.testcases.Product.SubmitQuotewithoutFile()'><b>SubmitQuotewithoutFile</b><br>Test class: com.OSMOSE.testcases.Product<br>Test method: Submitting a Quote without attachment<br/>
+<a href="#Output-1454357198" onClick='toggleBox("Output-1454357198", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-285721701" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-285721701">
+<a href="#Output-1454357198" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1454357198">
 Click to see Screenshot<br/>
-<a target="_blank" href=Fri_Aug_28_11_47_41_IST_2020.jpg>Screenshot</a><br/>
+<a target="_blank" href=Fri_Nov_13_17_32_10_IST_2020.jpg>Screenshot</a><br/>
 <br><br/>
 <br><br/>
-<a target="_blank" href=Fri_Aug_28_11_47_41_IST_2020.jpg><img src=Fri_Aug_28_11_47_41_IST_2020.jpg height=200 width=200></img></a><br/>
+<a target="_blank" href=Fri_Nov_13_17_32_10_IST_2020.jpg><img src=Fri_Nov_13_17_32_10_IST_2020.jpg height=200 width=200></img></a><br/>
 </div>
 </td>
 <td></td>
-<td>42</td>
-<td>com.OSMOSE.testcases.Product@1c6804cd</td></tr>
+<td>18</td>
+<td>com.OSMOSE.testcases.Product@6941827a</td></tr>
 <tr>
-<td title='com.OSMOSE.testcases.Product.verifyCartIconCount()'><b>verifyCartIconCount</b><br>Test class: com.OSMOSE.testcases.Product<br>Test method: Verify that shopping cart icon will be displayed with a number indicating the quantity of items in the cart <br/>
-<a href="#Output-153337703" onClick='toggleBox("Output-153337703", this, "Show output", "Hide output");'>Show output</a>
+<td title='com.OSMOSE.testcases.Product.UpdateDecreaseQuanityinShoppingCart()'><b>UpdateDecreaseQuanityinShoppingCart</b><br>Test class: com.OSMOSE.testcases.Product<br>Test method: Decrease product quantity from the cart<br/>
+<a href="#Output-1192529727" onClick='toggleBox("Output-1192529727", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-153337703" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-153337703">
+<a href="#Output-1192529727" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1192529727">
 Click to see Screenshot<br/>
-<a target="_blank" href=Fri_Aug_28_11_50_56_IST_2020.jpg>Screenshot</a><br/>
+<a target="_blank" href=Fri_Nov_13_17_13_20_IST_2020.jpg>Screenshot</a><br/>
 <br><br/>
 <br><br/>
-<a target="_blank" href=Fri_Aug_28_11_50_56_IST_2020.jpg><img src=Fri_Aug_28_11_50_56_IST_2020.jpg height=200 width=200></img></a><br/>
+<a target="_blank" href=Fri_Nov_13_17_13_20_IST_2020.jpg><img src=Fri_Nov_13_17_13_20_IST_2020.jpg height=200 width=200></img></a><br/>
 </div>
 </td>
 <td></td>
-<td>19</td>
-<td>com.OSMOSE.testcases.Product@1c6804cd</td></tr>
+<td>28</td>
+<td>com.OSMOSE.testcases.Product@6941827a</td></tr>
 <tr>
-<td title='com.OSMOSE.testcases.Product.verifyCategoryFilter()'><b>verifyCategoryFilter</b><br>Test class: com.OSMOSE.testcases.Product<br>Test method: Verification of the presence of Category Filter button<br/>
-<a href="#Output-293870357" onClick='toggleBox("Output-293870357", this, "Show output", "Hide output");'>Show output</a>
+<td title='com.OSMOSE.testcases.Product.UpdateIncreaseQuanityinShoppingCart()'><b>UpdateIncreaseQuanityinShoppingCart</b><br>Test class: com.OSMOSE.testcases.Product<br>Test method: Increase product quantity from the cart<br/>
+<a href="#Output-1422271143" onClick='toggleBox("Output-1422271143", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-293870357" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-293870357">
+<a href="#Output-1422271143" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1422271143">
 Click to see Screenshot<br/>
-<a target="_blank" href=Fri_Aug_28_11_24_25_IST_2020.jpg>Screenshot</a><br/>
+<a target="_blank" href=Fri_Nov_13_17_12_52_IST_2020.jpg>Screenshot</a><br/>
 <br><br/>
 <br><br/>
-<a target="_blank" href=Fri_Aug_28_11_24_25_IST_2020.jpg><img src=Fri_Aug_28_11_24_25_IST_2020.jpg height=200 width=200></img></a><br/>
-</div>
-</td>
-<td></td>
-<td>50</td>
-<td>com.OSMOSE.testcases.Product@1c6804cd</td></tr>
-<tr>
-<td title='com.OSMOSE.testcases.OULogin.verifyClickingTheWebinars()'><b>verifyClickingTheWebinars</b><br>Test class: com.OSMOSE.testcases.OULogin<br>Test method: Verify that Webinars button is displayed<br/>
-<a href="#Output-557705922" onClick='toggleBox("Output-557705922", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-557705922" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-557705922">
-Click to see Screenshot<br/>
-<a target="_blank" href=Fri_Aug_28_11_22_21_IST_2020.jpg>Screenshot</a><br/>
-<br><br/>
-<br><br/>
-<a target="_blank" href=Fri_Aug_28_11_22_21_IST_2020.jpg><img src=Fri_Aug_28_11_22_21_IST_2020.jpg height=200 width=200></img></a><br/>
+<a target="_blank" href=Fri_Nov_13_17_12_52_IST_2020.jpg><img src=Fri_Nov_13_17_12_52_IST_2020.jpg height=200 width=200></img></a><br/>
 </div>
 </td>
 <td></td>
 <td>12</td>
-<td>com.OSMOSE.testcases.OULogin@62f68dff</td></tr>
+<td>com.OSMOSE.testcases.Product@6941827a</td></tr>
 <tr>
-<td title='com.OSMOSE.testcases.OULogin.verifyContactUs()'><b>verifyContactUs</b><br>Test class: com.OSMOSE.testcases.OULogin<br>Test method: Verify the Contact Us Main menu on home page<br/>
+<td title='com.OSMOSE.testcases.Product.VerifyAddShopping_Sameitem()'><b>VerifyAddShopping_Sameitem</b><br>Test class: com.OSMOSE.testcases.Product<br>Test method: User is able to add same product multiple times in cart by clicking on contiune button<br/>
+<a href="#Output-2004687135" onClick='toggleBox("Output-2004687135", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2004687135" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2004687135">
+Click to see Screenshot<br/>
+<a target="_blank" href=Fri_Nov_13_17_12_34_IST_2020.jpg>Screenshot</a><br/>
+<br><br/>
+<br><br/>
+<a target="_blank" href=Fri_Nov_13_17_12_34_IST_2020.jpg><img src=Fri_Nov_13_17_12_34_IST_2020.jpg height=200 width=200></img></a><br/>
+</div>
+</td>
+<td></td>
+<td>8</td>
+<td>com.OSMOSE.testcases.Product@6941827a</td></tr>
+<tr>
+<td title='com.OSMOSE.testcases.Product.VerifyApprovebtndisabled()'><b>VerifyApprovebtndisabled</b><br>Test class: com.OSMOSE.testcases.Product<br>Test method: Verification of disabled Approve button<br/>
+<a href="#Output-1734811057" onClick='toggleBox("Output-1734811057", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1734811057" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1734811057">
+Click to see Screenshot<br/>
+<a target="_blank" href=Fri_Nov_13_17_24_53_IST_2020.jpg>Screenshot</a><br/>
+<br><br/>
+<br><br/>
+<a target="_blank" href=Fri_Nov_13_17_24_53_IST_2020.jpg><img src=Fri_Nov_13_17_24_53_IST_2020.jpg height=200 width=200></img></a><br/>
+</div>
+</td>
+<td></td>
+<td>118</td>
+<td>com.OSMOSE.testcases.Product@6941827a</td></tr>
+<tr>
+<td title='com.OSMOSE.testcases.Product.VerifyCrossicononhoppingCart()'><b>VerifyCrossicononhoppingCart</b><br>Test class: com.OSMOSE.testcases.Product<br>Test method: On the Product Group Details Page, the user will be provided with the “ADD”  button  with a quantity selector.<br/>
+<a href="#Output-621432843" onClick='toggleBox("Output-621432843", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-621432843" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-621432843">
+Click to see Screenshot<br/>
+<a target="_blank" href=Fri_Nov_13_17_12_16_IST_2020.jpg>Screenshot</a><br/>
+<br><br/>
+<br><br/>
+<a target="_blank" href=Fri_Nov_13_17_12_16_IST_2020.jpg><img src=Fri_Nov_13_17_12_16_IST_2020.jpg height=200 width=200></img></a><br/>
+</div>
+</td>
+<td></td>
+<td>1</td>
+<td>com.OSMOSE.testcases.Product@6941827a</td></tr>
+<tr>
+<td title='com.OSMOSE.testcases.Product.VerifyCrossicononhoppingCart_Differentitem()'><b>VerifyCrossicononhoppingCart_Differentitem</b><br>Test class: com.OSMOSE.testcases.Product<br>Test method: User is able to add different product multiple times in cart by clicking on contiune button<br/>
+<a href="#Output-839259983" onClick='toggleBox("Output-839259983", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-839259983" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-839259983">
+Click to see Screenshot<br/>
+<a target="_blank" href=Fri_Nov_13_17_12_26_IST_2020.jpg>Screenshot</a><br/>
+<br><br/>
+<br><br/>
+<a target="_blank" href=Fri_Nov_13_17_12_26_IST_2020.jpg><img src=Fri_Nov_13_17_12_26_IST_2020.jpg height=200 width=200></img></a><br/>
+</div>
+</td>
+<td></td>
+<td>8</td>
+<td>com.OSMOSE.testcases.Product@6941827a</td></tr>
+<tr>
+<td title='com.OSMOSE.testcases.Product.VerifyFPImageClick()'><b>VerifyFPImageClick</b><br>Test class: com.OSMOSE.testcases.Product<br>Test method: Verify that a Featured product can be clicked<br/>
+<a href="#Output-1011481270" onClick='toggleBox("Output-1011481270", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1011481270" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1011481270">
+Click to see Screenshot<br/>
+<a target="_blank" href=Fri_Nov_13_17_09_13_IST_2020.jpg>Screenshot</a><br/>
+<br><br/>
+<br><br/>
+<a target="_blank" href=Fri_Nov_13_17_09_13_IST_2020.jpg><img src=Fri_Nov_13_17_09_13_IST_2020.jpg height=200 width=200></img></a><br/>
+</div>
+</td>
+<td></td>
+<td>51</td>
+<td>com.OSMOSE.testcases.Product@6941827a</td></tr>
+<tr>
+<td title='com.OSMOSE.testcases.Product.VerifyProductclick()'><b>VerifyProductclick</b><br>Test class: com.OSMOSE.testcases.Product<br>Test method: Verification of the contents on Products Page<br/>
+<a href="#Output-1671007220" onClick='toggleBox("Output-1671007220", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1671007220" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1671007220">
+Click to see Screenshot<br/>
+<a target="_blank" href=Fri_Nov_13_17_09_41_IST_2020.jpg>Screenshot</a><br/>
+<br><br/>
+<br><br/>
+<a target="_blank" href=Fri_Nov_13_17_09_41_IST_2020.jpg><img src=Fri_Nov_13_17_09_41_IST_2020.jpg height=200 width=200></img></a><br/>
+</div>
+</td>
+<td></td>
+<td>14</td>
+<td>com.OSMOSE.testcases.Product@6941827a</td></tr>
+<tr>
+<td title='com.OSMOSE.testcases.Product.VerifyShoppingAddbtndisabled()'><b>VerifyShoppingAddbtndisabled</b><br>Test class: com.OSMOSE.testcases.Product<br>Test method: ShoppingCart Add button verification<br/>
+<a href="#Output-1204774385" onClick='toggleBox("Output-1204774385", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1204774385" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1204774385">
+Click to see Screenshot<br/>
+<a target="_blank" href=Fri_Nov_13_17_30_13_IST_2020.jpg>Screenshot</a><br/>
+<br><br/>
+<br><br/>
+<a target="_blank" href=Fri_Nov_13_17_30_13_IST_2020.jpg><img src=Fri_Nov_13_17_30_13_IST_2020.jpg height=200 width=200></img></a><br/>
+</div>
+</td>
+<td></td>
+<td>4</td>
+<td>com.OSMOSE.testcases.Product@6941827a</td></tr>
+<tr>
+<td title='com.OSMOSE.testcases.Product.VerifyShoppingCarrtAddbtnDisabledclearqty()'><b>VerifyShoppingCarrtAddbtnDisabledclearqty</b><br>Test class: com.OSMOSE.testcases.Product<br>Test method: ShoppingCart Add button disabled even if the qty is clear<br/>
+<a href="#Output-878535710" onClick='toggleBox("Output-878535710", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-878535710" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-878535710">
+Click to see Screenshot<br/>
+<a target="_blank" href=Fri_Nov_13_17_30_19_IST_2020.jpg>Screenshot</a><br/>
+<br><br/>
+<br><br/>
+<a target="_blank" href=Fri_Nov_13_17_30_19_IST_2020.jpg><img src=Fri_Nov_13_17_30_19_IST_2020.jpg height=200 width=200></img></a><br/>
+</div>
+</td>
+<td></td>
+<td>5</td>
+<td>com.OSMOSE.testcases.Product@6941827a</td></tr>
+<tr>
+<td title='com.OSMOSE.testcases.Product.VerifyShoppingCarrtMinMaxqty()'><b>VerifyShoppingCarrtMinMaxqty</b><br>Test class: com.OSMOSE.testcases.Product<br>Test method: ShoppingCart Add button disabled even if the qty is out of the fiels limits<br/>
+<a href="#Output-651177414" onClick='toggleBox("Output-651177414", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-651177414" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-651177414">
+Click to see Screenshot<br/>
+<a target="_blank" href=Fri_Nov_13_17_30_48_IST_2020.jpg>Screenshot</a><br/>
+<br><br/>
+<br><br/>
+<a target="_blank" href=Fri_Nov_13_17_30_48_IST_2020.jpg><img src=Fri_Nov_13_17_30_48_IST_2020.jpg height=200 width=200></img></a><br/>
+</div>
+</td>
+<td></td>
+<td>13</td>
+<td>com.OSMOSE.testcases.Product@6941827a</td></tr>
+<tr>
+<td title='com.OSMOSE.testcases.Product.VerifyUIonApprove()'><b>VerifyUIonApprove</b><br>Test class: com.OSMOSE.testcases.Product<br>Test method: Verification of contents on Approve<<QuoteId>> screen<br/>
+<a href="#Output-1209290522" onClick='toggleBox("Output-1209290522", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1209290522" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1209290522">
+Click to see Screenshot<br/>
+<a target="_blank" href=Fri_Nov_13_17_22_54_IST_2020.jpg>Screenshot</a><br/>
+<br><br/>
+<br><br/>
+<a target="_blank" href=Fri_Nov_13_17_22_54_IST_2020.jpg><img src=Fri_Nov_13_17_22_54_IST_2020.jpg height=200 width=200></img></a><br/>
+</div>
+</td>
+<td></td>
+<td>113</td>
+<td>com.OSMOSE.testcases.Product@6941827a</td></tr>
+<tr>
+<td title='com.OSMOSE.testcases.Product.VerifyUIonClickQuoteID()'><b>VerifyUIonClickQuoteID</b><br>Test class: com.OSMOSE.testcases.Product<br>Test method: Verification of contents on a particular Quote<br/>
+<a href="#Output-1600818942" onClick='toggleBox("Output-1600818942", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1600818942" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1600818942">
+Click to see Screenshot<br/>
+<a target="_blank" href=Fri_Nov_13_17_17_05_IST_2020.jpg>Screenshot</a><br/>
+<br><br/>
+<br><br/>
+<a target="_blank" href=Fri_Nov_13_17_17_05_IST_2020.jpg><img src=Fri_Nov_13_17_17_05_IST_2020.jpg height=200 width=200></img></a><br/>
+</div>
+</td>
+<td></td>
+<td>4</td>
+<td>com.OSMOSE.testcases.Product@6941827a</td></tr>
+<tr>
+<td title='com.OSMOSE.testcases.Product.adminElementPresent()'><b>adminElementPresent</b><br>Test class: com.OSMOSE.testcases.Product<br>Test method: Verification of the presence of Admin button<br/>
+<a href="#Output-977650730" onClick='toggleBox("Output-977650730", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-977650730" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-977650730">
+Click to see Screenshot<br/>
+<a target="_blank" href=Fri_Nov_13_17_07_29_IST_2020.jpg>Screenshot</a><br/>
+<br><br/>
+<br><br/>
+<a target="_blank" href=Fri_Nov_13_17_07_29_IST_2020.jpg><img src=Fri_Nov_13_17_07_29_IST_2020.jpg height=200 width=200></img></a><br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.OSMOSE.testcases.Product@6941827a</td></tr>
+<tr>
+<td title='com.OSMOSE.testcases.Product.allSixProductPresent()'><b>allSixProductPresent</b><br>Test class: com.OSMOSE.testcases.Product<br>Test method: Verification of the presence of all six products<br/>
+<a href="#Output-295055909" onClick='toggleBox("Output-295055909", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-295055909" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-295055909">
+Click to see Screenshot<br/>
+<a target="_blank" href=Fri_Nov_13_17_07_30_IST_2020.jpg>Screenshot</a><br/>
+<br><br/>
+<br><br/>
+<a target="_blank" href=Fri_Nov_13_17_07_30_IST_2020.jpg><img src=Fri_Nov_13_17_07_30_IST_2020.jpg height=200 width=200></img></a><br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.OSMOSE.testcases.Product@6941827a</td></tr>
+<tr>
+<td title='com.OSMOSE.testcases.Product.catalogElementPresent()'><b>catalogElementPresent</b><br>Test class: com.OSMOSE.testcases.Product<br>Test method: Verification of the presence of Catalog Element<br/>
+<a href="#Output-981487964" onClick='toggleBox("Output-981487964", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-981487964" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-981487964">
+Click to see Screenshot<br/>
+<a target="_blank" href=Fri_Nov_13_17_07_27_IST_2020.jpg>Screenshot</a><br/>
+<br><br/>
+<br><br/>
+<a target="_blank" href=Fri_Nov_13_17_07_27_IST_2020.jpg><img src=Fri_Nov_13_17_07_27_IST_2020.jpg height=200 width=200></img></a><br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.OSMOSE.testcases.Product@6941827a</td></tr>
+<tr>
+<td title='com.OSMOSE.testcases.LoginTest.loginTest()'><b>loginTest</b><br>Test class: com.OSMOSE.testcases.LoginTest<br>Test method: Verify the login functionality<br>Parameters: {password=Qwerty1@, runmode=Y, username=varun.magadiranganath@centurylink.com}<br/>
+<a href="#Output-1662592920" onClick='toggleBox("Output-1662592920", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1662592920" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1662592920">
+Click to see Screenshot<br/>
+<a target="_blank" href=Fri_Nov_13_17_06_25_IST_2020.jpg>Screenshot</a><br/>
+<br><br/>
+<br><br/>
+<a target="_blank" href=Fri_Nov_13_17_06_25_IST_2020.jpg><img src=Fri_Nov_13_17_06_25_IST_2020.jpg height=200 width=200></img></a><br/>
+</div>
+</td>
+<td></td>
+<td>16</td>
+<td>com.OSMOSE.testcases.LoginTest@aeab9a1</td></tr>
+<tr>
+<td title='com.OSMOSE.testcases.Product.openMyQuotesElementPresent()'><b>openMyQuotesElementPresent</b><br>Test class: com.OSMOSE.testcases.Product<br>Test method: Verification of the presence of My Quotes button<br/>
+<a href="#Output-52487168" onClick='toggleBox("Output-52487168", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-52487168" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-52487168">
+Click to see Screenshot<br/>
+<a target="_blank" href=Fri_Nov_13_17_07_28_IST_2020.jpg>Screenshot</a><br/>
+<br><br/>
+<br><br/>
+<a target="_blank" href=Fri_Nov_13_17_07_28_IST_2020.jpg><img src=Fri_Nov_13_17_07_28_IST_2020.jpg height=200 width=200></img></a><br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.OSMOSE.testcases.Product@6941827a</td></tr>
+<tr>
+<td title='com.OSMOSE.testcases.Product.searchElementPresent()'><b>searchElementPresent</b><br>Test class: com.OSMOSE.testcases.Product<br>Test method: Verification of the presence of Search field<br/>
+<a href="#Output-1924966548" onClick='toggleBox("Output-1924966548", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1924966548" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1924966548">
+Click to see Screenshot<br/>
+<a target="_blank" href=Fri_Nov_13_17_07_27_IST_2020.jpg>Screenshot</a><br/>
+<br><br/>
+<br><br/>
+<a target="_blank" href=Fri_Nov_13_17_07_27_IST_2020.jpg><img src=Fri_Nov_13_17_07_27_IST_2020.jpg height=200 width=200></img></a><br/>
+</div>
+</td>
+<td></td>
+<td>50</td>
+<td>com.OSMOSE.testcases.Product@6941827a</td></tr>
+<tr>
+<td title='com.OSMOSE.testcases.Product.shoppingCartElementPresent()'><b>shoppingCartElementPresent</b><br>Test class: com.OSMOSE.testcases.Product<br>Test method: Verification of the presence of Shopping Cart Icon<br/>
+<a href="#Output-507061061" onClick='toggleBox("Output-507061061", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-507061061" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-507061061">
+Click to see Screenshot<br/>
+<a target="_blank" href=Fri_Nov_13_17_07_28_IST_2020.jpg>Screenshot</a><br/>
+<br><br/>
+<br><br/>
+<a target="_blank" href=Fri_Nov_13_17_07_28_IST_2020.jpg><img src=Fri_Nov_13_17_07_28_IST_2020.jpg height=200 width=200></img></a><br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.OSMOSE.testcases.Product@6941827a</td></tr>
+<tr>
+<td title='com.OSMOSE.testcases.Product.sliderItemPresent()'><b>sliderItemPresent</b><br>Test class: com.OSMOSE.testcases.Product<br>Test method: Verification of the presence of Slider items<br/>
+<a href="#Output-474933596" onClick='toggleBox("Output-474933596", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-474933596" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-474933596">
+Click to see Screenshot<br/>
+<a target="_blank" href=Fri_Nov_13_17_07_30_IST_2020.jpg>Screenshot</a><br/>
+<br><br/>
+<br><br/>
+<a target="_blank" href=Fri_Nov_13_17_07_30_IST_2020.jpg><img src=Fri_Nov_13_17_07_30_IST_2020.jpg height=200 width=200></img></a><br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.OSMOSE.testcases.Product@6941827a</td></tr>
+<tr>
+<td title='com.OSMOSE.testcases.Product.verifyAddShoppingCarttext()'><b>verifyAddShoppingCarttext</b><br>Test class: com.OSMOSE.testcases.Product<br>Test method: On the Product Group Details Page, verify the text present<br/>
+<a href="#Output-502066023" onClick='toggleBox("Output-502066023", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-502066023" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-502066023">
+Click to see Screenshot<br/>
+<a target="_blank" href=Fri_Nov_13_17_12_10_IST_2020.jpg>Screenshot</a><br/>
+<br><br/>
+<br><br/>
+<a target="_blank" href=Fri_Nov_13_17_12_10_IST_2020.jpg><img src=Fri_Nov_13_17_12_10_IST_2020.jpg height=200 width=200></img></a><br/>
+</div>
+</td>
+<td></td>
+<td>18</td>
+<td>com.OSMOSE.testcases.Product@6941827a</td></tr>
+<tr>
+<td title='com.OSMOSE.testcases.Product.verifyAddToCartWhileReQuoting()'><b>verifyAddToCartWhileReQuoting</b><br>Test class: com.OSMOSE.testcases.Product<br>Test method: Verification of Add to Cart on the quote screen<br/>
+<a href="#Output-1535276950" onClick='toggleBox("Output-1535276950", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1535276950" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1535276950">
+Click to see Screenshot<br/>
+<a target="_blank" href=Fri_Nov_13_17_29_48_IST_2020.jpg>Screenshot</a><br/>
+<br><br/>
+<br><br/>
+<a target="_blank" href=Fri_Nov_13_17_29_48_IST_2020.jpg><img src=Fri_Nov_13_17_29_48_IST_2020.jpg height=200 width=200></img></a><br/>
+</div>
+</td>
+<td></td>
+<td>71</td>
+<td>com.OSMOSE.testcases.Product@6941827a</td></tr>
+<tr>
+<td title='com.OSMOSE.testcases.Product.verifyCancelwhileREQuoting()'><b>verifyCancelwhileREQuoting</b><br>Test class: com.OSMOSE.testcases.Product<br>Test method: Verification of Cancel action on the quote screen<br/>
+<a href="#Output-1894301721" onClick='toggleBox("Output-1894301721", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1894301721" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1894301721">
+Click to see Screenshot<br/>
+<a target="_blank" href=Fri_Nov_13_17_27_37_IST_2020.jpg>Screenshot</a><br/>
+<br><br/>
+<br><br/>
+<a target="_blank" href=Fri_Nov_13_17_27_37_IST_2020.jpg><img src=Fri_Nov_13_17_27_37_IST_2020.jpg height=200 width=200></img></a><br/>
+</div>
+</td>
+<td></td>
+<td>39</td>
+<td>com.OSMOSE.testcases.Product@6941827a</td></tr>
+<tr>
+<td title='com.OSMOSE.testcases.Product.verifyCartIconCount()'><b>verifyCartIconCount</b><br>Test class: com.OSMOSE.testcases.Product<br>Test method: Verify that shopping cart icon will be displayed with a number indicating the quantity of items in the cart <br/>
+<a href="#Output-1060786847" onClick='toggleBox("Output-1060786847", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1060786847" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1060786847">
+Click to see Screenshot<br/>
+<a target="_blank" href=Fri_Nov_13_17_30_35_IST_2020.jpg>Screenshot</a><br/>
+<br><br/>
+<br><br/>
+<a target="_blank" href=Fri_Nov_13_17_30_35_IST_2020.jpg><img src=Fri_Nov_13_17_30_35_IST_2020.jpg height=200 width=200></img></a><br/>
+</div>
+</td>
+<td></td>
+<td>15</td>
+<td>com.OSMOSE.testcases.Product@6941827a</td></tr>
+<tr>
+<td title='com.OSMOSE.testcases.Product.verifyCategoryFilter()'><b>verifyCategoryFilter</b><br>Test class: com.OSMOSE.testcases.Product<br>Test method: Verification of the presence of Category Filter button<br/>
+<a href="#Output-800493254" onClick='toggleBox("Output-800493254", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-800493254" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-800493254">
+Click to see Screenshot<br/>
+<a target="_blank" href=Fri_Nov_13_17_08_21_IST_2020.jpg>Screenshot</a><br/>
+<br><br/>
+<br><br/>
+<a target="_blank" href=Fri_Nov_13_17_08_21_IST_2020.jpg><img src=Fri_Nov_13_17_08_21_IST_2020.jpg height=200 width=200></img></a><br/>
+</div>
+</td>
+<td></td>
+<td>50</td>
+<td>com.OSMOSE.testcases.Product@6941827a</td></tr>
+<tr>
+<td title='com.OSMOSE.testcases.Product.verifyDeleteProductOnOverlay()'><b>verifyDeleteProductOnOverlay</b><br>Test class: com.OSMOSE.testcases.Product<br>Test method: Verification of deleting the Quantity on ShoppingCart Overlay<br/>
+<a href="#Output-1065002232" onClick='toggleBox("Output-1065002232", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1065002232" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1065002232">
+Click to see Screenshot<br/>
+<a target="_blank" href=Fri_Nov_13_17_33_27_IST_2020.jpg>Screenshot</a><br/>
+<br><br/>
+<br><br/>
+<a target="_blank" href=Fri_Nov_13_17_33_27_IST_2020.jpg><img src=Fri_Nov_13_17_33_27_IST_2020.jpg height=200 width=200></img></a><br/>
+</div>
+</td>
+<td></td>
+<td>10</td>
+<td>com.OSMOSE.testcases.Product@6941827a</td></tr>
+<tr>
+<td title='com.OSMOSE.testcases.Product.verifyExclamationOnMyQuotes()'><b>verifyExclamationOnMyQuotes</b><br>Test class: com.OSMOSE.testcases.Product<br>Test method: Verification of Exclamation Mark on My Quotes for Quote Request<br/>
+<a href="#Output-333820514" onClick='toggleBox("Output-333820514", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-333820514" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-333820514">
+Click to see Screenshot<br/>
+<a target="_blank" href=Fri_Nov_13_17_30_08_IST_2020.jpg>Screenshot</a><br/>
+<br><br/>
+<br><br/>
+<a target="_blank" href=Fri_Nov_13_17_30_08_IST_2020.jpg><img src=Fri_Nov_13_17_30_08_IST_2020.jpg height=200 width=200></img></a><br/>
+</div>
+</td>
+<td></td>
+<td>20</td>
+<td>com.OSMOSE.testcases.Product@6941827a</td></tr>
+<tr>
+<td title='com.OSMOSE.testcases.Product.verifyStatusFilterAll()'><b>verifyStatusFilterAll</b><br>Test class: com.OSMOSE.testcases.Product<br>Test method: Verification of Status filter 'All'<br/>
+<a href="#Output-293285062" onClick='toggleBox("Output-293285062", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-293285062" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-293285062">
+Click to see Screenshot<br/>
+<a target="_blank" href=Fri_Nov_13_17_14_59_IST_2020.jpg>Screenshot</a><br/>
+<br><br/>
+<br><br/>
+<a target="_blank" href=Fri_Nov_13_17_14_59_IST_2020.jpg><img src=Fri_Nov_13_17_14_59_IST_2020.jpg height=200 width=200></img></a><br/>
+</div>
+</td>
+<td></td>
+<td>11</td>
+<td>com.OSMOSE.testcases.Product@6941827a</td></tr>
+<tr>
+<td title='com.OSMOSE.testcases.Product.verifyStatusFilterCancelled()'><b>verifyStatusFilterCancelled</b><br>Test class: com.OSMOSE.testcases.Product<br>Test method: Verification of Status filter 'Cancelled'<br/>
+<a href="#Output-1307525827" onClick='toggleBox("Output-1307525827", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1307525827" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1307525827">
+Click to see Screenshot<br/>
+<a target="_blank" href=Fri_Nov_13_17_16_18_IST_2020.jpg>Screenshot</a><br/>
+<br><br/>
+<br><br/>
+<a target="_blank" href=Fri_Nov_13_17_16_18_IST_2020.jpg><img src=Fri_Nov_13_17_16_18_IST_2020.jpg height=200 width=200></img></a><br/>
+</div>
+</td>
+<td></td>
+<td>15</td>
+<td>com.OSMOSE.testcases.Product@6941827a</td></tr>
+<tr>
+<td title='com.OSMOSE.testcases.Product.verifyStatusFilterExpired()'><b>verifyStatusFilterExpired</b><br>Test class: com.OSMOSE.testcases.Product<br>Test method: Verification of Status filter 'Expired'<br/>
+<a href="#Output-1634001207" onClick='toggleBox("Output-1634001207", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1634001207" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1634001207">
+Click to see Screenshot<br/>
+<a target="_blank" href=Fri_Nov_13_17_15_14_IST_2020.jpg>Screenshot</a><br/>
+<br><br/>
+<br><br/>
+<a target="_blank" href=Fri_Nov_13_17_15_14_IST_2020.jpg><img src=Fri_Nov_13_17_15_14_IST_2020.jpg height=200 width=200></img></a><br/>
+</div>
+</td>
+<td></td>
+<td>13</td>
+<td>com.OSMOSE.testcases.Product@6941827a</td></tr>
+<tr>
+<td title='com.OSMOSE.testcases.Product.verifyStatusFilterOrderRequested()'><b>verifyStatusFilterOrderRequested</b><br>Test class: com.OSMOSE.testcases.Product<br>Test method: Verification of Status filter 'Order Requested'<br/>
+<a href="#Output-637365534" onClick='toggleBox("Output-637365534", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-637365534" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-637365534">
+Click to see Screenshot<br/>
+<a target="_blank" href=Fri_Nov_13_17_16_32_IST_2020.jpg>Screenshot</a><br/>
+<br><br/>
+<br><br/>
+<a target="_blank" href=Fri_Nov_13_17_16_32_IST_2020.jpg><img src=Fri_Nov_13_17_16_32_IST_2020.jpg height=200 width=200></img></a><br/>
+</div>
+</td>
+<td></td>
+<td>13</td>
+<td>com.OSMOSE.testcases.Product@6941827a</td></tr>
+<tr>
+<td title='com.OSMOSE.testcases.Product.verifyStatusFilterOrdered()'><b>verifyStatusFilterOrdered</b><br>Test class: com.OSMOSE.testcases.Product<br>Test method: Verification of Status filter 'Ordered'<br/>
+<a href="#Output-651431031" onClick='toggleBox("Output-651431031", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-651431031" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-651431031">
+Click to see Screenshot<br/>
+<a target="_blank" href=Fri_Nov_13_17_15_30_IST_2020.jpg>Screenshot</a><br/>
+<br><br/>
+<br><br/>
+<a target="_blank" href=Fri_Nov_13_17_15_30_IST_2020.jpg><img src=Fri_Nov_13_17_15_30_IST_2020.jpg height=200 width=200></img></a><br/>
+</div>
+</td>
+<td></td>
+<td>15</td>
+<td>com.OSMOSE.testcases.Product@6941827a</td></tr>
+<tr>
+<td title='com.OSMOSE.testcases.Product.verifyStatusFilterQuotePending()'><b>verifyStatusFilterQuotePending</b><br>Test class: com.OSMOSE.testcases.Product<br>Test method: Verification of Status filter 'Quote Pending'<br/>
+<a href="#Output-496259008" onClick='toggleBox("Output-496259008", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-496259008" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-496259008">
+Click to see Screenshot<br/>
+<a target="_blank" href=Fri_Nov_13_17_16_02_IST_2020.jpg>Screenshot</a><br/>
+<br><br/>
+<br><br/>
+<a target="_blank" href=Fri_Nov_13_17_16_02_IST_2020.jpg><img src=Fri_Nov_13_17_16_02_IST_2020.jpg height=200 width=200></img></a><br/>
+</div>
+</td>
+<td></td>
+<td>15</td>
+<td>com.OSMOSE.testcases.Product@6941827a</td></tr>
+<tr>
+<td title='com.OSMOSE.testcases.Product.verifyStatusFilterQuoted()'><b>verifyStatusFilterQuoted</b><br>Test class: com.OSMOSE.testcases.Product<br>Test method: Verification of Status filter 'Quoted'<br/>
+<a href="#Output-969407243" onClick='toggleBox("Output-969407243", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-969407243" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-969407243">
+Click to see Screenshot<br/>
+<a target="_blank" href=Fri_Nov_13_17_15_46_IST_2020.jpg>Screenshot</a><br/>
+<br><br/>
+<br><br/>
+<a target="_blank" href=Fri_Nov_13_17_15_46_IST_2020.jpg><img src=Fri_Nov_13_17_15_46_IST_2020.jpg height=200 width=200></img></a><br/>
+</div>
+</td>
+<td></td>
+<td>15</td>
+<td>com.OSMOSE.testcases.Product@6941827a</td></tr>
+<tr>
+<td title='com.OSMOSE.testcases.Product.verifySubmitwhileREQuoting()'><b>verifySubmitwhileREQuoting</b><br>Test class: com.OSMOSE.testcases.Product<br>Test method: Verification of submission action on the quote screen<br/>
+<a href="#Output-1560500918" onClick='toggleBox("Output-1560500918", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1560500918" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1560500918">
+Click to see Screenshot<br/>
+<a target="_blank" href=Fri_Nov_13_17_28_36_IST_2020.jpg>Screenshot</a><br/>
+<br><br/>
+<br><br/>
+<a target="_blank" href=Fri_Nov_13_17_28_36_IST_2020.jpg><img src=Fri_Nov_13_17_28_36_IST_2020.jpg height=200 width=200></img></a><br/>
+</div>
+</td>
+<td></td>
+<td>58</td>
+<td>com.OSMOSE.testcases.Product@6941827a</td></tr>
+<tr>
+<td title='com.OSMOSE.testcases.Product.verifyThankyouPopup()'><b>verifyThankyouPopup</b><br>Test class: com.OSMOSE.testcases.Product<br>Test method: Verification of Thank you pop after approving the Quoted Request<br/>
+<a href="#Output-1685759068" onClick='toggleBox("Output-1685759068", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1685759068" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1685759068">
+Click to see Screenshot<br/>
+<a target="_blank" href=Fri_Nov_13_17_26_58_IST_2020.jpg>Screenshot</a><br/>
+<br><br/>
+<br><br/>
+<a target="_blank" href=Fri_Nov_13_17_26_58_IST_2020.jpg><img src=Fri_Nov_13_17_26_58_IST_2020.jpg height=200 width=200></img></a><br/>
+</div>
+</td>
+<td></td>
+<td>124</td>
+<td>com.OSMOSE.testcases.Product@6941827a</td></tr>
+<tr>
+<td title='com.OSMOSE.testcases.Product.verifyTheProductLink()'><b>verifyTheProductLink</b><br>Test class: com.OSMOSE.testcases.Product<br>Test method: Verification of the Products Link on the Home Page<br>Parameters: {password=Qwerty1@, runmode=Y, username=varun.magadiranganath@centurylink.com}<br/>
 <a href="#Output-1967432164" onClick='toggleBox("Output-1967432164", this, "Show output", "Hide output");'>Show output</a>
 
 <a href="#Output-1967432164" onClick="toggleAllBoxes();">Show all outputs</a>
 <div class='log' id="Output-1967432164">
 Click to see Screenshot<br/>
-<a target="_blank" href=Fri_Aug_28_11_20_00_IST_2020.jpg>Screenshot</a><br/>
+<a target="_blank" href=Fri_Nov_13_17_06_37_IST_2020.jpg>Screenshot</a><br/>
 <br><br/>
 <br><br/>
-<a target="_blank" href=Fri_Aug_28_11_20_00_IST_2020.jpg><img src=Fri_Aug_28_11_20_00_IST_2020.jpg height=200 width=200></img></a><br/>
+<a target="_blank" href=Fri_Nov_13_17_06_37_IST_2020.jpg><img src=Fri_Nov_13_17_06_37_IST_2020.jpg height=200 width=200></img></a><br/>
 </div>
 </td>
 <td></td>
-<td>0</td>
-<td>com.OSMOSE.testcases.OULogin@62f68dff</td></tr>
-<tr>
-<td title='com.OSMOSE.testcases.OULogin.verifyDETAILSANDREGISTRATION()'><b>verifyDETAILSANDREGISTRATION</b><br>Test class: com.OSMOSE.testcases.OULogin<br>Test method: Verify that user is able to click on 'Details and Registration' and enter details<br/>
-<a href="#Output-1925059423" onClick='toggleBox("Output-1925059423", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-1925059423" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1925059423">
-Click to see Screenshot<br/>
-<a target="_blank" href=Fri_Aug_28_11_22_08_IST_2020.jpg>Screenshot</a><br/>
-<br><br/>
-<br><br/>
-<a target="_blank" href=Fri_Aug_28_11_22_08_IST_2020.jpg><img src=Fri_Aug_28_11_22_08_IST_2020.jpg height=200 width=200></img></a><br/>
-</div>
-</td>
-<td></td>
-<td>13</td>
-<td>com.OSMOSE.testcases.OULogin@62f68dff</td></tr>
-<tr>
-<td title='com.OSMOSE.testcases.Product.verifyDeleteProductOnOverlay()'><b>verifyDeleteProductOnOverlay</b><br>Test class: com.OSMOSE.testcases.Product<br>Test method: Verification of deleting the Quantity on ShoppingCart Overlay<br/>
-<a href="#Output-1866834685" onClick='toggleBox("Output-1866834685", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-1866834685" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1866834685">
-Click to see Screenshot<br/>
-<a target="_blank" href=Fri_Aug_28_11_53_41_IST_2020.jpg>Screenshot</a><br/>
-<br><br/>
-<br><br/>
-<a target="_blank" href=Fri_Aug_28_11_53_41_IST_2020.jpg><img src=Fri_Aug_28_11_53_41_IST_2020.jpg height=200 width=200></img></a><br/>
-</div>
-</td>
-<td></td>
-<td>9</td>
-<td>com.OSMOSE.testcases.Product@1c6804cd</td></tr>
-<tr>
-<td title='com.OSMOSE.testcases.Product.verifyExclamationOnMyQuotes()'><b>verifyExclamationOnMyQuotes</b><br>Test class: com.OSMOSE.testcases.Product<br>Test method: Verification of Exclamation Mark on My Quotes for Quote Request<br/>
-<a href="#Output-9714933" onClick='toggleBox("Output-9714933", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-9714933" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-9714933">
-Click to see Screenshot<br/>
-<a target="_blank" href=Fri_Aug_28_11_50_24_IST_2020.jpg>Screenshot</a><br/>
-<br><br/>
-<br><br/>
-<a target="_blank" href=Fri_Aug_28_11_50_24_IST_2020.jpg><img src=Fri_Aug_28_11_50_24_IST_2020.jpg height=200 width=200></img></a><br/>
-</div>
-</td>
-<td></td>
-<td>21</td>
-<td>com.OSMOSE.testcases.Product@1c6804cd</td></tr>
-<tr>
-<td title='com.OSMOSE.testcases.OULogin.verifyHyperlinks()'><b>verifyHyperlinks</b><br>Test class: com.OSMOSE.testcases.OULogin<br>Test method: Verify the hyperlinks on Osmose University Card<br/>
-<a href="#Output-710220387" onClick='toggleBox("Output-710220387", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-710220387" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-710220387">
-Click to see Screenshot<br/>
-<a target="_blank" href=Fri_Aug_28_11_20_01_IST_2020.jpg>Screenshot</a><br/>
-<br><br/>
-<br><br/>
-<a target="_blank" href=Fri_Aug_28_11_20_01_IST_2020.jpg><img src=Fri_Aug_28_11_20_01_IST_2020.jpg height=200 width=200></img></a><br/>
-</div>
-</td>
-<td></td>
-<td>0</td>
-<td>com.OSMOSE.testcases.OULogin@62f68dff</td></tr>
-<tr>
-<td title='com.OSMOSE.testcases.OULogin.verifyKnowledgeBaseCard()'><b>verifyKnowledgeBaseCard</b><br>Test class: com.OSMOSE.testcases.OULogin<br>Test method: Verify the Knowledge Base card on home page<br/>
-<a href="#Output-1658487789" onClick='toggleBox("Output-1658487789", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-1658487789" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1658487789">
-Click to see Screenshot<br/>
-<a target="_blank" href=Fri_Aug_28_11_19_59_IST_2020.jpg>Screenshot</a><br/>
-<br><br/>
-<br><br/>
-<a target="_blank" href=Fri_Aug_28_11_19_59_IST_2020.jpg><img src=Fri_Aug_28_11_19_59_IST_2020.jpg height=200 width=200></img></a><br/>
-</div>
-</td>
-<td></td>
-<td>0</td>
-<td>com.OSMOSE.testcases.OULogin@62f68dff</td></tr>
-<tr>
-<td title='com.OSMOSE.testcases.OULogin.verifyLiveEventCLick()'><b>verifyLiveEventCLick</b><br>Test class: com.OSMOSE.testcases.OULogin<br>Test method: Verify that Live Events link is clickable<br/>
-<a href="#Output-828241083" onClick='toggleBox("Output-828241083", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-828241083" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-828241083">
-Click to see Screenshot<br/>
-<a target="_blank" href=Fri_Aug_28_11_20_32_IST_2020.jpg>Screenshot</a><br/>
-<br><br/>
-<br><br/>
-<a target="_blank" href=Fri_Aug_28_11_20_32_IST_2020.jpg><img src=Fri_Aug_28_11_20_32_IST_2020.jpg height=200 width=200></img></a><br/>
-</div>
-</td>
-<td></td>
-<td>12</td>
-<td>com.OSMOSE.testcases.OULogin@62f68dff</td></tr>
-<tr>
-<td title='com.OSMOSE.testcases.OULogin.verifyLiveEventsJUS()'><b>verifyLiveEventsJUS</b><br>Test class: com.OSMOSE.testcases.OULogin<br>Test method: Verify the text 'Joint Use Seminar' on OsmoseUniversity page<br/>
-<a href="#Output-23053378" onClick='toggleBox("Output-23053378", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-23053378" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-23053378">
-Click to see Screenshot<br/>
-<a target="_blank" href=Fri_Aug_28_11_21_40_IST_2020.jpg>Screenshot</a><br/>
-<br><br/>
-<br><br/>
-<a target="_blank" href=Fri_Aug_28_11_21_40_IST_2020.jpg><img src=Fri_Aug_28_11_21_40_IST_2020.jpg height=200 width=200></img></a><br/>
-</div>
-</td>
-<td></td>
-<td>13</td>
-<td>com.OSMOSE.testcases.OULogin@62f68dff</td></tr>
-<tr>
-<td title='com.OSMOSE.testcases.OULogin.verifyLiveEventsSTS()'><b>verifyLiveEventsSTS</b><br>Test class: com.OSMOSE.testcases.OULogin<br>Test method: Verify the text 'Steel Technical Seminar' OsmoseUniversity page<br/>
-<a href="#Output-1745608181" onClick='toggleBox("Output-1745608181", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-1745608181" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1745608181">
-Click to see Screenshot<br/>
-<a target="_blank" href=Fri_Aug_28_11_21_26_IST_2020.jpg>Screenshot</a><br/>
-<br><br/>
-<br><br/>
-<a target="_blank" href=Fri_Aug_28_11_21_26_IST_2020.jpg><img src=Fri_Aug_28_11_21_26_IST_2020.jpg height=200 width=200></img></a><br/>
-</div>
-</td>
-<td></td>
-<td>13</td>
-<td>com.OSMOSE.testcases.OULogin@62f68dff</td></tr>
-<tr>
-<td title='com.OSMOSE.testcases.OULogin.verifyLiveEventsWPTS()'><b>verifyLiveEventsWPTS</b><br>Test class: com.OSMOSE.testcases.OULogin<br>Test method: Verify the text 'Wood Pole Technical Seminar' on OsmoseUniversity page<br/>
-<a href="#Output-828610686" onClick='toggleBox("Output-828610686", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-828610686" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-828610686">
-Click to see Screenshot<br/>
-<a target="_blank" href=Fri_Aug_28_11_21_54_IST_2020.jpg>Screenshot</a><br/>
-<br><br/>
-<br><br/>
-<a target="_blank" href=Fri_Aug_28_11_21_54_IST_2020.jpg><img src=Fri_Aug_28_11_21_54_IST_2020.jpg height=200 width=200></img></a><br/>
-</div>
-</td>
-<td></td>
-<td>13</td>
-<td>com.OSMOSE.testcases.OULogin@62f68dff</td></tr>
-<tr>
-<td title='com.OSMOSE.testcases.OULogin.verifyOCalcClick()'><b>verifyOCalcClick</b><br>Test class: com.OSMOSE.testcases.OULogin<br>Test method: Verify that O-CALC TRAINING link is clickable<br/>
-<a href="#Output-995631377" onClick='toggleBox("Output-995631377", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-995631377" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-995631377">
-Click to see Screenshot<br/>
-<a target="_blank" href=Fri_Aug_28_11_20_58_IST_2020.jpg>Screenshot</a><br/>
-<br><br/>
-<br><br/>
-<a target="_blank" href=Fri_Aug_28_11_20_58_IST_2020.jpg><img src=Fri_Aug_28_11_20_58_IST_2020.jpg height=200 width=200></img></a><br/>
-</div>
-</td>
-<td></td>
-<td>12</td>
-<td>com.OSMOSE.testcases.OULogin@62f68dff</td></tr>
-<tr>
-<td title='com.OSMOSE.testcases.OULogin.verifyOClacTrainingButton()'><b>verifyOClacTrainingButton</b><br>Test class: com.OSMOSE.testcases.OULogin<br>Test method: Verify that O-CALC Training button is displayed<br/>
-<a href="#Output-399149970" onClick='toggleBox("Output-399149970", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-399149970" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-399149970">
-Click to see Screenshot<br/>
-<a target="_blank" href=Fri_Aug_28_11_22_35_IST_2020.jpg>Screenshot</a><br/>
-<br><br/>
-<br><br/>
-<a target="_blank" href=Fri_Aug_28_11_22_35_IST_2020.jpg><img src=Fri_Aug_28_11_22_35_IST_2020.jpg height=200 width=200></img></a><br/>
-</div>
-</td>
-<td></td>
-<td>13</td>
-<td>com.OSMOSE.testcases.OULogin@62f68dff</td></tr>
-<tr>
-<td title='com.OSMOSE.testcases.OULogin.verifyOUCard()'><b>verifyOUCard</b><br>Test class: com.OSMOSE.testcases.OULogin<br>Test method: Verify the Osmose University card on home page<br/>
-<a href="#Output-5255258" onClick='toggleBox("Output-5255258", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-5255258" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-5255258">
-Click to see Screenshot<br/>
-<a target="_blank" href=Fri_Aug_28_11_19_57_IST_2020.jpg>Screenshot</a><br/>
-<br><br/>
-<br><br/>
-<a target="_blank" href=Fri_Aug_28_11_19_57_IST_2020.jpg><img src=Fri_Aug_28_11_19_57_IST_2020.jpg height=200 width=200></img></a><br/>
-</div>
-</td>
-<td></td>
-<td>0</td>
-<td>com.OSMOSE.testcases.OULogin@62f68dff</td></tr>
-<tr>
-<td title='com.OSMOSE.testcases.OULogin.verifyOsmoseUniversityNavigationClick()'><b>verifyOsmoseUniversityNavigationClick</b><br>Test class: com.OSMOSE.testcases.OULogin<br>Test method: Verify the click on Osmose University Navigation<br/>
-<a href="#Output-855724043" onClick='toggleBox("Output-855724043", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-855724043" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-855724043">
-Click to see Screenshot<br/>
-<a target="_blank" href=Fri_Aug_28_11_20_18_IST_2020.jpg>Screenshot</a><br/>
-<br><br/>
-<br><br/>
-<a target="_blank" href=Fri_Aug_28_11_20_18_IST_2020.jpg><img src=Fri_Aug_28_11_20_18_IST_2020.jpg height=200 width=200></img></a><br/>
-</div>
-</td>
-<td></td>
-<td>15</td>
-<td>com.OSMOSE.testcases.OULogin@62f68dff</td></tr>
-<tr>
-<td title='com.OSMOSE.testcases.OULogin.verifyProductCard()'><b>verifyProductCard</b><br>Test class: com.OSMOSE.testcases.OULogin<br>Test method: Verify the Products card on home page<br/>
-<a href="#Output-203409950" onClick='toggleBox("Output-203409950", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-203409950" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-203409950">
-Click to see Screenshot<br/>
-<a target="_blank" href=Fri_Aug_28_11_19_59_IST_2020.jpg>Screenshot</a><br/>
-<br><br/>
-<br><br/>
-<a target="_blank" href=Fri_Aug_28_11_19_59_IST_2020.jpg><img src=Fri_Aug_28_11_19_59_IST_2020.jpg height=200 width=200></img></a><br/>
-</div>
-</td>
-<td></td>
-<td>0</td>
-<td>com.OSMOSE.testcases.OULogin@62f68dff</td></tr>
-<tr>
-<td title='com.OSMOSE.testcases.Product.verifyStatusFilterAll()'><b>verifyStatusFilterAll</b><br>Test class: com.OSMOSE.testcases.Product<br>Test method: Verification of Status filter 'All'<br/>
-<a href="#Output-779857934" onClick='toggleBox("Output-779857934", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-779857934" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-779857934">
-Click to see Screenshot<br/>
-<a target="_blank" href=Fri_Aug_28_11_31_38_IST_2020.jpg>Screenshot</a><br/>
-<br><br/>
-<br><br/>
-<a target="_blank" href=Fri_Aug_28_11_31_38_IST_2020.jpg><img src=Fri_Aug_28_11_31_38_IST_2020.jpg height=200 width=200></img></a><br/>
-</div>
-</td>
-<td></td>
-<td>27</td>
-<td>com.OSMOSE.testcases.Product@1c6804cd</td></tr>
-<tr>
-<td title='com.OSMOSE.testcases.Product.verifyStatusFilterCancelled()'><b>verifyStatusFilterCancelled</b><br>Test class: com.OSMOSE.testcases.Product<br>Test method: Verification of Status filter 'Cancelled'<br/>
-<a href="#Output-1940974851" onClick='toggleBox("Output-1940974851", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-1940974851" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1940974851">
-Click to see Screenshot<br/>
-<a target="_blank" href=Fri_Aug_28_11_35_06_IST_2020.jpg>Screenshot</a><br/>
-<br><br/>
-<br><br/>
-<a target="_blank" href=Fri_Aug_28_11_35_06_IST_2020.jpg><img src=Fri_Aug_28_11_35_06_IST_2020.jpg height=200 width=200></img></a><br/>
-</div>
-</td>
-<td></td>
-<td>42</td>
-<td>com.OSMOSE.testcases.Product@1c6804cd</td></tr>
-<tr>
-<td title='com.OSMOSE.testcases.Product.verifyStatusFilterExpired()'><b>verifyStatusFilterExpired</b><br>Test class: com.OSMOSE.testcases.Product<br>Test method: Verification of Status filter 'Expired'<br/>
-<a href="#Output-819027530" onClick='toggleBox("Output-819027530", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-819027530" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-819027530">
-Click to see Screenshot<br/>
-<a target="_blank" href=Fri_Aug_28_11_32_12_IST_2020.jpg>Screenshot</a><br/>
-<br><br/>
-<br><br/>
-<a target="_blank" href=Fri_Aug_28_11_32_12_IST_2020.jpg><img src=Fri_Aug_28_11_32_12_IST_2020.jpg height=200 width=200></img></a><br/>
-</div>
-</td>
-<td></td>
-<td>32</td>
-<td>com.OSMOSE.testcases.Product@1c6804cd</td></tr>
-<tr>
-<td title='com.OSMOSE.testcases.Product.verifyStatusFilterOrderRequested()'><b>verifyStatusFilterOrderRequested</b><br>Test class: com.OSMOSE.testcases.Product<br>Test method: Verification of Status filter 'Order Requested'<br/>
-<a href="#Output-1028909174" onClick='toggleBox("Output-1028909174", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-1028909174" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1028909174">
-Click to see Screenshot<br/>
-<a target="_blank" href=Fri_Aug_28_11_35_44_IST_2020.jpg>Screenshot</a><br/>
-<br><br/>
-<br><br/>
-<a target="_blank" href=Fri_Aug_28_11_35_44_IST_2020.jpg><img src=Fri_Aug_28_11_35_44_IST_2020.jpg height=200 width=200></img></a><br/>
-</div>
-</td>
-<td></td>
-<td>37</td>
-<td>com.OSMOSE.testcases.Product@1c6804cd</td></tr>
-<tr>
-<td title='com.OSMOSE.testcases.Product.verifyStatusFilterOrdered()'><b>verifyStatusFilterOrdered</b><br>Test class: com.OSMOSE.testcases.Product<br>Test method: Verification of Status filter 'Ordered'<br/>
-<a href="#Output-1214459753" onClick='toggleBox("Output-1214459753", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-1214459753" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1214459753">
-Click to see Screenshot<br/>
-<a target="_blank" href=Fri_Aug_28_11_32_55_IST_2020.jpg>Screenshot</a><br/>
-<br><br/>
-<br><br/>
-<a target="_blank" href=Fri_Aug_28_11_32_55_IST_2020.jpg><img src=Fri_Aug_28_11_32_55_IST_2020.jpg height=200 width=200></img></a><br/>
-</div>
-</td>
-<td></td>
-<td>41</td>
-<td>com.OSMOSE.testcases.Product@1c6804cd</td></tr>
-<tr>
-<td title='com.OSMOSE.testcases.Product.verifyStatusFilterQuotePending()'><b>verifyStatusFilterQuotePending</b><br>Test class: com.OSMOSE.testcases.Product<br>Test method: Verification of Status filter 'Quote Pending'<br/>
-<a href="#Output-1775428887" onClick='toggleBox("Output-1775428887", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-1775428887" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1775428887">
-Click to see Screenshot<br/>
-<a target="_blank" href=Fri_Aug_28_11_34_23_IST_2020.jpg>Screenshot</a><br/>
-<br><br/>
-<br><br/>
-<a target="_blank" href=Fri_Aug_28_11_34_23_IST_2020.jpg><img src=Fri_Aug_28_11_34_23_IST_2020.jpg height=200 width=200></img></a><br/>
-</div>
-</td>
-<td></td>
-<td>42</td>
-<td>com.OSMOSE.testcases.Product@1c6804cd</td></tr>
-<tr>
-<td title='com.OSMOSE.testcases.Product.verifyStatusFilterQuoted()'><b>verifyStatusFilterQuoted</b><br>Test class: com.OSMOSE.testcases.Product<br>Test method: Verification of Status filter 'Quoted'<br/>
-<a href="#Output-17850893" onClick='toggleBox("Output-17850893", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-17850893" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-17850893">
-Click to see Screenshot<br/>
-<a target="_blank" href=Fri_Aug_28_11_33_40_IST_2020.jpg>Screenshot</a><br/>
-<br><br/>
-<br><br/>
-<a target="_blank" href=Fri_Aug_28_11_33_40_IST_2020.jpg><img src=Fri_Aug_28_11_33_40_IST_2020.jpg height=200 width=200></img></a><br/>
-</div>
-</td>
-<td></td>
-<td>43</td>
-<td>com.OSMOSE.testcases.Product@1c6804cd</td></tr>
-<tr>
-<td title='com.OSMOSE.testcases.Product.verifySubmitwhileREQuoting()'><b>verifySubmitwhileREQuoting</b><br>Test class: com.OSMOSE.testcases.Product<br>Test method: Verification of submission action on the quote screen<br/>
-<a href="#Output-2136450980" onClick='toggleBox("Output-2136450980", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-2136450980" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-2136450980">
-Click to see Screenshot<br/>
-<a target="_blank" href=Fri_Aug_28_11_48_44_IST_2020.jpg>Screenshot</a><br/>
-<br><br/>
-<br><br/>
-<a target="_blank" href=Fri_Aug_28_11_48_44_IST_2020.jpg><img src=Fri_Aug_28_11_48_44_IST_2020.jpg height=200 width=200></img></a><br/>
-</div>
-</td>
-<td></td>
-<td>61</td>
-<td>com.OSMOSE.testcases.Product@1c6804cd</td></tr>
-<tr>
-<td title='com.OSMOSE.testcases.Product.verifyThankyouPopup()'><b>verifyThankyouPopup</b><br>Test class: com.OSMOSE.testcases.Product<br>Test method: Verification of Thank you pop after approving the Quoted Request<br/>
-<a href="#Output-567577664" onClick='toggleBox("Output-567577664", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-567577664" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-567577664">
-Click to see Screenshot<br/>
-<a target="_blank" href=Fri_Aug_28_11_46_58_IST_2020.jpg>Screenshot</a><br/>
-<br><br/>
-<br><br/>
-<a target="_blank" href=Fri_Aug_28_11_46_58_IST_2020.jpg><img src=Fri_Aug_28_11_46_58_IST_2020.jpg height=200 width=200></img></a><br/>
-</div>
-</td>
-<td></td>
-<td>130</td>
-<td>com.OSMOSE.testcases.Product@1c6804cd</td></tr>
-<tr>
-<td title='com.OSMOSE.testcases.Product.verifyTheProductLink()'><b>verifyTheProductLink</b><br>Test class: com.OSMOSE.testcases.Product<br>Test method: Verification of the Products Link on the Home Page<br>Parameters: {password=Hyde@2317, runmode=Y, username=rajesh.yadav@centurylink.com}<br/>
-<a href="#Output-1320869181" onClick='toggleBox("Output-1320869181", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-1320869181" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1320869181">
-Click to see Screenshot<br/>
-<a target="_blank" href=Fri_Aug_28_11_22_39_IST_2020.jpg>Screenshot</a><br/>
-<br><br/>
-<br><br/>
-<a target="_blank" href=Fri_Aug_28_11_22_39_IST_2020.jpg><img src=Fri_Aug_28_11_22_39_IST_2020.jpg height=200 width=200></img></a><br/>
-</div>
-</td>
-<td></td>
-<td>3</td>
-<td>com.OSMOSE.testcases.Product@1c6804cd</td></tr>
+<td>10</td>
+<td>com.OSMOSE.testcases.Product@6941827a</td></tr>
 <tr>
 <td title='com.OSMOSE.testcases.Product.verifyTheSearchCrossButton()'><b>verifyTheSearchCrossButton</b><br>Test class: com.OSMOSE.testcases.Product<br>Test method: Verify that User clicks on the Slider icon and Click on Crosss icon<br>Parameters: {SearchItem=Pole}<br/>
-<a href="#Output-1967667267" onClick='toggleBox("Output-1967667267", this, "Show output", "Hide output");'>Show output</a>
+<a href="#Output-1873189623" onClick='toggleBox("Output-1873189623", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-1967667267" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1967667267">
+<a href="#Output-1873189623" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1873189623">
 Click to see Screenshot<br/>
-<a target="_blank" href=Fri_Aug_28_11_27_25_IST_2020.jpg>Screenshot</a><br/>
+<a target="_blank" href=Fri_Nov_13_17_11_27_IST_2020.jpg>Screenshot</a><br/>
 <br><br/>
 <br><br/>
-<a target="_blank" href=Fri_Aug_28_11_27_25_IST_2020.jpg><img src=Fri_Aug_28_11_27_25_IST_2020.jpg height=200 width=200></img></a><br/>
+<a target="_blank" href=Fri_Nov_13_17_11_27_IST_2020.jpg><img src=Fri_Nov_13_17_11_27_IST_2020.jpg height=200 width=200></img></a><br/>
 </div>
 </td>
 <td></td>
 <td>14</td>
-<td>com.OSMOSE.testcases.Product@1c6804cd</td></tr>
+<td>com.OSMOSE.testcases.Product@6941827a</td></tr>
 <tr>
 <td title='com.OSMOSE.testcases.Product.verifyTheSearchFullname()'><b>verifyTheSearchFullname</b><br>Test class: com.OSMOSE.testcases.Product<br>Test method: Verify that User clicks on the Slider icon and search for full name Pole Restoration<br>Parameters: {SearchItem=Pole Restoration}<br/>
-<a href="#Output-1594981181" onClick='toggleBox("Output-1594981181", this, "Show output", "Hide output");'>Show output</a>
+<a href="#Output-925936450" onClick='toggleBox("Output-925936450", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-1594981181" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1594981181">
+<a href="#Output-925936450" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-925936450">
 Click to see Screenshot<br/>
-<a target="_blank" href=Fri_Aug_28_11_26_47_IST_2020.jpg>Screenshot</a><br/>
+<a target="_blank" href=Fri_Nov_13_17_10_49_IST_2020.jpg>Screenshot</a><br/>
 <br><br/>
 <br><br/>
-<a target="_blank" href=Fri_Aug_28_11_26_47_IST_2020.jpg><img src=Fri_Aug_28_11_26_47_IST_2020.jpg height=200 width=200></img></a><br/>
+<a target="_blank" href=Fri_Nov_13_17_10_49_IST_2020.jpg><img src=Fri_Nov_13_17_10_49_IST_2020.jpg height=200 width=200></img></a><br/>
 </div>
 </td>
 <td></td>
-<td>13</td>
-<td>com.OSMOSE.testcases.Product@1c6804cd</td></tr>
+<td>12</td>
+<td>com.OSMOSE.testcases.Product@6941827a</td></tr>
 <tr>
 <td title='com.OSMOSE.testcases.Product.verifyTheSearchOneAlphabet()'><b>verifyTheSearchOneAlphabet</b><br>Test class: com.OSMOSE.testcases.Product<br>Test method: Verify that User clicks on the Slider icon and search for One Alphabeted like H<br>Parameters: {SearchItem=H}<br/>
-<a href="#Output-1064456966" onClick='toggleBox("Output-1064456966", this, "Show output", "Hide output");'>Show output</a>
+<a href="#Output-1523359711" onClick='toggleBox("Output-1523359711", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-1064456966" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1064456966">
+<a href="#Output-1523359711" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1523359711">
 Click to see Screenshot<br/>
-<a target="_blank" href=Fri_Aug_28_11_27_10_IST_2020.jpg>Screenshot</a><br/>
+<a target="_blank" href=Fri_Nov_13_17_11_12_IST_2020.jpg>Screenshot</a><br/>
 <br><br/>
 <br><br/>
-<a target="_blank" href=Fri_Aug_28_11_27_10_IST_2020.jpg><img src=Fri_Aug_28_11_27_10_IST_2020.jpg height=200 width=200></img></a><br/>
+<a target="_blank" href=Fri_Nov_13_17_11_12_IST_2020.jpg><img src=Fri_Nov_13_17_11_12_IST_2020.jpg height=200 width=200></img></a><br/>
 </div>
 </td>
 <td></td>
 <td>22</td>
-<td>com.OSMOSE.testcases.Product@1c6804cd</td></tr>
+<td>com.OSMOSE.testcases.Product@6941827a</td></tr>
 <tr>
 <td title='com.OSMOSE.testcases.Product.verifyTheSearchfirstname()'><b>verifyTheSearchfirstname</b><br>Test class: com.OSMOSE.testcases.Product<br>Test method: Verify that User clicks on the Slider icon and search for firstname Pole<br>Parameters: {SearchItem=Pole}<br/>
-<a href="#Output-1021656938" onClick='toggleBox("Output-1021656938", this, "Show output", "Hide output");'>Show output</a>
+<a href="#Output-1880102535" onClick='toggleBox("Output-1880102535", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-1021656938" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1021656938">
+<a href="#Output-1880102535" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1880102535">
 Click to see Screenshot<br/>
-<a target="_blank" href=Fri_Aug_28_11_26_33_IST_2020.jpg>Screenshot</a><br/>
+<a target="_blank" href=Fri_Nov_13_17_10_36_IST_2020.jpg>Screenshot</a><br/>
 <br><br/>
 <br><br/>
-<a target="_blank" href=Fri_Aug_28_11_26_33_IST_2020.jpg><img src=Fri_Aug_28_11_26_33_IST_2020.jpg height=200 width=200></img></a><br/>
-</div>
-</td>
-<td></td>
-<td>14</td>
-<td>com.OSMOSE.testcases.Product@1c6804cd</td></tr>
-<tr>
-<td title='com.OSMOSE.testcases.Product.verifyTheValidationmessage()'><b>verifyTheValidationmessage</b><br>Test class: com.OSMOSE.testcases.Product<br>Test method: Verify that User clicks on the Slider icon and validate the validation message is shown wrong input<br>Parameters: {SearchItem=               }<br/>
-<a href="#Output-1221759982" onClick='toggleBox("Output-1221759982", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-1221759982" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1221759982">
-Click to see Screenshot<br/>
-<a target="_blank" href=Fri_Aug_28_11_27_39_IST_2020.jpg>Screenshot</a><br/>
-<br><br/>
-<br><br/>
-<a target="_blank" href=Fri_Aug_28_11_27_39_IST_2020.jpg><img src=Fri_Aug_28_11_27_39_IST_2020.jpg height=200 width=200></img></a><br/>
+<a target="_blank" href=Fri_Nov_13_17_10_36_IST_2020.jpg><img src=Fri_Nov_13_17_10_36_IST_2020.jpg height=200 width=200></img></a><br/>
 </div>
 </td>
 <td></td>
 <td>13</td>
-<td>com.OSMOSE.testcases.Product@1c6804cd</td></tr>
+<td>com.OSMOSE.testcases.Product@6941827a</td></tr>
+<tr>
+<td title='com.OSMOSE.testcases.Product.verifyTheValidationmessage()'><b>verifyTheValidationmessage</b><br>Test class: com.OSMOSE.testcases.Product<br>Test method: Verify that User clicks on the Slider icon and validate the validation message is shown wrong input<br>Parameters: {SearchItem=               }<br/>
+<a href="#Output-1605783571" onClick='toggleBox("Output-1605783571", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1605783571" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1605783571">
+Click to see Screenshot<br/>
+<a target="_blank" href=Fri_Nov_13_17_11_40_IST_2020.jpg>Screenshot</a><br/>
+<br><br/>
+<br><br/>
+<a target="_blank" href=Fri_Nov_13_17_11_40_IST_2020.jpg><img src=Fri_Nov_13_17_11_40_IST_2020.jpg height=200 width=200></img></a><br/>
+</div>
+</td>
+<td></td>
+<td>13</td>
+<td>com.OSMOSE.testcases.Product@6941827a</td></tr>
 <tr>
 <td title='com.OSMOSE.testcases.Product.verifyUpdatedQuantityOnOverlay()'><b>verifyUpdatedQuantityOnOverlay</b><br>Test class: com.OSMOSE.testcases.Product<br>Test method: Verification of Quantity on ShoppingCart Overlay<br/>
-<a href="#Output-1828787392" onClick='toggleBox("Output-1828787392", this, "Show output", "Hide output");'>Show output</a>
+<a href="#Output-1155337528" onClick='toggleBox("Output-1155337528", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-1828787392" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1828787392">
+<a href="#Output-1155337528" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1155337528">
 Click to see Screenshot<br/>
-<a target="_blank" href=Fri_Aug_28_11_31_01_IST_2020.jpg>Screenshot</a><br/>
+<a target="_blank" href=Fri_Nov_13_17_14_40_IST_2020.jpg>Screenshot</a><br/>
 <br><br/>
 <br><br/>
-<a target="_blank" href=Fri_Aug_28_11_31_01_IST_2020.jpg><img src=Fri_Aug_28_11_31_01_IST_2020.jpg height=200 width=200></img></a><br/>
+<a target="_blank" href=Fri_Nov_13_17_14_40_IST_2020.jpg><img src=Fri_Nov_13_17_14_40_IST_2020.jpg height=200 width=200></img></a><br/>
 </div>
 </td>
 <td></td>
 <td>12</td>
-<td>com.OSMOSE.testcases.Product@1c6804cd</td></tr>
-<tr>
-<td title='com.OSMOSE.testcases.OULogin.verifyVideoLinks()'><b>verifyVideoLinks</b><br>Test class: com.OSMOSE.testcases.OULogin<br>Test method: Verify the Video links on Osmose University Card<br/>
-<a href="#Output-1354280589" onClick='toggleBox("Output-1354280589", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-1354280589" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1354280589">
-Click to see Screenshot<br/>
-<a target="_blank" href=Fri_Aug_28_11_20_02_IST_2020.jpg>Screenshot</a><br/>
-<br><br/>
-<br><br/>
-<a target="_blank" href=Fri_Aug_28_11_20_02_IST_2020.jpg><img src=Fri_Aug_28_11_20_02_IST_2020.jpg height=200 width=200></img></a><br/>
-</div>
-</td>
-<td></td>
-<td>0</td>
-<td>com.OSMOSE.testcases.OULogin@62f68dff</td></tr>
+<td>com.OSMOSE.testcases.Product@6941827a</td></tr>
 <tr>
 <td title='com.OSMOSE.testcases.Product.verifyViewDetail()'><b>verifyViewDetail</b><br>Test class: com.OSMOSE.testcases.Product<br>Test method: Verification of the presence of View Details button<br/>
-<a href="#Output-960004592" onClick='toggleBox("Output-960004592", this, "Show output", "Hide output");'>Show output</a>
+<a href="#Output-682981033" onClick='toggleBox("Output-682981033", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-960004592" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-960004592">
+<a href="#Output-682981033" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-682981033">
 Click to see Screenshot<br/>
-<a target="_blank" href=Fri_Aug_28_11_25_27_IST_2020.jpg>Screenshot</a><br/>
+<a target="_blank" href=Fri_Nov_13_17_09_26_IST_2020.jpg>Screenshot</a><br/>
 <br><br/>
 <br><br/>
-<a target="_blank" href=Fri_Aug_28_11_25_27_IST_2020.jpg><img src=Fri_Aug_28_11_25_27_IST_2020.jpg height=200 width=200></img></a><br/>
-</div>
-</td>
-<td></td>
-<td>8</td>
-<td>com.OSMOSE.testcases.Product@1c6804cd</td></tr>
-<tr>
-<td title='com.OSMOSE.testcases.OULogin.verifyWebinarsClick()'><b>verifyWebinarsClick</b><br>Test class: com.OSMOSE.testcases.OULogin<br>Test method: Verify that Webinars link is clickable<br/>
-<a href="#Output-972843820" onClick='toggleBox("Output-972843820", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-972843820" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-972843820">
-Click to see Screenshot<br/>
-<a target="_blank" href=Fri_Aug_28_11_20_45_IST_2020.jpg>Screenshot</a><br/>
-<br><br/>
-<br><br/>
-<a target="_blank" href=Fri_Aug_28_11_20_45_IST_2020.jpg><img src=Fri_Aug_28_11_20_45_IST_2020.jpg height=200 width=200></img></a><br/>
+<a target="_blank" href=Fri_Nov_13_17_09_26_IST_2020.jpg><img src=Fri_Nov_13_17_09_26_IST_2020.jpg height=200 width=200></img></a><br/>
 </div>
 </td>
 <td></td>
 <td>12</td>
-<td>com.OSMOSE.testcases.OULogin@62f68dff</td></tr>
+<td>com.OSMOSE.testcases.Product@6941827a</td></tr>
 <tr>
 <td title='com.OSMOSE.testcases.Product.viewDetailsElementPresent()'><b>viewDetailsElementPresent</b><br>Test class: com.OSMOSE.testcases.Product<br>Test method: Verification of the presence of View Details button<br/>
-<a href="#Output-283923004" onClick='toggleBox("Output-283923004", this, "Show output", "Hide output");'>Show output</a>
+<a href="#Output-1008612116" onClick='toggleBox("Output-1008612116", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-283923004" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-283923004">
+<a href="#Output-1008612116" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1008612116">
 Click to see Screenshot<br/>
-<a target="_blank" href=Fri_Aug_28_11_23_33_IST_2020.jpg>Screenshot</a><br/>
+<a target="_blank" href=Fri_Nov_13_17_07_29_IST_2020.jpg>Screenshot</a><br/>
 <br><br/>
 <br><br/>
-<a target="_blank" href=Fri_Aug_28_11_23_33_IST_2020.jpg><img src=Fri_Aug_28_11_23_33_IST_2020.jpg height=200 width=200></img></a><br/>
+<a target="_blank" href=Fri_Nov_13_17_07_29_IST_2020.jpg><img src=Fri_Nov_13_17_07_29_IST_2020.jpg height=200 width=200></img></a><br/>
 </div>
 </td>
 <td></td>
 <td>0</td>
-<td>com.OSMOSE.testcases.Product@1c6804cd</td></tr>
+<td>com.OSMOSE.testcases.Product@6941827a</td></tr>
 </table><p>
 </body>
 </html>

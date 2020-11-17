@@ -1,97 +1,292 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuite name="Product"
            tests="85"
-           failures="0"
+           failures="3"
            errors="0"
            skipped="0"
-           time="1829.190">
+           time="1600.916">
   <properties />
+            <testcase name="VerifyTooltipForSizeDropDown" time="1.073" classname="com.OSMOSE.testcases.Product">
+                <failure type="org.openqa.selenium.ElementClickInterceptedException"
+                  message="element click intercepted: Element &lt;label data-v-14dfae46=&quot;&quot; for=&quot;4&quot; class=&quot;custom-control-label&quot; style=&quot;width: 152.082px;&quot;&gt;...&lt;/label&gt; is not clickable at point (926, 269). Other element would receive the click: &lt;select data-v-76bb5794=&quot;&quot; id=&quot;selectSize&quot; class=&quot;w-100 mb-2 custom-select&quot; title=&quot;Select Size&quot;&gt;...&lt;/select&gt;
+  (Session info: chrome=86.0.4240.75)
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
+System info: host: &apos;5CG6323N27&apos;, ip: &apos;192.168.0.11&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_191&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.75, chrome: {chromedriverVersion: 85.0.4183.87 (cd6713ebf92fa..., userDataDir: C:\Windows\Temp\scoped_dir1...}, goog:chromeOptions: {debuggerAddress: localhost:61527}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: none, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 558f08fa90269a8c35938da9f2c64faa"
+              >
+<![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <label data-v-14dfae46="" for="4" class="custom-control-label" style="width: 152.082px;">...</label> is not clickable at point (926, 269). Other element would receive the click: <select data-v-76bb5794="" id="selectSize" class="w-100 mb-2 custom-select" title="Select Size">...</select>
+  (Session info: chrome=86.0.4240.75)
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: '5CG6323N27', ip: '192.168.0.11', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.75, chrome: {chromedriverVersion: 85.0.4183.87 (cd6713ebf92fa..., userDataDir: C:\Windows\Temp\scoped_dir1...}, goog:chromeOptions: {debuggerAddress: localhost:61527}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: none, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 558f08fa90269a8c35938da9f2c64faa
+  sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+  sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+  sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+  java.lang.reflect.Constructor.newInstance(Unknown Source)
+  org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+  org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+  org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+  org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+  org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+  org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+  org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:276)
+  org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
+  com.OSMOSE.base.Page.click(Page.java:182)
+  com.OSMOSE.pages.OU.ProductPage.ToolTipForSize(ProductPage.java:1110)
+  com.OSMOSE.testcases.Product.VerifyTooltipForSizeDropDown(Product.java:1257)
+  sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+  sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+  sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+  java.lang.reflect.Method.invoke(Unknown Source)
+  org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+  org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+  org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+  org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+  org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+  org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+  org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+  org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+  java.util.ArrayList.forEach(Unknown Source)
+  org.testng.TestRunner.privateRun(TestRunner.java:766)
+  org.testng.TestRunner.run(TestRunner.java:587)
+  org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+  org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+  org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+  org.testng.SuiteRunner.run(SuiteRunner.java:286)
+  org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+  org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+  org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+  org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+  org.testng.TestNG.runSuites(TestNG.java:1039)
+  org.testng.TestNG.run(TestNG.java:1007)
+  org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+  org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+  org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+      </failure>
+
+          </testcase>
+            <testcase name="VerifyAddingRelatedProductsToShoppingCart" time="53.128" classname="com.OSMOSE.testcases.Product">
+                <failure type="org.openqa.selenium.NoSuchElementException"
+                  message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;(//div[@class=&quot;mbMob crsPointer&quot;]//img)[4]&quot;}
+  (Session info: chrome=86.0.4240.75)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
+System info: host: &apos;5CG6323N27&apos;, ip: &apos;192.168.0.11&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_191&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.75, chrome: {chromedriverVersion: 85.0.4183.87 (cd6713ebf92fa..., userDataDir: C:\Windows\Temp\scoped_dir1...}, goog:chromeOptions: {debuggerAddress: localhost:61527}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: none, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 558f08fa90269a8c35938da9f2c64faa
+*** Element info: {Using=xpath, value=(//div[@class=&quot;mbMob crsPointer&quot;]//img)[4]}"
+              >
+<![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"(//div[@class="mbMob crsPointer"]//img)[4]"}
+  (Session info: chrome=86.0.4240.75)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: '5CG6323N27', ip: '192.168.0.11', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.75, chrome: {chromedriverVersion: 85.0.4183.87 (cd6713ebf92fa..., userDataDir: C:\Windows\Temp\scoped_dir1...}, goog:chromeOptions: {debuggerAddress: localhost:61527}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: none, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 558f08fa90269a8c35938da9f2c64faa
+*** Element info: {Using=xpath, value=(//div[@class="mbMob crsPointer"]//img)[4]}
+  sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+  sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+  sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+  java.lang.reflect.Constructor.newInstance(Unknown Source)
+  org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+  org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+  org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+  org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+  org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+  org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+  org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
+  org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:424)
+  org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+  org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
+  com.OSMOSE.base.Page.click(Page.java:182)
+  com.OSMOSE.pages.OU.ProductPage.AddingRelatedProducts(ProductPage.java:1093)
+  com.OSMOSE.testcases.Product.VerifyAddingRelatedProductsToShoppingCart(Product.java:1244)
+  sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+  sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+  sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+  java.lang.reflect.Method.invoke(Unknown Source)
+  org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+  org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+  org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+  org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+  org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+  org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+  org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+  org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+  java.util.ArrayList.forEach(Unknown Source)
+  org.testng.TestRunner.privateRun(TestRunner.java:766)
+  org.testng.TestRunner.run(TestRunner.java:587)
+  org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+  org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+  org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+  org.testng.SuiteRunner.run(SuiteRunner.java:286)
+  org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+  org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+  org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+  org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+  org.testng.TestNG.runSuites(TestNG.java:1039)
+  org.testng.TestNG.run(TestNG.java:1007)
+  org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+  org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+  org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+      </failure>
+
+          </testcase>
+            <testcase name="UpdateChangeProductAddToShoppingCart" time="9.936" classname="com.OSMOSE.testcases.Product">
+                <failure type="org.openqa.selenium.ElementClickInterceptedException"
+                  message="element click intercepted: Element &lt;label data-v-14dfae46=&quot;&quot; for=&quot;4&quot; class=&quot;custom-control-label&quot; style=&quot;width: 152.082px;&quot;&gt;...&lt;/label&gt; is not clickable at point (926, 20). Other element would receive the click: &lt;a id=&quot;contactUsLink__BV_toggle_&quot; role=&quot;button&quot; aria-haspopup=&quot;true&quot; aria-expanded=&quot;false&quot; href=&quot;#contactUsLink&quot; target=&quot;_self&quot; class=&quot;nav-link dropdown-toggle&quot;&gt;...&lt;/a&gt;
+  (Session info: chrome=86.0.4240.75)
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
+System info: host: &apos;5CG6323N27&apos;, ip: &apos;192.168.0.11&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_191&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.75, chrome: {chromedriverVersion: 85.0.4183.87 (cd6713ebf92fa..., userDataDir: C:\Windows\Temp\scoped_dir1...}, goog:chromeOptions: {debuggerAddress: localhost:61527}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: none, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 558f08fa90269a8c35938da9f2c64faa"
+              >
+<![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <label data-v-14dfae46="" for="4" class="custom-control-label" style="width: 152.082px;">...</label> is not clickable at point (926, 20). Other element would receive the click: <a id="contactUsLink__BV_toggle_" role="button" aria-haspopup="true" aria-expanded="false" href="#contactUsLink" target="_self" class="nav-link dropdown-toggle">...</a>
+  (Session info: chrome=86.0.4240.75)
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: '5CG6323N27', ip: '192.168.0.11', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.75, chrome: {chromedriverVersion: 85.0.4183.87 (cd6713ebf92fa..., userDataDir: C:\Windows\Temp\scoped_dir1...}, goog:chromeOptions: {debuggerAddress: localhost:61527}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: none, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 558f08fa90269a8c35938da9f2c64faa
+  sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+  sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+  sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+  java.lang.reflect.Constructor.newInstance(Unknown Source)
+  org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+  org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+  org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+  org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+  org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+  org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+  org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:276)
+  org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
+  com.OSMOSE.base.Page.click(Page.java:182)
+  com.OSMOSE.pages.OU.ProductPage.CreateQuoteByUpdateFileAddToShoppingCart(ProductPage.java:1011)
+  com.OSMOSE.testcases.Product.UpdateChangeProductAddToShoppingCart(Product.java:1270)
+  sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+  sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+  sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+  java.lang.reflect.Method.invoke(Unknown Source)
+  org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+  org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+  org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+  org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+  org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+  org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+  org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+  org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+  java.util.ArrayList.forEach(Unknown Source)
+  org.testng.TestRunner.privateRun(TestRunner.java:766)
+  org.testng.TestRunner.run(TestRunner.java:587)
+  org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+  org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+  org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+  org.testng.SuiteRunner.run(SuiteRunner.java:286)
+  org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+  org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+  org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+  org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+  org.testng.TestNG.runSuites(TestNG.java:1039)
+  org.testng.TestNG.run(TestNG.java:1007)
+  org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+  org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+  org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+      </failure>
+
+          </testcase>
   
   
-            <testcase name="SubmitQuotewithOrderRequestedstatus" time="12.130" classname="com.OSMOSE.testcases.Product" />
-                <testcase name="verifyTheProductLink" time="3.586" classname="com.OSMOSE.testcases.Product" />
-                <testcase name="allSixProductPresent" time="0.036" classname="com.OSMOSE.testcases.Product" />
-                <testcase name="verifyStatusFilterOrdered" time="41.890" classname="com.OSMOSE.testcases.Product" />
-                <testcase name="MyQuotesComments_Collapse" time="15.576" classname="com.OSMOSE.testcases.Product" />
-                <testcase name="verifyTheSearchCrossButton" time="14.812" classname="com.OSMOSE.testcases.Product" />
-                <testcase name="ClickDownloadProducts" time="7.408" classname="com.OSMOSE.testcases.Product" />
-                <testcase name="ClickApprove" time="9.374" classname="com.OSMOSE.testcases.Product" />
-                <testcase name="verifyTheSearchfirstname" time="14.601" classname="com.OSMOSE.testcases.Product" />
-                <testcase name="verifyCategoryFilter" time="50.047" classname="com.OSMOSE.testcases.Product" />
-                <testcase name="verifyThankyouPopup" time="130.487" classname="com.OSMOSE.testcases.Product" />
-                <testcase name="ClickUploadProducts" time="10.567" classname="com.OSMOSE.testcases.Product" />
-                <testcase name="VerifyUIonClickQuoteID" time="5.648" classname="com.OSMOSE.testcases.Product" />
-                <testcase name="ReturnPolicy" time="11.393" classname="com.OSMOSE.testcases.Product" />
-                <testcase name="VerifyAddShopping_Sameitem" time="9.825" classname="com.OSMOSE.testcases.Product" />
-                <testcase name="DeleteQuanityinShoppingCart" time="6.232" classname="com.OSMOSE.testcases.Product" />
-                <testcase name="CreateQuote_Comments" time="10.460" classname="com.OSMOSE.testcases.Product" />
-                <testcase name="verifyStatusFilterExpired" time="32.564" classname="com.OSMOSE.testcases.Product" />
-                <testcase name="verifyStatusFilterQuoted" time="43.729" classname="com.OSMOSE.testcases.Product" />
-                <testcase name="sliderItemPresent" time="0.099" classname="com.OSMOSE.testcases.Product" />
-                <testcase name="verifyAddShoppingCarttext" time="18.937" classname="com.OSMOSE.testcases.Product" />
-                <testcase name="catalogElementPresent" time="0.055" classname="com.OSMOSE.testcases.Product" />
-                <testcase name="VerifyCrossicononhoppingCart" time="1.319" classname="com.OSMOSE.testcases.Product" />
-                <testcase name="verifyStatusFilterOrderRequested" time="37.201" classname="com.OSMOSE.testcases.Product" />
-                <testcase name="ClickReject" time="9.967" classname="com.OSMOSE.testcases.Product" />
-                <testcase name="UpdateIncreaseQuanityinShoppingCart" time="13.619" classname="com.OSMOSE.testcases.Product" />
-                <testcase name="VerifyProductclick" time="15.929" classname="com.OSMOSE.testcases.Product" />
-                <testcase name="SubmitQuotewithOrderedstatus" time="10.379" classname="com.OSMOSE.testcases.Product" />
-                <testcase name="openMyQuotesElementPresent" time="0.033" classname="com.OSMOSE.testcases.Product" />
-                <testcase name="verifyTheSearchFullname" time="13.000" classname="com.OSMOSE.testcases.Product" />
-                <testcase name="UpdateDecreaseQuanityinShoppingCart" time="29.058" classname="com.OSMOSE.testcases.Product" />
-                <testcase name="CreateQuote_ZipCode" time="10.179" classname="com.OSMOSE.testcases.Product" />
-                <testcase name="ClickShoppingCartIcon" time="11.222" classname="com.OSMOSE.testcases.Product" />
-                <testcase name="SubmitQuotewithExpiredstatus" time="10.277" classname="com.OSMOSE.testcases.Product" />
-                <testcase name="ClickReview" time="8.337" classname="com.OSMOSE.testcases.Product" />
-                <testcase name="verifyStatusFilterCancelled" time="42.195" classname="com.OSMOSE.testcases.Product" />
-                <testcase name="verifyAddToCartWhileReQuoting" time="78.033" classname="com.OSMOSE.testcases.Product" />
-                <testcase name="HomepageCarticon" time="17.081" classname="com.OSMOSE.testcases.Product" />
-                <testcase name="verifyDeleteProductOnOverlay" time="9.290" classname="com.OSMOSE.testcases.Product" />
-                <testcase name="verifyTheValidationmessage" time="13.467" classname="com.OSMOSE.testcases.Product" />
-                <testcase name="VerifyCrossicononhoppingCart_Differentitem" time="10.842" classname="com.OSMOSE.testcases.Product" />
-                <testcase name="CreateQuote_MultipleAttachment" time="38.270" classname="com.OSMOSE.testcases.Product" />
-                <testcase name="shoppingCartElementPresent" time="0.063" classname="com.OSMOSE.testcases.Product" />
-                <testcase name="SubmitQuotewithoutFile" time="19.242" classname="com.OSMOSE.testcases.Product" />
-                <testcase name="ClickShoppingSubmitCartbutton" time="10.077" classname="com.OSMOSE.testcases.Product" />
-                <testcase name="verifyUpdatedQuantityOnOverlay" time="12.124" classname="com.OSMOSE.testcases.Product" />
-                <testcase name="ClickDictionaryLink" time="41.361" classname="com.OSMOSE.testcases.Product" />
-                <testcase name="verifyCartIconCount" time="19.413" classname="com.OSMOSE.testcases.Product" />
-                <testcase name="CreateQuote_UpdateeAttachment" time="12.487" classname="com.OSMOSE.testcases.Product" />
-                <testcase name="verifyStatusFilterQuotePending" time="42.198" classname="com.OSMOSE.testcases.Product" />
-                <testcase name="AddQuantityandverifyCellNumber" time="18.641" classname="com.OSMOSE.testcases.Product" />
-                <testcase name="ClickManageQuotesLink" time="4.796" classname="com.OSMOSE.testcases.Product" />
-                <testcase name="ClickShoppingViewCartbutton" time="8.852" classname="com.OSMOSE.testcases.Product" />
-                <testcase name="verifyViewDetail" time="8.571" classname="com.OSMOSE.testcases.Product" />
-                <testcase name="CreateQuote_Attachment" time="11.241" classname="com.OSMOSE.testcases.Product" />
-                <testcase name="FeaturedProductPoleRestoration" time="14.736" classname="com.OSMOSE.testcases.Product" />
-                <testcase name="VerifyAddingRelatedProductsToShoppingCart" time="18.602" classname="com.OSMOSE.testcases.Product" />
-                <testcase name="viewDetailsElementPresent" time="0.037" classname="com.OSMOSE.testcases.Product" />
-                <testcase name="SubmitQuotewithMoreThan20mbFile" time="30.180" classname="com.OSMOSE.testcases.Product" />
-                <testcase name="VerifyTooltipForSizeDropDown" time="11.155" classname="com.OSMOSE.testcases.Product" />
-                <testcase name="UpdateChangeProductAddToShoppingCart" time="20.615" classname="com.OSMOSE.testcases.Product" />
-                <testcase name="ClickProductsinReview" time="2.585" classname="com.OSMOSE.testcases.Product" />
-                <testcase name="SubmitQuotewithInvalidFileType" time="27.772" classname="com.OSMOSE.testcases.Product" />
-                <testcase name="CreateQuote" time="12.173" classname="com.OSMOSE.testcases.Product" />
-                <testcase name="SubmitQuotewithQuoteCancelledstatus" time="14.625" classname="com.OSMOSE.testcases.Product" />
-                <testcase name="VerifyUIonApprove" time="117.168" classname="com.OSMOSE.testcases.Product" />
-                <testcase name="VerifyFPImageClick" time="52.084" classname="com.OSMOSE.testcases.Product" />
-                <testcase name="verifyExclamationOnMyQuotes" time="21.179" classname="com.OSMOSE.testcases.Product" />
-                <testcase name="verifyCancelwhileREQuoting" time="42.808" classname="com.OSMOSE.testcases.Product" />
-                <testcase name="searchElementPresent" time="50.282" classname="com.OSMOSE.testcases.Product" />
-                <testcase name="SubmitQuotewithQuotePendingstatus" time="19.170" classname="com.OSMOSE.testcases.Product" />
-                <testcase name="SubmitQuotewithQuotedstatus" time="33.319" classname="com.OSMOSE.testcases.Product" />
-                <testcase name="adminElementPresent" time="0.048" classname="com.OSMOSE.testcases.Product" />
-                <testcase name="MyQuotes_96421" time="7.647" classname="com.OSMOSE.testcases.Product" />
-                <testcase name="AddShoppingCart" time="6.425" classname="com.OSMOSE.testcases.Product" />
-                <testcase name="verifySubmitwhileREQuoting" time="61.638" classname="com.OSMOSE.testcases.Product" />
-                <testcase name="verifyTheSearchOneAlphabet" time="22.346" classname="com.OSMOSE.testcases.Product" />
-                <testcase name="SortBydd" time="9.700" classname="com.OSMOSE.testcases.Product" />
-                <testcase name="VerifyShoppingCarrtMinMaxqty" time="15.055" classname="com.OSMOSE.testcases.Product" />
-                <testcase name="verifyStatusFilterAll" time="27.477" classname="com.OSMOSE.testcases.Product" />
-                <testcase name="ClickManageProducts" time="2.730" classname="com.OSMOSE.testcases.Product" />
-                <testcase name="GoBack" time="14.415" classname="com.OSMOSE.testcases.Product" />
-                <testcase name="VerifyApprovebtndisabled" time="123.397" classname="com.OSMOSE.testcases.Product" />
-                <testcase name="VerifyShoppingAddbtndisabled" time="5.153" classname="com.OSMOSE.testcases.Product" />
-                <testcase name="VerifyShoppingCarrtAddbtnDisabledclearqty" time="6.449" classname="com.OSMOSE.testcases.Product" />
+            <testcase name="VerifyCrossicononhoppingCart" time="1.035" classname="com.OSMOSE.testcases.Product" />
+                <testcase name="verifyDeleteProductOnOverlay" time="10.768" classname="com.OSMOSE.testcases.Product" />
+                <testcase name="ClickUploadProducts" time="8.305" classname="com.OSMOSE.testcases.Product" />
+                <testcase name="verifyExclamationOnMyQuotes" time="20.205" classname="com.OSMOSE.testcases.Product" />
+                <testcase name="ClickShoppingViewCartbutton" time="8.940" classname="com.OSMOSE.testcases.Product" />
+                <testcase name="viewDetailsElementPresent" time="0.026" classname="com.OSMOSE.testcases.Product" />
+                <testcase name="CreateQuote_MultipleAttachment" time="38.352" classname="com.OSMOSE.testcases.Product" />
+                <testcase name="verifyAddShoppingCarttext" time="18.437" classname="com.OSMOSE.testcases.Product" />
+                <testcase name="SubmitQuotewithExpiredstatus" time="9.216" classname="com.OSMOSE.testcases.Product" />
+                <testcase name="AddShoppingCart" time="4.842" classname="com.OSMOSE.testcases.Product" />
+                <testcase name="VerifyUIonApprove" time="113.377" classname="com.OSMOSE.testcases.Product" />
+                <testcase name="AddQuantityandverifyCellNumber" time="17.397" classname="com.OSMOSE.testcases.Product" />
+                <testcase name="sliderItemPresent" time="0.107" classname="com.OSMOSE.testcases.Product" />
+                <testcase name="SubmitQuotewithMoreThan20mbFile" time="29.241" classname="com.OSMOSE.testcases.Product" />
+                <testcase name="verifyTheSearchOneAlphabet" time="22.287" classname="com.OSMOSE.testcases.Product" />
+                <testcase name="VerifyUIonClickQuoteID" time="4.478" classname="com.OSMOSE.testcases.Product" />
+                <testcase name="verifyAddToCartWhileReQuoting" time="71.125" classname="com.OSMOSE.testcases.Product" />
+                <testcase name="ClickApprove" time="9.192" classname="com.OSMOSE.testcases.Product" />
+                <testcase name="VerifyShoppingCarrtMinMaxqty" time="13.025" classname="com.OSMOSE.testcases.Product" />
+                <testcase name="verifyTheSearchfirstname" time="13.505" classname="com.OSMOSE.testcases.Product" />
+                <testcase name="CreateQuote_Attachment" time="10.735" classname="com.OSMOSE.testcases.Product" />
+                <testcase name="verifyViewDetail" time="12.374" classname="com.OSMOSE.testcases.Product" />
+                <testcase name="DeleteQuanityinShoppingCart" time="4.977" classname="com.OSMOSE.testcases.Product" />
+                <testcase name="ClickShoppingSubmitCartbutton" time="9.045" classname="com.OSMOSE.testcases.Product" />
+                <testcase name="ReturnPolicy" time="10.264" classname="com.OSMOSE.testcases.Product" />
+                <testcase name="openMyQuotesElementPresent" time="0.025" classname="com.OSMOSE.testcases.Product" />
+                <testcase name="verifyTheProductLink" time="10.363" classname="com.OSMOSE.testcases.Product" />
+                <testcase name="verifyStatusFilterOrdered" time="15.732" classname="com.OSMOSE.testcases.Product" />
+                <testcase name="SubmitQuotewithOrderRequestedstatus" time="9.323" classname="com.OSMOSE.testcases.Product" />
+                <testcase name="verifyTheValidationmessage" time="13.305" classname="com.OSMOSE.testcases.Product" />
+                <testcase name="verifyCartIconCount" time="15.864" classname="com.OSMOSE.testcases.Product" />
+                <testcase name="verifyThankyouPopup" time="124.115" classname="com.OSMOSE.testcases.Product" />
+                <testcase name="searchElementPresent" time="50.045" classname="com.OSMOSE.testcases.Product" />
+                <testcase name="SubmitQuotewithQuotedstatus" time="32.015" classname="com.OSMOSE.testcases.Product" />
+                <testcase name="UpdateDecreaseQuanityinShoppingCart" time="28.253" classname="com.OSMOSE.testcases.Product" />
+                <testcase name="verifyStatusFilterCancelled" time="15.640" classname="com.OSMOSE.testcases.Product" />
+                <testcase name="CreateQuote_Comments" time="8.065" classname="com.OSMOSE.testcases.Product" />
+                <testcase name="allSixProductPresent" time="0.026" classname="com.OSMOSE.testcases.Product" />
+                <testcase name="verifySubmitwhileREQuoting" time="58.521" classname="com.OSMOSE.testcases.Product" />
+                <testcase name="CreateQuote" time="8.924" classname="com.OSMOSE.testcases.Product" />
+                <testcase name="ClickManageProducts" time="2.265" classname="com.OSMOSE.testcases.Product" />
+                <testcase name="verifyStatusFilterAll" time="11.987" classname="com.OSMOSE.testcases.Product" />
+                <testcase name="VerifyShoppingAddbtndisabled" time="4.736" classname="com.OSMOSE.testcases.Product" />
+                <testcase name="ClickDictionaryLink" time="35.934" classname="com.OSMOSE.testcases.Product" />
+                <testcase name="CreateQuote_UpdateeAttachment" time="10.003" classname="com.OSMOSE.testcases.Product" />
+                <testcase name="VerifyShoppingCarrtAddbtnDisabledclearqty" time="5.068" classname="com.OSMOSE.testcases.Product" />
+                <testcase name="VerifyCrossicononhoppingCart_Differentitem" time="8.994" classname="com.OSMOSE.testcases.Product" />
+                <testcase name="HomepageCarticon" time="14.187" classname="com.OSMOSE.testcases.Product" />
+                <testcase name="ClickDownloadProducts" time="7.191" classname="com.OSMOSE.testcases.Product" />
+                <testcase name="verifyStatusFilterQuoted" time="15.688" classname="com.OSMOSE.testcases.Product" />
+                <testcase name="CreateQuote_ZipCode" time="8.036" classname="com.OSMOSE.testcases.Product" />
+                <testcase name="MyQuotes_96421" time="6.429" classname="com.OSMOSE.testcases.Product" />
+                <testcase name="verifyTheSearchCrossButton" time="14.326" classname="com.OSMOSE.testcases.Product" />
+                <testcase name="ClickReview" time="7.781" classname="com.OSMOSE.testcases.Product" />
+                <testcase name="verifyStatusFilterExpired" time="13.753" classname="com.OSMOSE.testcases.Product" />
+                <testcase name="verifyStatusFilterQuotePending" time="15.910" classname="com.OSMOSE.testcases.Product" />
+                <testcase name="VerifyApprovebtndisabled" time="118.225" classname="com.OSMOSE.testcases.Product" />
+                <testcase name="catalogElementPresent" time="0.028" classname="com.OSMOSE.testcases.Product" />
+                <testcase name="ClickShoppingCartIcon" time="10.915" classname="com.OSMOSE.testcases.Product" />
+                <testcase name="UpdateIncreaseQuanityinShoppingCart" time="12.054" classname="com.OSMOSE.testcases.Product" />
+                <testcase name="SubmitQuotewithoutFile" time="18.454" classname="com.OSMOSE.testcases.Product" />
+                <testcase name="VerifyAddShopping_Sameitem" time="8.061" classname="com.OSMOSE.testcases.Product" />
+                <testcase name="SortBydd" time="9.221" classname="com.OSMOSE.testcases.Product" />
+                <testcase name="verifyStatusFilterOrderRequested" time="13.658" classname="com.OSMOSE.testcases.Product" />
+                <testcase name="verifyUpdatedQuantityOnOverlay" time="12.197" classname="com.OSMOSE.testcases.Product" />
+                <testcase name="MyQuotesComments_Collapse" time="13.498" classname="com.OSMOSE.testcases.Product" />
+                <testcase name="FeaturedProductPoleRestoration" time="23.231" classname="com.OSMOSE.testcases.Product" />
+                <testcase name="VerifyProductclick" time="14.549" classname="com.OSMOSE.testcases.Product" />
+                <testcase name="ClickReject" time="9.403" classname="com.OSMOSE.testcases.Product" />
+                <testcase name="adminElementPresent" time="0.043" classname="com.OSMOSE.testcases.Product" />
+                <testcase name="verifyCategoryFilter" time="50.046" classname="com.OSMOSE.testcases.Product" />
+                <testcase name="ClickManageQuotesLink" time="3.364" classname="com.OSMOSE.testcases.Product" />
+                <testcase name="verifyCancelwhileREQuoting" time="39.087" classname="com.OSMOSE.testcases.Product" />
+                <testcase name="verifyTheSearchFullname" time="12.377" classname="com.OSMOSE.testcases.Product" />
+                <testcase name="ClickProductsinReview" time="2.145" classname="com.OSMOSE.testcases.Product" />
+                <testcase name="SubmitQuotewithQuoteCancelledstatus" time="12.537" classname="com.OSMOSE.testcases.Product" />
+                <testcase name="SubmitQuotewithQuotePendingstatus" time="18.708" classname="com.OSMOSE.testcases.Product" />
+                <testcase name="SubmitQuotewithInvalidFileType" time="26.603" classname="com.OSMOSE.testcases.Product" />
+                <testcase name="GoBack" time="13.653" classname="com.OSMOSE.testcases.Product" />
+                <testcase name="shoppingCartElementPresent" time="0.068" classname="com.OSMOSE.testcases.Product" />
+                <testcase name="VerifyFPImageClick" time="51.537" classname="com.OSMOSE.testcases.Product" />
+                <testcase name="SubmitQuotewithOrderedstatus" time="9.358" classname="com.OSMOSE.testcases.Product" />
       
 </testsuite>

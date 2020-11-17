@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" ignored="1" total="60" passed="59">
   <reporter-output>
     <line>
       <![CDATA[Click to see Screenshot]]>
     </line>
     <line>
-      <![CDATA[<a target="_blank" href=Mon_Oct_12_12_11_56_IST_2020.jpg>Screenshot</a>]]>
+      <![CDATA[<a target="_blank" href=Sat_Nov_14_11_27_28_IST_2020.jpg>Screenshot</a>]]>
     </line>
     <line>
       <![CDATA[<br>]]>
@@ -14,15 +14,885 @@
       <![CDATA[<br>]]>
     </line>
     <line>
-      <![CDATA[<a target="_blank" href=Mon_Oct_12_12_11_56_IST_2020.jpg><img src=Mon_Oct_12_12_11_56_IST_2020.jpg height=200 width=200></img></a>]]>
+      <![CDATA[<a target="_blank" href=Sat_Nov_14_11_27_28_IST_2020.jpg><img src=Sat_Nov_14_11_27_28_IST_2020.jpg height=200 width=200></img></a>]]>
+    </line>
+    <line>
+      <![CDATA[Click to see Screenshot]]>
+    </line>
+    <line>
+      <![CDATA[<a target="_blank" href=Sat_Nov_14_11_27_45_IST_2020.jpg>Screenshot</a>]]>
+    </line>
+    <line>
+      <![CDATA[<br>]]>
+    </line>
+    <line>
+      <![CDATA[<br>]]>
+    </line>
+    <line>
+      <![CDATA[<a target="_blank" href=Sat_Nov_14_11_27_45_IST_2020.jpg><img src=Sat_Nov_14_11_27_45_IST_2020.jpg height=200 width=200></img></a>]]>
+    </line>
+    <line>
+      <![CDATA[Click to see Screenshot]]>
+    </line>
+    <line>
+      <![CDATA[<a target="_blank" href=Sat_Nov_14_11_27_46_IST_2020.jpg>Screenshot</a>]]>
+    </line>
+    <line>
+      <![CDATA[<br>]]>
+    </line>
+    <line>
+      <![CDATA[<br>]]>
+    </line>
+    <line>
+      <![CDATA[<a target="_blank" href=Sat_Nov_14_11_27_46_IST_2020.jpg><img src=Sat_Nov_14_11_27_46_IST_2020.jpg height=200 width=200></img></a>]]>
+    </line>
+    <line>
+      <![CDATA[Click to see Screenshot]]>
+    </line>
+    <line>
+      <![CDATA[<a target="_blank" href=Sat_Nov_14_11_27_46_IST_2020.jpg>Screenshot</a>]]>
+    </line>
+    <line>
+      <![CDATA[<br>]]>
+    </line>
+    <line>
+      <![CDATA[<br>]]>
+    </line>
+    <line>
+      <![CDATA[<a target="_blank" href=Sat_Nov_14_11_27_46_IST_2020.jpg><img src=Sat_Nov_14_11_27_46_IST_2020.jpg height=200 width=200></img></a>]]>
+    </line>
+    <line>
+      <![CDATA[Click to see Screenshot]]>
+    </line>
+    <line>
+      <![CDATA[<a target="_blank" href=Sat_Nov_14_11_27_47_IST_2020.jpg>Screenshot</a>]]>
+    </line>
+    <line>
+      <![CDATA[<br>]]>
+    </line>
+    <line>
+      <![CDATA[<br>]]>
+    </line>
+    <line>
+      <![CDATA[<a target="_blank" href=Sat_Nov_14_11_27_47_IST_2020.jpg><img src=Sat_Nov_14_11_27_47_IST_2020.jpg height=200 width=200></img></a>]]>
+    </line>
+    <line>
+      <![CDATA[Click to see Screenshot]]>
+    </line>
+    <line>
+      <![CDATA[<a target="_blank" href=Sat_Nov_14_11_27_47_IST_2020.jpg>Screenshot</a>]]>
+    </line>
+    <line>
+      <![CDATA[<br>]]>
+    </line>
+    <line>
+      <![CDATA[<br>]]>
+    </line>
+    <line>
+      <![CDATA[<a target="_blank" href=Sat_Nov_14_11_27_47_IST_2020.jpg><img src=Sat_Nov_14_11_27_47_IST_2020.jpg height=200 width=200></img></a>]]>
+    </line>
+    <line>
+      <![CDATA[Click to see Screenshot]]>
+    </line>
+    <line>
+      <![CDATA[<a target="_blank" href=Sat_Nov_14_11_27_48_IST_2020.jpg>Screenshot</a>]]>
+    </line>
+    <line>
+      <![CDATA[<br>]]>
+    </line>
+    <line>
+      <![CDATA[<br>]]>
+    </line>
+    <line>
+      <![CDATA[<a target="_blank" href=Sat_Nov_14_11_27_48_IST_2020.jpg><img src=Sat_Nov_14_11_27_48_IST_2020.jpg height=200 width=200></img></a>]]>
+    </line>
+    <line>
+      <![CDATA[Click to see Screenshot]]>
+    </line>
+    <line>
+      <![CDATA[<a target="_blank" href=Sat_Nov_14_11_27_48_IST_2020.jpg>Screenshot</a>]]>
+    </line>
+    <line>
+      <![CDATA[<br>]]>
+    </line>
+    <line>
+      <![CDATA[<br>]]>
+    </line>
+    <line>
+      <![CDATA[<a target="_blank" href=Sat_Nov_14_11_27_48_IST_2020.jpg><img src=Sat_Nov_14_11_27_48_IST_2020.jpg height=200 width=200></img></a>]]>
+    </line>
+    <line>
+      <![CDATA[Click to see Screenshot]]>
+    </line>
+    <line>
+      <![CDATA[<a target="_blank" href=Sat_Nov_14_11_27_49_IST_2020.jpg>Screenshot</a>]]>
+    </line>
+    <line>
+      <![CDATA[<br>]]>
+    </line>
+    <line>
+      <![CDATA[<br>]]>
+    </line>
+    <line>
+      <![CDATA[<a target="_blank" href=Sat_Nov_14_11_27_49_IST_2020.jpg><img src=Sat_Nov_14_11_27_49_IST_2020.jpg height=200 width=200></img></a>]]>
+    </line>
+    <line>
+      <![CDATA[Click to see Screenshot]]>
+    </line>
+    <line>
+      <![CDATA[<a target="_blank" href=Sat_Nov_14_11_27_50_IST_2020.jpg>Screenshot</a>]]>
+    </line>
+    <line>
+      <![CDATA[<br>]]>
+    </line>
+    <line>
+      <![CDATA[<br>]]>
+    </line>
+    <line>
+      <![CDATA[<a target="_blank" href=Sat_Nov_14_11_27_50_IST_2020.jpg><img src=Sat_Nov_14_11_27_50_IST_2020.jpg height=200 width=200></img></a>]]>
+    </line>
+    <line>
+      <![CDATA[Click to see Screenshot]]>
+    </line>
+    <line>
+      <![CDATA[<a target="_blank" href=Sat_Nov_14_11_27_50_IST_2020.jpg>Screenshot</a>]]>
+    </line>
+    <line>
+      <![CDATA[<br>]]>
+    </line>
+    <line>
+      <![CDATA[<br>]]>
+    </line>
+    <line>
+      <![CDATA[<a target="_blank" href=Sat_Nov_14_11_27_50_IST_2020.jpg><img src=Sat_Nov_14_11_27_50_IST_2020.jpg height=200 width=200></img></a>]]>
+    </line>
+    <line>
+      <![CDATA[Click to see Screenshot]]>
+    </line>
+    <line>
+      <![CDATA[<a target="_blank" href=Sat_Nov_14_11_27_51_IST_2020.jpg>Screenshot</a>]]>
+    </line>
+    <line>
+      <![CDATA[<br>]]>
+    </line>
+    <line>
+      <![CDATA[<br>]]>
+    </line>
+    <line>
+      <![CDATA[<a target="_blank" href=Sat_Nov_14_11_27_51_IST_2020.jpg><img src=Sat_Nov_14_11_27_51_IST_2020.jpg height=200 width=200></img></a>]]>
+    </line>
+    <line>
+      <![CDATA[Click to see Screenshot]]>
+    </line>
+    <line>
+      <![CDATA[<a target="_blank" href=Sat_Nov_14_11_27_52_IST_2020.jpg>Screenshot</a>]]>
+    </line>
+    <line>
+      <![CDATA[<br>]]>
+    </line>
+    <line>
+      <![CDATA[<br>]]>
+    </line>
+    <line>
+      <![CDATA[<a target="_blank" href=Sat_Nov_14_11_27_52_IST_2020.jpg><img src=Sat_Nov_14_11_27_52_IST_2020.jpg height=200 width=200></img></a>]]>
+    </line>
+    <line>
+      <![CDATA[Click to see Screenshot]]>
+    </line>
+    <line>
+      <![CDATA[<a target="_blank" href=Sat_Nov_14_11_27_53_IST_2020.jpg>Screenshot</a>]]>
+    </line>
+    <line>
+      <![CDATA[<br>]]>
+    </line>
+    <line>
+      <![CDATA[<br>]]>
+    </line>
+    <line>
+      <![CDATA[<a target="_blank" href=Sat_Nov_14_11_27_53_IST_2020.jpg><img src=Sat_Nov_14_11_27_53_IST_2020.jpg height=200 width=200></img></a>]]>
+    </line>
+    <line>
+      <![CDATA[Click to see Screenshot]]>
+    </line>
+    <line>
+      <![CDATA[<a target="_blank" href=Sat_Nov_14_11_27_56_IST_2020.jpg>Screenshot</a>]]>
+    </line>
+    <line>
+      <![CDATA[<br>]]>
+    </line>
+    <line>
+      <![CDATA[<br>]]>
+    </line>
+    <line>
+      <![CDATA[<a target="_blank" href=Sat_Nov_14_11_27_56_IST_2020.jpg><img src=Sat_Nov_14_11_27_56_IST_2020.jpg height=200 width=200></img></a>]]>
+    </line>
+    <line>
+      <![CDATA[Click to see Screenshot]]>
+    </line>
+    <line>
+      <![CDATA[<a target="_blank" href=Sat_Nov_14_11_28_05_IST_2020.jpg>Screenshot</a>]]>
+    </line>
+    <line>
+      <![CDATA[<br>]]>
+    </line>
+    <line>
+      <![CDATA[<br>]]>
+    </line>
+    <line>
+      <![CDATA[<a target="_blank" href=Sat_Nov_14_11_28_05_IST_2020.jpg><img src=Sat_Nov_14_11_28_05_IST_2020.jpg height=200 width=200></img></a>]]>
+    </line>
+    <line>
+      <![CDATA[Click to see Screenshot]]>
+    </line>
+    <line>
+      <![CDATA[<a target="_blank" href=Sat_Nov_14_11_28_15_IST_2020.jpg>Screenshot</a>]]>
+    </line>
+    <line>
+      <![CDATA[<br>]]>
+    </line>
+    <line>
+      <![CDATA[<br>]]>
+    </line>
+    <line>
+      <![CDATA[<a target="_blank" href=Sat_Nov_14_11_28_15_IST_2020.jpg><img src=Sat_Nov_14_11_28_15_IST_2020.jpg height=200 width=200></img></a>]]>
+    </line>
+    <line>
+      <![CDATA[Click to see Screenshot]]>
+    </line>
+    <line>
+      <![CDATA[<a target="_blank" href=Sat_Nov_14_11_28_25_IST_2020.jpg>Screenshot</a>]]>
+    </line>
+    <line>
+      <![CDATA[<br>]]>
+    </line>
+    <line>
+      <![CDATA[<br>]]>
+    </line>
+    <line>
+      <![CDATA[<a target="_blank" href=Sat_Nov_14_11_28_25_IST_2020.jpg><img src=Sat_Nov_14_11_28_25_IST_2020.jpg height=200 width=200></img></a>]]>
+    </line>
+    <line>
+      <![CDATA[Click to see Screenshot]]>
+    </line>
+    <line>
+      <![CDATA[<a target="_blank" href=Sat_Nov_14_11_28_31_IST_2020.jpg>Screenshot</a>]]>
+    </line>
+    <line>
+      <![CDATA[<br>]]>
+    </line>
+    <line>
+      <![CDATA[<br>]]>
+    </line>
+    <line>
+      <![CDATA[<a target="_blank" href=Sat_Nov_14_11_28_31_IST_2020.jpg><img src=Sat_Nov_14_11_28_31_IST_2020.jpg height=200 width=200></img></a>]]>
+    </line>
+    <line>
+      <![CDATA[Click to see Screenshot]]>
+    </line>
+    <line>
+      <![CDATA[<a target="_blank" href=Sat_Nov_14_11_28_36_IST_2020.jpg>Screenshot</a>]]>
+    </line>
+    <line>
+      <![CDATA[<br>]]>
+    </line>
+    <line>
+      <![CDATA[<br>]]>
+    </line>
+    <line>
+      <![CDATA[<a target="_blank" href=Sat_Nov_14_11_28_36_IST_2020.jpg><img src=Sat_Nov_14_11_28_36_IST_2020.jpg height=200 width=200></img></a>]]>
+    </line>
+    <line>
+      <![CDATA[Click to see Screenshot]]>
+    </line>
+    <line>
+      <![CDATA[<a target="_blank" href=Sat_Nov_14_11_28_39_IST_2020.jpg>Screenshot</a>]]>
+    </line>
+    <line>
+      <![CDATA[<br>]]>
+    </line>
+    <line>
+      <![CDATA[<br>]]>
+    </line>
+    <line>
+      <![CDATA[<a target="_blank" href=Sat_Nov_14_11_28_39_IST_2020.jpg><img src=Sat_Nov_14_11_28_39_IST_2020.jpg height=200 width=200></img></a>]]>
+    </line>
+    <line>
+      <![CDATA[Click to see Screenshot]]>
+    </line>
+    <line>
+      <![CDATA[<a target="_blank" href=Sat_Nov_14_11_28_58_IST_2020.jpg>Screenshot</a>]]>
+    </line>
+    <line>
+      <![CDATA[<br>]]>
+    </line>
+    <line>
+      <![CDATA[<br>]]>
+    </line>
+    <line>
+      <![CDATA[<a target="_blank" href=Sat_Nov_14_11_28_58_IST_2020.jpg><img src=Sat_Nov_14_11_28_58_IST_2020.jpg height=200 width=200></img></a>]]>
+    </line>
+    <line>
+      <![CDATA[Click to see Screenshot]]>
+    </line>
+    <line>
+      <![CDATA[<a target="_blank" href=Sat_Nov_14_11_30_13_IST_2020.jpg>Screenshot</a>]]>
+    </line>
+    <line>
+      <![CDATA[<br>]]>
+    </line>
+    <line>
+      <![CDATA[<br>]]>
+    </line>
+    <line>
+      <![CDATA[<a target="_blank" href=Sat_Nov_14_11_30_13_IST_2020.jpg><img src=Sat_Nov_14_11_30_13_IST_2020.jpg height=200 width=200></img></a>]]>
+    </line>
+    <line>
+      <![CDATA[Click to see Screenshot]]>
+    </line>
+    <line>
+      <![CDATA[<a target="_blank" href=Sat_Nov_14_11_30_41_IST_2020.jpg>Screenshot</a>]]>
+    </line>
+    <line>
+      <![CDATA[<br>]]>
+    </line>
+    <line>
+      <![CDATA[<br>]]>
+    </line>
+    <line>
+      <![CDATA[<a target="_blank" href=Sat_Nov_14_11_30_41_IST_2020.jpg><img src=Sat_Nov_14_11_30_41_IST_2020.jpg height=200 width=200></img></a>]]>
+    </line>
+    <line>
+      <![CDATA[Click to see Screenshot]]>
+    </line>
+    <line>
+      <![CDATA[<a target="_blank" href=Sat_Nov_14_11_30_50_IST_2020.jpg>Screenshot</a>]]>
+    </line>
+    <line>
+      <![CDATA[<br>]]>
+    </line>
+    <line>
+      <![CDATA[<br>]]>
+    </line>
+    <line>
+      <![CDATA[<a target="_blank" href=Sat_Nov_14_11_30_50_IST_2020.jpg><img src=Sat_Nov_14_11_30_50_IST_2020.jpg height=200 width=200></img></a>]]>
+    </line>
+    <line>
+      <![CDATA[Click to see Screenshot]]>
+    </line>
+    <line>
+      <![CDATA[<a target="_blank" href=Sat_Nov_14_11_30_55_IST_2020.jpg>Screenshot</a>]]>
+    </line>
+    <line>
+      <![CDATA[<br>]]>
+    </line>
+    <line>
+      <![CDATA[<br>]]>
+    </line>
+    <line>
+      <![CDATA[<a target="_blank" href=Sat_Nov_14_11_30_55_IST_2020.jpg><img src=Sat_Nov_14_11_30_55_IST_2020.jpg height=200 width=200></img></a>]]>
+    </line>
+    <line>
+      <![CDATA[Click to see Screenshot]]>
+    </line>
+    <line>
+      <![CDATA[<a target="_blank" href=Sat_Nov_14_11_32_52_IST_2020.jpg>Screenshot</a>]]>
+    </line>
+    <line>
+      <![CDATA[<br>]]>
+    </line>
+    <line>
+      <![CDATA[<br>]]>
+    </line>
+    <line>
+      <![CDATA[<a target="_blank" href=Sat_Nov_14_11_32_52_IST_2020.jpg><img src=Sat_Nov_14_11_32_52_IST_2020.jpg height=200 width=200></img></a>]]>
+    </line>
+    <line>
+      <![CDATA[Click to see Screenshot]]>
+    </line>
+    <line>
+      <![CDATA[<a target="_blank" href=Sat_Nov_14_11_34_51_IST_2020.jpg>Screenshot</a>]]>
+    </line>
+    <line>
+      <![CDATA[<br>]]>
+    </line>
+    <line>
+      <![CDATA[<br>]]>
+    </line>
+    <line>
+      <![CDATA[<a target="_blank" href=Sat_Nov_14_11_34_51_IST_2020.jpg><img src=Sat_Nov_14_11_34_51_IST_2020.jpg height=200 width=200></img></a>]]>
+    </line>
+    <line>
+      <![CDATA[Click to see Screenshot]]>
+    </line>
+    <line>
+      <![CDATA[<a target="_blank" href=Sat_Nov_14_11_35_10_IST_2020.jpg>Screenshot</a>]]>
+    </line>
+    <line>
+      <![CDATA[<br>]]>
+    </line>
+    <line>
+      <![CDATA[<br>]]>
+    </line>
+    <line>
+      <![CDATA[<a target="_blank" href=Sat_Nov_14_11_35_10_IST_2020.jpg><img src=Sat_Nov_14_11_35_10_IST_2020.jpg height=200 width=200></img></a>]]>
+    </line>
+    <line>
+      <![CDATA[Click to see Screenshot]]>
+    </line>
+    <line>
+      <![CDATA[<a target="_blank" href=Sat_Nov_14_11_35_23_IST_2020.jpg>Screenshot</a>]]>
+    </line>
+    <line>
+      <![CDATA[<br>]]>
+    </line>
+    <line>
+      <![CDATA[<br>]]>
+    </line>
+    <line>
+      <![CDATA[<a target="_blank" href=Sat_Nov_14_11_35_23_IST_2020.jpg><img src=Sat_Nov_14_11_35_23_IST_2020.jpg height=200 width=200></img></a>]]>
+    </line>
+    <line>
+      <![CDATA[Click to see Screenshot]]>
+    </line>
+    <line>
+      <![CDATA[<a target="_blank" href=Sat_Nov_14_11_35_25_IST_2020.jpg>Screenshot</a>]]>
+    </line>
+    <line>
+      <![CDATA[<br>]]>
+    </line>
+    <line>
+      <![CDATA[<br>]]>
+    </line>
+    <line>
+      <![CDATA[<a target="_blank" href=Sat_Nov_14_11_35_25_IST_2020.jpg><img src=Sat_Nov_14_11_35_25_IST_2020.jpg height=200 width=200></img></a>]]>
+    </line>
+    <line>
+      <![CDATA[Click to see Screenshot]]>
+    </line>
+    <line>
+      <![CDATA[<a target="_blank" href=Sat_Nov_14_11_35_32_IST_2020.jpg>Screenshot</a>]]>
+    </line>
+    <line>
+      <![CDATA[<br>]]>
+    </line>
+    <line>
+      <![CDATA[<br>]]>
+    </line>
+    <line>
+      <![CDATA[<a target="_blank" href=Sat_Nov_14_11_35_32_IST_2020.jpg><img src=Sat_Nov_14_11_35_32_IST_2020.jpg height=200 width=200></img></a>]]>
+    </line>
+    <line>
+      <![CDATA[Click to see Screenshot]]>
+    </line>
+    <line>
+      <![CDATA[<a target="_blank" href=Sat_Nov_14_11_35_52_IST_2020.jpg>Screenshot</a>]]>
+    </line>
+    <line>
+      <![CDATA[<br>]]>
+    </line>
+    <line>
+      <![CDATA[<br>]]>
+    </line>
+    <line>
+      <![CDATA[<a target="_blank" href=Sat_Nov_14_11_35_52_IST_2020.jpg><img src=Sat_Nov_14_11_35_52_IST_2020.jpg height=200 width=200></img></a>]]>
+    </line>
+    <line>
+      <![CDATA[Click to see Screenshot]]>
+    </line>
+    <line>
+      <![CDATA[<a target="_blank" href=Sat_Nov_14_11_35_53_IST_2020.jpg>Screenshot</a>]]>
+    </line>
+    <line>
+      <![CDATA[<br>]]>
+    </line>
+    <line>
+      <![CDATA[<br>]]>
+    </line>
+    <line>
+      <![CDATA[<a target="_blank" href=Sat_Nov_14_11_35_53_IST_2020.jpg><img src=Sat_Nov_14_11_35_53_IST_2020.jpg height=200 width=200></img></a>]]>
+    </line>
+    <line>
+      <![CDATA[Click to see Screenshot]]>
+    </line>
+    <line>
+      <![CDATA[<a target="_blank" href=Sat_Nov_14_11_36_09_IST_2020.jpg>Screenshot</a>]]>
+    </line>
+    <line>
+      <![CDATA[<br>]]>
+    </line>
+    <line>
+      <![CDATA[<br>]]>
+    </line>
+    <line>
+      <![CDATA[<a target="_blank" href=Sat_Nov_14_11_36_09_IST_2020.jpg><img src=Sat_Nov_14_11_36_09_IST_2020.jpg height=200 width=200></img></a>]]>
+    </line>
+    <line>
+      <![CDATA[Click to see Screenshot]]>
+    </line>
+    <line>
+      <![CDATA[<a target="_blank" href=Sat_Nov_14_11_36_20_IST_2020.jpg>Screenshot</a>]]>
+    </line>
+    <line>
+      <![CDATA[<br>]]>
+    </line>
+    <line>
+      <![CDATA[<br>]]>
+    </line>
+    <line>
+      <![CDATA[<a target="_blank" href=Sat_Nov_14_11_36_20_IST_2020.jpg><img src=Sat_Nov_14_11_36_20_IST_2020.jpg height=200 width=200></img></a>]]>
+    </line>
+    <line>
+      <![CDATA[Click to see Screenshot]]>
+    </line>
+    <line>
+      <![CDATA[<a target="_blank" href=Sat_Nov_14_11_36_50_IST_2020.jpg>Screenshot</a>]]>
+    </line>
+    <line>
+      <![CDATA[<br>]]>
+    </line>
+    <line>
+      <![CDATA[<br>]]>
+    </line>
+    <line>
+      <![CDATA[<a target="_blank" href=Sat_Nov_14_11_36_50_IST_2020.jpg><img src=Sat_Nov_14_11_36_50_IST_2020.jpg height=200 width=200></img></a>]]>
+    </line>
+    <line>
+      <![CDATA[Click to see Screenshot]]>
+    </line>
+    <line>
+      <![CDATA[<a target="_blank" href=Sat_Nov_14_11_37_10_IST_2020.jpg>Screenshot</a>]]>
+    </line>
+    <line>
+      <![CDATA[<br>]]>
+    </line>
+    <line>
+      <![CDATA[<br>]]>
+    </line>
+    <line>
+      <![CDATA[<a target="_blank" href=Sat_Nov_14_11_37_10_IST_2020.jpg><img src=Sat_Nov_14_11_37_10_IST_2020.jpg height=200 width=200></img></a>]]>
+    </line>
+    <line>
+      <![CDATA[Click to see Screenshot]]>
+    </line>
+    <line>
+      <![CDATA[<a target="_blank" href=Sat_Nov_14_11_37_20_IST_2020.jpg>Screenshot</a>]]>
+    </line>
+    <line>
+      <![CDATA[<br>]]>
+    </line>
+    <line>
+      <![CDATA[<br>]]>
+    </line>
+    <line>
+      <![CDATA[<a target="_blank" href=Sat_Nov_14_11_37_20_IST_2020.jpg><img src=Sat_Nov_14_11_37_20_IST_2020.jpg height=200 width=200></img></a>]]>
+    </line>
+    <line>
+      <![CDATA[Click to see Screenshot]]>
+    </line>
+    <line>
+      <![CDATA[<a target="_blank" href=Sat_Nov_14_11_37_25_IST_2020.jpg>Screenshot</a>]]>
+    </line>
+    <line>
+      <![CDATA[<br>]]>
+    </line>
+    <line>
+      <![CDATA[<br>]]>
+    </line>
+    <line>
+      <![CDATA[<a target="_blank" href=Sat_Nov_14_11_37_25_IST_2020.jpg><img src=Sat_Nov_14_11_37_25_IST_2020.jpg height=200 width=200></img></a>]]>
+    </line>
+    <line>
+      <![CDATA[Click to see Screenshot]]>
+    </line>
+    <line>
+      <![CDATA[<a target="_blank" href=Sat_Nov_14_11_37_29_IST_2020.jpg>Screenshot</a>]]>
+    </line>
+    <line>
+      <![CDATA[<br>]]>
+    </line>
+    <line>
+      <![CDATA[<br>]]>
+    </line>
+    <line>
+      <![CDATA[<a target="_blank" href=Sat_Nov_14_11_37_29_IST_2020.jpg><img src=Sat_Nov_14_11_37_29_IST_2020.jpg height=200 width=200></img></a>]]>
+    </line>
+    <line>
+      <![CDATA[Click to see Screenshot]]>
+    </line>
+    <line>
+      <![CDATA[<a target="_blank" href=Sat_Nov_14_11_37_32_IST_2020.jpg>Screenshot</a>]]>
+    </line>
+    <line>
+      <![CDATA[<br>]]>
+    </line>
+    <line>
+      <![CDATA[<br>]]>
+    </line>
+    <line>
+      <![CDATA[<a target="_blank" href=Sat_Nov_14_11_37_32_IST_2020.jpg><img src=Sat_Nov_14_11_37_32_IST_2020.jpg height=200 width=200></img></a>]]>
+    </line>
+    <line>
+      <![CDATA[Click to see Screenshot]]>
+    </line>
+    <line>
+      <![CDATA[<a target="_blank" href=Sat_Nov_14_11_37_37_IST_2020.jpg>Screenshot</a>]]>
+    </line>
+    <line>
+      <![CDATA[<br>]]>
+    </line>
+    <line>
+      <![CDATA[<br>]]>
+    </line>
+    <line>
+      <![CDATA[<a target="_blank" href=Sat_Nov_14_11_37_37_IST_2020.jpg><img src=Sat_Nov_14_11_37_37_IST_2020.jpg height=200 width=200></img></a>]]>
+    </line>
+    <line>
+      <![CDATA[Click to see Screenshot]]>
+    </line>
+    <line>
+      <![CDATA[<a target="_blank" href=Sat_Nov_14_11_37_43_IST_2020.jpg>Screenshot</a>]]>
+    </line>
+    <line>
+      <![CDATA[<br>]]>
+    </line>
+    <line>
+      <![CDATA[<br>]]>
+    </line>
+    <line>
+      <![CDATA[<a target="_blank" href=Sat_Nov_14_11_37_43_IST_2020.jpg><img src=Sat_Nov_14_11_37_43_IST_2020.jpg height=200 width=200></img></a>]]>
+    </line>
+    <line>
+      <![CDATA[Click to see Screenshot]]>
+    </line>
+    <line>
+      <![CDATA[<a target="_blank" href=Sat_Nov_14_11_37_47_IST_2020.jpg>Screenshot</a>]]>
+    </line>
+    <line>
+      <![CDATA[<br>]]>
+    </line>
+    <line>
+      <![CDATA[<br>]]>
+    </line>
+    <line>
+      <![CDATA[<a target="_blank" href=Sat_Nov_14_11_37_47_IST_2020.jpg><img src=Sat_Nov_14_11_37_47_IST_2020.jpg height=200 width=200></img></a>]]>
+    </line>
+    <line>
+      <![CDATA[Click to see Screenshot]]>
+    </line>
+    <line>
+      <![CDATA[<a target="_blank" href=Sat_Nov_14_11_37_49_IST_2020.jpg>Screenshot</a>]]>
+    </line>
+    <line>
+      <![CDATA[<br>]]>
+    </line>
+    <line>
+      <![CDATA[<br>]]>
+    </line>
+    <line>
+      <![CDATA[<a target="_blank" href=Sat_Nov_14_11_37_49_IST_2020.jpg><img src=Sat_Nov_14_11_37_49_IST_2020.jpg height=200 width=200></img></a>]]>
+    </line>
+    <line>
+      <![CDATA[Click to see Screenshot]]>
+    </line>
+    <line>
+      <![CDATA[<a target="_blank" href=Sat_Nov_14_11_37_52_IST_2020.jpg>Screenshot</a>]]>
+    </line>
+    <line>
+      <![CDATA[<br>]]>
+    </line>
+    <line>
+      <![CDATA[<br>]]>
+    </line>
+    <line>
+      <![CDATA[<a target="_blank" href=Sat_Nov_14_11_37_52_IST_2020.jpg><img src=Sat_Nov_14_11_37_52_IST_2020.jpg height=200 width=200></img></a>]]>
+    </line>
+    <line>
+      <![CDATA[Click to see Screenshot]]>
+    </line>
+    <line>
+      <![CDATA[<a target="_blank" href=Sat_Nov_14_11_37_54_IST_2020.jpg>Screenshot</a>]]>
+    </line>
+    <line>
+      <![CDATA[<br>]]>
+    </line>
+    <line>
+      <![CDATA[<br>]]>
+    </line>
+    <line>
+      <![CDATA[<a target="_blank" href=Sat_Nov_14_11_37_54_IST_2020.jpg><img src=Sat_Nov_14_11_37_54_IST_2020.jpg height=200 width=200></img></a>]]>
+    </line>
+    <line>
+      <![CDATA[Click to see Screenshot]]>
+    </line>
+    <line>
+      <![CDATA[<a target="_blank" href=Sat_Nov_14_11_37_57_IST_2020.jpg>Screenshot</a>]]>
+    </line>
+    <line>
+      <![CDATA[<br>]]>
+    </line>
+    <line>
+      <![CDATA[<br>]]>
+    </line>
+    <line>
+      <![CDATA[<a target="_blank" href=Sat_Nov_14_11_37_57_IST_2020.jpg><img src=Sat_Nov_14_11_37_57_IST_2020.jpg height=200 width=200></img></a>]]>
+    </line>
+    <line>
+      <![CDATA[Click to see Screenshot]]>
+    </line>
+    <line>
+      <![CDATA[<a target="_blank" href=Sat_Nov_14_11_38_00_IST_2020.jpg>Screenshot</a>]]>
+    </line>
+    <line>
+      <![CDATA[<br>]]>
+    </line>
+    <line>
+      <![CDATA[<br>]]>
+    </line>
+    <line>
+      <![CDATA[<a target="_blank" href=Sat_Nov_14_11_38_00_IST_2020.jpg><img src=Sat_Nov_14_11_38_00_IST_2020.jpg height=200 width=200></img></a>]]>
+    </line>
+    <line>
+      <![CDATA[Click to see Screenshot]]>
+    </line>
+    <line>
+      <![CDATA[<a target="_blank" href=Sat_Nov_14_11_38_04_IST_2020.jpg>Screenshot</a>]]>
+    </line>
+    <line>
+      <![CDATA[<br>]]>
+    </line>
+    <line>
+      <![CDATA[<br>]]>
+    </line>
+    <line>
+      <![CDATA[<a target="_blank" href=Sat_Nov_14_11_38_04_IST_2020.jpg><img src=Sat_Nov_14_11_38_04_IST_2020.jpg height=200 width=200></img></a>]]>
+    </line>
+    <line>
+      <![CDATA[Click to see Screenshot]]>
+    </line>
+    <line>
+      <![CDATA[<a target="_blank" href=Sat_Nov_14_11_38_18_IST_2020.jpg>Screenshot</a>]]>
+    </line>
+    <line>
+      <![CDATA[<br>]]>
+    </line>
+    <line>
+      <![CDATA[<br>]]>
+    </line>
+    <line>
+      <![CDATA[<a target="_blank" href=Sat_Nov_14_11_38_18_IST_2020.jpg><img src=Sat_Nov_14_11_38_18_IST_2020.jpg height=200 width=200></img></a>]]>
+    </line>
+    <line>
+      <![CDATA[Click to see Screenshot]]>
+    </line>
+    <line>
+      <![CDATA[<a target="_blank" href=Sat_Nov_14_11_38_19_IST_2020.jpg>Screenshot</a>]]>
+    </line>
+    <line>
+      <![CDATA[<br>]]>
+    </line>
+    <line>
+      <![CDATA[<br>]]>
+    </line>
+    <line>
+      <![CDATA[<a target="_blank" href=Sat_Nov_14_11_38_19_IST_2020.jpg><img src=Sat_Nov_14_11_38_19_IST_2020.jpg height=200 width=200></img></a>]]>
+    </line>
+    <line>
+      <![CDATA[Click to see Screenshot]]>
+    </line>
+    <line>
+      <![CDATA[<a target="_blank" href=Sat_Nov_14_11_38_22_IST_2020.jpg>Screenshot</a>]]>
+    </line>
+    <line>
+      <![CDATA[<br>]]>
+    </line>
+    <line>
+      <![CDATA[<br>]]>
+    </line>
+    <line>
+      <![CDATA[<a target="_blank" href=Sat_Nov_14_11_38_22_IST_2020.jpg><img src=Sat_Nov_14_11_38_22_IST_2020.jpg height=200 width=200></img></a>]]>
+    </line>
+    <line>
+      <![CDATA[Click to see Screenshot]]>
+    </line>
+    <line>
+      <![CDATA[<a target="_blank" href=Sat_Nov_14_11_38_26_IST_2020.jpg>Screenshot</a>]]>
+    </line>
+    <line>
+      <![CDATA[<br>]]>
+    </line>
+    <line>
+      <![CDATA[<br>]]>
+    </line>
+    <line>
+      <![CDATA[<a target="_blank" href=Sat_Nov_14_11_38_26_IST_2020.jpg><img src=Sat_Nov_14_11_38_26_IST_2020.jpg height=200 width=200></img></a>]]>
+    </line>
+    <line>
+      <![CDATA[Click to see Screenshot]]>
+    </line>
+    <line>
+      <![CDATA[<a target="_blank" href=Sat_Nov_14_11_38_40_IST_2020.jpg>Screenshot</a>]]>
+    </line>
+    <line>
+      <![CDATA[<br>]]>
+    </line>
+    <line>
+      <![CDATA[<br>]]>
+    </line>
+    <line>
+      <![CDATA[<a target="_blank" href=Sat_Nov_14_11_38_40_IST_2020.jpg><img src=Sat_Nov_14_11_38_40_IST_2020.jpg height=200 width=200></img></a>]]>
+    </line>
+    <line>
+      <![CDATA[Click to see Screenshot]]>
+    </line>
+    <line>
+      <![CDATA[<a target="_blank" href=Sat_Nov_14_11_38_42_IST_2020.jpg>Screenshot</a>]]>
+    </line>
+    <line>
+      <![CDATA[<br>]]>
+    </line>
+    <line>
+      <![CDATA[<br>]]>
+    </line>
+    <line>
+      <![CDATA[<a target="_blank" href=Sat_Nov_14_11_38_42_IST_2020.jpg><img src=Sat_Nov_14_11_38_42_IST_2020.jpg height=200 width=200></img></a>]]>
+    </line>
+    <line>
+      <![CDATA[Click to see Screenshot]]>
+    </line>
+    <line>
+      <![CDATA[<a target="_blank" href=Sat_Nov_14_11_38_49_IST_2020.jpg>Screenshot</a>]]>
+    </line>
+    <line>
+      <![CDATA[<br>]]>
+    </line>
+    <line>
+      <![CDATA[<br>]]>
+    </line>
+    <line>
+      <![CDATA[<a target="_blank" href=Sat_Nov_14_11_38_49_IST_2020.jpg><img src=Sat_Nov_14_11_38_49_IST_2020.jpg height=200 width=200></img></a>]]>
+    </line>
+    <line>
+      <![CDATA[Click to see Screenshot]]>
+    </line>
+    <line>
+      <![CDATA[<a target="_blank" href=Sat_Nov_14_11_39_29_IST_2020.jpg>Screenshot</a>]]>
+    </line>
+    <line>
+      <![CDATA[<br>]]>
+    </line>
+    <line>
+      <![CDATA[<br>]]>
+    </line>
+    <line>
+      <![CDATA[<a target="_blank" href=Sat_Nov_14_11_39_29_IST_2020.jpg><img src=Sat_Nov_14_11_39_29_IST_2020.jpg height=200 width=200></img></a>]]>
     </line>
   </reporter-output>
-  <suite name="OSMOSE Test" duration-ms="18997" started-at="2020-10-12T12:11:38 IST" finished-at="2020-10-12T12:11:57 IST">
+  <suite name="OSMOSE Test" duration-ms="742252" started-at="2020-11-14T11:27:07 IST" finished-at="2020-11-14T11:39:29 IST">
     <groups>
     </groups>
-    <test name="Login" duration-ms="18997" started-at="2020-10-12T12:11:38 IST" finished-at="2020-10-12T12:11:57 IST">
+    <test name="Login" duration-ms="21266" started-at="2020-11-14T11:27:07 IST" finished-at="2020-11-14T11:27:28 IST">
       <class name="com.OSMOSE.testcases.LoginTest">
-        <test-method status="PASS" signature="loginTest(java.util.Hashtable)[pri:0, instance:com.OSMOSE.testcases.LoginTest@aeab9a1]" name="loginTest" duration-ms="17300" started-at="2020-10-12T12:11:39 IST" description="Verify the login functionality" data-provider="dp" finished-at="2020-10-12T12:11:56 IST">
+        <test-method status="PASS" signature="loginTest(java.util.Hashtable)[pri:0, instance:com.OSMOSE.testcases.LoginTest@aeab9a1]" name="loginTest" duration-ms="20113" started-at="2020-11-14T11:27:07 IST" description="Verify the login functionality" data-provider="dp" finished-at="2020-11-14T11:27:27 IST">
           <params>
             <param index="0">
               <value>
@@ -35,7 +905,7 @@
               <![CDATA[Click to see Screenshot]]>
             </line>
             <line>
-              <![CDATA[<a target="_blank" href=Mon_Oct_12_12_11_56_IST_2020.jpg>Screenshot</a>]]>
+              <![CDATA[<a target="_blank" href=Sat_Nov_14_11_27_28_IST_2020.jpg>Screenshot</a>]]>
             </line>
             <line>
               <![CDATA[<br>]]>
@@ -44,15 +914,1121 @@
               <![CDATA[<br>]]>
             </line>
             <line>
-              <![CDATA[<a target="_blank" href=Mon_Oct_12_12_11_56_IST_2020.jpg><img src=Mon_Oct_12_12_11_56_IST_2020.jpg height=200 width=200></img></a>]]>
+              <![CDATA[<a target="_blank" href=Sat_Nov_14_11_27_28_IST_2020.jpg><img src=Sat_Nov_14_11_27_28_IST_2020.jpg height=200 width=200></img></a>]]>
             </line>
           </reporter-output>
         </test-method> <!-- loginTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.OSMOSE.testcases.LoginTest@aeab9a1]" name="tearDown" is-config="true" duration-ms="1468" started-at="2020-10-12T12:11:57 IST" finished-at="2020-10-12T12:11:59 IST">
+      </class> <!-- com.OSMOSE.testcases.LoginTest -->
+    </test> <!-- Login -->
+    <test name="OCalcProLicense" duration-ms="720870" started-at="2020-11-14T11:27:28 IST" finished-at="2020-11-14T11:39:29 IST">
+      <class name="com.OSMOSE.testcases.oCalcPro">
+        <test-method status="PASS" signature="verifyoCalcProNavigationClick()[pri:1, instance:com.OSMOSE.testcases.oCalcPro@6941827a]" name="verifyoCalcProNavigationClick" duration-ms="15966" started-at="2020-11-14T11:27:28 IST" description="Verify the click on oCalcPro menu and card Navigation" finished-at="2020-11-14T11:27:44 IST">
+          <reporter-output>
+            <line>
+              <![CDATA[Click to see Screenshot]]>
+            </line>
+            <line>
+              <![CDATA[<a target="_blank" href=Sat_Nov_14_11_27_45_IST_2020.jpg>Screenshot</a>]]>
+            </line>
+            <line>
+              <![CDATA[<br>]]>
+            </line>
+            <line>
+              <![CDATA[<br>]]>
+            </line>
+            <line>
+              <![CDATA[<a target="_blank" href=Sat_Nov_14_11_27_45_IST_2020.jpg><img src=Sat_Nov_14_11_27_45_IST_2020.jpg height=200 width=200></img></a>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifyoCalcProNavigationClick -->
+        <test-method status="PASS" signature="verifyPresenceOfLicenseMgmtCard()[pri:2, instance:com.OSMOSE.testcases.oCalcPro@6941827a]" name="verifyPresenceOfLicenseMgmtCard" duration-ms="58" started-at="2020-11-14T11:27:45 IST" description="Verify presence of License Management card on OcalcPro page for Licensed User" finished-at="2020-11-14T11:27:45 IST">
+          <reporter-output>
+            <line>
+              <![CDATA[Click to see Screenshot]]>
+            </line>
+            <line>
+              <![CDATA[<a target="_blank" href=Sat_Nov_14_11_27_46_IST_2020.jpg>Screenshot</a>]]>
+            </line>
+            <line>
+              <![CDATA[<br>]]>
+            </line>
+            <line>
+              <![CDATA[<br>]]>
+            </line>
+            <line>
+              <![CDATA[<a target="_blank" href=Sat_Nov_14_11_27_46_IST_2020.jpg><img src=Sat_Nov_14_11_27_46_IST_2020.jpg height=200 width=200></img></a>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifyPresenceOfLicenseMgmtCard -->
+        <test-method status="PASS" signature="verifyPresenceOfProductsCardLicensedUser()[pri:3, instance:com.OSMOSE.testcases.oCalcPro@6941827a]" name="verifyPresenceOfProductsCardLicensedUser" duration-ms="42" started-at="2020-11-14T11:27:46 IST" description="Verify presence of Products card on OcalcPro page for Licensed User" finished-at="2020-11-14T11:27:46 IST">
+          <reporter-output>
+            <line>
+              <![CDATA[Click to see Screenshot]]>
+            </line>
+            <line>
+              <![CDATA[<a target="_blank" href=Sat_Nov_14_11_27_46_IST_2020.jpg>Screenshot</a>]]>
+            </line>
+            <line>
+              <![CDATA[<br>]]>
+            </line>
+            <line>
+              <![CDATA[<br>]]>
+            </line>
+            <line>
+              <![CDATA[<a target="_blank" href=Sat_Nov_14_11_27_46_IST_2020.jpg><img src=Sat_Nov_14_11_27_46_IST_2020.jpg height=200 width=200></img></a>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifyPresenceOfProductsCardLicensedUser -->
+        <test-method status="PASS" signature="verifyPresenceOfKnowledgeBaseCardLicensedUser()[pri:4, instance:com.OSMOSE.testcases.oCalcPro@6941827a]" name="verifyPresenceOfKnowledgeBaseCardLicensedUser" duration-ms="52" started-at="2020-11-14T11:27:46 IST" description="Verify presence of Knowledge Base card on OcalcPro page for Licensed User" finished-at="2020-11-14T11:27:46 IST">
+          <reporter-output>
+            <line>
+              <![CDATA[Click to see Screenshot]]>
+            </line>
+            <line>
+              <![CDATA[<a target="_blank" href=Sat_Nov_14_11_27_47_IST_2020.jpg>Screenshot</a>]]>
+            </line>
+            <line>
+              <![CDATA[<br>]]>
+            </line>
+            <line>
+              <![CDATA[<br>]]>
+            </line>
+            <line>
+              <![CDATA[<a target="_blank" href=Sat_Nov_14_11_27_47_IST_2020.jpg><img src=Sat_Nov_14_11_27_47_IST_2020.jpg height=200 width=200></img></a>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifyPresenceOfKnowledgeBaseCardLicensedUser -->
+        <test-method status="PASS" signature="verifyPresenceOfAnnouncementsCardLicensedUser()[pri:5, instance:com.OSMOSE.testcases.oCalcPro@6941827a]" name="verifyPresenceOfAnnouncementsCardLicensedUser" duration-ms="46" started-at="2020-11-14T11:27:47 IST" description="Verify presence of Announcements card on OcalcPro page for Licensed User" finished-at="2020-11-14T11:27:47 IST">
+          <reporter-output>
+            <line>
+              <![CDATA[Click to see Screenshot]]>
+            </line>
+            <line>
+              <![CDATA[<a target="_blank" href=Sat_Nov_14_11_27_47_IST_2020.jpg>Screenshot</a>]]>
+            </line>
+            <line>
+              <![CDATA[<br>]]>
+            </line>
+            <line>
+              <![CDATA[<br>]]>
+            </line>
+            <line>
+              <![CDATA[<a target="_blank" href=Sat_Nov_14_11_27_47_IST_2020.jpg><img src=Sat_Nov_14_11_27_47_IST_2020.jpg height=200 width=200></img></a>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifyPresenceOfAnnouncementsCardLicensedUser -->
+        <test-method status="PASS" signature="verifyPresenceOfTrainingOptionsCardLicensedUser()[pri:6, instance:com.OSMOSE.testcases.oCalcPro@6941827a]" name="verifyPresenceOfTrainingOptionsCardLicensedUser" duration-ms="34" started-at="2020-11-14T11:27:47 IST" description="Verify presence of Training Options card on OcalcPro page for Licensed User" finished-at="2020-11-14T11:27:47 IST">
+          <reporter-output>
+            <line>
+              <![CDATA[Click to see Screenshot]]>
+            </line>
+            <line>
+              <![CDATA[<a target="_blank" href=Sat_Nov_14_11_27_48_IST_2020.jpg>Screenshot</a>]]>
+            </line>
+            <line>
+              <![CDATA[<br>]]>
+            </line>
+            <line>
+              <![CDATA[<br>]]>
+            </line>
+            <line>
+              <![CDATA[<a target="_blank" href=Sat_Nov_14_11_27_48_IST_2020.jpg><img src=Sat_Nov_14_11_27_48_IST_2020.jpg height=200 width=200></img></a>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifyPresenceOfTrainingOptionsCardLicensedUser -->
+        <test-method status="PASS" signature="verifyPresenceOfTutorialLiveDemoCardLicensedUser()[pri:7, instance:com.OSMOSE.testcases.oCalcPro@6941827a]" name="verifyPresenceOfTutorialLiveDemoCardLicensedUser" duration-ms="38" started-at="2020-11-14T11:27:48 IST" description="Verify presence of Tutorial, Live Demo &amp; support card on OcalcPro page for Licensed User" finished-at="2020-11-14T11:27:48 IST">
+          <reporter-output>
+            <line>
+              <![CDATA[Click to see Screenshot]]>
+            </line>
+            <line>
+              <![CDATA[<a target="_blank" href=Sat_Nov_14_11_27_48_IST_2020.jpg>Screenshot</a>]]>
+            </line>
+            <line>
+              <![CDATA[<br>]]>
+            </line>
+            <line>
+              <![CDATA[<br>]]>
+            </line>
+            <line>
+              <![CDATA[<a target="_blank" href=Sat_Nov_14_11_27_48_IST_2020.jpg><img src=Sat_Nov_14_11_27_48_IST_2020.jpg height=200 width=200></img></a>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifyPresenceOfTutorialLiveDemoCardLicensedUser -->
+        <test-method status="PASS" signature="verifyContentsOfTrainingOptionsLicensedUser()[pri:8, instance:com.OSMOSE.testcases.oCalcPro@6941827a]" name="verifyContentsOfTrainingOptionsLicensedUser" duration-ms="150" started-at="2020-11-14T11:27:48 IST" description="Verify contents on Training Options card for Licensed User" finished-at="2020-11-14T11:27:49 IST">
+          <reporter-output>
+            <line>
+              <![CDATA[Click to see Screenshot]]>
+            </line>
+            <line>
+              <![CDATA[<a target="_blank" href=Sat_Nov_14_11_27_49_IST_2020.jpg>Screenshot</a>]]>
+            </line>
+            <line>
+              <![CDATA[<br>]]>
+            </line>
+            <line>
+              <![CDATA[<br>]]>
+            </line>
+            <line>
+              <![CDATA[<a target="_blank" href=Sat_Nov_14_11_27_49_IST_2020.jpg><img src=Sat_Nov_14_11_27_49_IST_2020.jpg height=200 width=200></img></a>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifyContentsOfTrainingOptionsLicensedUser -->
+        <test-method status="PASS" signature="verifyContentsOfProductsCardLicensedUser()[pri:9, instance:com.OSMOSE.testcases.oCalcPro@6941827a]" name="verifyContentsOfProductsCardLicensedUser" duration-ms="168" started-at="2020-11-14T11:27:49 IST" description="Verify contents on Products card for Licensed User" finished-at="2020-11-14T11:27:49 IST">
+          <reporter-output>
+            <line>
+              <![CDATA[Click to see Screenshot]]>
+            </line>
+            <line>
+              <![CDATA[<a target="_blank" href=Sat_Nov_14_11_27_50_IST_2020.jpg>Screenshot</a>]]>
+            </line>
+            <line>
+              <![CDATA[<br>]]>
+            </line>
+            <line>
+              <![CDATA[<br>]]>
+            </line>
+            <line>
+              <![CDATA[<a target="_blank" href=Sat_Nov_14_11_27_50_IST_2020.jpg><img src=Sat_Nov_14_11_27_50_IST_2020.jpg height=200 width=200></img></a>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifyContentsOfProductsCardLicensedUser -->
+        <test-method status="PASS" signature="verifyContentsOfKBCardLicensedUser()[pri:10, instance:com.OSMOSE.testcases.oCalcPro@6941827a]" name="verifyContentsOfKBCardLicensedUser" duration-ms="128" started-at="2020-11-14T11:27:50 IST" description="Verify contents on Knowledge Base card for Licensed User" finished-at="2020-11-14T11:27:50 IST">
+          <reporter-output>
+            <line>
+              <![CDATA[Click to see Screenshot]]>
+            </line>
+            <line>
+              <![CDATA[<a target="_blank" href=Sat_Nov_14_11_27_50_IST_2020.jpg>Screenshot</a>]]>
+            </line>
+            <line>
+              <![CDATA[<br>]]>
+            </line>
+            <line>
+              <![CDATA[<br>]]>
+            </line>
+            <line>
+              <![CDATA[<a target="_blank" href=Sat_Nov_14_11_27_50_IST_2020.jpg><img src=Sat_Nov_14_11_27_50_IST_2020.jpg height=200 width=200></img></a>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifyContentsOfKBCardLicensedUser -->
+        <test-method status="PASS" signature="verifyContentsOfAnnouncementsLicensedUser()[pri:11, instance:com.OSMOSE.testcases.oCalcPro@6941827a]" name="verifyContentsOfAnnouncementsLicensedUser" duration-ms="528" started-at="2020-11-14T11:27:50 IST" description="Verify contents on Announcements card for Licensed User" finished-at="2020-11-14T11:27:51 IST">
+          <reporter-output>
+            <line>
+              <![CDATA[Click to see Screenshot]]>
+            </line>
+            <line>
+              <![CDATA[<a target="_blank" href=Sat_Nov_14_11_27_51_IST_2020.jpg>Screenshot</a>]]>
+            </line>
+            <line>
+              <![CDATA[<br>]]>
+            </line>
+            <line>
+              <![CDATA[<br>]]>
+            </line>
+            <line>
+              <![CDATA[<a target="_blank" href=Sat_Nov_14_11_27_51_IST_2020.jpg><img src=Sat_Nov_14_11_27_51_IST_2020.jpg height=200 width=200></img></a>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifyContentsOfAnnouncementsLicensedUser -->
+        <test-method status="PASS" signature="verifyContentsOfLicenseMgmtLicensedUser()[pri:12, instance:com.OSMOSE.testcases.oCalcPro@6941827a]" name="verifyContentsOfLicenseMgmtLicensedUser" duration-ms="298" started-at="2020-11-14T11:27:51 IST" description="Verify contents on License Management card for Licensed User" finished-at="2020-11-14T11:27:52 IST">
+          <reporter-output>
+            <line>
+              <![CDATA[Click to see Screenshot]]>
+            </line>
+            <line>
+              <![CDATA[<a target="_blank" href=Sat_Nov_14_11_27_52_IST_2020.jpg>Screenshot</a>]]>
+            </line>
+            <line>
+              <![CDATA[<br>]]>
+            </line>
+            <line>
+              <![CDATA[<br>]]>
+            </line>
+            <line>
+              <![CDATA[<a target="_blank" href=Sat_Nov_14_11_27_52_IST_2020.jpg><img src=Sat_Nov_14_11_27_52_IST_2020.jpg height=200 width=200></img></a>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifyContentsOfLicenseMgmtLicensedUser -->
+        <test-method status="PASS" signature="verifyContentsOfTutorialLiveDemoLicensedUser()[pri:13, instance:com.OSMOSE.testcases.oCalcPro@6941827a]" name="verifyContentsOfTutorialLiveDemoLicensedUser" duration-ms="312" started-at="2020-11-14T11:27:52 IST" description="Verify contents on Tutotial, Live Demo and Support card" finished-at="2020-11-14T11:27:52 IST">
+          <reporter-output>
+            <line>
+              <![CDATA[Click to see Screenshot]]>
+            </line>
+            <line>
+              <![CDATA[<a target="_blank" href=Sat_Nov_14_11_27_53_IST_2020.jpg>Screenshot</a>]]>
+            </line>
+            <line>
+              <![CDATA[<br>]]>
+            </line>
+            <line>
+              <![CDATA[<br>]]>
+            </line>
+            <line>
+              <![CDATA[<a target="_blank" href=Sat_Nov_14_11_27_53_IST_2020.jpg><img src=Sat_Nov_14_11_27_53_IST_2020.jpg height=200 width=200></img></a>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifyContentsOfTutorialLiveDemoLicensedUser -->
+        <test-method status="PASS" signature="verifyProductsClickLicensedUser()[pri:14, instance:com.OSMOSE.testcases.oCalcPro@6941827a]" name="verifyProductsClickLicensedUser" duration-ms="2324" started-at="2020-11-14T11:27:53 IST" description="Verify click on Products card for Licensed User" finished-at="2020-11-14T11:27:55 IST">
+          <reporter-output>
+            <line>
+              <![CDATA[Click to see Screenshot]]>
+            </line>
+            <line>
+              <![CDATA[<a target="_blank" href=Sat_Nov_14_11_27_56_IST_2020.jpg>Screenshot</a>]]>
+            </line>
+            <line>
+              <![CDATA[<br>]]>
+            </line>
+            <line>
+              <![CDATA[<br>]]>
+            </line>
+            <line>
+              <![CDATA[<a target="_blank" href=Sat_Nov_14_11_27_56_IST_2020.jpg><img src=Sat_Nov_14_11_27_56_IST_2020.jpg height=200 width=200></img></a>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifyProductsClickLicensedUser -->
+        <test-method status="PASS" signature="verifyRequestLicenseQuoteClickLicensedUser()[pri:15, instance:com.OSMOSE.testcases.oCalcPro@6941827a]" name="verifyRequestLicenseQuoteClickLicensedUser" duration-ms="8567" started-at="2020-11-14T11:27:56 IST" description="Verify click on Request License Quote on Products card and submit quote for Licensed User" finished-at="2020-11-14T11:28:04 IST">
+          <reporter-output>
+            <line>
+              <![CDATA[Click to see Screenshot]]>
+            </line>
+            <line>
+              <![CDATA[<a target="_blank" href=Sat_Nov_14_11_28_05_IST_2020.jpg>Screenshot</a>]]>
+            </line>
+            <line>
+              <![CDATA[<br>]]>
+            </line>
+            <line>
+              <![CDATA[<br>]]>
+            </line>
+            <line>
+              <![CDATA[<a target="_blank" href=Sat_Nov_14_11_28_05_IST_2020.jpg><img src=Sat_Nov_14_11_28_05_IST_2020.jpg height=200 width=200></img></a>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifyRequestLicenseQuoteClickLicensedUser -->
+        <test-method status="PASS" signature="verifyRequestCVTQuoteClickLicensedUser()[pri:16, instance:com.OSMOSE.testcases.oCalcPro@6941827a]" name="verifyRequestCVTQuoteClickLicensedUser" duration-ms="8576" started-at="2020-11-14T11:28:05 IST" description="Verify click on Request CVT Quote on Products card and submit quote for Licensed User" finished-at="2020-11-14T11:28:14 IST">
+          <reporter-output>
+            <line>
+              <![CDATA[Click to see Screenshot]]>
+            </line>
+            <line>
+              <![CDATA[<a target="_blank" href=Sat_Nov_14_11_28_15_IST_2020.jpg>Screenshot</a>]]>
+            </line>
+            <line>
+              <![CDATA[<br>]]>
+            </line>
+            <line>
+              <![CDATA[<br>]]>
+            </line>
+            <line>
+              <![CDATA[<a target="_blank" href=Sat_Nov_14_11_28_15_IST_2020.jpg><img src=Sat_Nov_14_11_28_15_IST_2020.jpg height=200 width=200></img></a>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifyRequestCVTQuoteClickLicensedUser -->
+        <test-method status="PASS" signature="verifyRequestTrainingQuoteClickLicensedUser()[pri:17, instance:com.OSMOSE.testcases.oCalcPro@6941827a]" name="verifyRequestTrainingQuoteClickLicensedUser" duration-ms="10136" started-at="2020-11-14T11:28:15 IST" description="Verify click on Request Training Quote on Products card and submit quote for Licensed User" finished-at="2020-11-14T11:28:25 IST">
+          <reporter-output>
+            <line>
+              <![CDATA[Click to see Screenshot]]>
+            </line>
+            <line>
+              <![CDATA[<a target="_blank" href=Sat_Nov_14_11_28_25_IST_2020.jpg>Screenshot</a>]]>
+            </line>
+            <line>
+              <![CDATA[<br>]]>
+            </line>
+            <line>
+              <![CDATA[<br>]]>
+            </line>
+            <line>
+              <![CDATA[<a target="_blank" href=Sat_Nov_14_11_28_25_IST_2020.jpg><img src=Sat_Nov_14_11_28_25_IST_2020.jpg height=200 width=200></img></a>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifyRequestTrainingQuoteClickLicensedUser -->
+        <test-method status="PASS" signature="verify30daysbtnClickLicensedUser()[pri:18, instance:com.OSMOSE.testcases.oCalcPro@6941827a]" name="verify30daysbtnClickLicensedUser" duration-ms="5194" started-at="2020-11-14T11:28:25 IST" description="Verify click on 30 days Trial button for Licensed User" finished-at="2020-11-14T11:28:31 IST">
+          <reporter-output>
+            <line>
+              <![CDATA[Click to see Screenshot]]>
+            </line>
+            <line>
+              <![CDATA[<a target="_blank" href=Sat_Nov_14_11_28_31_IST_2020.jpg>Screenshot</a>]]>
+            </line>
+            <line>
+              <![CDATA[<br>]]>
+            </line>
+            <line>
+              <![CDATA[<br>]]>
+            </line>
+            <line>
+              <![CDATA[<a target="_blank" href=Sat_Nov_14_11_28_31_IST_2020.jpg><img src=Sat_Nov_14_11_28_31_IST_2020.jpg height=200 width=200></img></a>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verify30daysbtnClickLicensedUser -->
+        <test-method status="PASS" signature="verifyRequstDemoClickLicensedUser()[pri:19, instance:com.OSMOSE.testcases.oCalcPro@6941827a]" name="verifyRequstDemoClickLicensedUser" duration-ms="4821" started-at="2020-11-14T11:28:31 IST" description="Verify click on Request Demo button for Licensed User" finished-at="2020-11-14T11:28:36 IST">
+          <reporter-output>
+            <line>
+              <![CDATA[Click to see Screenshot]]>
+            </line>
+            <line>
+              <![CDATA[<a target="_blank" href=Sat_Nov_14_11_28_36_IST_2020.jpg>Screenshot</a>]]>
+            </line>
+            <line>
+              <![CDATA[<br>]]>
+            </line>
+            <line>
+              <![CDATA[<br>]]>
+            </line>
+            <line>
+              <![CDATA[<a target="_blank" href=Sat_Nov_14_11_28_36_IST_2020.jpg><img src=Sat_Nov_14_11_28_36_IST_2020.jpg height=200 width=200></img></a>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifyRequstDemoClickLicensedUser -->
+        <test-method status="PASS" signature="verifyocalcSupportClickLicensedUser()[pri:20, instance:com.OSMOSE.testcases.oCalcPro@6941827a]" name="verifyocalcSupportClickLicensedUser" duration-ms="2465" started-at="2020-11-14T11:28:36 IST" description="Verify click on Contact O-calc Support for Licensed User" finished-at="2020-11-14T11:28:39 IST">
+          <reporter-output>
+            <line>
+              <![CDATA[Click to see Screenshot]]>
+            </line>
+            <line>
+              <![CDATA[<a target="_blank" href=Sat_Nov_14_11_28_39_IST_2020.jpg>Screenshot</a>]]>
+            </line>
+            <line>
+              <![CDATA[<br>]]>
+            </line>
+            <line>
+              <![CDATA[<br>]]>
+            </line>
+            <line>
+              <![CDATA[<a target="_blank" href=Sat_Nov_14_11_28_39_IST_2020.jpg><img src=Sat_Nov_14_11_28_39_IST_2020.jpg height=200 width=200></img></a>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifyocalcSupportClickLicensedUser -->
+        <test-method status="PASS" signature="verifyDifferentProductsQuoteCreate()[pri:21, instance:com.OSMOSE.testcases.oCalcPro@6941827a]" name="verifyDifferentProductsQuoteCreate" duration-ms="18134" started-at="2020-11-14T11:28:39 IST" description="Verify adding OcalPro and other products to cart and quote submission" finished-at="2020-11-14T11:28:58 IST">
+          <reporter-output>
+            <line>
+              <![CDATA[Click to see Screenshot]]>
+            </line>
+            <line>
+              <![CDATA[<a target="_blank" href=Sat_Nov_14_11_28_58_IST_2020.jpg>Screenshot</a>]]>
+            </line>
+            <line>
+              <![CDATA[<br>]]>
+            </line>
+            <line>
+              <![CDATA[<br>]]>
+            </line>
+            <line>
+              <![CDATA[<a target="_blank" href=Sat_Nov_14_11_28_58_IST_2020.jpg><img src=Sat_Nov_14_11_28_58_IST_2020.jpg height=200 width=200></img></a>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifyDifferentProductsQuoteCreate -->
+        <test-method status="PASS" signature="verifyPresenceOfCreditCardOptions()[pri:22, instance:com.OSMOSE.testcases.oCalcPro@6941827a]" name="verifyPresenceOfCreditCardOptions" duration-ms="73519" started-at="2020-11-14T11:28:58 IST" description="Verify presence of Credit Card details" finished-at="2020-11-14T11:30:12 IST">
+          <reporter-output>
+            <line>
+              <![CDATA[Click to see Screenshot]]>
+            </line>
+            <line>
+              <![CDATA[<a target="_blank" href=Sat_Nov_14_11_30_13_IST_2020.jpg>Screenshot</a>]]>
+            </line>
+            <line>
+              <![CDATA[<br>]]>
+            </line>
+            <line>
+              <![CDATA[<br>]]>
+            </line>
+            <line>
+              <![CDATA[<a target="_blank" href=Sat_Nov_14_11_30_13_IST_2020.jpg><img src=Sat_Nov_14_11_30_13_IST_2020.jpg height=200 width=200></img></a>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifyPresenceOfCreditCardOptions -->
+        <test-method status="PASS" signature="verifyClickOnPaywithCCBtn()[pri:23, instance:com.OSMOSE.testcases.oCalcPro@6941827a]" name="verifyClickOnPaywithCCBtn" duration-ms="28054" started-at="2020-11-14T11:30:13 IST" description="Verify click on Pay with Credit Card button" depends-on-methods="com.OSMOSE.testcases.oCalcPro.verifyPresenceOfCreditCardOptions" finished-at="2020-11-14T11:30:41 IST">
+          <reporter-output>
+            <line>
+              <![CDATA[Click to see Screenshot]]>
+            </line>
+            <line>
+              <![CDATA[<a target="_blank" href=Sat_Nov_14_11_30_41_IST_2020.jpg>Screenshot</a>]]>
+            </line>
+            <line>
+              <![CDATA[<br>]]>
+            </line>
+            <line>
+              <![CDATA[<br>]]>
+            </line>
+            <line>
+              <![CDATA[<a target="_blank" href=Sat_Nov_14_11_30_41_IST_2020.jpg><img src=Sat_Nov_14_11_30_41_IST_2020.jpg height=200 width=200></img></a>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifyClickOnPaywithCCBtn -->
+        <test-method status="PASS" signature="verifyClickMakePaymentBtn()[pri:24, instance:com.OSMOSE.testcases.oCalcPro@6941827a]" name="verifyClickMakePaymentBtn" duration-ms="7971" started-at="2020-11-14T11:30:41 IST" description="Verify click on Make Payment button and close pop-up" depends-on-methods="com.OSMOSE.testcases.oCalcPro.verifyPresenceOfCreditCardOptions" finished-at="2020-11-14T11:30:49 IST">
+          <reporter-output>
+            <line>
+              <![CDATA[Click to see Screenshot]]>
+            </line>
+            <line>
+              <![CDATA[<a target="_blank" href=Sat_Nov_14_11_30_50_IST_2020.jpg>Screenshot</a>]]>
+            </line>
+            <line>
+              <![CDATA[<br>]]>
+            </line>
+            <line>
+              <![CDATA[<br>]]>
+            </line>
+            <line>
+              <![CDATA[<a target="_blank" href=Sat_Nov_14_11_30_50_IST_2020.jpg><img src=Sat_Nov_14_11_30_50_IST_2020.jpg height=200 width=200></img></a>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifyClickMakePaymentBtn -->
+        <test-method status="PASS" signature="verifyClickIhaveCopiedMyReceiptChkBox()[pri:25, instance:com.OSMOSE.testcases.oCalcPro@6941827a]" name="verifyClickIhaveCopiedMyReceiptChkBox" duration-ms="4063" started-at="2020-11-14T11:30:50 IST" description="Verify click on I have copied my receipt Checkbox and Approval" depends-on-methods="com.OSMOSE.testcases.oCalcPro.verifyPresenceOfCreditCardOptions" finished-at="2020-11-14T11:30:54 IST">
+          <reporter-output>
+            <line>
+              <![CDATA[Click to see Screenshot]]>
+            </line>
+            <line>
+              <![CDATA[<a target="_blank" href=Sat_Nov_14_11_30_55_IST_2020.jpg>Screenshot</a>]]>
+            </line>
+            <line>
+              <![CDATA[<br>]]>
+            </line>
+            <line>
+              <![CDATA[<br>]]>
+            </line>
+            <line>
+              <![CDATA[<a target="_blank" href=Sat_Nov_14_11_30_55_IST_2020.jpg><img src=Sat_Nov_14_11_30_55_IST_2020.jpg height=200 width=200></img></a>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifyClickIhaveCopiedMyReceiptChkBox -->
+        <test-method status="PASS" signature="verifyCCDetailsForNonOCalcProduct()[pri:26, instance:com.OSMOSE.testcases.oCalcPro@6941827a]" name="verifyCCDetailsForNonOCalcProduct" duration-ms="116716" started-at="2020-11-14T11:30:55 IST" description="Verify Credit card details are not present for Non-Ocalc Product" depends-on-methods="com.OSMOSE.testcases.oCalcPro.verifyPresenceOfCreditCardOptions" finished-at="2020-11-14T11:32:51 IST">
+          <reporter-output>
+            <line>
+              <![CDATA[Click to see Screenshot]]>
+            </line>
+            <line>
+              <![CDATA[<a target="_blank" href=Sat_Nov_14_11_32_52_IST_2020.jpg>Screenshot</a>]]>
+            </line>
+            <line>
+              <![CDATA[<br>]]>
+            </line>
+            <line>
+              <![CDATA[<br>]]>
+            </line>
+            <line>
+              <![CDATA[<a target="_blank" href=Sat_Nov_14_11_32_52_IST_2020.jpg><img src=Sat_Nov_14_11_32_52_IST_2020.jpg height=200 width=200></img></a>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifyCCDetailsForNonOCalcProduct -->
+        <test-method status="PASS" signature="verifyPresenceOfCCReceipt()[pri:27, instance:com.OSMOSE.testcases.oCalcPro@6941827a]" name="verifyPresenceOfCCReceipt" duration-ms="119077" started-at="2020-11-14T11:32:52 IST" description="Verify presence of CC Receipt on My Quotes Screen" finished-at="2020-11-14T11:34:51 IST">
+          <reporter-output>
+            <line>
+              <![CDATA[Click to see Screenshot]]>
+            </line>
+            <line>
+              <![CDATA[<a target="_blank" href=Sat_Nov_14_11_34_51_IST_2020.jpg>Screenshot</a>]]>
+            </line>
+            <line>
+              <![CDATA[<br>]]>
+            </line>
+            <line>
+              <![CDATA[<br>]]>
+            </line>
+            <line>
+              <![CDATA[<a target="_blank" href=Sat_Nov_14_11_34_51_IST_2020.jpg><img src=Sat_Nov_14_11_34_51_IST_2020.jpg height=200 width=200></img></a>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifyPresenceOfCCReceipt -->
+        <test-method status="PASS" signature="verifyCurrentPublicClassesClickLicensedUser()[pri:28, instance:com.OSMOSE.testcases.oCalcPro@6941827a]" name="verifyCurrentPublicClassesClickLicensedUser" duration-ms="18329" started-at="2020-11-14T11:34:52 IST" description="Verify click on Current Public classes on Training Options for a licensed User" finished-at="2020-11-14T11:35:10 IST">
+          <reporter-output>
+            <line>
+              <![CDATA[Click to see Screenshot]]>
+            </line>
+            <line>
+              <![CDATA[<a target="_blank" href=Sat_Nov_14_11_35_10_IST_2020.jpg>Screenshot</a>]]>
+            </line>
+            <line>
+              <![CDATA[<br>]]>
+            </line>
+            <line>
+              <![CDATA[<br>]]>
+            </line>
+            <line>
+              <![CDATA[<a target="_blank" href=Sat_Nov_14_11_35_10_IST_2020.jpg><img src=Sat_Nov_14_11_35_10_IST_2020.jpg height=200 width=200></img></a>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifyCurrentPublicClassesClickLicensedUser -->
+        <test-method status="PASS" signature="verifyRequestQuoteForPrivateTrainingClassesClickLicensedUser()[pri:29, instance:com.OSMOSE.testcases.oCalcPro@6941827a]" name="verifyRequestQuoteForPrivateTrainingClassesClickLicensedUser" duration-ms="12387" started-at="2020-11-14T11:35:10 IST" description="Verify click on Request Quote for Private Training classes on Training Options for Licensed User" finished-at="2020-11-14T11:35:23 IST">
+          <reporter-output>
+            <line>
+              <![CDATA[Click to see Screenshot]]>
+            </line>
+            <line>
+              <![CDATA[<a target="_blank" href=Sat_Nov_14_11_35_23_IST_2020.jpg>Screenshot</a>]]>
+            </line>
+            <line>
+              <![CDATA[<br>]]>
+            </line>
+            <line>
+              <![CDATA[<br>]]>
+            </line>
+            <line>
+              <![CDATA[<a target="_blank" href=Sat_Nov_14_11_35_23_IST_2020.jpg><img src=Sat_Nov_14_11_35_23_IST_2020.jpg height=200 width=200></img></a>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifyRequestQuoteForPrivateTrainingClassesClickLicensedUser -->
+        <test-method status="PASS" signature="verifyClickOnAnAnnouncementLicensedUser()[pri:30, instance:com.OSMOSE.testcases.oCalcPro@6941827a]" name="verifyClickOnAnAnnouncementLicensedUser" duration-ms="992" started-at="2020-11-14T11:35:23 IST" description="Verify click on an Announcement for Licensed User" finished-at="2020-11-14T11:35:24 IST">
+          <reporter-output>
+            <line>
+              <![CDATA[Click to see Screenshot]]>
+            </line>
+            <line>
+              <![CDATA[<a target="_blank" href=Sat_Nov_14_11_35_25_IST_2020.jpg>Screenshot</a>]]>
+            </line>
+            <line>
+              <![CDATA[<br>]]>
+            </line>
+            <line>
+              <![CDATA[<br>]]>
+            </line>
+            <line>
+              <![CDATA[<a target="_blank" href=Sat_Nov_14_11_35_25_IST_2020.jpg><img src=Sat_Nov_14_11_35_25_IST_2020.jpg height=200 width=200></img></a>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifyClickOnAnAnnouncementLicensedUser -->
+        <test-method status="PASS" signature="verifyContentsOfFAQLicensedUser()[pri:31, instance:com.OSMOSE.testcases.oCalcPro@6941827a]" name="verifyContentsOfFAQLicensedUser" duration-ms="6774" started-at="2020-11-14T11:35:25 IST" description="Verify Contents of FAQ for Licensed User" finished-at="2020-11-14T11:35:32 IST">
+          <reporter-output>
+            <line>
+              <![CDATA[Click to see Screenshot]]>
+            </line>
+            <line>
+              <![CDATA[<a target="_blank" href=Sat_Nov_14_11_35_32_IST_2020.jpg>Screenshot</a>]]>
+            </line>
+            <line>
+              <![CDATA[<br>]]>
+            </line>
+            <line>
+              <![CDATA[<br>]]>
+            </line>
+            <line>
+              <![CDATA[<a target="_blank" href=Sat_Nov_14_11_35_32_IST_2020.jpg><img src=Sat_Nov_14_11_35_32_IST_2020.jpg height=200 width=200></img></a>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifyContentsOfFAQLicensedUser -->
+        <test-method status="PASS" signature="verifyFAQClickLicensedUser()[pri:32, instance:com.OSMOSE.testcases.oCalcPro@6941827a]" name="verifyFAQClickLicensedUser" duration-ms="19609" started-at="2020-11-14T11:35:32 IST" description="Verify clicking on an FAQ for Licensed User" finished-at="2020-11-14T11:35:52 IST">
+          <reporter-output>
+            <line>
+              <![CDATA[Click to see Screenshot]]>
+            </line>
+            <line>
+              <![CDATA[<a target="_blank" href=Sat_Nov_14_11_35_52_IST_2020.jpg>Screenshot</a>]]>
+            </line>
+            <line>
+              <![CDATA[<br>]]>
+            </line>
+            <line>
+              <![CDATA[<br>]]>
+            </line>
+            <line>
+              <![CDATA[<a target="_blank" href=Sat_Nov_14_11_35_52_IST_2020.jpg><img src=Sat_Nov_14_11_35_52_IST_2020.jpg height=200 width=200></img></a>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifyFAQClickLicensedUser -->
+        <test-method status="PASS" signature="verifySubmitIssueClickLicensedUser()[pri:33, instance:com.OSMOSE.testcases.oCalcPro@6941827a]" name="verifySubmitIssueClickLicensedUser" duration-ms="502" started-at="2020-11-14T11:35:52 IST" description="Verify clicking on Submit Issue / Feature Request for Licensed User" finished-at="2020-11-14T11:35:53 IST">
+          <reporter-output>
+            <line>
+              <![CDATA[Click to see Screenshot]]>
+            </line>
+            <line>
+              <![CDATA[<a target="_blank" href=Sat_Nov_14_11_35_53_IST_2020.jpg>Screenshot</a>]]>
+            </line>
+            <line>
+              <![CDATA[<br>]]>
+            </line>
+            <line>
+              <![CDATA[<br>]]>
+            </line>
+            <line>
+              <![CDATA[<a target="_blank" href=Sat_Nov_14_11_35_53_IST_2020.jpg><img src=Sat_Nov_14_11_35_53_IST_2020.jpg height=200 width=200></img></a>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifySubmitIssueClickLicensedUser -->
+        <test-method status="PASS" signature="verifyKBClickLicensedUser()[pri:34, instance:com.OSMOSE.testcases.oCalcPro@6941827a]" name="verifyKBClickLicensedUser" duration-ms="15541" started-at="2020-11-14T11:35:53 IST" description="Verify click on Knowledge Base card for Licensed User" finished-at="2020-11-14T11:36:09 IST">
+          <reporter-output>
+            <line>
+              <![CDATA[Click to see Screenshot]]>
+            </line>
+            <line>
+              <![CDATA[<a target="_blank" href=Sat_Nov_14_11_36_09_IST_2020.jpg>Screenshot</a>]]>
+            </line>
+            <line>
+              <![CDATA[<br>]]>
+            </line>
+            <line>
+              <![CDATA[<br>]]>
+            </line>
+            <line>
+              <![CDATA[<a target="_blank" href=Sat_Nov_14_11_36_09_IST_2020.jpg><img src=Sat_Nov_14_11_36_09_IST_2020.jpg height=200 width=200></img></a>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifyKBClickLicensedUser -->
+        <test-method status="PASS" signature="verifyKBTrainingVideosClickLicensedUser()[pri:35, instance:com.OSMOSE.testcases.oCalcPro@6941827a]" name="verifyKBTrainingVideosClickLicensedUser" duration-ms="10204" started-at="2020-11-14T11:36:09 IST" description="Verify click on Training Videos link on Knowledge Base card for Licensed User" finished-at="2020-11-14T11:36:20 IST">
+          <reporter-output>
+            <line>
+              <![CDATA[Click to see Screenshot]]>
+            </line>
+            <line>
+              <![CDATA[<a target="_blank" href=Sat_Nov_14_11_36_20_IST_2020.jpg>Screenshot</a>]]>
+            </line>
+            <line>
+              <![CDATA[<br>]]>
+            </line>
+            <line>
+              <![CDATA[<br>]]>
+            </line>
+            <line>
+              <![CDATA[<a target="_blank" href=Sat_Nov_14_11_36_20_IST_2020.jpg><img src=Sat_Nov_14_11_36_20_IST_2020.jpg height=200 width=200></img></a>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifyKBTrainingVideosClickLicensedUser -->
+        <test-method status="PASS" signature="verifyKBWikiPageClickLicensedUser()[pri:36, instance:com.OSMOSE.testcases.oCalcPro@6941827a]" name="verifyKBWikiPageClickLicensedUser" duration-ms="29204" started-at="2020-11-14T11:36:20 IST" description="Verify click on Wiki Page on Knowledge Base card for Licensed User" finished-at="2020-11-14T11:36:49 IST">
+          <reporter-output>
+            <line>
+              <![CDATA[Click to see Screenshot]]>
+            </line>
+            <line>
+              <![CDATA[<a target="_blank" href=Sat_Nov_14_11_36_50_IST_2020.jpg>Screenshot</a>]]>
+            </line>
+            <line>
+              <![CDATA[<br>]]>
+            </line>
+            <line>
+              <![CDATA[<br>]]>
+            </line>
+            <line>
+              <![CDATA[<a target="_blank" href=Sat_Nov_14_11_36_50_IST_2020.jpg><img src=Sat_Nov_14_11_36_50_IST_2020.jpg height=200 width=200></img></a>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifyKBWikiPageClickLicensedUser -->
+        <test-method status="PASS" signature="verifySearchResultsAreGroupedLicensedUser()[pri:37, instance:com.OSMOSE.testcases.oCalcPro@6941827a]" name="verifySearchResultsAreGroupedLicensedUser" duration-ms="19292" started-at="2020-11-14T11:36:50 IST" description="Verify that Search results section will be organized into separate grouped based on the popular query selected for licensed user" finished-at="2020-11-14T11:37:09 IST">
+          <reporter-output>
+            <line>
+              <![CDATA[Click to see Screenshot]]>
+            </line>
+            <line>
+              <![CDATA[<a target="_blank" href=Sat_Nov_14_11_37_10_IST_2020.jpg>Screenshot</a>]]>
+            </line>
+            <line>
+              <![CDATA[<br>]]>
+            </line>
+            <line>
+              <![CDATA[<br>]]>
+            </line>
+            <line>
+              <![CDATA[<a target="_blank" href=Sat_Nov_14_11_37_10_IST_2020.jpg><img src=Sat_Nov_14_11_37_10_IST_2020.jpg height=200 width=200></img></a>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifySearchResultsAreGroupedLicensedUser -->
+        <test-method status="PASS" signature="verifyTrainingVideosAreGroupedLicensedUser()[pri:38, instance:com.OSMOSE.testcases.oCalcPro@6941827a]" name="verifyTrainingVideosAreGroupedLicensedUser" duration-ms="9584" started-at="2020-11-14T11:37:10 IST" description="Verify that Search results section will be organized into separate grouped based on the popular query selected for licensed user" finished-at="2020-11-14T11:37:19 IST">
+          <reporter-output>
+            <line>
+              <![CDATA[Click to see Screenshot]]>
+            </line>
+            <line>
+              <![CDATA[<a target="_blank" href=Sat_Nov_14_11_37_20_IST_2020.jpg>Screenshot</a>]]>
+            </line>
+            <line>
+              <![CDATA[<br>]]>
+            </line>
+            <line>
+              <![CDATA[<br>]]>
+            </line>
+            <line>
+              <![CDATA[<a target="_blank" href=Sat_Nov_14_11_37_20_IST_2020.jpg><img src=Sat_Nov_14_11_37_20_IST_2020.jpg height=200 width=200></img></a>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifyTrainingVideosAreGroupedLicensedUser -->
+        <test-method status="PASS" signature="verifyContentsLicenseManagementPopUp()[pri:39, instance:com.OSMOSE.testcases.oCalcPro@6941827a]" name="verifyContentsLicenseManagementPopUp" duration-ms="4587" started-at="2020-11-14T11:37:20 IST" description="Verify the Contents of License Management Pop-up" finished-at="2020-11-14T11:37:24 IST">
+          <reporter-output>
+            <line>
+              <![CDATA[Click to see Screenshot]]>
+            </line>
+            <line>
+              <![CDATA[<a target="_blank" href=Sat_Nov_14_11_37_25_IST_2020.jpg>Screenshot</a>]]>
+            </line>
+            <line>
+              <![CDATA[<br>]]>
+            </line>
+            <line>
+              <![CDATA[<br>]]>
+            </line>
+            <line>
+              <![CDATA[<a target="_blank" href=Sat_Nov_14_11_37_25_IST_2020.jpg><img src=Sat_Nov_14_11_37_25_IST_2020.jpg height=200 width=200></img></a>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifyContentsLicenseManagementPopUp -->
+        <test-method status="PASS" signature="verifyPresenceOfSkipTourNextPreviousExitTour()[pri:40, instance:com.OSMOSE.testcases.oCalcPro@6941827a]" name="verifyPresenceOfSkipTourNextPreviousExitTour" duration-ms="4233" started-at="2020-11-14T11:37:25 IST" description="Verify the presence of SkipTour, Next, Previous, ExitTour buttons" finished-at="2020-11-14T11:37:29 IST">
+          <reporter-output>
+            <line>
+              <![CDATA[Click to see Screenshot]]>
+            </line>
+            <line>
+              <![CDATA[<a target="_blank" href=Sat_Nov_14_11_37_29_IST_2020.jpg>Screenshot</a>]]>
+            </line>
+            <line>
+              <![CDATA[<br>]]>
+            </line>
+            <line>
+              <![CDATA[<br>]]>
+            </line>
+            <line>
+              <![CDATA[<a target="_blank" href=Sat_Nov_14_11_37_29_IST_2020.jpg><img src=Sat_Nov_14_11_37_29_IST_2020.jpg height=200 width=200></img></a>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifyPresenceOfSkipTourNextPreviousExitTour -->
+        <test-method status="PASS" signature="verifyClickOnNextPreviousbtns()[pri:41, instance:com.OSMOSE.testcases.oCalcPro@6941827a]" name="verifyClickOnNextPreviousbtns" duration-ms="2172" started-at="2020-11-14T11:37:29 IST" description="Verify the Click on Next and Previous buttons" finished-at="2020-11-14T11:37:31 IST">
+          <reporter-output>
+            <line>
+              <![CDATA[Click to see Screenshot]]>
+            </line>
+            <line>
+              <![CDATA[<a target="_blank" href=Sat_Nov_14_11_37_32_IST_2020.jpg>Screenshot</a>]]>
+            </line>
+            <line>
+              <![CDATA[<br>]]>
+            </line>
+            <line>
+              <![CDATA[<br>]]>
+            </line>
+            <line>
+              <![CDATA[<a target="_blank" href=Sat_Nov_14_11_37_32_IST_2020.jpg><img src=Sat_Nov_14_11_37_32_IST_2020.jpg height=200 width=200></img></a>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifyClickOnNextPreviousbtns -->
+        <test-method status="PASS" signature="verifyClickOnSkipTourExitTourbtns()[pri:42, instance:com.OSMOSE.testcases.oCalcPro@6941827a]" name="verifyClickOnSkipTourExitTourbtns" duration-ms="4352" started-at="2020-11-14T11:37:32 IST" description="Verify the Click on Skip Tour and Exit Tour buttons" finished-at="2020-11-14T11:37:36 IST">
+          <reporter-output>
+            <line>
+              <![CDATA[Click to see Screenshot]]>
+            </line>
+            <line>
+              <![CDATA[<a target="_blank" href=Sat_Nov_14_11_37_37_IST_2020.jpg>Screenshot</a>]]>
+            </line>
+            <line>
+              <![CDATA[<br>]]>
+            </line>
+            <line>
+              <![CDATA[<br>]]>
+            </line>
+            <line>
+              <![CDATA[<a target="_blank" href=Sat_Nov_14_11_37_37_IST_2020.jpg><img src=Sat_Nov_14_11_37_37_IST_2020.jpg height=200 width=200></img></a>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifyClickOnSkipTourExitTourbtns -->
+        <test-method status="PASS" signature="verifyOnlyRenewBtnIsEnabledOnMultipleRecordSelection()[pri:43, instance:com.OSMOSE.testcases.oCalcPro@6941827a]" name="verifyOnlyRenewBtnIsEnabledOnMultipleRecordSelection" duration-ms="6425" started-at="2020-11-14T11:37:37 IST" description="verify that only Renew Button is Enabled On multiple record selection" finished-at="2020-11-14T11:37:43 IST">
+          <reporter-output>
+            <line>
+              <![CDATA[Click to see Screenshot]]>
+            </line>
+            <line>
+              <![CDATA[<a target="_blank" href=Sat_Nov_14_11_37_43_IST_2020.jpg>Screenshot</a>]]>
+            </line>
+            <line>
+              <![CDATA[<br>]]>
+            </line>
+            <line>
+              <![CDATA[<br>]]>
+            </line>
+            <line>
+              <![CDATA[<a target="_blank" href=Sat_Nov_14_11_37_43_IST_2020.jpg><img src=Sat_Nov_14_11_37_43_IST_2020.jpg height=200 width=200></img></a>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifyOnlyRenewBtnIsEnabledOnMultipleRecordSelection -->
+        <test-method status="PASS" signature="verifyFilterContactName()[pri:44, instance:com.OSMOSE.testcases.oCalcPro@6941827a]" name="verifyFilterContactName" duration-ms="3417" started-at="2020-11-14T11:37:43 IST" description="Verify the Filter functionality of Contact Name column" finished-at="2020-11-14T11:37:47 IST">
+          <reporter-output>
+            <line>
+              <![CDATA[Click to see Screenshot]]>
+            </line>
+            <line>
+              <![CDATA[<a target="_blank" href=Sat_Nov_14_11_37_47_IST_2020.jpg>Screenshot</a>]]>
+            </line>
+            <line>
+              <![CDATA[<br>]]>
+            </line>
+            <line>
+              <![CDATA[<br>]]>
+            </line>
+            <line>
+              <![CDATA[<a target="_blank" href=Sat_Nov_14_11_37_47_IST_2020.jpg><img src=Sat_Nov_14_11_37_47_IST_2020.jpg height=200 width=200></img></a>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifyFilterContactName -->
+        <test-method status="PASS" signature="verifyFilterLicenseKey()[pri:45, instance:com.OSMOSE.testcases.oCalcPro@6941827a]" name="verifyFilterLicenseKey" duration-ms="1646" started-at="2020-11-14T11:37:47 IST" description="Verify the Filter functionality of License key column" finished-at="2020-11-14T11:37:49 IST">
+          <reporter-output>
+            <line>
+              <![CDATA[Click to see Screenshot]]>
+            </line>
+            <line>
+              <![CDATA[<a target="_blank" href=Sat_Nov_14_11_37_49_IST_2020.jpg>Screenshot</a>]]>
+            </line>
+            <line>
+              <![CDATA[<br>]]>
+            </line>
+            <line>
+              <![CDATA[<br>]]>
+            </line>
+            <line>
+              <![CDATA[<a target="_blank" href=Sat_Nov_14_11_37_49_IST_2020.jpg><img src=Sat_Nov_14_11_37_49_IST_2020.jpg height=200 width=200></img></a>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifyFilterLicenseKey -->
+        <test-method status="PASS" signature="verifyFilterStatus()[pri:46, instance:com.OSMOSE.testcases.oCalcPro@6941827a]" name="verifyFilterStatus" duration-ms="2656" started-at="2020-11-14T11:37:49 IST" description="Verify the Filter functionality of Status column" finished-at="2020-11-14T11:37:52 IST">
+          <reporter-output>
+            <line>
+              <![CDATA[Click to see Screenshot]]>
+            </line>
+            <line>
+              <![CDATA[<a target="_blank" href=Sat_Nov_14_11_37_52_IST_2020.jpg>Screenshot</a>]]>
+            </line>
+            <line>
+              <![CDATA[<br>]]>
+            </line>
+            <line>
+              <![CDATA[<br>]]>
+            </line>
+            <line>
+              <![CDATA[<a target="_blank" href=Sat_Nov_14_11_37_52_IST_2020.jpg><img src=Sat_Nov_14_11_37_52_IST_2020.jpg height=200 width=200></img></a>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifyFilterStatus -->
+        <test-method status="PASS" signature="verifyFilterExpToken()[pri:47, instance:com.OSMOSE.testcases.oCalcPro@6941827a]" name="verifyFilterExpToken" duration-ms="1431" started-at="2020-11-14T11:37:52 IST" description="Verify the Filter functionality of Exp Token column" finished-at="2020-11-14T11:37:54 IST">
+          <reporter-output>
+            <line>
+              <![CDATA[Click to see Screenshot]]>
+            </line>
+            <line>
+              <![CDATA[<a target="_blank" href=Sat_Nov_14_11_37_54_IST_2020.jpg>Screenshot</a>]]>
+            </line>
+            <line>
+              <![CDATA[<br>]]>
+            </line>
+            <line>
+              <![CDATA[<br>]]>
+            </line>
+            <line>
+              <![CDATA[<a target="_blank" href=Sat_Nov_14_11_37_54_IST_2020.jpg><img src=Sat_Nov_14_11_37_54_IST_2020.jpg height=200 width=200></img></a>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifyFilterExpToken -->
+        <test-method status="PASS" signature="verifyFilterLicenseType()[pri:48, instance:com.OSMOSE.testcases.oCalcPro@6941827a]" name="verifyFilterLicenseType" duration-ms="2577" started-at="2020-11-14T11:37:54 IST" description="Verify the Filter functionality of License Type column" finished-at="2020-11-14T11:37:57 IST">
+          <reporter-output>
+            <line>
+              <![CDATA[Click to see Screenshot]]>
+            </line>
+            <line>
+              <![CDATA[<a target="_blank" href=Sat_Nov_14_11_37_57_IST_2020.jpg>Screenshot</a>]]>
+            </line>
+            <line>
+              <![CDATA[<br>]]>
+            </line>
+            <line>
+              <![CDATA[<br>]]>
+            </line>
+            <line>
+              <![CDATA[<a target="_blank" href=Sat_Nov_14_11_37_57_IST_2020.jpg><img src=Sat_Nov_14_11_37_57_IST_2020.jpg height=200 width=200></img></a>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifyFilterLicenseType -->
+        <test-method status="PASS" signature="verifyFilterPurchaseDate()[pri:50, instance:com.OSMOSE.testcases.oCalcPro@6941827a]" name="verifyFilterPurchaseDate" duration-ms="2916" started-at="2020-11-14T11:37:57 IST" description="Verify the Filter functionality of Purchase Date column" finished-at="2020-11-14T11:38:00 IST">
+          <reporter-output>
+            <line>
+              <![CDATA[Click to see Screenshot]]>
+            </line>
+            <line>
+              <![CDATA[<a target="_blank" href=Sat_Nov_14_11_38_00_IST_2020.jpg>Screenshot</a>]]>
+            </line>
+            <line>
+              <![CDATA[<br>]]>
+            </line>
+            <line>
+              <![CDATA[<br>]]>
+            </line>
+            <line>
+              <![CDATA[<a target="_blank" href=Sat_Nov_14_11_38_00_IST_2020.jpg><img src=Sat_Nov_14_11_38_00_IST_2020.jpg height=200 width=200></img></a>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifyFilterPurchaseDate -->
+        <test-method status="PASS" signature="verifyFilterExpirationDate()[pri:51, instance:com.OSMOSE.testcases.oCalcPro@6941827a]" name="verifyFilterExpirationDate" duration-ms="2854" started-at="2020-11-14T11:38:01 IST" description="Verify the Filter functionality of Expiration Date column" finished-at="2020-11-14T11:38:03 IST">
+          <reporter-output>
+            <line>
+              <![CDATA[Click to see Screenshot]]>
+            </line>
+            <line>
+              <![CDATA[<a target="_blank" href=Sat_Nov_14_11_38_04_IST_2020.jpg>Screenshot</a>]]>
+            </line>
+            <line>
+              <![CDATA[<br>]]>
+            </line>
+            <line>
+              <![CDATA[<br>]]>
+            </line>
+            <line>
+              <![CDATA[<a target="_blank" href=Sat_Nov_14_11_38_04_IST_2020.jpg><img src=Sat_Nov_14_11_38_04_IST_2020.jpg height=200 width=200></img></a>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifyFilterExpirationDate -->
+        <test-method status="PASS" signature="verifyTransferBtn()[pri:52, instance:com.OSMOSE.testcases.oCalcPro@6941827a]" name="verifyTransferBtn" duration-ms="13786" started-at="2020-11-14T11:38:04 IST" description="Verify transfer button pop up UI" finished-at="2020-11-14T11:38:18 IST">
+          <reporter-output>
+            <line>
+              <![CDATA[Click to see Screenshot]]>
+            </line>
+            <line>
+              <![CDATA[<a target="_blank" href=Sat_Nov_14_11_38_18_IST_2020.jpg>Screenshot</a>]]>
+            </line>
+            <line>
+              <![CDATA[<br>]]>
+            </line>
+            <line>
+              <![CDATA[<br>]]>
+            </line>
+            <line>
+              <![CDATA[<a target="_blank" href=Sat_Nov_14_11_38_18_IST_2020.jpg><img src=Sat_Nov_14_11_38_18_IST_2020.jpg height=200 width=200></img></a>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifyTransferBtn -->
+        <test-method status="PASS" signature="verifyTransferErrorMsg()[pri:53, instance:com.OSMOSE.testcases.oCalcPro@6941827a]" name="verifyTransferErrorMsg" duration-ms="171" started-at="2020-11-14T11:38:18 IST" description="Verify that error message is displayed on clicking on Transfer License without filling the details" finished-at="2020-11-14T11:38:18 IST">
+          <reporter-output>
+            <line>
+              <![CDATA[Click to see Screenshot]]>
+            </line>
+            <line>
+              <![CDATA[<a target="_blank" href=Sat_Nov_14_11_38_19_IST_2020.jpg>Screenshot</a>]]>
+            </line>
+            <line>
+              <![CDATA[<br>]]>
+            </line>
+            <line>
+              <![CDATA[<br>]]>
+            </line>
+            <line>
+              <![CDATA[<a target="_blank" href=Sat_Nov_14_11_38_19_IST_2020.jpg><img src=Sat_Nov_14_11_38_19_IST_2020.jpg height=200 width=200></img></a>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifyTransferErrorMsg -->
+        <test-method status="PASS" signature="verifyClickTransferLicenseBtn()[pri:54, instance:com.OSMOSE.testcases.oCalcPro@6941827a]" name="verifyClickTransferLicenseBtn" duration-ms="2611" started-at="2020-11-14T11:38:19 IST" description="Verify click on Transfer License Button" finished-at="2020-11-14T11:38:21 IST">
+          <reporter-output>
+            <line>
+              <![CDATA[Click to see Screenshot]]>
+            </line>
+            <line>
+              <![CDATA[<a target="_blank" href=Sat_Nov_14_11_38_22_IST_2020.jpg>Screenshot</a>]]>
+            </line>
+            <line>
+              <![CDATA[<br>]]>
+            </line>
+            <line>
+              <![CDATA[<br>]]>
+            </line>
+            <line>
+              <![CDATA[<a target="_blank" href=Sat_Nov_14_11_38_22_IST_2020.jpg><img src=Sat_Nov_14_11_38_22_IST_2020.jpg height=200 width=200></img></a>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifyClickTransferLicenseBtn -->
+        <test-method status="PASS" signature="verifyClickResend()[pri:55, instance:com.OSMOSE.testcases.oCalcPro@6941827a]" name="verifyClickResend" duration-ms="4306" started-at="2020-11-14T11:38:22 IST" description="Verify Resend button functionality" finished-at="2020-11-14T11:38:26 IST">
+          <reporter-output>
+            <line>
+              <![CDATA[Click to see Screenshot]]>
+            </line>
+            <line>
+              <![CDATA[<a target="_blank" href=Sat_Nov_14_11_38_26_IST_2020.jpg>Screenshot</a>]]>
+            </line>
+            <line>
+              <![CDATA[<br>]]>
+            </line>
+            <line>
+              <![CDATA[<br>]]>
+            </line>
+            <line>
+              <![CDATA[<a target="_blank" href=Sat_Nov_14_11_38_26_IST_2020.jpg><img src=Sat_Nov_14_11_38_26_IST_2020.jpg height=200 width=200></img></a>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifyClickResend -->
+        <test-method status="PASS" signature="verifyUpdateContactBtn()[pri:56, instance:com.OSMOSE.testcases.oCalcPro@6941827a]" name="verifyUpdateContactBtn" duration-ms="12673" started-at="2020-11-14T11:38:26 IST" description="Verify Update Contact button pop up UI" finished-at="2020-11-14T11:38:39 IST">
+          <reporter-output>
+            <line>
+              <![CDATA[Click to see Screenshot]]>
+            </line>
+            <line>
+              <![CDATA[<a target="_blank" href=Sat_Nov_14_11_38_40_IST_2020.jpg>Screenshot</a>]]>
+            </line>
+            <line>
+              <![CDATA[<br>]]>
+            </line>
+            <line>
+              <![CDATA[<br>]]>
+            </line>
+            <line>
+              <![CDATA[<a target="_blank" href=Sat_Nov_14_11_38_40_IST_2020.jpg><img src=Sat_Nov_14_11_38_40_IST_2020.jpg height=200 width=200></img></a>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifyUpdateContactBtn -->
+        <test-method status="PASS" signature="verifyClickUpdateContactBtn()[pri:57, instance:com.OSMOSE.testcases.oCalcPro@6941827a]" name="verifyClickUpdateContactBtn" duration-ms="2214" started-at="2020-11-14T11:38:40 IST" description="Verify click on Update Contact Button" finished-at="2020-11-14T11:38:42 IST">
+          <reporter-output>
+            <line>
+              <![CDATA[Click to see Screenshot]]>
+            </line>
+            <line>
+              <![CDATA[<a target="_blank" href=Sat_Nov_14_11_38_42_IST_2020.jpg>Screenshot</a>]]>
+            </line>
+            <line>
+              <![CDATA[<br>]]>
+            </line>
+            <line>
+              <![CDATA[<br>]]>
+            </line>
+            <line>
+              <![CDATA[<a target="_blank" href=Sat_Nov_14_11_38_42_IST_2020.jpg><img src=Sat_Nov_14_11_38_42_IST_2020.jpg height=200 width=200></img></a>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifyClickUpdateContactBtn -->
+        <test-method status="PASS" signature="verifyClickRenewBtn()[pri:58, instance:com.OSMOSE.testcases.oCalcPro@6941827a]" name="verifyClickRenewBtn" duration-ms="6683" started-at="2020-11-14T11:38:42 IST" description="Verify click on Renew Button functionality" finished-at="2020-11-14T11:38:49 IST">
+          <reporter-output>
+            <line>
+              <![CDATA[Click to see Screenshot]]>
+            </line>
+            <line>
+              <![CDATA[<a target="_blank" href=Sat_Nov_14_11_38_49_IST_2020.jpg>Screenshot</a>]]>
+            </line>
+            <line>
+              <![CDATA[<br>]]>
+            </line>
+            <line>
+              <![CDATA[<br>]]>
+            </line>
+            <line>
+              <![CDATA[<a target="_blank" href=Sat_Nov_14_11_38_49_IST_2020.jpg><img src=Sat_Nov_14_11_38_49_IST_2020.jpg height=200 width=200></img></a>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifyClickRenewBtn -->
+        <test-method status="PASS" signature="verifyPresenceOfLicenseMgmtCard1()[pri:59, instance:com.OSMOSE.testcases.oCalcPro@6941827a]" name="verifyPresenceOfLicenseMgmtCard1" duration-ms="39638" started-at="2020-11-14T11:38:49 IST" description="Verify presence of License Management card on OcalcPro page for Licensed User" finished-at="2020-11-14T11:39:29 IST">
+          <reporter-output>
+            <line>
+              <![CDATA[Click to see Screenshot]]>
+            </line>
+            <line>
+              <![CDATA[<a target="_blank" href=Sat_Nov_14_11_39_29_IST_2020.jpg>Screenshot</a>]]>
+            </line>
+            <line>
+              <![CDATA[<br>]]>
+            </line>
+            <line>
+              <![CDATA[<br>]]>
+            </line>
+            <line>
+              <![CDATA[<a target="_blank" href=Sat_Nov_14_11_39_29_IST_2020.jpg><img src=Sat_Nov_14_11_39_29_IST_2020.jpg height=200 width=200></img></a>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifyPresenceOfLicenseMgmtCard1 -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.OSMOSE.testcases.oCalcPro@6941827a]" name="tearDown" is-config="true" duration-ms="1457" started-at="2020-11-14T11:39:29 IST" finished-at="2020-11-14T11:39:31 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.OSMOSE.testcases.LoginTest -->
-    </test> <!-- Login -->
+      </class> <!-- com.OSMOSE.testcases.oCalcPro -->
+    </test> <!-- OCalcProLicense -->
   </suite> <!-- OSMOSE Test -->
 </testng-results>
