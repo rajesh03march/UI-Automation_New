@@ -1,0 +1,1023 @@
+<html>
+<head>
+<title>TestNG:  OCalcPro</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>OCalcPro</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>58/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Tue Nov 10 22:19:18 IST 2020</td>
+</tr>
+<tr><td>Total time:</td><td>705 seconds (705535 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.OSMOSE.testcases.LoginTest.loginTest()'><b>loginTest</b><br>Test class: com.OSMOSE.testcases.LoginTest<br>Test method: Verify the login functionality<br>Parameters: {password=Hyde@2317, runmode=Y, username=rajesh.yadav@centurylink.com}<br/>
+<a href="#Output-1662592920" onClick='toggleBox("Output-1662592920", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1662592920" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1662592920">
+Click to see Screenshot<br/>
+<a target="_blank" href=Tue_Nov_10_22_19_17_IST_2020.jpg>Screenshot</a><br/>
+<br><br/>
+<br><br/>
+<a target="_blank" href=Tue_Nov_10_22_19_17_IST_2020.jpg><img src=Tue_Nov_10_22_19_17_IST_2020.jpg height=200 width=200></img></a><br/>
+</div>
+</td>
+<td></td>
+<td>16</td>
+<td>com.OSMOSE.testcases.LoginTest@aeab9a1</td></tr>
+<tr>
+<td title='com.OSMOSE.testcases.oCalcPro.verify30daysbtnClickLicensedUser()'><b>verify30daysbtnClickLicensedUser</b><br>Test class: com.OSMOSE.testcases.oCalcPro<br>Test method: Verify click on 30 days Trial button for Licensed User<br/>
+<a href="#Output-1568450200" onClick='toggleBox("Output-1568450200", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1568450200" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1568450200">
+Click to see Screenshot<br/>
+<a target="_blank" href=Tue_Nov_10_22_20_25_IST_2020.jpg>Screenshot</a><br/>
+<br><br/>
+<br><br/>
+<a target="_blank" href=Tue_Nov_10_22_20_25_IST_2020.jpg><img src=Tue_Nov_10_22_20_25_IST_2020.jpg height=200 width=200></img></a><br/>
+</div>
+</td>
+<td></td>
+<td>5</td>
+<td>com.OSMOSE.testcases.oCalcPro@6941827a</td></tr>
+<tr>
+<td title='com.OSMOSE.testcases.oCalcPro.verifyCCDetailsForNonOCalcProduct()'><b>verifyCCDetailsForNonOCalcProduct</b><br>Test class: com.OSMOSE.testcases.oCalcPro<br>Test method: Verify Credit card details are not present for Non-Ocalc Product<br/>
+<a href="#Output-1655939830" onClick='toggleBox("Output-1655939830", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1655939830" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1655939830">
+Click to see Screenshot<br/>
+<a target="_blank" href=Tue_Nov_10_22_24_40_IST_2020.jpg>Screenshot</a><br/>
+<br><br/>
+<br><br/>
+<a target="_blank" href=Tue_Nov_10_22_24_40_IST_2020.jpg><img src=Tue_Nov_10_22_24_40_IST_2020.jpg height=200 width=200></img></a><br/>
+</div>
+</td>
+<td></td>
+<td>115</td>
+<td>com.OSMOSE.testcases.oCalcPro@6941827a</td></tr>
+<tr>
+<td title='com.OSMOSE.testcases.oCalcPro.verifyClickIhaveCopiedMyReceiptChkBox()'><b>verifyClickIhaveCopiedMyReceiptChkBox</b><br>Test class: com.OSMOSE.testcases.oCalcPro<br>Test method: Verify click on I have copied my receipt Checkbox and Approval<br/>
+<a href="#Output-696031899" onClick='toggleBox("Output-696031899", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-696031899" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-696031899">
+Click to see Screenshot<br/>
+<a target="_blank" href=Tue_Nov_10_22_22_43_IST_2020.jpg>Screenshot</a><br/>
+<br><br/>
+<br><br/>
+<a target="_blank" href=Tue_Nov_10_22_22_43_IST_2020.jpg><img src=Tue_Nov_10_22_22_43_IST_2020.jpg height=200 width=200></img></a><br/>
+</div>
+</td>
+<td></td>
+<td>4</td>
+<td>com.OSMOSE.testcases.oCalcPro@6941827a</td></tr>
+<tr>
+<td title='com.OSMOSE.testcases.oCalcPro.verifyClickMakePaymentBtn()'><b>verifyClickMakePaymentBtn</b><br>Test class: com.OSMOSE.testcases.oCalcPro<br>Test method: Verify click on Make Payment button and close pop-up<br/>
+<a href="#Output-1149993098" onClick='toggleBox("Output-1149993098", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1149993098" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1149993098">
+Click to see Screenshot<br/>
+<a target="_blank" href=Tue_Nov_10_22_22_39_IST_2020.jpg>Screenshot</a><br/>
+<br><br/>
+<br><br/>
+<a target="_blank" href=Tue_Nov_10_22_22_39_IST_2020.jpg><img src=Tue_Nov_10_22_22_39_IST_2020.jpg height=200 width=200></img></a><br/>
+</div>
+</td>
+<td></td>
+<td>7</td>
+<td>com.OSMOSE.testcases.oCalcPro@6941827a</td></tr>
+<tr>
+<td title='com.OSMOSE.testcases.oCalcPro.verifyClickOnAnAnnouncementLicensedUser()'><b>verifyClickOnAnAnnouncementLicensedUser</b><br>Test class: com.OSMOSE.testcases.oCalcPro<br>Test method: Verify click on an Announcement for Licensed User<br/>
+<a href="#Output-1395259059" onClick='toggleBox("Output-1395259059", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1395259059" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1395259059">
+Click to see Screenshot<br/>
+<a target="_blank" href=Tue_Nov_10_22_27_10_IST_2020.jpg>Screenshot</a><br/>
+<br><br/>
+<br><br/>
+<a target="_blank" href=Tue_Nov_10_22_27_10_IST_2020.jpg><img src=Tue_Nov_10_22_27_10_IST_2020.jpg height=200 width=200></img></a><br/>
+</div>
+</td>
+<td></td>
+<td>1</td>
+<td>com.OSMOSE.testcases.oCalcPro@6941827a</td></tr>
+<tr>
+<td title='com.OSMOSE.testcases.oCalcPro.verifyClickOnNextPreviousbtns()'><b>verifyClickOnNextPreviousbtns</b><br>Test class: com.OSMOSE.testcases.oCalcPro<br>Test method: Verify the Click on Next and Previous buttons<br/>
+<a href="#Output-1377543055" onClick='toggleBox("Output-1377543055", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1377543055" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1377543055">
+Click to see Screenshot<br/>
+<a target="_blank" href=Tue_Nov_10_22_29_39_IST_2020.jpg>Screenshot</a><br/>
+<br><br/>
+<br><br/>
+<a target="_blank" href=Tue_Nov_10_22_29_39_IST_2020.jpg><img src=Tue_Nov_10_22_29_39_IST_2020.jpg height=200 width=200></img></a><br/>
+</div>
+</td>
+<td></td>
+<td>2</td>
+<td>com.OSMOSE.testcases.oCalcPro@6941827a</td></tr>
+<tr>
+<td title='com.OSMOSE.testcases.oCalcPro.verifyClickOnPaywithCCBtn()'><b>verifyClickOnPaywithCCBtn</b><br>Test class: com.OSMOSE.testcases.oCalcPro<br>Test method: Verify click on Pay with Credit Card button<br/>
+<a href="#Output-271002555" onClick='toggleBox("Output-271002555", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-271002555" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-271002555">
+Click to see Screenshot<br/>
+<a target="_blank" href=Tue_Nov_10_22_22_31_IST_2020.jpg>Screenshot</a><br/>
+<br><br/>
+<br><br/>
+<a target="_blank" href=Tue_Nov_10_22_22_31_IST_2020.jpg><img src=Tue_Nov_10_22_22_31_IST_2020.jpg height=200 width=200></img></a><br/>
+</div>
+</td>
+<td></td>
+<td>27</td>
+<td>com.OSMOSE.testcases.oCalcPro@6941827a</td></tr>
+<tr>
+<td title='com.OSMOSE.testcases.oCalcPro.verifyClickOnSkipTourExitTourbtns()'><b>verifyClickOnSkipTourExitTourbtns</b><br>Test class: com.OSMOSE.testcases.oCalcPro<br>Test method: Verify the Click on Skip Tour and Exit Tour buttons<br/>
+<a href="#Output-1961611609" onClick='toggleBox("Output-1961611609", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1961611609" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1961611609">
+Click to see Screenshot<br/>
+<a target="_blank" href=Tue_Nov_10_22_29_43_IST_2020.jpg>Screenshot</a><br/>
+<br><br/>
+<br><br/>
+<a target="_blank" href=Tue_Nov_10_22_29_43_IST_2020.jpg><img src=Tue_Nov_10_22_29_43_IST_2020.jpg height=200 width=200></img></a><br/>
+</div>
+</td>
+<td></td>
+<td>4</td>
+<td>com.OSMOSE.testcases.oCalcPro@6941827a</td></tr>
+<tr>
+<td title='com.OSMOSE.testcases.oCalcPro.verifyClickRenewBtn()'><b>verifyClickRenewBtn</b><br>Test class: com.OSMOSE.testcases.oCalcPro<br>Test method: Verify click on Renew Button functionality<br/>
+<a href="#Output-1469107147" onClick='toggleBox("Output-1469107147", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1469107147" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1469107147">
+Click to see Screenshot<br/>
+<a target="_blank" href=Tue_Nov_10_22_31_03_IST_2020.jpg>Screenshot</a><br/>
+<br><br/>
+<br><br/>
+<a target="_blank" href=Tue_Nov_10_22_31_03_IST_2020.jpg><img src=Tue_Nov_10_22_31_03_IST_2020.jpg height=200 width=200></img></a><br/>
+</div>
+</td>
+<td></td>
+<td>8</td>
+<td>com.OSMOSE.testcases.oCalcPro@6941827a</td></tr>
+<tr>
+<td title='com.OSMOSE.testcases.oCalcPro.verifyClickResend()'><b>verifyClickResend</b><br>Test class: com.OSMOSE.testcases.oCalcPro<br>Test method: Verify Resend button functionality<br/>
+<a href="#Output-1878583108" onClick='toggleBox("Output-1878583108", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1878583108" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1878583108">
+Click to see Screenshot<br/>
+<a target="_blank" href=Tue_Nov_10_22_30_38_IST_2020.jpg>Screenshot</a><br/>
+<br><br/>
+<br><br/>
+<a target="_blank" href=Tue_Nov_10_22_30_38_IST_2020.jpg><img src=Tue_Nov_10_22_30_38_IST_2020.jpg height=200 width=200></img></a><br/>
+</div>
+</td>
+<td></td>
+<td>4</td>
+<td>com.OSMOSE.testcases.oCalcPro@6941827a</td></tr>
+<tr>
+<td title='com.OSMOSE.testcases.oCalcPro.verifyClickTransferLicenseBtn()'><b>verifyClickTransferLicenseBtn</b><br>Test class: com.OSMOSE.testcases.oCalcPro<br>Test method: Verify click on Transfer License Button<br/>
+<a href="#Output-1098139353" onClick='toggleBox("Output-1098139353", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1098139353" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1098139353">
+Click to see Screenshot<br/>
+<a target="_blank" href=Tue_Nov_10_22_30_33_IST_2020.jpg>Screenshot</a><br/>
+<br><br/>
+<br><br/>
+<a target="_blank" href=Tue_Nov_10_22_30_33_IST_2020.jpg><img src=Tue_Nov_10_22_30_33_IST_2020.jpg height=200 width=200></img></a><br/>
+</div>
+</td>
+<td></td>
+<td>3</td>
+<td>com.OSMOSE.testcases.oCalcPro@6941827a</td></tr>
+<tr>
+<td title='com.OSMOSE.testcases.oCalcPro.verifyClickUpdateContactBtn()'><b>verifyClickUpdateContactBtn</b><br>Test class: com.OSMOSE.testcases.oCalcPro<br>Test method: Verify click on Update Contact Button<br/>
+<a href="#Output-1981036429" onClick='toggleBox("Output-1981036429", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1981036429" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1981036429">
+Click to see Screenshot<br/>
+<a target="_blank" href=Tue_Nov_10_22_30_54_IST_2020.jpg>Screenshot</a><br/>
+<br><br/>
+<br><br/>
+<a target="_blank" href=Tue_Nov_10_22_30_54_IST_2020.jpg><img src=Tue_Nov_10_22_30_54_IST_2020.jpg height=200 width=200></img></a><br/>
+</div>
+</td>
+<td></td>
+<td>2</td>
+<td>com.OSMOSE.testcases.oCalcPro@6941827a</td></tr>
+<tr>
+<td title='com.OSMOSE.testcases.oCalcPro.verifyContentsLicenseManagementPopUp()'><b>verifyContentsLicenseManagementPopUp</b><br>Test class: com.OSMOSE.testcases.oCalcPro<br>Test method: Verify the Contents of License Management Pop-up<br/>
+<a href="#Output-914930347" onClick='toggleBox("Output-914930347", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-914930347" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-914930347">
+Click to see Screenshot<br/>
+<a target="_blank" href=Tue_Nov_10_22_29_31_IST_2020.jpg>Screenshot</a><br/>
+<br><br/>
+<br><br/>
+<a target="_blank" href=Tue_Nov_10_22_29_31_IST_2020.jpg><img src=Tue_Nov_10_22_29_31_IST_2020.jpg height=200 width=200></img></a><br/>
+</div>
+</td>
+<td></td>
+<td>5</td>
+<td>com.OSMOSE.testcases.oCalcPro@6941827a</td></tr>
+<tr>
+<td title='com.OSMOSE.testcases.oCalcPro.verifyContentsOfAnnouncementsLicensedUser()'><b>verifyContentsOfAnnouncementsLicensedUser</b><br>Test class: com.OSMOSE.testcases.oCalcPro<br>Test method: Verify contents on Announcements card for Licensed User<br/>
+<a href="#Output-1179272258" onClick='toggleBox("Output-1179272258", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1179272258" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1179272258">
+Click to see Screenshot<br/>
+<a target="_blank" href=Tue_Nov_10_22_19_42_IST_2020.jpg>Screenshot</a><br/>
+<br><br/>
+<br><br/>
+<a target="_blank" href=Tue_Nov_10_22_19_42_IST_2020.jpg><img src=Tue_Nov_10_22_19_42_IST_2020.jpg height=200 width=200></img></a><br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.OSMOSE.testcases.oCalcPro@6941827a</td></tr>
+<tr>
+<td title='com.OSMOSE.testcases.oCalcPro.verifyContentsOfFAQLicensedUser()'><b>verifyContentsOfFAQLicensedUser</b><br>Test class: com.OSMOSE.testcases.oCalcPro<br>Test method: Verify Contents of FAQ for Licensed User<br/>
+<a href="#Output-22515625" onClick='toggleBox("Output-22515625", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-22515625" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-22515625">
+Click to see Screenshot<br/>
+<a target="_blank" href=Tue_Nov_10_22_27_16_IST_2020.jpg>Screenshot</a><br/>
+<br><br/>
+<br><br/>
+<a target="_blank" href=Tue_Nov_10_22_27_16_IST_2020.jpg><img src=Tue_Nov_10_22_27_16_IST_2020.jpg height=200 width=200></img></a><br/>
+</div>
+</td>
+<td></td>
+<td>6</td>
+<td>com.OSMOSE.testcases.oCalcPro@6941827a</td></tr>
+<tr>
+<td title='com.OSMOSE.testcases.oCalcPro.verifyContentsOfKBCardLicensedUser()'><b>verifyContentsOfKBCardLicensedUser</b><br>Test class: com.OSMOSE.testcases.oCalcPro<br>Test method: Verify contents on Knowledge Base card for Licensed User<br/>
+<a href="#Output-741883443" onClick='toggleBox("Output-741883443", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-741883443" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-741883443">
+Click to see Screenshot<br/>
+<a target="_blank" href=Tue_Nov_10_22_19_41_IST_2020.jpg>Screenshot</a><br/>
+<br><br/>
+<br><br/>
+<a target="_blank" href=Tue_Nov_10_22_19_41_IST_2020.jpg><img src=Tue_Nov_10_22_19_41_IST_2020.jpg height=200 width=200></img></a><br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.OSMOSE.testcases.oCalcPro@6941827a</td></tr>
+<tr>
+<td title='com.OSMOSE.testcases.oCalcPro.verifyContentsOfLicenseMgmtLicensedUser()'><b>verifyContentsOfLicenseMgmtLicensedUser</b><br>Test class: com.OSMOSE.testcases.oCalcPro<br>Test method: Verify contents on License Management card for Licensed User<br/>
+<a href="#Output-1160106451" onClick='toggleBox("Output-1160106451", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1160106451" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1160106451">
+Click to see Screenshot<br/>
+<a target="_blank" href=Tue_Nov_10_22_19_43_IST_2020.jpg>Screenshot</a><br/>
+<br><br/>
+<br><br/>
+<a target="_blank" href=Tue_Nov_10_22_19_43_IST_2020.jpg><img src=Tue_Nov_10_22_19_43_IST_2020.jpg height=200 width=200></img></a><br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.OSMOSE.testcases.oCalcPro@6941827a</td></tr>
+<tr>
+<td title='com.OSMOSE.testcases.oCalcPro.verifyContentsOfProductsCardLicensedUser()'><b>verifyContentsOfProductsCardLicensedUser</b><br>Test class: com.OSMOSE.testcases.oCalcPro<br>Test method: Verify contents on Products card for Licensed User<br/>
+<a href="#Output-1437983537" onClick='toggleBox("Output-1437983537", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1437983537" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1437983537">
+Click to see Screenshot<br/>
+<a target="_blank" href=Tue_Nov_10_22_19_41_IST_2020.jpg>Screenshot</a><br/>
+<br><br/>
+<br><br/>
+<a target="_blank" href=Tue_Nov_10_22_19_41_IST_2020.jpg><img src=Tue_Nov_10_22_19_41_IST_2020.jpg height=200 width=200></img></a><br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.OSMOSE.testcases.oCalcPro@6941827a</td></tr>
+<tr>
+<td title='com.OSMOSE.testcases.oCalcPro.verifyContentsOfTrainingOptionsLicensedUser()'><b>verifyContentsOfTrainingOptionsLicensedUser</b><br>Test class: com.OSMOSE.testcases.oCalcPro<br>Test method: Verify contents on Training Options card for Licensed User<br/>
+<a href="#Output-998283025" onClick='toggleBox("Output-998283025", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-998283025" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-998283025">
+Click to see Screenshot<br/>
+<a target="_blank" href=Tue_Nov_10_22_19_40_IST_2020.jpg>Screenshot</a><br/>
+<br><br/>
+<br><br/>
+<a target="_blank" href=Tue_Nov_10_22_19_40_IST_2020.jpg><img src=Tue_Nov_10_22_19_40_IST_2020.jpg height=200 width=200></img></a><br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.OSMOSE.testcases.oCalcPro@6941827a</td></tr>
+<tr>
+<td title='com.OSMOSE.testcases.oCalcPro.verifyContentsOfTutorialLiveDemoLicensedUser()'><b>verifyContentsOfTutorialLiveDemoLicensedUser</b><br>Test class: com.OSMOSE.testcases.oCalcPro<br>Test method: Verify contents on Tutotial, Live Demo and Support card<br/>
+<a href="#Output-749098095" onClick='toggleBox("Output-749098095", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-749098095" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-749098095">
+Click to see Screenshot<br/>
+<a target="_blank" href=Tue_Nov_10_22_19_44_IST_2020.jpg>Screenshot</a><br/>
+<br><br/>
+<br><br/>
+<a target="_blank" href=Tue_Nov_10_22_19_44_IST_2020.jpg><img src=Tue_Nov_10_22_19_44_IST_2020.jpg height=200 width=200></img></a><br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.OSMOSE.testcases.oCalcPro@6941827a</td></tr>
+<tr>
+<td title='com.OSMOSE.testcases.oCalcPro.verifyCurrentPublicClassesClickLicensedUser()'><b>verifyCurrentPublicClassesClickLicensedUser</b><br>Test class: com.OSMOSE.testcases.oCalcPro<br>Test method: Verify click on Current Public classes on Training Options for a licensed User<br/>
+<a href="#Output-1227170244" onClick='toggleBox("Output-1227170244", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1227170244" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1227170244">
+Click to see Screenshot<br/>
+<a target="_blank" href=Tue_Nov_10_22_26_55_IST_2020.jpg>Screenshot</a><br/>
+<br><br/>
+<br><br/>
+<a target="_blank" href=Tue_Nov_10_22_26_55_IST_2020.jpg><img src=Tue_Nov_10_22_26_55_IST_2020.jpg height=200 width=200></img></a><br/>
+</div>
+</td>
+<td></td>
+<td>17</td>
+<td>com.OSMOSE.testcases.oCalcPro@6941827a</td></tr>
+<tr>
+<td title='com.OSMOSE.testcases.oCalcPro.verifyDifferentProductsQuoteCreate()'><b>verifyDifferentProductsQuoteCreate</b><br>Test class: com.OSMOSE.testcases.oCalcPro<br>Test method: Verify adding OcalPro and other products to cart and quote submission<br/>
+<a href="#Output-367725289" onClick='toggleBox("Output-367725289", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-367725289" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-367725289">
+Click to see Screenshot<br/>
+<a target="_blank" href=Tue_Nov_10_22_20_48_IST_2020.jpg>Screenshot</a><br/>
+<br><br/>
+<br><br/>
+<a target="_blank" href=Tue_Nov_10_22_20_48_IST_2020.jpg><img src=Tue_Nov_10_22_20_48_IST_2020.jpg height=200 width=200></img></a><br/>
+</div>
+</td>
+<td></td>
+<td>14</td>
+<td>com.OSMOSE.testcases.oCalcPro@6941827a</td></tr>
+<tr>
+<td title='com.OSMOSE.testcases.oCalcPro.verifyFAQClickLicensedUser()'><b>verifyFAQClickLicensedUser</b><br>Test class: com.OSMOSE.testcases.oCalcPro<br>Test method: Verify clicking on an FAQ for Licensed User<br/>
+<a href="#Output-1711410537" onClick='toggleBox("Output-1711410537", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1711410537" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1711410537">
+Click to see Screenshot<br/>
+<a target="_blank" href=Tue_Nov_10_22_27_35_IST_2020.jpg>Screenshot</a><br/>
+<br><br/>
+<br><br/>
+<a target="_blank" href=Tue_Nov_10_22_27_35_IST_2020.jpg><img src=Tue_Nov_10_22_27_35_IST_2020.jpg height=200 width=200></img></a><br/>
+</div>
+</td>
+<td></td>
+<td>18</td>
+<td>com.OSMOSE.testcases.oCalcPro@6941827a</td></tr>
+<tr>
+<td title='com.OSMOSE.testcases.oCalcPro.verifyFilterContactName()'><b>verifyFilterContactName</b><br>Test class: com.OSMOSE.testcases.oCalcPro<br>Test method: Verify the Filter functionality of Contact Name column<br/>
+<a href="#Output-1085479446" onClick='toggleBox("Output-1085479446", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1085479446" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1085479446">
+Click to see Screenshot<br/>
+<a target="_blank" href=Tue_Nov_10_22_29_54_IST_2020.jpg>Screenshot</a><br/>
+<br><br/>
+<br><br/>
+<a target="_blank" href=Tue_Nov_10_22_29_54_IST_2020.jpg><img src=Tue_Nov_10_22_29_54_IST_2020.jpg height=200 width=200></img></a><br/>
+</div>
+</td>
+<td></td>
+<td>3</td>
+<td>com.OSMOSE.testcases.oCalcPro@6941827a</td></tr>
+<tr>
+<td title='com.OSMOSE.testcases.oCalcPro.verifyFilterExpToken()'><b>verifyFilterExpToken</b><br>Test class: com.OSMOSE.testcases.oCalcPro<br>Test method: Verify the Filter functionality of Exp Token column<br/>
+<a href="#Output-619629247" onClick='toggleBox("Output-619629247", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-619629247" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-619629247">
+Click to see Screenshot<br/>
+<a target="_blank" href=Tue_Nov_10_22_30_01_IST_2020.jpg>Screenshot</a><br/>
+<br><br/>
+<br><br/>
+<a target="_blank" href=Tue_Nov_10_22_30_01_IST_2020.jpg><img src=Tue_Nov_10_22_30_01_IST_2020.jpg height=200 width=200></img></a><br/>
+</div>
+</td>
+<td></td>
+<td>1</td>
+<td>com.OSMOSE.testcases.oCalcPro@6941827a</td></tr>
+<tr>
+<td title='com.OSMOSE.testcases.oCalcPro.verifyFilterExpirationDate()'><b>verifyFilterExpirationDate</b><br>Test class: com.OSMOSE.testcases.oCalcPro<br>Test method: Verify the Filter functionality of Expiration Date column<br/>
+<a href="#Output-1517223475" onClick='toggleBox("Output-1517223475", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1517223475" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1517223475">
+Click to see Screenshot<br/>
+<a target="_blank" href=Tue_Nov_10_22_30_14_IST_2020.jpg>Screenshot</a><br/>
+<br><br/>
+<br><br/>
+<a target="_blank" href=Tue_Nov_10_22_30_14_IST_2020.jpg><img src=Tue_Nov_10_22_30_14_IST_2020.jpg height=200 width=200></img></a><br/>
+</div>
+</td>
+<td></td>
+<td>2</td>
+<td>com.OSMOSE.testcases.oCalcPro@6941827a</td></tr>
+<tr>
+<td title='com.OSMOSE.testcases.oCalcPro.verifyFilterLicenseKey()'><b>verifyFilterLicenseKey</b><br>Test class: com.OSMOSE.testcases.oCalcPro<br>Test method: Verify the Filter functionality of License key column<br/>
+<a href="#Output-1382382943" onClick='toggleBox("Output-1382382943", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1382382943" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1382382943">
+Click to see Screenshot<br/>
+<a target="_blank" href=Tue_Nov_10_22_29_56_IST_2020.jpg>Screenshot</a><br/>
+<br><br/>
+<br><br/>
+<a target="_blank" href=Tue_Nov_10_22_29_56_IST_2020.jpg><img src=Tue_Nov_10_22_29_56_IST_2020.jpg height=200 width=200></img></a><br/>
+</div>
+</td>
+<td></td>
+<td>1</td>
+<td>com.OSMOSE.testcases.oCalcPro@6941827a</td></tr>
+<tr>
+<td title='com.OSMOSE.testcases.oCalcPro.verifyFilterLicenseType()'><b>verifyFilterLicenseType</b><br>Test class: com.OSMOSE.testcases.oCalcPro<br>Test method: Verify the Filter functionality of License Type column<br/>
+<a href="#Output-1923302711" onClick='toggleBox("Output-1923302711", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1923302711" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1923302711">
+Click to see Screenshot<br/>
+<a target="_blank" href=Tue_Nov_10_22_30_04_IST_2020.jpg>Screenshot</a><br/>
+<br><br/>
+<br><br/>
+<a target="_blank" href=Tue_Nov_10_22_30_04_IST_2020.jpg><img src=Tue_Nov_10_22_30_04_IST_2020.jpg height=200 width=200></img></a><br/>
+</div>
+</td>
+<td></td>
+<td>2</td>
+<td>com.OSMOSE.testcases.oCalcPro@6941827a</td></tr>
+<tr>
+<td title='com.OSMOSE.testcases.oCalcPro.verifyFilterLicenseTypeSite()'><b>verifyFilterLicenseTypeSite</b><br>Test class: com.OSMOSE.testcases.oCalcPro<br>Test method: Verify the Filter functionality of License Type column when Site is selected as license type<br/>
+<a href="#Output-625088521" onClick='toggleBox("Output-625088521", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-625088521" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-625088521">
+Click to see Screenshot<br/>
+<a target="_blank" href=Tue_Nov_10_22_30_07_IST_2020.jpg>Screenshot</a><br/>
+<br><br/>
+<br><br/>
+<a target="_blank" href=Tue_Nov_10_22_30_07_IST_2020.jpg><img src=Tue_Nov_10_22_30_07_IST_2020.jpg height=200 width=200></img></a><br/>
+</div>
+</td>
+<td></td>
+<td>2</td>
+<td>com.OSMOSE.testcases.oCalcPro@6941827a</td></tr>
+<tr>
+<td title='com.OSMOSE.testcases.oCalcPro.verifyFilterPurchaseDate()'><b>verifyFilterPurchaseDate</b><br>Test class: com.OSMOSE.testcases.oCalcPro<br>Test method: Verify the Filter functionality of Purchase Date column<br/>
+<a href="#Output-1877123942" onClick='toggleBox("Output-1877123942", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1877123942" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1877123942">
+Click to see Screenshot<br/>
+<a target="_blank" href=Tue_Nov_10_22_30_10_IST_2020.jpg>Screenshot</a><br/>
+<br><br/>
+<br><br/>
+<a target="_blank" href=Tue_Nov_10_22_30_10_IST_2020.jpg><img src=Tue_Nov_10_22_30_10_IST_2020.jpg height=200 width=200></img></a><br/>
+</div>
+</td>
+<td></td>
+<td>2</td>
+<td>com.OSMOSE.testcases.oCalcPro@6941827a</td></tr>
+<tr>
+<td title='com.OSMOSE.testcases.oCalcPro.verifyFilterStatus()'><b>verifyFilterStatus</b><br>Test class: com.OSMOSE.testcases.oCalcPro<br>Test method: Verify the Filter functionality of Status column<br/>
+<a href="#Output-465257140" onClick='toggleBox("Output-465257140", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-465257140" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-465257140">
+Click to see Screenshot<br/>
+<a target="_blank" href=Tue_Nov_10_22_29_59_IST_2020.jpg>Screenshot</a><br/>
+<br><br/>
+<br><br/>
+<a target="_blank" href=Tue_Nov_10_22_29_59_IST_2020.jpg><img src=Tue_Nov_10_22_29_59_IST_2020.jpg height=200 width=200></img></a><br/>
+</div>
+</td>
+<td></td>
+<td>2</td>
+<td>com.OSMOSE.testcases.oCalcPro@6941827a</td></tr>
+<tr>
+<td title='com.OSMOSE.testcases.oCalcPro.verifyKBClickLicensedUser()'><b>verifyKBClickLicensedUser</b><br>Test class: com.OSMOSE.testcases.oCalcPro<br>Test method: Verify click on Knowledge Base card for Licensed User<br/>
+<a href="#Output-1805031342" onClick='toggleBox("Output-1805031342", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1805031342" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1805031342">
+Click to see Screenshot<br/>
+<a target="_blank" href=Tue_Nov_10_22_28_03_IST_2020.jpg>Screenshot</a><br/>
+<br><br/>
+<br><br/>
+<a target="_blank" href=Tue_Nov_10_22_28_03_IST_2020.jpg><img src=Tue_Nov_10_22_28_03_IST_2020.jpg height=200 width=200></img></a><br/>
+</div>
+</td>
+<td></td>
+<td>26</td>
+<td>com.OSMOSE.testcases.oCalcPro@6941827a</td></tr>
+<tr>
+<td title='com.OSMOSE.testcases.oCalcPro.verifyKBTrainingVideosClickLicensedUser()'><b>verifyKBTrainingVideosClickLicensedUser</b><br>Test class: com.OSMOSE.testcases.oCalcPro<br>Test method: Verify click on Training Videos link on Knowledge Base card for Licensed User<br/>
+<a href="#Output-521641809" onClick='toggleBox("Output-521641809", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-521641809" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-521641809">
+Click to see Screenshot<br/>
+<a target="_blank" href=Tue_Nov_10_22_28_20_IST_2020.jpg>Screenshot</a><br/>
+<br><br/>
+<br><br/>
+<a target="_blank" href=Tue_Nov_10_22_28_20_IST_2020.jpg><img src=Tue_Nov_10_22_28_20_IST_2020.jpg height=200 width=200></img></a><br/>
+</div>
+</td>
+<td></td>
+<td>15</td>
+<td>com.OSMOSE.testcases.oCalcPro@6941827a</td></tr>
+<tr>
+<td title='com.OSMOSE.testcases.oCalcPro.verifyKBWikiPageClickLicensedUser()'><b>verifyKBWikiPageClickLicensedUser</b><br>Test class: com.OSMOSE.testcases.oCalcPro<br>Test method: Verify click on Wiki Page on Knowledge Base card for Licensed User<br/>
+<a href="#Output-1105778967" onClick='toggleBox("Output-1105778967", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1105778967" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1105778967">
+Click to see Screenshot<br/>
+<a target="_blank" href=Tue_Nov_10_22_28_50_IST_2020.jpg>Screenshot</a><br/>
+<br><br/>
+<br><br/>
+<a target="_blank" href=Tue_Nov_10_22_28_50_IST_2020.jpg><img src=Tue_Nov_10_22_28_50_IST_2020.jpg height=200 width=200></img></a><br/>
+</div>
+</td>
+<td></td>
+<td>29</td>
+<td>com.OSMOSE.testcases.oCalcPro@6941827a</td></tr>
+<tr>
+<td title='com.OSMOSE.testcases.oCalcPro.verifyOnlyRenewBtnIsEnabledOnMultipleRecordSelection()'><b>verifyOnlyRenewBtnIsEnabledOnMultipleRecordSelection</b><br>Test class: com.OSMOSE.testcases.oCalcPro<br>Test method: verify that only Renew Button is Enabled On multiple record selection<br/>
+<a href="#Output-908299026" onClick='toggleBox("Output-908299026", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-908299026" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-908299026">
+Click to see Screenshot<br/>
+<a target="_blank" href=Tue_Nov_10_22_29_50_IST_2020.jpg>Screenshot</a><br/>
+<br><br/>
+<br><br/>
+<a target="_blank" href=Tue_Nov_10_22_29_50_IST_2020.jpg><img src=Tue_Nov_10_22_29_50_IST_2020.jpg height=200 width=200></img></a><br/>
+</div>
+</td>
+<td></td>
+<td>6</td>
+<td>com.OSMOSE.testcases.oCalcPro@6941827a</td></tr>
+<tr>
+<td title='com.OSMOSE.testcases.oCalcPro.verifyPresenceOfAnnouncementsCardLicensedUser()'><b>verifyPresenceOfAnnouncementsCardLicensedUser</b><br>Test class: com.OSMOSE.testcases.oCalcPro<br>Test method: Verify presence of Announcements card on OcalcPro page for Licensed User<br/>
+<a href="#Output-1069584108" onClick='toggleBox("Output-1069584108", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1069584108" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1069584108">
+Click to see Screenshot<br/>
+<a target="_blank" href=Tue_Nov_10_22_19_38_IST_2020.jpg>Screenshot</a><br/>
+<br><br/>
+<br><br/>
+<a target="_blank" href=Tue_Nov_10_22_19_38_IST_2020.jpg><img src=Tue_Nov_10_22_19_38_IST_2020.jpg height=200 width=200></img></a><br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.OSMOSE.testcases.oCalcPro@6941827a</td></tr>
+<tr>
+<td title='com.OSMOSE.testcases.oCalcPro.verifyPresenceOfCCReceipt()'><b>verifyPresenceOfCCReceipt</b><br>Test class: com.OSMOSE.testcases.oCalcPro<br>Test method: Verify presence of CC Receipt on My Quotes Screen<br/>
+<a href="#Output-1958375413" onClick='toggleBox("Output-1958375413", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1958375413" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1958375413">
+Click to see Screenshot<br/>
+<a target="_blank" href=Tue_Nov_10_22_26_37_IST_2020.jpg>Screenshot</a><br/>
+<br><br/>
+<br><br/>
+<a target="_blank" href=Tue_Nov_10_22_26_37_IST_2020.jpg><img src=Tue_Nov_10_22_26_37_IST_2020.jpg height=200 width=200></img></a><br/>
+</div>
+</td>
+<td></td>
+<td>116</td>
+<td>com.OSMOSE.testcases.oCalcPro@6941827a</td></tr>
+<tr>
+<td title='com.OSMOSE.testcases.oCalcPro.verifyPresenceOfCreditCardOptions()'><b>verifyPresenceOfCreditCardOptions</b><br>Test class: com.OSMOSE.testcases.oCalcPro<br>Test method: Verify presence of Credit Card details<br/>
+<a href="#Output-636575568" onClick='toggleBox("Output-636575568", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-636575568" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-636575568">
+Click to see Screenshot<br/>
+<a target="_blank" href=Tue_Nov_10_22_22_03_IST_2020.jpg>Screenshot</a><br/>
+<br><br/>
+<br><br/>
+<a target="_blank" href=Tue_Nov_10_22_22_03_IST_2020.jpg><img src=Tue_Nov_10_22_22_03_IST_2020.jpg height=200 width=200></img></a><br/>
+</div>
+</td>
+<td></td>
+<td>74</td>
+<td>com.OSMOSE.testcases.oCalcPro@6941827a</td></tr>
+<tr>
+<td title='com.OSMOSE.testcases.oCalcPro.verifyPresenceOfKnowledgeBaseCardLicensedUser()'><b>verifyPresenceOfKnowledgeBaseCardLicensedUser</b><br>Test class: com.OSMOSE.testcases.oCalcPro<br>Test method: Verify presence of Knowledge Base card on OcalcPro page for Licensed User<br/>
+<a href="#Output-426288284" onClick='toggleBox("Output-426288284", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-426288284" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-426288284">
+Click to see Screenshot<br/>
+<a target="_blank" href=Tue_Nov_10_22_19_38_IST_2020.jpg>Screenshot</a><br/>
+<br><br/>
+<br><br/>
+<a target="_blank" href=Tue_Nov_10_22_19_38_IST_2020.jpg><img src=Tue_Nov_10_22_19_38_IST_2020.jpg height=200 width=200></img></a><br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.OSMOSE.testcases.oCalcPro@6941827a</td></tr>
+<tr>
+<td title='com.OSMOSE.testcases.oCalcPro.verifyPresenceOfLicenseMgmtCard()'><b>verifyPresenceOfLicenseMgmtCard</b><br>Test class: com.OSMOSE.testcases.oCalcPro<br>Test method: Verify presence of License Management card on OcalcPro page for Licensed User<br/>
+<a href="#Output-280223635" onClick='toggleBox("Output-280223635", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-280223635" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-280223635">
+Click to see Screenshot<br/>
+<a target="_blank" href=Tue_Nov_10_22_19_37_IST_2020.jpg>Screenshot</a><br/>
+<br><br/>
+<br><br/>
+<a target="_blank" href=Tue_Nov_10_22_19_37_IST_2020.jpg><img src=Tue_Nov_10_22_19_37_IST_2020.jpg height=200 width=200></img></a><br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.OSMOSE.testcases.oCalcPro@6941827a</td></tr>
+<tr>
+<td title='com.OSMOSE.testcases.oCalcPro.verifyPresenceOfProductsCardLicensedUser()'><b>verifyPresenceOfProductsCardLicensedUser</b><br>Test class: com.OSMOSE.testcases.oCalcPro<br>Test method: Verify presence of Products card on OcalcPro page for Licensed User<br/>
+<a href="#Output-1356236848" onClick='toggleBox("Output-1356236848", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1356236848" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1356236848">
+Click to see Screenshot<br/>
+<a target="_blank" href=Tue_Nov_10_22_19_37_IST_2020.jpg>Screenshot</a><br/>
+<br><br/>
+<br><br/>
+<a target="_blank" href=Tue_Nov_10_22_19_37_IST_2020.jpg><img src=Tue_Nov_10_22_19_37_IST_2020.jpg height=200 width=200></img></a><br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.OSMOSE.testcases.oCalcPro@6941827a</td></tr>
+<tr>
+<td title='com.OSMOSE.testcases.oCalcPro.verifyPresenceOfSkipTourNextPreviousExitTour()'><b>verifyPresenceOfSkipTourNextPreviousExitTour</b><br>Test class: com.OSMOSE.testcases.oCalcPro<br>Test method: Verify the presence of SkipTour, Next, Previous, ExitTour buttons<br/>
+<a href="#Output-1844240889" onClick='toggleBox("Output-1844240889", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1844240889" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1844240889">
+Click to see Screenshot<br/>
+<a target="_blank" href=Tue_Nov_10_22_29_36_IST_2020.jpg>Screenshot</a><br/>
+<br><br/>
+<br><br/>
+<a target="_blank" href=Tue_Nov_10_22_29_36_IST_2020.jpg><img src=Tue_Nov_10_22_29_36_IST_2020.jpg height=200 width=200></img></a><br/>
+</div>
+</td>
+<td></td>
+<td>4</td>
+<td>com.OSMOSE.testcases.oCalcPro@6941827a</td></tr>
+<tr>
+<td title='com.OSMOSE.testcases.oCalcPro.verifyPresenceOfTrainingOptionsCardLicensedUser()'><b>verifyPresenceOfTrainingOptionsCardLicensedUser</b><br>Test class: com.OSMOSE.testcases.oCalcPro<br>Test method: Verify presence of Training Options card on OcalcPro page for Licensed User<br/>
+<a href="#Output-1031968647" onClick='toggleBox("Output-1031968647", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1031968647" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1031968647">
+Click to see Screenshot<br/>
+<a target="_blank" href=Tue_Nov_10_22_19_39_IST_2020.jpg>Screenshot</a><br/>
+<br><br/>
+<br><br/>
+<a target="_blank" href=Tue_Nov_10_22_19_39_IST_2020.jpg><img src=Tue_Nov_10_22_19_39_IST_2020.jpg height=200 width=200></img></a><br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.OSMOSE.testcases.oCalcPro@6941827a</td></tr>
+<tr>
+<td title='com.OSMOSE.testcases.oCalcPro.verifyPresenceOfTutorialLiveDemoCardLicensedUser()'><b>verifyPresenceOfTutorialLiveDemoCardLicensedUser</b><br>Test class: com.OSMOSE.testcases.oCalcPro<br>Test method: Verify presence of Tutorial, Live Demo & support card on OcalcPro page for Licensed User<br/>
+<a href="#Output-309060377" onClick='toggleBox("Output-309060377", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-309060377" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-309060377">
+Click to see Screenshot<br/>
+<a target="_blank" href=Tue_Nov_10_22_19_39_IST_2020.jpg>Screenshot</a><br/>
+<br><br/>
+<br><br/>
+<a target="_blank" href=Tue_Nov_10_22_19_39_IST_2020.jpg><img src=Tue_Nov_10_22_19_39_IST_2020.jpg height=200 width=200></img></a><br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.OSMOSE.testcases.oCalcPro@6941827a</td></tr>
+<tr>
+<td title='com.OSMOSE.testcases.oCalcPro.verifyProductsClickLicensedUser()'><b>verifyProductsClickLicensedUser</b><br>Test class: com.OSMOSE.testcases.oCalcPro<br>Test method: Verify click on Products card for Licensed User<br/>
+<a href="#Output-90380642" onClick='toggleBox("Output-90380642", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-90380642" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-90380642">
+Click to see Screenshot<br/>
+<a target="_blank" href=Tue_Nov_10_22_19_48_IST_2020.jpg>Screenshot</a><br/>
+<br><br/>
+<br><br/>
+<a target="_blank" href=Tue_Nov_10_22_19_48_IST_2020.jpg><img src=Tue_Nov_10_22_19_48_IST_2020.jpg height=200 width=200></img></a><br/>
+</div>
+</td>
+<td></td>
+<td>3</td>
+<td>com.OSMOSE.testcases.oCalcPro@6941827a</td></tr>
+<tr>
+<td title='com.OSMOSE.testcases.oCalcPro.verifyRequestCVTQuoteClickLicensedUser()'><b>verifyRequestCVTQuoteClickLicensedUser</b><br>Test class: com.OSMOSE.testcases.oCalcPro<br>Test method: Verify click on Request CVT Quote on Products card and submit quote for Licensed User<br/>
+<a href="#Output-757332719" onClick='toggleBox("Output-757332719", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-757332719" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-757332719">
+Click to see Screenshot<br/>
+<a target="_blank" href=Tue_Nov_10_22_20_09_IST_2020.jpg>Screenshot</a><br/>
+<br><br/>
+<br><br/>
+<a target="_blank" href=Tue_Nov_10_22_20_09_IST_2020.jpg><img src=Tue_Nov_10_22_20_09_IST_2020.jpg height=200 width=200></img></a><br/>
+</div>
+</td>
+<td></td>
+<td>9</td>
+<td>com.OSMOSE.testcases.oCalcPro@6941827a</td></tr>
+<tr>
+<td title='com.OSMOSE.testcases.oCalcPro.verifyRequestLicenseQuoteClickLicensedUser()'><b>verifyRequestLicenseQuoteClickLicensedUser</b><br>Test class: com.OSMOSE.testcases.oCalcPro<br>Test method: Verify click on Request License Quote on Products card and submit quote for Licensed User<br/>
+<a href="#Output-1940737740" onClick='toggleBox("Output-1940737740", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1940737740" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1940737740">
+Click to see Screenshot<br/>
+<a target="_blank" href=Tue_Nov_10_22_19_59_IST_2020.jpg>Screenshot</a><br/>
+<br><br/>
+<br><br/>
+<a target="_blank" href=Tue_Nov_10_22_19_59_IST_2020.jpg><img src=Tue_Nov_10_22_19_59_IST_2020.jpg height=200 width=200></img></a><br/>
+</div>
+</td>
+<td></td>
+<td>10</td>
+<td>com.OSMOSE.testcases.oCalcPro@6941827a</td></tr>
+<tr>
+<td title='com.OSMOSE.testcases.oCalcPro.verifyRequestQuoteForPrivateTrainingClassesClickLicensedUser()'><b>verifyRequestQuoteForPrivateTrainingClassesClickLicensedUser</b><br>Test class: com.OSMOSE.testcases.oCalcPro<br>Test method: Verify click on Request Quote for Private Training classes on Training Options for Licensed User<br/>
+<a href="#Output-759840275" onClick='toggleBox("Output-759840275", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-759840275" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-759840275">
+Click to see Screenshot<br/>
+<a target="_blank" href=Tue_Nov_10_22_27_07_IST_2020.jpg>Screenshot</a><br/>
+<br><br/>
+<br><br/>
+<a target="_blank" href=Tue_Nov_10_22_27_07_IST_2020.jpg><img src=Tue_Nov_10_22_27_07_IST_2020.jpg height=200 width=200></img></a><br/>
+</div>
+</td>
+<td></td>
+<td>11</td>
+<td>com.OSMOSE.testcases.oCalcPro@6941827a</td></tr>
+<tr>
+<td title='com.OSMOSE.testcases.oCalcPro.verifyRequestTrainingQuoteClickLicensedUser()'><b>verifyRequestTrainingQuoteClickLicensedUser</b><br>Test class: com.OSMOSE.testcases.oCalcPro<br>Test method: Verify click on Request Training Quote on Products card and submit quote for Licensed User<br/>
+<a href="#Output-1760020675" onClick='toggleBox("Output-1760020675", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1760020675" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1760020675">
+Click to see Screenshot<br/>
+<a target="_blank" href=Tue_Nov_10_22_20_19_IST_2020.jpg>Screenshot</a><br/>
+<br><br/>
+<br><br/>
+<a target="_blank" href=Tue_Nov_10_22_20_19_IST_2020.jpg><img src=Tue_Nov_10_22_20_19_IST_2020.jpg height=200 width=200></img></a><br/>
+</div>
+</td>
+<td></td>
+<td>9</td>
+<td>com.OSMOSE.testcases.oCalcPro@6941827a</td></tr>
+<tr>
+<td title='com.OSMOSE.testcases.oCalcPro.verifyRequstDemoClickLicensedUser()'><b>verifyRequstDemoClickLicensedUser</b><br>Test class: com.OSMOSE.testcases.oCalcPro<br>Test method: Verify click on Request Demo button for Licensed User<br/>
+<a href="#Output-1583020257" onClick='toggleBox("Output-1583020257", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1583020257" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1583020257">
+Click to see Screenshot<br/>
+<a target="_blank" href=Tue_Nov_10_22_20_30_IST_2020.jpg>Screenshot</a><br/>
+<br><br/>
+<br><br/>
+<a target="_blank" href=Tue_Nov_10_22_20_30_IST_2020.jpg><img src=Tue_Nov_10_22_20_30_IST_2020.jpg height=200 width=200></img></a><br/>
+</div>
+</td>
+<td></td>
+<td>4</td>
+<td>com.OSMOSE.testcases.oCalcPro@6941827a</td></tr>
+<tr>
+<td title='com.OSMOSE.testcases.oCalcPro.verifySearchResultsAreGroupedLicensedUser()'><b>verifySearchResultsAreGroupedLicensedUser</b><br>Test class: com.OSMOSE.testcases.oCalcPro<br>Test method: Verify that Search results section will be organized into separate grouped based on the popular query selected for licensed user<br/>
+<a href="#Output-1163871363" onClick='toggleBox("Output-1163871363", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1163871363" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1163871363">
+Click to see Screenshot<br/>
+<a target="_blank" href=Tue_Nov_10_22_29_10_IST_2020.jpg>Screenshot</a><br/>
+<br><br/>
+<br><br/>
+<a target="_blank" href=Tue_Nov_10_22_29_10_IST_2020.jpg><img src=Tue_Nov_10_22_29_10_IST_2020.jpg height=200 width=200></img></a><br/>
+</div>
+</td>
+<td></td>
+<td>19</td>
+<td>com.OSMOSE.testcases.oCalcPro@6941827a</td></tr>
+<tr>
+<td title='com.OSMOSE.testcases.oCalcPro.verifySubmitIssueClickLicensedUser()'><b>verifySubmitIssueClickLicensedUser</b><br>Test class: com.OSMOSE.testcases.oCalcPro<br>Test method: Verify clicking on Submit Issue / Feature Request for Licensed User<br/>
+<a href="#Output-295519299" onClick='toggleBox("Output-295519299", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-295519299" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-295519299">
+Click to see Screenshot<br/>
+<a target="_blank" href=Tue_Nov_10_22_27_36_IST_2020.jpg>Screenshot</a><br/>
+<br><br/>
+<br><br/>
+<a target="_blank" href=Tue_Nov_10_22_27_36_IST_2020.jpg><img src=Tue_Nov_10_22_27_36_IST_2020.jpg height=200 width=200></img></a><br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.OSMOSE.testcases.oCalcPro@6941827a</td></tr>
+<tr>
+<td title='com.OSMOSE.testcases.oCalcPro.verifyTrainingVideosAreGroupedLicensedUser()'><b>verifyTrainingVideosAreGroupedLicensedUser</b><br>Test class: com.OSMOSE.testcases.oCalcPro<br>Test method: Verify that Search results section will be organized into separate grouped based on the popular query selected for licensed user<br/>
+<a href="#Output-828064258" onClick='toggleBox("Output-828064258", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-828064258" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-828064258">
+Click to see Screenshot<br/>
+<a target="_blank" href=Tue_Nov_10_22_29_26_IST_2020.jpg>Screenshot</a><br/>
+<br><br/>
+<br><br/>
+<a target="_blank" href=Tue_Nov_10_22_29_26_IST_2020.jpg><img src=Tue_Nov_10_22_29_26_IST_2020.jpg height=200 width=200></img></a><br/>
+</div>
+</td>
+<td></td>
+<td>15</td>
+<td>com.OSMOSE.testcases.oCalcPro@6941827a</td></tr>
+<tr>
+<td title='com.OSMOSE.testcases.oCalcPro.verifyTransferBtn()'><b>verifyTransferBtn</b><br>Test class: com.OSMOSE.testcases.oCalcPro<br>Test method: Verify transfer button pop up UI<br/>
+<a href="#Output-110044003" onClick='toggleBox("Output-110044003", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-110044003" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-110044003">
+Click to see Screenshot<br/>
+<a target="_blank" href=Tue_Nov_10_22_30_28_IST_2020.jpg>Screenshot</a><br/>
+<br><br/>
+<br><br/>
+<a target="_blank" href=Tue_Nov_10_22_30_28_IST_2020.jpg><img src=Tue_Nov_10_22_30_28_IST_2020.jpg height=200 width=200></img></a><br/>
+</div>
+</td>
+<td></td>
+<td>13</td>
+<td>com.OSMOSE.testcases.oCalcPro@6941827a</td></tr>
+<tr>
+<td title='com.OSMOSE.testcases.oCalcPro.verifyTransferErrorMsg()'><b>verifyTransferErrorMsg</b><br>Test class: com.OSMOSE.testcases.oCalcPro<br>Test method: Verify that error message is displayed on clicking on Transfer License without filling the details<br/>
+<a href="#Output-509065091" onClick='toggleBox("Output-509065091", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-509065091" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-509065091">
+Click to see Screenshot<br/>
+<a target="_blank" href=Tue_Nov_10_22_30_28_IST_2020.jpg>Screenshot</a><br/>
+<br><br/>
+<br><br/>
+<a target="_blank" href=Tue_Nov_10_22_30_28_IST_2020.jpg><img src=Tue_Nov_10_22_30_28_IST_2020.jpg height=200 width=200></img></a><br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.OSMOSE.testcases.oCalcPro@6941827a</td></tr>
+<tr>
+<td title='com.OSMOSE.testcases.oCalcPro.verifyUpdateContactBtn()'><b>verifyUpdateContactBtn</b><br>Test class: com.OSMOSE.testcases.oCalcPro<br>Test method: Verify Update Contact button pop up UI<br/>
+<a href="#Output-909315048" onClick='toggleBox("Output-909315048", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-909315048" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-909315048">
+Click to see Screenshot<br/>
+<a target="_blank" href=Tue_Nov_10_22_30_51_IST_2020.jpg>Screenshot</a><br/>
+<br><br/>
+<br><br/>
+<a target="_blank" href=Tue_Nov_10_22_30_51_IST_2020.jpg><img src=Tue_Nov_10_22_30_51_IST_2020.jpg height=200 width=200></img></a><br/>
+</div>
+</td>
+<td></td>
+<td>12</td>
+<td>com.OSMOSE.testcases.oCalcPro@6941827a</td></tr>
+<tr>
+<td title='com.OSMOSE.testcases.oCalcPro.verifyoCalcProNavigationClick()'><b>verifyoCalcProNavigationClick</b><br>Test class: com.OSMOSE.testcases.oCalcPro<br>Test method: Verify the click on oCalcPro menu and card Navigation<br/>
+<a href="#Output-755328698" onClick='toggleBox("Output-755328698", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-755328698" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-755328698">
+Click to see Screenshot<br/>
+<a target="_blank" href=Tue_Nov_10_22_19_36_IST_2020.jpg>Screenshot</a><br/>
+<br><br/>
+<br><br/>
+<a target="_blank" href=Tue_Nov_10_22_19_36_IST_2020.jpg><img src=Tue_Nov_10_22_19_36_IST_2020.jpg height=200 width=200></img></a><br/>
+</div>
+</td>
+<td></td>
+<td>18</td>
+<td>com.OSMOSE.testcases.oCalcPro@6941827a</td></tr>
+<tr>
+<td title='com.OSMOSE.testcases.oCalcPro.verifyocalcSupportClickLicensedUser()'><b>verifyocalcSupportClickLicensedUser</b><br>Test class: com.OSMOSE.testcases.oCalcPro<br>Test method: Verify click on Contact O-calc Support for Licensed User<br/>
+<a href="#Output-378006273" onClick='toggleBox("Output-378006273", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-378006273" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-378006273">
+Click to see Screenshot<br/>
+<a target="_blank" href=Tue_Nov_10_22_20_33_IST_2020.jpg>Screenshot</a><br/>
+<br><br/>
+<br><br/>
+<a target="_blank" href=Tue_Nov_10_22_20_33_IST_2020.jpg><img src=Tue_Nov_10_22_20_33_IST_2020.jpg height=200 width=200></img></a><br/>
+</div>
+</td>
+<td></td>
+<td>2</td>
+<td>com.OSMOSE.testcases.oCalcPro@6941827a</td></tr>
+</table><p>
+</body>
+</html>
