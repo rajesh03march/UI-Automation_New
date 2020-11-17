@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="OCalcPro_Admin"
+           tests="4"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="94.840">
+  <properties />
+  
+  
+            <testcase name="verifyPresenceOfLicenseManagementAdmin" time="3.040" classname="com.OSMOSE.testcases.oCalcPro_Admin" />
+                <testcase name="verifyLicenseManagementClickAdmin" time="50.203" classname="com.OSMOSE.testcases.oCalcPro_Admin" />
+                <testcase name="loginTestAdmin" time="22.915" classname="com.OSMOSE.testcases.oCalcPro_Admin" />
+                <testcase name="verifyoCalcProNavigationClick" time="18.682" classname="com.OSMOSE.testcases.oCalcPro_Admin" />
+      
+</testsuite>
