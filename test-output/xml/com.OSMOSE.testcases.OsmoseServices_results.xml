@@ -4,34 +4,34 @@
            failures="0"
            errors="0"
            skipped="0"
-           time="367.081">
+           time="373.640">
   <properties />
   
   
-            <testcase name="verifyClickonWoodRestorationProjectProfiles" time="20.599" classname="com.OSMOSE.testcases.OsmoseServices" />
-                <testcase name="verifySteelandConcreteRestorationLearnMoreClick" time="5.242" classname="com.OSMOSE.testcases.OsmoseServices" />
-                <testcase name="verifyEngineeringServicesLearnMoreClick" time="5.249" classname="com.OSMOSE.testcases.OsmoseServices" />
-                <testcase name="verifyOverheadLearnMoreClick" time="5.221" classname="com.OSMOSE.testcases.OsmoseServices" />
-                <testcase name="verifyWoodInspectionandTreatmentLearnMoreClick" time="10.262" classname="com.OSMOSE.testcases.OsmoseServices" />
-                <testcase name="VerifyWoodRestorationclick" time="17.976" classname="com.OSMOSE.testcases.OsmoseServices" />
-                <testcase name="verifyClickonUndergroundProjectProfiles" time="20.616" classname="com.OSMOSE.testcases.OsmoseServices" />
-                <testcase name="VerifyProductclick" time="42.458" classname="com.OSMOSE.testcases.OsmoseServices" />
-                <testcase name="verifyStormServiceLearnMoreClick" time="5.234" classname="com.OSMOSE.testcases.OsmoseServices" />
-                <testcase name="VerifyWoodInspectionAndTreatmentclick" time="27.539" classname="com.OSMOSE.testcases.OsmoseServices" />
-                <testcase name="verifyClickonWoodRestorationVideos" time="27.563" classname="com.OSMOSE.testcases.OsmoseServices" />
-                <testcase name="verifyStrayVoltageLearnMoreClick" time="5.226" classname="com.OSMOSE.testcases.OsmoseServices" />
-                <testcase name="verifyUndergroundLearnMoreClick" time="5.231" classname="com.OSMOSE.testcases.OsmoseServices" />
-                <testcase name="verifyClickonUndergroundVideos" time="20.526" classname="com.OSMOSE.testcases.OsmoseServices" />
-                <testcase name="verifyOcalcProLearnMoreClick" time="5.255" classname="com.OSMOSE.testcases.OsmoseServices" />
-                <testcase name="verifyClickonWoodTreatmentProjectProfiles" time="20.569" classname="com.OSMOSE.testcases.OsmoseServices" />
-                <testcase name="verifyClickonWoodTreatmentMAP" time="21.161" classname="com.OSMOSE.testcases.OsmoseServices" />
-                <testcase name="verifyClickonWoodRestorationMAP" time="20.721" classname="com.OSMOSE.testcases.OsmoseServices" />
-                <testcase name="verifySteelandConcreteAssessmentLearnMoreClick" time="5.307" classname="com.OSMOSE.testcases.OsmoseServices" />
-                <testcase name="verifyJointUseLearnMoreClick" time="5.263" classname="com.OSMOSE.testcases.OsmoseServices" />
-                <testcase name="verifyPopUpUnderground" time="15.646" classname="com.OSMOSE.testcases.OsmoseServices" />
-                <testcase name="verifyTakeMeToOsmoseClick" time="12.574" classname="com.OSMOSE.testcases.OsmoseServices" />
-                <testcase name="verifyWoodRestorationLearnMoreClick" time="5.230" classname="com.OSMOSE.testcases.OsmoseServices" />
-                <testcase name="verifyMyOsmoseServicesCardClick" time="7.311" classname="com.OSMOSE.testcases.OsmoseServices" />
-                <testcase name="verifyClickonWoodTreatmentVideos" time="29.102" classname="com.OSMOSE.testcases.OsmoseServices" />
+            <testcase name="verifyClickonWoodTreatmentVideos" time="30.773" classname="com.OSMOSE.testcases.OsmoseServices" />
+                <testcase name="verifyClickonWoodTreatmentProjectProfiles" time="20.560" classname="com.OSMOSE.testcases.OsmoseServices" />
+                <testcase name="verifySteelandConcreteRestorationLearnMoreClick" time="5.253" classname="com.OSMOSE.testcases.OsmoseServices" />
+                <testcase name="verifyEngineeringServicesLearnMoreClick" time="5.239" classname="com.OSMOSE.testcases.OsmoseServices" />
+                <testcase name="VerifyWoodRestorationclick" time="17.672" classname="com.OSMOSE.testcases.OsmoseServices" />
+                <testcase name="verifyClickonUndergroundProjectProfiles" time="20.497" classname="com.OSMOSE.testcases.OsmoseServices" />
+                <testcase name="verifyOverheadLearnMoreClick" time="5.320" classname="com.OSMOSE.testcases.OsmoseServices" />
+                <testcase name="verifyWoodInspectionandTreatmentLearnMoreClick" time="12.594" classname="com.OSMOSE.testcases.OsmoseServices" />
+                <testcase name="verifyClickonWoodRestorationMAP" time="20.775" classname="com.OSMOSE.testcases.OsmoseServices" />
+                <testcase name="verifyTakeMeToOsmoseClick" time="12.559" classname="com.OSMOSE.testcases.OsmoseServices" />
+                <testcase name="verifyClickonWoodRestorationProjectProfiles" time="20.548" classname="com.OSMOSE.testcases.OsmoseServices" />
+                <testcase name="VerifyProductclick" time="42.223" classname="com.OSMOSE.testcases.OsmoseServices" />
+                <testcase name="verifyStormServiceLearnMoreClick" time="5.200" classname="com.OSMOSE.testcases.OsmoseServices" />
+                <testcase name="VerifyWoodInspectionAndTreatmentclick" time="27.614" classname="com.OSMOSE.testcases.OsmoseServices" />
+                <testcase name="verifyClickonUndergroundVideos" time="20.570" classname="com.OSMOSE.testcases.OsmoseServices" />
+                <testcase name="verifyClickonWoodRestorationVideos" time="27.554" classname="com.OSMOSE.testcases.OsmoseServices" />
+                <testcase name="verifyStrayVoltageLearnMoreClick" time="5.238" classname="com.OSMOSE.testcases.OsmoseServices" />
+                <testcase name="verifyUndergroundLearnMoreClick" time="5.216" classname="com.OSMOSE.testcases.OsmoseServices" />
+                <testcase name="verifyOcalcProLearnMoreClick" time="5.206" classname="com.OSMOSE.testcases.OsmoseServices" />
+                <testcase name="verifySteelandConcreteAssessmentLearnMoreClick" time="5.210" classname="com.OSMOSE.testcases.OsmoseServices" />
+                <testcase name="verifyJointUseLearnMoreClick" time="5.203" classname="com.OSMOSE.testcases.OsmoseServices" />
+                <testcase name="verifyPopUpUnderground" time="15.730" classname="com.OSMOSE.testcases.OsmoseServices" />
+                <testcase name="verifyWoodRestorationLearnMoreClick" time="5.245" classname="com.OSMOSE.testcases.OsmoseServices" />
+                <testcase name="verifyClickonWoodTreatmentMAP" time="20.535" classname="com.OSMOSE.testcases.OsmoseServices" />
+                <testcase name="verifyMyOsmoseServicesCardClick" time="11.106" classname="com.OSMOSE.testcases.OsmoseServices" />
       
 </testsuite>

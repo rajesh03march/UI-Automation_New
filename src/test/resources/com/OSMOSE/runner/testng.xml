@@ -15,21 +15,21 @@
 			<class name="com.OSMOSE.testcases.LoginTest" />
 		</classes>
 	</test> <!-- Test -->
-<!-- 	<test name="OULogin">
+	<!-- <test name="OULogin">
 		<classes>
 			<class name="com.OSMOSE.testcases.OULogin" />
 		</classes>
-	</test> --> <!-- Test -->
-	<test name="Product">
+	</test>  --><!-- Test -->
+	<!-- <test name="Product">
 		<classes>
 			<class name="com.OSMOSE.testcases.Product" />
 		</classes>
-	</test> <!-- Test -->
-<!-- 	<test name="Contact">
+	</test> --> <!-- Test -->
+	<!-- <test name="Contact">
 		<classes>
 			<class name="com.OSMOSE.testcases.Contact" />
 		</classes>
-	</test>  --><!-- Test -->
+	</test> --> <!-- Test -->
 	<!-- <test name="KnowledgeBase">
 		<classes>
 			<class name="com.OSMOSE.testcases.KnowledgeBase" />
@@ -40,9 +40,19 @@
 			<class name="com.OSMOSE.testcases.OsmoseServices" />
 		</classes>
 	</test>  --><!-- Test -->
-	<!-- <test name="OCalcPro">
+	<test name="OCalcPro">
 		<classes> 
 			<class name="com.OSMOSE.testcases.oCalcPro" />
+		</classes>
+	</test><!-- Test -->
+	<!-- <test name="OCalcPro_Nor">
+		<classes> 
+			<class name="com.OSMOSE.testcases.oCalcPro_Nor" />
+		</classes>
+	</test> --><!-- Test -->
+	<!-- <test name="OCalcPro_Admin">
+		<classes> 
+			<class name="com.OSMOSE.testcases.oCalcPro_Admin" />
 		</classes>
 	</test> --><!-- Test -->
 

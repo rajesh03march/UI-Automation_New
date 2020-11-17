@@ -4,29 +4,29 @@
            failures="0"
            errors="0"
            skipped="0"
-           time="163.475">
+           time="161.640">
   <properties />
   
   
-            <testcase name="verifyOncurDistributionContactCardContents" time="12.414" classname="com.OSMOSE.testcases.Contact" />
-                <testcase name="verifyPugetSoundEnergyInspectionContactCardContents" time="12.648" classname="com.OSMOSE.testcases.Contact" />
-                <testcase name="verifyPacificGasAndElectricCoContactCardContents" time="12.599" classname="com.OSMOSE.testcases.Contact" />
-                <testcase name="verifyPugetSoundEnergyRestorationContactCardContents" time="11.382" classname="com.OSMOSE.testcases.Contact" />
-                <testcase name="verifyContactUsOCalcProContents" time="0.074" classname="com.OSMOSE.testcases.Contact" />
-                <testcase name="verifyGrandElectricContactCardContents" time="12.314" classname="com.OSMOSE.testcases.Contact" />
-                <testcase name="verifyFormSubmissionErrorMessage" time="0.098" classname="com.OSMOSE.testcases.Contact" />
-                <testcase name="verifyIdahoPowerRestorationContactCardContents" time="11.345" classname="com.OSMOSE.testcases.Contact" />
-                <testcase name="verifyIdahoPowerInspectionContactCardContents" time="12.433" classname="com.OSMOSE.testcases.Contact" />
-                <testcase name="verifyContactUsSalesServicesContents" time="0.077" classname="com.OSMOSE.testcases.Contact" />
-                <testcase name="verifyContactUsQueryFormContents" time="0.112" classname="com.OSMOSE.testcases.Contact" />
-                <testcase name="verifyContactUsMenuContents" time="0.204" classname="com.OSMOSE.testcases.Contact" />
-                <testcase name="verifyPedernalesElecCoopContactCardContents" time="12.412" classname="com.OSMOSE.testcases.Contact" />
-                <testcase name="verifyGeorgiaPowerCompanyContactCardContents" time="18.489" classname="com.OSMOSE.testcases.Contact" />
-                <testcase name="verifyContactUsHeaderContents" time="2.294" classname="com.OSMOSE.testcases.Contact" />
-                <testcase name="verifyCityOfColumbiaContactCardContents" time="9.465" classname="com.OSMOSE.testcases.Contact" />
-                <testcase name="verifyPresenceOfProjectGroup" time="3.700" classname="com.OSMOSE.testcases.Contact" />
-                <testcase name="verifyContactUsGeneralInquiriesContents" time="0.057" classname="com.OSMOSE.testcases.Contact" />
-                <testcase name="verifyContactUsClickOnGoogleMap" time="31.282" classname="com.OSMOSE.testcases.Contact" />
-                <testcase name="verifyContactUsSalesProductsContents" time="0.076" classname="com.OSMOSE.testcases.Contact" />
+            <testcase name="verifyOncurDistributionContactCardContents" time="12.347" classname="com.OSMOSE.testcases.Contact" />
+                <testcase name="verifyPugetSoundEnergyInspectionContactCardContents" time="12.310" classname="com.OSMOSE.testcases.Contact" />
+                <testcase name="verifyPacificGasAndElectricCoContactCardContents" time="12.337" classname="com.OSMOSE.testcases.Contact" />
+                <testcase name="verifyPugetSoundEnergyRestorationContactCardContents" time="11.286" classname="com.OSMOSE.testcases.Contact" />
+                <testcase name="verifyContactUsOCalcProContents" time="0.076" classname="com.OSMOSE.testcases.Contact" />
+                <testcase name="verifyGrandElectricContactCardContents" time="12.302" classname="com.OSMOSE.testcases.Contact" />
+                <testcase name="verifyFormSubmissionErrorMessage" time="0.080" classname="com.OSMOSE.testcases.Contact" />
+                <testcase name="verifyIdahoPowerRestorationContactCardContents" time="11.280" classname="com.OSMOSE.testcases.Contact" />
+                <testcase name="verifyIdahoPowerInspectionContactCardContents" time="12.329" classname="com.OSMOSE.testcases.Contact" />
+                <testcase name="verifyContactUsSalesServicesContents" time="0.076" classname="com.OSMOSE.testcases.Contact" />
+                <testcase name="verifyContactUsQueryFormContents" time="0.125" classname="com.OSMOSE.testcases.Contact" />
+                <testcase name="verifyContactUsMenuContents" time="0.236" classname="com.OSMOSE.testcases.Contact" />
+                <testcase name="verifyPedernalesElecCoopContactCardContents" time="12.300" classname="com.OSMOSE.testcases.Contact" />
+                <testcase name="verifyGeorgiaPowerCompanyContactCardContents" time="18.409" classname="com.OSMOSE.testcases.Contact" />
+                <testcase name="verifyContactUsHeaderContents" time="2.262" classname="com.OSMOSE.testcases.Contact" />
+                <testcase name="verifyCityOfColumbiaContactCardContents" time="9.340" classname="com.OSMOSE.testcases.Contact" />
+                <testcase name="verifyPresenceOfProjectGroup" time="3.534" classname="com.OSMOSE.testcases.Contact" />
+                <testcase name="verifyContactUsGeneralInquiriesContents" time="0.055" classname="com.OSMOSE.testcases.Contact" />
+                <testcase name="verifyContactUsClickOnGoogleMap" time="30.876" classname="com.OSMOSE.testcases.Contact" />
+                <testcase name="verifyContactUsSalesProductsContents" time="0.080" classname="com.OSMOSE.testcases.Contact" />
       
 </testsuite>

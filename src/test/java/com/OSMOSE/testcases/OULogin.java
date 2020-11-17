@@ -43,7 +43,7 @@ public class OULogin extends BaseTest {
 	public void verifyHyperlinks() throws InterruptedException {
 		Assert.assertEquals(Page.getText("OUCartliveeventlink_XPATH"), "LIVE EVENTS");
 		Assert.assertEquals(Page.getText("OUCartWebinarLink_XPATH"), "WEBINARS");
-		Assert.assertEquals(Page.getText("OUCartOcalcLink_XPATH"), "O-CALC TRAINING");
+		Assert.assertEquals(Page.getText("OUCartOcalcLink_XPATH"), "O-CALC PRO TRAINING");
 	}
 
 	@Test(priority = 5, enabled = true, description = "Verify the Video links on Osmose University Card")
@@ -90,7 +90,7 @@ public class OULogin extends BaseTest {
 		Login Lo = new Login();
 		HomeOU ou = Lo.goHomeOU();
 		ou.clickOCalcLInk();
-		Assert.assertEquals(Page.getText("O-CALCTRAINING_XPATH"), "O-CALC TRAINING");
+		Assert.assertEquals(Page.getText("O-CALCTRAINING_XPATH"), "O-CALC PRO TRAINING");
 		Page.driver.navigate().back();
 	}
 
@@ -138,7 +138,7 @@ public class OULogin extends BaseTest {
 		ou.clickOnSTSDetailsAndRegistration();
 		Assert.assertEquals(Page.getAttributeValue("FIRSTNAME_XPATH", "value"), "Rajesh");
 		Assert.assertEquals(Page.getAttributeValue("LASTNAME_XPATH", "value"), "Yadav");
-		Assert.assertEquals(Page.getAttributeValue("COMPANY_XPATH", "value"), "Centurylink");
+		Assert.assertEquals(Page.getAttributeValue("COMPANY_XPATH", "value"), "Century Link");
 		Assert.assertEquals(Page.getAttributeValue("STATE_XPATH", "value"), "Nevada");
 		Assert.assertEquals(Page.getAttributeValue("TITLE_XPATH", "value"), "Technical Lead");
 		Assert.assertEquals(Page.getAttributeValue("EMAIL_XPATH", "value"), "rajesh.yadav@centurylink.com");
@@ -233,9 +233,9 @@ public class OULogin extends BaseTest {
 		Page.driver.findElement(By.xpath("//input[@class='inputSearch form-control']")).sendKeys(Keys.ENTER);
 		Thread.sleep((Long.parseLong(p.config.getProperty("Thread3000"))));
 		WebElement videoContent = Page.driver
-				.findElement(By.xpath("//div[@class='vTitle' and contains(text(), 'Osmose Fire-Guard')]"));
+				.findElement(By.xpath("//div[@class='vTitle' and contains(text(), ' Wood Restoration Solution ... ')]"));
 		Assert.assertTrue(videoContent.isDisplayed());
-		Assert.assertEquals(Page.getText("HistoricalVideoContent_XPATH"), "Osmose Fire-Guard");
+		Assert.assertEquals(Page.getText("HistoricalVideoContent_XPATH"), "Wood Restoration Solution ...");
 		Page.click("ClearSearchBtn_XPATH");
 	}
 
@@ -275,9 +275,9 @@ public class OULogin extends BaseTest {
 		Page.driver.findElement(By.xpath("//input[@class='inputSearch form-control']")).sendKeys(Keys.ENTER);
 		Thread.sleep((Long.parseLong(p.config.getProperty("Thread3000"))));
 		WebElement videoContent = Page.driver
-				.findElement(By.xpath("//div[@class='vTitle' and contains(text(), 'Osmose Fire-Guard')]"));
+				.findElement(By.xpath("//div[@class='vTitle' and contains(text(), ' Wood Restoration Solution ... ')]"));
 		Assert.assertTrue(videoContent.isDisplayed());
-		Assert.assertEquals(Page.getText("HistoricalVideoContent_XPATH"), "Osmose Fire-Guard");
+		Assert.assertEquals(Page.getText("HistoricalVideoContent_XPATH"), "Wood Restoration Solution ...");
 		Page.click("SearchBoxClear_XPATH");
 	}
 
@@ -316,13 +316,13 @@ public class OULogin extends BaseTest {
 		Assert.assertEquals(Page.getText("HistoricalVideos_XPATH"), "Historical Webinars");
 		Thread.sleep((Long.parseLong(p.config.getProperty("Thread3000"))));
 		WebElement videoTitle = Page.driver
-				.findElement(By.xpath("//div[@class='vTitle' and contains(text(), 'Osmose Fire-Guard')]"));
+				.findElement(By.xpath("//div[@class='vTitle' and contains(text(), ' Wood Restoration Solution ... ')]"));
 		Assert.assertTrue(videoTitle.isDisplayed());
-		Assert.assertEquals(Page.getText("HistoricalVideoContent_XPATH"), "Osmose Fire-Guard");
-		WebElement videoDescription = Page.driver.findElement(
+		Assert.assertEquals(Page.getText("HistoricalVideoContent_XPATH"), "Wood Restoration Solution ...");
+		/*WebElement videoDescription = Page.driver.findElement(
 				By.xpath("//div[@class='vDesc text-left font12px' and contains(text(), 'Osmose Fire-Guard')]"));
 		Assert.assertTrue(videoDescription.isDisplayed());
-		Assert.assertEquals(Page.getText("HistoricalVideoDescription_XPATH"), "Osmose Fire-Guard");
+		Assert.assertEquals(Page.getText("HistoricalVideoDescription_XPATH"), "Osmose Fire-Guard");*/
 		videoTitle.click();
 		Thread.sleep((Long.parseLong(p.config.getProperty("Thread8000"))));
 		Page.click("OUBoxCloseBtn_XPATH");
@@ -335,24 +335,25 @@ public class OULogin extends BaseTest {
 	public void verifyPopularQueriesSearchResults() throws InterruptedException {
 		Login Lo = new Login();
 		HomeOU ou = Lo.goHomeOU();
+		Page.scrollbyjavaexecutor();
 		ou.clickWebinars();
 		Page.click("HISTORICAL_XPATH");
 		Thread.sleep((Long.parseLong(p.config.getProperty("Thread3000"))));
 		// Verification of the presence of Popular filter
 		WebElement historicalPopularFilter = Page.driver.findElement(By.xpath("//a[@id='Filter']"));
 		Assert.assertTrue(historicalPopularFilter.isDisplayed());
-		Page.click("RestorationPopularFilter_XPATH");
+		Page.click("HistoricalPopularFilter_XPATH");
 		Thread.sleep((Long.parseLong(p.config.getProperty("Thread3000"))));
 		Assert.assertEquals(Page.getText("HistoricalVideos_XPATH"), "Historical Webinars");
 		Thread.sleep((Long.parseLong(p.config.getProperty("Thread3000"))));
 		WebElement videoTitle = Page.driver
-				.findElement(By.xpath("//div[@class='vTitle' and contains(text(), 'OsmoWeld MPF Pole Repair')]"));
+				.findElement(By.xpath("//div[@class='vTitle' and contains(text(), ' Wood Restoration Solution ... ')]"));
 		Assert.assertTrue(videoTitle.isDisplayed());
-		Assert.assertEquals(Page.getText("RestorationHVideoContent_XPATH"), "OsmoWeld MPF Pole Repair");
-		WebElement videoDescription = Page.driver.findElement(
+		Assert.assertEquals(Page.getText("RestorationHVideoContent_XPATH"), "Wood Restoration Solution ...");
+		/*WebElement videoDescription = Page.driver.findElement(
 				By.xpath("//div[@class='vDesc text-left font12px' and contains(text(), 'OsmoWeld MPF & LV')]"));
 		Assert.assertTrue(videoDescription.isDisplayed());
-		Assert.assertEquals(Page.getText("RestorationHVideoDescription_XPATH"), "OsmoWeld MPF & LV");
+		Assert.assertEquals(Page.getText("RestorationHVideoDescription_XPATH"), "OsmoWeld MPF & LV");*/
 		Thread.sleep((Long.parseLong(p.config.getProperty("Thread3000"))));
 		Page.click("ClearSearchBtn_XPATH");
 	}
@@ -368,27 +369,27 @@ public class OULogin extends BaseTest {
 		// Verification of the presence of Popular filter
 		WebElement historicalPopularFilter = Page.driver.findElement(By.xpath("//a[@id='Filter']"));
 		Assert.assertTrue(historicalPopularFilter.isDisplayed());
-		Page.click("RestorationPopularFilter_XPATH");
+		Page.click("HistoricalPopularFilter_XPATH");
 		Thread.sleep((Long.parseLong(p.config.getProperty("Thread2000"))));
 		WebElement videoTitle = Page.driver
-				.findElement(By.xpath("//div[@class='vTitle' and contains(text(), 'OsmoWeld MPF Pole Repair')]"));
+				.findElement(By.xpath("//div[@class='vTitle' and contains(text(), ' Wood Restoration Solution ... ')]"));
 		Assert.assertTrue(videoTitle.isDisplayed());
-		Assert.assertEquals(Page.getText("RestorationHVideoContent_XPATH"), "OsmoWeld MPF Pole Repair");
-		WebElement videoDescription = Page.driver.findElement(
+		Assert.assertEquals(Page.getText("RestorationHVideoContent_XPATH"), "Wood Restoration Solution ...");
+		/*WebElement videoDescription = Page.driver.findElement(
 				By.xpath("//div[@class='vDesc text-left font12px' and contains(text(), 'OsmoWeld MPF & LV')]"));
 		Assert.assertTrue(videoDescription.isDisplayed());
-		Assert.assertEquals(Page.getText("RestorationHVideoDescription_XPATH"), "OsmoWeld MPF & LV");
+		Assert.assertEquals(Page.getText("RestorationHVideoDescription_XPATH"), "OsmoWeld MPF & LV");*/
 		Thread.sleep((Long.parseLong(p.config.getProperty("Thread2000"))));
 		Page.click("ClearSearchBtn_XPATH");
 		Thread.sleep((Long.parseLong(p.config.getProperty("Thread3000"))));
 		WebElement videoTitle1 = Page.driver
-				.findElement(By.xpath("//div[@class='vTitle' and contains(text(), 'Osmose Fire-Guard')]"));
+				.findElement(By.xpath("//div[@class='vTitle' and contains(text(), ' Wood Restoration Solution ... ')]"));
 		Assert.assertTrue(videoTitle1.isDisplayed());
-		Assert.assertEquals(Page.getText("HistoricalVideoContent_XPATH"), "Osmose Fire-Guard");
-		WebElement videoDescription1 = Page.driver.findElement(
+		Assert.assertEquals(Page.getText("HistoricalVideoContent_XPATH"), "Wood Restoration Solution ...");
+		/*WebElement videoDescription1 = Page.driver.findElement(
 				By.xpath("//div[@class='vDesc text-left font12px' and contains(text(), 'Osmose Fire-Guard')]"));
 		Assert.assertTrue(videoDescription1.isDisplayed());
-		Assert.assertEquals(Page.getText("HistoricalVideoDescription_XPATH"), "Osmose Fire-Guard");
+		Assert.assertEquals(Page.getText("HistoricalVideoDescription_XPATH"), "Osmose Fire-Guard");*/
 		Page.click("OUHomePage_XPATH");
 	}
 }

@@ -54,7 +54,7 @@ public class Contact extends BaseTest {
 		Thread.sleep((Long.parseLong(p.config.getProperty("Thread1000"))));
 		cp.ClickViewContactsMenu();
 		Thread.sleep((Long.parseLong(p.config.getProperty("Thread6000"))));
-		Assert.assertEquals(Page.getText("GeorgiaContactstxt_XPATH"), "Georgia Power Company Distribution Change Contacts");
+		Assert.assertEquals(Page.getText("GeorgiaContactstxt_XPATH"), "Georgia Power Company Distribution Contacts");
 		Assert.assertEquals(Page.getText("GeorgiaContactCardName_XPATH"), "Heartsill,Jason Shane");
 		Assert.assertEquals(Page.getText("GeorgiaContactCardDesignation_XPATH"), "Director Business Development");
 		Assert.assertEquals(Page.getText("GeorgiaContactCardEmail_XPATH"), "sheartsill@osmose.com");

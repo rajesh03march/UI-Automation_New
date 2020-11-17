@@ -320,7 +320,7 @@ public class OsmoseServices extends BaseTest {
 		WebElement RestorationStatus = Page.driver.findElement(By.xpath("//p[contains(text(), 'Restoration Status')]"));
 		Assert.assertEquals(RestorationStatus.getText(), "Restoration Status");
 		Thread.sleep((Long.parseLong(p.config.getProperty("Thread10000"))));
-		Page.click("ErrorPopUp_XPATH");
+		//Page.click("ErrorPopUp_XPATH");
 	}
 
 	@Test(priority = 16, enabled = true, description = "Verify the click on Videos under Wood Inspection and Treatment card")
@@ -424,7 +424,7 @@ public class OsmoseServices extends BaseTest {
 		WebElement RestorationStatus = Page.driver.findElement(By.xpath("//p[contains(text(), 'Restoration Status')]"));
 		Assert.assertEquals(RestorationStatus.getText(), "Restoration Status");
 		Thread.sleep((Long.parseLong(p.config.getProperty("Thread10000"))));
-		Page.click("ErrorPopUp_XPATH");
+		//Page.click("ErrorPopUp_XPATH");
 	}
 
 	@Test(priority = 20, enabled = true, description = "Verify the click on Videos under Wood Restoration card")
@@ -584,8 +584,8 @@ public class OsmoseServices extends BaseTest {
 		osp.clickUnderground();
 		Thread.sleep((Long.parseLong(p.config.getProperty("Thread3000"))));
 		WebElement popUptxt = Page.driver
-				.findElement(By.xpath("//*[contains(text(),'The information for this service is not currently available in Osmose 360. Complete this form to request more details about getting this setup. Someone will be in touch with you as quickly as possible.')]"));
-		Assert.assertEquals(popUptxt.getText(), "The information for this service is not currently available in Osmose 360. Complete this form to request more details about getting this setup. Someone will be in touch with you as quickly as possible.");
+				.findElement(By.xpath("//*[contains(text(),' The information for this service is not currently available in Osmose 360. Complete this form to request more details about getting this set up. Someone will be in touch with you as quickly as possible. ')]"));
+		Assert.assertEquals(popUptxt.getText(), "The information for this service is not currently available in Osmose 360. Complete this form to request more details about getting this set up. Someone will be in touch with you as quickly as possible.");
 		//WebElement cancelBtn = Page.driver.findElement(By.xpath("//button[contains(text(),'CANCEL')]"));
 		//Assert.assertTrue(cancelBtn.isDisplayed());
 		WebElement SubmitBtn = Page.driver.findElement(By.xpath("//button[contains(text(),'SUBMIT')]"));

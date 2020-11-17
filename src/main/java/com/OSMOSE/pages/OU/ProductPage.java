@@ -613,7 +613,6 @@ public class ProductPage extends Page {
 		type("commentstextareaSubmitQuote_XPATH", "Automationtestingcancelling");
 		click("SubmitbtnQuotesubmission_XPATH");
 		Thread.sleep((Long.parseLong(p.config.getProperty("Thread3000"))));
-
 	}
 
 	public void CreateQuoteByAddToShoppingCart() throws InterruptedException {

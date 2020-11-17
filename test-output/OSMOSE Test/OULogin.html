@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>OULogin</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>24/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>19/5/0</td>
 </tr><tr>
-<td>Started on:</td><td>Wed Sep 30 14:39:55 IST 2020</td>
+<td>Started on:</td><td>Tue Nov 10 13:03:05 IST 2020</td>
 </tr>
-<tr><td>Total time:</td><td>304 seconds (304035 ms)</td>
+<tr><td>Total time:</td><td>522 seconds (522663 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,6 +67,468 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.OSMOSE.testcases.OULogin.verifyPopularQueriesReset()'><b>verifyPopularQueriesReset</b><br>Test class: com.OSMOSE.testcases.OULogin<br>Test method: Verify that Search results are updated when selected popular queries are deselected<br/>
+<a href="#Output-1033425208" onClick='toggleBox("Output-1033425208", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1033425208" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1033425208">
+Click to see Screenshot<br/>
+<a target="_blank" href=Tue_Nov_10_13_11_47_IST_2020.jpg>Screenshot</a><br/>
+<br><br/>
+<br><br/>
+<a target="_blank" href=Tue_Nov_10_13_11_47_IST_2020.jpg><img src=Tue_Nov_10_13_11_47_IST_2020.jpg height=200 width=200></img></a><br/>
+</div>
+</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//label[contains(text(),&apos;Restoration&apos;)]&quot;}
+  (Session info: chrome=86.0.4240.75)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
+System info: host: &apos;5CG6323N27&apos;, ip: &apos;192.168.0.11&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_191&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.75, chrome: {chromedriverVersion: 85.0.4183.87 (cd6713ebf92fa..., userDataDir: C:\Windows\Temp\scoped_dir1...}, goog:chromeOptions: {debuggerAddress: localhost:51961}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: none, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: e68ba51d502eebcace37a5e660b226c3
+*** Element info: {Using=xpath, value=//label[contains(text(),&apos;Restoration&apos;)]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:424)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
+	at com.OSMOSE.base.Page.click(Page.java:182)
+	at com.OSMOSE.testcases.OULogin.verifyPopularQueriesReset(OULogin.java:371)
+	at java.util.ArrayList.forEach(Unknown Source)
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1033425208", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1033425208'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//label[contains(text(),&apos;Restoration&apos;)]&quot;}
+  (Session info: chrome=86.0.4240.75)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
+System info: host: &apos;5CG6323N27&apos;, ip: &apos;192.168.0.11&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_191&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.75, chrome: {chromedriverVersion: 85.0.4183.87 (cd6713ebf92fa..., userDataDir: C:\Windows\Temp\scoped_dir1...}, goog:chromeOptions: {debuggerAddress: localhost:51961}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: none, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: e68ba51d502eebcace37a5e660b226c3
+*** Element info: {Using=xpath, value=//label[contains(text(),&apos;Restoration&apos;)]}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:424)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
+	at com.OSMOSE.base.Page.click(Page.java:182)
+	at com.OSMOSE.testcases.OULogin.verifyPopularQueriesReset(OULogin.java:371)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(Unknown Source)
+	at org.testng.TestRunner.privateRun(TestRunner.java:766)
+	at org.testng.TestRunner.run(TestRunner.java:587)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+	at org.testng.TestNG.runSuites(TestNG.java:1039)
+	at org.testng.TestNG.run(TestNG.java:1007)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>65</td>
+<td>com.OSMOSE.testcases.OULogin@3fa2213</td></tr>
+<tr>
+<td title='com.OSMOSE.testcases.OULogin.verifyPopularQueriesSearchResults()'><b>verifyPopularQueriesSearchResults</b><br>Test class: com.OSMOSE.testcases.OULogin<br>Test method: Verify that Search results based on the selected popular queries<br/>
+<a href="#Output-1188671176" onClick='toggleBox("Output-1188671176", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1188671176" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1188671176">
+Click to see Screenshot<br/>
+<a target="_blank" href=Tue_Nov_10_13_10_41_IST_2020.jpg>Screenshot</a><br/>
+<br><br/>
+<br><br/>
+<a target="_blank" href=Tue_Nov_10_13_10_41_IST_2020.jpg><img src=Tue_Nov_10_13_10_41_IST_2020.jpg height=200 width=200></img></a><br/>
+</div>
+</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//label[contains(text(),&apos;Restoration&apos;)]&quot;}
+  (Session info: chrome=86.0.4240.75)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
+System info: host: &apos;5CG6323N27&apos;, ip: &apos;192.168.0.11&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_191&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.75, chrome: {chromedriverVersion: 85.0.4183.87 (cd6713ebf92fa..., userDataDir: C:\Windows\Temp\scoped_dir1...}, goog:chromeOptions: {debuggerAddress: localhost:51961}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: none, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: e68ba51d502eebcace37a5e660b226c3
+*** Element info: {Using=xpath, value=//label[contains(text(),&apos;Restoration&apos;)]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:424)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
+	at com.OSMOSE.base.Page.click(Page.java:182)
+	at com.OSMOSE.testcases.OULogin.verifyPopularQueriesSearchResults(OULogin.java:344)
+	at java.util.ArrayList.forEach(Unknown Source)
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1188671176", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1188671176'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//label[contains(text(),&apos;Restoration&apos;)]&quot;}
+  (Session info: chrome=86.0.4240.75)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
+System info: host: &apos;5CG6323N27&apos;, ip: &apos;192.168.0.11&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_191&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.75, chrome: {chromedriverVersion: 85.0.4183.87 (cd6713ebf92fa..., userDataDir: C:\Windows\Temp\scoped_dir1...}, goog:chromeOptions: {debuggerAddress: localhost:51961}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: none, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: e68ba51d502eebcace37a5e660b226c3
+*** Element info: {Using=xpath, value=//label[contains(text(),&apos;Restoration&apos;)]}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:424)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
+	at com.OSMOSE.base.Page.click(Page.java:182)
+	at com.OSMOSE.testcases.OULogin.verifyPopularQueriesSearchResults(OULogin.java:344)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(Unknown Source)
+	at org.testng.TestRunner.privateRun(TestRunner.java:766)
+	at org.testng.TestRunner.run(TestRunner.java:587)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+	at org.testng.TestNG.runSuites(TestNG.java:1039)
+	at org.testng.TestNG.run(TestNG.java:1007)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>65</td>
+<td>com.OSMOSE.testcases.OULogin@3fa2213</td></tr>
+<tr>
+<td title='com.OSMOSE.testcases.OULogin.verifySearchWebinarsHistorical()'><b>verifySearchWebinarsHistorical</b><br>Test class: com.OSMOSE.testcases.OULogin<br>Test method: Verify the Search on Webinars - Historical and its contents<br>Parameters: {TypeHistoricalSearchBar=Wood}<br/>
+<a href="#Output-807986446" onClick='toggleBox("Output-807986446", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-807986446" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-807986446">
+Click to see Screenshot<br/>
+<a target="_blank" href=Tue_Nov_10_13_06_45_IST_2020.jpg>Screenshot</a><br/>
+<br><br/>
+<br><br/>
+<a target="_blank" href=Tue_Nov_10_13_06_45_IST_2020.jpg><img src=Tue_Nov_10_13_06_45_IST_2020.jpg height=200 width=200></img></a><br/>
+</div>
+</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@class=&apos;vTitle&apos; and contains(text(), &apos;Osmose Fire-Guard&apos;)]&quot;}
+  (Session info: chrome=86.0.4240.75)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
+System info: host: &apos;5CG6323N27&apos;, ip: &apos;192.168.0.11&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_191&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.75, chrome: {chromedriverVersion: 85.0.4183.87 (cd6713ebf92fa..., userDataDir: C:\Windows\Temp\scoped_dir1...}, goog:chromeOptions: {debuggerAddress: localhost:51961}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: none, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: e68ba51d502eebcace37a5e660b226c3
+*** Element info: {Using=xpath, value=//div[@class=&apos;vTitle&apos; and contains(text(), &apos;Osmose Fire-Guard&apos;)]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:424)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
+	at com.OSMOSE.testcases.OULogin.verifySearchWebinarsHistorical(OULogin.java:236)
+	at java.util.ArrayList.forEach(Unknown Source)
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace807986446", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace807986446'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@class=&apos;vTitle&apos; and contains(text(), &apos;Osmose Fire-Guard&apos;)]&quot;}
+  (Session info: chrome=86.0.4240.75)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
+System info: host: &apos;5CG6323N27&apos;, ip: &apos;192.168.0.11&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_191&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.75, chrome: {chromedriverVersion: 85.0.4183.87 (cd6713ebf92fa..., userDataDir: C:\Windows\Temp\scoped_dir1...}, goog:chromeOptions: {debuggerAddress: localhost:51961}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: none, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: e68ba51d502eebcace37a5e660b226c3
+*** Element info: {Using=xpath, value=//div[@class=&apos;vTitle&apos; and contains(text(), &apos;Osmose Fire-Guard&apos;)]}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:424)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
+	at com.OSMOSE.testcases.OULogin.verifySearchWebinarsHistorical(OULogin.java:236)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(Unknown Source)
+	at org.testng.TestRunner.privateRun(TestRunner.java:766)
+	at org.testng.TestRunner.run(TestRunner.java:587)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+	at org.testng.TestNG.runSuites(TestNG.java:1039)
+	at org.testng.TestNG.run(TestNG.java:1007)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>68</td>
+<td>com.OSMOSE.testcases.OULogin@3fa2213</td></tr>
+<tr>
+<td title='com.OSMOSE.testcases.OULogin.verifySortWebinarsHistorical()'><b>verifySortWebinarsHistorical</b><br>Test class: com.OSMOSE.testcases.OULogin<br>Test method: Verify the Sort on Webinars - Historical<br>Parameters: {TypeHistoricalSearchBarSort=Wood}<br/>
+<a href="#Output-1465179762" onClick='toggleBox("Output-1465179762", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1465179762" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1465179762">
+Click to see Screenshot<br/>
+<a target="_blank" href=Tue_Nov_10_13_08_08_IST_2020.jpg>Screenshot</a><br/>
+<br><br/>
+<br><br/>
+<a target="_blank" href=Tue_Nov_10_13_08_08_IST_2020.jpg><img src=Tue_Nov_10_13_08_08_IST_2020.jpg height=200 width=200></img></a><br/>
+</div>
+</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@class=&apos;vTitle&apos; and contains(text(), &apos;Osmose Fire-Guard&apos;)]&quot;}
+  (Session info: chrome=86.0.4240.75)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
+System info: host: &apos;5CG6323N27&apos;, ip: &apos;192.168.0.11&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_191&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.75, chrome: {chromedriverVersion: 85.0.4183.87 (cd6713ebf92fa..., userDataDir: C:\Windows\Temp\scoped_dir1...}, goog:chromeOptions: {debuggerAddress: localhost:51961}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: none, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: e68ba51d502eebcace37a5e660b226c3
+*** Element info: {Using=xpath, value=//div[@class=&apos;vTitle&apos; and contains(text(), &apos;Osmose Fire-Guard&apos;)]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:424)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
+	at com.OSMOSE.testcases.OULogin.verifySortWebinarsHistorical(OULogin.java:278)
+	at java.util.ArrayList.forEach(Unknown Source)
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1465179762", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1465179762'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@class=&apos;vTitle&apos; and contains(text(), &apos;Osmose Fire-Guard&apos;)]&quot;}
+  (Session info: chrome=86.0.4240.75)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
+System info: host: &apos;5CG6323N27&apos;, ip: &apos;192.168.0.11&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_191&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.75, chrome: {chromedriverVersion: 85.0.4183.87 (cd6713ebf92fa..., userDataDir: C:\Windows\Temp\scoped_dir1...}, goog:chromeOptions: {debuggerAddress: localhost:51961}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: none, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: e68ba51d502eebcace37a5e660b226c3
+*** Element info: {Using=xpath, value=//div[@class=&apos;vTitle&apos; and contains(text(), &apos;Osmose Fire-Guard&apos;)]}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:424)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
+	at com.OSMOSE.testcases.OULogin.verifySortWebinarsHistorical(OULogin.java:278)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(Unknown Source)
+	at org.testng.TestRunner.privateRun(TestRunner.java:766)
+	at org.testng.TestRunner.run(TestRunner.java:587)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+	at org.testng.TestNG.runSuites(TestNG.java:1039)
+	at org.testng.TestNG.run(TestNG.java:1007)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>68</td>
+<td>com.OSMOSE.testcases.OULogin@3fa2213</td></tr>
+<tr>
+<td title='com.OSMOSE.testcases.OULogin.verifyVideoGalleryHistorical()'><b>verifyVideoGalleryHistorical</b><br>Test class: com.OSMOSE.testcases.OULogin<br>Test method: Verify the Video Gallery Layout on Webinars - Historical<br/>
+<a href="#Output-508873523" onClick='toggleBox("Output-508873523", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-508873523" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-508873523">
+Click to see Screenshot<br/>
+<a target="_blank" href=Tue_Nov_10_13_09_36_IST_2020.jpg>Screenshot</a><br/>
+<br><br/>
+<br><br/>
+<a target="_blank" href=Tue_Nov_10_13_09_36_IST_2020.jpg><img src=Tue_Nov_10_13_09_36_IST_2020.jpg height=200 width=200></img></a><br/>
+</div>
+</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@class=&apos;vTitle&apos; and contains(text(), &apos;Osmose Fire-Guard&apos;)]&quot;}
+  (Session info: chrome=86.0.4240.75)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
+System info: host: &apos;5CG6323N27&apos;, ip: &apos;192.168.0.11&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_191&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.75, chrome: {chromedriverVersion: 85.0.4183.87 (cd6713ebf92fa..., userDataDir: C:\Windows\Temp\scoped_dir1...}, goog:chromeOptions: {debuggerAddress: localhost:51961}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: none, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: e68ba51d502eebcace37a5e660b226c3
+*** Element info: {Using=xpath, value=//div[@class=&apos;vTitle&apos; and contains(text(), &apos;Osmose Fire-Guard&apos;)]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:424)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
+	at com.OSMOSE.testcases.OULogin.verifyVideoGalleryHistorical(OULogin.java:319)
+	at java.util.ArrayList.forEach(Unknown Source)
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace508873523", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace508873523'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@class=&apos;vTitle&apos; and contains(text(), &apos;Osmose Fire-Guard&apos;)]&quot;}
+  (Session info: chrome=86.0.4240.75)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
+System info: host: &apos;5CG6323N27&apos;, ip: &apos;192.168.0.11&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_191&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.75, chrome: {chromedriverVersion: 85.0.4183.87 (cd6713ebf92fa..., userDataDir: C:\Windows\Temp\scoped_dir1...}, goog:chromeOptions: {debuggerAddress: localhost:51961}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: none, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: e68ba51d502eebcace37a5e660b226c3
+*** Element info: {Using=xpath, value=//div[@class=&apos;vTitle&apos; and contains(text(), &apos;Osmose Fire-Guard&apos;)]}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:424)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
+	at com.OSMOSE.testcases.OULogin.verifyVideoGalleryHistorical(OULogin.java:319)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(Unknown Source)
+	at org.testng.TestRunner.privateRun(TestRunner.java:766)
+	at org.testng.TestRunner.run(TestRunner.java:587)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+	at org.testng.TestNG.runSuites(TestNG.java:1039)
+	at org.testng.TestNG.run(TestNG.java:1007)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>68</td>
+<td>com.OSMOSE.testcases.OULogin@3fa2213</td></tr>
+</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -81,10 +543,10 @@ function toggleAllBoxes() {
 <a href="#Output-600199331" onClick="toggleAllBoxes();">Show all outputs</a>
 <div class='log' id="Output-600199331">
 Click to see Screenshot<br/>
-<a target="_blank" href=Wed_Sep_30_14_41_10_IST_2020.jpg>Screenshot</a><br/>
+<a target="_blank" href=Tue_Nov_10_13_04_18_IST_2020.jpg>Screenshot</a><br/>
 <br><br/>
 <br><br/>
-<a target="_blank" href=Wed_Sep_30_14_41_10_IST_2020.jpg><img src=Wed_Sep_30_14_41_10_IST_2020.jpg height=200 width=200></img></a><br/>
+<a target="_blank" href=Tue_Nov_10_13_04_18_IST_2020.jpg><img src=Tue_Nov_10_13_04_18_IST_2020.jpg height=200 width=200></img></a><br/>
 </div>
 </td>
 <td></td>
@@ -97,26 +559,26 @@ Click to see Screenshot<br/>
 <a href="#Output-955611965" onClick="toggleAllBoxes();">Show all outputs</a>
 <div class='log' id="Output-955611965">
 Click to see Screenshot<br/>
-<a target="_blank" href=Wed_Sep_30_14_39_54_IST_2020.jpg>Screenshot</a><br/>
+<a target="_blank" href=Tue_Nov_10_13_03_04_IST_2020.jpg>Screenshot</a><br/>
 <br><br/>
 <br><br/>
-<a target="_blank" href=Wed_Sep_30_14_39_54_IST_2020.jpg><img src=Wed_Sep_30_14_39_54_IST_2020.jpg height=200 width=200></img></a><br/>
+<a target="_blank" href=Tue_Nov_10_13_03_04_IST_2020.jpg><img src=Tue_Nov_10_13_03_04_IST_2020.jpg height=200 width=200></img></a><br/>
 </div>
 </td>
 <td></td>
-<td>14</td>
+<td>22</td>
 <td>com.OSMOSE.testcases.LoginTest@5b1f29fa</td></tr>
 <tr>
 <td title='com.OSMOSE.testcases.OULogin.verifyClearSearchHistorical()'><b>verifyClearSearchHistorical</b><br>Test class: com.OSMOSE.testcases.OULogin<br>Test method: Verify the Clear search on Webinars - Historical<br>Parameters: {TypeHistoricalClearSearch=Wood}<br/>
-<a href="#Output-44771088" onClick='toggleBox("Output-44771088", this, "Show output", "Hide output");'>Show output</a>
+<a href="#Output-2121645869" onClick='toggleBox("Output-2121645869", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-44771088" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-44771088">
+<a href="#Output-2121645869" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2121645869">
 Click to see Screenshot<br/>
-<a target="_blank" href=Wed_Sep_30_14_43_44_IST_2020.jpg>Screenshot</a><br/>
+<a target="_blank" href=Tue_Nov_10_13_08_27_IST_2020.jpg>Screenshot</a><br/>
 <br><br/>
 <br><br/>
-<a target="_blank" href=Wed_Sep_30_14_43_44_IST_2020.jpg><img src=Wed_Sep_30_14_43_44_IST_2020.jpg height=200 width=200></img></a><br/>
+<a target="_blank" href=Tue_Nov_10_13_08_27_IST_2020.jpg><img src=Tue_Nov_10_13_08_27_IST_2020.jpg height=200 width=200></img></a><br/>
 </div>
 </td>
 <td></td>
@@ -129,10 +591,10 @@ Click to see Screenshot<br/>
 <a href="#Output-1265287441" onClick="toggleAllBoxes();">Show all outputs</a>
 <div class='log' id="Output-1265287441">
 Click to see Screenshot<br/>
-<a target="_blank" href=Wed_Sep_30_14_42_17_IST_2020.jpg>Screenshot</a><br/>
+<a target="_blank" href=Tue_Nov_10_13_05_23_IST_2020.jpg>Screenshot</a><br/>
 <br><br/>
 <br><br/>
-<a target="_blank" href=Wed_Sep_30_14_42_17_IST_2020.jpg><img src=Wed_Sep_30_14_42_17_IST_2020.jpg height=200 width=200></img></a><br/>
+<a target="_blank" href=Tue_Nov_10_13_05_23_IST_2020.jpg><img src=Tue_Nov_10_13_05_23_IST_2020.jpg height=200 width=200></img></a><br/>
 </div>
 </td>
 <td></td>
@@ -145,10 +607,10 @@ Click to see Screenshot<br/>
 <a href="#Output-257718694" onClick="toggleAllBoxes();">Show all outputs</a>
 <div class='log' id="Output-257718694">
 Click to see Screenshot<br/>
-<a target="_blank" href=Wed_Sep_30_14_40_02_IST_2020.jpg>Screenshot</a><br/>
+<a target="_blank" href=Tue_Nov_10_13_03_10_IST_2020.jpg>Screenshot</a><br/>
 <br><br/>
 <br><br/>
-<a target="_blank" href=Wed_Sep_30_14_40_02_IST_2020.jpg><img src=Wed_Sep_30_14_40_02_IST_2020.jpg height=200 width=200></img></a><br/>
+<a target="_blank" href=Tue_Nov_10_13_03_10_IST_2020.jpg><img src=Tue_Nov_10_13_03_10_IST_2020.jpg height=200 width=200></img></a><br/>
 </div>
 </td>
 <td></td>
@@ -161,14 +623,14 @@ Click to see Screenshot<br/>
 <a href="#Output-262815725" onClick="toggleAllBoxes();">Show all outputs</a>
 <div class='log' id="Output-262815725">
 Click to see Screenshot<br/>
-<a target="_blank" href=Wed_Sep_30_14_42_04_IST_2020.jpg>Screenshot</a><br/>
+<a target="_blank" href=Tue_Nov_10_13_05_11_IST_2020.jpg>Screenshot</a><br/>
 <br><br/>
 <br><br/>
-<a target="_blank" href=Wed_Sep_30_14_42_04_IST_2020.jpg><img src=Wed_Sep_30_14_42_04_IST_2020.jpg height=200 width=200></img></a><br/>
+<a target="_blank" href=Tue_Nov_10_13_05_11_IST_2020.jpg><img src=Tue_Nov_10_13_05_11_IST_2020.jpg height=200 width=200></img></a><br/>
 </div>
 </td>
 <td></td>
-<td>13</td>
+<td>12</td>
 <td>com.OSMOSE.testcases.OULogin@3fa2213</td></tr>
 <tr>
 <td title='com.OSMOSE.testcases.OULogin.verifyHyperlinks()'><b>verifyHyperlinks</b><br>Test class: com.OSMOSE.testcases.OULogin<br>Test method: Verify the hyperlinks on Osmose University Card<br/>
@@ -177,10 +639,10 @@ Click to see Screenshot<br/>
 <a href="#Output-478182173" onClick="toggleAllBoxes();">Show all outputs</a>
 <div class='log' id="Output-478182173">
 Click to see Screenshot<br/>
-<a target="_blank" href=Wed_Sep_30_14_40_03_IST_2020.jpg>Screenshot</a><br/>
+<a target="_blank" href=Tue_Nov_10_13_03_11_IST_2020.jpg>Screenshot</a><br/>
 <br><br/>
 <br><br/>
-<a target="_blank" href=Wed_Sep_30_14_40_03_IST_2020.jpg><img src=Wed_Sep_30_14_40_03_IST_2020.jpg height=200 width=200></img></a><br/>
+<a target="_blank" href=Tue_Nov_10_13_03_11_IST_2020.jpg><img src=Tue_Nov_10_13_03_11_IST_2020.jpg height=200 width=200></img></a><br/>
 </div>
 </td>
 <td></td>
@@ -188,15 +650,15 @@ Click to see Screenshot<br/>
 <td>com.OSMOSE.testcases.OULogin@3fa2213</td></tr>
 <tr>
 <td title='com.OSMOSE.testcases.OULogin.verifyInvalidSearchHistorical()'><b>verifyInvalidSearchHistorical</b><br>Test class: com.OSMOSE.testcases.OULogin<br>Test method: Verify the Invalid search on Webinars - Historical and its contents<br>Parameters: {TypeHistoricalSearchBarInvalid=AutomatedTesting}<br/>
-<a href="#Output-1465126864" onClick='toggleBox("Output-1465126864", this, "Show output", "Hide output");'>Show output</a>
+<a href="#Output-1340634558" onClick='toggleBox("Output-1340634558", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-1465126864" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1465126864">
+<a href="#Output-1340634558" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1340634558">
 Click to see Screenshot<br/>
-<a target="_blank" href=Wed_Sep_30_14_43_06_IST_2020.jpg>Screenshot</a><br/>
+<a target="_blank" href=Tue_Nov_10_13_06_59_IST_2020.jpg>Screenshot</a><br/>
 <br><br/>
 <br><br/>
-<a target="_blank" href=Wed_Sep_30_14_43_06_IST_2020.jpg><img src=Wed_Sep_30_14_43_06_IST_2020.jpg height=200 width=200></img></a><br/>
+<a target="_blank" href=Tue_Nov_10_13_06_59_IST_2020.jpg><img src=Tue_Nov_10_13_06_59_IST_2020.jpg height=200 width=200></img></a><br/>
 </div>
 </td>
 <td></td>
@@ -209,10 +671,10 @@ Click to see Screenshot<br/>
 <a href="#Output-137123763" onClick="toggleAllBoxes();">Show all outputs</a>
 <div class='log' id="Output-137123763">
 Click to see Screenshot<br/>
-<a target="_blank" href=Wed_Sep_30_14_40_01_IST_2020.jpg>Screenshot</a><br/>
+<a target="_blank" href=Tue_Nov_10_13_03_09_IST_2020.jpg>Screenshot</a><br/>
 <br><br/>
 <br><br/>
-<a target="_blank" href=Wed_Sep_30_14_40_01_IST_2020.jpg><img src=Wed_Sep_30_14_40_01_IST_2020.jpg height=200 width=200></img></a><br/>
+<a target="_blank" href=Tue_Nov_10_13_03_09_IST_2020.jpg><img src=Tue_Nov_10_13_03_09_IST_2020.jpg height=200 width=200></img></a><br/>
 </div>
 </td>
 <td></td>
@@ -225,10 +687,10 @@ Click to see Screenshot<br/>
 <a href="#Output-1474072872" onClick="toggleAllBoxes();">Show all outputs</a>
 <div class='log' id="Output-1474072872">
 Click to see Screenshot<br/>
-<a target="_blank" href=Wed_Sep_30_14_40_30_IST_2020.jpg>Screenshot</a><br/>
+<a target="_blank" href=Tue_Nov_10_13_03_38_IST_2020.jpg>Screenshot</a><br/>
 <br><br/>
 <br><br/>
-<a target="_blank" href=Wed_Sep_30_14_40_30_IST_2020.jpg><img src=Wed_Sep_30_14_40_30_IST_2020.jpg height=200 width=200></img></a><br/>
+<a target="_blank" href=Tue_Nov_10_13_03_38_IST_2020.jpg><img src=Tue_Nov_10_13_03_38_IST_2020.jpg height=200 width=200></img></a><br/>
 </div>
 </td>
 <td></td>
@@ -241,14 +703,14 @@ Click to see Screenshot<br/>
 <a href="#Output-624693846" onClick="toggleAllBoxes();">Show all outputs</a>
 <div class='log' id="Output-624693846">
 Click to see Screenshot<br/>
-<a target="_blank" href=Wed_Sep_30_14_41_37_IST_2020.jpg>Screenshot</a><br/>
+<a target="_blank" href=Tue_Nov_10_13_04_44_IST_2020.jpg>Screenshot</a><br/>
 <br><br/>
 <br><br/>
-<a target="_blank" href=Wed_Sep_30_14_41_37_IST_2020.jpg><img src=Wed_Sep_30_14_41_37_IST_2020.jpg height=200 width=200></img></a><br/>
+<a target="_blank" href=Tue_Nov_10_13_04_44_IST_2020.jpg><img src=Tue_Nov_10_13_04_44_IST_2020.jpg height=200 width=200></img></a><br/>
 </div>
 </td>
 <td></td>
-<td>13</td>
+<td>12</td>
 <td>com.OSMOSE.testcases.OULogin@3fa2213</td></tr>
 <tr>
 <td title='com.OSMOSE.testcases.OULogin.verifyLiveEventsSTS()'><b>verifyLiveEventsSTS</b><br>Test class: com.OSMOSE.testcases.OULogin<br>Test method: Verify the text 'Steel Technical Seminar' OsmoseUniversity page<br/>
@@ -257,14 +719,14 @@ Click to see Screenshot<br/>
 <a href="#Output-1904609259" onClick="toggleAllBoxes();">Show all outputs</a>
 <div class='log' id="Output-1904609259">
 Click to see Screenshot<br/>
-<a target="_blank" href=Wed_Sep_30_14_41_23_IST_2020.jpg>Screenshot</a><br/>
+<a target="_blank" href=Tue_Nov_10_13_04_31_IST_2020.jpg>Screenshot</a><br/>
 <br><br/>
 <br><br/>
-<a target="_blank" href=Wed_Sep_30_14_41_23_IST_2020.jpg><img src=Wed_Sep_30_14_41_23_IST_2020.jpg height=200 width=200></img></a><br/>
+<a target="_blank" href=Tue_Nov_10_13_04_31_IST_2020.jpg><img src=Tue_Nov_10_13_04_31_IST_2020.jpg height=200 width=200></img></a><br/>
 </div>
 </td>
 <td></td>
-<td>13</td>
+<td>12</td>
 <td>com.OSMOSE.testcases.OULogin@3fa2213</td></tr>
 <tr>
 <td title='com.OSMOSE.testcases.OULogin.verifyLiveEventsWPTS()'><b>verifyLiveEventsWPTS</b><br>Test class: com.OSMOSE.testcases.OULogin<br>Test method: Verify the text 'Wood Pole Technical Seminar' on OsmoseUniversity page<br/>
@@ -273,10 +735,10 @@ Click to see Screenshot<br/>
 <a href="#Output-526720216" onClick="toggleAllBoxes();">Show all outputs</a>
 <div class='log' id="Output-526720216">
 Click to see Screenshot<br/>
-<a target="_blank" href=Wed_Sep_30_14_41_51_IST_2020.jpg>Screenshot</a><br/>
+<a target="_blank" href=Tue_Nov_10_13_04_57_IST_2020.jpg>Screenshot</a><br/>
 <br><br/>
 <br><br/>
-<a target="_blank" href=Wed_Sep_30_14_41_51_IST_2020.jpg><img src=Wed_Sep_30_14_41_51_IST_2020.jpg height=200 width=200></img></a><br/>
+<a target="_blank" href=Tue_Nov_10_13_04_57_IST_2020.jpg><img src=Tue_Nov_10_13_04_57_IST_2020.jpg height=200 width=200></img></a><br/>
 </div>
 </td>
 <td></td>
@@ -289,10 +751,10 @@ Click to see Screenshot<br/>
 <a href="#Output-1437129801" onClick="toggleAllBoxes();">Show all outputs</a>
 <div class='log' id="Output-1437129801">
 Click to see Screenshot<br/>
-<a target="_blank" href=Wed_Sep_30_14_40_57_IST_2020.jpg>Screenshot</a><br/>
+<a target="_blank" href=Tue_Nov_10_13_04_05_IST_2020.jpg>Screenshot</a><br/>
 <br><br/>
 <br><br/>
-<a target="_blank" href=Wed_Sep_30_14_40_57_IST_2020.jpg><img src=Wed_Sep_30_14_40_57_IST_2020.jpg height=200 width=200></img></a><br/>
+<a target="_blank" href=Tue_Nov_10_13_04_05_IST_2020.jpg><img src=Tue_Nov_10_13_04_05_IST_2020.jpg height=200 width=200></img></a><br/>
 </div>
 </td>
 <td></td>
@@ -305,14 +767,14 @@ Click to see Screenshot<br/>
 <a href="#Output-1181567472" onClick="toggleAllBoxes();">Show all outputs</a>
 <div class='log' id="Output-1181567472">
 Click to see Screenshot<br/>
-<a target="_blank" href=Wed_Sep_30_14_42_31_IST_2020.jpg>Screenshot</a><br/>
+<a target="_blank" href=Tue_Nov_10_13_05_37_IST_2020.jpg>Screenshot</a><br/>
 <br><br/>
 <br><br/>
-<a target="_blank" href=Wed_Sep_30_14_42_31_IST_2020.jpg><img src=Wed_Sep_30_14_42_31_IST_2020.jpg height=200 width=200></img></a><br/>
+<a target="_blank" href=Tue_Nov_10_13_05_37_IST_2020.jpg><img src=Tue_Nov_10_13_05_37_IST_2020.jpg height=200 width=200></img></a><br/>
 </div>
 </td>
 <td></td>
-<td>13</td>
+<td>12</td>
 <td>com.OSMOSE.testcases.OULogin@3fa2213</td></tr>
 <tr>
 <td title='com.OSMOSE.testcases.OULogin.verifyOUCard()'><b>verifyOUCard</b><br>Test class: com.OSMOSE.testcases.OULogin<br>Test method: Verify the Osmose University card on home page<br/>
@@ -321,14 +783,14 @@ Click to see Screenshot<br/>
 <a href="#Output-876823802" onClick="toggleAllBoxes();">Show all outputs</a>
 <div class='log' id="Output-876823802">
 Click to see Screenshot<br/>
-<a target="_blank" href=Wed_Sep_30_14_40_00_IST_2020.jpg>Screenshot</a><br/>
+<a target="_blank" href=Tue_Nov_10_13_03_09_IST_2020.jpg>Screenshot</a><br/>
 <br><br/>
 <br><br/>
-<a target="_blank" href=Wed_Sep_30_14_40_00_IST_2020.jpg><img src=Wed_Sep_30_14_40_00_IST_2020.jpg height=200 width=200></img></a><br/>
+<a target="_blank" href=Tue_Nov_10_13_03_09_IST_2020.jpg><img src=Tue_Nov_10_13_03_09_IST_2020.jpg height=200 width=200></img></a><br/>
 </div>
 </td>
 <td></td>
-<td>4</td>
+<td>3</td>
 <td>com.OSMOSE.testcases.OULogin@3fa2213</td></tr>
 <tr>
 <td title='com.OSMOSE.testcases.OULogin.verifyOsmoseUniversityNavigationClick()'><b>verifyOsmoseUniversityNavigationClick</b><br>Test class: com.OSMOSE.testcases.OULogin<br>Test method: Verify the click on Osmose University Navigation<br/>
@@ -337,46 +799,14 @@ Click to see Screenshot<br/>
 <a href="#Output-2123269713" onClick="toggleAllBoxes();">Show all outputs</a>
 <div class='log' id="Output-2123269713">
 Click to see Screenshot<br/>
-<a target="_blank" href=Wed_Sep_30_14_40_17_IST_2020.jpg>Screenshot</a><br/>
+<a target="_blank" href=Tue_Nov_10_13_03_26_IST_2020.jpg>Screenshot</a><br/>
 <br><br/>
 <br><br/>
-<a target="_blank" href=Wed_Sep_30_14_40_17_IST_2020.jpg><img src=Wed_Sep_30_14_40_17_IST_2020.jpg height=200 width=200></img></a><br/>
+<a target="_blank" href=Tue_Nov_10_13_03_26_IST_2020.jpg><img src=Tue_Nov_10_13_03_26_IST_2020.jpg height=200 width=200></img></a><br/>
 </div>
 </td>
 <td></td>
 <td>13</td>
-<td>com.OSMOSE.testcases.OULogin@3fa2213</td></tr>
-<tr>
-<td title='com.OSMOSE.testcases.OULogin.verifyPopularQueriesReset()'><b>verifyPopularQueriesReset</b><br>Test class: com.OSMOSE.testcases.OULogin<br>Test method: Verify that Search results are updated when selected popular queries are deselected<br/>
-<a href="#Output-589610983" onClick='toggleBox("Output-589610983", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-589610983" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-589610983">
-Click to see Screenshot<br/>
-<a target="_blank" href=Wed_Sep_30_14_44_59_IST_2020.jpg>Screenshot</a><br/>
-<br><br/>
-<br><br/>
-<a target="_blank" href=Wed_Sep_30_14_44_59_IST_2020.jpg><img src=Wed_Sep_30_14_44_59_IST_2020.jpg height=200 width=200></img></a><br/>
-</div>
-</td>
-<td></td>
-<td>22</td>
-<td>com.OSMOSE.testcases.OULogin@3fa2213</td></tr>
-<tr>
-<td title='com.OSMOSE.testcases.OULogin.verifyPopularQueriesSearchResults()'><b>verifyPopularQueriesSearchResults</b><br>Test class: com.OSMOSE.testcases.OULogin<br>Test method: Verify that Search results based on the selected popular queries<br/>
-<a href="#Output-1005331061" onClick='toggleBox("Output-1005331061", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-1005331061" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1005331061">
-Click to see Screenshot<br/>
-<a target="_blank" href=Wed_Sep_30_14_44_36_IST_2020.jpg>Screenshot</a><br/>
-<br><br/>
-<br><br/>
-<a target="_blank" href=Wed_Sep_30_14_44_36_IST_2020.jpg><img src=Wed_Sep_30_14_44_36_IST_2020.jpg height=200 width=200></img></a><br/>
-</div>
-</td>
-<td></td>
-<td>24</td>
 <td>com.OSMOSE.testcases.OULogin@3fa2213</td></tr>
 <tr>
 <td title='com.OSMOSE.testcases.OULogin.verifyProductCard()'><b>verifyProductCard</b><br>Test class: com.OSMOSE.testcases.OULogin<br>Test method: Verify the Products card on home page<br/>
@@ -385,62 +815,14 @@ Click to see Screenshot<br/>
 <a href="#Output-1816468636" onClick="toggleAllBoxes();">Show all outputs</a>
 <div class='log' id="Output-1816468636">
 Click to see Screenshot<br/>
-<a target="_blank" href=Wed_Sep_30_14_40_01_IST_2020.jpg>Screenshot</a><br/>
+<a target="_blank" href=Tue_Nov_10_13_03_10_IST_2020.jpg>Screenshot</a><br/>
 <br><br/>
 <br><br/>
-<a target="_blank" href=Wed_Sep_30_14_40_01_IST_2020.jpg><img src=Wed_Sep_30_14_40_01_IST_2020.jpg height=200 width=200></img></a><br/>
+<a target="_blank" href=Tue_Nov_10_13_03_10_IST_2020.jpg><img src=Tue_Nov_10_13_03_10_IST_2020.jpg height=200 width=200></img></a><br/>
 </div>
 </td>
 <td></td>
 <td>0</td>
-<td>com.OSMOSE.testcases.OULogin@3fa2213</td></tr>
-<tr>
-<td title='com.OSMOSE.testcases.OULogin.verifySearchWebinarsHistorical()'><b>verifySearchWebinarsHistorical</b><br>Test class: com.OSMOSE.testcases.OULogin<br>Test method: Verify the Search on Webinars - Historical and its contents<br>Parameters: {TypeHistoricalSearchBar=Wood}<br/>
-<a href="#Output-1272744797" onClick='toggleBox("Output-1272744797", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-1272744797" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1272744797">
-Click to see Screenshot<br/>
-<a target="_blank" href=Wed_Sep_30_14_42_51_IST_2020.jpg>Screenshot</a><br/>
-<br><br/>
-<br><br/>
-<a target="_blank" href=Wed_Sep_30_14_42_51_IST_2020.jpg><img src=Wed_Sep_30_14_42_51_IST_2020.jpg height=200 width=200></img></a><br/>
-</div>
-</td>
-<td></td>
-<td>19</td>
-<td>com.OSMOSE.testcases.OULogin@3fa2213</td></tr>
-<tr>
-<td title='com.OSMOSE.testcases.OULogin.verifySortWebinarsHistorical()'><b>verifySortWebinarsHistorical</b><br>Test class: com.OSMOSE.testcases.OULogin<br>Test method: Verify the Sort on Webinars - Historical<br>Parameters: {TypeHistoricalSearchBarSort=Wood}<br/>
-<a href="#Output-773066329" onClick='toggleBox("Output-773066329", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-773066329" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-773066329">
-Click to see Screenshot<br/>
-<a target="_blank" href=Wed_Sep_30_14_43_25_IST_2020.jpg>Screenshot</a><br/>
-<br><br/>
-<br><br/>
-<a target="_blank" href=Wed_Sep_30_14_43_25_IST_2020.jpg><img src=Wed_Sep_30_14_43_25_IST_2020.jpg height=200 width=200></img></a><br/>
-</div>
-</td>
-<td></td>
-<td>18</td>
-<td>com.OSMOSE.testcases.OULogin@3fa2213</td></tr>
-<tr>
-<td title='com.OSMOSE.testcases.OULogin.verifyVideoGalleryHistorical()'><b>verifyVideoGalleryHistorical</b><br>Test class: com.OSMOSE.testcases.OULogin<br>Test method: Verify the Video Gallery Layout on Webinars - Historical<br/>
-<a href="#Output-167692593" onClick='toggleBox("Output-167692593", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-167692593" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-167692593">
-Click to see Screenshot<br/>
-<a target="_blank" href=Wed_Sep_30_14_44_11_IST_2020.jpg>Screenshot</a><br/>
-<br><br/>
-<br><br/>
-<a target="_blank" href=Wed_Sep_30_14_44_11_IST_2020.jpg><img src=Wed_Sep_30_14_44_11_IST_2020.jpg height=200 width=200></img></a><br/>
-</div>
-</td>
-<td></td>
-<td>26</td>
 <td>com.OSMOSE.testcases.OULogin@3fa2213</td></tr>
 <tr>
 <td title='com.OSMOSE.testcases.OULogin.verifyVideoLinks()'><b>verifyVideoLinks</b><br>Test class: com.OSMOSE.testcases.OULogin<br>Test method: Verify the Video links on Osmose University Card<br/>
@@ -449,10 +831,10 @@ Click to see Screenshot<br/>
 <a href="#Output-1616438581" onClick="toggleAllBoxes();">Show all outputs</a>
 <div class='log' id="Output-1616438581">
 Click to see Screenshot<br/>
-<a target="_blank" href=Wed_Sep_30_14_40_03_IST_2020.jpg>Screenshot</a><br/>
+<a target="_blank" href=Tue_Nov_10_13_03_12_IST_2020.jpg>Screenshot</a><br/>
 <br><br/>
 <br><br/>
-<a target="_blank" href=Wed_Sep_30_14_40_03_IST_2020.jpg><img src=Wed_Sep_30_14_40_03_IST_2020.jpg height=200 width=200></img></a><br/>
+<a target="_blank" href=Tue_Nov_10_13_03_12_IST_2020.jpg><img src=Tue_Nov_10_13_03_12_IST_2020.jpg height=200 width=200></img></a><br/>
 </div>
 </td>
 <td></td>
@@ -465,10 +847,10 @@ Click to see Screenshot<br/>
 <a href="#Output-1158124724" onClick="toggleAllBoxes();">Show all outputs</a>
 <div class='log' id="Output-1158124724">
 Click to see Screenshot<br/>
-<a target="_blank" href=Wed_Sep_30_14_40_44_IST_2020.jpg>Screenshot</a><br/>
+<a target="_blank" href=Tue_Nov_10_13_03_52_IST_2020.jpg>Screenshot</a><br/>
 <br><br/>
 <br><br/>
-<a target="_blank" href=Wed_Sep_30_14_40_44_IST_2020.jpg><img src=Wed_Sep_30_14_40_44_IST_2020.jpg height=200 width=200></img></a><br/>
+<a target="_blank" href=Tue_Nov_10_13_03_52_IST_2020.jpg><img src=Tue_Nov_10_13_03_52_IST_2020.jpg height=200 width=200></img></a><br/>
 </div>
 </td>
 <td></td>

@@ -3,44 +3,123 @@
         "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="" lang="">
 <head>
-  <title>Test Results Report - Product</title>
+  <title>Test Results Report - OCalcPro</title>
   <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
   <meta name="description" content="TestNG unit test results." />
   <link href="reportng.css" rel="stylesheet" type="text/css" />
     <script type="text/javascript" src="reportng.js"></script>
 </head>
 <body>
-<h1>Product</h1>
+<h1>OCalcPro</h1>
 <p>
-  Test duration: 1625.825s
+  Test duration: 667.648s
 </p>
 
 
 
+  <table class="resultsTable">
+    <tr><th colspan="3" class="header failed">Failed Tests</th></tr>
+          <tr>
+        <td colspan="3" class="group">com.OSMOSE.testcases.oCalcPro</td>
+      </tr>
+            
+<tr>
+  <td class="method">
+                  <span class="description" title="Verify click on an Announcement for Licensed User">verifyClickOnAnAnnouncementLicensedUser</span>
+      </td>
+  <td class="duration">
+    1.098s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        Click to see Screenshot
+                                <a target="_blank" href=Tue_Nov_17_21_38_39_IST_2020.jpg>Screenshot</a>
+                                <br>
+                                <br>
+                                <a target="_blank" href=Tue_Nov_17_21_38_39_IST_2020.jpg><img src=Tue_Nov_17_21_38_39_IST_2020.jpg height=200 width=200></img></a>
+                  </div>
+    
+
+        <a href="javascript:toggleElement('exception-0', 'block')" title="Click to expand/collapse"><b>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;a data-v-7c7cce93=&quot;&quot; id=&quot;OCalProSeminar&quot; href=&quot;javascript:void(0);&quot;&gt;...&lt;/a&gt; is not clickable at point (290, 433). Other element would receive the click: &lt;div data-v-7c7cce93=&quot;&quot; class=&quot;Oloader&quot;&gt;...&lt;/div&gt;<br/>
+&nbsp; (Session info: chrome=86.0.4240.75)<br/>
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;<br/>
+System info: host: &apos;5CG6323N27&apos;, ip: &apos;192.168.0.12&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_191&apos;<br/>
+Driver info: org.openqa.selenium.chrome.ChromeDriver<br/>
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.75, chrome: {chromedriverVersion: 85.0.4183.87 (cd6713ebf92fa..., userDataDir: C:\Windows\Temp\scoped_dir1...}, goog:chromeOptions: {debuggerAddress: localhost:60141}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: none, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}<br/>
+Session ID: 7c47cf17605c0041376f57870d31efef</b></a><br />
+    <div class="stackTrace" id="exception-0">
+              sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)<br />
+              sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)<br />
+              sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)<br />
+              java.lang.reflect.Constructor.newInstance(Unknown Source)<br />
+              org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)<br />
+              org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)<br />
+              org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)<br />
+              org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)<br />
+              org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)<br />
+              org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:276)<br />
+              org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)<br />
+              com.OSMOSE.base.Page.click(Page.java:183)<br />
+              com.OSMOSE.testcases.oCalcPro.verifyClickOnAnAnnouncementLicensedUser(oCalcPro.java:728)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)<br />
+              sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)<br />
+              java.lang.reflect.Method.invoke(Unknown Source)<br />
+              org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)<br />
+              org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)<br />
+              org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)<br />
+              org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)<br />
+              org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)<br />
+              org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)<br />
+              org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)<br />
+              org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)<br />
+              java.util.ArrayList.forEach(Unknown Source)<br />
+              org.testng.TestRunner.privateRun(TestRunner.java:766)<br />
+              org.testng.TestRunner.run(TestRunner.java:587)<br />
+              org.testng.SuiteRunner.runTest(SuiteRunner.java:384)<br />
+              org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)<br />
+              org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)<br />
+              org.testng.SuiteRunner.run(SuiteRunner.java:286)<br />
+              org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)<br />
+              org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)<br />
+              org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)<br />
+              org.testng.TestNG.runSuitesLocally(TestNG.java:1109)<br />
+              org.testng.TestNG.runSuites(TestNG.java:1039)<br />
+              org.testng.TestNG.run(TestNG.java:1007)<br />
+              org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)<br />
+              org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)<br />
+              org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)<br />
+                </div>
+      </td>
+</tr>
+      </table>
 
 
   <table class="resultsTable">
     <tr><th colspan="3" class="header passed">Passed Tests</th></tr>
           <tr>
-        <td colspan="3" class="group">com.OSMOSE.testcases.Product</td>
+        <td colspan="3" class="group">com.OSMOSE.testcases.oCalcPro</td>
       </tr>
             
 <tr>
   <td class="method">
-                  <span class="description" title="Verifying the quantity entered in the Quantity field">AddQuantityandverifyCellNumber</span>
+                  <span class="description" title="Verify click on 30 days Trial button for Licensed User">verify30daysbtnClickLicensedUser</span>
       </td>
   <td class="duration">
-    16.863s
+    5.896s
   </td>
   <td class="result">
         
     
             <div class="testOutput">
                         Click to see Screenshot
-                                <a target="_blank" href=Sun_Nov_08_21_14_40_IST_2020.jpg>Screenshot</a>
+                                <a target="_blank" href=Tue_Nov_17_21_31_55_IST_2020.jpg>Screenshot</a>
                                 <br>
                                 <br>
-                                <a target="_blank" href=Sun_Nov_08_21_14_40_IST_2020.jpg><img src=Sun_Nov_08_21_14_40_IST_2020.jpg height=200 width=200></img></a>
+                                <a target="_blank" href=Tue_Nov_17_21_31_55_IST_2020.jpg><img src=Tue_Nov_17_21_31_55_IST_2020.jpg height=200 width=200></img></a>
                   </div>
     
 
@@ -48,20 +127,20 @@
 </tr>
 <tr>
   <td class="method">
-                  <span class="description" title="On the Product Group Details Page, the user will be provided with the “ADD”  button  with a quantity selector.">AddShoppingCart</span>
+                  <span class="description" title="Verify Credit card details are not present for Non-Ocalc Product">verifyCCDetailsForNonOCalcProduct</span>
       </td>
   <td class="duration">
-    4.853s
+    116.851s
   </td>
   <td class="result">
         
     
             <div class="testOutput">
                         Click to see Screenshot
-                                <a target="_blank" href=Sun_Nov_08_21_16_58_IST_2020.jpg>Screenshot</a>
+                                <a target="_blank" href=Tue_Nov_17_21_36_11_IST_2020.jpg>Screenshot</a>
                                 <br>
                                 <br>
-                                <a target="_blank" href=Sun_Nov_08_21_16_58_IST_2020.jpg><img src=Sun_Nov_08_21_16_58_IST_2020.jpg height=200 width=200></img></a>
+                                <a target="_blank" href=Tue_Nov_17_21_36_11_IST_2020.jpg><img src=Tue_Nov_17_21_36_11_IST_2020.jpg height=200 width=200></img></a>
                   </div>
     
 
@@ -69,20 +148,20 @@
 </tr>
 <tr>
   <td class="method">
-                  <span class="description" title="Verification of click on Approve button on Manage Products">ClickApprove</span>
+                  <span class="description" title="Verify click on I have copied my receipt Checkbox and Approval">verifyClickIhaveCopiedMyReceiptChkBox</span>
       </td>
   <td class="duration">
-    9.237s
+    3.561s
   </td>
   <td class="result">
         
     
             <div class="testOutput">
                         Click to see Screenshot
-                                <a target="_blank" href=Sun_Nov_08_21_25_15_IST_2020.jpg>Screenshot</a>
+                                <a target="_blank" href=Tue_Nov_17_21_34_14_IST_2020.jpg>Screenshot</a>
                                 <br>
                                 <br>
-                                <a target="_blank" href=Sun_Nov_08_21_25_15_IST_2020.jpg><img src=Sun_Nov_08_21_25_15_IST_2020.jpg height=200 width=200></img></a>
+                                <a target="_blank" href=Tue_Nov_17_21_34_14_IST_2020.jpg><img src=Tue_Nov_17_21_34_14_IST_2020.jpg height=200 width=200></img></a>
                   </div>
     
 
@@ -90,20 +169,20 @@
 </tr>
 <tr>
   <td class="method">
-                  <span class="description" title="Verification of upload Spreadsheet on Manage Products">ClickDictionaryLink</span>
+                  <span class="description" title="Verify click on Make Payment button and close pop-up">verifyClickMakePaymentBtn</span>
       </td>
   <td class="duration">
-    36.096s
+    7.449s
   </td>
   <td class="result">
         
     
             <div class="testOutput">
                         Click to see Screenshot
-                                <a target="_blank" href=Sun_Nov_08_21_26_10_IST_2020.jpg>Screenshot</a>
+                                <a target="_blank" href=Tue_Nov_17_21_34_10_IST_2020.jpg>Screenshot</a>
                                 <br>
                                 <br>
-                                <a target="_blank" href=Sun_Nov_08_21_26_10_IST_2020.jpg><img src=Sun_Nov_08_21_26_10_IST_2020.jpg height=200 width=200></img></a>
+                                <a target="_blank" href=Tue_Nov_17_21_34_10_IST_2020.jpg><img src=Tue_Nov_17_21_34_10_IST_2020.jpg height=200 width=200></img></a>
                   </div>
     
 
@@ -111,20 +190,20 @@
 </tr>
 <tr>
   <td class="method">
-                  <span class="description" title="Clicking Download Spreadsheet drop down and download">ClickDownloadProducts</span>
+                  <span class="description" title="Verify the Click on Next and Previous buttons">verifyClickOnNextPreviousbtns</span>
       </td>
   <td class="duration">
-    7.248s
+    2.165s
   </td>
   <td class="result">
         
     
             <div class="testOutput">
                         Click to see Screenshot
-                                <a target="_blank" href=Sun_Nov_08_21_24_54_IST_2020.jpg>Screenshot</a>
+                                <a target="_blank" href=Tue_Nov_17_21_41_05_IST_2020.jpg>Screenshot</a>
                                 <br>
                                 <br>
-                                <a target="_blank" href=Sun_Nov_08_21_24_54_IST_2020.jpg><img src=Sun_Nov_08_21_24_54_IST_2020.jpg height=200 width=200></img></a>
+                                <a target="_blank" href=Tue_Nov_17_21_41_05_IST_2020.jpg><img src=Tue_Nov_17_21_41_05_IST_2020.jpg height=200 width=200></img></a>
                   </div>
     
 
@@ -132,20 +211,20 @@
 </tr>
 <tr>
   <td class="method">
-                  <span class="description" title="Verification of Manage Products dropdown menu">ClickManageProducts</span>
+                  <span class="description" title="Verify click on Pay with Credit Card button">verifyClickOnPaywithCCBtn</span>
       </td>
   <td class="duration">
-    2.304s
+    27.447s
   </td>
   <td class="result">
         
     
             <div class="testOutput">
                         Click to see Screenshot
-                                <a target="_blank" href=Sun_Nov_08_21_24_47_IST_2020.jpg>Screenshot</a>
+                                <a target="_blank" href=Tue_Nov_17_21_34_02_IST_2020.jpg>Screenshot</a>
                                 <br>
                                 <br>
-                                <a target="_blank" href=Sun_Nov_08_21_24_47_IST_2020.jpg><img src=Sun_Nov_08_21_24_47_IST_2020.jpg height=200 width=200></img></a>
+                                <a target="_blank" href=Tue_Nov_17_21_34_02_IST_2020.jpg><img src=Tue_Nov_17_21_34_02_IST_2020.jpg height=200 width=200></img></a>
                   </div>
     
 
@@ -153,20 +232,20 @@
 </tr>
 <tr>
   <td class="method">
-                  <span class="description" title="Verification of contents on Manage Quotes page">ClickManageQuotesLink</span>
+                  <span class="description" title="Verify the Click on Skip Tour and Exit Tour buttons">verifyClickOnSkipTourExitTourbtns</span>
       </td>
   <td class="duration">
-    5.267s
+    4.374s
   </td>
   <td class="result">
         
     
             <div class="testOutput">
                         Click to see Screenshot
-                                <a target="_blank" href=Sun_Nov_08_21_22_02_IST_2020.jpg>Screenshot</a>
+                                <a target="_blank" href=Tue_Nov_17_21_41_09_IST_2020.jpg>Screenshot</a>
                                 <br>
                                 <br>
-                                <a target="_blank" href=Sun_Nov_08_21_22_02_IST_2020.jpg><img src=Sun_Nov_08_21_22_02_IST_2020.jpg height=200 width=200></img></a>
+                                <a target="_blank" href=Tue_Nov_17_21_41_09_IST_2020.jpg><img src=Tue_Nov_17_21_41_09_IST_2020.jpg height=200 width=200></img></a>
                   </div>
     
 
@@ -174,20 +253,20 @@
 </tr>
 <tr>
   <td class="method">
-                  <span class="description" title="Clicking ProductsInreview button and going back to Manage Products pop up">ClickProductsinReview</span>
+                  <span class="description" title="Verify click on Renew Button functionality">verifyClickRenewBtn</span>
       </td>
   <td class="duration">
-    2.178s
+    7.299s
   </td>
   <td class="result">
         
     
             <div class="testOutput">
                         Click to see Screenshot
-                                <a target="_blank" href=Sun_Nov_08_21_24_57_IST_2020.jpg>Screenshot</a>
+                                <a target="_blank" href=Tue_Nov_17_21_42_25_IST_2020.jpg>Screenshot</a>
                                 <br>
                                 <br>
-                                <a target="_blank" href=Sun_Nov_08_21_24_57_IST_2020.jpg><img src=Sun_Nov_08_21_24_57_IST_2020.jpg height=200 width=200></img></a>
+                                <a target="_blank" href=Tue_Nov_17_21_42_25_IST_2020.jpg><img src=Tue_Nov_17_21_42_25_IST_2020.jpg height=200 width=200></img></a>
                   </div>
     
 
@@ -195,20 +274,20 @@
 </tr>
 <tr>
   <td class="method">
-                  <span class="description" title="Verification of click on Reject button on Manage Products">ClickReject</span>
+                  <span class="description" title="Verify Resend button functionality">verifyClickResend</span>
       </td>
   <td class="duration">
-    9.695s
+    4.368s
   </td>
   <td class="result">
         
     
             <div class="testOutput">
                         Click to see Screenshot
-                                <a target="_blank" href=Sun_Nov_08_21_25_25_IST_2020.jpg>Screenshot</a>
+                                <a target="_blank" href=Tue_Nov_17_21_42_02_IST_2020.jpg>Screenshot</a>
                                 <br>
                                 <br>
-                                <a target="_blank" href=Sun_Nov_08_21_25_25_IST_2020.jpg><img src=Sun_Nov_08_21_25_25_IST_2020.jpg height=200 width=200></img></a>
+                                <a target="_blank" href=Tue_Nov_17_21_42_02_IST_2020.jpg><img src=Tue_Nov_17_21_42_02_IST_2020.jpg height=200 width=200></img></a>
                   </div>
     
 
@@ -216,20 +295,20 @@
 </tr>
 <tr>
   <td class="method">
-                  <span class="description" title="Verification of click on Review button on Manage Products">ClickReview</span>
+                  <span class="description" title="Verify click on Transfer License Button">verifyClickTransferLicenseBtn</span>
       </td>
   <td class="duration">
-    7.798s
+    2.660s
   </td>
   <td class="result">
         
     
             <div class="testOutput">
                         Click to see Screenshot
-                                <a target="_blank" href=Sun_Nov_08_21_25_05_IST_2020.jpg>Screenshot</a>
+                                <a target="_blank" href=Tue_Nov_17_21_41_57_IST_2020.jpg>Screenshot</a>
                                 <br>
                                 <br>
-                                <a target="_blank" href=Sun_Nov_08_21_25_05_IST_2020.jpg><img src=Sun_Nov_08_21_25_05_IST_2020.jpg height=200 width=200></img></a>
+                                <a target="_blank" href=Tue_Nov_17_21_41_57_IST_2020.jpg><img src=Tue_Nov_17_21_41_57_IST_2020.jpg height=200 width=200></img></a>
                   </div>
     
 
@@ -237,20 +316,20 @@
 </tr>
 <tr>
   <td class="method">
-                  <span class="description" title="ShoppingCartOverlaycarticonverification">ClickShoppingCartIcon</span>
+                  <span class="description" title="Verify click on Update Contact Button">verifyClickUpdateContactBtn</span>
       </td>
   <td class="duration">
-    11.089s
+    2.213s
   </td>
   <td class="result">
         
     
             <div class="testOutput">
                         Click to see Screenshot
-                                <a target="_blank" href=Sun_Nov_08_21_18_58_IST_2020.jpg>Screenshot</a>
+                                <a target="_blank" href=Tue_Nov_17_21_42_18_IST_2020.jpg>Screenshot</a>
                                 <br>
                                 <br>
-                                <a target="_blank" href=Sun_Nov_08_21_18_58_IST_2020.jpg><img src=Sun_Nov_08_21_18_58_IST_2020.jpg height=200 width=200></img></a>
+                                <a target="_blank" href=Tue_Nov_17_21_42_18_IST_2020.jpg><img src=Tue_Nov_17_21_42_18_IST_2020.jpg height=200 width=200></img></a>
                   </div>
     
 
@@ -258,20 +337,20 @@
 </tr>
 <tr>
   <td class="method">
-                  <span class="description" title="ShoppingCart Overlay cart ViewCart Button">ClickShoppingSubmitCartbutton</span>
+                  <span class="description" title="Verify the Contents of License Management Pop-up">verifyContentsLicenseManagementPopUp</span>
       </td>
   <td class="duration">
-    9.543s
+    5.352s
   </td>
   <td class="result">
         
     
             <div class="testOutput">
                         Click to see Screenshot
-                                <a target="_blank" href=Sun_Nov_08_21_19_18_IST_2020.jpg>Screenshot</a>
+                                <a target="_blank" href=Tue_Nov_17_21_40_58_IST_2020.jpg>Screenshot</a>
                                 <br>
                                 <br>
-                                <a target="_blank" href=Sun_Nov_08_21_19_18_IST_2020.jpg><img src=Sun_Nov_08_21_19_18_IST_2020.jpg height=200 width=200></img></a>
+                                <a target="_blank" href=Tue_Nov_17_21_40_58_IST_2020.jpg><img src=Tue_Nov_17_21_40_58_IST_2020.jpg height=200 width=200></img></a>
                   </div>
     
 
@@ -279,20 +358,20 @@
 </tr>
 <tr>
   <td class="method">
-                  <span class="description" title="ShoppingCart Overlay cart ViewCart Button">ClickShoppingViewCartbutton</span>
+                  <span class="description" title="Verify contents on Announcements card for Licensed User">verifyContentsOfAnnouncementsLicensedUser</span>
       </td>
   <td class="duration">
-    9.590s
+    0.472s
   </td>
   <td class="result">
         
     
             <div class="testOutput">
                         Click to see Screenshot
-                                <a target="_blank" href=Sun_Nov_08_21_19_08_IST_2020.jpg>Screenshot</a>
+                                <a target="_blank" href=Tue_Nov_17_21_31_17_IST_2020.jpg>Screenshot</a>
                                 <br>
                                 <br>
-                                <a target="_blank" href=Sun_Nov_08_21_19_08_IST_2020.jpg><img src=Sun_Nov_08_21_19_08_IST_2020.jpg height=200 width=200></img></a>
+                                <a target="_blank" href=Tue_Nov_17_21_31_17_IST_2020.jpg><img src=Tue_Nov_17_21_31_17_IST_2020.jpg height=200 width=200></img></a>
                   </div>
     
 
@@ -300,20 +379,20 @@
 </tr>
 <tr>
   <td class="method">
-                  <span class="description" title="Verification of upload Spreadsheet on Manage Products">ClickUploadProducts</span>
+                  <span class="description" title="Verify Contents of FAQ for Licensed User">verifyContentsOfFAQLicensedUser</span>
       </td>
   <td class="duration">
-    8.398s
+    6.646s
   </td>
   <td class="result">
         
     
             <div class="testOutput">
                         Click to see Screenshot
-                                <a target="_blank" href=Sun_Nov_08_21_25_34_IST_2020.jpg>Screenshot</a>
+                                <a target="_blank" href=Tue_Nov_17_21_38_46_IST_2020.jpg>Screenshot</a>
                                 <br>
                                 <br>
-                                <a target="_blank" href=Sun_Nov_08_21_25_34_IST_2020.jpg><img src=Sun_Nov_08_21_25_34_IST_2020.jpg height=200 width=200></img></a>
+                                <a target="_blank" href=Tue_Nov_17_21_38_46_IST_2020.jpg><img src=Tue_Nov_17_21_38_46_IST_2020.jpg height=200 width=200></img></a>
                   </div>
     
 
@@ -321,20 +400,20 @@
 </tr>
 <tr>
   <td class="method">
-                  <span class="description" title="Create Quote by adding product in the cart">CreateQuote</span>
+                  <span class="description" title="Verify contents on Knowledge Base card for Licensed User">verifyContentsOfKBCardLicensedUser</span>
       </td>
   <td class="duration">
-    9.661s
+    0.098s
   </td>
   <td class="result">
         
     
             <div class="testOutput">
                         Click to see Screenshot
-                                <a target="_blank" href=Sun_Nov_08_21_18_18_IST_2020.jpg>Screenshot</a>
+                                <a target="_blank" href=Tue_Nov_17_21_31_16_IST_2020.jpg>Screenshot</a>
                                 <br>
                                 <br>
-                                <a target="_blank" href=Sun_Nov_08_21_18_18_IST_2020.jpg><img src=Sun_Nov_08_21_18_18_IST_2020.jpg height=200 width=200></img></a>
+                                <a target="_blank" href=Tue_Nov_17_21_31_16_IST_2020.jpg><img src=Tue_Nov_17_21_31_16_IST_2020.jpg height=200 width=200></img></a>
                   </div>
     
 
@@ -342,20 +421,20 @@
 </tr>
 <tr>
   <td class="method">
-                  <span class="description" title="Create Quote by adding product in the cart by adding attachment">CreateQuote_Attachment</span>
+                  <span class="description" title="Verify contents on License Management card for Licensed User">verifyContentsOfLicenseMgmtLicensedUser</span>
       </td>
   <td class="duration">
-    10.212s
+    0.223s
   </td>
   <td class="result">
         
     
             <div class="testOutput">
                         Click to see Screenshot
-                                <a target="_blank" href=Sun_Nov_08_21_18_47_IST_2020.jpg>Screenshot</a>
+                                <a target="_blank" href=Tue_Nov_17_21_31_18_IST_2020.jpg>Screenshot</a>
                                 <br>
                                 <br>
-                                <a target="_blank" href=Sun_Nov_08_21_18_47_IST_2020.jpg><img src=Sun_Nov_08_21_18_47_IST_2020.jpg height=200 width=200></img></a>
+                                <a target="_blank" href=Tue_Nov_17_21_31_18_IST_2020.jpg><img src=Tue_Nov_17_21_31_18_IST_2020.jpg height=200 width=200></img></a>
                   </div>
     
 
@@ -363,20 +442,20 @@
 </tr>
 <tr>
   <td class="method">
-                  <span class="description" title="Create Quote by adding product in the cart by adding comments">CreateQuote_Comments</span>
+                  <span class="description" title="Verify contents on Products card for Licensed User">verifyContentsOfProductsCardLicensedUser</span>
       </td>
   <td class="duration">
-    8.606s
+    0.221s
   </td>
   <td class="result">
         
     
             <div class="testOutput">
                         Click to see Screenshot
-                                <a target="_blank" href=Sun_Nov_08_21_18_27_IST_2020.jpg>Screenshot</a>
+                                <a target="_blank" href=Tue_Nov_17_21_31_16_IST_2020.jpg>Screenshot</a>
                                 <br>
                                 <br>
-                                <a target="_blank" href=Sun_Nov_08_21_18_27_IST_2020.jpg><img src=Sun_Nov_08_21_18_27_IST_2020.jpg height=200 width=200></img></a>
+                                <a target="_blank" href=Tue_Nov_17_21_31_16_IST_2020.jpg><img src=Tue_Nov_17_21_31_16_IST_2020.jpg height=200 width=200></img></a>
                   </div>
     
 
@@ -384,20 +463,20 @@
 </tr>
 <tr>
   <td class="method">
-                  <span class="description" title="Create Quote by adding product in the cart by Multiple attachment">CreateQuote_MultipleAttachment</span>
+                  <span class="description" title="Verify contents on Training Options card for Licensed User">verifyContentsOfTrainingOptionsLicensedUser</span>
       </td>
   <td class="duration">
-    37.018s
+    0.124s
   </td>
   <td class="result">
         
     
             <div class="testOutput">
                         Click to see Screenshot
-                                <a target="_blank" href=Sun_Nov_08_21_37_06_IST_2020.jpg>Screenshot</a>
+                                <a target="_blank" href=Tue_Nov_17_21_31_15_IST_2020.jpg>Screenshot</a>
                                 <br>
                                 <br>
-                                <a target="_blank" href=Sun_Nov_08_21_37_06_IST_2020.jpg><img src=Sun_Nov_08_21_37_06_IST_2020.jpg height=200 width=200></img></a>
+                                <a target="_blank" href=Tue_Nov_17_21_31_15_IST_2020.jpg><img src=Tue_Nov_17_21_31_15_IST_2020.jpg height=200 width=200></img></a>
                   </div>
     
 
@@ -405,20 +484,20 @@
 </tr>
 <tr>
   <td class="method">
-                  <span class="description" title="Create Quote by adding product in the cart by updating attachment">CreateQuote_UpdateeAttachment</span>
+                  <span class="description" title="Verify contents on Tutotial, Live Demo and Support card">verifyContentsOfTutorialLiveDemoLicensedUser</span>
       </td>
   <td class="duration">
-    10.229s
+    0.285s
   </td>
   <td class="result">
         
     
             <div class="testOutput">
                         Click to see Screenshot
-                                <a target="_blank" href=Sun_Nov_08_21_37_17_IST_2020.jpg>Screenshot</a>
+                                <a target="_blank" href=Tue_Nov_17_21_31_18_IST_2020.jpg>Screenshot</a>
                                 <br>
                                 <br>
-                                <a target="_blank" href=Sun_Nov_08_21_37_17_IST_2020.jpg><img src=Sun_Nov_08_21_37_17_IST_2020.jpg height=200 width=200></img></a>
+                                <a target="_blank" href=Tue_Nov_17_21_31_18_IST_2020.jpg><img src=Tue_Nov_17_21_31_18_IST_2020.jpg height=200 width=200></img></a>
                   </div>
     
 
@@ -426,20 +505,20 @@
 </tr>
 <tr>
   <td class="method">
-                  <span class="description" title="Create Quote by adding product in the cart by adding zip code">CreateQuote_ZipCode</span>
+                  <span class="description" title="Verify click on Current Public classes on Training Options for a licensed User">verifyCurrentPublicClassesClickLicensedUser</span>
       </td>
   <td class="duration">
-    8.891s
+    17.508s
   </td>
   <td class="result">
         
     
             <div class="testOutput">
                         Click to see Screenshot
-                                <a target="_blank" href=Sun_Nov_08_21_18_36_IST_2020.jpg>Screenshot</a>
+                                <a target="_blank" href=Tue_Nov_17_21_38_26_IST_2020.jpg>Screenshot</a>
                                 <br>
                                 <br>
-                                <a target="_blank" href=Sun_Nov_08_21_18_36_IST_2020.jpg><img src=Sun_Nov_08_21_18_36_IST_2020.jpg height=200 width=200></img></a>
+                                <a target="_blank" href=Tue_Nov_17_21_38_26_IST_2020.jpg><img src=Tue_Nov_17_21_38_26_IST_2020.jpg height=200 width=200></img></a>
                   </div>
     
 
@@ -447,20 +526,20 @@
 </tr>
 <tr>
   <td class="method">
-                  <span class="description" title="Delete product from the cart">DeleteQuanityinShoppingCart</span>
+                  <span class="description" title="Verify adding OcalPro and other products to cart and quote submission">verifyDifferentProductsQuoteCreate</span>
       </td>
   <td class="duration">
-    6.000s
+    14.666s
   </td>
   <td class="result">
         
     
             <div class="testOutput">
                         Click to see Screenshot
-                                <a target="_blank" href=Sun_Nov_08_21_17_26_IST_2020.jpg>Screenshot</a>
+                                <a target="_blank" href=Tue_Nov_17_21_32_18_IST_2020.jpg>Screenshot</a>
                                 <br>
                                 <br>
-                                <a target="_blank" href=Sun_Nov_08_21_17_26_IST_2020.jpg><img src=Sun_Nov_08_21_17_26_IST_2020.jpg height=200 width=200></img></a>
+                                <a target="_blank" href=Tue_Nov_17_21_32_18_IST_2020.jpg><img src=Tue_Nov_17_21_32_18_IST_2020.jpg height=200 width=200></img></a>
                   </div>
     
 
@@ -468,20 +547,20 @@
 </tr>
 <tr>
   <td class="method">
-                  <span class="description" title="Verify the tel number text on Add to Shopping cart pop-up">FeaturedProductPoleRestoration</span>
+                  <span class="description" title="Verify clicking on an FAQ for Licensed User">verifyFAQClickLicensedUser</span>
       </td>
   <td class="duration">
-    23.601s
+    18.067s
   </td>
   <td class="result">
         
     
             <div class="testOutput">
                         Click to see Screenshot
-                                <a target="_blank" href=Sun_Nov_08_21_15_04_IST_2020.jpg>Screenshot</a>
+                                <a target="_blank" href=Tue_Nov_17_21_39_04_IST_2020.jpg>Screenshot</a>
                                 <br>
                                 <br>
-                                <a target="_blank" href=Sun_Nov_08_21_15_04_IST_2020.jpg><img src=Sun_Nov_08_21_15_04_IST_2020.jpg height=200 width=200></img></a>
+                                <a target="_blank" href=Tue_Nov_17_21_39_04_IST_2020.jpg><img src=Tue_Nov_17_21_39_04_IST_2020.jpg height=200 width=200></img></a>
                   </div>
     
 
@@ -489,20 +568,20 @@
 </tr>
 <tr>
   <td class="method">
-                  <span class="description" title="Verify Go Back button funactionality on Quote Request screen">GoBack</span>
+                  <span class="description" title="Verify the Filter functionality of Contact Name column">verifyFilterContactName</span>
       </td>
   <td class="duration">
-    13.532s
+    3.519s
   </td>
   <td class="result">
         
     
             <div class="testOutput">
                         Click to see Screenshot
-                                <a target="_blank" href=Sun_Nov_08_21_36_29_IST_2020.jpg>Screenshot</a>
+                                <a target="_blank" href=Tue_Nov_17_21_41_20_IST_2020.jpg>Screenshot</a>
                                 <br>
                                 <br>
-                                <a target="_blank" href=Sun_Nov_08_21_36_29_IST_2020.jpg><img src=Sun_Nov_08_21_36_29_IST_2020.jpg height=200 width=200></img></a>
+                                <a target="_blank" href=Tue_Nov_17_21_41_20_IST_2020.jpg><img src=Tue_Nov_17_21_41_20_IST_2020.jpg height=200 width=200></img></a>
                   </div>
     
 
@@ -510,20 +589,20 @@
 </tr>
 <tr>
   <td class="method">
-                  <span class="description" title="Verification of the presence of cart icon on Home page">HomepageCarticon</span>
+                  <span class="description" title="Verify the Filter functionality of Exp Token column">verifyFilterExpToken</span>
       </td>
   <td class="duration">
-    14.402s
+    1.538s
   </td>
   <td class="result">
         
     
             <div class="testOutput">
                         Click to see Screenshot
-                                <a target="_blank" href=Sun_Nov_08_21_21_57_IST_2020.jpg>Screenshot</a>
+                                <a target="_blank" href=Tue_Nov_17_21_41_27_IST_2020.jpg>Screenshot</a>
                                 <br>
                                 <br>
-                                <a target="_blank" href=Sun_Nov_08_21_21_57_IST_2020.jpg><img src=Sun_Nov_08_21_21_57_IST_2020.jpg height=200 width=200></img></a>
+                                <a target="_blank" href=Tue_Nov_17_21_41_27_IST_2020.jpg><img src=Tue_Nov_17_21_41_27_IST_2020.jpg height=200 width=200></img></a>
                   </div>
     
 
@@ -531,20 +610,20 @@
 </tr>
 <tr>
   <td class="method">
-                  <span class="description" title="Verification of Comments textarea when comments section is Expanded and collapsed">MyQuotesComments_Collapse</span>
+                  <span class="description" title="Verify the Filter functionality of Expiration Date column">verifyFilterExpirationDate</span>
       </td>
   <td class="duration">
-    13.629s
+    2.789s
   </td>
   <td class="result">
         
     
             <div class="testOutput">
                         Click to see Screenshot
-                                <a target="_blank" href=Sun_Nov_08_21_38_45_IST_2020.jpg>Screenshot</a>
+                                <a target="_blank" href=Tue_Nov_17_21_41_40_IST_2020.jpg>Screenshot</a>
                                 <br>
                                 <br>
-                                <a target="_blank" href=Sun_Nov_08_21_38_45_IST_2020.jpg><img src=Sun_Nov_08_21_38_45_IST_2020.jpg height=200 width=200></img></a>
+                                <a target="_blank" href=Tue_Nov_17_21_41_40_IST_2020.jpg><img src=Tue_Nov_17_21_41_40_IST_2020.jpg height=200 width=200></img></a>
                   </div>
     
 
@@ -552,20 +631,20 @@
 </tr>
 <tr>
   <td class="method">
-                  <span class="description" title="Verification of contents on MyQuotes popup">MyQuotes_96421</span>
+                  <span class="description" title="Verify the Filter functionality of License key column">verifyFilterLicenseKey</span>
       </td>
   <td class="duration">
-    6.693s
+    1.559s
   </td>
   <td class="result">
         
     
             <div class="testOutput">
                         Click to see Screenshot
-                                <a target="_blank" href=Sun_Nov_08_21_19_38_IST_2020.jpg>Screenshot</a>
+                                <a target="_blank" href=Tue_Nov_17_21_41_22_IST_2020.jpg>Screenshot</a>
                                 <br>
                                 <br>
-                                <a target="_blank" href=Sun_Nov_08_21_19_38_IST_2020.jpg><img src=Sun_Nov_08_21_19_38_IST_2020.jpg height=200 width=200></img></a>
+                                <a target="_blank" href=Tue_Nov_17_21_41_22_IST_2020.jpg><img src=Tue_Nov_17_21_41_22_IST_2020.jpg height=200 width=200></img></a>
                   </div>
     
 
@@ -573,20 +652,20 @@
 </tr>
 <tr>
   <td class="method">
-                  <span class="description" title="Product Return Policies will be provided on the 'Quote Request Approval' page and will be presented to the customer as a pop-up for reading.">ReturnPolicy</span>
+                  <span class="description" title="Verify the Filter functionality of License Type column">verifyFilterLicenseType</span>
       </td>
   <td class="duration">
-    10.298s
+    2.679s
   </td>
   <td class="result">
         
     
             <div class="testOutput">
                         Click to see Screenshot
-                                <a target="_blank" href=Sun_Nov_08_21_16_34_IST_2020.jpg>Screenshot</a>
+                                <a target="_blank" href=Tue_Nov_17_21_41_30_IST_2020.jpg>Screenshot</a>
                                 <br>
                                 <br>
-                                <a target="_blank" href=Sun_Nov_08_21_16_34_IST_2020.jpg><img src=Sun_Nov_08_21_16_34_IST_2020.jpg height=200 width=200></img></a>
+                                <a target="_blank" href=Tue_Nov_17_21_41_30_IST_2020.jpg><img src=Tue_Nov_17_21_41_30_IST_2020.jpg height=200 width=200></img></a>
                   </div>
     
 
@@ -594,20 +673,20 @@
 </tr>
 <tr>
   <td class="method">
-                  <span class="description" title="Verification of values present in Sort dropdown">SortBydd</span>
+                  <span class="description" title="Verify the Filter functionality of License Type column when Site is selected as license type">verifyFilterLicenseTypeSite</span>
       </td>
   <td class="duration">
-    9.205s
+    2.831s
   </td>
   <td class="result">
         
     
             <div class="testOutput">
                         Click to see Screenshot
-                                <a target="_blank" href=Sun_Nov_08_21_21_42_IST_2020.jpg>Screenshot</a>
+                                <a target="_blank" href=Tue_Nov_17_21_41_33_IST_2020.jpg>Screenshot</a>
                                 <br>
                                 <br>
-                                <a target="_blank" href=Sun_Nov_08_21_21_42_IST_2020.jpg><img src=Sun_Nov_08_21_21_42_IST_2020.jpg height=200 width=200></img></a>
+                                <a target="_blank" href=Tue_Nov_17_21_41_33_IST_2020.jpg><img src=Tue_Nov_17_21_41_33_IST_2020.jpg height=200 width=200></img></a>
                   </div>
     
 
@@ -615,20 +694,20 @@
 </tr>
 <tr>
   <td class="method">
-                  <span class="description" title="Submitting a Quote with Expired Status">SubmitQuotewithExpiredstatus</span>
+                  <span class="description" title="Verify the Filter functionality of Purchase Date column">verifyFilterPurchaseDate</span>
       </td>
   <td class="duration">
-    10.484s
+    2.802s
   </td>
   <td class="result">
         
     
             <div class="testOutput">
                         Click to see Screenshot
-                                <a target="_blank" href=Sun_Nov_08_21_24_44_IST_2020.jpg>Screenshot</a>
+                                <a target="_blank" href=Tue_Nov_17_21_41_37_IST_2020.jpg>Screenshot</a>
                                 <br>
                                 <br>
-                                <a target="_blank" href=Sun_Nov_08_21_24_44_IST_2020.jpg><img src=Sun_Nov_08_21_24_44_IST_2020.jpg height=200 width=200></img></a>
+                                <a target="_blank" href=Tue_Nov_17_21_41_37_IST_2020.jpg><img src=Tue_Nov_17_21_41_37_IST_2020.jpg height=200 width=200></img></a>
                   </div>
     
 
@@ -636,20 +715,20 @@
 </tr>
 <tr>
   <td class="method">
-                  <span class="description" title="Submitting a Quote with a file with not supported format">SubmitQuotewithInvalidFileType</span>
+                  <span class="description" title="Verify the Filter functionality of Status column">verifyFilterStatus</span>
       </td>
   <td class="duration">
-    25.711s
+    2.644s
   </td>
   <td class="result">
         
     
             <div class="testOutput">
                         Click to see Screenshot
-                                <a target="_blank" href=Sun_Nov_08_21_23_32_IST_2020.jpg>Screenshot</a>
+                                <a target="_blank" href=Tue_Nov_17_21_41_25_IST_2020.jpg>Screenshot</a>
                                 <br>
                                 <br>
-                                <a target="_blank" href=Sun_Nov_08_21_23_32_IST_2020.jpg><img src=Sun_Nov_08_21_23_32_IST_2020.jpg height=200 width=200></img></a>
+                                <a target="_blank" href=Tue_Nov_17_21_41_25_IST_2020.jpg><img src=Tue_Nov_17_21_41_25_IST_2020.jpg height=200 width=200></img></a>
                   </div>
     
 
@@ -657,20 +736,20 @@
 </tr>
 <tr>
   <td class="method">
-                  <span class="description" title="Submitting a Quote with a file more than 20mb">SubmitQuotewithMoreThan20mbFile</span>
+                  <span class="description" title="Verify click on Knowledge Base card for Licensed User">verifyKBClickLicensedUser</span>
       </td>
   <td class="duration">
-    28.250s
+    24.452s
   </td>
   <td class="result">
         
     
             <div class="testOutput">
                         Click to see Screenshot
-                                <a target="_blank" href=Sun_Nov_08_21_23_06_IST_2020.jpg>Screenshot</a>
+                                <a target="_blank" href=Tue_Nov_17_21_39_30_IST_2020.jpg>Screenshot</a>
                                 <br>
                                 <br>
-                                <a target="_blank" href=Sun_Nov_08_21_23_06_IST_2020.jpg><img src=Sun_Nov_08_21_23_06_IST_2020.jpg height=200 width=200></img></a>
+                                <a target="_blank" href=Tue_Nov_17_21_39_30_IST_2020.jpg><img src=Tue_Nov_17_21_39_30_IST_2020.jpg height=200 width=200></img></a>
                   </div>
     
 
@@ -678,20 +757,20 @@
 </tr>
 <tr>
   <td class="method">
-                  <span class="description" title="Submitting a Quote with Order Requested Status">SubmitQuotewithOrderRequestedstatus</span>
+                  <span class="description" title="Verify click on Training Videos link on Knowledge Base card for Licensed User">verifyKBTrainingVideosClickLicensedUser</span>
       </td>
   <td class="duration">
-    12.547s
+    15.626s
   </td>
   <td class="result">
         
     
             <div class="testOutput">
                         Click to see Screenshot
-                                <a target="_blank" href=Sun_Nov_08_21_24_33_IST_2020.jpg>Screenshot</a>
+                                <a target="_blank" href=Tue_Nov_17_21_39_46_IST_2020.jpg>Screenshot</a>
                                 <br>
                                 <br>
-                                <a target="_blank" href=Sun_Nov_08_21_24_33_IST_2020.jpg><img src=Sun_Nov_08_21_24_33_IST_2020.jpg height=200 width=200></img></a>
+                                <a target="_blank" href=Tue_Nov_17_21_39_46_IST_2020.jpg><img src=Tue_Nov_17_21_39_46_IST_2020.jpg height=200 width=200></img></a>
                   </div>
     
 
@@ -699,20 +778,20 @@
 </tr>
 <tr>
   <td class="method">
-                  <span class="description" title="Submitting a Quote with Ordered Status">SubmitQuotewithOrderedstatus</span>
+                  <span class="description" title="Verify click on Wiki Page on Knowledge Base card for Licensed User">verifyKBWikiPageClickLicensedUser</span>
       </td>
   <td class="duration">
-    9.811s
+    28.813s
   </td>
   <td class="result">
         
     
             <div class="testOutput">
                         Click to see Screenshot
-                                <a target="_blank" href=Sun_Nov_08_21_22_18_IST_2020.jpg>Screenshot</a>
+                                <a target="_blank" href=Tue_Nov_17_21_40_16_IST_2020.jpg>Screenshot</a>
                                 <br>
                                 <br>
-                                <a target="_blank" href=Sun_Nov_08_21_22_18_IST_2020.jpg><img src=Sun_Nov_08_21_22_18_IST_2020.jpg height=200 width=200></img></a>
+                                <a target="_blank" href=Tue_Nov_17_21_40_16_IST_2020.jpg><img src=Tue_Nov_17_21_40_16_IST_2020.jpg height=200 width=200></img></a>
                   </div>
     
 
@@ -720,20 +799,20 @@
 </tr>
 <tr>
   <td class="method">
-                  <span class="description" title="Submitting a Quote with Quote Canceled Status">SubmitQuotewithQuoteCancelledstatus</span>
+                  <span class="description" title="verify that only Renew Button is Enabled On multiple record selection">verifyOnlyRenewBtnIsEnabledOnMultipleRecordSelection</span>
       </td>
   <td class="duration">
-    13.556s
+    6.507s
   </td>
   <td class="result">
         
     
             <div class="testOutput">
                         Click to see Screenshot
-                                <a target="_blank" href=Sun_Nov_08_21_23_46_IST_2020.jpg>Screenshot</a>
+                                <a target="_blank" href=Tue_Nov_17_21_41_16_IST_2020.jpg>Screenshot</a>
                                 <br>
                                 <br>
-                                <a target="_blank" href=Sun_Nov_08_21_23_46_IST_2020.jpg><img src=Sun_Nov_08_21_23_46_IST_2020.jpg height=200 width=200></img></a>
+                                <a target="_blank" href=Tue_Nov_17_21_41_16_IST_2020.jpg><img src=Tue_Nov_17_21_41_16_IST_2020.jpg height=200 width=200></img></a>
                   </div>
     
 
@@ -741,20 +820,20 @@
 </tr>
 <tr>
   <td class="method">
-                  <span class="description" title="Submitting a Quote with Quote Pending Status">SubmitQuotewithQuotePendingstatus</span>
+                  <span class="description" title="Verify presence of Announcements card on OcalcPro page for Licensed User">verifyPresenceOfAnnouncementsCardLicensedUser</span>
       </td>
   <td class="duration">
-    18.817s
+    0.054s
   </td>
   <td class="result">
         
     
             <div class="testOutput">
                         Click to see Screenshot
-                                <a target="_blank" href=Sun_Nov_08_21_22_37_IST_2020.jpg>Screenshot</a>
+                                <a target="_blank" href=Tue_Nov_17_21_31_14_IST_2020.jpg>Screenshot</a>
                                 <br>
                                 <br>
-                                <a target="_blank" href=Sun_Nov_08_21_22_37_IST_2020.jpg><img src=Sun_Nov_08_21_22_37_IST_2020.jpg height=200 width=200></img></a>
+                                <a target="_blank" href=Tue_Nov_17_21_31_14_IST_2020.jpg><img src=Tue_Nov_17_21_31_14_IST_2020.jpg height=200 width=200></img></a>
                   </div>
     
 
@@ -762,20 +841,20 @@
 </tr>
 <tr>
   <td class="method">
-                  <span class="description" title="Submitting a Quote with Quoted Status">SubmitQuotewithQuotedstatus</span>
+                  <span class="description" title="Verify presence of CC Receipt on My Quotes Screen">verifyPresenceOfCCReceipt</span>
       </td>
   <td class="duration">
-    33.095s
+    116.304s
   </td>
   <td class="result">
         
     
             <div class="testOutput">
                         Click to see Screenshot
-                                <a target="_blank" href=Sun_Nov_08_21_24_20_IST_2020.jpg>Screenshot</a>
+                                <a target="_blank" href=Tue_Nov_17_21_38_08_IST_2020.jpg>Screenshot</a>
                                 <br>
                                 <br>
-                                <a target="_blank" href=Sun_Nov_08_21_24_20_IST_2020.jpg><img src=Sun_Nov_08_21_24_20_IST_2020.jpg height=200 width=200></img></a>
+                                <a target="_blank" href=Tue_Nov_17_21_38_08_IST_2020.jpg><img src=Tue_Nov_17_21_38_08_IST_2020.jpg height=200 width=200></img></a>
                   </div>
     
 
@@ -783,20 +862,20 @@
 </tr>
 <tr>
   <td class="method">
-                  <span class="description" title="Submitting a Quote without attachment">SubmitQuotewithoutFile</span>
+                  <span class="description" title="Verify presence of Credit Card details">verifyPresenceOfCreditCardOptions</span>
       </td>
   <td class="duration">
-    20.614s
+    75.347s
   </td>
   <td class="result">
         
     
             <div class="testOutput">
                         Click to see Screenshot
-                                <a target="_blank" href=Sun_Nov_08_21_37_38_IST_2020.jpg>Screenshot</a>
+                                <a target="_blank" href=Tue_Nov_17_21_33_34_IST_2020.jpg>Screenshot</a>
                                 <br>
                                 <br>
-                                <a target="_blank" href=Sun_Nov_08_21_37_38_IST_2020.jpg><img src=Sun_Nov_08_21_37_38_IST_2020.jpg height=200 width=200></img></a>
+                                <a target="_blank" href=Tue_Nov_17_21_33_34_IST_2020.jpg><img src=Tue_Nov_17_21_33_34_IST_2020.jpg height=200 width=200></img></a>
                   </div>
     
 
@@ -804,20 +883,20 @@
 </tr>
 <tr>
   <td class="method">
-                  <span class="description" title="Create Quote by adding product in the cart by updating attachment and filling all the details">UpdateChangeProductAddToShoppingCart</span>
+                  <span class="description" title="Verify presence of Knowledge Base card on OcalcPro page for Licensed User">verifyPresenceOfKnowledgeBaseCardLicensedUser</span>
       </td>
   <td class="duration">
-    15.891s
+    0.043s
   </td>
   <td class="result">
         
     
             <div class="testOutput">
                         Click to see Screenshot
-                                <a target="_blank" href=Sun_Nov_08_21_38_22_IST_2020.jpg>Screenshot</a>
+                                <a target="_blank" href=Tue_Nov_17_21_31_13_IST_2020.jpg>Screenshot</a>
                                 <br>
                                 <br>
-                                <a target="_blank" href=Sun_Nov_08_21_38_22_IST_2020.jpg><img src=Sun_Nov_08_21_38_22_IST_2020.jpg height=200 width=200></img></a>
+                                <a target="_blank" href=Tue_Nov_17_21_31_13_IST_2020.jpg><img src=Tue_Nov_17_21_31_13_IST_2020.jpg height=200 width=200></img></a>
                   </div>
     
 
@@ -825,20 +904,20 @@
 </tr>
 <tr>
   <td class="method">
-                  <span class="description" title="Decrease product quantity from the cart">UpdateDecreaseQuanityinShoppingCart</span>
+                  <span class="description" title="Verify presence of License Management card on OcalcPro page for Licensed User">verifyPresenceOfLicenseMgmtCard</span>
       </td>
   <td class="duration">
-    28.403s
+    0.047s
   </td>
   <td class="result">
         
     
             <div class="testOutput">
                         Click to see Screenshot
-                                <a target="_blank" href=Sun_Nov_08_21_18_08_IST_2020.jpg>Screenshot</a>
+                                <a target="_blank" href=Tue_Nov_17_21_31_12_IST_2020.jpg>Screenshot</a>
                                 <br>
                                 <br>
-                                <a target="_blank" href=Sun_Nov_08_21_18_08_IST_2020.jpg><img src=Sun_Nov_08_21_18_08_IST_2020.jpg height=200 width=200></img></a>
+                                <a target="_blank" href=Tue_Nov_17_21_31_12_IST_2020.jpg><img src=Tue_Nov_17_21_31_12_IST_2020.jpg height=200 width=200></img></a>
                   </div>
     
 
@@ -846,20 +925,20 @@
 </tr>
 <tr>
   <td class="method">
-                  <span class="description" title="Increase product quantity from the cart">UpdateIncreaseQuanityinShoppingCart</span>
+                  <span class="description" title="Verify presence of Products card on OcalcPro page for Licensed User">verifyPresenceOfProductsCardLicensedUser</span>
       </td>
   <td class="duration">
-    12.534s
+    0.034s
   </td>
   <td class="result">
         
     
             <div class="testOutput">
                         Click to see Screenshot
-                                <a target="_blank" href=Sun_Nov_08_21_17_39_IST_2020.jpg>Screenshot</a>
+                                <a target="_blank" href=Tue_Nov_17_21_31_13_IST_2020.jpg>Screenshot</a>
                                 <br>
                                 <br>
-                                <a target="_blank" href=Sun_Nov_08_21_17_39_IST_2020.jpg><img src=Sun_Nov_08_21_17_39_IST_2020.jpg height=200 width=200></img></a>
+                                <a target="_blank" href=Tue_Nov_17_21_31_13_IST_2020.jpg><img src=Tue_Nov_17_21_31_13_IST_2020.jpg height=200 width=200></img></a>
                   </div>
     
 
@@ -867,20 +946,20 @@
 </tr>
 <tr>
   <td class="method">
-                  <span class="description" title="User is able to add same product multiple times in cart by clicking on contiune button">VerifyAddShopping_Sameitem</span>
+                  <span class="description" title="Verify the presence of SkipTour, Next, Previous, ExitTour buttons">verifyPresenceOfSkipTourNextPreviousExitTour</span>
       </td>
   <td class="duration">
-    9.707s
+    4.153s
   </td>
   <td class="result">
         
     
             <div class="testOutput">
                         Click to see Screenshot
-                                <a target="_blank" href=Sun_Nov_08_21_17_19_IST_2020.jpg>Screenshot</a>
+                                <a target="_blank" href=Tue_Nov_17_21_41_02_IST_2020.jpg>Screenshot</a>
                                 <br>
                                 <br>
-                                <a target="_blank" href=Sun_Nov_08_21_17_19_IST_2020.jpg><img src=Sun_Nov_08_21_17_19_IST_2020.jpg height=200 width=200></img></a>
+                                <a target="_blank" href=Tue_Nov_17_21_41_02_IST_2020.jpg><img src=Tue_Nov_17_21_41_02_IST_2020.jpg height=200 width=200></img></a>
                   </div>
     
 
@@ -888,20 +967,20 @@
 </tr>
 <tr>
   <td class="method">
-                  <span class="description" title="Add Related products to shopping Cart">VerifyAddingRelatedProductsToShoppingCart</span>
+                  <span class="description" title="Verify presence of Training Options card on OcalcPro page for Licensed User">verifyPresenceOfTrainingOptionsCardLicensedUser</span>
       </td>
   <td class="duration">
-    17.802s
+    0.037s
   </td>
   <td class="result">
         
     
             <div class="testOutput">
                         Click to see Screenshot
-                                <a target="_blank" href=Sun_Nov_08_21_37_56_IST_2020.jpg>Screenshot</a>
+                                <a target="_blank" href=Tue_Nov_17_21_31_14_IST_2020.jpg>Screenshot</a>
                                 <br>
                                 <br>
-                                <a target="_blank" href=Sun_Nov_08_21_37_56_IST_2020.jpg><img src=Sun_Nov_08_21_37_56_IST_2020.jpg height=200 width=200></img></a>
+                                <a target="_blank" href=Tue_Nov_17_21_31_14_IST_2020.jpg><img src=Tue_Nov_17_21_31_14_IST_2020.jpg height=200 width=200></img></a>
                   </div>
     
 
@@ -909,20 +988,20 @@
 </tr>
 <tr>
   <td class="method">
-                  <span class="description" title="Verification of disabled Approve button">VerifyApprovebtndisabled</span>
+                  <span class="description" title="Verify presence of Tutorial, Live Demo & support card on OcalcPro page for Licensed User">verifyPresenceOfTutorialLiveDemoCardLicensedUser</span>
       </td>
   <td class="duration">
-    121.023s
+    0.050s
   </td>
   <td class="result">
         
     
             <div class="testOutput">
                         Click to see Screenshot
-                                <a target="_blank" href=Sun_Nov_08_21_30_06_IST_2020.jpg>Screenshot</a>
+                                <a target="_blank" href=Tue_Nov_17_21_31_15_IST_2020.jpg>Screenshot</a>
                                 <br>
                                 <br>
-                                <a target="_blank" href=Sun_Nov_08_21_30_06_IST_2020.jpg><img src=Sun_Nov_08_21_30_06_IST_2020.jpg height=200 width=200></img></a>
+                                <a target="_blank" href=Tue_Nov_17_21_31_15_IST_2020.jpg><img src=Tue_Nov_17_21_31_15_IST_2020.jpg height=200 width=200></img></a>
                   </div>
     
 
@@ -930,20 +1009,20 @@
 </tr>
 <tr>
   <td class="method">
-                  <span class="description" title="On the Product Group Details Page, the user will be provided with the “ADD”  button  with a quantity selector.">VerifyCrossicononhoppingCart</span>
+                  <span class="description" title="Verify click on Products card for Licensed User">verifyProductsClickLicensedUser</span>
       </td>
   <td class="duration">
-    1.154s
+    2.191s
   </td>
   <td class="result">
         
     
             <div class="testOutput">
                         Click to see Screenshot
-                                <a target="_blank" href=Sun_Nov_08_21_16_59_IST_2020.jpg>Screenshot</a>
+                                <a target="_blank" href=Tue_Nov_17_21_31_21_IST_2020.jpg>Screenshot</a>
                                 <br>
                                 <br>
-                                <a target="_blank" href=Sun_Nov_08_21_16_59_IST_2020.jpg><img src=Sun_Nov_08_21_16_59_IST_2020.jpg height=200 width=200></img></a>
+                                <a target="_blank" href=Tue_Nov_17_21_31_21_IST_2020.jpg><img src=Tue_Nov_17_21_31_21_IST_2020.jpg height=200 width=200></img></a>
                   </div>
     
 
@@ -951,20 +1030,20 @@
 </tr>
 <tr>
   <td class="method">
-                  <span class="description" title="User is able to add different product multiple times in cart by clicking on contiune button">VerifyCrossicononhoppingCart_Differentitem</span>
+                  <span class="description" title="Verify click on Request CVT Quote on Products card and submit quote for Licensed User">verifyRequestCVTQuoteClickLicensedUser</span>
       </td>
   <td class="duration">
-    9.827s
+    9.325s
   </td>
   <td class="result">
         
     
             <div class="testOutput">
                         Click to see Screenshot
-                                <a target="_blank" href=Sun_Nov_08_21_17_09_IST_2020.jpg>Screenshot</a>
+                                <a target="_blank" href=Tue_Nov_17_21_31_40_IST_2020.jpg>Screenshot</a>
                                 <br>
                                 <br>
-                                <a target="_blank" href=Sun_Nov_08_21_17_09_IST_2020.jpg><img src=Sun_Nov_08_21_17_09_IST_2020.jpg height=200 width=200></img></a>
+                                <a target="_blank" href=Tue_Nov_17_21_31_40_IST_2020.jpg><img src=Tue_Nov_17_21_31_40_IST_2020.jpg height=200 width=200></img></a>
                   </div>
     
 
@@ -972,20 +1051,20 @@
 </tr>
 <tr>
   <td class="method">
-                  <span class="description" title="Verify that a Featured product can be clicked">VerifyFPImageClick</span>
+                  <span class="description" title="Verify click on Request License Quote on Products card and submit quote for Licensed User">verifyRequestLicenseQuoteClickLicensedUser</span>
       </td>
   <td class="duration">
-    51.603s
+    8.919s
   </td>
   <td class="result">
         
     
             <div class="testOutput">
                         Click to see Screenshot
-                                <a target="_blank" href=Sun_Nov_08_21_13_54_IST_2020.jpg>Screenshot</a>
+                                <a target="_blank" href=Tue_Nov_17_21_31_31_IST_2020.jpg>Screenshot</a>
                                 <br>
                                 <br>
-                                <a target="_blank" href=Sun_Nov_08_21_13_54_IST_2020.jpg><img src=Sun_Nov_08_21_13_54_IST_2020.jpg height=200 width=200></img></a>
+                                <a target="_blank" href=Tue_Nov_17_21_31_31_IST_2020.jpg><img src=Tue_Nov_17_21_31_31_IST_2020.jpg height=200 width=200></img></a>
                   </div>
     
 
@@ -993,20 +1072,20 @@
 </tr>
 <tr>
   <td class="method">
-                  <span class="description" title="Verification of the contents on Products Page">VerifyProductclick</span>
+                  <span class="description" title="Verify click on Request Quote for Private Training classes on Training Options for Licensed User">verifyRequestQuoteForPrivateTrainingClassesClickLicensedUser</span>
       </td>
   <td class="duration">
-    14.699s
+    11.334s
   </td>
   <td class="result">
         
     
             <div class="testOutput">
                         Click to see Screenshot
-                                <a target="_blank" href=Sun_Nov_08_21_14_22_IST_2020.jpg>Screenshot</a>
+                                <a target="_blank" href=Tue_Nov_17_21_38_38_IST_2020.jpg>Screenshot</a>
                                 <br>
                                 <br>
-                                <a target="_blank" href=Sun_Nov_08_21_14_22_IST_2020.jpg><img src=Sun_Nov_08_21_14_22_IST_2020.jpg height=200 width=200></img></a>
+                                <a target="_blank" href=Tue_Nov_17_21_38_38_IST_2020.jpg><img src=Tue_Nov_17_21_38_38_IST_2020.jpg height=200 width=200></img></a>
                   </div>
     
 
@@ -1014,20 +1093,20 @@
 </tr>
 <tr>
   <td class="method">
-                  <span class="description" title="ShoppingCart Add button verification">VerifyShoppingAddbtndisabled</span>
+                  <span class="description" title="Verify click on Request Training Quote on Products card and submit quote for Licensed User">verifyRequestTrainingQuoteClickLicensedUser</span>
       </td>
   <td class="duration">
-    4.778s
+    8.202s
   </td>
   <td class="result">
         
     
             <div class="testOutput">
                         Click to see Screenshot
-                                <a target="_blank" href=Sun_Nov_08_21_35_40_IST_2020.jpg>Screenshot</a>
+                                <a target="_blank" href=Tue_Nov_17_21_31_49_IST_2020.jpg>Screenshot</a>
                                 <br>
                                 <br>
-                                <a target="_blank" href=Sun_Nov_08_21_35_40_IST_2020.jpg><img src=Sun_Nov_08_21_35_40_IST_2020.jpg height=200 width=200></img></a>
+                                <a target="_blank" href=Tue_Nov_17_21_31_49_IST_2020.jpg><img src=Tue_Nov_17_21_31_49_IST_2020.jpg height=200 width=200></img></a>
                   </div>
     
 
@@ -1035,20 +1114,20 @@
 </tr>
 <tr>
   <td class="method">
-                  <span class="description" title="ShoppingCart Add button disabled even if the qty is clear">VerifyShoppingCarrtAddbtnDisabledclearqty</span>
+                  <span class="description" title="Verify click on Request Demo button for Licensed User">verifyRequstDemoClickLicensedUser</span>
       </td>
   <td class="duration">
-    5.941s
+    4.524s
   </td>
   <td class="result">
         
     
             <div class="testOutput">
                         Click to see Screenshot
-                                <a target="_blank" href=Sun_Nov_08_21_35_46_IST_2020.jpg>Screenshot</a>
+                                <a target="_blank" href=Tue_Nov_17_21_32_00_IST_2020.jpg>Screenshot</a>
                                 <br>
                                 <br>
-                                <a target="_blank" href=Sun_Nov_08_21_35_46_IST_2020.jpg><img src=Sun_Nov_08_21_35_46_IST_2020.jpg height=200 width=200></img></a>
+                                <a target="_blank" href=Tue_Nov_17_21_32_00_IST_2020.jpg><img src=Tue_Nov_17_21_32_00_IST_2020.jpg height=200 width=200></img></a>
                   </div>
     
 
@@ -1056,20 +1135,20 @@
 </tr>
 <tr>
   <td class="method">
-                  <span class="description" title="ShoppingCart Add button disabled even if the qty is out of the fiels limits">VerifyShoppingCarrtMinMaxqty</span>
+                  <span class="description" title="Verify that Search results section will be organized into separate grouped based on the popular query selected for licensed user">verifySearchResultsAreGroupedLicensedUser</span>
       </td>
   <td class="duration">
-    11.907s
+    19.754s
   </td>
   <td class="result">
         
     
             <div class="testOutput">
                         Click to see Screenshot
-                                <a target="_blank" href=Sun_Nov_08_21_36_15_IST_2020.jpg>Screenshot</a>
+                                <a target="_blank" href=Tue_Nov_17_21_40_36_IST_2020.jpg>Screenshot</a>
                                 <br>
                                 <br>
-                                <a target="_blank" href=Sun_Nov_08_21_36_15_IST_2020.jpg><img src=Sun_Nov_08_21_36_15_IST_2020.jpg height=200 width=200></img></a>
+                                <a target="_blank" href=Tue_Nov_17_21_40_36_IST_2020.jpg><img src=Tue_Nov_17_21_40_36_IST_2020.jpg height=200 width=200></img></a>
                   </div>
     
 
@@ -1077,20 +1156,20 @@
 </tr>
 <tr>
   <td class="method">
-                  <span class="description" title="Verify the tooltip displayed for Size dropdown">VerifyTooltipForSizeDropDown</span>
+                  <span class="description" title="Verify clicking on Submit Issue / Feature Request for Licensed User">verifySubmitIssueClickLicensedUser</span>
       </td>
   <td class="duration">
-    9.393s
+    0.360s
   </td>
   <td class="result">
         
     
             <div class="testOutput">
                         Click to see Screenshot
-                                <a target="_blank" href=Sun_Nov_08_21_38_06_IST_2020.jpg>Screenshot</a>
+                                <a target="_blank" href=Tue_Nov_17_21_39_05_IST_2020.jpg>Screenshot</a>
                                 <br>
                                 <br>
-                                <a target="_blank" href=Sun_Nov_08_21_38_06_IST_2020.jpg><img src=Sun_Nov_08_21_38_06_IST_2020.jpg height=200 width=200></img></a>
+                                <a target="_blank" href=Tue_Nov_17_21_39_05_IST_2020.jpg><img src=Tue_Nov_17_21_39_05_IST_2020.jpg height=200 width=200></img></a>
                   </div>
     
 
@@ -1098,20 +1177,20 @@
 </tr>
 <tr>
   <td class="method">
-                  <span class="description" title="Verification of contents on Approve<<QuoteId>> screen">VerifyUIonApprove</span>
+                  <span class="description" title="Verify that Search results section will be organized into separate grouped based on the popular query selected for licensed user">verifyTrainingVideosAreGroupedLicensedUser</span>
       </td>
   <td class="duration">
-    113.913s
+    15.532s
   </td>
   <td class="result">
         
     
             <div class="testOutput">
                         Click to see Screenshot
-                                <a target="_blank" href=Sun_Nov_08_21_28_05_IST_2020.jpg>Screenshot</a>
+                                <a target="_blank" href=Tue_Nov_17_21_40_52_IST_2020.jpg>Screenshot</a>
                                 <br>
                                 <br>
-                                <a target="_blank" href=Sun_Nov_08_21_28_05_IST_2020.jpg><img src=Sun_Nov_08_21_28_05_IST_2020.jpg height=200 width=200></img></a>
+                                <a target="_blank" href=Tue_Nov_17_21_40_52_IST_2020.jpg><img src=Tue_Nov_17_21_40_52_IST_2020.jpg height=200 width=200></img></a>
                   </div>
     
 
@@ -1119,20 +1198,20 @@
 </tr>
 <tr>
   <td class="method">
-                  <span class="description" title="Verification of contents on a particular Quote">VerifyUIonClickQuoteID</span>
+                  <span class="description" title="Verify transfer button pop up UI">verifyTransferBtn</span>
       </td>
   <td class="duration">
-    4.922s
+    13.552s
   </td>
   <td class="result">
         
     
             <div class="testOutput">
                         Click to see Screenshot
-                                <a target="_blank" href=Sun_Nov_08_21_22_08_IST_2020.jpg>Screenshot</a>
+                                <a target="_blank" href=Tue_Nov_17_21_41_54_IST_2020.jpg>Screenshot</a>
                                 <br>
                                 <br>
-                                <a target="_blank" href=Sun_Nov_08_21_22_08_IST_2020.jpg><img src=Sun_Nov_08_21_22_08_IST_2020.jpg height=200 width=200></img></a>
+                                <a target="_blank" href=Tue_Nov_17_21_41_54_IST_2020.jpg><img src=Tue_Nov_17_21_41_54_IST_2020.jpg height=200 width=200></img></a>
                   </div>
     
 
@@ -1140,20 +1219,20 @@
 </tr>
 <tr>
   <td class="method">
-                  <span class="description" title="Verification of the presence of Admin button">adminElementPresent</span>
+                  <span class="description" title="Verify that error message is displayed on clicking on Transfer License without filling the details">verifyTransferErrorMsg</span>
       </td>
   <td class="duration">
-    0.088s
+    0.185s
   </td>
   <td class="result">
         
     
             <div class="testOutput">
                         Click to see Screenshot
-                                <a target="_blank" href=Sun_Nov_08_21_12_10_IST_2020.jpg>Screenshot</a>
+                                <a target="_blank" href=Tue_Nov_17_21_41_54_IST_2020.jpg>Screenshot</a>
                                 <br>
                                 <br>
-                                <a target="_blank" href=Sun_Nov_08_21_12_10_IST_2020.jpg><img src=Sun_Nov_08_21_12_10_IST_2020.jpg height=200 width=200></img></a>
+                                <a target="_blank" href=Tue_Nov_17_21_41_54_IST_2020.jpg><img src=Tue_Nov_17_21_41_54_IST_2020.jpg height=200 width=200></img></a>
                   </div>
     
 
@@ -1161,20 +1240,20 @@
 </tr>
 <tr>
   <td class="method">
-                  <span class="description" title="Verification of the presence of all six products">allSixProductPresent</span>
+                  <span class="description" title="Verify Update Contact button pop up UI">verifyUpdateContactBtn</span>
       </td>
   <td class="duration">
-    0.048s
+    12.461s
   </td>
   <td class="result">
         
     
             <div class="testOutput">
                         Click to see Screenshot
-                                <a target="_blank" href=Sun_Nov_08_21_12_11_IST_2020.jpg>Screenshot</a>
+                                <a target="_blank" href=Tue_Nov_17_21_42_15_IST_2020.jpg>Screenshot</a>
                                 <br>
                                 <br>
-                                <a target="_blank" href=Sun_Nov_08_21_12_11_IST_2020.jpg><img src=Sun_Nov_08_21_12_11_IST_2020.jpg height=200 width=200></img></a>
+                                <a target="_blank" href=Tue_Nov_17_21_42_15_IST_2020.jpg><img src=Tue_Nov_17_21_42_15_IST_2020.jpg height=200 width=200></img></a>
                   </div>
     
 
@@ -1182,20 +1261,20 @@
 </tr>
 <tr>
   <td class="method">
-                  <span class="description" title="Verification of the presence of Catalog Element">catalogElementPresent</span>
+                  <span class="description" title="Verify the click on oCalcPro menu and card Navigation">verifyoCalcProNavigationClick</span>
       </td>
   <td class="duration">
-    0.040s
+    16.881s
   </td>
   <td class="result">
         
     
             <div class="testOutput">
                         Click to see Screenshot
-                                <a target="_blank" href=Sun_Nov_08_21_12_08_IST_2020.jpg>Screenshot</a>
+                                <a target="_blank" href=Tue_Nov_17_21_31_12_IST_2020.jpg>Screenshot</a>
                                 <br>
                                 <br>
-                                <a target="_blank" href=Sun_Nov_08_21_12_08_IST_2020.jpg><img src=Sun_Nov_08_21_12_08_IST_2020.jpg height=200 width=200></img></a>
+                                <a target="_blank" href=Tue_Nov_17_21_31_12_IST_2020.jpg><img src=Tue_Nov_17_21_31_12_IST_2020.jpg height=200 width=200></img></a>
                   </div>
     
 
@@ -1203,614 +1282,20 @@
 </tr>
 <tr>
   <td class="method">
-                  <span class="description" title="Verification of the presence of My Quotes button">openMyQuotesElementPresent</span>
+                  <span class="description" title="Verify click on Contact O-calc Support for Licensed User">verifyocalcSupportClickLicensedUser</span>
       </td>
   <td class="duration">
-    0.040s
+    2.259s
   </td>
   <td class="result">
         
     
             <div class="testOutput">
                         Click to see Screenshot
-                                <a target="_blank" href=Sun_Nov_08_21_12_08_IST_2020.jpg>Screenshot</a>
+                                <a target="_blank" href=Tue_Nov_17_21_32_03_IST_2020.jpg>Screenshot</a>
                                 <br>
                                 <br>
-                                <a target="_blank" href=Sun_Nov_08_21_12_08_IST_2020.jpg><img src=Sun_Nov_08_21_12_08_IST_2020.jpg height=200 width=200></img></a>
-                  </div>
-    
-
-      </td>
-</tr>
-<tr>
-  <td class="method">
-                  <span class="description" title="Verification of the presence of Search field">searchElementPresent</span>
-      </td>
-  <td class="duration">
-    50.150s
-  </td>
-  <td class="result">
-        
-    
-            <div class="testOutput">
-                        Click to see Screenshot
-                                <a target="_blank" href=Sun_Nov_08_21_12_07_IST_2020.jpg>Screenshot</a>
-                                <br>
-                                <br>
-                                <a target="_blank" href=Sun_Nov_08_21_12_07_IST_2020.jpg><img src=Sun_Nov_08_21_12_07_IST_2020.jpg height=200 width=200></img></a>
-                  </div>
-    
-
-      </td>
-</tr>
-<tr>
-  <td class="method">
-                  <span class="description" title="Verification of the presence of Shopping Cart Icon">shoppingCartElementPresent</span>
-      </td>
-  <td class="duration">
-    0.095s
-  </td>
-  <td class="result">
-        
-    
-            <div class="testOutput">
-                        Click to see Screenshot
-                                <a target="_blank" href=Sun_Nov_08_21_12_09_IST_2020.jpg>Screenshot</a>
-                                <br>
-                                <br>
-                                <a target="_blank" href=Sun_Nov_08_21_12_09_IST_2020.jpg><img src=Sun_Nov_08_21_12_09_IST_2020.jpg height=200 width=200></img></a>
-                  </div>
-    
-
-      </td>
-</tr>
-<tr>
-  <td class="method">
-                  <span class="description" title="Verification of the presence of Slider items">sliderItemPresent</span>
-      </td>
-  <td class="duration">
-    0.119s
-  </td>
-  <td class="result">
-        
-    
-            <div class="testOutput">
-                        Click to see Screenshot
-                                <a target="_blank" href=Sun_Nov_08_21_12_12_IST_2020.jpg>Screenshot</a>
-                                <br>
-                                <br>
-                                <a target="_blank" href=Sun_Nov_08_21_12_12_IST_2020.jpg><img src=Sun_Nov_08_21_12_12_IST_2020.jpg height=200 width=200></img></a>
-                  </div>
-    
-
-      </td>
-</tr>
-<tr>
-  <td class="method">
-                  <span class="description" title="On the Product Group Details Page, verify the text present">verifyAddShoppingCarttext</span>
-      </td>
-  <td class="duration">
-    18.454s
-  </td>
-  <td class="result">
-        
-    
-            <div class="testOutput">
-                        Click to see Screenshot
-                                <a target="_blank" href=Sun_Nov_08_21_16_52_IST_2020.jpg>Screenshot</a>
-                                <br>
-                                <br>
-                                <a target="_blank" href=Sun_Nov_08_21_16_52_IST_2020.jpg><img src=Sun_Nov_08_21_16_52_IST_2020.jpg height=200 width=200></img></a>
-                  </div>
-    
-
-      </td>
-</tr>
-<tr>
-  <td class="method">
-                  <span class="description" title="Verification of Add to Cart on the quote screen">verifyAddToCartWhileReQuoting</span>
-      </td>
-  <td class="duration">
-    73.553s
-  </td>
-  <td class="result">
-        
-    
-            <div class="testOutput">
-                        Click to see Screenshot
-                                <a target="_blank" href=Sun_Nov_08_21_35_14_IST_2020.jpg>Screenshot</a>
-                                <br>
-                                <br>
-                                <a target="_blank" href=Sun_Nov_08_21_35_14_IST_2020.jpg><img src=Sun_Nov_08_21_35_14_IST_2020.jpg height=200 width=200></img></a>
-                  </div>
-    
-
-      </td>
-</tr>
-<tr>
-  <td class="method">
-                  <span class="description" title="Verification of Cancel action on the quote screen">verifyCancelwhileREQuoting</span>
-      </td>
-  <td class="duration">
-    40.953s
-  </td>
-  <td class="result">
-        
-    
-            <div class="testOutput">
-                        Click to see Screenshot
-                                <a target="_blank" href=Sun_Nov_08_21_32_59_IST_2020.jpg>Screenshot</a>
-                                <br>
-                                <br>
-                                <a target="_blank" href=Sun_Nov_08_21_32_59_IST_2020.jpg><img src=Sun_Nov_08_21_32_59_IST_2020.jpg height=200 width=200></img></a>
-                  </div>
-    
-
-      </td>
-</tr>
-<tr>
-  <td class="method">
-                  <span class="description" title="Verify that shopping cart icon will be displayed with a number indicating the quantity of items in the cart ">verifyCartIconCount</span>
-      </td>
-  <td class="duration">
-    16.115s
-  </td>
-  <td class="result">
-        
-    
-            <div class="testOutput">
-                        Click to see Screenshot
-                                <a target="_blank" href=Sun_Nov_08_21_36_02_IST_2020.jpg>Screenshot</a>
-                                <br>
-                                <br>
-                                <a target="_blank" href=Sun_Nov_08_21_36_02_IST_2020.jpg><img src=Sun_Nov_08_21_36_02_IST_2020.jpg height=200 width=200></img></a>
-                  </div>
-    
-
-      </td>
-</tr>
-<tr>
-  <td class="method">
-                  <span class="description" title="Verification of the presence of Category Filter button">verifyCategoryFilter</span>
-      </td>
-  <td class="duration">
-    50.012s
-  </td>
-  <td class="result">
-        
-    
-            <div class="testOutput">
-                        Click to see Screenshot
-                                <a target="_blank" href=Sun_Nov_08_21_13_02_IST_2020.jpg>Screenshot</a>
-                                <br>
-                                <br>
-                                <a target="_blank" href=Sun_Nov_08_21_13_02_IST_2020.jpg><img src=Sun_Nov_08_21_13_02_IST_2020.jpg height=200 width=200></img></a>
-                  </div>
-    
-
-      </td>
-</tr>
-<tr>
-  <td class="method">
-                  <span class="description" title="Verification of deleting the Quantity on ShoppingCart Overlay">verifyDeleteProductOnOverlay</span>
-      </td>
-  <td class="duration">
-    8.966s
-  </td>
-  <td class="result">
-        
-    
-            <div class="testOutput">
-                        Click to see Screenshot
-                                <a target="_blank" href=Sun_Nov_08_21_38_31_IST_2020.jpg>Screenshot</a>
-                                <br>
-                                <br>
-                                <a target="_blank" href=Sun_Nov_08_21_38_31_IST_2020.jpg><img src=Sun_Nov_08_21_38_31_IST_2020.jpg height=200 width=200></img></a>
-                  </div>
-    
-
-      </td>
-</tr>
-<tr>
-  <td class="method">
-                  <span class="description" title="Verification of Exclamation Mark on My Quotes for Quote Request">verifyExclamationOnMyQuotes</span>
-      </td>
-  <td class="duration">
-    20.158s
-  </td>
-  <td class="result">
-        
-    
-            <div class="testOutput">
-                        Click to see Screenshot
-                                <a target="_blank" href=Sun_Nov_08_21_35_34_IST_2020.jpg>Screenshot</a>
-                                <br>
-                                <br>
-                                <a target="_blank" href=Sun_Nov_08_21_35_34_IST_2020.jpg><img src=Sun_Nov_08_21_35_34_IST_2020.jpg height=200 width=200></img></a>
-                  </div>
-    
-
-      </td>
-</tr>
-<tr>
-  <td class="method">
-                  <span class="description" title="Verification of Status filter 'All'">verifyStatusFilterAll</span>
-      </td>
-  <td class="duration">
-    15.500s
-  </td>
-  <td class="result">
-        
-    
-            <div class="testOutput">
-                        Click to see Screenshot
-                                <a target="_blank" href=Sun_Nov_08_21_19_55_IST_2020.jpg>Screenshot</a>
-                                <br>
-                                <br>
-                                <a target="_blank" href=Sun_Nov_08_21_19_55_IST_2020.jpg><img src=Sun_Nov_08_21_19_55_IST_2020.jpg height=200 width=200></img></a>
-                  </div>
-    
-
-      </td>
-</tr>
-<tr>
-  <td class="method">
-                  <span class="description" title="Verification of Status filter 'Cancelled'">verifyStatusFilterCancelled</span>
-      </td>
-  <td class="duration">
-    15.647s
-  </td>
-  <td class="result">
-        
-    
-            <div class="testOutput">
-                        Click to see Screenshot
-                                <a target="_blank" href=Sun_Nov_08_21_21_18_IST_2020.jpg>Screenshot</a>
-                                <br>
-                                <br>
-                                <a target="_blank" href=Sun_Nov_08_21_21_18_IST_2020.jpg><img src=Sun_Nov_08_21_21_18_IST_2020.jpg height=200 width=200></img></a>
-                  </div>
-    
-
-      </td>
-</tr>
-<tr>
-  <td class="method">
-                  <span class="description" title="Verification of Status filter 'Expired'">verifyStatusFilterExpired</span>
-      </td>
-  <td class="duration">
-    13.691s
-  </td>
-  <td class="result">
-        
-    
-            <div class="testOutput">
-                        Click to see Screenshot
-                                <a target="_blank" href=Sun_Nov_08_21_20_09_IST_2020.jpg>Screenshot</a>
-                                <br>
-                                <br>
-                                <a target="_blank" href=Sun_Nov_08_21_20_09_IST_2020.jpg><img src=Sun_Nov_08_21_20_09_IST_2020.jpg height=200 width=200></img></a>
-                  </div>
-    
-
-      </td>
-</tr>
-<tr>
-  <td class="method">
-                  <span class="description" title="Verification of Status filter 'Order Requested'">verifyStatusFilterOrderRequested</span>
-      </td>
-  <td class="duration">
-    13.957s
-  </td>
-  <td class="result">
-        
-    
-            <div class="testOutput">
-                        Click to see Screenshot
-                                <a target="_blank" href=Sun_Nov_08_21_21_32_IST_2020.jpg>Screenshot</a>
-                                <br>
-                                <br>
-                                <a target="_blank" href=Sun_Nov_08_21_21_32_IST_2020.jpg><img src=Sun_Nov_08_21_21_32_IST_2020.jpg height=200 width=200></img></a>
-                  </div>
-    
-
-      </td>
-</tr>
-<tr>
-  <td class="method">
-                  <span class="description" title="Verification of Status filter 'Ordered'">verifyStatusFilterOrdered</span>
-      </td>
-  <td class="duration">
-    15.813s
-  </td>
-  <td class="result">
-        
-    
-            <div class="testOutput">
-                        Click to see Screenshot
-                                <a target="_blank" href=Sun_Nov_08_21_20_26_IST_2020.jpg>Screenshot</a>
-                                <br>
-                                <br>
-                                <a target="_blank" href=Sun_Nov_08_21_20_26_IST_2020.jpg><img src=Sun_Nov_08_21_20_26_IST_2020.jpg height=200 width=200></img></a>
-                  </div>
-    
-
-      </td>
-</tr>
-<tr>
-  <td class="method">
-                  <span class="description" title="Verification of Status filter 'Quote Pending'">verifyStatusFilterQuotePending</span>
-      </td>
-  <td class="duration">
-    18.301s
-  </td>
-  <td class="result">
-        
-    
-            <div class="testOutput">
-                        Click to see Screenshot
-                                <a target="_blank" href=Sun_Nov_08_21_21_02_IST_2020.jpg>Screenshot</a>
-                                <br>
-                                <br>
-                                <a target="_blank" href=Sun_Nov_08_21_21_02_IST_2020.jpg><img src=Sun_Nov_08_21_21_02_IST_2020.jpg height=200 width=200></img></a>
-                  </div>
-    
-
-      </td>
-</tr>
-<tr>
-  <td class="method">
-                  <span class="description" title="Verification of Status filter 'Quoted'">verifyStatusFilterQuoted</span>
-      </td>
-  <td class="duration">
-    16.123s
-  </td>
-  <td class="result">
-        
-    
-            <div class="testOutput">
-                        Click to see Screenshot
-                                <a target="_blank" href=Sun_Nov_08_21_20_42_IST_2020.jpg>Screenshot</a>
-                                <br>
-                                <br>
-                                <a target="_blank" href=Sun_Nov_08_21_20_42_IST_2020.jpg><img src=Sun_Nov_08_21_20_42_IST_2020.jpg height=200 width=200></img></a>
-                  </div>
-    
-
-      </td>
-</tr>
-<tr>
-  <td class="method">
-                  <span class="description" title="Verification of submission action on the quote screen">verifySubmitwhileREQuoting</span>
-      </td>
-  <td class="duration">
-    60.461s
-  </td>
-  <td class="result">
-        
-    
-            <div class="testOutput">
-                        Click to see Screenshot
-                                <a target="_blank" href=Sun_Nov_08_21_34_00_IST_2020.jpg>Screenshot</a>
-                                <br>
-                                <br>
-                                <a target="_blank" href=Sun_Nov_08_21_34_00_IST_2020.jpg><img src=Sun_Nov_08_21_34_00_IST_2020.jpg height=200 width=200></img></a>
-                  </div>
-    
-
-      </td>
-</tr>
-<tr>
-  <td class="method">
-                  <span class="description" title="Verification of Thank you pop after approving the Quoted Request">verifyThankyouPopup</span>
-      </td>
-  <td class="duration">
-    130.779s
-  </td>
-  <td class="result">
-        
-    
-            <div class="testOutput">
-                        Click to see Screenshot
-                                <a target="_blank" href=Sun_Nov_08_21_32_18_IST_2020.jpg>Screenshot</a>
-                                <br>
-                                <br>
-                                <a target="_blank" href=Sun_Nov_08_21_32_18_IST_2020.jpg><img src=Sun_Nov_08_21_32_18_IST_2020.jpg height=200 width=200></img></a>
-                  </div>
-    
-
-      </td>
-</tr>
-<tr>
-  <td class="method">
-                  <span class="description" title="Verification of the Products Link on the Home Page">verifyTheProductLink</span>
-      </td>
-  <td class="duration">
-    10.010s
-  </td>
-  <td class="result">
-        
-          <i>Method arguments: </i><span class="arguments">{password=Hyde@2317, runmode=Y, username=rajesh.yadav@centurylink.com}</span><br />
-    
-            <div class="testOutput">
-                        Click to see Screenshot
-                                <a target="_blank" href=Sun_Nov_08_21_11_16_IST_2020.jpg>Screenshot</a>
-                                <br>
-                                <br>
-                                <a target="_blank" href=Sun_Nov_08_21_11_16_IST_2020.jpg><img src=Sun_Nov_08_21_11_16_IST_2020.jpg height=200 width=200></img></a>
-                  </div>
-    
-
-      </td>
-</tr>
-<tr>
-  <td class="method">
-                  <span class="description" title="Verify that User clicks on the Slider icon and Click on Crosss icon">verifyTheSearchCrossButton</span>
-      </td>
-  <td class="duration">
-    14.372s
-  </td>
-  <td class="result">
-        
-          <i>Method arguments: </i><span class="arguments">{SearchItem=Pole}</span><br />
-    
-            <div class="testOutput">
-                        Click to see Screenshot
-                                <a target="_blank" href=Sun_Nov_08_21_16_09_IST_2020.jpg>Screenshot</a>
-                                <br>
-                                <br>
-                                <a target="_blank" href=Sun_Nov_08_21_16_09_IST_2020.jpg><img src=Sun_Nov_08_21_16_09_IST_2020.jpg height=200 width=200></img></a>
-                  </div>
-    
-
-      </td>
-</tr>
-<tr>
-  <td class="method">
-                  <span class="description" title="Verify that User clicks on the Slider icon and search for full name Pole Restoration">verifyTheSearchFullname</span>
-      </td>
-  <td class="duration">
-    12.495s
-  </td>
-  <td class="result">
-        
-          <i>Method arguments: </i><span class="arguments">{SearchItem=Pole Restoration}</span><br />
-    
-            <div class="testOutput">
-                        Click to see Screenshot
-                                <a target="_blank" href=Sun_Nov_08_21_15_31_IST_2020.jpg>Screenshot</a>
-                                <br>
-                                <br>
-                                <a target="_blank" href=Sun_Nov_08_21_15_31_IST_2020.jpg><img src=Sun_Nov_08_21_15_31_IST_2020.jpg height=200 width=200></img></a>
-                  </div>
-    
-
-      </td>
-</tr>
-<tr>
-  <td class="method">
-                  <span class="description" title="Verify that User clicks on the Slider icon and search for One Alphabeted like H">verifyTheSearchOneAlphabet</span>
-      </td>
-  <td class="duration">
-    23.059s
-  </td>
-  <td class="result">
-        
-          <i>Method arguments: </i><span class="arguments">{SearchItem=H}</span><br />
-    
-            <div class="testOutput">
-                        Click to see Screenshot
-                                <a target="_blank" href=Sun_Nov_08_21_15_54_IST_2020.jpg>Screenshot</a>
-                                <br>
-                                <br>
-                                <a target="_blank" href=Sun_Nov_08_21_15_54_IST_2020.jpg><img src=Sun_Nov_08_21_15_54_IST_2020.jpg height=200 width=200></img></a>
-                  </div>
-    
-
-      </td>
-</tr>
-<tr>
-  <td class="method">
-                  <span class="description" title="Verify that User clicks on the Slider icon and search for firstname Pole">verifyTheSearchfirstname</span>
-      </td>
-  <td class="duration">
-    13.609s
-  </td>
-  <td class="result">
-        
-          <i>Method arguments: </i><span class="arguments">{SearchItem=Pole}</span><br />
-    
-            <div class="testOutput">
-                        Click to see Screenshot
-                                <a target="_blank" href=Sun_Nov_08_21_15_18_IST_2020.jpg>Screenshot</a>
-                                <br>
-                                <br>
-                                <a target="_blank" href=Sun_Nov_08_21_15_18_IST_2020.jpg><img src=Sun_Nov_08_21_15_18_IST_2020.jpg height=200 width=200></img></a>
-                  </div>
-    
-
-      </td>
-</tr>
-<tr>
-  <td class="method">
-                  <span class="description" title="Verify that User clicks on the Slider icon and validate the validation message is shown wrong input">verifyTheValidationmessage</span>
-      </td>
-  <td class="duration">
-    13.374s
-  </td>
-  <td class="result">
-        
-          <i>Method arguments: </i><span class="arguments">{SearchItem=               }</span><br />
-    
-            <div class="testOutput">
-                        Click to see Screenshot
-                                <a target="_blank" href=Sun_Nov_08_21_16_23_IST_2020.jpg>Screenshot</a>
-                                <br>
-                                <br>
-                                <a target="_blank" href=Sun_Nov_08_21_16_23_IST_2020.jpg><img src=Sun_Nov_08_21_16_23_IST_2020.jpg height=200 width=200></img></a>
-                  </div>
-    
-
-      </td>
-</tr>
-<tr>
-  <td class="method">
-                  <span class="description" title="Verification of Quantity on ShoppingCart Overlay">verifyUpdatedQuantityOnOverlay</span>
-      </td>
-  <td class="duration">
-    12.499s
-  </td>
-  <td class="result">
-        
-    
-            <div class="testOutput">
-                        Click to see Screenshot
-                                <a target="_blank" href=Sun_Nov_08_21_19_31_IST_2020.jpg>Screenshot</a>
-                                <br>
-                                <br>
-                                <a target="_blank" href=Sun_Nov_08_21_19_31_IST_2020.jpg><img src=Sun_Nov_08_21_19_31_IST_2020.jpg height=200 width=200></img></a>
-                  </div>
-    
-
-      </td>
-</tr>
-<tr>
-  <td class="method">
-                  <span class="description" title="Verification of the presence of View Details button">verifyViewDetail</span>
-      </td>
-  <td class="duration">
-    12.429s
-  </td>
-  <td class="result">
-        
-    
-            <div class="testOutput">
-                        Click to see Screenshot
-                                <a target="_blank" href=Sun_Nov_08_21_14_07_IST_2020.jpg>Screenshot</a>
-                                <br>
-                                <br>
-                                <a target="_blank" href=Sun_Nov_08_21_14_07_IST_2020.jpg><img src=Sun_Nov_08_21_14_07_IST_2020.jpg height=200 width=200></img></a>
-                  </div>
-    
-
-      </td>
-</tr>
-<tr>
-  <td class="method">
-                  <span class="description" title="Verification of the presence of View Details button">viewDetailsElementPresent</span>
-      </td>
-  <td class="duration">
-    0.032s
-  </td>
-  <td class="result">
-        
-    
-            <div class="testOutput">
-                        Click to see Screenshot
-                                <a target="_blank" href=Sun_Nov_08_21_12_10_IST_2020.jpg>Screenshot</a>
-                                <br>
-                                <br>
-                                <a target="_blank" href=Sun_Nov_08_21_12_10_IST_2020.jpg><img src=Sun_Nov_08_21_12_10_IST_2020.jpg height=200 width=200></img></a>
+                                <a target="_blank" href=Tue_Nov_17_21_32_03_IST_2020.jpg><img src=Tue_Nov_17_21_32_03_IST_2020.jpg height=200 width=200></img></a>
                   </div>
     
 
