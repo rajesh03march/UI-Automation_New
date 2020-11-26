@@ -4,13 +4,13 @@
            failures="0"
            errors="0"
            skipped="0"
-           time="94.840">
+           time="97.055">
   <properties />
   
   
-            <testcase name="verifyPresenceOfLicenseManagementAdmin" time="3.040" classname="com.OSMOSE.testcases.oCalcPro_Admin" />
-                <testcase name="verifyLicenseManagementClickAdmin" time="50.203" classname="com.OSMOSE.testcases.oCalcPro_Admin" />
-                <testcase name="loginTestAdmin" time="22.915" classname="com.OSMOSE.testcases.oCalcPro_Admin" />
-                <testcase name="verifyoCalcProNavigationClick" time="18.682" classname="com.OSMOSE.testcases.oCalcPro_Admin" />
+            <testcase name="verifyPresenceOfLicenseManagementAdmin" time="3.178" classname="com.OSMOSE.testcases.oCalcPro_Admin" />
+                <testcase name="verifyLicenseManagementClickAdmin" time="50.261" classname="com.OSMOSE.testcases.oCalcPro_Admin" />
+                <testcase name="ocalcloginTestAdmin" time="25.092" classname="com.OSMOSE.testcases.oCalcPro_Admin" />
+                <testcase name="verifyoCalcProNavigationClick" time="18.524" classname="com.OSMOSE.testcases.oCalcPro_Admin" />
       
 </testsuite>

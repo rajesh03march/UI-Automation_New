@@ -14,7 +14,7 @@ import com.OSMOSE.pages.OU.KnowledgeBasePage;
 import com.OSMOSE.pages.OU.OsmoseServicesPage;
 import com.OSMOSE.pages.OU.oCalcProPage;
 
-public class oCalcPro extends BaseTest {
+public class oCalcPro_Licensed extends BaseTest {
 
 	Page p = new Page();
 
@@ -30,9 +30,8 @@ public class oCalcPro extends BaseTest {
 		ocal.clickoCalcNavigation();
 		Thread.sleep((Long.parseLong(p.config.getProperty("Thread3000"))));
 		Assert.assertEquals(Page.getText("OcalcProHeaderTxt_XPATH"), "Structural Analysis Software for Utility Poles");
-		WebElement OcalcProHeaderImg = Page.findelement("oCalProLogoForLicensedUser_XPATH");
 		Thread.sleep((Long.parseLong(p.config.getProperty("Thread2000"))));
-		Assert.assertTrue(OcalcProHeaderImg.isDisplayed());
+		Assert.assertTrue(Page.isVisible("oCalProLogoForLicensedUser_XPATH"));
 		Thread.sleep((Long.parseLong(p.config.getProperty("Thread2000"))));
 		Page.click("OcalcOsmoseLogo_XPATH");
 		Thread.sleep((Long.parseLong(p.config.getProperty("Thread2000"))));
@@ -51,8 +50,7 @@ public class oCalcPro extends BaseTest {
 		oCalcProPage ocal = os.gooCalcPro();
 		// ocal.clickoCalcProLogoForLicensedUser();
 		// License Management presence verification
-		Assert.assertTrue(Page.driver
-				.findElement(By.xpath("//h5[@class='m-0 crspointer' and text()='License Management ']")).isDisplayed());
+		Assert.assertTrue(Page.isVisible("LicensedUserLicenseManagementCard_XPATH"));
 	}
 
 	// US-101213-101344-Verify UI and Layout of the O-Calc Pro landing page for
@@ -64,8 +62,7 @@ public class oCalcPro extends BaseTest {
 		OsmoseServicesPage os = new OsmoseServicesPage();
 		oCalcProPage ocal = os.gooCalcPro();
 		// Products presence verification
-		Assert.assertTrue(
-				Page.driver.findElement(By.xpath("//h5[@id='OCalProductsTile' and text()='Products ']")).isDisplayed());
+		Assert.assertTrue(Page.isVisible("OcalcProductsCard_XPATH"));
 	}
 
 	// US-101213-101344-Verify UI and Layout of the O-Calc Pro landing page for
@@ -77,8 +74,7 @@ public class oCalcPro extends BaseTest {
 		OsmoseServicesPage os = new OsmoseServicesPage();
 		oCalcProPage ocal = os.gooCalcPro();
 		// Knowledge Base presence verification
-		Assert.assertTrue(Page.driver
-				.findElement(By.xpath("//h5[@class='m-0 crspointer' and text()='Knowledge Base ']")).isDisplayed());
+		Assert.assertTrue(Page.isVisible("OcalcKnowledgeBaseCard_XPATH"));
 	}
 
 	// US-101213-101344-Verify UI and Layout of the O-Calc Pro landing page for
@@ -90,8 +86,7 @@ public class oCalcPro extends BaseTest {
 		OsmoseServicesPage os = new OsmoseServicesPage();
 		oCalcProPage ocal = os.gooCalcPro();
 		// Announcements presence verification
-		Assert.assertTrue(
-				Page.driver.findElement(By.xpath("//h5[@class='m-0' and text()='Announcements ']")).isDisplayed());
+		Assert.assertTrue(Page.isVisible("OcalcAnnouncementsCard_XPATH"));
 	}
 
 	// US-101213-101344-Verify UI and Layout of the O-Calc Pro landing page for
@@ -103,8 +98,7 @@ public class oCalcPro extends BaseTest {
 		OsmoseServicesPage os = new OsmoseServicesPage();
 		oCalcProPage ocal = os.gooCalcPro();
 		// Training Options presence verification
-		Assert.assertTrue(
-				Page.driver.findElement(By.xpath("//h5[@class='m-0' and text()='Training Options ']")).isDisplayed());
+		Assert.assertTrue(Page.isVisible("OcalcTrainingOptionsCard_XPATH"));
 	}
 
 	// US-101213-101344-Verify UI and Layout of the O-Calc Pro landing page for
@@ -116,8 +110,7 @@ public class oCalcPro extends BaseTest {
 		OsmoseServicesPage os = new OsmoseServicesPage();
 		oCalcProPage ocal = os.gooCalcPro();
 		// Training Options presence verification
-		Assert.assertTrue(Page.driver
-				.findElement(By.xpath("//h5[@class='m-0' and text()='Tutorial, Live Demo & Support ']")).isDisplayed());
+		Assert.assertTrue(Page.isVisible("LicensedUserTutorialCard_XPATH"));
 	}
 
 	// US-101213-101347-Verify the Content displayed in Training Options Tile for
@@ -127,15 +120,10 @@ public class oCalcPro extends BaseTest {
 		OsmoseServicesPage os = new OsmoseServicesPage();
 		oCalcProPage ocal = os.gooCalcPro();
 		// Training Options Current Public Presence verification
-		Assert.assertTrue(
-				Page.driver.findElement(By.xpath("//a[@id='OCalPublicClasses' and text()='Current Public Classes']"))
-						.isDisplayed());
+		Assert.assertTrue(Page.isVisible("TrainingCurrent_XPATH"));
 		Assert.assertEquals(Page.getText("TrainingCurrent_XPATH"), "Current Public Classes");
 		// Training Options Request Quote Presence verification
-		Assert.assertTrue(Page.driver
-				.findElement(
-						By.xpath("//a[@id='OCalQuoteTraining' and text()='Request quote for Private Training class']"))
-				.isDisplayed());
+		Assert.assertTrue(Page.isVisible("TrainingRequestQuote_XPATH"));
 		Assert.assertEquals(Page.getText("TrainingRequestQuote_XPATH"), "Request quote for Private Training class");
 	}
 
@@ -146,17 +134,13 @@ public class oCalcPro extends BaseTest {
 		OsmoseServicesPage os = new OsmoseServicesPage();
 		oCalcProPage ocal = os.gooCalcPro();
 		// Request License quote presence verification
-		Assert.assertTrue(Page.driver
-				.findElement(By.xpath("//a[@id='OCalReqLicence' and text()='Request License Quote']")).isDisplayed());
+		Assert.assertTrue(Page.isVisible("ProductsRequestLicense_XPATH"));
 		Assert.assertEquals(Page.getText("ProductsRequestLicense_XPATH"), "Request License Quote");
 		// Request CVT quote presence verification
-		Assert.assertTrue(Page.driver.findElement(By.xpath("//a[@id='OCalCVTQuote' and text()='Request CVT Quote']"))
-				.isDisplayed());
+		Assert.assertTrue(Page.isVisible("ProductsRequestCVT_XPATH"));
 		Assert.assertEquals(Page.getText("ProductsRequestCVT_XPATH"), "Request CVT Quote");
 		// Request Private Training quote presence verification
-		Assert.assertTrue(Page.driver
-				.findElement(By.xpath("//a[@id='OCalTrainingQuote' and text()='Request Private Training Quote']"))
-				.isDisplayed());
+		Assert.assertTrue(Page.isVisible("ProductsRequestPrivate_XPATH"));
 		Assert.assertEquals(Page.getText("ProductsRequestPrivate_XPATH"), "Request Private Training Quote");
 	}
 
@@ -167,12 +151,10 @@ public class oCalcPro extends BaseTest {
 		OsmoseServicesPage os = new OsmoseServicesPage();
 		oCalcProPage ocal = os.gooCalcPro();
 		// Training videos presence verification
-		Assert.assertTrue(Page.driver
-				.findElement(By.xpath("//a[@id='OCalTrainingVideos' and text()='Training Videos']")).isDisplayed());
+		Assert.assertTrue(Page.isVisible("KBTraining_XPATH"));
 		Assert.assertEquals(Page.getText("KBTraining_XPATH"), "Training Videos");
 		// Wiki Page presence verification
-		Assert.assertTrue(
-				Page.driver.findElement(By.xpath("//a[@id='OCalWikiPage' and text()='Wiki Page']")).isDisplayed());
+		Assert.assertTrue(Page.isVisible("KBWikiPage_XPATH"));
 		Assert.assertEquals(Page.getText("KBWikiPage_XPATH"), "Wiki Page");
 	}
 
@@ -183,28 +165,28 @@ public class oCalcPro extends BaseTest {
 		OsmoseServicesPage os = new OsmoseServicesPage();
 		oCalcProPage ocal = os.gooCalcPro();
 		// Announcements First Announcement Presence verification
-		Assert.assertTrue(Page.driver.findElement(By.xpath("(//a[@id='OCalProSeminar'])[1]")).isDisplayed());
+		Assert.assertTrue(Page.isVisible("AnnouncementFirst_XPATH"));
 		System.out.println("First Announcement is:" + Page.getText("AnnouncementFirst_XPATH"));
 		// Announcements Second Announcement Presence verification
-		Assert.assertTrue(Page.driver.findElement(By.xpath("(//a[@id='OCalProSeminar'])[2]")).isDisplayed());
+		Assert.assertTrue(Page.isVisible("AnnouncementSecond_XPATH"));
 		System.out.println("Second Announcement is:" + Page.getText("AnnouncementSecond_XPATH"));
 		// Announcements Show All Button presence
-		Assert.assertTrue(Page.driver.findElement(By.xpath("//div[@id='OCalToggleAnnc']")).isDisplayed());
+		Assert.assertTrue(Page.isVisible("AnnouncementShowAll_XPATH"));
 		Page.click("AnnouncementShowAll_XPATH");
 		// Announcements Third Announcement Presence verification
-		Assert.assertTrue(Page.driver.findElement(By.xpath("(//a[@id='OCalProSeminar'])[3]")).isDisplayed());
+		Assert.assertTrue(Page.isVisible("AnnouncementThird_XPATH"));
 		System.out.println("Third Announcement is:" + Page.getText("AnnouncementThird_XPATH"));
 		// Announcements Fourth Announcement Presence verification
-		Assert.assertTrue(Page.driver.findElement(By.xpath("(//a[@id='OCalProSeminar'])[4]")).isDisplayed());
-		System.out.println("Fourth Announcement is:" + Page.getText("AnnouncementThird_XPATH"));
+		Assert.assertTrue(Page.isVisible("AnnouncementFourth_XPATH"));
+		System.out.println("Fourth Announcement is:" + Page.getText("AnnouncementFourth_XPATH"));
 		// Announcements Fifth Announcement Presence verification
-		Assert.assertTrue(Page.driver.findElement(By.xpath("(//a[@id='OCalProSeminar'])[5]")).isDisplayed());
-		System.out.println("Fifth Announcement is:" + Page.getText("AnnouncementThird_XPATH"));
+		Assert.assertTrue(Page.isVisible("AnnouncementFifth_XPATH"));
+		System.out.println("Fifth Announcement is:" + Page.getText("AnnouncementFifth_XPATH"));
 		// Announcements Sixth Announcement Presence verification
-		Assert.assertTrue(Page.driver.findElement(By.xpath("(//a[@id='OCalProSeminar'])[6]")).isDisplayed());
-		System.out.println("Sixth Announcement is:" + Page.getText("AnnouncementThird_XPATH"));
+		Assert.assertTrue(Page.isVisible("AnnouncementSixth_XPATH"));
+		System.out.println("Sixth Announcement is:" + Page.getText("AnnouncementSixth_XPATH"));
 		// Announcements Show Less Button presence
-		Assert.assertTrue(Page.driver.findElement(By.xpath("//span[@class='SHOWLESS']")).isDisplayed());
+		Assert.assertTrue(Page.isVisible("AnnouncementShowLess_XPATH"));
 		Page.click("AnnouncementShowLess_XPATH");
 	}
 
@@ -215,21 +197,16 @@ public class oCalcPro extends BaseTest {
 		OsmoseServicesPage os = new OsmoseServicesPage();
 		oCalcProPage ocal = os.gooCalcPro();
 		// License Management Active status Presence verification
-		Assert.assertTrue(Page.driver.findElement(By.xpath("//div[@class='col-6 col-sm-6 mb-3' and text()=' Active ']"))
-				.isDisplayed());
+		Assert.assertTrue(Page.isVisible("oCalProLicenseMgmtActive_XPATH"));
 		System.out.println("Active Section: " + Page.getText("oCalProLicenseMgmtActive_XPATH"));
 		// License Management Expired status Presence verification
-		Assert.assertTrue(Page.driver
-				.findElement(By.xpath("//div[@class='col-6 col-sm-6 mb-3' and text()=' Expired ']")).isDisplayed());
+		Assert.assertTrue(Page.isVisible("oCalProLicenseMgmtExpired_XPATH"));
 		System.out.println("Expired Section: " + Page.getText("oCalProLicenseMgmtExpired_XPATH"));
 		// License Management Expiring Soon status Presence verification
-		Assert.assertTrue(
-				Page.driver.findElement(By.xpath("//div[@class='col-6 col-sm-6 mb-2' and text()=' Expiring Soon ']"))
-						.isDisplayed());
+		Assert.assertTrue(Page.isVisible("oCalProLicenseMgmtExpiringSoon_XPATH"));
 		System.out.println("Expiring Section: " + Page.getText("oCalProLicenseMgmtExpiringSoon_XPATH"));
 		// License Management Active Inactive Presence verification
-		Assert.assertTrue(Page.driver
-				.findElement(By.xpath("//div[@class='col-6 col-sm-6 mb-2' and text()=' Inactive ']")).isDisplayed());
+		Assert.assertTrue(Page.isVisible("oCalProLicenseMgmtInactive_XPATH"));
 		System.out.println("Inactive Section: " + Page.getText("oCalProLicenseMgmtInactive_XPATH"));
 	}
 
@@ -240,22 +217,16 @@ public class oCalcPro extends BaseTest {
 		OsmoseServicesPage os = new OsmoseServicesPage();
 		oCalcProPage ocal = os.gooCalcPro();
 		// 30 days trial Presence verification
-		Assert.assertTrue(
-				Page.driver.findElement(By.xpath("//button[@id='OCalTrialButton' and @class='btnRounded w-100 mt-3']"))
-						.isDisplayed());
+		Assert.assertTrue(Page.isVisible("Tutorial30DaysBtn_XPATH"));
 		Assert.assertEquals(Page.getText("Tutorial30DaysBtn_XPATH"), "30 DAY FREE TRIAL");
 		// Request Demo presence verification
-		Assert.assertTrue(Page.driver
-				.findElement(By.xpath("//button[@id='OCalLiveDemoButton' and @class='btnRounded w-100 mt-2']"))
-				.isDisplayed());
+		Assert.assertTrue(Page.isVisible("TutorialReqDemo_XPATH"));
 		Assert.assertEquals(Page.getText("TutorialReqDemo_XPATH"), "REQUEST A LIVE DEMO");
 		// FAQ presence verification
-		Assert.assertTrue(Page.driver.findElement(By.xpath("//a[@id='OCalFAQLink' and text()='FAQ']")).isDisplayed());
+		Assert.assertTrue(Page.isVisible("TutorialFAQ_XPATH"));
 		Assert.assertEquals(Page.getText("TutorialFAQ_XPATH"), "FAQ");
 		// Submit Issue presence verification
-		Assert.assertTrue(Page.driver
-				.findElement(By.xpath("//a[@id='OCalSubIssueLink' and text()='Submit Issue / Feature Request']"))
-				.isDisplayed());
+		Assert.assertTrue(Page.isVisible("TutorialSubmitIssue_XPATH"));
 		Assert.assertEquals(Page.getText("TutorialSubmitIssue_XPATH"), "Submit Issue / Feature Request");
 		// Feature Request presence verification
 		/*
@@ -266,9 +237,7 @@ public class oCalcPro extends BaseTest {
 		 * "Feature Request");
 		 */
 		// Contact O-Calc Pro Support presence verification
-		Assert.assertTrue(
-				Page.driver.findElement(By.xpath("//a[@id='OCalSupportLink' and text()='Contact O-Calc Pro Support']"))
-						.isDisplayed());
+		Assert.assertTrue(Page.isVisible("TutorialContactOcalcPro_XPATH"));
 		Assert.assertEquals(Page.getText("TutorialContactOcalcPro_XPATH"), "Contact O-Calc Pro Support");
 	}
 
@@ -278,30 +247,21 @@ public class oCalcPro extends BaseTest {
 		oCalcProPage ocal = os.gooCalcPro();
 		ocal.clickProducts();
 		// Verification of header text
-		WebElement HeaderTxt = Page.driver
-				.findElement(By.xpath("//p[@class='mb-0' and text()='Pole and Line Products']"));
-		Assert.assertTrue(HeaderTxt.isDisplayed());
+		Assert.assertTrue(Page.isVisible("oCalcProductsHeaderTxt_XPATH"));
 		Assert.assertEquals(Page.getText("oCalcProductsHeaderTxt_XPATH"), "Pole and Line Products");
 		Page.wait.until(ExpectedConditions
 				.visibilityOfElementLocated(By.xpath("//div[@class='projectHeading']//h3[text()='O-Calc Pro']")));
 		// Verification of the heading on the products
-		WebElement HeadingTxt = Page.driver
-				.findElement(By.xpath("//div[@class='projectHeading']//h3[text()='O-Calc Pro']"));
-		Assert.assertTrue(HeadingTxt.isDisplayed());
+		Assert.assertTrue(Page.isVisible("oCalcProductsHeadingTxt_XPATH"));
 		Assert.assertEquals(Page.getText("oCalcProductsHeadingTxt_XPATH"), "O-Calc Pro");
 		// Verification of ocalc-pro License product presence
-		WebElement OCalcLicense = Page.driver
-				.findElement(By.xpath("//div[@title='O-Calc License']//div[text()='O-Calc License']"));
-		Assert.assertTrue(OCalcLicense.isDisplayed());
+		Assert.assertTrue(Page.isVisible("ProductsoCalcLicense_XPATH"));
 		Assert.assertEquals(Page.getText("ProductsoCalcLicense_XPATH"), "O-Calc License");
 		// Verification of ocalc-pro CVT product presence
-		WebElement OCalcCVT = Page.driver.findElement(By.xpath("//div[@title='O-Calc CVT']//div[text()='O-Calc CVT']"));
-		Assert.assertTrue(OCalcCVT.isDisplayed());
+		Assert.assertTrue(Page.isVisible("ProductsoCalcCVT_XPATH"));
 		Assert.assertEquals(Page.getText("ProductsoCalcCVT_XPATH"), "O-Calc CVT");
 		// Verification of ocalc-pro Training product presence
-		WebElement OCalcTraining = Page.driver
-				.findElement(By.xpath("//div[@title='O-Calc Training']//div[text()='O-Calc Training']"));
-		Assert.assertTrue(OCalcTraining.isDisplayed());
+		Assert.assertTrue(Page.isVisible("ProductsoCalcTraining_XPATH"));
 		Assert.assertEquals(Page.getText("ProductsoCalcTraining_XPATH"), "O-Calc Training");
 		Page.driver.navigate().back();
 	}
@@ -316,14 +276,10 @@ public class oCalcPro extends BaseTest {
 		Page.wait.until(ExpectedConditions.visibilityOfElementLocated(
 				By.xpath("(//div[@class='prdDetailhs2']//h3[text()=' O-Calc License '])[1]")));
 		// Verification of header text
-		WebElement LicenseTxt = Page.driver
-				.findElement(By.xpath("(//div[@class='prdDetailhs2']//h3[text()=' O-Calc License '])[1]"));
 		// Thread.sleep((Long.parseLong(p.config.getProperty("Thread25000"))));
-		Assert.assertTrue(LicenseTxt.isDisplayed());
+		Assert.assertTrue(Page.isVisible("oCalcLicenseTxt_XPATH"));
 		Assert.assertEquals(Page.getText("oCalcLicenseTxt_XPATH"), "O-Calc License");
-		WebElement LicenseDescTxt = Page.driver
-				.findElement(By.xpath("(//div[@class='prdDetailhs2']//p[text()=' O-Calc License description '])[1]"));
-		Assert.assertTrue(LicenseDescTxt.isDisplayed());
+		Assert.assertTrue(Page.isVisible("oCalcLicenseDescription_XPATH"));
 		Assert.assertEquals(Page.getText("oCalcLicenseDescription_XPATH"), "O-Calc License description");
 		ocal.RequestLicenseProductQuoteSubmission();
 		Page.driver.navigate().back();
@@ -339,13 +295,9 @@ public class oCalcPro extends BaseTest {
 		Page.wait.until(ExpectedConditions
 				.visibilityOfElementLocated(By.xpath("(//div[@class='prdDetailhs2']//h3[text()=' O-Calc CVT '])[1]")));
 		// Verification of header text
-		WebElement CVTTxt = Page.driver
-				.findElement(By.xpath("(//div[@class='prdDetailhs2']//h3[text()=' O-Calc CVT '])[1]"));
-		Assert.assertTrue(CVTTxt.isDisplayed());
+		Assert.assertTrue(Page.isVisible("oCalcCVTTxt_XPATH"));
 		Assert.assertEquals(Page.getText("oCalcCVTTxt_XPATH"), "O-Calc CVT");
-		WebElement CVTDescTxt = Page.driver
-				.findElement(By.xpath("(//div[@class='prdDetailhs2']//p[text()=' O-Calc CVT description '])[1]"));
-		Assert.assertTrue(CVTDescTxt.isDisplayed());
+		Assert.assertTrue(Page.isVisible("oCalcCVTDescription_XPATH"));
 		Assert.assertEquals(Page.getText("oCalcCVTDescription_XPATH"), "O-Calc CVT description");
 		ocal.RequestCVTProductQuoteSubmission();
 		Page.driver.navigate().back();
@@ -361,13 +313,9 @@ public class oCalcPro extends BaseTest {
 		Page.wait.until(ExpectedConditions.visibilityOfElementLocated(
 				By.xpath("(//div[@class='prdDetailhs2']//h3[text()=' O-Calc Training '])[1]")));
 		// Verification of header text
-		WebElement TrainingTxt = Page.driver
-				.findElement(By.xpath("(//div[@class='prdDetailhs2']//h3[text()=' O-Calc Training '])[1]"));
-		Assert.assertTrue(TrainingTxt.isDisplayed());
+		Assert.assertTrue(Page.isVisible("oCalcRequestTrainingTxt_XPATH"));
 		Assert.assertEquals(Page.getText("oCalcRequestTrainingTxt_XPATH"), "O-Calc Training");
-		WebElement TrainingDescTxt = Page.driver
-				.findElement(By.xpath("(//div[@class='prdDetailhs2']//p[text()=' O-Calc Training description '])[1]"));
-		Assert.assertTrue(TrainingDescTxt.isDisplayed());
+		Assert.assertTrue(Page.isVisible("oCalcRequestTrainingDescription_XPATH"));
 		Assert.assertEquals(Page.getText("oCalcRequestTrainingDescription_XPATH"), "O-Calc Training description");
 		ocal.RequestTrainingProductQuoteSubmission();
 		Page.driver.navigate().back();
@@ -391,40 +339,28 @@ public class oCalcPro extends BaseTest {
 		// Verification of Header text
 		Assert.assertEquals(Page.getText("LicensedUser30daysHeaderTxt_XPATH"), "O-Calc® Pro Trial Version");
 		// Verification of FirstName field
-		WebElement FirstName = Page.driver.findElement(By.xpath("//input[@id='a100001_l100001_e100009_first_name']"));
-		Assert.assertTrue(FirstName.isDisplayed());
+		Assert.assertTrue(Page.isVisible("30daysFirstName_XPATH"));
 		// Verification of LastName field
-		WebElement LastName = Page.driver.findElement(By.xpath("//input[@id='a100001_l100001_e100010_last_name']"));
-		Assert.assertTrue(LastName.isDisplayed());
+		Assert.assertTrue(Page.isVisible("30daysLastName_XPATH"));
 		// Verification of Company field
-		WebElement Company = Page.driver.findElement(By.xpath("//input[@id='a100001_l100001_e100011_company']"));
-		Assert.assertTrue(Company.isDisplayed());
+		Assert.assertTrue(Page.isVisible("30daysCompany_XPATH"));
 		// Verification of Title field
-		WebElement Title = Page.driver.findElement(By.xpath("//input[@id='a100001_l100001_e100012_title']"));
-		Assert.assertTrue(Title.isDisplayed());
+		Assert.assertTrue(Page.isVisible("30daysTitle_XPATH"));
 		// Verification of BusinessEmail field
-		WebElement BusinessEmail = Page.driver
-				.findElement(By.xpath("//input[@id='a100001_l100001_e100014_business_email']"));
-		Assert.assertTrue(BusinessEmail.isDisplayed());
+		Assert.assertTrue(Page.isVisible("30daysBusinessEmail_XPATH"));
 		// Verification of Phone field
-		WebElement Phone = Page.driver.findElement(By.xpath("//input[@id='a100001_l100001_e100013_phone']"));
-		Assert.assertTrue(Phone.isDisplayed());
+		Assert.assertTrue(Page.isVisible("30daysPhone_XPATH"));
 		// Verification of Country field
-		WebElement Country = Page.driver.findElement(By.xpath("//input[@id='a100001_l100001_e100015_country']"));
-		Assert.assertTrue(Country.isDisplayed());
+		Assert.assertTrue(Page.isVisible("30daysCountry_XPATH"));
 		// Verification of State field
-		WebElement State = Page.driver.findElement(By.xpath("//input[@id='a100001_l100001_e100016_state']"));
-		Assert.assertTrue(State.isDisplayed());
+		Assert.assertTrue(Page.isVisible("30daysState_XPATH"));
 		// Verification of RequestTrialBtn button
-		WebElement RequestTrialBtn = Page.driver
-				.findElement(By.xpath("//input[@id='a100001_submit_btn' and @value='Request Trial']"));
-		Assert.assertTrue(RequestTrialBtn.isDisplayed());
+		Assert.assertTrue(Page.isVisible("30daysRequestTrialBtn_XPATH"));
 		Page.driver.switchTo().defaultContent();
 		Thread.sleep((Long.parseLong(p.config.getProperty("Thread1000"))));
 		// Page.click("LicensedUser30daysBackBtn_XPATH");
 		// Verification of close button
-		WebElement closeBtn = Page.driver.findElement(By.xpath("//button[@class='close' and @type='button']"));
-		Assert.assertTrue(closeBtn.isDisplayed());
+		Assert.assertTrue(Page.isVisible("LicensedUser30daysCloseBtn_XPATH"));
 		Page.click("LicensedUser30daysCloseBtn_XPATH");
 	}
 
@@ -444,40 +380,28 @@ public class oCalcPro extends BaseTest {
 		// Verification of Header text
 		Assert.assertEquals(Page.getText("LicensedUserDemoHeaderTxt_XPATH"), "O-Calc® Pro Live Demo");
 		// Verification of FirstName field
-		WebElement FirstName = Page.driver.findElement(By.xpath("//input[@id='a100035_l100019_e100193_first_name']"));
-		Assert.assertTrue(FirstName.isDisplayed());
+		Assert.assertTrue(Page.isVisible("DemoFirstName_XPATH"));
 		// Verification of LastName field
-		WebElement LastName = Page.driver.findElement(By.xpath("//input[@id='a100035_l100019_e100194_last_name']"));
-		Assert.assertTrue(LastName.isDisplayed());
+		Assert.assertTrue(Page.isVisible("DemoLastName_XPATH"));
 		// Verification of Company field
-		WebElement Company = Page.driver.findElement(By.xpath("//input[@id='a100035_l100019_e100195_company']"));
-		Assert.assertTrue(Company.isDisplayed());
+		Assert.assertTrue(Page.isVisible("DemoCompany_XPATH"));
 		// Verification of Title field
-		WebElement Title = Page.driver.findElement(By.xpath("//input[@id='a100035_l100019_e100196_title']"));
-		Assert.assertTrue(Title.isDisplayed());
+		Assert.assertTrue(Page.isVisible("DemoTitle_XPATH"));
 		// Verification of BusinessEmail field
-		WebElement BusinessEmail = Page.driver
-				.findElement(By.xpath("//input[@id='a100035_l100019_e100197_business_email']"));
-		Assert.assertTrue(BusinessEmail.isDisplayed());
+		Assert.assertTrue(Page.isVisible("DemoBusinessEmail_XPATH"));
 		// Verification of Phone field
-		WebElement Phone = Page.driver.findElement(By.xpath("//input[@id='a100035_l100019_e100198_phone']"));
-		Assert.assertTrue(Phone.isDisplayed());
+		Assert.assertTrue(Page.isVisible("DemoPhone_XPATH"));
 		// Verification of Country field
-		WebElement Country = Page.driver.findElement(By.xpath("//input[@id='a100035_l100019_e100199_country']"));
-		Assert.assertTrue(Country.isDisplayed());
+		Assert.assertTrue(Page.isVisible("DemoCountry_XPATH"));
 		// Verification of State field
-		WebElement State = Page.driver.findElement(By.xpath("//input[@id='a100035_l100019_e100200_state']"));
-		Assert.assertTrue(State.isDisplayed());
+		Assert.assertTrue(Page.isVisible("DemoState_XPATH"));
 		// Verification of RequestTrialBtn button
-		WebElement RequestTrialBtn = Page.driver
-				.findElement(By.xpath("//input[@id='a100035_submit_btn' and @value='Request Demo']"));
-		Assert.assertTrue(RequestTrialBtn.isDisplayed());
+		Assert.assertTrue(Page.isVisible("DemoRequestTrialBtn_XPATH"));
 		Page.driver.switchTo().defaultContent();
 		Thread.sleep((Long.parseLong(p.config.getProperty("Thread2000"))));
 		// Page.click("LicensedUserDemoBackBtn_XPATH");
 		// Verification of close button
-		WebElement closeBtn = Page.driver.findElement(By.xpath("//button[@class='close' and @type='button']"));
-		Assert.assertTrue(closeBtn.isDisplayed());
+		Assert.assertTrue(Page.isVisible("LicensedUserDemoCloseBtn_XPATH"));
 		Page.click("LicensedUserDemoCloseBtn_XPATH");
 	}
 
@@ -488,9 +412,7 @@ public class oCalcPro extends BaseTest {
 		ocal.clickContactoCalcSupportLinkLicensedUser();
 		Thread.sleep((Long.parseLong(p.config.getProperty("Thread2000"))));
 		// Verification of header text
-		WebElement ContactUsHeaderTxt = Page.driver
-				.findElement(By.xpath("//h5[@class='text-center' and text()=' Contact Us ']"));
-		Assert.assertTrue(ContactUsHeaderTxt.isDisplayed());
+		Assert.assertTrue(Page.isVisible("oCalcProContactUsHeaderTxt_XPATH"));
 		Assert.assertEquals(Page.getText("oCalcProContactUsHeaderTxt_XPATH"), "Contact Us");
 		// Verification of Default value on subject field
 		String defaultValue = Page.getdefaultValuefromdropdown("oCalcProContactUsFormSubjectdd_XPATH");
@@ -541,9 +463,7 @@ public class oCalcPro extends BaseTest {
 				.visibilityOfElementLocated(By.xpath("(//button[@id='Approve' and text()='APPROVE'])[1]")));
 		Page.click("oCalMyQuotesApproveBtn_XPATH");
 		// Verification of Pay with Credit Card Button
-		WebElement oCalApprovalPayWithCCBtn = Page.driver.findElement(
-				By.xpath("//button[@class='btn btn-link mb-2 cstBtnOne w-100' and text()=' PAY WITH CREDIT CARD ']"));
-		Assert.assertTrue(oCalApprovalPayWithCCBtn.isDisplayed());
+		Assert.assertTrue(Page.isVisible("oCalApprovalPayWithCCBtn_XPATH"));
 		Assert.assertEquals(Page.getText("oCalApprovalPayWithCCBtn_XPATH"), "PAY WITH CREDIT CARD");
 		// Verification of 'I have copied my Receipt' Checkbox and text
 		Assert.assertEquals(Page.getText("OcalApprovalReceiptTxt_XPATH"), "I have copied my receipt");
@@ -565,9 +485,7 @@ public class oCalcPro extends BaseTest {
 		// Verification of Pay be Credit card Steps pop-up
 		Thread.sleep((Long.parseLong(p.config.getProperty("Thread2000"))));
 		Assert.assertEquals(Page.getText("oCalPayCCStepsHeaderTxt_XPATH"), "Pay By Credit Card Steps");
-		WebElement MakePymtBtn = Page.driver
-				.findElement(By.xpath("//button[@class='btn cstBtnOne btn-link padMP' and text()=' MAKE PAYMENT ']"));
-		Assert.assertTrue(MakePymtBtn.isDisplayed());
+		Assert.assertTrue(Page.isVisible("oCalPayCCMakePymtBtn_XPATH"));
 		Assert.assertEquals(Page.getText("oCalPayCCMakePymtBtn_XPATH"), "MAKE PAYMENT");
 	}
 
@@ -592,9 +510,7 @@ public class oCalcPro extends BaseTest {
 		ocal.clickIhaveCopiedMyReceiptChkBox();
 		// Verification of Textarea 'Please copy and paste the details from your receipt
 		// here'
-		WebElement pasteReceiptdetails = Page.driver.findElement(By.xpath(
-				"//textarea[@class='form-control font12px txtBC' and @placeholder='Please copy and paste the details from your receipt here']"));
-		Assert.assertTrue(pasteReceiptdetails.isDisplayed());
+		Assert.assertTrue(Page.isVisible("oCalpasteReceiptdetailsTextArea_XPATH"));
 		ocal.ClickApprove();
 		Thread.sleep((Long.parseLong(p.config.getProperty("Thread2000"))));
 		// Verification of Approved pop-up details
@@ -652,11 +568,9 @@ public class oCalcPro extends BaseTest {
 		ocal.clickMyQuotes();
 		Thread.sleep((Long.parseLong(p.config.getProperty("Thread25000"))));
 		// Verification of CC Receipt field
-		WebElement CCReceipt = Page.driver.findElement(By.xpath(
-				"(//div[@class='ccReceiptbtn btn-light relative float-left clearfix' and text()=' CC Receipt '])[1]"));
 		Page.wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(
 				"(//div[@class='ccReceiptbtn btn-light relative float-left clearfix' and text()=' CC Receipt '])[1]")));
-		Assert.assertTrue(CCReceipt.isDisplayed());
+		Assert.assertTrue(Page.isVisible("oCalMyQuotesCCReceipt_XPATH"));
 		Page.click("oCalMyQuotesCCReceipt_XPATH");
 		// Verification of CC receipt field text
 		Assert.assertEquals(Page.getText("oCalMyQuotesCCReceiptTxt_XPATH"), "Automation Testing");
@@ -676,15 +590,13 @@ public class oCalcPro extends BaseTest {
 		ocal.clickCurrentPublicClasses();
 		Thread.sleep((Long.parseLong(p.config.getProperty("Thread3000"))));
 		// Verification of the Back button
-		WebElement BackBtn = Page.driver.findElement(By.xpath("//h5[@class='m-0' and text()=' Back ']"));
-		Assert.assertTrue(BackBtn.isDisplayed());
+		Assert.assertTrue(Page.isVisible("oCalCurrentPublicClassBackBtn_XPATH"));
 		// Verification of Back btn text
 		Assert.assertEquals(Page.getText("oCalCurrentPublicClassBackBtn_XPATH"), "Back");
 		// Verification of the Header text
 		Assert.assertEquals(Page.getText("oCalCurrentPublicClassesHeaderTxt_XPATH"), "O-Calc Pro Classes");
 		// Verification of close button
-		WebElement closeBtn = Page.driver.findElement(By.xpath("//button[@class='close' and @type='button']"));
-		Assert.assertTrue(closeBtn.isDisplayed());
+		Assert.assertTrue(Page.isVisible("oCalCurrentPublicClassesCloseBtn_XPATH"));
 		Page.iFrames(1);
 		Thread.sleep((Long.parseLong(p.config.getProperty("Thread2000"))));
 		// Verification of O-Calc® Pro Training text
@@ -706,13 +618,9 @@ public class oCalcPro extends BaseTest {
 		ocal.clickRequestQuoteForPrivateTrainingClasses();
 		Thread.sleep((Long.parseLong(p.config.getProperty("Thread8000"))));
 		// Verification of header text
-		WebElement TrainingTxt = Page.driver
-				.findElement(By.xpath("(//div[@class='prdDetailhs2']//h3[text()=' O-Calc Training '])[1]"));
-		Assert.assertTrue(TrainingTxt.isDisplayed());
+		Assert.assertTrue(Page.isVisible("oCalcRequestTrainingTxt_XPATH"));
 		Assert.assertEquals(Page.getText("oCalcRequestTrainingTxt_XPATH"), "O-Calc Training");
-		WebElement TrainingDescTxt = Page.driver
-				.findElement(By.xpath("(//div[@class='prdDetailhs2']//p[text()=' O-Calc Training description '])[1]"));
-		Assert.assertTrue(TrainingDescTxt.isDisplayed());
+		Assert.assertTrue(Page.isVisible("oCalcRequestTrainingDescription_XPATH"));
 		Assert.assertEquals(Page.getText("oCalcRequestTrainingDescription_XPATH"), "O-Calc Training description");
 		ocal.RequestTrainingProductQuoteSubmission();
 		ocal.clickoCalcNavigation();
@@ -725,14 +633,12 @@ public class oCalcPro extends BaseTest {
 		// ocal.clickoCalcProLogoForLicensedUser();
 		Thread.sleep((Long.parseLong(p.config.getProperty("Thread5000"))));
 		// Announcements First Announcement Presence verification
-		Assert.assertTrue(Page.driver.findElement(By.xpath("(//a[@id='OCalProSeminar'])[1]")).isDisplayed());
+		Assert.assertTrue(Page.isVisible("AnnouncementFirst_XPATH"));
 		Page.click("AnnouncementFirst_XPATH");
 		// Verification of close button
-		WebElement closeBtn = Page.driver.findElement(By.xpath("//button[@class='close' and @type='button']"));
-		Assert.assertTrue(closeBtn.isDisplayed());
+		Assert.assertTrue(Page.isVisible("AnnouncementCloseBtn_XPATH"));
 		// Verification of the Back button
-		WebElement BackBtn = Page.driver.findElement(By.xpath("//h5[@class='m-0' and text()=' Back ']"));
-		Assert.assertTrue(BackBtn.isDisplayed());
+		Assert.assertTrue(Page.isVisible("AnnouncementFirstBackTxt_XPATH"));
 		// Verification of Back btn text
 		Assert.assertEquals(Page.getText("AnnouncementFirstBackTxt_XPATH"), "Back");
 		// Verification of the Header text
@@ -750,24 +656,19 @@ public class oCalcPro extends BaseTest {
 		// Verification of the Header text
 		Assert.assertEquals(Page.getText("FAQHeaderTxt_XPATH"), "O-Calc® Pro FAQ");
 		// Verification of close button
-		WebElement closeBtn = Page.driver.findElement(By.xpath("//button[@class='close' and @type='button']"));
-		Assert.assertTrue(closeBtn.isDisplayed());
+		Assert.assertTrue(Page.isVisible("FAQCloseBtn_XPATH"));
 		// Verification of First category
-		WebElement FirstCat = Page.driver
-				.findElement(By.xpath("//a[@aria-controls='Category-0' and text()='Getting Started']"));
-		Assert.assertTrue(FirstCat.isDisplayed());
+		Assert.assertTrue(Page.isVisible("FAQFirstCategory_XPATH"));
 		// Verification of the presence of First FAQ
-		WebElement FAQFirst = Page.driver.findElement(By.xpath("//a[@aria-controls='category-0-accordion-0']"));
-		Assert.assertTrue(FAQFirst.isDisplayed());
+		Assert.assertTrue(Page.isVisible("FAQFirst_XPATH"));
 		System.out.println("First FAQ is: " + Page.getText("FAQFirst_XPATH"));
 		// Verification of the presence of Second FAQ
-		WebElement FAQSecond = Page.driver.findElement(By.xpath("//a[@aria-controls='category-0-accordion-1']"));
-		Assert.assertTrue(FAQSecond.isDisplayed());
+		Assert.assertTrue(Page.isVisible("FAQSecond_XPATH"));
 		System.out.println("Second FAQ is: " + Page.getText("FAQSecond_XPATH"));
-		FirstCat.click();
+		Page.click("FAQFirstCategory_XPATH");
 		Thread.sleep((Long.parseLong(p.config.getProperty("Thread3000"))));
-		Assert.assertFalse(FAQFirst.isDisplayed());
-		Assert.assertFalse(FAQSecond.isDisplayed());
+		Assert.assertFalse(Page.isVisible("FAQFirstCategory_XPATH"));
+		Assert.assertTrue(Page.isVisible("FAQSecond_XPATH"));
 		Page.click("FAQCloseBtn_XPATH");
 	}
 
@@ -779,13 +680,9 @@ public class oCalcPro extends BaseTest {
 		Thread.sleep((Long.parseLong(p.config.getProperty("Thread1000"))));
 		Page.click("FAQFirst_XPATH");
 		// Verification of the click on an FAQ
-		WebElement FAQFirstLink = Page.driver.findElement(By
-				.xpath("//a[@rel ='noopener noreferrer nofollow' and text()='http://www.o-calcpro.com/LineDesign/']"));
 		Thread.sleep((Long.parseLong(p.config.getProperty("Thread2000"))));
-		Assert.assertEquals(FAQFirstLink.getText(), "http://www.o-calcpro.com/LineDesign/");
-		WebElement FAQSecondLink = Page.driver
-				.findElement(By.xpath("//a[text()='https://www.youtube.com/user/ocalcproinfo']"));
-		Assert.assertEquals(FAQSecondLink.getText(), "https://www.youtube.com/user/ocalcproinfo");
+		Assert.assertEquals(Page.getText("FAQFirstLink_XPATH"), "http://www.o-calcpro.com/LineDesign/");
+		Assert.assertEquals(Page.getText("FAQSecondLink_XPATH"), "https://www.youtube.com/user/ocalcproinfo");
 		Page.click("FAQFirstLink_XPATH");
 		Thread.sleep((Long.parseLong(p.config.getProperty("Thread2000"))));
 		ocal.closeTab(1);
@@ -806,11 +703,9 @@ public class oCalcPro extends BaseTest {
 		oCalcProPage ocal = os.gooCalcPro();
 		ocal.clickSubmitIssue();
 		// Verification of close button
-		WebElement closeBtn = Page.driver.findElement(By.xpath("//button[@class='close' and @type='button']"));
-		Assert.assertTrue(closeBtn.isDisplayed());
+		Assert.assertTrue(Page.isVisible("SubmitIssueCloseBtn_XPATH"));
 		// Verification of the Back button
-		WebElement BackBtn = Page.driver.findElement(By.xpath("//h5[@class='m-0' and text()=' Back ']"));
-		Assert.assertTrue(BackBtn.isDisplayed());
+		Assert.assertTrue(Page.isVisible("AnnouncementFirstBackTxt_XPATH"));
 		// Verification of Back btn text
 		Assert.assertEquals(Page.getText("AnnouncementFirstBackTxt_XPATH"), "Back");
 		// Verification of the Header text
@@ -825,25 +720,15 @@ public class oCalcPro extends BaseTest {
 		// ocal.clickoCalcProLogoForLicensedUser();
 		ocal.clickKnowledgeBase();
 		// Verification of header text
-		WebElement HeaderTxt = Page.driver.findElement(By.xpath("//p[@class='mb-0' and text()='Knowledge Base']"));
-		Assert.assertTrue(HeaderTxt.isDisplayed());
+		Assert.assertTrue(Page.isVisible("KnowledgeBaseFirstHeaderTxt_XPATH"));
 		Assert.assertEquals(Page.getText("KnowledgeBaseFirstHeaderTxt_XPATH"), "Knowledge Base");
-		WebElement VideoResultsSection = Page.driver.findElement(By.xpath("//h5[@class='m-0' and text()='Videos']"));
-		Assert.assertTrue(VideoResultsSection.isDisplayed());
-		WebElement DocumentResultsSection = Page.driver
-				.findElement(By.xpath("//h5[@class='m-0' and text()='Documents']"));
-		Assert.assertTrue(DocumentResultsSection.isDisplayed());
+		Assert.assertTrue(Page.isVisible("oCalcProKBVideosResultsSection_XPATH"));
+		Assert.assertTrue(Page.isVisible("ocalcProKBDocumentResultsSection_XPATH"));
 		Thread.sleep((Long.parseLong(p.config.getProperty("Thread3000"))));
-		WebElement OcalPopularFilter1 = Page.driver
-				.findElement(By.xpath("//*[contains(text(),'Introduction to Pole Modeling')]"));
-		Assert.assertTrue(OcalPopularFilter1.isDisplayed());
-		WebElement OcalPopularFilter2 = Page.driver
-				.findElement(By.xpath("//*[contains(text(),'Advanced Pole Modeling')]"));
-		Assert.assertTrue(OcalPopularFilter2.isDisplayed());
-		WebElement OcalPopularFilter3 = Page.driver.findElement(By.xpath("//*[contains(text(),'Line Design')]"));
-		Assert.assertTrue(OcalPopularFilter3.isDisplayed());
-		WebElement videoContent = Page.driver.findElement(By.xpath("(//div[@class='Vplay']//img[@alt='play'])[1]"));
-		Assert.assertTrue(videoContent.isDisplayed());
+		Assert.assertTrue(Page.isVisible("OcalPopularFilter1_XPATH"));
+		Assert.assertTrue(Page.isVisible("OcalPopularFilter2_XPATH"));
+		Assert.assertTrue(Page.isVisible("OcalPopularFilter3_XPATH"));
+		Assert.assertTrue(Page.isVisible("OcalvideoContent_XPATH"));
 		Thread.sleep((Long.parseLong(p.config.getProperty("Thread3000"))));
 		ocal.clickocalOnAVideo();
 		Thread.sleep((Long.parseLong(p.config.getProperty("Thread6000"))));
@@ -866,14 +751,11 @@ public class oCalcPro extends BaseTest {
 		ocal.clickKBTrainingVideos();
 		Thread.sleep((Long.parseLong(p.config.getProperty("Thread6000"))));
 		// Verification of header text
-		WebElement HeaderTxt = Page.driver.findElement(By.xpath("//p[@class='mb-0' and text()='Knowledge Base']"));
-		Assert.assertTrue(HeaderTxt.isDisplayed());
+		Assert.assertTrue(Page.isVisible("KnowledgeBaseFirstHeaderTxt_XPATH"));
 		Assert.assertEquals(Page.getText("KnowledgeBaseFirstHeaderTxt_XPATH"), "Knowledge Base");
-		WebElement VideoResultsSection = Page.driver.findElement(By.xpath("//h5[@class='m-0' and text()='Videos']"));
-		Assert.assertTrue(VideoResultsSection.isDisplayed());
+		Assert.assertTrue(Page.isVisible("oCalcProKBVideosResultsSection_XPATH"));
 		Page.click("ocalVideosSeeMorelnk_XPATH");
-		WebElement videoContent = Page.driver.findElement(By.xpath("(//div[@class='imgBox']//img[@class='w-100'])[1]"));
-		Assert.assertTrue(videoContent.isDisplayed());
+		Assert.assertTrue(Page.isVisible("OcalSeeMoreVideoContent_XPATH"));
 		Thread.sleep((Long.parseLong(p.config.getProperty("Thread3000"))));
 		ocal.clickocalOnASeeMoreVideo();
 		Thread.sleep((Long.parseLong(p.config.getProperty("Thread2000"))));
@@ -890,17 +772,12 @@ public class oCalcPro extends BaseTest {
 		ocal.clickKBWikiPage();
 		Thread.sleep((Long.parseLong(p.config.getProperty("Thread4000"))));
 		// Verification of header text
-		WebElement HeaderTxt = Page.driver.findElement(By.xpath("//p[@class='mb-0' and text()='Knowledge Base']"));
-		Assert.assertTrue(HeaderTxt.isDisplayed());
+		Assert.assertTrue(Page.isVisible("KnowledgeBaseFirstHeaderTxt_XPATH"));
 		Assert.assertEquals(Page.getText("KnowledgeBaseFirstHeaderTxt_XPATH"), "Knowledge Base");
-		WebElement DocumentResultsSection = Page.driver
-				.findElement(By.xpath("//h5[@class='m-0' and text()='Documents']"));
-		Assert.assertTrue(DocumentResultsSection.isDisplayed());
+		Assert.assertTrue(Page.isVisible("ocalcProKBDocumentResultsSection_XPATH"));
 		Thread.sleep((Long.parseLong(p.config.getProperty("Thread3000"))));
 		Page.click("ocalDocumentsSeeMorelnk_XPATH");
-		WebElement DocumentContent = Page.driver
-				.findElement(By.xpath("//div[@class='docBox m-0 mb-2']//a[text()='Setting Ownership']"));
-		Assert.assertTrue(DocumentContent.isDisplayed());
+		Assert.assertTrue(Page.isVisible("OcalSettingOwnershipDocContent_XPATH"));
 		Thread.sleep((Long.parseLong(p.config.getProperty("Thread3000"))));
 		ocal.clickocalOnASeeMoreDocument();
 		Thread.sleep((Long.parseLong(p.config.getProperty("Thread2000"))));
@@ -933,9 +810,7 @@ public class oCalcPro extends BaseTest {
 		 * Page.driver.findElement(By.xpath("//h5[@class='m-0' and text()='Images']"));
 		 * Assert.assertTrue(ImageResultsSection.isDisplayed());
 		 */
-		WebElement DocumentResultsSection = Page.driver
-				.findElement(By.xpath("//h5[@class='m-0' and text()='Documents']"));
-		Assert.assertTrue(DocumentResultsSection.isDisplayed());
+		Assert.assertTrue(Page.isVisible("ocalcProKBDocumentResultsSection_XPATH"));
 		Thread.sleep((Long.parseLong(p.config.getProperty("Thread3000"))));
 		Page.driver.navigate().back();
 	}
@@ -949,8 +824,7 @@ public class oCalcPro extends BaseTest {
 		Thread.sleep((Long.parseLong(p.config.getProperty("Thread6000"))));
 		ocal.clickOCalcProIntroduction();
 		Thread.sleep((Long.parseLong(p.config.getProperty("Thread6000"))));
-		WebElement VideoResultsSection = Page.driver.findElement(By.xpath("//h5[@class='m-0' and text()='Videos']"));
-		Assert.assertTrue(VideoResultsSection.isDisplayed());
+		Assert.assertTrue(Page.isVisible("oCalcProKBVideosResultsSection_XPATH"));
 		/*
 		 * WebElement ImageResultsSection =
 		 * Page.driver.findElement(By.xpath("//h5[@class='m-0' and text()='Images']"));
@@ -972,25 +846,17 @@ public class oCalcPro extends BaseTest {
 		Thread.sleep((Long.parseLong(p.config.getProperty("Thread2000"))));
 		Assert.assertEquals(Page.getText("LicenseManagementHeaderText_XPATH"),
 				"LICENSE MANAGEMENT | Osmose Utilities Services, Inc");
-		WebElement ShowTourBtn = Page.driver
-				.findElement(By.xpath("//button[@id='OCalShowTourBtn' and text()=' SHOW TOUR ']"));
-		Assert.assertTrue(ShowTourBtn.isDisplayed());
-		WebElement RenewBtn = Page.driver.findElement(By.xpath("//button[@id='OCalRenewBtn' and text()=' RENEW ']"));
-		Assert.assertFalse(RenewBtn.isEnabled());
-		WebElement TransferBtn = Page.driver
-				.findElement(By.xpath("//button[@id='OCalTranfBtn' and text()=' TRANSFER ']"));
-		Assert.assertFalse(TransferBtn.isEnabled());
-		WebElement ResendBtn = Page.driver.findElement(By.xpath("//button[@id='OCalResendBtn' and text()=' RESEND ']"));
-		Assert.assertFalse(ResendBtn.isEnabled());
-		WebElement UpdateContactBtn = Page.driver
-				.findElement(By.xpath("//button[@id='OCalUpdContactBtn' and text()=' UPDATE CONTACT ']"));
-		Assert.assertFalse(UpdateContactBtn.isEnabled());
+		Assert.assertTrue(Page.isVisible("ShowTourBtn_XPATH"));
+		Assert.assertFalse(Page.isEnabled("RenewBtn_XPATH"));
+		Assert.assertFalse(Page.isEnabled("TransferBtn_XPATH"));
+		Assert.assertFalse(Page.isEnabled("ResendBtn_XPATH"));
+		Assert.assertFalse(Page.isEnabled("UpdateContactBtn_XPATH"));
 		Page.click("LicenseManagementFirstCheckBox_XPATH");
 		Thread.sleep((Long.parseLong(p.config.getProperty("Thread2000"))));
-		Assert.assertTrue(RenewBtn.isEnabled());
-		Assert.assertTrue(TransferBtn.isEnabled());
-		Assert.assertTrue(ResendBtn.isEnabled());
-		Assert.assertTrue(UpdateContactBtn.isEnabled());
+		Assert.assertTrue(Page.isEnabled("RenewBtn_XPATH"));
+		Assert.assertTrue(Page.isEnabled("TransferBtn_XPATH"));
+		Assert.assertTrue(Page.isEnabled("ResendBtn_XPATH"));
+		Assert.assertTrue(Page.isEnabled("UpdateContactBtn_XPATH"));
 
 	}
 
@@ -1005,95 +871,71 @@ public class oCalcPro extends BaseTest {
 		 * xpath("(//button[@class='ml-4 btn twoButtons' and text()=' Skip Tour '])[1]")
 		 * ); Assert.assertTrue(SkipTour.isDisplayed());
 		 */
-		WebElement Next = Page.driver
-				.findElement(By.xpath("(//button[@class='ml-4 btn twoButtons' and text()=' Next '])[1]"));
-		Assert.assertTrue(Next.isDisplayed());
-		Next.click();
+		Assert.assertTrue(Page.isVisible("NextBtn_XPATH"));
+		Page.click("NextBtn_XPATH");
 		Thread.sleep((Long.parseLong(p.config.getProperty("Thread2000"))));
 		/*
 		 * WebElement Previous = Page.driver.findElement(By.
 		 * xpath("(//button[@class='ml-4 btn btnRounded' and text()=' Previous '])[1]"))
 		 * ; Assert.assertTrue(Previous.isDisplayed());
 		 */
-		WebElement ExitTour = Page.driver
-				.findElement(By.xpath("//button[@class='ml-4 btn btnRounded exitButton' and text()=' Exit Tour ']"));
-		Assert.assertTrue(ExitTour.isDisplayed());
+		Assert.assertTrue(Page.isVisible("ExitTour_XPATH"));
 	}
 
 	@Test(priority = 41, enabled = true, description = "Verify the Click on Next and Previous buttons")
 	public void verifyClickOnNextPreviousbtns() throws InterruptedException {
 		OsmoseServicesPage os = new OsmoseServicesPage();
 		oCalcProPage ocal = os.gooCalcPro();
-		WebElement Next = Page.driver
-				.findElement(By.xpath("//button[@class='ml-4 btn btnRounded' and text()=' Next ']"));
-		Assert.assertTrue(Next.isDisplayed());
-		WebElement Previous = Page.driver
-				.findElement(By.xpath("(//button[@class='ml-4 btn btnRounded' and text()=' Previous '])[1]"));
-		Assert.assertTrue(Previous.isDisplayed());
-		WebElement ExitTour = Page.driver
-				.findElement(By.xpath("//button[@class='ml-4 btn btnRounded exitButton' and text()=' Exit Tour ']"));
-		Assert.assertTrue(ExitTour.isDisplayed());
-		Previous.click();
+		Assert.assertTrue(Page.isVisible("NextBtn_XPATH"));
+		Assert.assertTrue(Page.isVisible("PreviousBtn_XPATH"));
+		Assert.assertTrue(Page.isVisible("ExitTour_XPATH"));
+		Page.click("PreviousBtn_XPATH");
 		Thread.sleep((Long.parseLong(p.config.getProperty("Thread2000"))));
-		WebElement ExitTour1 = Page.driver
-				.findElement(By.xpath("//button[@class='ml-4 btn twoButtons' and text()=' Exit Tour ']"));
-		Assert.assertTrue(ExitTour1.isDisplayed());
+		Assert.assertTrue(Page.isVisible("ExitTour1_XPATH"));
 	}
 
 	@Test(priority = 42, enabled = true, description = "Verify the Click on Skip Tour and Exit Tour buttons")
 	public void verifyClickOnSkipTourExitTourbtns() throws InterruptedException {
 		OsmoseServicesPage os = new OsmoseServicesPage();
 		oCalcProPage ocal = os.gooCalcPro();
-		WebElement ExitTour1 = Page.driver
-				.findElement(By.xpath("//button[@class='ml-4 btn twoButtons' and text()=' Exit Tour ']"));
-		Assert.assertTrue(ExitTour1.isDisplayed());
-		ExitTour1.click();
+		Assert.assertTrue(Page.isVisible("ExitTour1_XPATH"));
+		Page.click("ExitTour1_XPATH");
 		Page.click("ShowTourBtn_XPATH");
 		Thread.sleep((Long.parseLong(p.config.getProperty("Thread2000"))));
-		WebElement Next = Page.driver
-				.findElement(By.xpath("(//button[@class='ml-4 btn twoButtons' and text()=' Next '])[1]"));
-		Assert.assertTrue(Next.isDisplayed());
-		Next.click();
+		Assert.assertTrue(Page.isVisible("NextBtn_XPATH"));
+		Page.click("NextBtn_XPATH");
 		Thread.sleep((Long.parseLong(p.config.getProperty("Thread2000"))));
-		WebElement ExitTour = Page.driver
-				.findElement(By.xpath("//button[@class='ml-4 btn btnRounded exitButton' and text()=' Exit Tour ']"));
-		Assert.assertTrue(ExitTour.isDisplayed());
-		ExitTour.click();
+		Assert.assertTrue(Page.isVisible("ExitTour_XPATH"));
+		Page.click("ExitTour_XPATH");
 	}
 
 	@Test(priority = 43, enabled = true, description = "verify that only Renew Button is Enabled On multiple record selection")
 	public void verifyOnlyRenewBtnIsEnabledOnMultipleRecordSelection() throws InterruptedException {
 		OsmoseServicesPage os = new OsmoseServicesPage();
 		oCalcProPage ocal = os.gooCalcPro();
-		WebElement RenewBtn = Page.driver.findElement(By.xpath("//button[@id='OCalRenewBtn' and text()=' RENEW ']"));
-		Assert.assertTrue(RenewBtn.isEnabled());
-		WebElement TransferBtn = Page.driver
-				.findElement(By.xpath("//button[@id='OCalTranfBtn' and text()=' TRANSFER ']"));
-		Assert.assertTrue(TransferBtn.isEnabled());
-		WebElement ResendBtn = Page.driver.findElement(By.xpath("//button[@id='OCalResendBtn' and text()=' RESEND ']"));
-		Assert.assertTrue(ResendBtn.isEnabled());
-		WebElement UpdateContactBtn = Page.driver
-				.findElement(By.xpath("//button[@id='OCalUpdContactBtn' and text()=' UPDATE CONTACT ']"));
-		Assert.assertTrue(UpdateContactBtn.isEnabled());
+		Assert.assertTrue(Page.isVisible("RenewBtn_XPATH"));
+		Assert.assertTrue(Page.isEnabled("TransferBtn_XPATH"));
+		Assert.assertTrue(Page.isEnabled("ResendBtn_XPATH"));
+		Assert.assertTrue(Page.isEnabled("UpdateContactBtn_XPATH"));
 		Page.click("LicenseManagementFirstCheckBox_XPATH");
 		Page.click("LicenseManagementFirstCheckBox_XPATH");
 		Thread.sleep((Long.parseLong(p.config.getProperty("Thread2000"))));
-		Assert.assertTrue(RenewBtn.isEnabled());
-		Assert.assertTrue(TransferBtn.isEnabled());
-		Assert.assertTrue(ResendBtn.isEnabled());
-		Assert.assertTrue(UpdateContactBtn.isEnabled());
+		Assert.assertTrue(Page.isEnabled("RenewBtn_XPATH"));
+		Assert.assertTrue(Page.isEnabled("TransferBtn_XPATH"));
+		Assert.assertTrue(Page.isEnabled("ResendBtn_XPATH"));
+		Assert.assertTrue(Page.isEnabled("UpdateContactBtn_XPATH"));
 		Page.click("LicenseManagementSecondCheckBox_XPATH");
 		Thread.sleep((Long.parseLong(p.config.getProperty("Thread2000"))));
-		Assert.assertTrue(RenewBtn.isEnabled());
-		Assert.assertFalse(TransferBtn.isEnabled());
-		Assert.assertFalse(ResendBtn.isEnabled());
-		Assert.assertFalse(UpdateContactBtn.isEnabled());
+		Assert.assertTrue(Page.isEnabled("RenewBtn_XPATH"));
+		Assert.assertFalse(Page.isEnabled("TransferBtn_XPATH"));
+		Assert.assertFalse(Page.isEnabled("ResendBtn_XPATH"));
+		Assert.assertFalse(Page.isEnabled("UpdateContactBtn_XPATH"));
 		Page.click("LicenseManagementSecondCheckBox_XPATH");
 		Thread.sleep((Long.parseLong(p.config.getProperty("Thread2000"))));
-		Assert.assertTrue(RenewBtn.isEnabled());
-		Assert.assertTrue(TransferBtn.isEnabled());
-		Assert.assertTrue(ResendBtn.isEnabled());
-		Assert.assertTrue(UpdateContactBtn.isEnabled());
+		Assert.assertTrue(Page.isEnabled("RenewBtn_XPATH"));
+		Assert.assertTrue(Page.isEnabled("TransferBtn_XPATH"));
+		Assert.assertTrue(Page.isEnabled("ResendBtn_XPATH"));
+		Assert.assertTrue(Page.isEnabled("UpdateContactBtn_XPATH"));
 	}
 
 	@Test(priority = 44, enabled = true, description = "Verify the Filter functionality of Contact Name column")
@@ -1103,16 +945,12 @@ public class oCalcPro extends BaseTest {
 		Page.click("LicenseManagementContactNameCol_XPATH");
 		Thread.sleep((Long.parseLong(p.config.getProperty("Thread1000"))));
 		Page.click("LicenseManagementContactNameCol_XPATH");
-		WebElement FirstName = Page.driver.findElement(By.xpath("(//div[@ref='eCellWrapper'])[1]"));
-		System.out.println("First Name in the Contact Name is: " + FirstName.getText());
-		WebElement SecondName = Page.driver.findElement(By.xpath("(//div[@ref='eCellWrapper'])[2]"));
-		System.out.println("Second Name in the Contact Name is: " + SecondName.getText());
+		System.out.println("First Name in the Contact Name is: " + Page.getText("LicenseManagementFirstName_XPATH"));
+		System.out.println("Second Name in the Contact Name is: " + Page.getText("LicenseManagementSecondName_XPATH"));
 		Page.click("LicenseManagementContactNameCol_XPATH");
 		Thread.sleep((Long.parseLong(p.config.getProperty("Thread2000"))));
-		WebElement FirstNameAfterSort = Page.driver.findElement(By.xpath("(//div[@ref='eCellWrapper'])[1]"));
-		System.out.println("First Name in the Contact Name is: " + FirstNameAfterSort.getText());
-		WebElement SecondNameAfterSort = Page.driver.findElement(By.xpath("(//div[@ref='eCellWrapper'])[2]"));
-		System.out.println("Second Name in the Contact Name is: " + SecondNameAfterSort.getText());
+		System.out.println("First Name in the Contact Name is: " + Page.getText("LicenseManagementFirstName_XPATH"));
+		System.out.println("Second Name in the Contact Name is: " + Page.getText("LicenseManagementSecondName_XPATH"));
 	}
 
 	@Test(priority = 45, enabled = true, description = "Verify the Filter functionality of License key column")
@@ -1121,14 +959,11 @@ public class oCalcPro extends BaseTest {
 		oCalcProPage ocal = os.gooCalcPro();
 		Page.click("LicenseManagementLicenseKeyFilter_XPATH");
 		Thread.sleep((Long.parseLong(p.config.getProperty("Thread1000"))));
-		WebElement SearchBox = Page.driver
-				.findElement(By.xpath("(//input[@ref='eInput' and @placeholder='Search...'])[1]"));
-		Assert.assertTrue(SearchBox.isDisplayed());
+		Assert.assertTrue(Page.isVisible("LicenseManagementLicenseKeySearchBox_XPATH"));
 		Page.type("LicenseManagementLicenseKeySearch_XPATH", "GKR72ZPB3QW4G8N");
-		Page.driver.findElement(By.xpath("(//input[@ref='eInput'])[10]")).sendKeys(Keys.ENTER);
+		Page.findelement("LicenseManagementLicenseKeySearch_XPATH").sendKeys(Keys.ENTER);
 		Page.click("LicenseManagementHeaderText_XPATH");
-		WebElement LicenseKeyValue1 = Page.driver.findElement(By.xpath("(//div[@col-id='licenseKey'])[2]"));
-		System.out.println("License Key is: " + LicenseKeyValue1.getText());
+		System.out.println("License Key is: " + Page.isVisible("LicensKeyValue_XPATH"));
 		Page.click("LicenseManagementLicenseKeyFilter_XPATH");
 		Page.click("LicenseManagementLicenseKeyResetBtn_XPATH");
 		Page.click("LicenseManagementHeaderText_XPATH");
@@ -1140,16 +975,13 @@ public class oCalcPro extends BaseTest {
 		oCalcProPage ocal = os.gooCalcPro();
 		Page.click("LicenseManagementStatusFilter_XPATH");
 		Thread.sleep((Long.parseLong(p.config.getProperty("Thread1000"))));
-		WebElement SelectAllChkBx = Page.driver.findElement(By.xpath("//span[@ref='eSelectAllLabel']"));
-		Assert.assertTrue(SelectAllChkBx.isDisplayed());
+		Assert.assertTrue(Page.isVisible("StatusFilterSelectAllChkBox_XPATH"));
 		Thread.sleep((Long.parseLong(p.config.getProperty("Thread1000"))));
-		SelectAllChkBx.click();
-		WebElement ActiveChkBx = Page.driver.findElement(By.xpath("(//span[@ref='eFilterItemValue'])[1]"));
-		Assert.assertTrue(ActiveChkBx.isDisplayed());
-		ActiveChkBx.click();
+		Page.click("StatusFilterSelectAllChkBox_XPATH");
+		Assert.assertTrue(Page.isVisible("StatusFilterActiveChkBox_XPATH"));
+		Page.click("StatusFilterActiveChkBox_XPATH");
 		Page.click("LicenseManagementHeaderText_XPATH");
-		WebElement StatusValue = Page.driver.findElement(By.xpath("//span[@class='rag-element']"));
-		Assert.assertEquals(StatusValue.getText(), "ACTIVE");
+		Assert.assertEquals(Page.getText("StatusFilterValue_XPATH"), "ACTIVE");
 		Page.click("LicenseManagementStatusFilter_XPATH");
 		Page.click("LicenseManagementStatusResetBtn_XPATH");
 		Page.click("LicenseManagementHeaderText_XPATH");
@@ -1161,14 +993,11 @@ public class oCalcPro extends BaseTest {
 		oCalcProPage ocal = os.gooCalcPro();
 		Page.click("LicenseManagementExpTokenFilter_XPATH");
 		Thread.sleep((Long.parseLong(p.config.getProperty("Thread1000"))));
-		WebElement SearchBox = Page.driver
-				.findElement(By.xpath("(//input[@ref='eInput' and @placeholder='Search...'])[1]"));
-		Assert.assertTrue(SearchBox.isDisplayed());
+		Assert.assertTrue(Page.isVisible("LicenseManagementExpTokenFilterSearchBox_XPATH"));
 		Page.type("LicenseManagementExpTokenSearch_XPATH", "UA9PKT57ZZ");
-		Page.driver.findElement(By.xpath("(//input[@ref='eInput'])[10]")).sendKeys(Keys.ENTER);
+		Page.findelement("LicenseManagementExpTokenSearch_XPATH").sendKeys(Keys.ENTER);
 		Page.click("LicenseManagementHeaderText_XPATH");
-		WebElement LicenseKeyValue1 = Page.driver.findElement(By.xpath("(//div[@col-id='expirationToken'])[2]"));
-		System.out.println("The Exp Token is: " + LicenseKeyValue1.getText());
+		System.out.println("The Exp Token is: " + Page.isVisible("LicensKeyValue1_XPATH"));
 		Page.click("LicenseManagementExpTokenFilter_XPATH");
 		Page.click("LicenseManagementLicenseKeyResetBtn_XPATH");
 		Page.click("LicenseManagementHeaderText_XPATH");
@@ -1180,16 +1009,13 @@ public class oCalcPro extends BaseTest {
 		oCalcProPage ocal = os.gooCalcPro();
 		Page.click("LicenseManagementLicenseTypeFilter_XPATH");
 		Thread.sleep((Long.parseLong(p.config.getProperty("Thread1000"))));
-		WebElement SelectAllChkBx = Page.driver.findElement(By.xpath("//span[@ref='eSelectAllLabel']"));
-		Assert.assertTrue(SelectAllChkBx.isDisplayed());
+		Assert.assertTrue(Page.isVisible("FilterLicenseTypeSelectAllChkBox_XPATH"));
 		Thread.sleep((Long.parseLong(p.config.getProperty("Thread1000"))));
-		SelectAllChkBx.click();
-		WebElement SingleUserChkBx = Page.driver.findElement(By.xpath("(//span[@ref='eFilterItemValue'])[1]"));
-		Assert.assertTrue(SingleUserChkBx.isDisplayed());
-		SingleUserChkBx.click();
+		Page.click("FilterLicenseTypeSelectAllChkBox_XPATH");
+		Assert.assertTrue(Page.isVisible("FilterLicenseTypeSingleUserChkBx_XPATH"));
+		Page.isVisible("FilterLicenseTypeSingleUserChkBx_XPATH");
 		Page.click("LicenseManagementHeaderText_XPATH");
-		WebElement LicenseTypeValue = Page.driver.findElement(By.xpath("(//div[@col-id='licenseTypeName'])[2]"));
-		Assert.assertEquals(LicenseTypeValue.getText(), "Single User");
+		Assert.assertEquals(Page.getText("LicenseTypeValue_XPATH"), "Single User");
 		Page.click("LicenseManagementLicenseTypeFilter_XPATH");
 		Page.click("LicenseManagementLicenseTypeResetBtn_XPATH");
 		Page.click("LicenseManagementHeaderText_XPATH");
@@ -1201,32 +1027,23 @@ public class oCalcPro extends BaseTest {
 		oCalcProPage ocal = os.gooCalcPro();
 		Page.click("LicenseManagementLicenseTypeFilter_XPATH");
 		Thread.sleep((Long.parseLong(p.config.getProperty("Thread1000"))));
-		WebElement SelectAllChkBx = Page.driver.findElement(By.xpath("//span[@ref='eSelectAllLabel']"));
-		Assert.assertTrue(SelectAllChkBx.isDisplayed());
+		Assert.assertTrue(Page.isVisible("FilterLicenseTypeSelectAllChkBox_XPATH"));
 		Thread.sleep((Long.parseLong(p.config.getProperty("Thread1000"))));
-		SelectAllChkBx.click();
-		WebElement SiteChkBx = Page.driver.findElement(By.xpath("(//span[@ref='eFilterItemValue'])[2]"));
-		Assert.assertTrue(SiteChkBx.isDisplayed());
-		SiteChkBx.click();
+		Page.click("FilterLicenseTypeSelectAllChkBox_XPATH");
+		Assert.assertTrue(Page.isVisible("FilterLicenseTypeSiteChkBx_XPATH"));
+		Page.click("FilterLicenseTypeSiteChkBx_XPATH");
 		Page.click("LicenseManagementHeaderText_XPATH");
-		WebElement LicenseTypeValue = Page.driver.findElement(By.xpath("(//div[@col-id='licenseTypeName'])[2]"));
-		Assert.assertEquals(LicenseTypeValue.getText(), "Site");
+		Assert.assertEquals(Page.isVisible("LicenseTypeValue_XPATH"), "Site");
 		Page.click("LicenseManagementFirstCheckBox_XPATH");
-		WebElement RenewBtn = Page.driver.findElement(By.xpath("//button[@id='OCalRenewBtn' and text()=' RENEW ']"));
-		Assert.assertTrue(RenewBtn.isEnabled());
-		WebElement TransferBtn = Page.driver
-				.findElement(By.xpath("//button[@id='OCalTranfBtn' and text()=' TRANSFER ']"));
-		Assert.assertFalse(TransferBtn.isEnabled());
-		WebElement ResendBtn = Page.driver.findElement(By.xpath("//button[@id='OCalResendBtn' and text()=' RESEND ']"));
-		Assert.assertFalse(ResendBtn.isEnabled());
-		WebElement UpdateContactBtn = Page.driver
-				.findElement(By.xpath("//button[@id='OCalUpdContactBtn' and text()=' UPDATE CONTACT ']"));
-		Assert.assertFalse(UpdateContactBtn.isEnabled());
+		Assert.assertTrue(Page.isEnabled("RenewBtn_XPATH"));
+		Assert.assertFalse(Page.isEnabled("TransferBtn_XPATH"));
+		Assert.assertFalse(Page.isEnabled("ResendBtn_XPATH"));
+		Assert.assertFalse(Page.isEnabled("UpdateContactBtn_XPATH"));
 		Page.click("LicenseManagementSecondCheckBox_XPATH");
-		Assert.assertTrue(RenewBtn.isEnabled());
-		Assert.assertFalse(TransferBtn.isEnabled());
-		Assert.assertFalse(ResendBtn.isEnabled());
-		Assert.assertFalse(UpdateContactBtn.isEnabled());
+		Assert.assertTrue(Page.isEnabled("RenewBtn_XPATH"));
+		Assert.assertFalse(Page.isEnabled("TransferBtn_XPATH"));
+		Assert.assertFalse(Page.isEnabled("ResendBtn_XPATH"));
+		Assert.assertFalse(Page.isEnabled("UpdateContactBtn_XPATH"));
 		Page.click("LicenseManagementLicenseTypeFilter_XPATH");
 		Page.click("LicenseManagementLicenseTypeResetBtn_XPATH");
 		Page.click("LicenseManagementHeaderText_XPATH");
@@ -1238,9 +1055,7 @@ public class oCalcPro extends BaseTest {
 		oCalcProPage ocal = os.gooCalcPro();
 		Page.click("LicenseManagementPurchaseDateFilter_XPATH");
 		Thread.sleep((Long.parseLong(p.config.getProperty("Thread1000"))));
-		WebElement purchaseDate = Page.driver
-				.findElement(By.xpath("(//input[@ref='eInput' and @placeholder='yyyy-mm-dd'])[1]"));
-		Assert.assertTrue(purchaseDate.isDisplayed());
+		Assert.assertTrue(Page.isVisible("LicenseManagementPurchaseDateSearch_XPATH"));
 		Page.type("LicenseManagementPurchaseDateSearch_XPATH", "10/07/2019");
 		Page.click("LicenseManagementPurchaseDateORradio_XPATH");
 		Thread.sleep((Long.parseLong(p.config.getProperty("Thread1000"))));
@@ -1250,8 +1065,7 @@ public class oCalcPro extends BaseTest {
 		Page.click("LicenseManagementPurchaseDateNotEqualoption_XPATH");
 		Page.type("LicenseManagementPurchaseDate1Search_XPATH", "10/07/2019");
 		Page.click("LicenseManagementHeaderText_XPATH");
-		WebElement PurchaseDateValue = Page.driver.findElement(By.xpath("(//div[@col-id='purchaseDate'])[2]//span"));
-		System.out.println("Purchase Date is: " + PurchaseDateValue.getText());
+		System.out.println("Purchase Date is: " + Page.getText("PurchaseDateValue_XPATH"));
 		Page.click("LicenseManagementPurchaseDateFilter_XPATH");
 		Page.click("LicenseManagementPurchaseDateResetBtn_XPATH");
 		Page.click("LicenseManagementHeaderText_XPATH");
@@ -1264,9 +1078,7 @@ public class oCalcPro extends BaseTest {
 		Assert.assertEquals(Page.getText("LicenseManagementExpirationDateFilterName_XPATH"), "Expiration Date");
 		Page.click("LicenseManagementExpirationDateFilter_XPATH");
 		Thread.sleep((Long.parseLong(p.config.getProperty("Thread1000"))));
-		WebElement expirationDate = Page.driver
-				.findElement(By.xpath("(//input[@ref='eInput' and @placeholder='yyyy-mm-dd'])[1]"));
-		Assert.assertTrue(expirationDate.isDisplayed());
+		Assert.assertTrue(Page.isVisible("LicenseManagementExpirationDateSearch_XPATH"));
 		Page.type("LicenseManagementExpirationDateSearch_XPATH", "04/29/2022");
 		Page.click("LicenseManagementExpirationDateORradio_XPATH");
 		Thread.sleep((Long.parseLong(p.config.getProperty("Thread1000"))));
@@ -1276,9 +1088,7 @@ public class oCalcPro extends BaseTest {
 		Page.click("LicenseManagementExpirationDateNotEqualoption_XPATH");
 		Page.type("LicenseManagementExpirationDate1Search_XPATH", "10/07/2019");
 		Page.click("LicenseManagementHeaderText_XPATH");
-		WebElement ExpirationDateValue = Page.driver
-				.findElement(By.xpath("(//div[@col-id='expirationDate'])[2]//span"));
-		System.out.println("Expiration Date: " + ExpirationDateValue.getText());
+		System.out.println("Expiration Date: " + Page.getText("ExpirationDateValue_XPATH"));
 		Page.click("LicenseManagementExpirationDateFilter_XPATH");
 		Page.click("LicenseManagementExpirationDateResetBtn_XPATH");
 		Page.click("LicenseManagementHeaderText_XPATH");
@@ -1294,39 +1104,22 @@ public class oCalcPro extends BaseTest {
 		Thread.sleep((Long.parseLong(p.config.getProperty("Thread2000"))));
 		Page.click("LicenseManagementFirstCheckBox_XPATH");
 		// Transfer button contents presence verification
-		WebElement TransferBtn1 = Page.driver
-				.findElement(By.xpath("//button[@id='OCalTranfBtn' and text()=' TRANSFER ']"));
 		Thread.sleep((Long.parseLong(p.config.getProperty("Thread3000"))));
-		Assert.assertTrue(TransferBtn1.isEnabled());
+		Assert.assertTrue(Page.isEnabled("TransferBtn_XPATH"));
 		Thread.sleep((Long.parseLong(p.config.getProperty("Thread1000"))));
 		Page.click("TransferBtn_XPATH");
 		Thread.sleep((Long.parseLong(p.config.getProperty("Thread3000"))));
-		WebElement TransferBtnHeaderTxt = Page.driver.findElement(By.xpath("//h3[text()=' TRANSFER LICENSE ']"));
-		Assert.assertTrue(TransferBtnHeaderTxt.isDisplayed());
+		Assert.assertTrue(Page.isVisible("TransferPopUpHeaderTxt_XPATH"));
 		Assert.assertEquals(Page.getText("TransferPopUpHeaderTxt_XPATH"), "TRANSFER LICENSE");
-		WebElement CloseBtn = Page.driver
-				.findElement(By.xpath("//div[@class='crsPointer closeSMPanel' and text()=' X ']"));
-		Assert.assertTrue(CloseBtn.isDisplayed());
-		WebElement HeaderTxt = Page.driver.findElement(By.xpath(
-				"//p[contains(text(),' Enter the details of the person you are transferring the license to. ')]"));
-		Assert.assertTrue(HeaderTxt.isDisplayed());
+		Assert.assertTrue(Page.isVisible("TransferPopUpCloseBtn_XPATH"));
+		Assert.assertTrue(Page.isVisible("TransferPopUpHeader_XPATH"));
 		Assert.assertEquals(Page.getText("TransferPopUpHeader_XPATH"),
 				"Enter the details of the person you are transferring the license to.");
-		WebElement FirstName = Page.driver
-				.findElement(By.xpath("//input[@id='OCalFnameInput' and @placeholder='*First Name']"));
-		Assert.assertTrue(FirstName.isDisplayed());
-		WebElement LastName = Page.driver
-				.findElement(By.xpath("//input[@id='OCalLnameInput' and @placeholder='*Last Name']"));
-		Assert.assertTrue(LastName.isDisplayed());
-		WebElement Email = Page.driver
-				.findElement(By.xpath("//input[@id='OCalEmailInput' and @placeholder='*Email Address']"));
-		Assert.assertTrue(Email.isDisplayed());
-		WebElement Phone = Page.driver
-				.findElement(By.xpath("//input[@id='OCalPhoneInput' and @placeholder='Phone Number']"));
-		Assert.assertTrue(Phone.isDisplayed());
-		WebElement TransferLicenseBtn = Page.driver
-				.findElement(By.xpath("//button[@id='OCalTrnfLicBtn' and text()=' TRANSFER LICENSE ']"));
-		Assert.assertTrue(TransferLicenseBtn.isDisplayed());
+		Assert.assertTrue(Page.isVisible("TransferPopUpFirstName_XPATH"));
+		Assert.assertTrue(Page.isVisible("TransferPopUpLastName_XPATH"));
+		Assert.assertTrue(Page.isVisible("TransferPopUpEmail_XPATH"));
+		Assert.assertTrue(Page.isVisible("TransferPopUpPhone_XPATH"));
+		Assert.assertTrue(Page.isVisible("TransferPopUpTransferBtn_XPATH"));
 		Thread.sleep((Long.parseLong(p.config.getProperty("Thread4000"))));
 		Page.click("TransferPopUpCloseBtn_XPATH");
 	}
@@ -1337,9 +1130,7 @@ public class oCalcPro extends BaseTest {
 		oCalcProPage ocal = os.gooCalcPro();
 		Page.click("TransferBtn_XPATH");
 		Page.click("TransferPopUpTransferBtn_XPATH");
-		WebElement ErrorMsg = Page.driver
-				.findElement(By.xpath("//*[contains(text(),' Fields marked with * are mandatory ')]"));
-		Assert.assertEquals(ErrorMsg.getText(), "Fields marked with * are mandatory");
+		Assert.assertEquals(Page.getText("TransferPopUpErrorMsg_XPATH"), "Fields marked with * are mandatory");
 		Page.click("TransferPopUpCloseBtn_XPATH");
 	}
 
@@ -1353,8 +1144,7 @@ public class oCalcPro extends BaseTest {
 		Assert.assertEquals(Page.getText("TransferCompleteTxt_XPATH"), "TRANSFER COMPLETE!");
 		Assert.assertEquals(Page.getText("TransferCompletePopUptxt_XPATH"),
 				"A notification has been sent to email@gmail.com");
-		WebElement CloseBtn = Page.driver.findElement(By.xpath("//button[@id='OCalTrnfCmpBtn' and text()=' CLOSE ']"));
-		Assert.assertTrue(CloseBtn.isDisplayed());
+		Assert.assertTrue(Page.isVisible("TransferCompletePopUpCloseBtn_XPATH"));
 		Page.click("TransferCompletePopUpCloseBtn_XPATH");
 	}
 
@@ -1364,18 +1154,13 @@ public class oCalcPro extends BaseTest {
 		oCalcProPage ocal = os.gooCalcPro();
 		Page.click("LicenseManagementFirstCheckBox_XPATH");
 		Thread.sleep((Long.parseLong(p.config.getProperty("Thread2000"))));
-		WebElement ResendBtn = Page.driver.findElement(By.xpath("//button[@id='OCalResendBtn' and text()=' RESEND ']"));
-		Assert.assertTrue(ResendBtn.isEnabled());
+		Assert.assertTrue(Page.isEnabled("ResendBtn_XPATH"));
 		Page.click("ResendBtn_XPATH");
 		Thread.sleep((Long.parseLong(p.config.getProperty("Thread2000"))));
 		// Verification of the contents of Resend pop-up
-		WebElement Headertxt = Page.driver.findElement(By.xpath("//*[contains(text(),' RESEND COMPLETE! ')]"));
 		Assert.assertEquals(Page.getText("ResendPopUpHeaderTxt_XPATH"), "RESEND COMPLETE!");
-		WebElement ResendPopUpTxt = Page.driver
-				.findElement(By.xpath("//div[@id='tranferCompleted___BV_modal_body_']//p"));
-		System.out.println("Resend PopUp text is: " + ResendPopUpTxt.getText());
-		WebElement CloseBtn = Page.driver.findElement(By.xpath("//button[@id='OCalTrnfCmpBtn' and text()=' CLOSE ']"));
-		Assert.assertTrue(CloseBtn.isDisplayed());
+		System.out.println("Resend PopUp text is: " + Page.getText("ResendCompletePopUptxt_XPATH"));
+		Assert.assertTrue(Page.isVisible("ResendCompletePopUpCloseBtn_XPATH"));
 		Page.click("ResendCompletePopUpCloseBtn_XPATH");
 	}
 
@@ -1386,43 +1171,26 @@ public class oCalcPro extends BaseTest {
 		Page.click("LicenseManagementFirstCheckBox_XPATH");
 		Thread.sleep((Long.parseLong(p.config.getProperty("Thread2000"))));
 		// Update Contact button contents presence verification
-		WebElement UpdateContactBtn = Page.driver
-				.findElement(By.xpath("//button[@id='OCalUpdContactBtn' and text()=' UPDATE CONTACT ']"));
 		Thread.sleep((Long.parseLong(p.config.getProperty("Thread2000"))));
-		Assert.assertTrue(UpdateContactBtn.isEnabled());
+		Assert.assertTrue(Page.isEnabled("UpdateContactBtn_XPATH"));
 		Thread.sleep((Long.parseLong(p.config.getProperty("Thread1000"))));
 		Page.click("UpdateContactBtn_XPATH");
 		Thread.sleep((Long.parseLong(p.config.getProperty("Thread3000"))));
-		WebElement UpdateContactBtnHeaderTxt = Page.driver.findElement(By.xpath("//h3[text()=' UPDATE CONTACT ']"));
-		Assert.assertTrue(UpdateContactBtnHeaderTxt.isDisplayed());
+		Assert.assertTrue(Page.isVisible("UpdateContactPopUpHeaderTxt_XPATH"));
 		Assert.assertEquals(Page.getText("UpdateContactPopUpHeaderTxt_XPATH"), "UPDATE CONTACT");
-		WebElement CloseBtn = Page.driver
-				.findElement(By.xpath("//div[@class='crsPointer closeSMPanel' and text()=' X ']"));
-		Assert.assertTrue(CloseBtn.isDisplayed());
-		WebElement HeaderTxt = Page.driver.findElement(
-				By.xpath("//p[contains(text(),' Enter the contact details to be updated for the license. ')]"));
-		Assert.assertTrue(HeaderTxt.isDisplayed());
+		Assert.assertTrue(Page.isVisible("UpdateContactPopUpCloseBtn_XPATH"));
+		Assert.assertTrue(Page.isVisible("UpdateContactPopUpHeader_XPATH"));
 		Assert.assertEquals(Page.getText("UpdateContactPopUpHeader_XPATH"),
 				"Enter the contact details to be updated for the license.");
-		WebElement FirstName = Page.driver
-				.findElement(By.xpath("//input[@id='OCalFnameInput' and @placeholder='*First Name']"));
-		Assert.assertTrue(FirstName.isDisplayed());
-		System.out.println("The FirstName in UpdateContact is: " + FirstName.getAttribute("value"));
-		WebElement LastName = Page.driver
-				.findElement(By.xpath("//input[@id='OCalLnameInput' and @placeholder='*Last Name']"));
-		Assert.assertTrue(LastName.isDisplayed());
-		System.out.println("The LastName in UpdateContact is: " + LastName.getAttribute("value"));
-		WebElement Email = Page.driver
-				.findElement(By.xpath("//input[@id='OCalEmailInput' and @placeholder='*Email Address']"));
-		Assert.assertTrue(Email.isDisplayed());
-		System.out.println("The Email in UpdateContact is: " + Email.getAttribute("value"));
-		WebElement Phone = Page.driver
-				.findElement(By.xpath("//input[@id='OCalPhoneInput' and @placeholder='Phone Number']"));
-		Assert.assertTrue(Phone.isDisplayed());
-		System.out.println("The Phone in UpdateContact is: " + Phone.getAttribute("value"));
-		WebElement TransferLicenseBtn = Page.driver
-				.findElement(By.xpath("//button[@id='OCalTrnfLicBtn' and text()=' UPDATE CONTACT INFO ']"));
-		Assert.assertTrue(TransferLicenseBtn.isDisplayed());
+		Assert.assertTrue(Page.isVisible("TransferPopUpFirstName_XPATH"));
+		System.out.println("The FirstName in UpdateContact is: " + Page.getAttributeValue("TransferPopUpFirstName_XPATH", "value"));
+		Assert.assertTrue(Page.isVisible("TransferPopUpLastName_XPATH"));
+		System.out.println("The LastName in UpdateContact is: " + Page.getAttributeValue("TransferPopUpLastName_XPATH","value"));
+		Assert.assertTrue(Page.isVisible("TransferPopUpEmail_XPATH"));
+		System.out.println("The Email in UpdateContact is: " + Page.getAttributeValue("TransferPopUpEmail_XPATH","value"));
+		Assert.assertTrue(Page.isVisible("TransferPopUpPhone_XPATH"));
+		System.out.println("The Phone in UpdateContact is: " + Page.getAttributeValue("TransferPopUpPhone_XPATH","value"));
+		Assert.assertTrue(Page.isVisible("UpdateContactPopUpUpdateContactInfoBtn_XPATH"));
 		Thread.sleep((Long.parseLong(p.config.getProperty("Thread4000"))));
 		Page.click("UpdateContactPopUpCloseBtn_XPATH");
 	}
@@ -1435,11 +1203,8 @@ public class oCalcPro extends BaseTest {
 		Page.click("UpdateContactPopUpUpdateContactInfoBtn_XPATH");
 		Thread.sleep((Long.parseLong(p.config.getProperty("Thread2000"))));
 		Assert.assertEquals(Page.getText("UpdateCompleteTxt_XPATH"), "UPDATE COMPLETE!");
-		WebElement UpdateCompletePopUptxt = Page.driver
-				.findElement(By.xpath("//div[@id='tranferCompleted___BV_modal_body_']//p"));
-		System.out.println("Update Contact Complete PopUp text is: " + UpdateCompletePopUptxt.getText());
-		WebElement CloseBtn = Page.driver.findElement(By.xpath("//button[@id='OCalTrnfCmpBtn' and text()=' CLOSE ']"));
-		Assert.assertTrue(CloseBtn.isDisplayed());
+		System.out.println("Update Contact Complete PopUp text is: " + Page.getText("UpdateCompletePopUptxt_XPATH"));
+		Assert.assertTrue(Page.isVisible("UpdateCompletePopUpCloseBtn_XPATH"));
 		Page.click("UpdateCompletePopUpCloseBtn_XPATH");
 	}
 
@@ -1452,21 +1217,14 @@ public class oCalcPro extends BaseTest {
 		Page.wait.until(ExpectedConditions.visibilityOfElementLocated(
 				By.xpath("(//div[@class='prdDetailhs2']//h3[text()=' O-Calc License '])[1]")));
 		// Verification of header text
-		WebElement LicenseTxt = Page.driver
-				.findElement(By.xpath("(//div[@class='prdDetailhs2']//h3[text()=' O-Calc License '])[1]"));
-		Assert.assertTrue(LicenseTxt.isDisplayed());
+		Assert.assertTrue(Page.isVisible("oCalcLicenseTxt_XPATH"));
 		Assert.assertEquals(Page.getText("oCalcLicenseTxt_XPATH"), "O-Calc License");
-		WebElement LicenseDescTxt = Page.driver
-				.findElement(By.xpath("(//div[@class='prdDetailhs2']//p[text()=' O-Calc License description '])[1]"));
-		Assert.assertTrue(LicenseDescTxt.isDisplayed());
+		Assert.assertTrue(Page.isVisible("oCalcLicenseDescription_XPATH"));
 		Assert.assertEquals(Page.getText("oCalcLicenseDescription_XPATH"), "O-Calc License description");
 		System.out.println("The Prepopulated Size is: " + Page.getdefaultValuefromdropdown("RenewSizeDD_XPATH"));
-		WebElement AddTxtBox = Page.driver.findElement(
-				By.xpath("//input[@id='selectQuantity' and @title='Please enter quantity between 1 and 999']"));
-		System.out.println("The Prepopulated Quantity is: " + AddTxtBox.getAttribute("value"));
+		System.out.println("The Prepopulated Quantity is: " + Page.getAttributeValue("oCalProductEnterQuantity_XPATH","value"));
 		ocal.RenewProductQuoteSubmission();
-		WebElement QuoteComments = Page.driver.findElement(By.xpath("//textarea[@id='commentQuotes']"));
-		System.out.println("The Prepopulated Comments is: " + QuoteComments.getAttribute("value"));
+		System.out.println("The Prepopulated Comments is: " + Page.getAttributeValue("RenewQuoteComments_XPATH","value"));
 		Thread.sleep((Long.parseLong(p.config.getProperty("Thread2000"))));
 		Page.click("oCalProductSubmitBtn_XPATH");
 	}

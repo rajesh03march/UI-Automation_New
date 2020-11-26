@@ -3,123 +3,44 @@
         "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="" lang="">
 <head>
-  <title>Test Results Report - OCalcPro</title>
+  <title>Test Results Report - MyOsmoseServices</title>
   <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
   <meta name="description" content="TestNG unit test results." />
   <link href="reportng.css" rel="stylesheet" type="text/css" />
     <script type="text/javascript" src="reportng.js"></script>
 </head>
 <body>
-<h1>OCalcPro</h1>
+<h1>MyOsmoseServices</h1>
 <p>
-  Test duration: 667.648s
+  Test duration: 335.026s
 </p>
 
 
 
-  <table class="resultsTable">
-    <tr><th colspan="3" class="header failed">Failed Tests</th></tr>
-          <tr>
-        <td colspan="3" class="group">com.OSMOSE.testcases.oCalcPro</td>
-      </tr>
-            
-<tr>
-  <td class="method">
-                  <span class="description" title="Verify click on an Announcement for Licensed User">verifyClickOnAnAnnouncementLicensedUser</span>
-      </td>
-  <td class="duration">
-    1.098s
-  </td>
-  <td class="result">
-        
-    
-            <div class="testOutput">
-                        Click to see Screenshot
-                                <a target="_blank" href=Tue_Nov_17_21_38_39_IST_2020.jpg>Screenshot</a>
-                                <br>
-                                <br>
-                                <a target="_blank" href=Tue_Nov_17_21_38_39_IST_2020.jpg><img src=Tue_Nov_17_21_38_39_IST_2020.jpg height=200 width=200></img></a>
-                  </div>
-    
-
-        <a href="javascript:toggleElement('exception-0', 'block')" title="Click to expand/collapse"><b>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;a data-v-7c7cce93=&quot;&quot; id=&quot;OCalProSeminar&quot; href=&quot;javascript:void(0);&quot;&gt;...&lt;/a&gt; is not clickable at point (290, 433). Other element would receive the click: &lt;div data-v-7c7cce93=&quot;&quot; class=&quot;Oloader&quot;&gt;...&lt;/div&gt;<br/>
-&nbsp; (Session info: chrome=86.0.4240.75)<br/>
-Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;<br/>
-System info: host: &apos;5CG6323N27&apos;, ip: &apos;192.168.0.12&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_191&apos;<br/>
-Driver info: org.openqa.selenium.chrome.ChromeDriver<br/>
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.75, chrome: {chromedriverVersion: 85.0.4183.87 (cd6713ebf92fa..., userDataDir: C:\Windows\Temp\scoped_dir1...}, goog:chromeOptions: {debuggerAddress: localhost:60141}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: none, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}<br/>
-Session ID: 7c47cf17605c0041376f57870d31efef</b></a><br />
-    <div class="stackTrace" id="exception-0">
-              sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)<br />
-              sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)<br />
-              sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)<br />
-              java.lang.reflect.Constructor.newInstance(Unknown Source)<br />
-              org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)<br />
-              org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)<br />
-              org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)<br />
-              org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)<br />
-              org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)<br />
-              org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)<br />
-              org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:276)<br />
-              org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)<br />
-              com.OSMOSE.base.Page.click(Page.java:183)<br />
-              com.OSMOSE.testcases.oCalcPro.verifyClickOnAnAnnouncementLicensedUser(oCalcPro.java:728)<br />
-              sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
-              sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)<br />
-              sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)<br />
-              java.lang.reflect.Method.invoke(Unknown Source)<br />
-              org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)<br />
-              org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)<br />
-              org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)<br />
-              org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)<br />
-              org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)<br />
-              org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)<br />
-              org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)<br />
-              org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)<br />
-              java.util.ArrayList.forEach(Unknown Source)<br />
-              org.testng.TestRunner.privateRun(TestRunner.java:766)<br />
-              org.testng.TestRunner.run(TestRunner.java:587)<br />
-              org.testng.SuiteRunner.runTest(SuiteRunner.java:384)<br />
-              org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)<br />
-              org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)<br />
-              org.testng.SuiteRunner.run(SuiteRunner.java:286)<br />
-              org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)<br />
-              org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)<br />
-              org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)<br />
-              org.testng.TestNG.runSuitesLocally(TestNG.java:1109)<br />
-              org.testng.TestNG.runSuites(TestNG.java:1039)<br />
-              org.testng.TestNG.run(TestNG.java:1007)<br />
-              org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)<br />
-              org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)<br />
-              org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)<br />
-                </div>
-      </td>
-</tr>
-      </table>
 
 
   <table class="resultsTable">
     <tr><th colspan="3" class="header passed">Passed Tests</th></tr>
           <tr>
-        <td colspan="3" class="group">com.OSMOSE.testcases.oCalcPro</td>
+        <td colspan="3" class="group">com.OSMOSE.testcases.OsmoseServices</td>
       </tr>
             
 <tr>
   <td class="method">
-                  <span class="description" title="Verify click on 30 days Trial button for Licensed User">verify30daysbtnClickLicensedUser</span>
+                  <span class="description" title="Verification of the click on Wood Inspection and Treatment card">VerifyWoodInspectionAndTreatmentclick</span>
       </td>
   <td class="duration">
-    5.896s
+    27.557s
   </td>
   <td class="result">
         
     
             <div class="testOutput">
                         Click to see Screenshot
-                                <a target="_blank" href=Tue_Nov_17_21_31_55_IST_2020.jpg>Screenshot</a>
+                                <a target="_blank" href=Wed_Nov_25_13_59_01_IST_2020.jpg>Screenshot</a>
                                 <br>
                                 <br>
-                                <a target="_blank" href=Tue_Nov_17_21_31_55_IST_2020.jpg><img src=Tue_Nov_17_21_31_55_IST_2020.jpg height=200 width=200></img></a>
+                                <a target="_blank" href=Wed_Nov_25_13_59_01_IST_2020.jpg><img src=Wed_Nov_25_13_59_01_IST_2020.jpg height=200 width=200></img></a>
                   </div>
     
 
@@ -127,20 +48,20 @@ Session ID: 7c47cf17605c0041376f57870d31efef</b></a><br />
 </tr>
 <tr>
   <td class="method">
-                  <span class="description" title="Verify Credit card details are not present for Non-Ocalc Product">verifyCCDetailsForNonOCalcProduct</span>
+                  <span class="description" title="Verification of the click on Wood Restoration card">VerifyWoodRestorationclick</span>
       </td>
   <td class="duration">
-    116.851s
+    17.619s
   </td>
   <td class="result">
         
     
             <div class="testOutput">
                         Click to see Screenshot
-                                <a target="_blank" href=Tue_Nov_17_21_36_11_IST_2020.jpg>Screenshot</a>
+                                <a target="_blank" href=Wed_Nov_25_14_00_32_IST_2020.jpg>Screenshot</a>
                                 <br>
                                 <br>
-                                <a target="_blank" href=Tue_Nov_17_21_36_11_IST_2020.jpg><img src=Tue_Nov_17_21_36_11_IST_2020.jpg height=200 width=200></img></a>
+                                <a target="_blank" href=Wed_Nov_25_14_00_32_IST_2020.jpg><img src=Wed_Nov_25_14_00_32_IST_2020.jpg height=200 width=200></img></a>
                   </div>
     
 
@@ -148,20 +69,20 @@ Session ID: 7c47cf17605c0041376f57870d31efef</b></a><br />
 </tr>
 <tr>
   <td class="method">
-                  <span class="description" title="Verify click on I have copied my receipt Checkbox and Approval">verifyClickIhaveCopiedMyReceiptChkBox</span>
+                  <span class="description" title="Verify the click on Project Profiles under Underground card">verifyClickonUndergroundProjectProfiles</span>
       </td>
   <td class="duration">
-    3.561s
+    20.621s
   </td>
   <td class="result">
         
     
             <div class="testOutput">
                         Click to see Screenshot
-                                <a target="_blank" href=Tue_Nov_17_21_34_14_IST_2020.jpg>Screenshot</a>
+                                <a target="_blank" href=Wed_Nov_25_14_02_26_IST_2020.jpg>Screenshot</a>
                                 <br>
                                 <br>
-                                <a target="_blank" href=Tue_Nov_17_21_34_14_IST_2020.jpg><img src=Tue_Nov_17_21_34_14_IST_2020.jpg height=200 width=200></img></a>
+                                <a target="_blank" href=Wed_Nov_25_14_02_26_IST_2020.jpg><img src=Wed_Nov_25_14_02_26_IST_2020.jpg height=200 width=200></img></a>
                   </div>
     
 
@@ -169,20 +90,20 @@ Session ID: 7c47cf17605c0041376f57870d31efef</b></a><br />
 </tr>
 <tr>
   <td class="method">
-                  <span class="description" title="Verify click on Make Payment button and close pop-up">verifyClickMakePaymentBtn</span>
+                  <span class="description" title="Verify the click on Videos under Underground card">verifyClickonUndergroundVideos</span>
       </td>
   <td class="duration">
-    7.449s
+    20.531s
   </td>
   <td class="result">
         
     
             <div class="testOutput">
                         Click to see Screenshot
-                                <a target="_blank" href=Tue_Nov_17_21_34_10_IST_2020.jpg>Screenshot</a>
+                                <a target="_blank" href=Wed_Nov_25_14_02_05_IST_2020.jpg>Screenshot</a>
                                 <br>
                                 <br>
-                                <a target="_blank" href=Tue_Nov_17_21_34_10_IST_2020.jpg><img src=Tue_Nov_17_21_34_10_IST_2020.jpg height=200 width=200></img></a>
+                                <a target="_blank" href=Wed_Nov_25_14_02_05_IST_2020.jpg><img src=Wed_Nov_25_14_02_05_IST_2020.jpg height=200 width=200></img></a>
                   </div>
     
 
@@ -190,20 +111,20 @@ Session ID: 7c47cf17605c0041376f57870d31efef</b></a><br />
 </tr>
 <tr>
   <td class="method">
-                  <span class="description" title="Verify the Click on Next and Previous buttons">verifyClickOnNextPreviousbtns</span>
+                  <span class="description" title="Verify the click on MAP under Wood Restoration and Treatment card">verifyClickonWoodRestorationMAP</span>
       </td>
   <td class="duration">
-    2.165s
+    20.930s
   </td>
   <td class="result">
         
     
             <div class="testOutput">
                         Click to see Screenshot
-                                <a target="_blank" href=Tue_Nov_17_21_41_05_IST_2020.jpg>Screenshot</a>
+                                <a target="_blank" href=Wed_Nov_25_14_01_44_IST_2020.jpg>Screenshot</a>
                                 <br>
                                 <br>
-                                <a target="_blank" href=Tue_Nov_17_21_41_05_IST_2020.jpg><img src=Tue_Nov_17_21_41_05_IST_2020.jpg height=200 width=200></img></a>
+                                <a target="_blank" href=Wed_Nov_25_14_01_44_IST_2020.jpg><img src=Wed_Nov_25_14_01_44_IST_2020.jpg height=200 width=200></img></a>
                   </div>
     
 
@@ -211,20 +132,20 @@ Session ID: 7c47cf17605c0041376f57870d31efef</b></a><br />
 </tr>
 <tr>
   <td class="method">
-                  <span class="description" title="Verify click on Pay with Credit Card button">verifyClickOnPaywithCCBtn</span>
+                  <span class="description" title="Verify the click on Project Profiles under Wood Restoration card">verifyClickonWoodRestorationProjectProfiles</span>
       </td>
   <td class="duration">
-    27.447s
+    20.669s
   </td>
   <td class="result">
         
     
             <div class="testOutput">
                         Click to see Screenshot
-                                <a target="_blank" href=Tue_Nov_17_21_34_02_IST_2020.jpg>Screenshot</a>
+                                <a target="_blank" href=Wed_Nov_25_14_01_22_IST_2020.jpg>Screenshot</a>
                                 <br>
                                 <br>
-                                <a target="_blank" href=Tue_Nov_17_21_34_02_IST_2020.jpg><img src=Tue_Nov_17_21_34_02_IST_2020.jpg height=200 width=200></img></a>
+                                <a target="_blank" href=Wed_Nov_25_14_01_22_IST_2020.jpg><img src=Wed_Nov_25_14_01_22_IST_2020.jpg height=200 width=200></img></a>
                   </div>
     
 
@@ -232,20 +153,20 @@ Session ID: 7c47cf17605c0041376f57870d31efef</b></a><br />
 </tr>
 <tr>
   <td class="method">
-                  <span class="description" title="Verify the Click on Skip Tour and Exit Tour buttons">verifyClickOnSkipTourExitTourbtns</span>
+                  <span class="description" title="Verify the click on Videos under Wood Restoration card">verifyClickonWoodRestorationVideos</span>
       </td>
   <td class="duration">
-    4.374s
+    27.645s
   </td>
   <td class="result">
         
     
             <div class="testOutput">
                         Click to see Screenshot
-                                <a target="_blank" href=Tue_Nov_17_21_41_09_IST_2020.jpg>Screenshot</a>
+                                <a target="_blank" href=Wed_Nov_25_14_01_01_IST_2020.jpg>Screenshot</a>
                                 <br>
                                 <br>
-                                <a target="_blank" href=Tue_Nov_17_21_41_09_IST_2020.jpg><img src=Tue_Nov_17_21_41_09_IST_2020.jpg height=200 width=200></img></a>
+                                <a target="_blank" href=Wed_Nov_25_14_01_01_IST_2020.jpg><img src=Wed_Nov_25_14_01_01_IST_2020.jpg height=200 width=200></img></a>
                   </div>
     
 
@@ -253,20 +174,20 @@ Session ID: 7c47cf17605c0041376f57870d31efef</b></a><br />
 </tr>
 <tr>
   <td class="method">
-                  <span class="description" title="Verify click on Renew Button functionality">verifyClickRenewBtn</span>
+                  <span class="description" title="Verify the click on MAP under Wood Inspection and Treatment card">verifyClickonWoodTreatmentMAP</span>
       </td>
   <td class="duration">
-    7.299s
+    21.194s
   </td>
   <td class="result">
         
     
             <div class="testOutput">
                         Click to see Screenshot
-                                <a target="_blank" href=Tue_Nov_17_21_42_25_IST_2020.jpg>Screenshot</a>
+                                <a target="_blank" href=Wed_Nov_25_14_00_14_IST_2020.jpg>Screenshot</a>
                                 <br>
                                 <br>
-                                <a target="_blank" href=Tue_Nov_17_21_42_25_IST_2020.jpg><img src=Tue_Nov_17_21_42_25_IST_2020.jpg height=200 width=200></img></a>
+                                <a target="_blank" href=Wed_Nov_25_14_00_14_IST_2020.jpg><img src=Wed_Nov_25_14_00_14_IST_2020.jpg height=200 width=200></img></a>
                   </div>
     
 
@@ -274,20 +195,20 @@ Session ID: 7c47cf17605c0041376f57870d31efef</b></a><br />
 </tr>
 <tr>
   <td class="method">
-                  <span class="description" title="Verify Resend button functionality">verifyClickResend</span>
+                  <span class="description" title="Verify the click on Project Profiles under Wood Inspection and Treatment card">verifyClickonWoodTreatmentProjectProfiles</span>
       </td>
   <td class="duration">
-    4.368s
+    20.531s
   </td>
   <td class="result">
         
     
             <div class="testOutput">
                         Click to see Screenshot
-                                <a target="_blank" href=Tue_Nov_17_21_42_02_IST_2020.jpg>Screenshot</a>
+                                <a target="_blank" href=Wed_Nov_25_13_59_52_IST_2020.jpg>Screenshot</a>
                                 <br>
                                 <br>
-                                <a target="_blank" href=Tue_Nov_17_21_42_02_IST_2020.jpg><img src=Tue_Nov_17_21_42_02_IST_2020.jpg height=200 width=200></img></a>
+                                <a target="_blank" href=Wed_Nov_25_13_59_52_IST_2020.jpg><img src=Wed_Nov_25_13_59_52_IST_2020.jpg height=200 width=200></img></a>
                   </div>
     
 
@@ -295,20 +216,20 @@ Session ID: 7c47cf17605c0041376f57870d31efef</b></a><br />
 </tr>
 <tr>
   <td class="method">
-                  <span class="description" title="Verify click on Transfer License Button">verifyClickTransferLicenseBtn</span>
+                  <span class="description" title="Verify the click on Videos under Wood Inspection and Treatment card">verifyClickonWoodTreatmentVideos</span>
       </td>
   <td class="duration">
-    2.660s
+    29.399s
   </td>
   <td class="result">
         
     
             <div class="testOutput">
                         Click to see Screenshot
-                                <a target="_blank" href=Tue_Nov_17_21_41_57_IST_2020.jpg>Screenshot</a>
+                                <a target="_blank" href=Wed_Nov_25_13_59_31_IST_2020.jpg>Screenshot</a>
                                 <br>
                                 <br>
-                                <a target="_blank" href=Tue_Nov_17_21_41_57_IST_2020.jpg><img src=Tue_Nov_17_21_41_57_IST_2020.jpg height=200 width=200></img></a>
+                                <a target="_blank" href=Wed_Nov_25_13_59_31_IST_2020.jpg><img src=Wed_Nov_25_13_59_31_IST_2020.jpg height=200 width=200></img></a>
                   </div>
     
 
@@ -316,20 +237,20 @@ Session ID: 7c47cf17605c0041376f57870d31efef</b></a><br />
 </tr>
 <tr>
   <td class="method">
-                  <span class="description" title="Verify click on Update Contact Button">verifyClickUpdateContactBtn</span>
+                  <span class="description" title="Verify the presence of Engineering Services and click on Learn More button">verifyEngineeringServicesLearnMoreClick</span>
       </td>
   <td class="duration">
-    2.213s
+    5.222s
   </td>
   <td class="result">
         
     
             <div class="testOutput">
                         Click to see Screenshot
-                                <a target="_blank" href=Tue_Nov_17_21_42_18_IST_2020.jpg>Screenshot</a>
+                                <a target="_blank" href=Wed_Nov_25_13_58_27_IST_2020.jpg>Screenshot</a>
                                 <br>
                                 <br>
-                                <a target="_blank" href=Tue_Nov_17_21_42_18_IST_2020.jpg><img src=Tue_Nov_17_21_42_18_IST_2020.jpg height=200 width=200></img></a>
+                                <a target="_blank" href=Wed_Nov_25_13_58_27_IST_2020.jpg><img src=Wed_Nov_25_13_58_27_IST_2020.jpg height=200 width=200></img></a>
                   </div>
     
 
@@ -337,20 +258,20 @@ Session ID: 7c47cf17605c0041376f57870d31efef</b></a><br />
 </tr>
 <tr>
   <td class="method">
-                  <span class="description" title="Verify the Contents of License Management Pop-up">verifyContentsLicenseManagementPopUp</span>
+                  <span class="description" title="Verify the presence of JointUse and click on Learn More button">verifyJointUseLearnMoreClick</span>
       </td>
   <td class="duration">
-    5.352s
+    5.190s
   </td>
   <td class="result">
         
     
             <div class="testOutput">
                         Click to see Screenshot
-                                <a target="_blank" href=Tue_Nov_17_21_40_58_IST_2020.jpg>Screenshot</a>
+                                <a target="_blank" href=Wed_Nov_25_13_58_16_IST_2020.jpg>Screenshot</a>
                                 <br>
                                 <br>
-                                <a target="_blank" href=Tue_Nov_17_21_40_58_IST_2020.jpg><img src=Tue_Nov_17_21_40_58_IST_2020.jpg height=200 width=200></img></a>
+                                <a target="_blank" href=Wed_Nov_25_13_58_16_IST_2020.jpg><img src=Wed_Nov_25_13_58_16_IST_2020.jpg height=200 width=200></img></a>
                   </div>
     
 
@@ -358,20 +279,20 @@ Session ID: 7c47cf17605c0041376f57870d31efef</b></a><br />
 </tr>
 <tr>
   <td class="method">
-                  <span class="description" title="Verify contents on Announcements card for Licensed User">verifyContentsOfAnnouncementsLicensedUser</span>
+                  <span class="description" title="Verify the presence of My Osmose Services Card on Home Page">verifyMyOsmoseServicesCardClick</span>
       </td>
   <td class="duration">
-    0.472s
+    9.182s
   </td>
   <td class="result">
         
     
             <div class="testOutput">
                         Click to see Screenshot
-                                <a target="_blank" href=Tue_Nov_17_21_31_17_IST_2020.jpg>Screenshot</a>
+                                <a target="_blank" href=Wed_Nov_25_13_57_18_IST_2020.jpg>Screenshot</a>
                                 <br>
                                 <br>
-                                <a target="_blank" href=Tue_Nov_17_21_31_17_IST_2020.jpg><img src=Tue_Nov_17_21_31_17_IST_2020.jpg height=200 width=200></img></a>
+                                <a target="_blank" href=Wed_Nov_25_13_57_18_IST_2020.jpg><img src=Wed_Nov_25_13_57_18_IST_2020.jpg height=200 width=200></img></a>
                   </div>
     
 
@@ -379,20 +300,20 @@ Session ID: 7c47cf17605c0041376f57870d31efef</b></a><br />
 </tr>
 <tr>
   <td class="method">
-                  <span class="description" title="Verify Contents of FAQ for Licensed User">verifyContentsOfFAQLicensedUser</span>
+                  <span class="description" title="Verify the presence of OCalc Pro and click on Learn More button">verifyOcalcProLearnMoreClick</span>
       </td>
   <td class="duration">
-    6.646s
+    5.222s
   </td>
   <td class="result">
         
     
             <div class="testOutput">
                         Click to see Screenshot
-                                <a target="_blank" href=Tue_Nov_17_21_38_46_IST_2020.jpg>Screenshot</a>
+                                <a target="_blank" href=Wed_Nov_25_13_57_47_IST_2020.jpg>Screenshot</a>
                                 <br>
                                 <br>
-                                <a target="_blank" href=Tue_Nov_17_21_38_46_IST_2020.jpg><img src=Tue_Nov_17_21_38_46_IST_2020.jpg height=200 width=200></img></a>
+                                <a target="_blank" href=Wed_Nov_25_13_57_47_IST_2020.jpg><img src=Wed_Nov_25_13_57_47_IST_2020.jpg height=200 width=200></img></a>
                   </div>
     
 
@@ -400,20 +321,20 @@ Session ID: 7c47cf17605c0041376f57870d31efef</b></a><br />
 </tr>
 <tr>
   <td class="method">
-                  <span class="description" title="Verify contents on Knowledge Base card for Licensed User">verifyContentsOfKBCardLicensedUser</span>
+                  <span class="description" title="Verify the presence of Overhead and click on Learn More button">verifyOverheadLearnMoreClick</span>
       </td>
   <td class="duration">
-    0.098s
+    5.213s
   </td>
   <td class="result">
         
     
             <div class="testOutput">
                         Click to see Screenshot
-                                <a target="_blank" href=Tue_Nov_17_21_31_16_IST_2020.jpg>Screenshot</a>
+                                <a target="_blank" href=Wed_Nov_25_13_58_04_IST_2020.jpg>Screenshot</a>
                                 <br>
                                 <br>
-                                <a target="_blank" href=Tue_Nov_17_21_31_16_IST_2020.jpg><img src=Tue_Nov_17_21_31_16_IST_2020.jpg height=200 width=200></img></a>
+                                <a target="_blank" href=Wed_Nov_25_13_58_04_IST_2020.jpg><img src=Wed_Nov_25_13_58_04_IST_2020.jpg height=200 width=200></img></a>
                   </div>
     
 
@@ -421,20 +342,20 @@ Session ID: 7c47cf17605c0041376f57870d31efef</b></a><br />
 </tr>
 <tr>
   <td class="method">
-                  <span class="description" title="Verify contents on License Management card for Licensed User">verifyContentsOfLicenseMgmtLicensedUser</span>
+                  <span class="description" title="Verify the pop-up after click on Underground card">verifyPopUpUnderground</span>
       </td>
   <td class="duration">
-    0.223s
+    15.734s
   </td>
   <td class="result">
         
     
             <div class="testOutput">
                         Click to see Screenshot
-                                <a target="_blank" href=Tue_Nov_17_21_31_18_IST_2020.jpg>Screenshot</a>
+                                <a target="_blank" href=Wed_Nov_25_14_02_42_IST_2020.jpg>Screenshot</a>
                                 <br>
                                 <br>
-                                <a target="_blank" href=Tue_Nov_17_21_31_18_IST_2020.jpg><img src=Tue_Nov_17_21_31_18_IST_2020.jpg height=200 width=200></img></a>
+                                <a target="_blank" href=Wed_Nov_25_14_02_42_IST_2020.jpg><img src=Wed_Nov_25_14_02_42_IST_2020.jpg height=200 width=200></img></a>
                   </div>
     
 
@@ -442,20 +363,20 @@ Session ID: 7c47cf17605c0041376f57870d31efef</b></a><br />
 </tr>
 <tr>
   <td class="method">
-                  <span class="description" title="Verify contents on Products card for Licensed User">verifyContentsOfProductsCardLicensedUser</span>
+                  <span class="description" title="Verify the presence of Steel & Concrete | Assessment and click on Learn More button">verifySteelandConcreteAssessmentLearnMoreClick</span>
       </td>
   <td class="duration">
-    0.221s
+    5.232s
   </td>
   <td class="result">
         
     
             <div class="testOutput">
                         Click to see Screenshot
-                                <a target="_blank" href=Tue_Nov_17_21_31_16_IST_2020.jpg>Screenshot</a>
+                                <a target="_blank" href=Wed_Nov_25_13_57_53_IST_2020.jpg>Screenshot</a>
                                 <br>
                                 <br>
-                                <a target="_blank" href=Tue_Nov_17_21_31_16_IST_2020.jpg><img src=Tue_Nov_17_21_31_16_IST_2020.jpg height=200 width=200></img></a>
+                                <a target="_blank" href=Wed_Nov_25_13_57_53_IST_2020.jpg><img src=Wed_Nov_25_13_57_53_IST_2020.jpg height=200 width=200></img></a>
                   </div>
     
 
@@ -463,20 +384,20 @@ Session ID: 7c47cf17605c0041376f57870d31efef</b></a><br />
 </tr>
 <tr>
   <td class="method">
-                  <span class="description" title="Verify contents on Training Options card for Licensed User">verifyContentsOfTrainingOptionsLicensedUser</span>
+                  <span class="description" title="Verify the presence of Steel & Concrete | Restoration and click on Learn More button">verifySteelandConcreteRestorationLearnMoreClick</span>
       </td>
   <td class="duration">
-    0.124s
+    5.210s
   </td>
   <td class="result">
         
     
             <div class="testOutput">
                         Click to see Screenshot
-                                <a target="_blank" href=Tue_Nov_17_21_31_15_IST_2020.jpg>Screenshot</a>
+                                <a target="_blank" href=Wed_Nov_25_13_57_59_IST_2020.jpg>Screenshot</a>
                                 <br>
                                 <br>
-                                <a target="_blank" href=Tue_Nov_17_21_31_15_IST_2020.jpg><img src=Tue_Nov_17_21_31_15_IST_2020.jpg height=200 width=200></img></a>
+                                <a target="_blank" href=Wed_Nov_25_13_57_59_IST_2020.jpg><img src=Wed_Nov_25_13_57_59_IST_2020.jpg height=200 width=200></img></a>
                   </div>
     
 
@@ -484,20 +405,20 @@ Session ID: 7c47cf17605c0041376f57870d31efef</b></a><br />
 </tr>
 <tr>
   <td class="method">
-                  <span class="description" title="Verify contents on Tutotial, Live Demo and Support card">verifyContentsOfTutorialLiveDemoLicensedUser</span>
+                  <span class="description" title="Verify the presence of Storm Service and click on Learn More button">verifyStormServiceLearnMoreClick</span>
       </td>
   <td class="duration">
-    0.285s
+    5.202s
   </td>
   <td class="result">
         
     
             <div class="testOutput">
                         Click to see Screenshot
-                                <a target="_blank" href=Tue_Nov_17_21_31_18_IST_2020.jpg>Screenshot</a>
+                                <a target="_blank" href=Wed_Nov_25_13_58_33_IST_2020.jpg>Screenshot</a>
                                 <br>
                                 <br>
-                                <a target="_blank" href=Tue_Nov_17_21_31_18_IST_2020.jpg><img src=Tue_Nov_17_21_31_18_IST_2020.jpg height=200 width=200></img></a>
+                                <a target="_blank" href=Wed_Nov_25_13_58_33_IST_2020.jpg><img src=Wed_Nov_25_13_58_33_IST_2020.jpg height=200 width=200></img></a>
                   </div>
     
 
@@ -505,20 +426,20 @@ Session ID: 7c47cf17605c0041376f57870d31efef</b></a><br />
 </tr>
 <tr>
   <td class="method">
-                  <span class="description" title="Verify click on Current Public classes on Training Options for a licensed User">verifyCurrentPublicClassesClickLicensedUser</span>
+                  <span class="description" title="Verify the presence of StrayVoltage and click on Learn More button">verifyStrayVoltageLearnMoreClick</span>
       </td>
   <td class="duration">
-    17.508s
+    5.233s
   </td>
   <td class="result">
         
     
             <div class="testOutput">
                         Click to see Screenshot
-                                <a target="_blank" href=Tue_Nov_17_21_38_26_IST_2020.jpg>Screenshot</a>
+                                <a target="_blank" href=Wed_Nov_25_13_58_21_IST_2020.jpg>Screenshot</a>
                                 <br>
                                 <br>
-                                <a target="_blank" href=Tue_Nov_17_21_38_26_IST_2020.jpg><img src=Tue_Nov_17_21_38_26_IST_2020.jpg height=200 width=200></img></a>
+                                <a target="_blank" href=Wed_Nov_25_13_58_21_IST_2020.jpg><img src=Wed_Nov_25_13_58_21_IST_2020.jpg height=200 width=200></img></a>
                   </div>
     
 
@@ -526,20 +447,20 @@ Session ID: 7c47cf17605c0041376f57870d31efef</b></a><br />
 </tr>
 <tr>
   <td class="method">
-                  <span class="description" title="Verify adding OcalPro and other products to cart and quote submission">verifyDifferentProductsQuoteCreate</span>
+                  <span class="description" title="Verify the presence and click on Take me to Osmose.com link">verifyTakeMeToOsmoseClick</span>
       </td>
   <td class="duration">
-    14.666s
+    12.623s
   </td>
   <td class="result">
         
     
             <div class="testOutput">
                         Click to see Screenshot
-                                <a target="_blank" href=Tue_Nov_17_21_32_18_IST_2020.jpg>Screenshot</a>
+                                <a target="_blank" href=Wed_Nov_25_14_02_55_IST_2020.jpg>Screenshot</a>
                                 <br>
                                 <br>
-                                <a target="_blank" href=Tue_Nov_17_21_32_18_IST_2020.jpg><img src=Tue_Nov_17_21_32_18_IST_2020.jpg height=200 width=200></img></a>
+                                <a target="_blank" href=Wed_Nov_25_14_02_55_IST_2020.jpg><img src=Wed_Nov_25_14_02_55_IST_2020.jpg height=200 width=200></img></a>
                   </div>
     
 
@@ -547,20 +468,20 @@ Session ID: 7c47cf17605c0041376f57870d31efef</b></a><br />
 </tr>
 <tr>
   <td class="method">
-                  <span class="description" title="Verify clicking on an FAQ for Licensed User">verifyFAQClickLicensedUser</span>
+                  <span class="description" title="Verify the presence of Underground and click on Learn More button">verifyUndergroundLearnMoreClick</span>
       </td>
   <td class="duration">
-    18.067s
+    5.199s
   </td>
   <td class="result">
         
     
             <div class="testOutput">
                         Click to see Screenshot
-                                <a target="_blank" href=Tue_Nov_17_21_39_04_IST_2020.jpg>Screenshot</a>
+                                <a target="_blank" href=Wed_Nov_25_13_58_10_IST_2020.jpg>Screenshot</a>
                                 <br>
                                 <br>
-                                <a target="_blank" href=Tue_Nov_17_21_39_04_IST_2020.jpg><img src=Tue_Nov_17_21_39_04_IST_2020.jpg height=200 width=200></img></a>
+                                <a target="_blank" href=Wed_Nov_25_13_58_10_IST_2020.jpg><img src=Wed_Nov_25_13_58_10_IST_2020.jpg height=200 width=200></img></a>
                   </div>
     
 
@@ -568,20 +489,20 @@ Session ID: 7c47cf17605c0041376f57870d31efef</b></a><br />
 </tr>
 <tr>
   <td class="method">
-                  <span class="description" title="Verify the Filter functionality of Contact Name column">verifyFilterContactName</span>
+                  <span class="description" title="Verify the presence of Wood Inspection and Treatment and click on Learn More button">verifyWoodInspectionandTreatmentLearnMoreClick</span>
       </td>
   <td class="duration">
-    3.519s
+    17.238s
   </td>
   <td class="result">
         
     
             <div class="testOutput">
                         Click to see Screenshot
-                                <a target="_blank" href=Tue_Nov_17_21_41_20_IST_2020.jpg>Screenshot</a>
+                                <a target="_blank" href=Wed_Nov_25_13_57_36_IST_2020.jpg>Screenshot</a>
                                 <br>
                                 <br>
-                                <a target="_blank" href=Tue_Nov_17_21_41_20_IST_2020.jpg><img src=Tue_Nov_17_21_41_20_IST_2020.jpg height=200 width=200></img></a>
+                                <a target="_blank" href=Wed_Nov_25_13_57_36_IST_2020.jpg><img src=Wed_Nov_25_13_57_36_IST_2020.jpg height=200 width=200></img></a>
                   </div>
     
 
@@ -589,713 +510,20 @@ Session ID: 7c47cf17605c0041376f57870d31efef</b></a><br />
 </tr>
 <tr>
   <td class="method">
-                  <span class="description" title="Verify the Filter functionality of Exp Token column">verifyFilterExpToken</span>
+                  <span class="description" title="Verify the presence of Wood Restoration and click on Learn More button">verifyWoodRestorationLearnMoreClick</span>
       </td>
   <td class="duration">
-    1.538s
+    5.269s
   </td>
   <td class="result">
         
     
             <div class="testOutput">
                         Click to see Screenshot
-                                <a target="_blank" href=Tue_Nov_17_21_41_27_IST_2020.jpg>Screenshot</a>
+                                <a target="_blank" href=Wed_Nov_25_13_57_41_IST_2020.jpg>Screenshot</a>
                                 <br>
                                 <br>
-                                <a target="_blank" href=Tue_Nov_17_21_41_27_IST_2020.jpg><img src=Tue_Nov_17_21_41_27_IST_2020.jpg height=200 width=200></img></a>
-                  </div>
-    
-
-      </td>
-</tr>
-<tr>
-  <td class="method">
-                  <span class="description" title="Verify the Filter functionality of Expiration Date column">verifyFilterExpirationDate</span>
-      </td>
-  <td class="duration">
-    2.789s
-  </td>
-  <td class="result">
-        
-    
-            <div class="testOutput">
-                        Click to see Screenshot
-                                <a target="_blank" href=Tue_Nov_17_21_41_40_IST_2020.jpg>Screenshot</a>
-                                <br>
-                                <br>
-                                <a target="_blank" href=Tue_Nov_17_21_41_40_IST_2020.jpg><img src=Tue_Nov_17_21_41_40_IST_2020.jpg height=200 width=200></img></a>
-                  </div>
-    
-
-      </td>
-</tr>
-<tr>
-  <td class="method">
-                  <span class="description" title="Verify the Filter functionality of License key column">verifyFilterLicenseKey</span>
-      </td>
-  <td class="duration">
-    1.559s
-  </td>
-  <td class="result">
-        
-    
-            <div class="testOutput">
-                        Click to see Screenshot
-                                <a target="_blank" href=Tue_Nov_17_21_41_22_IST_2020.jpg>Screenshot</a>
-                                <br>
-                                <br>
-                                <a target="_blank" href=Tue_Nov_17_21_41_22_IST_2020.jpg><img src=Tue_Nov_17_21_41_22_IST_2020.jpg height=200 width=200></img></a>
-                  </div>
-    
-
-      </td>
-</tr>
-<tr>
-  <td class="method">
-                  <span class="description" title="Verify the Filter functionality of License Type column">verifyFilterLicenseType</span>
-      </td>
-  <td class="duration">
-    2.679s
-  </td>
-  <td class="result">
-        
-    
-            <div class="testOutput">
-                        Click to see Screenshot
-                                <a target="_blank" href=Tue_Nov_17_21_41_30_IST_2020.jpg>Screenshot</a>
-                                <br>
-                                <br>
-                                <a target="_blank" href=Tue_Nov_17_21_41_30_IST_2020.jpg><img src=Tue_Nov_17_21_41_30_IST_2020.jpg height=200 width=200></img></a>
-                  </div>
-    
-
-      </td>
-</tr>
-<tr>
-  <td class="method">
-                  <span class="description" title="Verify the Filter functionality of License Type column when Site is selected as license type">verifyFilterLicenseTypeSite</span>
-      </td>
-  <td class="duration">
-    2.831s
-  </td>
-  <td class="result">
-        
-    
-            <div class="testOutput">
-                        Click to see Screenshot
-                                <a target="_blank" href=Tue_Nov_17_21_41_33_IST_2020.jpg>Screenshot</a>
-                                <br>
-                                <br>
-                                <a target="_blank" href=Tue_Nov_17_21_41_33_IST_2020.jpg><img src=Tue_Nov_17_21_41_33_IST_2020.jpg height=200 width=200></img></a>
-                  </div>
-    
-
-      </td>
-</tr>
-<tr>
-  <td class="method">
-                  <span class="description" title="Verify the Filter functionality of Purchase Date column">verifyFilterPurchaseDate</span>
-      </td>
-  <td class="duration">
-    2.802s
-  </td>
-  <td class="result">
-        
-    
-            <div class="testOutput">
-                        Click to see Screenshot
-                                <a target="_blank" href=Tue_Nov_17_21_41_37_IST_2020.jpg>Screenshot</a>
-                                <br>
-                                <br>
-                                <a target="_blank" href=Tue_Nov_17_21_41_37_IST_2020.jpg><img src=Tue_Nov_17_21_41_37_IST_2020.jpg height=200 width=200></img></a>
-                  </div>
-    
-
-      </td>
-</tr>
-<tr>
-  <td class="method">
-                  <span class="description" title="Verify the Filter functionality of Status column">verifyFilterStatus</span>
-      </td>
-  <td class="duration">
-    2.644s
-  </td>
-  <td class="result">
-        
-    
-            <div class="testOutput">
-                        Click to see Screenshot
-                                <a target="_blank" href=Tue_Nov_17_21_41_25_IST_2020.jpg>Screenshot</a>
-                                <br>
-                                <br>
-                                <a target="_blank" href=Tue_Nov_17_21_41_25_IST_2020.jpg><img src=Tue_Nov_17_21_41_25_IST_2020.jpg height=200 width=200></img></a>
-                  </div>
-    
-
-      </td>
-</tr>
-<tr>
-  <td class="method">
-                  <span class="description" title="Verify click on Knowledge Base card for Licensed User">verifyKBClickLicensedUser</span>
-      </td>
-  <td class="duration">
-    24.452s
-  </td>
-  <td class="result">
-        
-    
-            <div class="testOutput">
-                        Click to see Screenshot
-                                <a target="_blank" href=Tue_Nov_17_21_39_30_IST_2020.jpg>Screenshot</a>
-                                <br>
-                                <br>
-                                <a target="_blank" href=Tue_Nov_17_21_39_30_IST_2020.jpg><img src=Tue_Nov_17_21_39_30_IST_2020.jpg height=200 width=200></img></a>
-                  </div>
-    
-
-      </td>
-</tr>
-<tr>
-  <td class="method">
-                  <span class="description" title="Verify click on Training Videos link on Knowledge Base card for Licensed User">verifyKBTrainingVideosClickLicensedUser</span>
-      </td>
-  <td class="duration">
-    15.626s
-  </td>
-  <td class="result">
-        
-    
-            <div class="testOutput">
-                        Click to see Screenshot
-                                <a target="_blank" href=Tue_Nov_17_21_39_46_IST_2020.jpg>Screenshot</a>
-                                <br>
-                                <br>
-                                <a target="_blank" href=Tue_Nov_17_21_39_46_IST_2020.jpg><img src=Tue_Nov_17_21_39_46_IST_2020.jpg height=200 width=200></img></a>
-                  </div>
-    
-
-      </td>
-</tr>
-<tr>
-  <td class="method">
-                  <span class="description" title="Verify click on Wiki Page on Knowledge Base card for Licensed User">verifyKBWikiPageClickLicensedUser</span>
-      </td>
-  <td class="duration">
-    28.813s
-  </td>
-  <td class="result">
-        
-    
-            <div class="testOutput">
-                        Click to see Screenshot
-                                <a target="_blank" href=Tue_Nov_17_21_40_16_IST_2020.jpg>Screenshot</a>
-                                <br>
-                                <br>
-                                <a target="_blank" href=Tue_Nov_17_21_40_16_IST_2020.jpg><img src=Tue_Nov_17_21_40_16_IST_2020.jpg height=200 width=200></img></a>
-                  </div>
-    
-
-      </td>
-</tr>
-<tr>
-  <td class="method">
-                  <span class="description" title="verify that only Renew Button is Enabled On multiple record selection">verifyOnlyRenewBtnIsEnabledOnMultipleRecordSelection</span>
-      </td>
-  <td class="duration">
-    6.507s
-  </td>
-  <td class="result">
-        
-    
-            <div class="testOutput">
-                        Click to see Screenshot
-                                <a target="_blank" href=Tue_Nov_17_21_41_16_IST_2020.jpg>Screenshot</a>
-                                <br>
-                                <br>
-                                <a target="_blank" href=Tue_Nov_17_21_41_16_IST_2020.jpg><img src=Tue_Nov_17_21_41_16_IST_2020.jpg height=200 width=200></img></a>
-                  </div>
-    
-
-      </td>
-</tr>
-<tr>
-  <td class="method">
-                  <span class="description" title="Verify presence of Announcements card on OcalcPro page for Licensed User">verifyPresenceOfAnnouncementsCardLicensedUser</span>
-      </td>
-  <td class="duration">
-    0.054s
-  </td>
-  <td class="result">
-        
-    
-            <div class="testOutput">
-                        Click to see Screenshot
-                                <a target="_blank" href=Tue_Nov_17_21_31_14_IST_2020.jpg>Screenshot</a>
-                                <br>
-                                <br>
-                                <a target="_blank" href=Tue_Nov_17_21_31_14_IST_2020.jpg><img src=Tue_Nov_17_21_31_14_IST_2020.jpg height=200 width=200></img></a>
-                  </div>
-    
-
-      </td>
-</tr>
-<tr>
-  <td class="method">
-                  <span class="description" title="Verify presence of CC Receipt on My Quotes Screen">verifyPresenceOfCCReceipt</span>
-      </td>
-  <td class="duration">
-    116.304s
-  </td>
-  <td class="result">
-        
-    
-            <div class="testOutput">
-                        Click to see Screenshot
-                                <a target="_blank" href=Tue_Nov_17_21_38_08_IST_2020.jpg>Screenshot</a>
-                                <br>
-                                <br>
-                                <a target="_blank" href=Tue_Nov_17_21_38_08_IST_2020.jpg><img src=Tue_Nov_17_21_38_08_IST_2020.jpg height=200 width=200></img></a>
-                  </div>
-    
-
-      </td>
-</tr>
-<tr>
-  <td class="method">
-                  <span class="description" title="Verify presence of Credit Card details">verifyPresenceOfCreditCardOptions</span>
-      </td>
-  <td class="duration">
-    75.347s
-  </td>
-  <td class="result">
-        
-    
-            <div class="testOutput">
-                        Click to see Screenshot
-                                <a target="_blank" href=Tue_Nov_17_21_33_34_IST_2020.jpg>Screenshot</a>
-                                <br>
-                                <br>
-                                <a target="_blank" href=Tue_Nov_17_21_33_34_IST_2020.jpg><img src=Tue_Nov_17_21_33_34_IST_2020.jpg height=200 width=200></img></a>
-                  </div>
-    
-
-      </td>
-</tr>
-<tr>
-  <td class="method">
-                  <span class="description" title="Verify presence of Knowledge Base card on OcalcPro page for Licensed User">verifyPresenceOfKnowledgeBaseCardLicensedUser</span>
-      </td>
-  <td class="duration">
-    0.043s
-  </td>
-  <td class="result">
-        
-    
-            <div class="testOutput">
-                        Click to see Screenshot
-                                <a target="_blank" href=Tue_Nov_17_21_31_13_IST_2020.jpg>Screenshot</a>
-                                <br>
-                                <br>
-                                <a target="_blank" href=Tue_Nov_17_21_31_13_IST_2020.jpg><img src=Tue_Nov_17_21_31_13_IST_2020.jpg height=200 width=200></img></a>
-                  </div>
-    
-
-      </td>
-</tr>
-<tr>
-  <td class="method">
-                  <span class="description" title="Verify presence of License Management card on OcalcPro page for Licensed User">verifyPresenceOfLicenseMgmtCard</span>
-      </td>
-  <td class="duration">
-    0.047s
-  </td>
-  <td class="result">
-        
-    
-            <div class="testOutput">
-                        Click to see Screenshot
-                                <a target="_blank" href=Tue_Nov_17_21_31_12_IST_2020.jpg>Screenshot</a>
-                                <br>
-                                <br>
-                                <a target="_blank" href=Tue_Nov_17_21_31_12_IST_2020.jpg><img src=Tue_Nov_17_21_31_12_IST_2020.jpg height=200 width=200></img></a>
-                  </div>
-    
-
-      </td>
-</tr>
-<tr>
-  <td class="method">
-                  <span class="description" title="Verify presence of Products card on OcalcPro page for Licensed User">verifyPresenceOfProductsCardLicensedUser</span>
-      </td>
-  <td class="duration">
-    0.034s
-  </td>
-  <td class="result">
-        
-    
-            <div class="testOutput">
-                        Click to see Screenshot
-                                <a target="_blank" href=Tue_Nov_17_21_31_13_IST_2020.jpg>Screenshot</a>
-                                <br>
-                                <br>
-                                <a target="_blank" href=Tue_Nov_17_21_31_13_IST_2020.jpg><img src=Tue_Nov_17_21_31_13_IST_2020.jpg height=200 width=200></img></a>
-                  </div>
-    
-
-      </td>
-</tr>
-<tr>
-  <td class="method">
-                  <span class="description" title="Verify the presence of SkipTour, Next, Previous, ExitTour buttons">verifyPresenceOfSkipTourNextPreviousExitTour</span>
-      </td>
-  <td class="duration">
-    4.153s
-  </td>
-  <td class="result">
-        
-    
-            <div class="testOutput">
-                        Click to see Screenshot
-                                <a target="_blank" href=Tue_Nov_17_21_41_02_IST_2020.jpg>Screenshot</a>
-                                <br>
-                                <br>
-                                <a target="_blank" href=Tue_Nov_17_21_41_02_IST_2020.jpg><img src=Tue_Nov_17_21_41_02_IST_2020.jpg height=200 width=200></img></a>
-                  </div>
-    
-
-      </td>
-</tr>
-<tr>
-  <td class="method">
-                  <span class="description" title="Verify presence of Training Options card on OcalcPro page for Licensed User">verifyPresenceOfTrainingOptionsCardLicensedUser</span>
-      </td>
-  <td class="duration">
-    0.037s
-  </td>
-  <td class="result">
-        
-    
-            <div class="testOutput">
-                        Click to see Screenshot
-                                <a target="_blank" href=Tue_Nov_17_21_31_14_IST_2020.jpg>Screenshot</a>
-                                <br>
-                                <br>
-                                <a target="_blank" href=Tue_Nov_17_21_31_14_IST_2020.jpg><img src=Tue_Nov_17_21_31_14_IST_2020.jpg height=200 width=200></img></a>
-                  </div>
-    
-
-      </td>
-</tr>
-<tr>
-  <td class="method">
-                  <span class="description" title="Verify presence of Tutorial, Live Demo & support card on OcalcPro page for Licensed User">verifyPresenceOfTutorialLiveDemoCardLicensedUser</span>
-      </td>
-  <td class="duration">
-    0.050s
-  </td>
-  <td class="result">
-        
-    
-            <div class="testOutput">
-                        Click to see Screenshot
-                                <a target="_blank" href=Tue_Nov_17_21_31_15_IST_2020.jpg>Screenshot</a>
-                                <br>
-                                <br>
-                                <a target="_blank" href=Tue_Nov_17_21_31_15_IST_2020.jpg><img src=Tue_Nov_17_21_31_15_IST_2020.jpg height=200 width=200></img></a>
-                  </div>
-    
-
-      </td>
-</tr>
-<tr>
-  <td class="method">
-                  <span class="description" title="Verify click on Products card for Licensed User">verifyProductsClickLicensedUser</span>
-      </td>
-  <td class="duration">
-    2.191s
-  </td>
-  <td class="result">
-        
-    
-            <div class="testOutput">
-                        Click to see Screenshot
-                                <a target="_blank" href=Tue_Nov_17_21_31_21_IST_2020.jpg>Screenshot</a>
-                                <br>
-                                <br>
-                                <a target="_blank" href=Tue_Nov_17_21_31_21_IST_2020.jpg><img src=Tue_Nov_17_21_31_21_IST_2020.jpg height=200 width=200></img></a>
-                  </div>
-    
-
-      </td>
-</tr>
-<tr>
-  <td class="method">
-                  <span class="description" title="Verify click on Request CVT Quote on Products card and submit quote for Licensed User">verifyRequestCVTQuoteClickLicensedUser</span>
-      </td>
-  <td class="duration">
-    9.325s
-  </td>
-  <td class="result">
-        
-    
-            <div class="testOutput">
-                        Click to see Screenshot
-                                <a target="_blank" href=Tue_Nov_17_21_31_40_IST_2020.jpg>Screenshot</a>
-                                <br>
-                                <br>
-                                <a target="_blank" href=Tue_Nov_17_21_31_40_IST_2020.jpg><img src=Tue_Nov_17_21_31_40_IST_2020.jpg height=200 width=200></img></a>
-                  </div>
-    
-
-      </td>
-</tr>
-<tr>
-  <td class="method">
-                  <span class="description" title="Verify click on Request License Quote on Products card and submit quote for Licensed User">verifyRequestLicenseQuoteClickLicensedUser</span>
-      </td>
-  <td class="duration">
-    8.919s
-  </td>
-  <td class="result">
-        
-    
-            <div class="testOutput">
-                        Click to see Screenshot
-                                <a target="_blank" href=Tue_Nov_17_21_31_31_IST_2020.jpg>Screenshot</a>
-                                <br>
-                                <br>
-                                <a target="_blank" href=Tue_Nov_17_21_31_31_IST_2020.jpg><img src=Tue_Nov_17_21_31_31_IST_2020.jpg height=200 width=200></img></a>
-                  </div>
-    
-
-      </td>
-</tr>
-<tr>
-  <td class="method">
-                  <span class="description" title="Verify click on Request Quote for Private Training classes on Training Options for Licensed User">verifyRequestQuoteForPrivateTrainingClassesClickLicensedUser</span>
-      </td>
-  <td class="duration">
-    11.334s
-  </td>
-  <td class="result">
-        
-    
-            <div class="testOutput">
-                        Click to see Screenshot
-                                <a target="_blank" href=Tue_Nov_17_21_38_38_IST_2020.jpg>Screenshot</a>
-                                <br>
-                                <br>
-                                <a target="_blank" href=Tue_Nov_17_21_38_38_IST_2020.jpg><img src=Tue_Nov_17_21_38_38_IST_2020.jpg height=200 width=200></img></a>
-                  </div>
-    
-
-      </td>
-</tr>
-<tr>
-  <td class="method">
-                  <span class="description" title="Verify click on Request Training Quote on Products card and submit quote for Licensed User">verifyRequestTrainingQuoteClickLicensedUser</span>
-      </td>
-  <td class="duration">
-    8.202s
-  </td>
-  <td class="result">
-        
-    
-            <div class="testOutput">
-                        Click to see Screenshot
-                                <a target="_blank" href=Tue_Nov_17_21_31_49_IST_2020.jpg>Screenshot</a>
-                                <br>
-                                <br>
-                                <a target="_blank" href=Tue_Nov_17_21_31_49_IST_2020.jpg><img src=Tue_Nov_17_21_31_49_IST_2020.jpg height=200 width=200></img></a>
-                  </div>
-    
-
-      </td>
-</tr>
-<tr>
-  <td class="method">
-                  <span class="description" title="Verify click on Request Demo button for Licensed User">verifyRequstDemoClickLicensedUser</span>
-      </td>
-  <td class="duration">
-    4.524s
-  </td>
-  <td class="result">
-        
-    
-            <div class="testOutput">
-                        Click to see Screenshot
-                                <a target="_blank" href=Tue_Nov_17_21_32_00_IST_2020.jpg>Screenshot</a>
-                                <br>
-                                <br>
-                                <a target="_blank" href=Tue_Nov_17_21_32_00_IST_2020.jpg><img src=Tue_Nov_17_21_32_00_IST_2020.jpg height=200 width=200></img></a>
-                  </div>
-    
-
-      </td>
-</tr>
-<tr>
-  <td class="method">
-                  <span class="description" title="Verify that Search results section will be organized into separate grouped based on the popular query selected for licensed user">verifySearchResultsAreGroupedLicensedUser</span>
-      </td>
-  <td class="duration">
-    19.754s
-  </td>
-  <td class="result">
-        
-    
-            <div class="testOutput">
-                        Click to see Screenshot
-                                <a target="_blank" href=Tue_Nov_17_21_40_36_IST_2020.jpg>Screenshot</a>
-                                <br>
-                                <br>
-                                <a target="_blank" href=Tue_Nov_17_21_40_36_IST_2020.jpg><img src=Tue_Nov_17_21_40_36_IST_2020.jpg height=200 width=200></img></a>
-                  </div>
-    
-
-      </td>
-</tr>
-<tr>
-  <td class="method">
-                  <span class="description" title="Verify clicking on Submit Issue / Feature Request for Licensed User">verifySubmitIssueClickLicensedUser</span>
-      </td>
-  <td class="duration">
-    0.360s
-  </td>
-  <td class="result">
-        
-    
-            <div class="testOutput">
-                        Click to see Screenshot
-                                <a target="_blank" href=Tue_Nov_17_21_39_05_IST_2020.jpg>Screenshot</a>
-                                <br>
-                                <br>
-                                <a target="_blank" href=Tue_Nov_17_21_39_05_IST_2020.jpg><img src=Tue_Nov_17_21_39_05_IST_2020.jpg height=200 width=200></img></a>
-                  </div>
-    
-
-      </td>
-</tr>
-<tr>
-  <td class="method">
-                  <span class="description" title="Verify that Search results section will be organized into separate grouped based on the popular query selected for licensed user">verifyTrainingVideosAreGroupedLicensedUser</span>
-      </td>
-  <td class="duration">
-    15.532s
-  </td>
-  <td class="result">
-        
-    
-            <div class="testOutput">
-                        Click to see Screenshot
-                                <a target="_blank" href=Tue_Nov_17_21_40_52_IST_2020.jpg>Screenshot</a>
-                                <br>
-                                <br>
-                                <a target="_blank" href=Tue_Nov_17_21_40_52_IST_2020.jpg><img src=Tue_Nov_17_21_40_52_IST_2020.jpg height=200 width=200></img></a>
-                  </div>
-    
-
-      </td>
-</tr>
-<tr>
-  <td class="method">
-                  <span class="description" title="Verify transfer button pop up UI">verifyTransferBtn</span>
-      </td>
-  <td class="duration">
-    13.552s
-  </td>
-  <td class="result">
-        
-    
-            <div class="testOutput">
-                        Click to see Screenshot
-                                <a target="_blank" href=Tue_Nov_17_21_41_54_IST_2020.jpg>Screenshot</a>
-                                <br>
-                                <br>
-                                <a target="_blank" href=Tue_Nov_17_21_41_54_IST_2020.jpg><img src=Tue_Nov_17_21_41_54_IST_2020.jpg height=200 width=200></img></a>
-                  </div>
-    
-
-      </td>
-</tr>
-<tr>
-  <td class="method">
-                  <span class="description" title="Verify that error message is displayed on clicking on Transfer License without filling the details">verifyTransferErrorMsg</span>
-      </td>
-  <td class="duration">
-    0.185s
-  </td>
-  <td class="result">
-        
-    
-            <div class="testOutput">
-                        Click to see Screenshot
-                                <a target="_blank" href=Tue_Nov_17_21_41_54_IST_2020.jpg>Screenshot</a>
-                                <br>
-                                <br>
-                                <a target="_blank" href=Tue_Nov_17_21_41_54_IST_2020.jpg><img src=Tue_Nov_17_21_41_54_IST_2020.jpg height=200 width=200></img></a>
-                  </div>
-    
-
-      </td>
-</tr>
-<tr>
-  <td class="method">
-                  <span class="description" title="Verify Update Contact button pop up UI">verifyUpdateContactBtn</span>
-      </td>
-  <td class="duration">
-    12.461s
-  </td>
-  <td class="result">
-        
-    
-            <div class="testOutput">
-                        Click to see Screenshot
-                                <a target="_blank" href=Tue_Nov_17_21_42_15_IST_2020.jpg>Screenshot</a>
-                                <br>
-                                <br>
-                                <a target="_blank" href=Tue_Nov_17_21_42_15_IST_2020.jpg><img src=Tue_Nov_17_21_42_15_IST_2020.jpg height=200 width=200></img></a>
-                  </div>
-    
-
-      </td>
-</tr>
-<tr>
-  <td class="method">
-                  <span class="description" title="Verify the click on oCalcPro menu and card Navigation">verifyoCalcProNavigationClick</span>
-      </td>
-  <td class="duration">
-    16.881s
-  </td>
-  <td class="result">
-        
-    
-            <div class="testOutput">
-                        Click to see Screenshot
-                                <a target="_blank" href=Tue_Nov_17_21_31_12_IST_2020.jpg>Screenshot</a>
-                                <br>
-                                <br>
-                                <a target="_blank" href=Tue_Nov_17_21_31_12_IST_2020.jpg><img src=Tue_Nov_17_21_31_12_IST_2020.jpg height=200 width=200></img></a>
-                  </div>
-    
-
-      </td>
-</tr>
-<tr>
-  <td class="method">
-                  <span class="description" title="Verify click on Contact O-calc Support for Licensed User">verifyocalcSupportClickLicensedUser</span>
-      </td>
-  <td class="duration">
-    2.259s
-  </td>
-  <td class="result">
-        
-    
-            <div class="testOutput">
-                        Click to see Screenshot
-                                <a target="_blank" href=Tue_Nov_17_21_32_03_IST_2020.jpg>Screenshot</a>
-                                <br>
-                                <br>
-                                <a target="_blank" href=Tue_Nov_17_21_32_03_IST_2020.jpg><img src=Tue_Nov_17_21_32_03_IST_2020.jpg height=200 width=200></img></a>
+                                <a target="_blank" href=Wed_Nov_25_13_57_41_IST_2020.jpg><img src=Wed_Nov_25_13_57_41_IST_2020.jpg height=200 width=200></img></a>
                   </div>
     
 

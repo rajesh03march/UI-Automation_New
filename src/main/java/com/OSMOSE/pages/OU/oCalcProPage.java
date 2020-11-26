@@ -275,5 +275,10 @@ public class oCalcProPage extends Page {
 		click("oCalProductViewCartButton_XPATH");
 		click("oCalProductSubmitQuoteReqBtn_XPATH");
 	}
+	
+	
+	public JointUsePage goJointUse(){
+        return new JointUsePage();
+    }
 
 }

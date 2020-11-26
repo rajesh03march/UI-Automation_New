@@ -29,7 +29,7 @@
 		<classes>
 			<class name="com.OSMOSE.testcases.Contact" />
 		</classes>
-	</test> --> <!-- Test -->
+	</test>  --><!-- Test -->
 	<!-- <test name="KnowledgeBase">
 		<classes>
 			<class name="com.OSMOSE.testcases.KnowledgeBase" />
@@ -40,9 +40,9 @@
 			<class name="com.OSMOSE.testcases.OsmoseServices" />
 		</classes>
 	</test>  --><!-- Test -->
-	<test name="OCalcPro">
+	<test name="OCalcPro_Licensed">
 		<classes> 
-			<class name="com.OSMOSE.testcases.oCalcPro" />
+			<class name="com.OSMOSE.testcases.oCalcPro_Licensed" />
 		</classes>
 	</test><!-- Test -->
 	<!-- <test name="OCalcPro_Nor">
@@ -53,6 +53,11 @@
 	<!-- <test name="OCalcPro_Admin">
 		<classes> 
 			<class name="com.OSMOSE.testcases.oCalcPro_Admin" />
+		</classes>
+	</test> --><!-- Test -->
+	<!-- <test name="JointUse_ts_allroles">
+		<classes> 
+			<class name="com.OSMOSE.testcases.JointUse_ts_allroles" />
 		</classes>
 	</test> --><!-- Test -->
 

@@ -415,7 +415,7 @@ public class Page {
 		driver.close();
 	}
 
-	public static boolean isVisiable(String locator) {
+	public static boolean isVisible(String locator) {
 		try {
 			if (locator.endsWith("_CSS")) {
 				driver.findElement(By.cssSelector(OR.getProperty(locator))).isDisplayed();
@@ -423,6 +423,26 @@ public class Page {
 				driver.findElement(By.xpath(OR.getProperty(locator))).isDisplayed();
 			} else if (locator.endsWith("_ID")) {
 				driver.findElement(By.id(OR.getProperty(locator))).isDisplayed();
+			}
+			log.debug("Clicking on an Element : " + locator);
+			test.log(LogStatus.INFO, "Clicking on : " + locator);
+
+			return true;
+		}
+
+		catch (Exception e) {
+			return false;
+		}
+	}
+	
+	public static boolean isEnabled(String locator) {
+		try {
+			if (locator.endsWith("_CSS")) {
+				driver.findElement(By.cssSelector(OR.getProperty(locator))).isEnabled();
+			} else if (locator.endsWith("_XPATH")) {
+				driver.findElement(By.xpath(OR.getProperty(locator))).isEnabled();
+			} else if (locator.endsWith("_ID")) {
+				driver.findElement(By.id(OR.getProperty(locator))).isEnabled();
 			}
 			log.debug("Clicking on an Element : " + locator);
 			test.log(LogStatus.INFO, "Clicking on : " + locator);

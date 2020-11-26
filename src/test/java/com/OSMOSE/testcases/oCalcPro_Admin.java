@@ -38,9 +38,8 @@ public class oCalcPro_Admin extends BaseTest {
 		ocal.clickoCalcNavigation();
 		Thread.sleep((Long.parseLong(p.config.getProperty("Thread3000"))));
 		Assert.assertEquals(Page.getText("OcalcProHeaderTxt_XPATH"), "Structural Analysis Software for Utility Poles");
-		WebElement OcalcProHeaderImg = Page.findelement("oCalProLogoForLicensedUser_XPATH");
 		Thread.sleep((Long.parseLong(p.config.getProperty("Thread2000"))));
-		Assert.assertTrue(OcalcProHeaderImg.isDisplayed());
+		Assert.assertTrue(Page.findelement("oCalProLogoForLicensedUser_XPATH").isDisplayed());
 		Thread.sleep((Long.parseLong(p.config.getProperty("Thread2000"))));
 		Page.click("OcalcOsmoseLogo_XPATH");
 		Thread.sleep((Long.parseLong(p.config.getProperty("Thread2000"))));
@@ -56,7 +55,7 @@ public class oCalcPro_Admin extends BaseTest {
 		oCalcProPage ocal = os.gooCalcPro();
 		Thread.sleep((Long.parseLong(p.config.getProperty("Thread3000"))));
 		// License Management card presence verification
-		Assert.assertTrue(Page.driver.findElement(By.xpath("//h5[@class='m-0 crspointer pointer-events' and text()='License Management ']")).isDisplayed());
+		Assert.assertTrue(Page.findelement("LicensedUserLicenseManagementCardAdmin_XPATH").isDisplayed());
 	}
 	
 	@Test(priority = 3, enabled = true, description = "Verify Click on License Management tile for Admin User")
