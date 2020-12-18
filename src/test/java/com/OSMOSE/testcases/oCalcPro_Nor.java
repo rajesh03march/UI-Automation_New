@@ -503,26 +503,15 @@ public class oCalcPro_Nor extends BaseTest {
 		oCalcProPage ocal = os.gooCalcPro();
 		ocal.clickKnowledgeBase();
 		// Verification of header text
+		Page.scrollbyjavaexecutor();
 		Assert.assertTrue(Page.isVisible("KnowledgeBaseFirstHeaderTxt_XPATH"));
 		Assert.assertEquals(Page.getText("KnowledgeBaseFirstHeaderTxt_XPATH"), "Knowledge Base");
-		Assert.assertTrue(Page.isVisible("oCalcProKBVideosResultsSection_XPATH"));
-		Assert.assertTrue(Page.isVisible("ocalcProKBDocumentResultsSection_XPATH"));
 		Thread.sleep((Long.parseLong(p.config.getProperty("Thread3000"))));
 		Assert.assertTrue(Page.isVisible("OcalPopularFilter1_XPATH"));
 		Assert.assertTrue(Page.isVisible("OcalPopularFilter2_XPATH"));
 		Assert.assertTrue(Page.isVisible("OcalPopularFilter3_XPATH"));
-		Assert.assertTrue(Page.isVisible("OcalvideoContent_XPATH"));
 		Thread.sleep((Long.parseLong(p.config.getProperty("Thread3000"))));
-		ocal.clickocalOnAVideo();
-		Thread.sleep((Long.parseLong(p.config.getProperty("Thread6000"))));
-		ocal.clickBoxCloseBtn();
-		Thread.sleep((Long.parseLong(p.config.getProperty("Thread2000"))));
-		ocal.clickocalOnADocument();
-		Thread.sleep((Long.parseLong(p.config.getProperty("Thread3000"))));
-		ocal.closeTab(1);
-		Thread.sleep((Long.parseLong(p.config.getProperty("Thread2000"))));
-		ocal.switchToparentWindow();
-		ocal.clickoCalcNavigation();
+		Page.driver.navigate().back();
 	}
 
 	@Test(priority = 24, enabled = true, description = "Verify click on Training Videos link on Knowledge Base card")
@@ -532,17 +521,23 @@ public class oCalcPro_Nor extends BaseTest {
 		Thread.sleep((Long.parseLong(p.config.getProperty("Thread4000"))));
 		ocal.clickKBTrainingVideos();
 		Thread.sleep((Long.parseLong(p.config.getProperty("Thread2000"))));
-		// Verification of header text
-		Assert.assertTrue(Page.isVisible("KnowledgeBaseFirstHeaderTxt_XPATH"));
-		Assert.assertEquals(Page.getText("KnowledgeBaseFirstHeaderTxt_XPATH"), "Knowledge Base");
-		Assert.assertTrue(Page.isVisible("oCalcProKBVideosResultsSection_XPATH"));
-		Page.click("ocalVideosSeeMorelnk_XPATH");
-		Assert.assertTrue(Page.isVisible("OcalSeeMoreVideoContent_XPATH"));
-		Thread.sleep((Long.parseLong(p.config.getProperty("Thread3000"))));
-		ocal.clickocalOnASeeMoreVideo();
-		Thread.sleep((Long.parseLong(p.config.getProperty("Thread2000"))));
-		ocal.clickBoxCloseBtn();
-		ocal.clickoCalcNavigation();
+		if (Page.isVisible("NoResults_XPATH")) {
+			String text = Page.getText("NoResults_XPATH");
+			String newtext = text.substring(text.indexOf('\n') + 1);
+			Assert.assertEquals(newtext, "No results match your search criteria.");
+			Page.driver.navigate().back();
+		} else {
+			Assert.assertTrue(Page.isVisible("KnowledgeBaseFirstHeaderTxt_XPATH"));
+			Assert.assertEquals(Page.getText("KnowledgeBaseFirstHeaderTxt_XPATH"), "Knowledge Base");
+			Assert.assertTrue(Page.isVisible("oCalcProKBVideosResultsSection_XPATH"));
+			Page.click("ocalVideosSeeMorelnk_XPATH");
+			Assert.assertTrue(Page.isVisible("OcalSeeMoreVideoContent_XPATH"));
+			Thread.sleep((Long.parseLong(p.config.getProperty("Thread3000"))));
+			ocal.clickocalOnASeeMoreVideo();
+			Thread.sleep((Long.parseLong(p.config.getProperty("Thread2000"))));
+			ocal.clickBoxCloseBtn();
+			Page.driver.navigate().back();
+		}
 	}
 
 	@Test(priority = 25, enabled = true, description = "Verify click on Wiki Page on Knowledge Base card")
@@ -552,24 +547,31 @@ public class oCalcPro_Nor extends BaseTest {
 		ocal.clickKBWikiPage();
 		Thread.sleep((Long.parseLong(p.config.getProperty("Thread2000"))));
 		// Verification of header text
-		Assert.assertTrue(Page.isVisible("KnowledgeBaseFirstHeaderTxt_XPATH"));
-		Assert.assertEquals(Page.getText("KnowledgeBaseFirstHeaderTxt_XPATH"), "Knowledge Base");
-		Assert.assertTrue(Page.isVisible("ocalcProKBDocumentResultsSection_XPATH"));
-		Thread.sleep((Long.parseLong(p.config.getProperty("Thread3000"))));
-		Page.click("ocalDocumentsSeeMorelnk_XPATH");
-		Assert.assertTrue(Page.isVisible("OcalSettingOwnershipDocContent_XPATH"));
-		Thread.sleep((Long.parseLong(p.config.getProperty("Thread3000"))));
-		ocal.clickocalOnASeeMoreDocument();
-		Thread.sleep((Long.parseLong(p.config.getProperty("Thread2000"))));
-		ocal.closeTab(1);
-		Thread.sleep((Long.parseLong(p.config.getProperty("Thread2000"))));
-		ocal.switchToparentWindow();
-		Page.click("ocalDocumentMorelnk_XPATH");
-		Thread.sleep((Long.parseLong(p.config.getProperty("Thread2000"))));
-		ocal.closeTab(1);
-		Thread.sleep((Long.parseLong(p.config.getProperty("Thread2000"))));
-		ocal.switchToparentWindow();
-		ocal.clickoCalcNavigation();
+		if (Page.isVisible("NoResults_XPATH")) {
+			String text = Page.getText("NoResults_XPATH");
+			String newtext = text.substring(text.indexOf('\n') + 1);
+			Assert.assertEquals(newtext, "No results match your search criteria.");
+			Page.driver.navigate().back();
+		} else {
+			Assert.assertTrue(Page.isVisible("KnowledgeBaseFirstHeaderTxt_XPATH"));
+			Assert.assertEquals(Page.getText("KnowledgeBaseFirstHeaderTxt_XPATH"), "Knowledge Base");
+			Assert.assertTrue(Page.isVisible("ocalcProKBDocumentResultsSection_XPATH"));
+			Thread.sleep((Long.parseLong(p.config.getProperty("Thread3000"))));
+			Page.click("ocalDocumentsSeeMorelnk_XPATH");
+			Assert.assertTrue(Page.isVisible("OcalSettingOwnershipDocContent_XPATH"));
+			Thread.sleep((Long.parseLong(p.config.getProperty("Thread3000"))));
+			ocal.clickocalOnASeeMoreDocument();
+			Thread.sleep((Long.parseLong(p.config.getProperty("Thread2000"))));
+			ocal.closeTab(1);
+			Thread.sleep((Long.parseLong(p.config.getProperty("Thread2000"))));
+			ocal.switchToparentWindow();
+			Page.click("ocalDocumentMorelnk_XPATH");
+			Thread.sleep((Long.parseLong(p.config.getProperty("Thread2000"))));
+			ocal.closeTab(1);
+			Thread.sleep((Long.parseLong(p.config.getProperty("Thread2000"))));
+			ocal.switchToparentWindow();
+			Page.driver.navigate().back();
+		}
 	}
 
 	@Test(priority = 26, enabled = true, description = "Verify that Search results section will be organized into separate grouped based on the popular query selected")
@@ -581,17 +583,18 @@ public class oCalcPro_Nor extends BaseTest {
 		Thread.sleep((Long.parseLong(p.config.getProperty("Thread6000"))));
 		ocal.clickOCalcProIntroduction();
 		Thread.sleep((Long.parseLong(p.config.getProperty("Thread6000"))));
-		Assert.assertTrue(Page.isVisible("oCalcProKBVideosResultsSection_XPATH"));
-		/*
-		 * WebElement ImageResultsSection =
-		 * Page.driver.findElement(By.xpath("//h5[@class='m-0' and text()='Images']"));
-		 * Assert.assertTrue(ImageResultsSection.isDisplayed()); WebElement
-		 * DocumentResultsSection = Page.driver
-		 * .findElement(By.xpath("//h5[@class='m-0' and text()='Documents']"));
-		 * Assert.assertTrue(DocumentResultsSection.isDisplayed());
-		 */
-		Thread.sleep((Long.parseLong(p.config.getProperty("Thread3000"))));
-		ocal.clickoCalcNavigation();
+		if (Page.isVisible("NoResults_XPATH")) {
+			String text = Page.getText("NoResults_XPATH");
+			String newtext = text.substring(text.indexOf('\n') + 1);
+			Assert.assertEquals(newtext, "No results match your search criteria.");
+			Page.driver.navigate().back();
+		} else {
+			Assert.assertTrue(Page.isVisible("oCalcProKBImagesResultsSection_XPATH"));
+			Assert.assertTrue(Page.isVisible("oCalcProKBVideosResultsSection_XPATH"));
+			Assert.assertTrue(Page.isVisible("ocalcProKBDocumentResultsSection_XPATH"));
+			Thread.sleep((Long.parseLong(p.config.getProperty("Thread3000"))));
+			Page.driver.navigate().back();
+		}
 	}
 
 	@Test(priority = 27, enabled = true, description = "Verify that Search results section will be organized into separate grouped based on the popular query selected")
@@ -600,19 +603,18 @@ public class oCalcPro_Nor extends BaseTest {
 		oCalcProPage ocal = os.gooCalcPro();
 		ocal.clickKBTrainingVideos();
 		Thread.sleep((Long.parseLong(p.config.getProperty("Thread6000"))));
-		ocal.clickOCalcProIntroduction();
-		Thread.sleep((Long.parseLong(p.config.getProperty("Thread6000"))));
-		Assert.assertTrue(Page.isVisible("oCalcProKBVideosResultsSection_XPATH"));
-		/*
-		 * WebElement ImageResultsSection =
-		 * Page.driver.findElement(By.xpath("//h5[@class='m-0' and text()='Images']"));
-		 * Assert.assertTrue(ImageResultsSection.isDisplayed()); WebElement
-		 * DocumentResultsSection = Page.driver
-		 * .findElement(By.xpath("//h5[@class='m-0' and text()='Documents']"));
-		 * Assert.assertTrue(DocumentResultsSection.isDisplayed());
-		 */
-		Thread.sleep((Long.parseLong(p.config.getProperty("Thread3000"))));
-		ocal.clickoCalcNavigation();
+		if (Page.isVisible("NoResults_XPATH")) {
+			String text = Page.getText("NoResults_XPATH");
+			String newtext = text.substring(text.indexOf('\n') + 1);
+			Assert.assertEquals(newtext, "No results match your search criteria.");
+			Page.driver.navigate().back();
+		} else {
+			Thread.sleep((Long.parseLong(p.config.getProperty("Thread6000"))));
+			ocal.clickOCalcProIntroduction();
+			Assert.assertTrue(Page.isVisible("oCalcProKBVideosResultsSection_XPATH"));
+			Thread.sleep((Long.parseLong(p.config.getProperty("Thread3000"))));
+			Page.driver.navigate().back();
+		}
 	}
 
 	@Test(priority = 28, enabled = true, description = "Verify presence of License Management tile for Prospective User")

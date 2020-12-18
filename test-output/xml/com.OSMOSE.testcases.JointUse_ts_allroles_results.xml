@@ -1,22 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuite name="JointUse_ts_allroles"
-           tests="10"
+           tests="12"
            failures="0"
            errors="0"
            skipped="0"
-           time="59.490">
+           time="61.206">
   <properties />
   
   
-            <testcase name="verifyExportOptions" time="0.126" classname="com.OSMOSE.testcases.JointUse_ts_allroles" />
-                <testcase name="jointUseloginTestAllRoles" time="25.893" classname="com.OSMOSE.testcases.JointUse_ts_allroles" />
-                <testcase name="verifyHorizontalCollapseFunctionality" time="5.365" classname="com.OSMOSE.testcases.JointUse_ts_allroles" />
-                <testcase name="verifyNewApplication" time="0.501" classname="com.OSMOSE.testcases.JointUse_ts_allroles" />
-                <testcase name="verifyJointUseNavigationClick" time="25.113" classname="com.OSMOSE.testcases.JointUse_ts_allroles" />
-                <testcase name="verifyVerticalCollapseFunctionality" time="2.301" classname="com.OSMOSE.testcases.JointUse_ts_allroles" />
-                <testcase name="verifySearchBox" time="0.047" classname="com.OSMOSE.testcases.JointUse_ts_allroles" />
-                <testcase name="verifyRefreshBtn" time="0.032" classname="com.OSMOSE.testcases.JointUse_ts_allroles" />
-                <testcase name="verifyAddWidgets" time="0.050" classname="com.OSMOSE.testcases.JointUse_ts_allroles" />
-                <testcase name="verifyEditLayout" time="0.062" classname="com.OSMOSE.testcases.JointUse_ts_allroles" />
+            <testcase name="verifyAddWidgets" time="0.104" classname="com.OSMOSE.testcases.JointUse_ts_allroles" />
+                <testcase name="verifyJointUseNavigationClick" time="30.865" classname="com.OSMOSE.testcases.JointUse_ts_allroles" />
+                <testcase name="verifyEditLayout" time="0.093" classname="com.OSMOSE.testcases.JointUse_ts_allroles" />
+                <testcase name="verifyColumns" time="2.443" classname="com.OSMOSE.testcases.JointUse_ts_allroles" />
+                <testcase name="verifyVerticalCollapseFunctionality" time="0.659" classname="com.OSMOSE.testcases.JointUse_ts_allroles" />
+                <testcase name="verifySearchBox" time="0.104" classname="com.OSMOSE.testcases.JointUse_ts_allroles" />
+                <testcase name="verifyRowsCount" time="0.184" classname="com.OSMOSE.testcases.JointUse_ts_allroles" />
+                <testcase name="jointUseloginTestAllRoles" time="20.086" classname="com.OSMOSE.testcases.JointUse_ts_allroles" />
+                <testcase name="verifyNewApplication" time="0.797" classname="com.OSMOSE.testcases.JointUse_ts_allroles" />
+                <testcase name="verifyHorizontalCollapseFunctionality" time="5.537" classname="com.OSMOSE.testcases.JointUse_ts_allroles" />
+                <testcase name="verifyExportOptions" time="0.166" classname="com.OSMOSE.testcases.JointUse_ts_allroles" />
+                <testcase name="verifyRefreshBtn" time="0.168" classname="com.OSMOSE.testcases.JointUse_ts_allroles" />
       
 </testsuite>

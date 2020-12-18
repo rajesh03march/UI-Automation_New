@@ -68,7 +68,7 @@ public class KnowledgeBasePage extends Page {
 	}
 	
 	public void clickOverhead() throws InterruptedException {
-		click("OverheadCard_XPATH");
+		click("OverheadCardKB_XPATH");
 	}
 	
 	public void clickPoleReplacement() throws InterruptedException {

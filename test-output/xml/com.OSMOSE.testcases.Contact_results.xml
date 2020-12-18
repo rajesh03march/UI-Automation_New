@@ -1,95 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuite name="Contact"
            tests="20"
-           failures="1"
+           failures="0"
            errors="0"
            skipped="0"
-           time="152.177">
+           time="169.472">
   <properties />
-            <testcase name="verifyGeorgiaPowerCompanyContactCardContents" time="6.580" classname="com.OSMOSE.testcases.Contact">
-                <failure type="org.openqa.selenium.ElementClickInterceptedException"
-                  message="element click intercepted: Element &lt;span class=&quot;cnText&quot;&gt;...&lt;/span&gt; is not clickable at point (1024, 20). Other element would receive the click: &lt;div data-v-a80ba6a0=&quot;&quot; class=&quot;Oloader&quot; style=&quot;&quot;&gt;...&lt;/div&gt;
-  (Session info: chrome=86.0.4240.198)
-Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
-System info: host: &apos;5CG6323N27&apos;, ip: &apos;192.168.0.12&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_191&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.198, chrome: {chromedriverVersion: 85.0.4183.87 (cd6713ebf92fa..., userDataDir: C:\Windows\Temp\scoped_dir1...}, goog:chromeOptions: {debuggerAddress: localhost:58781}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: none, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 62d90346302a2fb27a3f88418779fc5e"
-              >
-<![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <span class="cnText">...</span> is not clickable at point (1024, 20). Other element would receive the click: <div data-v-a80ba6a0="" class="Oloader" style="">...</div>
-  (Session info: chrome=86.0.4240.198)
-Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
-System info: host: '5CG6323N27', ip: '192.168.0.12', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.198, chrome: {chromedriverVersion: 85.0.4183.87 (cd6713ebf92fa..., userDataDir: C:\Windows\Temp\scoped_dir1...}, goog:chromeOptions: {debuggerAddress: localhost:58781}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: none, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 62d90346302a2fb27a3f88418779fc5e
-  sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-  sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-  sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-  java.lang.reflect.Constructor.newInstance(Unknown Source)
-  org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-  org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-  org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-  org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-  org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-  org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
-  org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:276)
-  org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
-  com.OSMOSE.base.Page.click(Page.java:183)
-  com.OSMOSE.pages.OU.ContactPage.clickContactUsMainMenudd(ContactPage.java:10)
-  com.OSMOSE.testcases.Contact.verifyGeorgiaPowerCompanyContactCardContents(Contact.java:52)
-  sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-  sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-  sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-  java.lang.reflect.Method.invoke(Unknown Source)
-  org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
-  org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
-  org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-  org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-  org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
-  org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-  org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-  org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-  java.util.ArrayList.forEach(Unknown Source)
-  org.testng.TestRunner.privateRun(TestRunner.java:766)
-  org.testng.TestRunner.run(TestRunner.java:587)
-  org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
-  org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
-  org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
-  org.testng.SuiteRunner.run(SuiteRunner.java:286)
-  org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-  org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-  org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
-  org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
-  org.testng.TestNG.runSuites(TestNG.java:1039)
-  org.testng.TestNG.run(TestNG.java:1007)
-  org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-  org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-  org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-      </failure>
-
-          </testcase>
   
   
-            <testcase name="verifyPedernalesElecCoopContactCardContents" time="12.417" classname="com.OSMOSE.testcases.Contact" />
-                <testcase name="verifyCityOfColumbiaContactCardContents" time="9.716" classname="com.OSMOSE.testcases.Contact" />
-                <testcase name="verifyContactUsOCalcProContents" time="0.077" classname="com.OSMOSE.testcases.Contact" />
-                <testcase name="verifyGrandElectricContactCardContents" time="13.550" classname="com.OSMOSE.testcases.Contact" />
-                <testcase name="verifyContactUsSalesServicesContents" time="0.104" classname="com.OSMOSE.testcases.Contact" />
-                <testcase name="verifyIdahoPowerRestorationContactCardContents" time="11.338" classname="com.OSMOSE.testcases.Contact" />
-                <testcase name="verifyOncurDistributionContactCardContents" time="12.414" classname="com.OSMOSE.testcases.Contact" />
-                <testcase name="verifyContactUsMenuContents" time="0.305" classname="com.OSMOSE.testcases.Contact" />
-                <testcase name="verifyContactUsHeaderContents" time="2.290" classname="com.OSMOSE.testcases.Contact" />
-                <testcase name="verifyContactUsClickOnGoogleMap" time="31.061" classname="com.OSMOSE.testcases.Contact" />
-                <testcase name="verifyIdahoPowerInspectionContactCardContents" time="12.488" classname="com.OSMOSE.testcases.Contact" />
-                <testcase name="verifyContactUsQueryFormContents" time="0.295" classname="com.OSMOSE.testcases.Contact" />
-                <testcase name="verifyContactUsGeneralInquiriesContents" time="0.048" classname="com.OSMOSE.testcases.Contact" />
-                <testcase name="verifyContactUsSalesProductsContents" time="0.089" classname="com.OSMOSE.testcases.Contact" />
-                <testcase name="verifyPacificGasAndElectricCoContactCardContents" time="12.392" classname="com.OSMOSE.testcases.Contact" />
-                <testcase name="verifyPresenceOfProjectGroup" time="3.148" classname="com.OSMOSE.testcases.Contact" />
-                <testcase name="verifyFormSubmissionErrorMessage" time="0.099" classname="com.OSMOSE.testcases.Contact" />
-                <testcase name="verifyPugetSoundEnergyInspectionContactCardContents" time="12.429" classname="com.OSMOSE.testcases.Contact" />
-                <testcase name="verifyPugetSoundEnergyRestorationContactCardContents" time="11.337" classname="com.OSMOSE.testcases.Contact" />
+            <testcase name="verifyPacificGasAndElectricCoContactCardContents" time="13.064" classname="com.OSMOSE.testcases.Contact" />
+                <testcase name="verifyPugetSoundEnergyInspectionContactCardContents" time="13.076" classname="com.OSMOSE.testcases.Contact" />
+                <testcase name="verifyContactUsQueryFormContents" time="0.412" classname="com.OSMOSE.testcases.Contact" />
+                <testcase name="verifyContactUsSalesServicesContents" time="0.140" classname="com.OSMOSE.testcases.Contact" />
+                <testcase name="verifyContactUsOCalcProContents" time="0.213" classname="com.OSMOSE.testcases.Contact" />
+                <testcase name="verifyIdahoPowerInspectionContactCardContents" time="13.223" classname="com.OSMOSE.testcases.Contact" />
+                <testcase name="verifyGeorgiaPowerCompanyContactCardContents" time="19.588" classname="com.OSMOSE.testcases.Contact" />
+                <testcase name="verifyContactUsSalesProductsContents" time="0.091" classname="com.OSMOSE.testcases.Contact" />
+                <testcase name="verifyCityOfColumbiaContactCardContents" time="9.556" classname="com.OSMOSE.testcases.Contact" />
+                <testcase name="verifyPresenceOfProjectGroup" time="2.527" classname="com.OSMOSE.testcases.Contact" />
+                <testcase name="verifyContactUsMenuContents" time="0.244" classname="com.OSMOSE.testcases.Contact" />
+                <testcase name="verifyGrandElectricContactCardContents" time="12.548" classname="com.OSMOSE.testcases.Contact" />
+                <testcase name="verifyOncurDistributionContactCardContents" time="13.154" classname="com.OSMOSE.testcases.Contact" />
+                <testcase name="verifyContactUsHeaderContents" time="2.352" classname="com.OSMOSE.testcases.Contact" />
+                <testcase name="verifyPugetSoundEnergyRestorationContactCardContents" time="12.034" classname="com.OSMOSE.testcases.Contact" />
+                <testcase name="verifyContactUsGeneralInquiriesContents" time="0.070" classname="com.OSMOSE.testcases.Contact" />
+                <testcase name="verifyFormSubmissionErrorMessage" time="0.246" classname="com.OSMOSE.testcases.Contact" />
+                <testcase name="verifyIdahoPowerRestorationContactCardContents" time="12.052" classname="com.OSMOSE.testcases.Contact" />
+                <testcase name="verifyPedernalesElecCoopContactCardContents" time="13.177" classname="com.OSMOSE.testcases.Contact" />
+                <testcase name="verifyContactUsClickOnGoogleMap" time="31.705" classname="com.OSMOSE.testcases.Contact" />
       
 </testsuite>

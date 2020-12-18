@@ -601,11 +601,13 @@ public class oCalcPro_Licensed extends BaseTest {
 		Thread.sleep((Long.parseLong(p.config.getProperty("Thread2000"))));
 		// Verification of O-Calc® Pro Training text
 		Assert.assertEquals(Page.getText("oCalCurrentPublicClassesHeading_XPATH"), "O-Calc® Pro Training");
-		Page.click("oCalCurrentPublicClassesFlyerBtn_XPATH");
-		Thread.sleep((Long.parseLong(p.config.getProperty("Thread2000"))));
-		ocal.closeTab(1);
-		Thread.sleep((Long.parseLong(p.config.getProperty("Thread2000"))));
-		ocal.switchToparentWindow();
+		/*
+		 * Page.click("oCalCurrentPublicClassesFlyerBtn_XPATH");
+		 * Thread.sleep((Long.parseLong(p.config.getProperty("Thread2000"))));
+		 * ocal.closeTab(1);
+		 * Thread.sleep((Long.parseLong(p.config.getProperty("Thread2000"))));
+		 * ocal.switchToparentWindow();
+		 */
 		Page.driver.switchTo().defaultContent();
 		Thread.sleep((Long.parseLong(p.config.getProperty("Thread1000"))));
 		Page.click("oCalCurrentPublicClassesCloseBtn_XPATH");
@@ -667,8 +669,8 @@ public class oCalcPro_Licensed extends BaseTest {
 		System.out.println("Second FAQ is: " + Page.getText("FAQSecond_XPATH"));
 		Page.click("FAQFirstCategory_XPATH");
 		Thread.sleep((Long.parseLong(p.config.getProperty("Thread3000"))));
-		Assert.assertFalse(Page.isVisible("FAQFirstCategory_XPATH"));
-		Assert.assertTrue(Page.isVisible("FAQSecond_XPATH"));
+		Assert.assertFalse(Page.findelement("FAQFirst_XPATH").isDisplayed());
+		Assert.assertFalse(Page.findelement("FAQSecond_XPATH").isDisplayed());
 		Page.click("FAQCloseBtn_XPATH");
 	}
 
@@ -719,26 +721,16 @@ public class oCalcPro_Licensed extends BaseTest {
 		oCalcProPage ocal = os.gooCalcPro();
 		// ocal.clickoCalcProLogoForLicensedUser();
 		ocal.clickKnowledgeBase();
+		Thread.sleep((Long.parseLong(p.config.getProperty("Thread4000"))));
 		// Verification of header text
+		Page.scrollbyjavaexecutor();
 		Assert.assertTrue(Page.isVisible("KnowledgeBaseFirstHeaderTxt_XPATH"));
 		Assert.assertEquals(Page.getText("KnowledgeBaseFirstHeaderTxt_XPATH"), "Knowledge Base");
-		Assert.assertTrue(Page.isVisible("oCalcProKBVideosResultsSection_XPATH"));
-		Assert.assertTrue(Page.isVisible("ocalcProKBDocumentResultsSection_XPATH"));
 		Thread.sleep((Long.parseLong(p.config.getProperty("Thread3000"))));
 		Assert.assertTrue(Page.isVisible("OcalPopularFilter1_XPATH"));
 		Assert.assertTrue(Page.isVisible("OcalPopularFilter2_XPATH"));
 		Assert.assertTrue(Page.isVisible("OcalPopularFilter3_XPATH"));
-		Assert.assertTrue(Page.isVisible("OcalvideoContent_XPATH"));
 		Thread.sleep((Long.parseLong(p.config.getProperty("Thread3000"))));
-		ocal.clickocalOnAVideo();
-		Thread.sleep((Long.parseLong(p.config.getProperty("Thread6000"))));
-		ocal.clickBoxCloseBtn();
-		Thread.sleep((Long.parseLong(p.config.getProperty("Thread2000"))));
-		ocal.clickocalOnADocument();
-		Thread.sleep((Long.parseLong(p.config.getProperty("Thread2000"))));
-		ocal.closeTab(1);
-		Thread.sleep((Long.parseLong(p.config.getProperty("Thread2000"))));
-		ocal.switchToparentWindow();
 		Page.driver.navigate().back();
 	}
 
@@ -751,16 +743,23 @@ public class oCalcPro_Licensed extends BaseTest {
 		ocal.clickKBTrainingVideos();
 		Thread.sleep((Long.parseLong(p.config.getProperty("Thread6000"))));
 		// Verification of header text
-		Assert.assertTrue(Page.isVisible("KnowledgeBaseFirstHeaderTxt_XPATH"));
-		Assert.assertEquals(Page.getText("KnowledgeBaseFirstHeaderTxt_XPATH"), "Knowledge Base");
-		Assert.assertTrue(Page.isVisible("oCalcProKBVideosResultsSection_XPATH"));
-		Page.click("ocalVideosSeeMorelnk_XPATH");
-		Assert.assertTrue(Page.isVisible("OcalSeeMoreVideoContent_XPATH"));
-		Thread.sleep((Long.parseLong(p.config.getProperty("Thread3000"))));
-		ocal.clickocalOnASeeMoreVideo();
-		Thread.sleep((Long.parseLong(p.config.getProperty("Thread2000"))));
-		ocal.clickBoxCloseBtn();
-		Page.driver.navigate().back();
+		if (Page.isVisible("NoResults_XPATH")) {
+			String text = Page.getText("NoResults_XPATH");
+			String newtext = text.substring(text.indexOf('\n') + 1);
+			Assert.assertEquals(newtext, "No results match your search criteria.");
+			Page.driver.navigate().back();
+		} else {
+			Assert.assertTrue(Page.isVisible("KnowledgeBaseFirstHeaderTxt_XPATH"));
+			Assert.assertEquals(Page.getText("KnowledgeBaseFirstHeaderTxt_XPATH"), "Knowledge Base");
+			Assert.assertTrue(Page.isVisible("oCalcProKBVideosResultsSection_XPATH"));
+			Page.click("ocalVideosSeeMorelnk_XPATH");
+			Assert.assertTrue(Page.isVisible("OcalSeeMoreVideoContent_XPATH"));
+			Thread.sleep((Long.parseLong(p.config.getProperty("Thread3000"))));
+			ocal.clickocalOnASeeMoreVideo();
+			Thread.sleep((Long.parseLong(p.config.getProperty("Thread2000"))));
+			ocal.clickBoxCloseBtn();
+			Page.driver.navigate().back();
+		}
 	}
 
 	@Test(priority = 36, enabled = true, description = "Verify click on Wiki Page on Knowledge Base card for Licensed User")
@@ -772,24 +771,31 @@ public class oCalcPro_Licensed extends BaseTest {
 		ocal.clickKBWikiPage();
 		Thread.sleep((Long.parseLong(p.config.getProperty("Thread4000"))));
 		// Verification of header text
-		Assert.assertTrue(Page.isVisible("KnowledgeBaseFirstHeaderTxt_XPATH"));
-		Assert.assertEquals(Page.getText("KnowledgeBaseFirstHeaderTxt_XPATH"), "Knowledge Base");
-		Assert.assertTrue(Page.isVisible("ocalcProKBDocumentResultsSection_XPATH"));
-		Thread.sleep((Long.parseLong(p.config.getProperty("Thread3000"))));
-		Page.click("ocalDocumentsSeeMorelnk_XPATH");
-		Assert.assertTrue(Page.isVisible("OcalSettingOwnershipDocContent_XPATH"));
-		Thread.sleep((Long.parseLong(p.config.getProperty("Thread3000"))));
-		ocal.clickocalOnASeeMoreDocument();
-		Thread.sleep((Long.parseLong(p.config.getProperty("Thread2000"))));
-		ocal.closeTab(1);
-		Thread.sleep((Long.parseLong(p.config.getProperty("Thread2000"))));
-		ocal.switchToparentWindow();
-		Page.click("ocalDocumentMorelnk_XPATH");
-		Thread.sleep((Long.parseLong(p.config.getProperty("Thread2000"))));
-		ocal.closeTab(1);
-		Thread.sleep((Long.parseLong(p.config.getProperty("Thread2000"))));
-		ocal.switchToparentWindow();
-		Page.driver.navigate().back();
+		if (Page.isVisible("NoResults_XPATH")) {
+			String text = Page.getText("NoResults_XPATH");
+			String newtext = text.substring(text.indexOf('\n') + 1);
+			Assert.assertEquals(newtext, "No results match your search criteria.");
+			Page.driver.navigate().back();
+		} else {
+			Assert.assertTrue(Page.isVisible("KnowledgeBaseFirstHeaderTxt_XPATH"));
+			Assert.assertEquals(Page.getText("KnowledgeBaseFirstHeaderTxt_XPATH"), "Knowledge Base");
+			Assert.assertTrue(Page.isVisible("ocalcProKBDocumentResultsSection_XPATH"));
+			Thread.sleep((Long.parseLong(p.config.getProperty("Thread3000"))));
+			Page.click("ocalDocumentsSeeMorelnk_XPATH");
+			Assert.assertTrue(Page.isVisible("OcalSettingOwnershipDocContent_XPATH"));
+			Thread.sleep((Long.parseLong(p.config.getProperty("Thread3000"))));
+			ocal.clickocalOnASeeMoreDocument();
+			Thread.sleep((Long.parseLong(p.config.getProperty("Thread2000"))));
+			ocal.closeTab(1);
+			Thread.sleep((Long.parseLong(p.config.getProperty("Thread2000"))));
+			ocal.switchToparentWindow();
+			Page.click("ocalDocumentMorelnk_XPATH");
+			Thread.sleep((Long.parseLong(p.config.getProperty("Thread2000"))));
+			ocal.closeTab(1);
+			Thread.sleep((Long.parseLong(p.config.getProperty("Thread2000"))));
+			ocal.switchToparentWindow();
+			Page.driver.navigate().back();
+		}
 	}
 
 	@Test(priority = 37, enabled = true, description = "Verify that Search results section will be organized into separate grouped based on the popular query selected for licensed user")
@@ -800,19 +806,20 @@ public class oCalcPro_Licensed extends BaseTest {
 		Thread.sleep((Long.parseLong(p.config.getProperty("Thread4000"))));
 		ocal.clickKnowledgeBase();
 		Thread.sleep((Long.parseLong(p.config.getProperty("Thread6000"))));
-		ocal.clickOCalcProIntroduction();
-		Thread.sleep((Long.parseLong(p.config.getProperty("Thread6000"))));
-		/*
-		 * WebElement VideoResultsSection =
-		 * Page.driver.findElement(By.xpath("//h5[@class='m-0' and text()='Videos']"));
-		 * Assert.assertTrue(VideoResultsSection.isDisplayed()); WebElement
-		 * ImageResultsSection =
-		 * Page.driver.findElement(By.xpath("//h5[@class='m-0' and text()='Images']"));
-		 * Assert.assertTrue(ImageResultsSection.isDisplayed());
-		 */
-		Assert.assertTrue(Page.isVisible("ocalcProKBDocumentResultsSection_XPATH"));
-		Thread.sleep((Long.parseLong(p.config.getProperty("Thread3000"))));
-		Page.driver.navigate().back();
+		if (Page.isVisible("NoResults_XPATH")) {
+			String text = Page.getText("NoResults_XPATH");
+			String newtext = text.substring(text.indexOf('\n') + 1);
+			Assert.assertEquals(newtext, "No results match your search criteria.");
+			Page.driver.navigate().back();
+		} else {
+			Thread.sleep((Long.parseLong(p.config.getProperty("Thread6000"))));
+			ocal.clickOCalcProIntroduction();
+			Assert.assertTrue(Page.isVisible("oCalcProKBImagesResultsSection_XPATH"));
+			Assert.assertTrue(Page.isVisible("oCalcProKBVideosResultsSection_XPATH"));
+			Assert.assertTrue(Page.isVisible("ocalcProKBDocumentResultsSection_XPATH"));
+			Thread.sleep((Long.parseLong(p.config.getProperty("Thread3000"))));
+			Page.driver.navigate().back();
+		}
 	}
 
 	@Test(priority = 38, enabled = true, description = "Verify that Search results section will be organized into separate grouped based on the popular query selected for licensed user")
@@ -820,43 +827,43 @@ public class oCalcPro_Licensed extends BaseTest {
 		OsmoseServicesPage os = new OsmoseServicesPage();
 		oCalcProPage ocal = os.gooCalcPro();
 		// ocal.clickoCalcProLogoForLicensedUser();
-		ocal.clickKBTrainingVideos();
-		Thread.sleep((Long.parseLong(p.config.getProperty("Thread6000"))));
-		ocal.clickOCalcProIntroduction();
-		Thread.sleep((Long.parseLong(p.config.getProperty("Thread6000"))));
-		Assert.assertTrue(Page.isVisible("oCalcProKBVideosResultsSection_XPATH"));
-		/*
-		 * WebElement ImageResultsSection =
-		 * Page.driver.findElement(By.xpath("//h5[@class='m-0' and text()='Images']"));
-		 * Assert.assertTrue(ImageResultsSection.isDisplayed()); WebElement
-		 * DocumentResultsSection = Page.driver
-		 * .findElement(By.xpath("//h5[@class='m-0' and text()='Documents']"));
-		 * Assert.assertTrue(DocumentResultsSection.isDisplayed());
-		 */
 		Thread.sleep((Long.parseLong(p.config.getProperty("Thread3000"))));
-		Page.driver.navigate().back();
+		ocal.clickKBTrainingVideos();
+		if (Page.isVisible("NoResults_XPATH")) {
+			String text = Page.getText("NoResults_XPATH");
+			String newtext = text.substring(text.indexOf('\n') + 1);
+			Assert.assertEquals(newtext, "No results match your search criteria.");
+			Page.driver.navigate().back();
+		} else {
+			Thread.sleep((Long.parseLong(p.config.getProperty("Thread6000"))));
+			// ocal.clickOCalcProIntroduction();
+			Assert.assertTrue(Page.isVisible("oCalcProKBVideosResultsSection_XPATH"));
+			Thread.sleep((Long.parseLong(p.config.getProperty("Thread3000"))));
+			Page.driver.navigate().back();
+		}
 	}
 
 	@Test(priority = 39, enabled = true, description = "Verify the Contents of License Management Pop-up")
 	public void verifyContentsLicenseManagementPopUp() throws InterruptedException {
 		OsmoseServicesPage os = new OsmoseServicesPage();
 		oCalcProPage ocal = os.gooCalcPro();
-		ocal.clickoCalcProLogoForLicensedUser();
+		// ocal.clickoCalcProLogoForLicensedUser();
+		Thread.sleep((Long.parseLong(p.config.getProperty("Thread2000"))));
 		ocal.clickLicenseManagement();
 		Thread.sleep((Long.parseLong(p.config.getProperty("Thread2000"))));
 		Assert.assertEquals(Page.getText("LicenseManagementHeaderText_XPATH"),
 				"LICENSE MANAGEMENT | Osmose Utilities Services, Inc");
 		Assert.assertTrue(Page.isVisible("ShowTourBtn_XPATH"));
-		Assert.assertFalse(Page.isEnabled("RenewBtn_XPATH"));
-		Assert.assertFalse(Page.isEnabled("TransferBtn_XPATH"));
-		Assert.assertFalse(Page.isEnabled("ResendBtn_XPATH"));
-		Assert.assertFalse(Page.isEnabled("UpdateContactBtn_XPATH"));
+		Assert.assertFalse(Page.findelement("RenewBtn_XPATH").isEnabled());
+		Assert.assertFalse(Page.findelement("TransferBtn_XPATH").isEnabled());
+		Assert.assertFalse(Page.findelement("ResendBtn_XPATH").isEnabled());
+		Assert.assertFalse(Page.findelement("UpdateContactBtn_XPATH").isEnabled());
 		Page.click("LicenseManagementFirstCheckBox_XPATH");
 		Thread.sleep((Long.parseLong(p.config.getProperty("Thread2000"))));
-		Assert.assertTrue(Page.isEnabled("RenewBtn_XPATH"));
-		Assert.assertTrue(Page.isEnabled("TransferBtn_XPATH"));
-		Assert.assertTrue(Page.isEnabled("ResendBtn_XPATH"));
-		Assert.assertTrue(Page.isEnabled("UpdateContactBtn_XPATH"));
+		Assert.assertTrue(Page.findelement("RenewBtn_XPATH").isEnabled());
+		Assert.assertTrue(Page.findelement("TransferBtn_XPATH").isEnabled());
+		Assert.assertTrue(Page.findelement("ResendBtn_XPATH").isEnabled());
+		Assert.assertTrue(Page.findelement("UpdateContactBtn_XPATH").isEnabled());
 
 	}
 
@@ -886,7 +893,7 @@ public class oCalcPro_Licensed extends BaseTest {
 	public void verifyClickOnNextPreviousbtns() throws InterruptedException {
 		OsmoseServicesPage os = new OsmoseServicesPage();
 		oCalcProPage ocal = os.gooCalcPro();
-		Assert.assertTrue(Page.isVisible("NextBtn_XPATH"));
+		Assert.assertTrue(Page.isVisible("NextBtn1_XPATH"));
 		Assert.assertTrue(Page.isVisible("PreviousBtn_XPATH"));
 		Assert.assertTrue(Page.isVisible("ExitTour_XPATH"));
 		Page.click("PreviousBtn_XPATH");
@@ -913,7 +920,7 @@ public class oCalcPro_Licensed extends BaseTest {
 	public void verifyOnlyRenewBtnIsEnabledOnMultipleRecordSelection() throws InterruptedException {
 		OsmoseServicesPage os = new OsmoseServicesPage();
 		oCalcProPage ocal = os.gooCalcPro();
-		Assert.assertTrue(Page.isVisible("RenewBtn_XPATH"));
+		Assert.assertTrue(Page.isEnabled("RenewBtn_XPATH"));
 		Assert.assertTrue(Page.isEnabled("TransferBtn_XPATH"));
 		Assert.assertTrue(Page.isEnabled("ResendBtn_XPATH"));
 		Assert.assertTrue(Page.isEnabled("UpdateContactBtn_XPATH"));
@@ -927,9 +934,9 @@ public class oCalcPro_Licensed extends BaseTest {
 		Page.click("LicenseManagementSecondCheckBox_XPATH");
 		Thread.sleep((Long.parseLong(p.config.getProperty("Thread2000"))));
 		Assert.assertTrue(Page.isEnabled("RenewBtn_XPATH"));
-		Assert.assertFalse(Page.isEnabled("TransferBtn_XPATH"));
-		Assert.assertFalse(Page.isEnabled("ResendBtn_XPATH"));
-		Assert.assertFalse(Page.isEnabled("UpdateContactBtn_XPATH"));
+		Assert.assertFalse(Page.findelement("TransferBtn_XPATH").isEnabled());
+		Assert.assertFalse(Page.findelement("ResendBtn_XPATH").isEnabled());
+		Assert.assertFalse(Page.findelement("UpdateContactBtn_XPATH").isEnabled());
 		Page.click("LicenseManagementSecondCheckBox_XPATH");
 		Thread.sleep((Long.parseLong(p.config.getProperty("Thread2000"))));
 		Assert.assertTrue(Page.isEnabled("RenewBtn_XPATH"));
@@ -963,7 +970,7 @@ public class oCalcPro_Licensed extends BaseTest {
 		Page.type("LicenseManagementLicenseKeySearch_XPATH", "GKR72ZPB3QW4G8N");
 		Page.findelement("LicenseManagementLicenseKeySearch_XPATH").sendKeys(Keys.ENTER);
 		Page.click("LicenseManagementHeaderText_XPATH");
-		System.out.println("License Key is: " + Page.isVisible("LicensKeyValue_XPATH"));
+		System.out.println("License Key is: " + Page.getText("LicensKeyValue_XPATH"));
 		Page.click("LicenseManagementLicenseKeyFilter_XPATH");
 		Page.click("LicenseManagementLicenseKeyResetBtn_XPATH");
 		Page.click("LicenseManagementHeaderText_XPATH");
@@ -997,7 +1004,7 @@ public class oCalcPro_Licensed extends BaseTest {
 		Page.type("LicenseManagementExpTokenSearch_XPATH", "UA9PKT57ZZ");
 		Page.findelement("LicenseManagementExpTokenSearch_XPATH").sendKeys(Keys.ENTER);
 		Page.click("LicenseManagementHeaderText_XPATH");
-		System.out.println("The Exp Token is: " + Page.isVisible("LicensKeyValue1_XPATH"));
+		System.out.println("The Exp Token is: " + Page.getText("LicensKeyValue1_XPATH"));
 		Page.click("LicenseManagementExpTokenFilter_XPATH");
 		Page.click("LicenseManagementLicenseKeyResetBtn_XPATH");
 		Page.click("LicenseManagementHeaderText_XPATH");
@@ -1013,7 +1020,7 @@ public class oCalcPro_Licensed extends BaseTest {
 		Thread.sleep((Long.parseLong(p.config.getProperty("Thread1000"))));
 		Page.click("FilterLicenseTypeSelectAllChkBox_XPATH");
 		Assert.assertTrue(Page.isVisible("FilterLicenseTypeSingleUserChkBx_XPATH"));
-		Page.isVisible("FilterLicenseTypeSingleUserChkBx_XPATH");
+		Page.click("FilterLicenseTypeSingleUserChkBx_XPATH");
 		Page.click("LicenseManagementHeaderText_XPATH");
 		Assert.assertEquals(Page.getText("LicenseTypeValue_XPATH"), "Single User");
 		Page.click("LicenseManagementLicenseTypeFilter_XPATH");
@@ -1033,17 +1040,17 @@ public class oCalcPro_Licensed extends BaseTest {
 		Assert.assertTrue(Page.isVisible("FilterLicenseTypeSiteChkBx_XPATH"));
 		Page.click("FilterLicenseTypeSiteChkBx_XPATH");
 		Page.click("LicenseManagementHeaderText_XPATH");
-		Assert.assertEquals(Page.isVisible("LicenseTypeValue_XPATH"), "Site");
+		Assert.assertEquals(Page.getText("LicenseTypeValue_XPATH"), "Site");
 		Page.click("LicenseManagementFirstCheckBox_XPATH");
 		Assert.assertTrue(Page.isEnabled("RenewBtn_XPATH"));
-		Assert.assertFalse(Page.isEnabled("TransferBtn_XPATH"));
-		Assert.assertFalse(Page.isEnabled("ResendBtn_XPATH"));
-		Assert.assertFalse(Page.isEnabled("UpdateContactBtn_XPATH"));
+		Assert.assertFalse(Page.findelement("TransferBtn_XPATH").isEnabled());
+		Assert.assertFalse(Page.findelement("ResendBtn_XPATH").isEnabled());
+		Assert.assertFalse(Page.findelement("UpdateContactBtn_XPATH").isEnabled());
 		Page.click("LicenseManagementSecondCheckBox_XPATH");
 		Assert.assertTrue(Page.isEnabled("RenewBtn_XPATH"));
-		Assert.assertFalse(Page.isEnabled("TransferBtn_XPATH"));
-		Assert.assertFalse(Page.isEnabled("ResendBtn_XPATH"));
-		Assert.assertFalse(Page.isEnabled("UpdateContactBtn_XPATH"));
+		Assert.assertFalse(Page.findelement("TransferBtn_XPATH").isEnabled());
+		Assert.assertFalse(Page.findelement("ResendBtn_XPATH").isEnabled());
+		Assert.assertFalse(Page.findelement("UpdateContactBtn_XPATH").isEnabled());
 		Page.click("LicenseManagementLicenseTypeFilter_XPATH");
 		Page.click("LicenseManagementLicenseTypeResetBtn_XPATH");
 		Page.click("LicenseManagementHeaderText_XPATH");
@@ -1138,6 +1145,7 @@ public class oCalcPro_Licensed extends BaseTest {
 	public void verifyClickTransferLicenseBtn() throws InterruptedException {
 		OsmoseServicesPage os = new OsmoseServicesPage();
 		oCalcProPage ocal = os.gooCalcPro();
+		Thread.sleep((Long.parseLong(p.config.getProperty("Thread2000"))));
 		Page.click("TransferBtn_XPATH");
 		ocal.clickLicenseTransferBtn();
 		Thread.sleep((Long.parseLong(p.config.getProperty("Thread2000"))));
@@ -1152,6 +1160,7 @@ public class oCalcPro_Licensed extends BaseTest {
 	public void verifyClickResend() throws InterruptedException {
 		OsmoseServicesPage os = new OsmoseServicesPage();
 		oCalcProPage ocal = os.gooCalcPro();
+		Thread.sleep((Long.parseLong(p.config.getProperty("Thread3000"))));
 		Page.click("LicenseManagementFirstCheckBox_XPATH");
 		Thread.sleep((Long.parseLong(p.config.getProperty("Thread2000"))));
 		Assert.assertTrue(Page.isEnabled("ResendBtn_XPATH"));
@@ -1162,12 +1171,14 @@ public class oCalcPro_Licensed extends BaseTest {
 		System.out.println("Resend PopUp text is: " + Page.getText("ResendCompletePopUptxt_XPATH"));
 		Assert.assertTrue(Page.isVisible("ResendCompletePopUpCloseBtn_XPATH"));
 		Page.click("ResendCompletePopUpCloseBtn_XPATH");
+		Thread.sleep((Long.parseLong(p.config.getProperty("Thread3000"))));
 	}
 
 	@Test(priority = 56, enabled = true, description = "Verify Update Contact button pop up UI")
 	public void verifyUpdateContactBtn() throws InterruptedException {
 		OsmoseServicesPage os = new OsmoseServicesPage();
 		oCalcProPage ocal = os.gooCalcPro();
+		Thread.sleep((Long.parseLong(p.config.getProperty("Thread3000"))));
 		Page.click("LicenseManagementFirstCheckBox_XPATH");
 		Thread.sleep((Long.parseLong(p.config.getProperty("Thread2000"))));
 		// Update Contact button contents presence verification
@@ -1183,13 +1194,17 @@ public class oCalcPro_Licensed extends BaseTest {
 		Assert.assertEquals(Page.getText("UpdateContactPopUpHeader_XPATH"),
 				"Enter the contact details to be updated for the license.");
 		Assert.assertTrue(Page.isVisible("TransferPopUpFirstName_XPATH"));
-		System.out.println("The FirstName in UpdateContact is: " + Page.getAttributeValue("TransferPopUpFirstName_XPATH", "value"));
+		System.out.println("The FirstName in UpdateContact is: "
+				+ Page.getAttributeValue("TransferPopUpFirstName_XPATH", "value"));
 		Assert.assertTrue(Page.isVisible("TransferPopUpLastName_XPATH"));
-		System.out.println("The LastName in UpdateContact is: " + Page.getAttributeValue("TransferPopUpLastName_XPATH","value"));
+		System.out.println(
+				"The LastName in UpdateContact is: " + Page.getAttributeValue("TransferPopUpLastName_XPATH", "value"));
 		Assert.assertTrue(Page.isVisible("TransferPopUpEmail_XPATH"));
-		System.out.println("The Email in UpdateContact is: " + Page.getAttributeValue("TransferPopUpEmail_XPATH","value"));
+		System.out.println(
+				"The Email in UpdateContact is: " + Page.getAttributeValue("TransferPopUpEmail_XPATH", "value"));
 		Assert.assertTrue(Page.isVisible("TransferPopUpPhone_XPATH"));
-		System.out.println("The Phone in UpdateContact is: " + Page.getAttributeValue("TransferPopUpPhone_XPATH","value"));
+		System.out.println(
+				"The Phone in UpdateContact is: " + Page.getAttributeValue("TransferPopUpPhone_XPATH", "value"));
 		Assert.assertTrue(Page.isVisible("UpdateContactPopUpUpdateContactInfoBtn_XPATH"));
 		Thread.sleep((Long.parseLong(p.config.getProperty("Thread4000"))));
 		Page.click("UpdateContactPopUpCloseBtn_XPATH");
@@ -1199,20 +1214,28 @@ public class oCalcPro_Licensed extends BaseTest {
 	public void verifyClickUpdateContactBtn() throws InterruptedException {
 		OsmoseServicesPage os = new OsmoseServicesPage();
 		oCalcProPage ocal = os.gooCalcPro();
+		Thread.sleep((Long.parseLong(p.config.getProperty("Thread2000"))));
 		Page.click("UpdateContactBtn_XPATH");
+		Thread.sleep((Long.parseLong(p.config.getProperty("Thread2000"))));
 		Page.click("UpdateContactPopUpUpdateContactInfoBtn_XPATH");
 		Thread.sleep((Long.parseLong(p.config.getProperty("Thread2000"))));
 		Assert.assertEquals(Page.getText("UpdateCompleteTxt_XPATH"), "UPDATE COMPLETE!");
 		System.out.println("Update Contact Complete PopUp text is: " + Page.getText("UpdateCompletePopUptxt_XPATH"));
 		Assert.assertTrue(Page.isVisible("UpdateCompletePopUpCloseBtn_XPATH"));
 		Page.click("UpdateCompletePopUpCloseBtn_XPATH");
+		Thread.sleep((Long.parseLong(p.config.getProperty("Thread1000"))));
+		Page.click("LicenseManagementCloseBtn_XPATH");
+		Thread.sleep((Long.parseLong(p.config.getProperty("Thread2000"))));
 	}
 
 	@Test(priority = 58, enabled = true, description = "Verify click on Renew Button functionality")
 	public void verifyClickRenewBtn() throws InterruptedException {
 		OsmoseServicesPage os = new OsmoseServicesPage();
 		oCalcProPage ocal = os.gooCalcPro();
+		ocal.clickLicenseManagement();
+		Thread.sleep((Long.parseLong(p.config.getProperty("Thread3000"))));
 		Page.click("LicenseManagementFirstCheckBox_XPATH");
+		Thread.sleep((Long.parseLong(p.config.getProperty("Thread1000"))));
 		Page.click("RenewBtn_XPATH");
 		Page.wait.until(ExpectedConditions.visibilityOfElementLocated(
 				By.xpath("(//div[@class='prdDetailhs2']//h3[text()=' O-Calc License '])[1]")));
@@ -1222,9 +1245,11 @@ public class oCalcPro_Licensed extends BaseTest {
 		Assert.assertTrue(Page.isVisible("oCalcLicenseDescription_XPATH"));
 		Assert.assertEquals(Page.getText("oCalcLicenseDescription_XPATH"), "O-Calc License description");
 		System.out.println("The Prepopulated Size is: " + Page.getdefaultValuefromdropdown("RenewSizeDD_XPATH"));
-		System.out.println("The Prepopulated Quantity is: " + Page.getAttributeValue("oCalProductEnterQuantity_XPATH","value"));
+		System.out.println(
+				"The Prepopulated Quantity is: " + Page.getAttributeValue("oCalProductEnterQuantity_XPATH", "value"));
 		ocal.RenewProductQuoteSubmission();
-		System.out.println("The Prepopulated Comments is: " + Page.getAttributeValue("RenewQuoteComments_XPATH","value"));
+		System.out.println(
+				"The Prepopulated Comments is: " + Page.getAttributeValue("RenewQuoteComments_XPATH", "value"));
 		Thread.sleep((Long.parseLong(p.config.getProperty("Thread2000"))));
 		Page.click("oCalProductSubmitBtn_XPATH");
 	}
