@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="JointUse_ts_submitter"
+           tests="15"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="70.228">
+  <properties />
+  
+  
+            <testcase name="verifySelectAllFunctionality" time="2.467" classname="com.OSMOSE.testcases.JointUse_Submitter" />
+                <testcase name="verifyRefreshBtn" time="0.035" classname="com.OSMOSE.testcases.JointUse_Submitter" />
+                <testcase name="verifyEditWidgetClick" time="0.339" classname="com.OSMOSE.testcases.JointUse_Submitter" />
+                <testcase name="verifyEditLayout" time="0.063" classname="com.OSMOSE.testcases.JointUse_Submitter" />
+                <testcase name="verifyJointUseNavigationClick" time="33.050" classname="com.OSMOSE.testcases.JointUse_Submitter" />
+                <testcase name="verifyExportOptions" time="0.149" classname="com.OSMOSE.testcases.JointUse_Submitter" />
+                <testcase name="verifySearchBox" time="0.065" classname="com.OSMOSE.testcases.JointUse_Submitter" />
+                <testcase name="verifyColumns" time="2.236" classname="com.OSMOSE.testcases.JointUse_Submitter" />
+                <testcase name="verifyRowsCount" time="0.090" classname="com.OSMOSE.testcases.JointUse_Submitter" />
+                <testcase name="verifyAddWidgets" time="0.063" classname="com.OSMOSE.testcases.JointUse_Submitter" />
+                <testcase name="jointUseloginTestSubmitter" time="25.166" classname="com.OSMOSE.testcases.JointUse_Submitter" />
+                <testcase name="verifyAddWidgetClick" time="0.517" classname="com.OSMOSE.testcases.JointUse_Submitter" />
+                <testcase name="verifyHorizontalCollapseFunctionality" time="5.323" classname="com.OSMOSE.testcases.JointUse_Submitter" />
+                <testcase name="verifyVerticalCollapseFunctionality" time="0.140" classname="com.OSMOSE.testcases.JointUse_Submitter" />
+                <testcase name="verifyNewApplication" time="0.525" classname="com.OSMOSE.testcases.JointUse_Submitter" />
+      
+</testsuite>
