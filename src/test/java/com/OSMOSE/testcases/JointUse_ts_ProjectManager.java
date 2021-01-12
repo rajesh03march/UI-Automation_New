@@ -11,17 +11,17 @@ import com.OSMOSE.pages.OU.Login;
 import com.OSMOSE.pages.OU.oCalcProPage;
 import com.OSMOSE.utilities.Utilities;
 
-public class JointUse_ts_allroles3 extends BaseTest {
+public class JointUse_ts_ProjectManager extends BaseTest {
 
 	Page p = new Page();
 
 	@Test(dataProviderClass = Utilities.class, dataProvider = "dp", priority = 0, description = "Verify the login functionality")
-	public void jointUseloginTestAllRoles(Hashtable<String, String> data) throws InterruptedException {
+	public void jointUseloginTestProjectManager(Hashtable<String, String> data) throws InterruptedException {
 		Login lo = new Login();
 		lo.doLogin(data.get("username"), data.get("password"));
 		Page.click("submit_XPATH");
 		String element = Page.getText("verify_ID");
-		Assert.assertEquals(element, "All Roles");
+		Assert.assertEquals(element, "Project Manager DEV");
 	}
 
 	@Test(priority = 1, enabled = true, description = "Verify the click on Joint Use menu and card Navigation")
@@ -100,30 +100,7 @@ public class JointUse_ts_allroles3 extends BaseTest {
 		oCalcProPage ocal = new oCalcProPage();
 		JointUsePage jup = ocal.goJointUse();
 		// Verify the presence of New Application button
-		Assert.assertTrue(Page.isVisible("NewApplicationBtn_XPATH"));
-		Page.click("NewApplicationBtn_XPATH");
-		// Verify the options displayed under New Application
-		Assert.assertEquals(Page.getText("NewApplicationFirstHeaderTxt_XPATH"), "Applications");
-
-		Assert.assertTrue(Page.isVisible("NewApplicationFirstApp_XPATH"));
-		Assert.assertEquals(Page.getText("NewApplicationFirstApp_XPATH"), "Wired - New Attachment");
-
-		Assert.assertTrue(Page.isVisible("NewApplicationSecondApp_XPATH"));
-		Assert.assertEquals(Page.getText("NewApplicationSecondApp_XPATH"), "Overlash Notification");
-
-		Assert.assertTrue(Page.isVisible("NewApplicationThirdApp_XPATH"));
-		Assert.assertEquals(Page.getText("NewApplicationThirdApp_XPATH"), "Wired - Overlash or New Attachment");
-
-		Assert.assertTrue(Page.isVisible("NewApplicationFourthApp_XPATH"));
-		Assert.assertEquals(Page.getText("NewApplicationFourthApp_XPATH"), "Equipment");
-
-		Assert.assertTrue(Page.isVisible("NewApplicationFifthApp_XPATH"));
-		Assert.assertEquals(Page.getText("NewApplicationFifthApp_XPATH"), "Other - Banner, Sign, Drop");
-
-		Assert.assertTrue(Page.isVisible("NewApplicationSixthApp_XPATH"));
-		Assert.assertEquals(Page.getText("NewApplicationSixthApp_XPATH"), "Wireless - Antenna");
-
-		Page.click("NewApplicationBtn_XPATH");
+		Assert.assertFalse(Page.isVisible("NewApplicationBtn_XPATH"));
 	}
 
 	@Test(priority = 7, enabled = true, description = "Verify the presence of export options")

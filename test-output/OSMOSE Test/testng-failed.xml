@@ -10,7 +10,7 @@
     <classes>
       <class name="com.OSMOSE.testcases.JointUse_Submitter">
         <methods>
-          <include name="verifyEditWidgetClick"/>
+          <include name="verifyAddingCommentsToTheApplication"/>
           <include name="tearDown"/>
         </methods>
       </class> <!-- com.OSMOSE.testcases.JointUse_Submitter -->

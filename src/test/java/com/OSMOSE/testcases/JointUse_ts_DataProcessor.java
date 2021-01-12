@@ -11,17 +11,17 @@ import com.OSMOSE.pages.OU.Login;
 import com.OSMOSE.pages.OU.oCalcProPage;
 import com.OSMOSE.utilities.Utilities;
 
-public class JointUse_ts_allroles5 extends BaseTest {
+public class JointUse_ts_DataProcessor extends BaseTest {
 
 	Page p = new Page();
 
 	@Test(dataProviderClass = Utilities.class, dataProvider = "dp", priority = 0, description = "Verify the login functionality")
-	public void jointUseloginTestAllRoles(Hashtable<String, String> data) throws InterruptedException {
+	public void jointUseloginDataProcessor(Hashtable<String, String> data) throws InterruptedException {
 		Login lo = new Login();
 		lo.doLogin(data.get("username"), data.get("password"));
 		Page.click("submit_XPATH");
 		String element = Page.getText("verify_ID");
-		Assert.assertEquals(element, "All Roles");
+		Assert.assertEquals(element, "Data Processor Dev");
 	}
 
 	@Test(priority = 1, enabled = true, description = "Verify the click on Joint Use menu and card Navigation")
@@ -103,25 +103,22 @@ public class JointUse_ts_allroles5 extends BaseTest {
 		Assert.assertTrue(Page.isVisible("NewApplicationBtn_XPATH"));
 		Page.click("NewApplicationBtn_XPATH");
 		// Verify the options displayed under New Application
-		Assert.assertEquals(Page.getText("NewApplicationFirstHeaderTxt_XPATH"), "Applications");
-
-		Assert.assertTrue(Page.isVisible("NewApplicationFirstApp_XPATH"));
-		Assert.assertEquals(Page.getText("NewApplicationFirstApp_XPATH"), "Wired - New Attachment");
-
-		Assert.assertTrue(Page.isVisible("NewApplicationSecondApp_XPATH"));
-		Assert.assertEquals(Page.getText("NewApplicationSecondApp_XPATH"), "Overlash Notification");
-
-		Assert.assertTrue(Page.isVisible("NewApplicationThirdApp_XPATH"));
-		Assert.assertEquals(Page.getText("NewApplicationThirdApp_XPATH"), "Wired - Overlash or New Attachment");
-
-		Assert.assertTrue(Page.isVisible("NewApplicationFourthApp_XPATH"));
-		Assert.assertEquals(Page.getText("NewApplicationFourthApp_XPATH"), "Equipment");
-
-		Assert.assertTrue(Page.isVisible("NewApplicationFifthApp_XPATH"));
-		Assert.assertEquals(Page.getText("NewApplicationFifthApp_XPATH"), "Other - Banner, Sign, Drop");
-
-		Assert.assertTrue(Page.isVisible("NewApplicationSixthApp_XPATH"));
-		Assert.assertEquals(Page.getText("NewApplicationSixthApp_XPATH"), "Wireless - Antenna");
+		Assert.assertTrue(Page.isVisible("CreateMultipleTxt_XPATH"));
+		Assert.assertEquals(Page.getText("CreateMultipleTxt_XPATH"), "Create Multiple");
+		
+		Page.click("CreateMultipleTxt_XPATH");
+		
+		Assert.assertTrue(Page.isVisible("DataProcessorApplicationsTxt_XPATH"));
+		Assert.assertEquals(Page.getText("DataProcessorApplicationsTxt_XPATH"), "Applications");
+		
+		Assert.assertTrue(Page.isVisible("DataProcessorFirstApp_XPATH"));
+		Assert.assertEquals(Page.getText("DataProcessorFirstApp_XPATH"), "Wired - New Attachment");
+		
+		Assert.assertTrue(Page.isVisible("DataProcessorSecondApp_XPATH"));
+		Assert.assertEquals(Page.getText("DataProcessorSecondApp_XPATH"), "Wireless - Antenna");
+		
+		Assert.assertTrue(Page.isVisible("DataProcessorThirdApp_XPATH"));
+		Assert.assertEquals(Page.getText("DataProcessorThirdApp_XPATH"), "Overlash Notification");
 
 		Page.click("NewApplicationBtn_XPATH");
 	}
@@ -178,7 +175,7 @@ public class JointUse_ts_allroles5 extends BaseTest {
 		Thread.sleep((Long.parseLong(p.config.getProperty("Thread2000"))));
 		Page.click("Columns_XPATH");
 	}
-
+	
 	@Test(priority = 12, enabled = true, description = "Verify Select All functionality")
 	public void verifySelectAllFunctionality() throws InterruptedException {
 		oCalcProPage ocal = new oCalcProPage();
@@ -191,7 +188,7 @@ public class JointUse_ts_allroles5 extends BaseTest {
 		Page.click("SelectAllChkBx_XPATH");
 		Assert.assertFalse(Page.findelement("SelectAllFirstChkBx_XPATH").isSelected());
 	}
-
+	
 	@Test(priority = 13, enabled = true, description = "Verify Add widget click")
 	public void verifyAddWidgetClick() throws InterruptedException {
 		oCalcProPage ocal = new oCalcProPage();
@@ -213,7 +210,7 @@ public class JointUse_ts_allroles5 extends BaseTest {
 			Page.click("AddWidgetCloseBtn_XPATH");
 		}
 	}
-
+	
 	@Test(priority = 14, enabled = true, description = "Verify Edit widget click")
 	public void verifyEditWidgetClick() throws InterruptedException {
 		oCalcProPage ocal = new oCalcProPage();

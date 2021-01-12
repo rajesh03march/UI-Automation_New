@@ -11,7 +11,7 @@ import com.OSMOSE.pages.OU.Login;
 import com.OSMOSE.pages.OU.oCalcProPage;
 import com.OSMOSE.utilities.Utilities;
 
-public class JointUse_ts_allroles4 extends BaseTest {
+public class JointUse_ts_allroles extends BaseTest {
 
 	Page p = new Page();
 
@@ -111,9 +111,6 @@ public class JointUse_ts_allroles4 extends BaseTest {
 		Assert.assertTrue(Page.isVisible("NewApplicationSecondApp_XPATH"));
 		Assert.assertEquals(Page.getText("NewApplicationSecondApp_XPATH"), "Overlash Notification");
 
-		Assert.assertTrue(Page.isVisible("NewApplicationThirdApp_XPATH"));
-		Assert.assertEquals(Page.getText("NewApplicationThirdApp_XPATH"), "Wired - Overlash or New Attachment");
-
 		Assert.assertTrue(Page.isVisible("NewApplicationFourthApp_XPATH"));
 		Assert.assertEquals(Page.getText("NewApplicationFourthApp_XPATH"), "Equipment");
 
@@ -122,6 +119,23 @@ public class JointUse_ts_allroles4 extends BaseTest {
 
 		Assert.assertTrue(Page.isVisible("NewApplicationSixthApp_XPATH"));
 		Assert.assertEquals(Page.getText("NewApplicationSixthApp_XPATH"), "Wireless - Antenna");
+		
+		Assert.assertTrue(Page.isVisible("CreateMultipleTxt_XPATH"));
+		Assert.assertEquals(Page.getText("CreateMultipleTxt_XPATH"), "Create Multiple");
+		
+		Page.click("CreateMultipleTxt_XPATH");
+		
+		Assert.assertTrue(Page.isVisible("CreateMultipleApplicationsTxt_XPATH"));
+		Assert.assertEquals(Page.getText("CreateMultipleApplicationsTxt_XPATH"), "Applications");
+		
+		Assert.assertTrue(Page.isVisible("CreateMultipleFirstApp_XPATH"));
+		Assert.assertEquals(Page.getText("CreateMultipleFirstApp_XPATH"), "Wired - New Attachment");
+		
+		Assert.assertTrue(Page.isVisible("CreateMultipleSecondApp_XPATH"));
+		Assert.assertEquals(Page.getText("CreateMultipleSecondApp_XPATH"), "Wireless - Antenna");
+		
+		Assert.assertTrue(Page.isVisible("CreateMultipleThirdApp_XPATH"));
+		Assert.assertEquals(Page.getText("CreateMultipleThirdApp_XPATH"), "Overlash Notification");
 
 		Page.click("NewApplicationBtn_XPATH");
 	}

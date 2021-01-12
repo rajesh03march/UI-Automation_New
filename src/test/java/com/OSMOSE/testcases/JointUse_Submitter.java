@@ -2,6 +2,8 @@ package com.OSMOSE.testcases;
 
 import java.util.Hashtable;
 
+import org.openqa.selenium.Keys;
+import org.openqa.selenium.interactions.Actions;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -39,7 +41,7 @@ public class JointUse_Submitter extends BaseTest {
 		System.out.println("The header text on JU page is: " + Page.getText("JUHeaderTxt_XPATH"));
 	}
 
-	@Test(priority = 2, enabled = true, description = "Verify the Presence of Horizontal collapse button functionality")
+	@Test(priority = 2, enabled = false, description = "Verify the Presence of Horizontal collapse button functionality")
 	public void verifyHorizontalCollapseFunctionality() throws InterruptedException {
 		oCalcProPage ocal = new oCalcProPage();
 		JointUsePage jup = ocal.goJointUse();
@@ -59,7 +61,7 @@ public class JointUse_Submitter extends BaseTest {
 		}
 	}
 
-	@Test(priority = 3, enabled = true, description = "Verify the Presence of Vertical collapse button functionality")
+	@Test(priority = 3, enabled = false, description = "Verify the Presence of Vertical collapse button functionality")
 	public void verifyVerticalCollapseFunctionality() throws InterruptedException {
 		oCalcProPage ocal = new oCalcProPage();
 		JointUsePage jup = ocal.goJointUse();
@@ -75,7 +77,7 @@ public class JointUse_Submitter extends BaseTest {
 		}
 	}
 
-	@Test(priority = 4, enabled = true, description = "Verify the Presence of Add widgets button")
+	@Test(priority = 4, enabled = false, description = "Verify the Presence of Add widgets button")
 	public void verifyAddWidgets() throws InterruptedException {
 		oCalcProPage ocal = new oCalcProPage();
 		JointUsePage jup = ocal.goJointUse();
@@ -85,7 +87,7 @@ public class JointUse_Submitter extends BaseTest {
 		Assert.assertEquals(Page.getAttributeValue("AddWidgetBtn_XPATH", "title"), "Add Widgets");
 	}
 
-	@Test(priority = 5, enabled = true, description = "Verify the Presence of Edit Layout button")
+	@Test(priority = 5, enabled = false, description = "Verify the Presence of Edit Layout button")
 	public void verifyEditLayout() throws InterruptedException {
 		oCalcProPage ocal = new oCalcProPage();
 		JointUsePage jup = ocal.goJointUse();
@@ -95,7 +97,7 @@ public class JointUse_Submitter extends BaseTest {
 		Assert.assertEquals(Page.getAttributeValue("EditLayoutBtn_XPATH", "title"), "Edit Layout");
 	}
 
-	@Test(priority = 6, enabled = true, description = "Verify the presence of New Application button and its options")
+	@Test(priority = 6, enabled = false, description = "Verify the presence of New Application button and its options")
 	public void verifyNewApplication() {
 		oCalcProPage ocal = new oCalcProPage();
 		JointUsePage jup = ocal.goJointUse();
@@ -111,9 +113,6 @@ public class JointUse_Submitter extends BaseTest {
 		Assert.assertTrue(Page.isVisible("NewApplicationSecondApp_XPATH"));
 		Assert.assertEquals(Page.getText("NewApplicationSecondApp_XPATH"), "Overlash Notification");
 
-		Assert.assertTrue(Page.isVisible("NewApplicationThirdApp_XPATH"));
-		Assert.assertEquals(Page.getText("NewApplicationThirdApp_XPATH"), "Wired - Overlash or New Attachment");
-
 		Assert.assertTrue(Page.isVisible("NewApplicationFourthApp_XPATH"));
 		Assert.assertEquals(Page.getText("NewApplicationFourthApp_XPATH"), "Equipment");
 
@@ -126,7 +125,7 @@ public class JointUse_Submitter extends BaseTest {
 		Page.click("NewApplicationBtn_XPATH");
 	}
 
-	@Test(priority = 7, enabled = true, description = "Verify the presence of export options")
+	@Test(priority = 7, enabled = false, description = "Verify the presence of export options")
 	public void verifyExportOptions() {
 		oCalcProPage ocal = new oCalcProPage();
 		JointUsePage jup = ocal.goJointUse();
@@ -140,7 +139,7 @@ public class JointUse_Submitter extends BaseTest {
 		Assert.assertEquals(Page.getText("PdfExport_XPATH"), "Pdf");
 	}
 
-	@Test(priority = 8, enabled = true, description = "Verify the presence of Search box")
+	@Test(priority = 8, enabled = false, description = "Verify the presence of Search box")
 	public void verifySearchBox() {
 		oCalcProPage ocal = new oCalcProPage();
 		JointUsePage jup = ocal.goJointUse();
@@ -149,7 +148,7 @@ public class JointUse_Submitter extends BaseTest {
 		Assert.assertEquals(Page.getAttributeValue("JUSearchBox_XPATH", "placeholder"), "Search");
 	}
 
-	@Test(priority = 9, enabled = true, description = "Verify the presence of Refresh button")
+	@Test(priority = 9, enabled = false, description = "Verify the presence of Refresh button")
 	public void verifyRefreshBtn() {
 		oCalcProPage ocal = new oCalcProPage();
 		JointUsePage jup = ocal.goJointUse();
@@ -157,7 +156,7 @@ public class JointUse_Submitter extends BaseTest {
 		Assert.assertTrue(Page.isVisible("RefreshBtn_XPATH"));
 	}
 
-	@Test(priority = 10, enabled = true, description = "Verify the presence of Number of rows")
+	@Test(priority = 10, enabled = false, description = "Verify the presence of Number of rows")
 	public void verifyRowsCount() {
 		oCalcProPage ocal = new oCalcProPage();
 		JointUsePage jup = ocal.goJointUse();
@@ -167,7 +166,7 @@ public class JointUse_Submitter extends BaseTest {
 		System.out.println("The number of rows is: " + Page.getText("NoOfRows_XPATH"));
 	}
 
-	@Test(priority = 11, enabled = true, description = "Verify the presence of Columns button")
+	@Test(priority = 11, enabled = false, description = "Verify the presence of Columns button")
 	public void verifyColumns() throws InterruptedException {
 		oCalcProPage ocal = new oCalcProPage();
 		JointUsePage jup = ocal.goJointUse();
@@ -178,8 +177,8 @@ public class JointUse_Submitter extends BaseTest {
 		Thread.sleep((Long.parseLong(p.config.getProperty("Thread2000"))));
 		Page.click("Columns_XPATH");
 	}
-	
-	@Test(priority = 12, enabled = true, description = "Verify Select All functionality")
+
+	@Test(priority = 12, enabled = false, description = "Verify Select All functionality")
 	public void verifySelectAllFunctionality() throws InterruptedException {
 		oCalcProPage ocal = new oCalcProPage();
 		JointUsePage jup = ocal.goJointUse();
@@ -191,8 +190,8 @@ public class JointUse_Submitter extends BaseTest {
 		Page.click("SelectAllChkBx_XPATH");
 		Assert.assertFalse(Page.findelement("SelectAllFirstChkBx_XPATH").isSelected());
 	}
-	
-	@Test(priority = 13, enabled = true, description = "Verify Add widget click")
+
+	@Test(priority = 13, enabled = false, description = "Verify Add widget click")
 	public void verifyAddWidgetClick() throws InterruptedException {
 		oCalcProPage ocal = new oCalcProPage();
 		JointUsePage jup = ocal.goJointUse();
@@ -213,8 +212,8 @@ public class JointUse_Submitter extends BaseTest {
 			Page.click("AddWidgetCloseBtn_XPATH");
 		}
 	}
-	
-	@Test(priority = 14, enabled = true, description = "Verify Edit widget click")
+
+	@Test(priority = 14, enabled = false, description = "Verify Edit widget click")
 	public void verifyEditWidgetClick() throws InterruptedException {
 		oCalcProPage ocal = new oCalcProPage();
 		JointUsePage jup = ocal.goJointUse();
@@ -233,6 +232,34 @@ public class JointUse_Submitter extends BaseTest {
 			Page.click("SaveLayoutBtn_XPATH");
 			Assert.assertTrue(Page.isVisible("DeleteIcon_XPATH"));
 		}
+	}
+
+	@Test(dataProviderClass = Utilities.class, dataProvider = "dp", priority = 15, enabled = false, description = "Verify Adding New Application: Wired - New Attachment")
+	public void verifyAddWiredNewAttachment(Hashtable<String, String> data) throws Exception {
+		oCalcProPage ocal = new oCalcProPage();
+		JointUsePage jup = ocal.goJointUse();
+		Page.click("NewApplicationBtn_XPATH");
+		Page.click("NewApplicationFirstApp_XPATH");
+		Assert.assertTrue(Page.isVisible("SaveAndSubmitBtn_XPATH"));
+		Thread.sleep((Long.parseLong(p.config.getProperty("Thread5000"))));
+		jup.AddWiredNewAttachment(data.get("ApplicationName"), data.get("Township"), data.get("NumberOfStructures"),
+				data.get("CableStrandName"));
+		Assert.assertEquals(Page.getText("ApplicationSuccess_XPATH"), "Application Submitted");
+		Assert.assertTrue(Page.isVisible("ReturnToListBtn_XPATH"));
+		Page.click("ReturnToListBtn_XPATH");
+		Assert.assertEquals(Page.getText("ApplicationStatus_XPATH"), "Completeness Review");
+	}
+
+	@Test(priority = 16, enabled = true, description = "Verify that user is able to add comments to the application")
+	public void verifyAddingCommentsToTheApplication() throws InterruptedException {
+		oCalcProPage ocal = new oCalcProPage();
+		JointUsePage jup = ocal.goJointUse();
+		Page.click("ApplicationName_XPATH");
+		Actions actions = new Actions(Page.driver);
+		for (int j = 0; j <= 5; j++) {
+			actions.sendKeys(Keys.TAB).build().perform();
+		}
+		Page.type("ApplicationComments_XPATH", "123");
 	}
 
 }

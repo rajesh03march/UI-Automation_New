@@ -257,6 +257,23 @@ public class Page {
 
 	}
 
+	public static void selectbyValue(String locator, String Value) {
+
+		if (locator.endsWith("_CSS")) {
+			dropdown = driver.findElement(By.cssSelector(OR.getProperty(locator)));
+		} else if (locator.endsWith("_XPATH")) {
+			dropdown = driver.findElement(By.xpath(OR.getProperty(locator)));
+		} else if (locator.endsWith("_ID")) {
+			dropdown = driver.findElement(By.id(OR.getProperty(locator)));
+		}
+
+		Select select = new Select(dropdown);
+		select.selectByValue(Value);
+		log.debug("Selecting from an element : " + locator + " value as : " + Value);
+		test.log(LogStatus.INFO, "Selecting from dropdown : " + locator + " value as " + Value);
+
+	}
+
 	public static boolean isElementPresent(By by) {
 
 		try {
@@ -434,7 +451,7 @@ public class Page {
 			return false;
 		}
 	}
-	
+
 	public static boolean isEnabled(String locator) {
 		try {
 			if (locator.endsWith("_CSS")) {
@@ -498,19 +515,19 @@ public class Page {
 
 		Actions action = new Actions(driver);
 		action.moveToElement(act).click().build().perform();
-		log.debug("Selecting from an element : " + locator);
-		test.log(LogStatus.INFO, "Selecting from dropdown : " + locator);
+		log.debug("Moving to the element and Clicking it : " + locator);
+		test.log(LogStatus.INFO, "Moving to the element and Clicking it : " + locator);
 
 	}
 
 	public static WebElement findelement(String locator) {
 
 		if (locator.endsWith("_CSS")) {
-			element=driver.findElement(By.cssSelector(OR.getProperty(locator)));
+			element = driver.findElement(By.cssSelector(OR.getProperty(locator)));
 		} else if (locator.endsWith("_XPATH")) {
-			element=driver.findElement(By.xpath(OR.getProperty(locator)));
+			element = driver.findElement(By.xpath(OR.getProperty(locator)));
 		} else if (locator.endsWith("_ID")) {
-			element=driver.findElement(By.id(OR.getProperty(locator)));
+			element = driver.findElement(By.id(OR.getProperty(locator)));
 		}
 
 		log.debug("Finding the Element : " + locator);
@@ -536,16 +553,14 @@ public class Page {
 		test.log(LogStatus.INFO, "Fetching Default value from dropdown : " + locator + " value as ");
 		return defaultItem;
 	}
-	
-	public static boolean isClickable(WebElement element) 
-    {
-        try{
-           wait.until(ExpectedConditions.elementToBeClickable(element));
-            return true;
-        }
-        catch (Exception e){
-            return false;
-        }
-    }
+
+	public static boolean isClickable(WebElement element) {
+		try {
+			wait.until(ExpectedConditions.elementToBeClickable(element));
+			return true;
+		} catch (Exception e) {
+			return false;
+		}
+	}
 
 }
