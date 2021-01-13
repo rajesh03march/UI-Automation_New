@@ -28,7 +28,7 @@ public class JointUsePage extends Page {
 		for (int i = 0; i <= 18; i++) {
 			actions.sendKeys(Keys.TAB).build().perform();
 		}
-		type("ApplicationName_XPATH", AppName);
+		type("CreateApplicationName_XPATH", AppName);
 		
 		for (int j = 0; j <= 2; j++) {
 			actions.sendKeys(Keys.TAB).build().perform();
@@ -61,5 +61,36 @@ public class JointUsePage extends Page {
 		Page.click("SaveAndSubmitBtn_XPATH");
 		Thread.sleep((Long.parseLong(p.config.getProperty("Thread3000"))));
 		System.out.println("The saved application number is: " + Page.getText("ApplicationNumber_XPATH"));
+	}
+	
+	public void navigateToColombiapit() throws InterruptedException {
+		click("ProjectGroupMenu_XPATH");
+		Thread.sleep((Long.parseLong(p.config.getProperty("Thread1000"))));
+		click("JUCityOfColumbia_XPATH");
+		Thread.sleep((Long.parseLong(p.config.getProperty("Thread1000"))));
+		click("JUColombiapit_XPATH");
+	}
+	
+	public void saveChanges() throws Exception {
+		Page.click("ApplicationName_XPATH");
+		Thread.sleep((Long.parseLong(p.config.getProperty("Thread2000"))));
+		Page.type("AgreementNumber_XPATH", "123");
+		Thread.sleep((Long.parseLong(p.config.getProperty("Thread2000"))));
+		Page.click("RequiredSketchesChkBx_XPATH");
+		Thread.sleep((Long.parseLong(p.config.getProperty("Thread2000"))));
+		Page.click("ActionsBtn_XPATH");
+		Thread.sleep((Long.parseLong(p.config.getProperty("Thread2000"))));
+		Page.click("SaveChanges_XPATH");
+		Thread.sleep((Long.parseLong(p.config.getProperty("Thread5000"))));
+	}
+	
+	public void acceptChanges() throws Exception {
+		Page.click("ActionsBtn_XPATH");
+		Thread.sleep((Long.parseLong(p.config.getProperty("Thread2000"))));
+		Page.click("Accept_XPATH");
+		Thread.sleep((Long.parseLong(p.config.getProperty("Thread2000"))));
+		Page.click("JUAcceptFileSelection_XPATH");
+		Page.click("JUAcceptBtn_XPATH");
+		Thread.sleep((Long.parseLong(p.config.getProperty("Thread5000"))));
 	}
 }

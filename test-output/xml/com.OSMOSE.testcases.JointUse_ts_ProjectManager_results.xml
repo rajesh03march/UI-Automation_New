@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="JointUse_ts_ProjectManager"
+           tests="19"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="177.429">
+  <properties />
+  
+  
+            <testcase name="verifyExportOptions" time="0.182" classname="com.OSMOSE.testcases.JointUse_ts_ProjectManager" />
+                <testcase name="verifyAddWidgets" time="0.055" classname="com.OSMOSE.testcases.JointUse_ts_ProjectManager" />
+                <testcase name="verifyRefreshBtn" time="0.039" classname="com.OSMOSE.testcases.JointUse_ts_ProjectManager" />
+                <testcase name="verifyNewApplication" time="50.099" classname="com.OSMOSE.testcases.JointUse_ts_ProjectManager" />
+                <testcase name="verifySelectAllFunctionality" time="2.219" classname="com.OSMOSE.testcases.JointUse_ts_ProjectManager" />
+                <testcase name="verifyAddWidgetClick" time="0.497" classname="com.OSMOSE.testcases.JointUse_ts_ProjectManager" />
+                <testcase name="verifyAcceptApplication" time="26.041" classname="com.OSMOSE.testcases.JointUse_ts_ProjectManager" />
+                <testcase name="verifyJointUseNavigationClick" time="27.996" classname="com.OSMOSE.testcases.JointUse_ts_ProjectManager" />
+                <testcase name="verifyEditLayout" time="0.068" classname="com.OSMOSE.testcases.JointUse_ts_ProjectManager" />
+                <testcase name="verifyRowsCount" time="0.080" classname="com.OSMOSE.testcases.JointUse_ts_ProjectManager" />
+                <testcase name="verifySearchBox" time="0.052" classname="com.OSMOSE.testcases.JointUse_ts_ProjectManager" />
+                <testcase name="verifyApplicationRemoveHold" time="13.434" classname="com.OSMOSE.testcases.JointUse_ts_ProjectManager" />
+                <testcase name="verifyEditWidgetClick" time="0.278" classname="com.OSMOSE.testcases.JointUse_ts_ProjectManager" />
+                <testcase name="verifyApplicationOnHold" time="13.567" classname="com.OSMOSE.testcases.JointUse_ts_ProjectManager" />
+                <testcase name="verifyVerticalCollapseFunctionality" time="0.151" classname="com.OSMOSE.testcases.JointUse_ts_ProjectManager" />
+                <testcase name="verifyApplicationInProgress" time="13.201" classname="com.OSMOSE.testcases.JointUse_ts_ProjectManager" />
+                <testcase name="verifyColumns" time="2.168" classname="com.OSMOSE.testcases.JointUse_ts_ProjectManager" />
+                <testcase name="jointUseloginTestProjectManager" time="22.088" classname="com.OSMOSE.testcases.JointUse_ts_ProjectManager" />
+                <testcase name="verifyHorizontalCollapseFunctionality" time="5.214" classname="com.OSMOSE.testcases.JointUse_ts_ProjectManager" />
+      
+</testsuite>

@@ -1,12 +1,71 @@
-12/01/2021 12:50:22 devpinoyLogger Config file loaded !!!
-12/01/2021 12:50:22 devpinoyLogger OR file loaded !!!
-12/01/2021 12:50:26 devpinoyLogger Navigated to : https://osmose360cl.azurewebsites.net/
-12/01/2021 12:50:39 devpinoyLogger Typing in an Element : email_XPATH entered value as : ts.submitter@gmail.com
-12/01/2021 12:50:39 devpinoyLogger Typing in an Element : password_XPATH entered value as : P@ssw0rd
-12/01/2021 12:50:39 devpinoyLogger Clicking on an Element : submit_XPATH
-12/01/2021 12:50:39 devpinoyLogger Clicking on an Element : submit_XPATH
-12/01/2021 12:50:44 devpinoyLogger Text of the locator: verify_ID value as :Submitter Dev
-12/01/2021 12:50:50 devpinoyLogger Clicking on an Element : JUNavigation_XPATH
-12/01/2021 12:51:05 devpinoyLogger Clicking on an Element : JUCard_XPATH
-12/01/2021 12:51:11 devpinoyLogger Text of the locator: JUHeaderTxt_XPATH value as :Joint Use - COLOMBIAPIT
-12/01/2021 12:51:11 devpinoyLogger Clicking on an Element : ApplicationName_XPATH
+13/01/2021 16:18:31 devpinoyLogger Config file loaded !!!
+13/01/2021 16:18:31 devpinoyLogger OR file loaded !!!
+13/01/2021 16:18:35 devpinoyLogger Navigated to : https://osmose360cl.azurewebsites.net/
+13/01/2021 16:18:51 devpinoyLogger Typing in an Element : email_XPATH entered value as : dataprocessorrole@gmail.com
+13/01/2021 16:18:52 devpinoyLogger Typing in an Element : password_XPATH entered value as : P@ssw0rd
+13/01/2021 16:18:52 devpinoyLogger Clicking on an Element : submit_XPATH
+13/01/2021 16:18:52 devpinoyLogger Clicking on an Element : submit_XPATH
+13/01/2021 16:18:56 devpinoyLogger Text of the locator: verify_ID value as :Data Processor Dev
+13/01/2021 16:19:02 devpinoyLogger Clicking on an Element : JUNavigation_XPATH
+13/01/2021 16:19:14 devpinoyLogger Clicking on an Element : JUCard_XPATH
+13/01/2021 16:19:19 devpinoyLogger Text of the locator: JUHeaderTxt_XPATH value as :Joint Use - COLOMBIAPIT
+13/01/2021 16:19:24 devpinoyLogger Finding the Element : HorizontalCollapse_XPATH
+13/01/2021 16:19:24 devpinoyLogger Clicking on an Element : HorizontalCollapse_XPATH
+13/01/2021 16:19:24 devpinoyLogger Clicking on an Element : HorizontalFirstGraph_XPATH
+13/01/2021 16:19:24 devpinoyLogger Clicking on an Element : HorizontalCollapse_XPATH
+13/01/2021 16:19:25 devpinoyLogger Finding the Element : VerticalCollapse_XPATH
+13/01/2021 16:19:25 devpinoyLogger Clicking on an Element : VerticalFirstGraph_XPATH
+13/01/2021 16:19:25 devpinoyLogger Clicking on an Element : VerticalCollapse_XPATH
+13/01/2021 16:19:25 devpinoyLogger Clicking on an Element : AddWidgetBtn_XPATH
+13/01/2021 16:19:25 devpinoyLogger Text of the locator: AddWidgetBtn_XPATH value as :Add Widgets
+13/01/2021 16:19:26 devpinoyLogger Clicking on an Element : EditLayoutBtn_XPATH
+13/01/2021 16:19:26 devpinoyLogger Text of the locator: EditLayoutBtn_XPATH value as :Edit Layout
+13/01/2021 16:19:26 devpinoyLogger Clicking on an Element : NewApplicationBtn_XPATH
+13/01/2021 16:19:26 devpinoyLogger Clicking on an Element : NewApplicationBtn_XPATH
+13/01/2021 16:19:27 devpinoyLogger Clicking on an Element : CreateMultipleTxt_XPATH
+13/01/2021 16:19:27 devpinoyLogger Text of the locator: CreateMultipleTxt_XPATH value as :Create Multiple
+13/01/2021 16:19:27 devpinoyLogger Clicking on an Element : CreateMultipleTxt_XPATH
+13/01/2021 16:19:27 devpinoyLogger Clicking on an Element : DataProcessorApplicationsTxt_XPATH
+13/01/2021 16:19:27 devpinoyLogger Text of the locator: DataProcessorApplicationsTxt_XPATH value as :Applications
+13/01/2021 16:19:27 devpinoyLogger Clicking on an Element : DataProcessorFirstApp_XPATH
+13/01/2021 16:19:27 devpinoyLogger Text of the locator: DataProcessorFirstApp_XPATH value as :Wired - New Attachment
+13/01/2021 16:19:27 devpinoyLogger Clicking on an Element : DataProcessorSecondApp_XPATH
+13/01/2021 16:19:27 devpinoyLogger Text of the locator: DataProcessorSecondApp_XPATH value as :Wireless - Antenna
+13/01/2021 16:19:27 devpinoyLogger Clicking on an Element : DataProcessorThirdApp_XPATH
+13/01/2021 16:19:27 devpinoyLogger Text of the locator: DataProcessorThirdApp_XPATH value as :Overlash Notification
+13/01/2021 16:19:27 devpinoyLogger Clicking on an Element : NewApplicationBtn_XPATH
+13/01/2021 16:19:27 devpinoyLogger Text of the locator: ExportTxt_XPATH value as :Export:
+13/01/2021 16:19:27 devpinoyLogger Clicking on an Element : ExcelExport_XPATH
+13/01/2021 16:19:28 devpinoyLogger Text of the locator: ExcelExport_XPATH value as :Excel
+13/01/2021 16:19:28 devpinoyLogger Clicking on an Element : PdfExport_XPATH
+13/01/2021 16:19:28 devpinoyLogger Text of the locator: PdfExport_XPATH value as :Pdf
+13/01/2021 16:19:28 devpinoyLogger Clicking on an Element : JUSearchBox_XPATH
+13/01/2021 16:19:28 devpinoyLogger Text of the locator: JUSearchBox_XPATH value as :Search
+13/01/2021 16:19:28 devpinoyLogger Clicking on an Element : RefreshBtn_XPATH
+13/01/2021 16:19:29 devpinoyLogger Clicking on an Element : RowsTxt_XPATH
+13/01/2021 16:19:29 devpinoyLogger Text of the locator: RowsTxt_XPATH value as :Rows
+13/01/2021 16:19:29 devpinoyLogger Text of the locator: NoOfRows_XPATH value as :240
+13/01/2021 16:19:29 devpinoyLogger Clicking on an Element : Columns_XPATH
+13/01/2021 16:19:29 devpinoyLogger Clicking on an Element : Columns_XPATH
+13/01/2021 16:19:29 devpinoyLogger Text of the locator: ColumnsFirstChkBx_XPATH value as :ID
+13/01/2021 16:19:32 devpinoyLogger Clicking on an Element : Columns_XPATH
+13/01/2021 16:19:32 devpinoyLogger Clicking on an Element : SelectAllChkBx_XPATH
+13/01/2021 16:19:32 devpinoyLogger Clicking on an Element : SelectAllChkBx_XPATH
+13/01/2021 16:19:32 devpinoyLogger Finding the Element : SelectAllFirstChkBx_XPATH
+13/01/2021 16:19:34 devpinoyLogger Clicking on an Element : SelectAllChkBx_XPATH
+13/01/2021 16:19:34 devpinoyLogger Finding the Element : SelectAllFirstChkBx_XPATH
+13/01/2021 16:19:35 devpinoyLogger Finding the Element : VerticalCollapse_XPATH
+13/01/2021 16:19:35 devpinoyLogger Clicking on an Element : VerticalExpand_XPATH
+13/01/2021 16:19:35 devpinoyLogger Finding the Element : AddWidgetBtn_XPATH
+13/01/2021 16:19:35 devpinoyLogger Clicking on an Element : VerticalExpand_XPATH
+13/01/2021 16:19:35 devpinoyLogger Clicking on an Element : AddWidgetBtn_XPATH
+13/01/2021 16:19:35 devpinoyLogger Clicking on an Element : AddWidgetBtn_XPATH
+13/01/2021 16:19:35 devpinoyLogger Clicking on an Element : AddWidgetCloseBtn_XPATH
+13/01/2021 16:19:35 devpinoyLogger Text of the locator: AddWidgetTxt_XPATH value as :Drag and Drop a widget to add to the dashboard
+13/01/2021 16:19:35 devpinoyLogger Clicking on an Element : AddWidgetCloseBtn_XPATH
+13/01/2021 16:19:35 devpinoyLogger Finding the Element : VerticalCollapse_XPATH
+13/01/2021 16:19:35 devpinoyLogger Clicking on an Element : EditLayoutBtn_XPATH
+13/01/2021 16:19:36 devpinoyLogger Clicking on an Element : EditLayoutBtn_XPATH
+13/01/2021 16:19:36 devpinoyLogger Clicking on an Element : DeleteIcon_XPATH
+13/01/2021 16:19:36 devpinoyLogger Clicking on an Element : SaveLayoutBtn_XPATH
+13/01/2021 16:19:36 devpinoyLogger Clicking on an Element : DeleteIcon_XPATH

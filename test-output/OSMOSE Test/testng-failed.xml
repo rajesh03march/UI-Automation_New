@@ -6,14 +6,16 @@
     <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
     <listener class-name="com.OSMOSE.listeners.CustomListeners"/>
   </listeners>
-  <test thread-count="5" name="JointUse_ts_submitter(failed)">
+  <test thread-count="5" name="JointUse_ts_allroles(failed)">
     <classes>
-      <class name="com.OSMOSE.testcases.JointUse_Submitter">
+      <class name="com.OSMOSE.testcases.JointUse_ts_allroles">
         <methods>
-          <include name="verifyAddingCommentsToTheApplication"/>
+          <include name="verifyApplicationMakeReadyConstructioncomplete"/>
+          <include name="verifyApplicationApproval"/>
           <include name="tearDown"/>
+          <include name="verifyApplicationPostConstructionAuditComplete"/>
         </methods>
-      </class> <!-- com.OSMOSE.testcases.JointUse_Submitter -->
+      </class> <!-- com.OSMOSE.testcases.JointUse_ts_allroles -->
     </classes>
-  </test> <!-- JointUse_ts_submitter(failed) -->
+  </test> <!-- JointUse_ts_allroles(failed) -->
 </suite> <!-- Failed suite [OSMOSE Test] -->

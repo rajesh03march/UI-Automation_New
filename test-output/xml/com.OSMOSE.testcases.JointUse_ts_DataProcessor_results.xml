@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="JointUse_ts_dataProcessor"
+           tests="15"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="54.759">
+  <properties />
+  
+  
+            <testcase name="verifyRefreshBtn" time="0.032" classname="com.OSMOSE.testcases.JointUse_ts_DataProcessor" />
+                <testcase name="verifyNewApplication" time="0.733" classname="com.OSMOSE.testcases.JointUse_ts_DataProcessor" />
+                <testcase name="verifySearchBox" time="0.068" classname="com.OSMOSE.testcases.JointUse_ts_DataProcessor" />
+                <testcase name="jointUseloginDataProcessor" time="20.741" classname="com.OSMOSE.testcases.JointUse_ts_DataProcessor" />
+                <testcase name="verifyJointUseNavigationClick" time="21.788" classname="com.OSMOSE.testcases.JointUse_ts_DataProcessor" />
+                <testcase name="verifyEditLayout" time="0.110" classname="com.OSMOSE.testcases.JointUse_ts_DataProcessor" />
+                <testcase name="verifyAddWidgetClick" time="0.491" classname="com.OSMOSE.testcases.JointUse_ts_DataProcessor" />
+                <testcase name="verifyVerticalCollapseFunctionality" time="0.172" classname="com.OSMOSE.testcases.JointUse_ts_DataProcessor" />
+                <testcase name="verifyExportOptions" time="0.141" classname="com.OSMOSE.testcases.JointUse_ts_DataProcessor" />
+                <testcase name="verifyAddWidgets" time="0.059" classname="com.OSMOSE.testcases.JointUse_ts_DataProcessor" />
+                <testcase name="verifyColumns" time="2.230" classname="com.OSMOSE.testcases.JointUse_ts_DataProcessor" />
+                <testcase name="verifyRowsCount" time="0.099" classname="com.OSMOSE.testcases.JointUse_ts_DataProcessor" />
+                <testcase name="verifySelectAllFunctionality" time="2.228" classname="com.OSMOSE.testcases.JointUse_ts_DataProcessor" />
+                <testcase name="verifyHorizontalCollapseFunctionality" time="5.218" classname="com.OSMOSE.testcases.JointUse_ts_DataProcessor" />
+                <testcase name="verifyEditWidgetClick" time="0.649" classname="com.OSMOSE.testcases.JointUse_ts_DataProcessor" />
+      
+</testsuite>

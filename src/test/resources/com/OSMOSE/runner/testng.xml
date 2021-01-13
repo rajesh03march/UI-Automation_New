@@ -54,19 +54,9 @@
 			<class name="com.OSMOSE.testcases.oCalcPro_Admin" />
 		</classes>
 	</test> --><!-- Test -->
-	<test name="JointUse_ts_submitter">
+	<!-- <test name="JointUse_ts_submitter">
 		<classes> 
 			<class name="com.OSMOSE.testcases.JointUse_Submitter" />
-		</classes>
-	</test><!-- Test -->
-	<!-- <test name="JointUse_ts_allroles">
-		<classes> 
-			<class name="com.OSMOSE.testcases.JointUse_ts_allroles" />
-		</classes>
-	</test> --><!-- Test -->
-	<!-- <test name="JointUse_ts_dataProcessor">
-		<classes> 
-			<class name="com.OSMOSE.testcases.JointUse_ts_DataProcessor" />
 		</classes>
 	</test> --><!-- Test -->
 	<!-- <test name="JointUse_ts_ProjectManager">
@@ -74,7 +64,16 @@
 			<class name="com.OSMOSE.testcases.JointUse_ts_ProjectManager" />
 		</classes>
 	</test> --><!-- Test -->
-
+	<!-- <test name="JointUse_ts_allroles">
+		<classes> 
+			<class name="com.OSMOSE.testcases.JointUse_ts_allroles" />
+		</classes>
+	</test> --><!-- Test -->
+	<test name="JointUse_ts_dataProcessor">
+		<classes> 
+			<class name="com.OSMOSE.testcases.JointUse_ts_DataProcessor" />
+		</classes>
+	</test><!-- Test -->
 
 
 </suite> <!-- Suite -->

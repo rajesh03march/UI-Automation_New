@@ -211,5 +211,59 @@ public class JointUse_ts_ProjectManager extends BaseTest {
 			Assert.assertTrue(Page.isVisible("DeleteIcon_XPATH"));
 		}
 	}
+	
+	@Test(priority = 15, enabled = true, description = "Verify that user can Accept the application")
+	public void verifyAcceptApplication() throws Exception {
+		oCalcProPage ocal = new oCalcProPage();
+		JointUsePage jup = ocal.goJointUse();
+		jup.navigateToColombiapit();
+		jup.saveChanges();
+		jup.acceptChanges();
+		Assert.assertEquals(Page.getText("StatusAccepted_XPATH"), "Accepted");
+	}
+	
+	@Test(priority = 16, enabled = true, description = "Verify that user can put the application to on hold")
+	public void verifyApplicationOnHold() throws Exception {
+		oCalcProPage ocal = new oCalcProPage();
+		JointUsePage jup = ocal.goJointUse();
+		Thread.sleep((Long.parseLong(p.config.getProperty("Thread4000"))));
+		Page.ClickActions("ActionsBtn_XPATH");
+		Page.click("OnHold_XPATH");
+		Thread.sleep((Long.parseLong(p.config.getProperty("Thread3000"))));
+		Assert.assertEquals(Page.getText("PlaceOnHoldHeadertxt_XPATH"), "Place On Hold");
+		Page.selectbyindex("SpecifyHoldReasonDD_XPATH", 1);
+		Page.click("HoldBtn_XPATH");
+		Thread.sleep((Long.parseLong(p.config.getProperty("Thread6000"))));
+		Assert.assertEquals(Page.getText("StatusOnHold_XPATH"), "On Hold");
+		Assert.assertTrue(Page.isVisible("RemoveHoldBtn_XPATH"));
+	}
+	
+	@Test(priority = 17, enabled = true, description = "Verify that user can remove hold on the application")
+	public void verifyApplicationRemoveHold() throws Exception {
+		oCalcProPage ocal = new oCalcProPage();
+		JointUsePage jup = ocal.goJointUse();
+		Thread.sleep((Long.parseLong(p.config.getProperty("Thread4000"))));
+		Page.click("RemoveHoldBtn_XPATH");
+		Thread.sleep((Long.parseLong(p.config.getProperty("Thread3000"))));
+		Assert.assertEquals(Page.getText("ResumeProcessingHeader_XPATH"), "Resume Processing");
+		Page.type("ResumeProcessingTextArea_XPATH","Remove Hold");
+		Page.click("ResumeProcessingResumeBtn_XPATH");	
+		Thread.sleep((Long.parseLong(p.config.getProperty("Thread6000"))));
+		Assert.assertEquals(Page.getText("StatusAccepted_XPATH"), "Accepted");
+		Assert.assertTrue(Page.isVisible("ActionsBtn_XPATH"));
+	}
+	
+	@Test(priority = 18, enabled = true, description = "Verify that user changes the status to In Progress")
+	public void verifyApplicationInProgress() throws Exception {
+		oCalcProPage ocal = new oCalcProPage();
+		JointUsePage jup = ocal.goJointUse();
+		Thread.sleep((Long.parseLong(p.config.getProperty("Thread4000"))));
+		Page.click("ActionsBtn_XPATH");
+		Thread.sleep((Long.parseLong(p.config.getProperty("Thread3000"))));
+		Page.click("PlaceInProgressBtn_XPATH");
+		Thread.sleep((Long.parseLong(p.config.getProperty("Thread6000"))));
+		Assert.assertEquals(Page.getText("StatusInProgress_XPATH"), "In Progress");
+		Assert.assertTrue(Page.isVisible("PlaceOnHoldBtn_XPATH"));
+	}
 
 }

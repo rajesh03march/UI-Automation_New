@@ -248,5 +248,52 @@ public class JointUse_ts_allroles extends BaseTest {
 			Assert.assertTrue(Page.isVisible("DeleteIcon_XPATH"));
 		}
 	}
-
+	
+	@Test(priority = 18, enabled = true, description = "Verify that user Approves the application")
+	public void verifyApplicationApproval() throws Exception {
+		oCalcProPage ocal = new oCalcProPage();
+		JointUsePage jup = ocal.goJointUse();
+		Thread.sleep((Long.parseLong(p.config.getProperty("Thread4000"))));
+		jup.navigateToColombiapit();
+		Page.click("ApplicationName_XPATH");
+		Thread.sleep((Long.parseLong(p.config.getProperty("Thread2000"))));
+		Page.click("ActionsBtn_XPATH");
+		Thread.sleep((Long.parseLong(p.config.getProperty("Thread3000"))));
+		Page.click("ApproveBtn_XPATH");
+		Thread.sleep((Long.parseLong(p.config.getProperty("Thread5000"))));
+		Assert.assertEquals(Page.getText("JUApprovePopUpHeaderTxt_XPATH"), "Approve");
+		Assert.assertTrue(Page.isVisible("JUApprovePopUuApproveBtn_XPATH"));
+		Thread.sleep((Long.parseLong(p.config.getProperty("Thread2000"))));
+		Page.click("JUApprovePopUuApproveBtn_XPATH");
+		Thread.sleep((Long.parseLong(p.config.getProperty("Thread4000"))));
+		Assert.assertEquals(Page.getText("StatusApproved_XPATH"), "Approved");
+	}
+	
+	@Test(priority = 19, enabled = true, description = "Verify that user is able to change the status to Make Ready Construction complete")
+	public void verifyApplicationMakeReadyConstructioncomplete() throws Exception {
+		oCalcProPage ocal = new oCalcProPage();
+		JointUsePage jup = ocal.goJointUse();
+		Thread.sleep((Long.parseLong(p.config.getProperty("Thread4000"))));
+		Page.click("MakeReadyConstructioncompleteChkBx_XPATH");
+		Thread.sleep((Long.parseLong(p.config.getProperty("Thread2000"))));
+		Page.click("JUUpdateBtn_XPATH");
+		Thread.sleep((Long.parseLong(p.config.getProperty("Thread4000"))));
+		Assert.assertEquals(Page.getText("StatusMakeReadyConstructioncomplete_XPATH"), "Make Ready Construction Complete");
+		Assert.assertTrue(Page.isVisible("AuditCompleteBtn_XPATH"));
+	}
+	
+	@Test(priority = 20, enabled = true, description = "Verify that user is able to change the status to Post Construction Audit Complete")
+	public void verifyApplicationPostConstructionAuditComplete() throws Exception {
+		oCalcProPage ocal = new oCalcProPage();
+		JointUsePage jup = ocal.goJointUse();
+		Thread.sleep((Long.parseLong(p.config.getProperty("Thread4000"))));
+		Page.click("AuditCompleteBtn_XPATH");
+		Thread.sleep((Long.parseLong(p.config.getProperty("Thread4000"))));
+		Assert.assertEquals(Page.getText("PostConstructionAuditCompletePopUpHeaderTxt_XPATH"), "Post Construction Audit Complete");
+		Assert.assertTrue(Page.isVisible("PostConstructionAuditCompletePopUpContinueBtn_XPATH"));
+		Thread.sleep((Long.parseLong(p.config.getProperty("Thread2000"))));
+		Page.click("PostConstructionAuditCompletePopUpContinueBtn_XPATH");
+		Thread.sleep((Long.parseLong(p.config.getProperty("Thread4000"))));
+		Assert.assertEquals(Page.getText("StatusPostConstructionAuditComplete_XPATH"), "Post Construction Audit Complete");
+	}
 }
