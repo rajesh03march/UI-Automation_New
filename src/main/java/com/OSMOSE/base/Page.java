@@ -15,6 +15,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
@@ -256,6 +257,23 @@ public class Page {
 
 	}
 
+	public static void selectbyValue(String locator, String Value) {
+
+		if (locator.endsWith("_CSS")) {
+			dropdown = driver.findElement(By.cssSelector(OR.getProperty(locator)));
+		} else if (locator.endsWith("_XPATH")) {
+			dropdown = driver.findElement(By.xpath(OR.getProperty(locator)));
+		} else if (locator.endsWith("_ID")) {
+			dropdown = driver.findElement(By.id(OR.getProperty(locator)));
+		}
+
+		Select select = new Select(dropdown);
+		select.selectByValue(Value);
+		log.debug("Selecting from an element : " + locator + " value as : " + Value);
+		test.log(LogStatus.INFO, "Selecting from dropdown : " + locator + " value as " + Value);
+
+	}
+
 	public static boolean isElementPresent(By by) {
 
 		try {
@@ -297,11 +315,11 @@ public class Page {
 	public static WebElement elementValue(String locator) {
 
 		if (locator.endsWith("_CSS")) {
-			WebElement element = driver.findElement(By.cssSelector(OR.getProperty(locator)));
+			element = driver.findElement(By.cssSelector(OR.getProperty(locator)));
 		} else if (locator.endsWith("_XPATH")) {
-			WebElement element = driver.findElement(By.xpath(OR.getProperty(locator)));
+			element = driver.findElement(By.xpath(OR.getProperty(locator)));
 		} else if (locator.endsWith("_ID")) {
-			WebElement element = driver.findElement(By.id(OR.getProperty(locator)));
+			element = driver.findElement(By.id(OR.getProperty(locator)));
 		}
 		log.debug("Selecting from an element : " + locator);
 		test.log(LogStatus.INFO, "Selecting from dropdown : " + locator);
@@ -414,7 +432,7 @@ public class Page {
 		driver.close();
 	}
 
-	public static boolean isVisiable(String locator) {
+	public static boolean isVisible(String locator) {
 		try {
 			if (locator.endsWith("_CSS")) {
 				driver.findElement(By.cssSelector(OR.getProperty(locator))).isDisplayed();
@@ -422,6 +440,26 @@ public class Page {
 				driver.findElement(By.xpath(OR.getProperty(locator))).isDisplayed();
 			} else if (locator.endsWith("_ID")) {
 				driver.findElement(By.id(OR.getProperty(locator))).isDisplayed();
+			}
+			log.debug("Clicking on an Element : " + locator);
+			test.log(LogStatus.INFO, "Clicking on : " + locator);
+
+			return true;
+		}
+
+		catch (Exception e) {
+			return false;
+		}
+	}
+
+	public static boolean isEnabled(String locator) {
+		try {
+			if (locator.endsWith("_CSS")) {
+				driver.findElement(By.cssSelector(OR.getProperty(locator))).isEnabled();
+			} else if (locator.endsWith("_XPATH")) {
+				driver.findElement(By.xpath(OR.getProperty(locator))).isEnabled();
+			} else if (locator.endsWith("_ID")) {
+				driver.findElement(By.id(OR.getProperty(locator))).isEnabled();
 			}
 			log.debug("Clicking on an Element : " + locator);
 			test.log(LogStatus.INFO, "Clicking on : " + locator);
@@ -477,25 +515,25 @@ public class Page {
 
 		Actions action = new Actions(driver);
 		action.moveToElement(act).click().build().perform();
-		log.debug("Selecting from an element : " + locator);
-		test.log(LogStatus.INFO, "Selecting from dropdown : " + locator);
+		log.debug("Moving to the element and Clicking it : " + locator);
+		test.log(LogStatus.INFO, "Moving to the element and Clicking it : " + locator);
 
 	}
 
-	public static void findelement(String locator) {
+	public static WebElement findelement(String locator) {
 
 		if (locator.endsWith("_CSS")) {
-			driver.findElement(By.cssSelector(OR.getProperty(locator)));
+			element = driver.findElement(By.cssSelector(OR.getProperty(locator)));
 		} else if (locator.endsWith("_XPATH")) {
-			driver.findElement(By.xpath(OR.getProperty(locator)));
+			element = driver.findElement(By.xpath(OR.getProperty(locator)));
 		} else if (locator.endsWith("_ID")) {
-			driver.findElement(By.id(OR.getProperty(locator)));
+			element = driver.findElement(By.id(OR.getProperty(locator)));
 		}
 
 		log.debug("Finding the Element : " + locator);
 
 		test.log(LogStatus.INFO, "Typing in : " + locator);
-
+		return element;
 	}
 
 	public static String getdefaultValuefromdropdown(String locator) {
@@ -514,6 +552,15 @@ public class Page {
 		log.debug("Fetching Default value from dropdown : " + locator + " value as : ");
 		test.log(LogStatus.INFO, "Fetching Default value from dropdown : " + locator + " value as ");
 		return defaultItem;
+	}
+
+	public static boolean isClickable(WebElement element) {
+		try {
+			wait.until(ExpectedConditions.elementToBeClickable(element));
+			return true;
+		} catch (Exception e) {
+			return false;
+		}
 	}
 
 }

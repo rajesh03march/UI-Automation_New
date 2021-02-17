@@ -11,12 +11,7 @@
       <class name="com.OSMOSE.testcases.OsmoseServices">
         <methods>
           <include name="tearDown"/>
-          <include name="verifyClickonWoodTreatmentProjectProfiles"/>
-          <include name="verifyClickonWoodTreatmentVideos"/>
-          <include name="verifyClickonWoodRestorationVideos"/>
-          <include name="verifyClickonUndergroundProjectProfiles"/>
-          <include name="verifyClickonUndergroundVideos"/>
-          <include name="verifyClickonWoodRestorationProjectProfiles"/>
+          <include name="verifyfunctionalityOfOcalCproButtons"/>
         </methods>
       </class> <!-- com.OSMOSE.testcases.OsmoseServices -->
     </classes>

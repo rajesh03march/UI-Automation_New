@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="OSMOSE Test">
-
 	<listeners>
 		<listener class-name="org.uncommons.reportng.HTMLReporter" />
 		<listener
@@ -9,43 +8,76 @@
 		<listener class-name="com.OSMOSE.listeners.CustomListeners" />
 	</listeners>
 
-
 	<test name="Login">
 		<classes>
 			<class name="com.OSMOSE.testcases.LoginTest" />
 		</classes>
 	</test> <!-- Test -->
-<!-- 	<test name="OULogin">
+	<!-- <test name="OULogin">
 		<classes>
 			<class name="com.OSMOSE.testcases.OULogin" />
 		</classes>
 	</test> --> <!-- Test -->
-<!-- 	<test name="Product">
+
+	<!-- <test name="Product">
 		<classes>
 			<class name="com.OSMOSE.testcases.Product" />
 		</classes>
-	</test> --> <!-- Test -->
-<!-- 	<test name="Contact">
+	</test>  --><!-- Test -->
+	<!-- <test name="Contact">
 		<classes>
 			<class name="com.OSMOSE.testcases.Contact" />
 		</classes>
-	</test>  --><!-- Test -->
+	</test> --> <!-- Test -->
 	<!-- <test name="KnowledgeBase">
 		<classes>
 			<class name="com.OSMOSE.testcases.KnowledgeBase" />
 		</classes>
 	</test> --> <!-- Test -->
-	<!-- <test name="MyOsmoseServices">
+	<test name="MyOsmoseServices">
 		<classes> 
 			<class name="com.OSMOSE.testcases.OsmoseServices" />
 		</classes>
-	</test>  --><!-- Test -->
-	<!-- <test name="OCalcPro">
+	</test> <!-- Test -->
+	<!-- <test name="OCalcPro_Licensed">
 		<classes> 
-			<class name="com.OSMOSE.testcases.oCalcPro" />
+			<class name="com.OSMOSE.testcases.oCalcPro_Licensed" />
 		</classes>
 	</test> --><!-- Test -->
-
-
+	<!-- <test name="OCalcPro_Nor">
+		<classes> 
+			<class name="com.OSMOSE.testcases.oCalcPro_Nor" />
+		</classes>
+	</test> --><!-- Test -->
+	<!-- <test name="OCalcPro_Admin">
+		<classes> 
+			<class name="com.OSMOSE.testcases.oCalcPro_Admin" />
+		</classes>
+	</test> --><!-- Test -->
+	<!-- <test name="JointUse_ts_submitter">
+		<classes> 
+			<class name="com.OSMOSE.testcases.JointUse_Submitter" />
+		</classes>
+	</test> --><!-- Test -->
+	<!-- <test name="JointUse_ts_ProjectManager">
+		<classes> 
+			<class name="com.OSMOSE.testcases.JointUse_ts_ProjectManager" />
+		</classes>
+	</test> --><!-- Test -->
+	<!-- <test name="JointUse_ts_allroles">
+		<classes> 
+			<class name="com.OSMOSE.testcases.JointUse_ts_allroles" />
+		</classes>
+	</test> --><!-- Test -->
+	<!-- <test name="JointUse_ts_dataProcessor">
+		<classes> 
+			<class name="com.OSMOSE.testcases.JointUse_ts_DataProcessor" />
+		</classes>
+	</test> --><!-- Test -->
+<!-- <test name="Project_Dashboard">
+		<classes> 
+			<class name="com.OSMOSE.testcases.Projectdashboard" />
+		</classes>
+	</test> --><!-- Test -->
 
 </suite> <!-- Suite -->

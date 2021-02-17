@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" ignored="28" total="31" passed="3">
   <reporter-output>
     <line>
       <![CDATA[Click to see Screenshot]]>
     </line>
     <line>
-      <![CDATA[<a target="_blank" href=Thu_Nov_12_16_04_44_IST_2020.jpg>Screenshot</a>]]>
+      <![CDATA[<a target="_blank" href=Wed_Feb_17_17_59_45_IST_2021.jpg>Screenshot</a>]]>
     </line>
     <line>
       <![CDATA[<br>]]>
@@ -14,15 +14,45 @@
       <![CDATA[<br>]]>
     </line>
     <line>
-      <![CDATA[<a target="_blank" href=Thu_Nov_12_16_04_44_IST_2020.jpg><img src=Thu_Nov_12_16_04_44_IST_2020.jpg height=200 width=200></img></a>]]>
+      <![CDATA[<a target="_blank" href=Wed_Feb_17_17_59_45_IST_2021.jpg><img src=Wed_Feb_17_17_59_45_IST_2021.jpg height=200 width=200></img></a>]]>
+    </line>
+    <line>
+      <![CDATA[Click to see Screenshot]]>
+    </line>
+    <line>
+      <![CDATA[<a target="_blank" href=Wed_Feb_17_17_59_56_IST_2021.jpg>Screenshot</a>]]>
+    </line>
+    <line>
+      <![CDATA[<br>]]>
+    </line>
+    <line>
+      <![CDATA[<br>]]>
+    </line>
+    <line>
+      <![CDATA[<a target="_blank" href=Wed_Feb_17_17_59_56_IST_2021.jpg><img src=Wed_Feb_17_17_59_56_IST_2021.jpg height=200 width=200></img></a>]]>
+    </line>
+    <line>
+      <![CDATA[Click to see Screenshot]]>
+    </line>
+    <line>
+      <![CDATA[<a target="_blank" href=Wed_Feb_17_18_00_32_IST_2021.jpg>Screenshot</a>]]>
+    </line>
+    <line>
+      <![CDATA[<br>]]>
+    </line>
+    <line>
+      <![CDATA[<br>]]>
+    </line>
+    <line>
+      <![CDATA[<a target="_blank" href=Wed_Feb_17_18_00_32_IST_2021.jpg><img src=Wed_Feb_17_18_00_32_IST_2021.jpg height=200 width=200></img></a>]]>
     </line>
   </reporter-output>
-  <suite name="OSMOSE Test" duration-ms="18820" started-at="2020-11-12T16:04:26 IST" finished-at="2020-11-12T16:04:45 IST">
+  <suite name="OSMOSE Test" duration-ms="70226" started-at="2021-02-17T17:59:22 IST" finished-at="2021-02-17T18:00:33 IST">
     <groups>
     </groups>
-    <test name="Login" duration-ms="18820" started-at="2020-11-12T16:04:26 IST" finished-at="2020-11-12T16:04:45 IST">
+    <test name="Login" duration-ms="23641" started-at="2021-02-17T17:59:22 IST" finished-at="2021-02-17T17:59:46 IST">
       <class name="com.OSMOSE.testcases.LoginTest">
-        <test-method status="PASS" signature="loginTest(java.util.Hashtable)[pri:0, instance:com.OSMOSE.testcases.LoginTest@11981797]" name="loginTest" duration-ms="17056" started-at="2020-11-12T16:04:26 IST" description="Verify the login functionality" data-provider="dp" finished-at="2020-11-12T16:04:43 IST">
+        <test-method status="PASS" signature="loginTest(java.util.Hashtable)[pri:0, instance:com.OSMOSE.testcases.LoginTest@20a14b55]" name="loginTest" duration-ms="22358" started-at="2021-02-17T17:59:22 IST" description="Verify the login functionality" data-provider="dp" finished-at="2021-02-17T17:59:45 IST">
           <params>
             <param index="0">
               <value>
@@ -35,7 +65,7 @@
               <![CDATA[Click to see Screenshot]]>
             </line>
             <line>
-              <![CDATA[<a target="_blank" href=Thu_Nov_12_16_04_44_IST_2020.jpg>Screenshot</a>]]>
+              <![CDATA[<a target="_blank" href=Wed_Feb_17_17_59_45_IST_2021.jpg>Screenshot</a>]]>
             </line>
             <line>
               <![CDATA[<br>]]>
@@ -44,15 +74,57 @@
               <![CDATA[<br>]]>
             </line>
             <line>
-              <![CDATA[<a target="_blank" href=Thu_Nov_12_16_04_44_IST_2020.jpg><img src=Thu_Nov_12_16_04_44_IST_2020.jpg height=200 width=200></img></a>]]>
+              <![CDATA[<a target="_blank" href=Wed_Feb_17_17_59_45_IST_2021.jpg><img src=Wed_Feb_17_17_59_45_IST_2021.jpg height=200 width=200></img></a>]]>
             </line>
           </reporter-output>
         </test-method> <!-- loginTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.OSMOSE.testcases.LoginTest@11981797]" name="tearDown" is-config="true" duration-ms="1594" started-at="2020-11-12T16:04:45 IST" finished-at="2020-11-12T16:04:46 IST">
+      </class> <!-- com.OSMOSE.testcases.LoginTest -->
+    </test> <!-- Login -->
+    <test name="MyOsmoseServices" duration-ms="46436" started-at="2021-02-17T17:59:46 IST" finished-at="2021-02-17T18:00:33 IST">
+      <class name="com.OSMOSE.testcases.OsmoseServices">
+        <test-method status="PASS" signature="verifyMyOsmoseServicesCardClick()[pri:0, instance:com.OSMOSE.testcases.OsmoseServices@1bb564e2]" name="verifyMyOsmoseServicesCardClick" duration-ms="8926" started-at="2021-02-17T17:59:46 IST" description="Verify the presence of My Osmose Services Card on Home Page" finished-at="2021-02-17T17:59:55 IST">
+          <reporter-output>
+            <line>
+              <![CDATA[Click to see Screenshot]]>
+            </line>
+            <line>
+              <![CDATA[<a target="_blank" href=Wed_Feb_17_17_59_56_IST_2021.jpg>Screenshot</a>]]>
+            </line>
+            <line>
+              <![CDATA[<br>]]>
+            </line>
+            <line>
+              <![CDATA[<br>]]>
+            </line>
+            <line>
+              <![CDATA[<a target="_blank" href=Wed_Feb_17_17_59_56_IST_2021.jpg><img src=Wed_Feb_17_17_59_56_IST_2021.jpg height=200 width=200></img></a>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifyMyOsmoseServicesCardClick -->
+        <test-method status="PASS" signature="verifyfunctionalityOfOcalCproButtons()[pri:29, instance:com.OSMOSE.testcases.OsmoseServices@1bb564e2]" name="verifyfunctionalityOfOcalCproButtons" duration-ms="35631" started-at="2021-02-17T17:59:56 IST" description="Verify the functionality of Buttons on Oclac Pro Card" finished-at="2021-02-17T18:00:32 IST">
+          <reporter-output>
+            <line>
+              <![CDATA[Click to see Screenshot]]>
+            </line>
+            <line>
+              <![CDATA[<a target="_blank" href=Wed_Feb_17_18_00_32_IST_2021.jpg>Screenshot</a>]]>
+            </line>
+            <line>
+              <![CDATA[<br>]]>
+            </line>
+            <line>
+              <![CDATA[<br>]]>
+            </line>
+            <line>
+              <![CDATA[<a target="_blank" href=Wed_Feb_17_18_00_32_IST_2021.jpg><img src=Wed_Feb_17_18_00_32_IST_2021.jpg height=200 width=200></img></a>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifyfunctionalityOfOcalCproButtons -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.OSMOSE.testcases.OsmoseServices@1bb564e2]" name="tearDown" is-config="true" duration-ms="4272" started-at="2021-02-17T18:00:33 IST" finished-at="2021-02-17T18:00:37 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.OSMOSE.testcases.LoginTest -->
-    </test> <!-- Login -->
+      </class> <!-- com.OSMOSE.testcases.OsmoseServices -->
+    </test> <!-- MyOsmoseServices -->
   </suite> <!-- OSMOSE Test -->
 </testng-results>

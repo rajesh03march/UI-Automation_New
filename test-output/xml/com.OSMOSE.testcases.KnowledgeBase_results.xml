@@ -1,107 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuite name="KnowledgeBase"
-           tests="95"
+           tests="3"
            failures="0"
            errors="0"
            skipped="0"
-           time="1986.127">
+           time="104.340">
   <properties />
   
   
-            <testcase name="verifyPresenceWhatswrongwiththisPictureCard" time="0.034" classname="com.OSMOSE.testcases.KnowledgeBase" />
-                <testcase name="verifyPresenceOfPopularQueriesFilter" time="0.040" classname="com.OSMOSE.testcases.KnowledgeBase" />
-                <testcase name="verifyClickonPoleReplacementVideos" time="37.002" classname="com.OSMOSE.testcases.KnowledgeBase" />
-                <testcase name="verifyClickonUndergroundImages" time="27.045" classname="com.OSMOSE.testcases.KnowledgeBase" />
-                <testcase name="verifyClickonUndergroundDiagram" time="26.984" classname="com.OSMOSE.testcases.KnowledgeBase" />
-                <testcase name="verifyClickOnViewProjectProjectOfTheWeek" time="7.663" classname="com.OSMOSE.testcases.KnowledgeBase" />
-                <testcase name="verifyPresenceWoodRestorationCard" time="0.034" classname="com.OSMOSE.testcases.KnowledgeBase" />
-                <testcase name="verifyCardContentsSteelConcreteRestoration" time="0.204" classname="com.OSMOSE.testcases.KnowledgeBase" />
-                <testcase name="verifyPresenceSteelAndConcreteAssessmentCard" time="0.043" classname="com.OSMOSE.testcases.KnowledgeBase" />
-                <testcase name="verifyCardContentsPoleReplacement" time="0.222" classname="com.OSMOSE.testcases.KnowledgeBase" />
-                <testcase name="verifyClickonDocumentsSeeMore" time="45.617" classname="com.OSMOSE.testcases.KnowledgeBase" />
-                <testcase name="verifyPresenceProjectOfTheWeekCard" time="0.067" classname="com.OSMOSE.testcases.KnowledgeBase" />
-                <testcase name="verifyCardContentsWoodRestoration" time="0.295" classname="com.OSMOSE.testcases.KnowledgeBase" />
-                <testcase name="verifyClickonStormSupportImages" time="27.048" classname="com.OSMOSE.testcases.KnowledgeBase" />
-                <testcase name="verifySearchResultsAreGrouped" time="39.388" classname="com.OSMOSE.testcases.KnowledgeBase" />
-                <testcase name="verifySearchResultsAreGroupedAfterfilterUpdation" time="139.952" classname="com.OSMOSE.testcases.KnowledgeBase" />
-                <testcase name="verifyClickonWoodTreatmentImages" time="27.160" classname="com.OSMOSE.testcases.KnowledgeBase" />
-                <testcase name="verifyDynamicDropdown" time="45.533" classname="com.OSMOSE.testcases.KnowledgeBase" />
-                <testcase name="verifyClickonSteelAndConcreteRestorationBrochures" time="8.184" classname="com.OSMOSE.testcases.KnowledgeBase" />
-                <testcase name="verifyClickonJointUsVideos" time="36.927" classname="com.OSMOSE.testcases.KnowledgeBase" />
-                <testcase name="verifyClickonUndergroundBrochure" time="26.881" classname="com.OSMOSE.testcases.KnowledgeBase" />
-                <testcase name="verifyPresenceUndergroundCard" time="0.036" classname="com.OSMOSE.testcases.KnowledgeBase" />
-                <testcase name="verifyPresenceSteelAndConcreteRestorationCard" time="0.036" classname="com.OSMOSE.testcases.KnowledgeBase" />
-                <testcase name="verifyClickOnItemFeaturedVideos" time="5.455" classname="com.OSMOSE.testcases.KnowledgeBase" />
-                <testcase name="verifyPopularQueriesReset" time="17.548" classname="com.OSMOSE.testcases.KnowledgeBase" />
-                <testcase name="verifyCardContentsSteelConcreteAssessment" time="0.238" classname="com.OSMOSE.testcases.KnowledgeBase" />
-                <testcase name="verifyLinksPresentOnKb" time="0.107" classname="com.OSMOSE.testcases.KnowledgeBase" />
-                <testcase name="verifyClickOnDailyGaffGallery" time="24.540" classname="com.OSMOSE.testcases.KnowledgeBase" />
-                <testcase name="verifyClickonProductsProductCatalog" time="27.086" classname="com.OSMOSE.testcases.KnowledgeBase" />
-                <testcase name="verifyClickonWoodTreatmentResearch" time="26.911" classname="com.OSMOSE.testcases.KnowledgeBase" />
-                <testcase name="verifyClickonWoodRestorationVideos" time="36.973" classname="com.OSMOSE.testcases.KnowledgeBase" />
-                <testcase name="verifySearchResultsOnTyping" time="39.668" classname="com.OSMOSE.testcases.KnowledgeBase" />
-                <testcase name="verifyClickonSteelAndConcreteRestorationImages" time="26.935" classname="com.OSMOSE.testcases.KnowledgeBase" />
-                <testcase name="verifyCardContentsOverhead" time="0.389" classname="com.OSMOSE.testcases.KnowledgeBase" />
-                <testcase name="verifyClickOnProductsCard" time="46.521" classname="com.OSMOSE.testcases.KnowledgeBase" />
-                <testcase name="verifyPresenceWoodInspectionAndTreatmentCard" time="0.035" classname="com.OSMOSE.testcases.KnowledgeBase" />
-                <testcase name="verifyClickOnPoleReplacementCard" time="46.500" classname="com.OSMOSE.testcases.KnowledgeBase" />
-                <testcase name="verifyClickOnWoodInspectionCard" time="20.140" classname="com.OSMOSE.testcases.KnowledgeBase" />
-                <testcase name="verifyClickonProductsVideos" time="36.881" classname="com.OSMOSE.testcases.KnowledgeBase" />
-                <testcase name="verifyExternalVideo" time="25.590" classname="com.OSMOSE.testcases.KnowledgeBase" />
-                <testcase name="verifyKnowledgeBaseNavigationClick" time="49.907" classname="com.OSMOSE.testcases.KnowledgeBase" />
-                <testcase name="verifyClickonWoodRestorationArticles" time="8.137" classname="com.OSMOSE.testcases.KnowledgeBase" />
-                <testcase name="verifyClickonStormSupportVideos" time="36.912" classname="com.OSMOSE.testcases.KnowledgeBase" />
-                <testcase name="verifyPresenceOfSortBy" time="46.055" classname="com.OSMOSE.testcases.KnowledgeBase" />
-                <testcase name="verifyClickonSteelAndConcreteAssessmentBrochures" time="9.143" classname="com.OSMOSE.testcases.KnowledgeBase" />
-                <testcase name="verifyPopularFiltersJointUsImages" time="18.329" classname="com.OSMOSE.testcases.KnowledgeBase" />
-                <testcase name="verifyClickonOverheadImages" time="27.026" classname="com.OSMOSE.testcases.KnowledgeBase" />
-                <testcase name="verifyClickonOverheadVideos" time="34.899" classname="com.OSMOSE.testcases.KnowledgeBase" />
-                <testcase name="verifyClickonWoodTreatmentVideos" time="36.906" classname="com.OSMOSE.testcases.KnowledgeBase" />
-                <testcase name="verifyPresenceSuggestedContentsCard" time="0.035" classname="com.OSMOSE.testcases.KnowledgeBase" />
-                <testcase name="verifyClickonPoleReplacementImages" time="27.050" classname="com.OSMOSE.testcases.KnowledgeBase" />
-                <testcase name="verifySearchResultsAreVideos" time="41.462" classname="com.OSMOSE.testcases.KnowledgeBase" />
-                <testcase name="verifySearchResultsAreImages" time="41.314" classname="com.OSMOSE.testcases.KnowledgeBase" />
-                <testcase name="verifyPresenceOfOcalCproButtons" time="3.260" classname="com.OSMOSE.testcases.KnowledgeBase" />
-                <testcase name="verifyClickOnSteelandConcreteRestorationCard" time="20.156" classname="com.OSMOSE.testcases.KnowledgeBase" />
-                <testcase name="verifyClickonJointUsArticles" time="9.076" classname="com.OSMOSE.testcases.KnowledgeBase" />
-                <testcase name="verifyPresenceOfSliderOnSuggestedContents" time="8.136" classname="com.OSMOSE.testcases.KnowledgeBase" />
-                <testcase name="verifyCardContentsStormSupport" time="0.184" classname="com.OSMOSE.testcases.KnowledgeBase" />
-                <testcase name="verifyClickonWoodRestorationBrochures" time="9.073" classname="com.OSMOSE.testcases.KnowledgeBase" />
-                <testcase name="verifyClearButtonOnTyping" time="11.287" classname="com.OSMOSE.testcases.KnowledgeBase" />
-                <testcase name="verifyPresenceOverheadCard" time="0.040" classname="com.OSMOSE.testcases.KnowledgeBase" />
-                <testcase name="verifyCardContentsWoodInspectionTreatment" time="0.208" classname="com.OSMOSE.testcases.KnowledgeBase" />
-                <testcase name="verifyClickOnJointUseCard" time="50.719" classname="com.OSMOSE.testcases.KnowledgeBase" />
-                <testcase name="verifyPresenceStormSupportCard" time="0.052" classname="com.OSMOSE.testcases.KnowledgeBase" />
-                <testcase name="verifyClickonSteelAndConcreteRestorationArticles" time="9.389" classname="com.OSMOSE.testcases.KnowledgeBase" />
-                <testcase name="verifyClickonImagesSeeMore" time="45.662" classname="com.OSMOSE.testcases.KnowledgeBase" />
-                <testcase name="verifySearchTextUpdation" time="45.787" classname="com.OSMOSE.testcases.KnowledgeBase" />
-                <testcase name="verifyCardContentsJointUse" time="0.207" classname="com.OSMOSE.testcases.KnowledgeBase" />
-                <testcase name="verifyClickOnDailyGaffGalleryImage" time="16.594" classname="com.OSMOSE.testcases.KnowledgeBase" />
-                <testcase name="verifyClickonSteelAndConcreteAssessmentStandardsCodes" time="8.114" classname="com.OSMOSE.testcases.KnowledgeBase" />
-                <testcase name="verifyClickOnItemSuggestedContents" time="9.258" classname="com.OSMOSE.testcases.KnowledgeBase" />
-                <testcase name="verifyPresenceOCalcProCard" time="0.042" classname="com.OSMOSE.testcases.KnowledgeBase" />
-                <testcase name="verifyClickOnStormSupportCard" time="46.574" classname="com.OSMOSE.testcases.KnowledgeBase" />
-                <testcase name="verifyClickonProductsImages" time="27.001" classname="com.OSMOSE.testcases.KnowledgeBase" />
-                <testcase name="verifyClickonVideosSeeMore" time="39.487" classname="com.OSMOSE.testcases.KnowledgeBase" />
-                <testcase name="verifySearchResultsAreDocuments" time="41.408" classname="com.OSMOSE.testcases.KnowledgeBase" />
-                <testcase name="verifyPresencePoleReplacementCard" time="0.036" classname="com.OSMOSE.testcases.KnowledgeBase" />
-                <testcase name="verifyPresenceProductsCard" time="0.048" classname="com.OSMOSE.testcases.KnowledgeBase" />
-                <testcase name="verifyPresenceOfFilterItems" time="4.309" classname="com.OSMOSE.testcases.KnowledgeBase" />
-                <testcase name="verifyClickonSteelAndConcreteAssessmentImages" time="27.022" classname="com.OSMOSE.testcases.KnowledgeBase" />
-                <testcase name="verifyNoResultsFoundMessage" time="12.065" classname="com.OSMOSE.testcases.KnowledgeBase" />
-                <testcase name="verifyClickonJointUsImages" time="22.013" classname="com.OSMOSE.testcases.KnowledgeBase" />
-                <testcase name="verifyCardContentsProducts" time="0.271" classname="com.OSMOSE.testcases.KnowledgeBase" />
-                <testcase name="verifyPresenceFeaturedVideosCard" time="0.033" classname="com.OSMOSE.testcases.KnowledgeBase" />
-                <testcase name="verifyCardContentsUnderground" time="0.215" classname="com.OSMOSE.testcases.KnowledgeBase" />
-                <testcase name="verifyClickOnOverheadCard" time="46.437" classname="com.OSMOSE.testcases.KnowledgeBase" />
-                <testcase name="verifyClickonJointUseManagementServicesSeeMore" time="48.833" classname="com.OSMOSE.testcases.KnowledgeBase" />
-                <testcase name="verifyClickonPoleReplacementBrochure" time="27.057" classname="com.OSMOSE.testcases.KnowledgeBase" />
-                <testcase name="verifyClickOnSteelandConcreteAssessmentCard" time="20.221" classname="com.OSMOSE.testcases.KnowledgeBase" />
-                <testcase name="verifyPresenceOfSearchBox" time="0.116" classname="com.OSMOSE.testcases.KnowledgeBase" />
-                <testcase name="verifyClickonStormSupportProjectProfiles" time="26.980" classname="com.OSMOSE.testcases.KnowledgeBase" />
-                <testcase name="verifyClickOnWoodRestorationCard" time="20.155" classname="com.OSMOSE.testcases.KnowledgeBase" />
-                <testcase name="verifyClickOnUndergroundCard" time="46.423" classname="com.OSMOSE.testcases.KnowledgeBase" />
-                <testcase name="verifyClickonOverheadProjectProfiles" time="27.042" classname="com.OSMOSE.testcases.KnowledgeBase" />
-                <testcase name="verifyPresenceJointUseCard" time="0.050" classname="com.OSMOSE.testcases.KnowledgeBase" />
+            <testcase name="verifyKnowledgeBaseNavigationClick" time="80.836" classname="com.OSMOSE.testcases.KnowledgeBase" />
+                <testcase name="verifyfunctionalityOfOcalCproButtons" time="20.091" classname="com.OSMOSE.testcases.KnowledgeBase" />
+                <testcase name="verifyPresenceOfOcalCproButtons" time="3.413" classname="com.OSMOSE.testcases.KnowledgeBase" />
       
 </testsuite>

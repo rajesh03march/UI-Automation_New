@@ -31,12 +31,7 @@ public class ProductPage extends Page {
 	}
 
 	public void clickSearch() throws InterruptedException {
-		Thread.sleep((Long.parseLong(p.config.getProperty("Thread12000"))));
-		/*
-		 * JavascriptExecutor js = (JavascriptExecutor) driver;
-		 * js.executeScript("window.scrollBy(683,0)");
-		 */
-		// click("PSearch_XPATH");
+		Thread.sleep((Long.parseLong(p.config.getProperty("Thread1200"))));
 		ClickActions("PSearch_XPATH");
 	}
 
@@ -121,7 +116,7 @@ public class ProductPage extends Page {
 		ClickActions("CategoryFilter_ID");
 		click("ProductPoleRestoration_XPATH");
 		Thread.sleep((Long.parseLong(p.config.getProperty("Thread1000"))));
-		click("ProductPoleRestorationCTruss_XPATH");
+		click("FirstProduct_XPATH");
 		selectbyindex("ProductSizeDropdown_XPATH", 1);
 		click("ProductSizeEnterQuantity_XPATH");
 		clear("ProductSizeEnterQuantity_XPATH");
@@ -613,7 +608,6 @@ public class ProductPage extends Page {
 		type("commentstextareaSubmitQuote_XPATH", "Automationtestingcancelling");
 		click("SubmitbtnQuotesubmission_XPATH");
 		Thread.sleep((Long.parseLong(p.config.getProperty("Thread3000"))));
-
 	}
 
 	public void CreateQuoteByAddToShoppingCart() throws InterruptedException {
@@ -741,6 +735,7 @@ public class ProductPage extends Page {
 		click("ProductViewCartButton_XPATH");
 		Thread.sleep((Long.parseLong(p.config.getProperty("Thread1000"))));
 		click("QuoteRequestCrossicon_XPATH");
+		Thread.sleep((Long.parseLong(p.config.getProperty("Thread1000"))));
 		click("ProductPageCartIcon_XPATH");
 	}
 
@@ -757,6 +752,7 @@ public class ProductPage extends Page {
 		click("ProductViewCartButton_XPATH");
 		Thread.sleep((Long.parseLong(p.config.getProperty("Thread1000"))));
 		click("QuoteRequestCrossicon_XPATH");
+		Thread.sleep((Long.parseLong(p.config.getProperty("Thread1000"))));
 		click("ProductPageCartIcon_XPATH");
 		click("productPageCartViewCartbtn_XPATH");
 	}
@@ -775,6 +771,7 @@ public class ProductPage extends Page {
 		click("ProductViewCartButton_XPATH");
 		Thread.sleep((Long.parseLong(p.config.getProperty("Thread1000"))));
 		click("QuoteRequestCrossicon_XPATH");
+		Thread.sleep((Long.parseLong(p.config.getProperty("Thread1000"))));
 		click("ProductPageCartIcon_XPATH");
 		click("productPageCartSubmitCartbtn_XPATH");
 	}
@@ -793,12 +790,14 @@ public class ProductPage extends Page {
 		click("ProductViewCartButton_XPATH");
 		Thread.sleep((Long.parseLong(p.config.getProperty("Thread1000"))));
 		click("QuoteRequestCrossicon_XPATH");
+		Thread.sleep((Long.parseLong(p.config.getProperty("Thread1000"))));
 		click("ProductPageCartIcon_XPATH");
 		click("productPageCartViewCartbtn_XPATH");
 		Thread.sleep((Long.parseLong(p.config.getProperty("Thread1000"))));
 		click("PlusicononShoppingCart_XPATH");
 		Thread.sleep((Long.parseLong(p.config.getProperty("Thread1000"))));
 		click("QuoteRequestCrossicon_XPATH");
+		Thread.sleep((Long.parseLong(p.config.getProperty("Thread1000"))));
 		click("ProductPageCartIcon_XPATH");
 	}
 
@@ -1138,6 +1137,7 @@ public class ProductPage extends Page {
 		click("ProductViewCartButton_XPATH");
 		Thread.sleep((Long.parseLong(p.config.getProperty("Thread3000"))));
 		click("QuoteRequestCrossicon_XPATH");
+		Thread.sleep((Long.parseLong(p.config.getProperty("Thread1000"))));
 		click("ProductPageCartIcon_XPATH");
 		Thread.sleep((Long.parseLong(p.config.getProperty("Thread1000"))));
 		click("DeleteiconShoppingOverlay_XPATH");

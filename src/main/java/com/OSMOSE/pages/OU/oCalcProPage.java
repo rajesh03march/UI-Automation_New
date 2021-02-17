@@ -69,7 +69,8 @@ public class oCalcProPage extends Page {
 		click("oCalProductViewCartButton_XPATH");
 		click("oCalProductSubmitQuoteReqBtn_XPATH");
 		click("oCalProductSubmitBtn_XPATH");
-		Page.wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//button[@class='btn btnMidBlue btn-link' and text()='CLOSE']")));
+		Page.wait.until(ExpectedConditions
+				.visibilityOfElementLocated(By.xpath("//button[@class='btn btnMidBlue btn-link' and text()='CLOSE']")));
 		click("oCalProductSubmittedCloseBtn_XPATH");
 	}
 
@@ -274,5 +275,10 @@ public class oCalcProPage extends Page {
 		click("oCalProductViewCartButton_XPATH");
 		click("oCalProductSubmitQuoteReqBtn_XPATH");
 	}
+	
+	
+	public JointUsePage goJointUse(){
+        return new JointUsePage();
+    }
 
 }
